@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — May 24, 2026</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#080c14;color:#d8d0b4;font-family:Georgia,'Times New Roman',serif;line-height:1.75;max-width:680px;margin:0 auto;padding:32px 20px 60px}
+a{color:#c9a84c;text-decoration:none}a:hover{text-decoration:underline}
+.masthead{text-align:center;border-bottom:1px solid #1a2030;padding-bottom:28px;margin-bottom:32px}
+.masthead h1{font-size:2rem;letter-spacing:.12em;color:#c9a84c;text-transform:uppercase;font-weight:normal;margin-bottom:6px}
+.masthead .tagline{font-size:.78rem;letter-spacing:.2em;color:#4a5468;text-transform:uppercase}
+.masthead .date{font-size:.82rem;color:#4a5468;margin-top:8px}
+.nav-bar{display:flex;justify-content:space-between;font-size:.78rem;color:#4a5468;margin-bottom:32px;padding-bottom:12px;border-bottom:1px solid #1a2030}
+.nav-bar a{color:#c9a84c}.nav-bar .inactive{color:#2a3040}
+.audio-bar{background:#0c1018;border:1px solid #1a2030;border-radius:6px;padding:14px 18px;margin-bottom:36px;display:flex;align-items:center;gap:14px}
+.audio-bar button{background:#c9a84c;color:#080c14;border:none;border-radius:4px;padding:7px 16px;font-size:.82rem;cursor:pointer;font-family:Georgia,serif;font-weight:bold;white-space:nowrap}
+.audio-bar button:hover{background:#e0be6a}
+#stopBtn{background:#1a2030;color:#c9a84c;display:none}#stopBtn:hover{background:#252f44}
+.audio-label{font-size:.78rem;color:#4a5468;letter-spacing:.08em}
+#audioStatus{font-size:.75rem;color:#3a4458;margin-left:auto}
+.urgent{background:#1a0c08;border:1px solid #8b3a1a;border-radius:4px;padding:10px 14px;margin-bottom:28px;font-size:.82rem;color:#d4824a}
+.urgent strong{color:#e09050}
+.lead-tag{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:#c9a84c;margin-bottom:8px}
+h2.story{font-size:1.32rem;color:#f0e8cc;font-weight:normal;line-height:1.4;margin-bottom:10px}
+.deck{font-size:.93rem;color:#8090a8;margin-bottom:18px;font-style:italic}
+.body-text{font-size:.93rem;color:#b8b0a0;margin-bottom:24px}
+.body-text p{margin-bottom:.9em}
+.divider{border:none;border-top:1px solid #141820;margin:32px 0}
+.section-label{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:#3a4458;margin-bottom:16px}
+.bonus-row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid #121820}
+.bonus-row:last-child{border-bottom:none}
+.bonus-name{font-size:.9rem;color:#d8d0b4}
+.bonus-name span{font-size:.78rem;color:#4a5468;display:block;margin-top:2px}
+.bonus-pct{font-size:1.1rem;color:#c9a84c;font-weight:bold;text-align:right;white-space:nowrap}
+.bonus-exp{font-size:.75rem;color:#4a5468;text-align:right;white-space:nowrap}
+.bonus-exp.soon{color:#d4824a}
+.brief-item{padding:14px 0;border-bottom:1px solid #121820}
+.brief-item:last-child{border-bottom:none}
+.brief-item h3{font-size:.98rem;color:#d8d0b4;font-weight:normal;margin-bottom:4px}
+.brief-item p{font-size:.86rem;color:#6878a0}
+.signal-box{background:#0c1018;border-left:3px solid #c9a84c;padding:14px 18px;margin:28px 0;border-radius:0 4px 4px 0}
+.signal-box .label{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:#c9a84c;margin-bottom:6px}
+.signal-box p{font-size:.9rem;color:#9090a8}
+.footer{border-top:1px solid #1a2030;margin-top:48px;padding-top:20px;text-align:center;font-size:.75rem;color:#2a3040}
+</style>
+</head>
+<body>
+<div class="masthead">
+  <h1>The Points Brief</h1>
+  <div class="tagline">Daily intelligence for the points-minded traveler</div>
+  <div class="date">Sunday, May 24, 2026</div>
+</div>
+<div class="nav-bar">
+  <a href="/points-brief/2026-05-23.html">&larr; May 23</a>
+  <span class="inactive">May 25 &rarr;</span>
+</div>
+<div class="audio-bar">
+  <button id="pb" onclick="togglePlay()">&#9654; Listen</button>
+  <button id="stopBtn" onclick="stopAudio()">&#9646;&#9646; Stop</button>
+  <span class="audio-label">~3 min</span>
+  <span id="audioStatus"></span>
+</div>
+
+<div class="urgent">
+  <strong>⚡ 3 Days Left:</strong> Chase &rarr; Flying Blue 20% transfer bonus expires May 27. Move UR now if you have an Air France or KLM redemption in mind.
+</div>
+
+<div class="lead-tag">Lead Story</div>
+<h2 class="story">Amex Has Quietly Stopped Running Transfer Bonuses</h2>
+<div class="deck">Through five months of 2026, Amex hasn't offered a single meaningful transfer bonus. That's a break from years of pattern — and it matters for how you think about your MR balance.</div>
+<div class="body-text">
+  <p>Amex Membership Rewards has historically been one of the most active programs for transfer bonuses — running promotions to partners like Avianca, Aeroplan, British Airways, and Hilton on a rolling basis. In 2026, those have all but stopped.</p>
+  <p>No Avianca bonus. No Aeroplan bonus. No meaningful airline transfer promotions at all through May. The Amex→Avios and Amex→Hilton bonuses that ran briefly in mid-May appear to have been outliers, not a sign of resumed activity.</p>
+  <p>What this means practically: if your MR strategy has relied on waiting for a bonus before transferring, that strategy is getting expensive. The longer you hold MR hoping for a bonus that may not come, the more value you're leaving on the table relative to cards with active bonus programs (Chase, Capital One, Citi).</p>
+  <p>The better approach right now: treat MR as a currency that transfers at base rate. Evaluate partners on base value, not bonus potential. <a href="https://www.americanexpress.com/en-us/rewards/membership-rewards/partners/">Amex's best base-rate transfers</a> remain Aeroplan (1:1), Flying Blue (1:1), and ANA (1:1) for premium cabin redemptions.</p>
+</div>
+
+<hr class="divider">
+<div class="section-label">Active Transfer Bonuses</div>
+
+<div class="bonus-row">
+  <div class="bonus-name">Chase &rarr; Marriott Bonvoy<span>Ultimate Rewards 1:1.55</span></div>
+  <div class="bonus-pct">+55%</div>
+  <div class="bonus-exp">Jun 30</div>
+</div>
+<div class="bonus-row">
+  <div class="bonus-name">Citi &rarr; I Prefer (Preferred Hotels)<span>ThankYou Points 1:2.6</span></div>
+  <div class="bonus-pct">+30%</div>
+  <div class="bonus-exp">Jun 13</div>
+</div>
+<div class="bonus-row">
+  <div class="bonus-name">Chase &rarr; Southwest Rapid Rewards<span>Ultimate Rewards 1:1.3</span></div>
+  <div class="bonus-pct">+30%</div>
+  <div class="bonus-exp">Jun 5</div>
+</div>
+<div class="bonus-row">
+  <div class="bonus-name">Capital One &rarr; Qantas<span>Miles 1:1.2</span></div>
+  <div class="bonus-pct">+20%</div>
+  <div class="bonus-exp">May 31</div>
+</div>
+<div class="bonus-row">
+  <div class="bonus-name">Chase &rarr; Air France-KLM Flying Blue<span>Ultimate Rewards 1:1.2</span></div>
+  <div class="bonus-pct">+20%</div>
+  <div class="bonus-exp soon">May 27 ⚡</div>
+</div>
+
+<hr class="divider">
+<div class="section-label">Today's Briefs</div>
+
+<div class="brief-item">
+  <h3>Chase → Flying Blue: 3 Days Left</h3>
+  <p>The 20% bonus expires Tuesday May 27. Flying Blue's promo awards make Paris business class achievable at 50K miles one-way. <a href="https://ultimaterewards.chase.com">Transfer now</a> if you have the itinerary in mind — award space on Air France and KLM transatlantic routes is currently solid.</p>
+</div>
+
+<div class="brief-item">
+  <h3>Citi → I Prefer: Underrated Hotel Play</h3>
+  <p>Preferred Hotels &amp; Resorts is an independent luxury collection that partners don't usually push. The 30% Citi bonus (1:2.6 rate) through June 13 makes it worth a look for independent properties in cities where Hyatt and Marriott don't have good options. <a href="https://iprefer.com">Browse properties here.</a></p>
+</div>
+
+<div class="brief-item">
+  <h3>Chase → Marriott 55% — Best Redemption Math</h3>
+  <p>The 55% bonus through June 30 makes Marriott more interesting than usual. The sweet spot is Category 4–5 properties at 35K–50K points standard rate — with the bonus, you're effectively getting those at a 35% discount vs. base rate. Run the numbers against cash rates before transferring.</p>
+</div>
+
+<div class="brief-item">
+  <h3>Capital One → Qantas 1:1.2 Before May 31</h3>
+  <p>One week left. Qantas is underused by US cardholders but opens up oneworld at good rates: Cathay Pacific business to Asia, JAL to Japan, American domestic. <a href="https://www.qantas.com/us/en/frequent-flyer.html">Qantas Frequent Flyer</a> is worth having funded.</p>
+</div>
+
+<hr class="divider">
+<div class="signal-box">
+  <div class="label">Today's Move</div>
+  <p>Chase to Flying Blue before Tuesday. It's the last active Chase airline bonus, it expires in three days, and Air France/KLM business class at 50K is one of the best values in transatlantic premium. If you have 80K+ UR sitting there and a Europe trip anywhere in the next 12 months, this is the move.</p>
+</div>
+
+<hr class="divider">
+<div class="footer">
+  The Points Brief &mdash; May 24, 2026<br>
+  <a href="/points-brief/2026-05-23.html">&larr; Yesterday's edition</a> &nbsp;&nbsp; <a href="https://gregmurad-eng.github.io/points-brief/">Home</a>
+</div>
+
+<script>
+const S = "Good morning. The Points Brief, Sunday May 24th. Lead story: Amex has quietly stopped running transfer bonuses. Through five months of 2026, there hasn't been a single meaningful Amex transfer promotion. That breaks from years of pattern. What it means: if your MR strategy is to wait for a bonus before transferring, that strategy is getting expensive. Treat Membership Rewards as a base-rate currency right now. Best base-rate partners are Aeroplan, Flying Blue, and ANA — all at 1 to 1. Urgent: Chase to Flying Blue 20% bonus expires May 27th — three days. Flying Blue promo awards can get you to Paris in business class at 50,000 miles one-way. Transfer now if you have a Europe trip anywhere in mind. On active bonuses: Chase to Marriott 55% runs through June 30th — best sweet spot is Category 4 and 5 properties at 35 to 50,000 points. Citi to I Prefer Hotels at 1 to 2.6 runs through June 13th — worth checking for independent luxury properties where Hyatt and Marriott don't compete. Chase to Southwest 30% through June 5th, Capital One to Qantas 1 to 1.2 through May 31st — one week left on that one. Today's move: Chase to Flying Blue, before Tuesday. 80,000 Ultimate Rewards becomes 96,000 Flying Blue miles. That's enough for two transatlantic economy tickets or one solid business class seat. Don't sit on it. Have a great Sunday.";
+let playing=false,utt=null;
+function togglePlay(){if(!playing){startAudio();}else{if(speechSynthesis.paused){speechSynthesis.resume();document.getElementById('pb').textContent='⏸';document.getElementById('audioStatus').textContent='Playing...';}else{speechSynthesis.pause();document.getElementById('pb').textContent='▶ Resume';document.getElementById('audioStatus').textContent='Paused';}}}
+function startAudio(){speechSynthesis.cancel();utt=new SpeechSynthesisUtterance(S);utt.rate=0.93;const vs=speechSynthesis.getVoices();const v=vs.find(x=>x.name.includes('Daniel'))||vs.find(x=>x.name.includes('Alex'))||vs.find(x=>x.lang==='en-US'&&!x.name.includes('Google'));if(v)utt.voice=v;utt.onstart=()=>{playing=true;document.getElementById('pb').textContent='⏸';document.getElementById('audioStatus').textContent='Playing...';document.getElementById('stopBtn').style.display='block';};utt.onend=()=>{playing=false;document.getElementById('pb').textContent='▶ Listen';document.getElementById('audioStatus').textContent='Done';document.getElementById('stopBtn').style.display='none';};utt.onerror=()=>{playing=false;document.getElementById('pb').textContent='▶ Listen';document.getElementById('audioStatus').textContent='Error';};speechSynthesis.speak(utt);}
+function stopAudio(){speechSynthesis.cancel();playing=false;document.getElementById('pb').textContent='▶ Listen';document.getElementById('audioStatus').textContent='Stopped';document.getElementById('stopBtn').style.display='none';}
+</script>
+</body>
+</html>
