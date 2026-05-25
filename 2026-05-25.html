@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — May 25, 2026</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#080c14;color:#d8d0b4;font-family:Georgia,'Times New Roman',serif;line-height:1.75;max-width:680px;margin:0 auto;padding:32px 20px 60px}
+a{color:#c9a84c;text-decoration:none}a:hover{text-decoration:underline}
+.masthead{text-align:center;border-bottom:1px solid #1a2030;padding-bottom:28px;margin-bottom:32px}
+.masthead h1{font-size:2rem;letter-spacing:.12em;color:#c9a84c;text-transform:uppercase;font-weight:normal;margin-bottom:6px}
+.tagline{font-size:.78rem;letter-spacing:.2em;color:#4a5468;text-transform:uppercase}
+.date{font-size:.82rem;color:#4a5468;margin-top:8px}
+.nav-bar{display:flex;justify-content:space-between;font-size:.78rem;margin-bottom:32px;padding-bottom:12px;border-bottom:1px solid #1a2030}
+.nav-bar a{color:#c9a84c}.inactive{color:#2a3040}
+.audio-bar{background:#0c1018;border:1px solid #1a2030;border-radius:6px;padding:14px 18px;margin-bottom:36px;display:flex;align-items:center;gap:14px}
+.audio-bar button{background:#c9a84c;color:#080c14;border:none;border-radius:4px;padding:7px 16px;font-size:.82rem;cursor:pointer;font-family:Georgia,serif;font-weight:bold}
+#stopBtn{background:#1a2030;color:#c9a84c;display:none}
+#audioStatus{font-size:.75rem;color:#3a4458;margin-left:auto}
+.urgent{background:#1a0c08;border:1px solid #8b3a1a;border-radius:4px;padding:10px 14px;margin-bottom:28px;font-size:.82rem;color:#d4824a}
+.lead-tag{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:#c9a84c;margin-bottom:8px}
+h2.story{font-size:1.32rem;color:#f0e8cc;font-weight:normal;line-height:1.4;margin-bottom:10px}
+.deck{font-size:.93rem;color:#8090a8;margin-bottom:18px;font-style:italic}
+.body-text{font-size:.93rem;color:#b8b0a0;margin-bottom:24px}
+.body-text p{margin-bottom:.9em}
+.divider{border:none;border-top:1px solid #141820;margin:32px 0}
+.section-label{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:#3a4458;margin-bottom:16px}
+.bonus-row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid #121820}
+.bonus-row:last-child{border-bottom:none}
+.bonus-name{font-size:.9rem;color:#d8d0b4}
+.bonus-name span{font-size:.78rem;color:#4a5468;display:block;margin-top:2px}
+.bonus-pct{font-size:1.1rem;color:#c9a84c;font-weight:bold;text-align:right}
+.bonus-exp{font-size:.75rem;color:#4a5468;text-align:right;white-space:nowrap}
+.soon{color:#d4824a}
+.brief-item{padding:14px 0;border-bottom:1px solid #121820}
+.brief-item:last-child{border-bottom:none}
+.brief-item h3{font-size:.98rem;color:#d8d0b4;font-weight:normal;margin-bottom:4px}
+.brief-item p{font-size:.86rem;color:#6878a0}
+.signal-box{background:#0c1018;border-left:3px solid #c9a84c;padding:14px 18px;margin:28px 0;border-radius:0 4px 4px 0}
+.signal-box .label{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:#c9a84c;margin-bottom:6px}
+.signal-box p{font-size:.9rem;color:#9090a8}
+.footer{border-top:1px solid #1a2030;margin-top:48px;padding-top:20px;text-align:center;font-size:.75rem;color:#2a3040}
+</style>
+</head>
+<body>
+<div class="masthead"><h1>The Points Brief</h1><div class="tagline">Daily intelligence for the points-minded traveler</div><div class="date">Monday, May 25, 2026</div></div>
+<div class="nav-bar"><a href="2026-05-24.html">&larr; May 24</a><span class="inactive">May 26 &rarr;</span></div>
+<div class="audio-bar"><button id="pb" onclick="togglePlay()">&#9654; Listen</button><button id="stopBtn" onclick="stopAudio()">&#9646;&#9646; Stop</button><span style="font-size:.78rem;color:#4a5468">~3 min</span><span id="audioStatus"></span></div>
+<div class="urgent"><strong>&#9889; 2 Days Left:</strong> Chase &rarr; Flying Blue 20% expires May 27. Last chance for bonus UR &rarr; Air France/KLM miles.</div>
+
+<div class="lead-tag">Lead Story</div>
+<h2 class="story">The Flying Blue Window Closes Tuesday — Here's What to Do With It</h2>
+<div class="deck">Chase's 20% Flying Blue bonus is the last active Chase airline promotion of May. After Tuesday, there's nothing replacing it on the calendar.</div>
+<div class="body-text">
+  <p>The math is simple: 100,000 Ultimate Rewards becomes 120,000 Flying Blue miles before May 27. That 20% margin matters on premium cabin redemptions.</p>
+  <p>The best use right now: <strong style="color:#c9a84c">transatlantic business class on Flying Blue promo awards</strong>. These monthly discounted awards hit as low as 40,000 miles one-way in business class, with 50,000–55,000 as the typical floor. You don't need a specific flight booked today — you just need the miles in your account before the bonus expires. Flying Blue miles are active for 24 months with any account activity.</p>
+  <p>If you have 80K+ UR sitting idle and any interest in Europe in the next two years, this is a low-regret transfer. After Tuesday you're back to 1:1 with no catalyst in sight.</p>
+</div>
+
+<hr class="divider">
+<div class="section-label">Active Transfer Bonuses</div>
+<div class="bonus-row"><div class="bonus-name">Chase &rarr; Marriott Bonvoy<span>Ultimate Rewards 1:1.55</span></div><div class="bonus-pct">+55%</div><div class="bonus-exp">Jun 30</div></div>
+<div class="bonus-row"><div class="bonus-name">Chase &rarr; Southwest Rapid Rewards<span>Ultimate Rewards 1:1.3</span></div><div class="bonus-pct">+30%</div><div class="bonus-exp">Jun 5</div></div>
+<div class="bonus-row"><div class="bonus-name">Citi &rarr; Wyndham Rewards<span>ThankYou Points 1:1.25</span></div><div class="bonus-pct">+25%</div><div class="bonus-exp">Jun 13</div></div>
+<div class="bonus-row"><div class="bonus-name">Rove &rarr; Air Canada Aeroplan<span>Miles 1:1.25</span></div><div class="bonus-pct">+25%</div><div class="bonus-exp">Jun 6</div></div>
+<div class="bonus-row"><div class="bonus-name">Amex &rarr; Hilton Honors<span>Membership Rewards 1:3.6</span></div><div class="bonus-pct">+20%</div><div class="bonus-exp soon">May 30 &#9889;</div></div>
+<div class="bonus-row"><div class="bonus-name">Chase &rarr; Air France-KLM Flying Blue<span>Ultimate Rewards 1:1.2</span></div><div class="bonus-pct">+20%</div><div class="bonus-exp soon">May 27 &#9888;</div></div>
+
+<hr class="divider">
+<div class="section-label">Today's Briefs</div>
+<div class="brief-item"><h3>Amex &rarr; Hilton 20% Ends May 30</h3><p>Five days left. 30K Amex MR becomes 108K Hilton points — enough for 1–2 nights at a Waldorf or Conrad. Best for properties where cash rates are $400+/night. <a href="https://www.hilton.com/en/hilton-honors/">Hilton Honors portal.</a></p></div>
+<div class="brief-item"><h3>Chase &rarr; Marriott 55% — Five Weeks Remain</h3><p>Category 4–5 properties (35K–50K standard) are the sweet spot. With the 55% bonus, 65K UR becomes 100K Bonvoy — two solid nights. <a href="https://www.marriott.com/loyalty/merch/default.mi">Search Marriott awards here.</a></p></div>
+<div class="brief-item"><h3>Citi &rarr; Wyndham +25%: The Road Warrior Play</h3><p>Wyndham's footprint is enormous — La Quinta, Microtel, Days Inn. Standard nights run 3K–7K points. With 1:1.25 Citi transfer plus the bonus, 40K ThankYou becomes 50K Wyndham. <a href="https://www.wyndhamhotels.com/wyndham-rewards">Wyndham Rewards.</a></p></div>
+
+<hr class="divider">
+<div class="signal-box"><div class="label">Today's Move</div><p>Chase to Flying Blue before Tuesday. Transfer now, book when the next promo award window opens. European business class at 40–55K miles one-way is one of the best values left in the points game. This is your last chance at a 20% discount on that transfer.</p></div>
+
+<hr class="divider">
+<div class="footer">The Points Brief &mdash; May 25, 2026<br><a href="2026-05-24.html">&larr; Yesterday</a> &nbsp;&nbsp; <a href="https://gregmurad-eng.github.io/points-brief/">Home</a></div>
+
+<script>
+const S="Good morning. The Points Brief, Monday May 25th. Lead: Chase to Flying Blue 20% closes in 48 hours on May 27th. Last active Chase airline bonus of May, nothing replacing it. The math: 100,000 UR becomes 120,000 Flying Blue miles. Flying Blue promo awards hit as low as 40,000 miles one-way in business class transatlantic, 50 to 55,000 is the typical floor. You don't need a booking today — just get the miles in your account. They stay active 24 months with any activity. 80K or more UR sitting idle with any Europe interest in the next two years — move it today. After Tuesday you're at 1 to 1. Active bonuses: Chase to Marriott 55% through June 30. Amex to Hilton 20% ends May 30, five days. Chase to Southwest 30% through June 5. Citi to Wyndham 25% through June 13. Rove to Aeroplan 25% through June 6. Today's move: Chase to Flying Blue, today or tomorrow. European business class at 40 to 55,000 miles one-way is one of the best values left in points travel. Don't miss the window. Have a great Monday.";
+let playing=false,utt=null;
+function togglePlay(){if(!playing){startAudio();}else{if(speechSynthesis.paused){speechSynthesis.resume();document.getElementById('pb').textContent='⏸';document.getElementById('audioStatus').textContent='Playing...';}else{speechSynthesis.pause();document.getElementById('pb').textContent='▶ Resume';document.getElementById('audioStatus').textContent='Paused';}}}
+function startAudio(){speechSynthesis.cancel();utt=new SpeechSynthesisUtterance(S);utt.rate=0.93;const vs=speechSynthesis.getVoices();const v=vs.find(x=>x.name.includes('Daniel'))||vs.find(x=>x.name.includes('Alex'))||vs.find(x=>x.lang==='en-US'&&!x.name.includes('Google'));if(v)utt.voice=v;utt.onstart=()=>{playing=true;document.getElementById('pb').textContent='⏸';document.getElementById('audioStatus').textContent='Playing...';document.getElementById('stopBtn').style.display='block';};utt.onend=()=>{playing=false;document.getElementById('pb').textContent='▶ Listen';document.getElementById('audioStatus').textContent='Done';document.getElementById('stopBtn').style.display='none';};utt.onerror=()=>{playing=false;document.getElementById('pb').textContent='▶ Listen';document.getElementById('audioStatus').textContent='Error';};speechSynthesis.speak(utt);}
+function stopAudio(){speechSynthesis.cancel();playing=false;document.getElementById('pb').textContent='▶ Listen';document.getElementById('audioStatus').textContent='Stopped';document.getElementById('stopBtn').style.display='none';}
+</script>
+</body>
+</html>
