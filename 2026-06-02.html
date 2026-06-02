@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — 2026-06-02</title>
+<style>
+  :root{
+    --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:Georgia,'Times New Roman',serif; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .wrap{max-width:760px; margin:0 auto; padding:0 22px 60px;}
+  .nav{
+    display:flex; justify-content:space-between; align-items:center;
+    font-size:.82rem; letter-spacing:.04em; padding:14px 22px;
+    border-bottom:1px solid rgba(201,168,76,.25); max-width:760px; margin:0 auto;
+  }
+  .nav .disabled{color:#5a5847; cursor:default;}
+  .nav.bottom{border-bottom:none; border-top:1px solid rgba(201,168,76,.25); margin-top:50px;}
+  .masthead{text-align:center; padding:42px 0 8px;}
+  .masthead h1{
+    font-size:2.7rem; margin:0; letter-spacing:.02em; color:var(--accent);
+    font-weight:normal;
+  }
+  .masthead .rule{
+    border:0; border-top:1px solid rgba(201,168,76,.4);
+    width:120px; margin:16px auto;
+  }
+  .masthead .sub{font-size:.8rem; letter-spacing:.22em; text-transform:uppercase; color:#9a926f;}
+  .date{font-size:.88rem; letter-spacing:.18em; text-transform:uppercase; color:#9a926f; text-align:center; margin-top:6px;}
+  .player{
+    display:flex; align-items:center; gap:14px; justify-content:center;
+    margin:26px auto; padding:14px 18px; max-width:380px;
+    border:1px solid rgba(201,168,76,.3); border-radius:4px;
+  }
+  .player button{
+    background:var(--accent); color:var(--bg); border:none; font-family:inherit;
+    font-size:.82rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:9px 16px; border-radius:3px; cursor:pointer;
+  }
+  .player button:hover{opacity:.88;}
+  .player .status{font-size:.78rem; color:#9a926f; letter-spacing:.05em;}
+  .urgent{
+    background:rgba(201,168,76,.12); border:1px solid var(--accent);
+    border-radius:4px; padding:14px 18px; margin:26px 0; font-size:.95rem;
+  }
+  .urgent strong{color:var(--accent); letter-spacing:.05em; text-transform:uppercase; font-size:.8rem;}
+  h2.section{
+    font-size:.82rem; letter-spacing:.2em; text-transform:uppercase; color:var(--accent);
+    border-bottom:1px solid rgba(201,168,76,.25); padding-bottom:8px; margin:46px 0 18px;
+  }
+  .lead h3{font-size:1.7rem; line-height:1.3; margin:0 0 12px; color:var(--text); font-weight:normal;}
+  .lead p{font-size:1.04rem;}
+  table.bonuses{width:100%; border-collapse:collapse; font-size:.95rem; margin-top:8px;}
+  table.bonuses th{
+    text-align:left; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase;
+    color:#9a926f; border-bottom:1px solid rgba(201,168,76,.3); padding:8px 10px;
+  }
+  table.bonuses td{padding:11px 10px; border-bottom:1px solid rgba(201,168,76,.12); vertical-align:top;}
+  table.bonuses .pct{color:var(--accent); font-size:1.15rem; white-space:nowrap;}
+  table.bonuses .exp{white-space:nowrap; color:#bdb593;}
+  .brief{margin:0 0 22px;}
+  .brief h4{margin:0 0 4px; font-size:1.08rem; color:var(--text); font-weight:normal;}
+  .brief h4 a{color:var(--text);}
+  .brief h4 a:hover{color:var(--accent);}
+  .brief p{margin:0; font-size:.96rem; color:#c4bc98;}
+  .move{
+    border:1px solid var(--accent); border-radius:4px; padding:22px 24px; margin-top:10px;
+    background:linear-gradient(180deg, rgba(201,168,76,.08), rgba(201,168,76,.02));
+  }
+  .move .label{font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:8px;}
+  .move p{margin:0; font-size:1.05rem;}
+  .foot{text-align:center; font-size:.76rem; color:#5a5847; margin-top:40px; letter-spacing:.05em;}
+</style>
+</head>
+<body>
+
+<nav class="nav top">
+  <a href="2026-06-01.html">&larr; 2026-06-01</a>
+  <span class="disabled">2026-06-03 &rarr;</span>
+</nav>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="sub">Greg's Daily Travel-Points Dispatch</div>
+    <h1>The Points Brief</h1>
+    <hr class="rule">
+    <div class="date">Tuesday &middot; June 2, 2026</div>
+  </header>
+
+  <div class="player">
+    <button id="pbPlay">&#9654; Listen</button>
+    <span class="status" id="pbStatus">~3 min &middot; spoken edition</span>
+  </div>
+
+  <div class="urgent">
+    <strong>Closing in 3 days &mdash;</strong> Chase Ultimate Rewards &rarr; Southwest Rapid Rewards <b>30% transfer bonus ends June 5</b>. If a Southwest redemption is on your radar, lock the points in now.
+  </div>
+
+  <h2 class="section">Lead Story</h2>
+  <section class="lead">
+    <h3>Marriott is the headline play this month &mdash; from two directions at once</h3>
+    <p>Both of your flexible-points engines are pointed at Bonvoy. Chase Ultimate Rewards is running a <b>55% transfer bonus to Marriott</b> (1,000 UR &rarr; 1,550 Bonvoy) on transfers completed by June 30, while Amex Membership Rewards is offering a more modest <b>20% bonus to Marriott</b> on the same deadline. The Chase rate is the stronger of the two by a wide margin and one of the better Bonvoy bonuses of the year. Marriott points are low-value per point, so this only pencils out if you have a specific high-rate redemption &mdash; a Category 6&ndash;8 property or a Ritz/St. Regis stay &mdash; already in mind. Speculative transfers still aren't worth it, but a 55% boost meaningfully narrows the gap when you have a target.</p>
+  </section>
+
+  <h2 class="section">Active Transfer Bonuses</h2>
+  <table class="bonuses">
+    <thead>
+      <tr><th>From &rarr; To</th><th>Bonus</th><th>Expires</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Chase UR &rarr; Marriott Bonvoy</td>
+        <td class="pct">+55%</td>
+        <td class="exp">Jun 30, 2026</td>
+      </tr>
+      <tr>
+        <td>Chase UR &rarr; Southwest Rapid Rewards</td>
+        <td class="pct">+30%</td>
+        <td class="exp">Jun 5, 2026</td>
+      </tr>
+      <tr>
+        <td>Amex MR &rarr; Marriott Bonvoy</td>
+        <td class="pct">+20%</td>
+        <td class="exp">Jun 30, 2026</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="section">Today's Briefs</h2>
+
+  <div class="brief">
+    <h4><a href="https://thepointsguy.com/credit-cards/best-credit-card-offers-this-month/">Sapphire Reserve's record 150k offer expires June 15</a></h4>
+    <p>The Chase Sapphire Reserve is carrying its highest-ever welcome offer &mdash; 150,000 points after $6,000 in three months &mdash; but it ends June 15. Worth a look if you've been sitting outside 5/24 and want to feed the UR balance that's powering this month's Marriott bonus.</p>
+  </div>
+
+  <div class="brief">
+    <h4><a href="https://awardwallet.com/news/delta-skymiles/bonus-miles-gift-cards/">Delta dangles a $25 Uber voucher on gift-card buys</a></h4>
+    <p>Through June 22, buying a Delta gift card of $300+ earns a $25 Uber voucher, and some cardholders have a targeted Amex Offer for 5X SkyMiles on Delta gift cards through July 14. Minor, but free money if a Delta ticket is already planned.</p>
+  </div>
+
+  <div class="brief">
+    <h4><a href="https://www.aa.com/i18n/aadvantage-program/aadvantage-status/aadvantage-status-match.jsp">American's Instant Status Pass will match your United or Delta tier</a></h4>
+    <p>AA's status-match promo lets you submit proof of United or Delta status for four months of matched AAdvantage benefits, extendable through the next year if you hit the activity goals. Low-effort hedge if you ever fly American on a oneworld itinerary.</p>
+  </div>
+
+  <div class="brief">
+    <h4><a href="https://awardwallet.com/news/world-of-hyatt/hyatt-promotions/">Hyatt: 2,000 bonus points a night at Under Canvas, plus a wider booking window</a></h4>
+    <p>Register by June 30 to earn 2K bonus points per night across all 14 Under Canvas locations on stays through July 1. Separately, from June 30 Globalists, Explorists, and Hyatt cardholders get a 13-month award booking window &mdash; useful for locking scarce Category 1&ndash;4 nights early.</p>
+  </div>
+
+  <h2 class="section">Today's Move</h2>
+  <div class="move">
+    <span class="label">The Signal</span>
+    <p>Don't let the flashy 55% Marriott number pull points you don't have a use for. Your one genuinely time-boxed decision is the <b>Chase &rarr; Southwest 30% bonus closing June 5</b> &mdash; if you have a domestic Southwest trip coming, transfer exactly what that fare needs (Rapid Rewards are revenue-priced, so you can size it precisely) before the window shuts. Everything else can wait until you have a confirmed redemption target.</p>
+  </div>
+
+  <nav class="nav bottom">
+    <a href="2026-06-01.html">&larr; 2026-06-01</a>
+    <span class="disabled">2026-06-03 &rarr;</span>
+  </nav>
+
+  <div class="foot">The Points Brief &middot; auto-compiled for Greg &middot; rates change fast &mdash; confirm with the program before transferring.</div>
+
+</div>
+
+<script>
+  const S = "Good morning, Greg. This is your Points Brief for Tuesday, June second, twenty twenty-six. Here's where things stand across your stack. First, the urgent one. The Chase to Southwest thirty percent transfer bonus closes on June fifth. That's just three days out. If you've got a domestic Southwest flight on the horizon, this is your window. Now today's lead story. Marriott is the headline this month, and it's coming at you from two directions. Chase Ultimate Rewards is running a fifty-five percent transfer bonus to Marriott Bonvoy, so a thousand Chase points becomes fifteen hundred fifty Bonvoy points, on transfers completed by June thirtieth. Amex Membership Rewards has a smaller twenty percent bonus to Marriott on the same deadline. The Chase rate is far stronger and it's one of the best Bonvoy bonuses we've seen all year. But here's the catch. Marriott points are low value per point, so this only makes sense if you already have a high-rate redemption in mind, like a category six through eight property or a Ritz or St. Regis stay. Don't transfer on speculation. A fifty-five percent boost narrows the gap nicely, but only when you have a real target. On the transfer board right now: Chase to Marriott, plus fifty-five percent, through June thirtieth. Chase to Southwest, plus thirty percent, through June fifth. And Amex to Marriott, plus twenty percent, through June thirtieth. A few quick briefs. The Chase Sapphire Reserve is carrying its highest-ever welcome offer, a hundred and fifty thousand points after six thousand dollars of spend, but it ends June fifteenth. Delta is offering a twenty-five dollar Uber voucher when you buy a gift card of three hundred dollars or more, through June twenty-second. American Airlines has an Instant Status Pass that will match your United or Delta status for four months. And World of Hyatt is giving two thousand bonus points per night at Under Canvas locations if you register by June thirtieth, plus a wider thirteen-month award booking window starting that same day for elites and cardholders. Now, today's move. Don't let that flashy fifty-five percent Marriott number pull points you don't have a use for. Your one genuinely time-boxed decision is the Chase to Southwest thirty percent bonus closing June fifth. If you have a Southwest trip coming, transfer exactly what the fare needs, since Rapid Rewards are revenue-priced and you can size it precisely, before the window shuts. Everything else can wait until you have a confirmed redemption target. That's your brief. Travel smart, and I'll see you tomorrow.";
+
+  (function(){
+    const btn = document.getElementById('pbPlay');
+    const status = document.getElementById('pbStatus');
+    let playing = false;
+
+    function pickVoice(){
+      const vs = window.speechSynthesis.getVoices();
+      return vs.find(v=>/Daniel/i.test(v.name))
+          || vs.find(v=>/Alex/i.test(v.name))
+          || vs.find(v=>/en[-_]GB/i.test(v.lang))
+          || vs.find(v=>/en[-_]US/i.test(v.lang))
+          || vs[0] || null;
+    }
+
+    function speak(){
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(S);
+      u.rate = 0.93;
+      const v = pickVoice();
+      if(v) u.voice = v;
+      u.onend = ()=>{ playing=false; btn.innerHTML='&#9654; Listen'; status.textContent='~3 min · spoken edition'; };
+      u.onerror = ()=>{ playing=false; btn.innerHTML='&#9654; Listen'; status.textContent='audio unavailable'; };
+      window.speechSynthesis.speak(u);
+      playing = true;
+      btn.innerHTML = '&#10073;&#10073; Stop';
+      status.textContent = 'playing…';
+    }
+
+    btn.addEventListener('click', function(){
+      if(playing){ window.speechSynthesis.cancel(); playing=false; btn.innerHTML='&#9654; Listen'; status.textContent='~3 min · spoken edition'; }
+      else { speak(); }
+    });
+
+    if(typeof speechSynthesis!=='undefined' && speechSynthesis.onvoiceschanged!==undefined){
+      speechSynthesis.onvoiceschanged = pickVoice;
+    }
+  })();
+</script>
+</body>
+</html>
