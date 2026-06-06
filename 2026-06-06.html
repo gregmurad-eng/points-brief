@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — 2026-06-06</title>
+<style>
+  :root{
+    --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:Georgia, 'Times New Roman', serif; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:28px 22px 64px;}
+  a{color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(201,168,76,.35);}
+  a:hover{border-bottom-color:var(--accent);}
+  .nav{
+    display:flex; justify-content:space-between; align-items:center;
+    font-size:.85rem; letter-spacing:.04em; padding:10px 0;
+    border-bottom:1px solid rgba(201,168,76,.25);
+  }
+  .nav.bottom{border-bottom:none; border-top:1px solid rgba(201,168,76,.25); margin-top:48px;}
+  .nav .disabled{color:#5a5740; border:none; cursor:default;}
+  .masthead{text-align:center; padding:34px 0 18px;}
+  .masthead h1{
+    font-size:2.5rem; margin:0; letter-spacing:.06em; color:var(--accent);
+    font-weight:normal;
+  }
+  .masthead .sub{
+    font-size:.78rem; letter-spacing:.32em; text-transform:uppercase;
+    color:#8a825f; margin-top:8px;
+  }
+  .masthead .date{font-size:.95rem; color:var(--text); margin-top:10px; font-style:italic;}
+  .rule{height:1px; background:linear-gradient(to right,transparent,rgba(201,168,76,.5),transparent); margin:22px 0;}
+  .player{
+    display:flex; align-items:center; gap:14px; justify-content:center;
+    border:1px solid rgba(201,168,76,.3); border-radius:6px;
+    padding:12px 18px; margin:18px auto 8px; max-width:380px;
+  }
+  .player button{
+    background:var(--accent); color:var(--bg); border:none;
+    font-family:inherit; font-size:.9rem; padding:8px 18px; border-radius:4px;
+    cursor:pointer; letter-spacing:.04em;
+  }
+  .player button:hover{background:#dcbb5e;}
+  .player .label{font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; color:#8a825f;}
+  .banner{
+    background:rgba(201,168,76,.12); border:1px solid var(--accent);
+    border-radius:6px; padding:12px 16px; margin:18px 0; font-size:.92rem;
+  }
+  .banner strong{color:var(--accent); letter-spacing:.04em;}
+  h2.section{
+    font-size:.82rem; letter-spacing:.26em; text-transform:uppercase;
+    color:var(--accent); margin:38px 0 14px; font-weight:normal;
+    border-bottom:1px solid rgba(201,168,76,.2); padding-bottom:6px;
+  }
+  h3{font-size:1.45rem; font-weight:normal; margin:6px 0 12px; color:#efe7c8;}
+  p{margin:0 0 14px;}
+  table{width:100%; border-collapse:collapse; margin:6px 0 10px; font-size:.92rem;}
+  th,td{text-align:left; padding:9px 10px; border-bottom:1px solid rgba(201,168,76,.18);}
+  th{color:var(--accent); font-weight:normal; letter-spacing:.06em; font-size:.78rem; text-transform:uppercase;}
+  td .pct{color:#efe7c8; font-weight:bold;}
+  .brief{margin:0 0 20px;}
+  .brief h4{font-size:1.08rem; font-weight:normal; margin:0 0 5px; color:#efe7c8;}
+  .signal{
+    border:1px solid var(--accent); border-radius:6px; padding:18px 20px;
+    background:rgba(201,168,76,.07); margin:10px 0;
+  }
+  .signal .tag{font-size:.74rem; letter-spacing:.24em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:8px;}
+  .foot{font-size:.76rem; color:#6f6a4e; text-align:center; margin-top:36px; font-style:italic;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="nav top">
+    <a href="2026-06-05.html">&larr; 2026-06-05</a>
+    <span class="disabled">2026-06-07 &rarr;</span>
+  </div>
+
+  <div class="masthead">
+    <h1>The Points Brief</h1>
+    <div class="sub">Greg&rsquo;s Daily Travel Points Dispatch</div>
+    <div class="date">Saturday, June 6, 2026</div>
+  </div>
+
+  <div class="player">
+    <span class="label">Listen</span>
+    <button id="playBtn" onclick="togglePlay()">&#9658; Play Brief</button>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="banner">
+    <strong>WINDOW CLOSING:</strong> The marquee June transfer bonuses &mdash; Chase&rarr;Marriott at 55% and both Amex&rarr;Marriott (20%) and Amex&rarr;Flying Blue (25%) &mdash; all expire <strong>June 30</strong>. Marriott&rsquo;s buy-points bonus ends sooner, <strong>June 23</strong>. Chase&rarr;Southwest&rsquo;s 30% bonus lapsed June 5.
+  </div>
+
+  <h2 class="section">Lead Story</h2>
+  <h3>Chase&rsquo;s 55% Marriott bonus is the headline of the month</h3>
+  <p>Through June 30, Chase Ultimate Rewards is transferring to Marriott Bonvoy at a <span style="color:#efe7c8;font-weight:bold;">55% bonus</span> &mdash; 1,000 Chase points become 1,550 Bonvoy points. That&rsquo;s one of the richest Chase&rarr;Marriott ratios on record and, notably, it stacks against your existing Bonvoy balance for high-end redemptions like the Ritz-Carlton and St. Regis tier (after the 2026 dynamic adjustments).</p>
+  <p>The math only works if you have a specific award in mind. Marriott points run roughly 0.7&ndash;0.8 cents each, so even boosted you&rsquo;re converting flexible Chase points (worth ~2 cents to a savvy redeemer) into a hotel currency worth less than half that. Transfer to <em>book</em>, not to speculate. See <a href="https://thepointsguy.com/loyalty-programs/current-transfer-bonuses/">The Points Guy&rsquo;s running bonus tracker</a> and <a href="https://awardwallet.com/news/chase-ultimate-rewards/marriott-transfer-bonus/">AwardWallet&rsquo;s breakdown</a> for the fine print.</p>
+
+  <h2 class="section">Active Transfer Bonuses</h2>
+  <table>
+    <thead>
+      <tr><th>From</th><th>To</th><th>Bonus</th><th>Expires</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Chase UR</td><td>Marriott Bonvoy</td><td><span class="pct">+55%</span></td><td>Jun 30</td></tr>
+      <tr><td>Amex MR</td><td>Flying Blue (AF/KLM)</td><td><span class="pct">+25%</span></td><td>Jun 30</td></tr>
+      <tr><td>Amex MR</td><td>Marriott Bonvoy</td><td><span class="pct">+20%</span></td><td>Jun 30</td></tr>
+      <tr><td>Chase UR</td><td>Southwest</td><td><span class="pct">+30%</span></td><td>Lapsed Jun 5</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:.84rem;color:#8a825f;">Your stack note: nothing currently elevated on the United, Delta, AA, Hyatt, or IHG transfer paths from Chase or Amex. Full grid at <a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler</a> and <a href="https://www.nerdwallet.com/travel/learn/credit-card-transfer-bonuses">NerdWallet</a>.</p>
+
+  <h2 class="section">Today&rsquo;s Briefs</h2>
+
+  <div class="brief">
+    <h4>Hyatt opens a 12-month award booking window</h4>
+    <p>Starting June 30, World of Hyatt Globalists, Explorists, and co-brand cardholders can book award nights up to 12 months out &mdash; a meaningful edge for hard-to-get Globalist-favorite properties. Details via <a href="https://thepointsguy.com/news/west-hollywood-edition-hyatt-booking-window/">TPG</a>.</p>
+  </div>
+
+  <div class="brief">
+    <h4>Hyatt summer promo: up to 30,000 bonus points</h4>
+    <p>Register and earn 3,000 bonus points on each stay of three-plus consecutive nights, June 1&ndash;July 31, capped at 30,000. Skews toward Hyatt Place and Hyatt Select brands across the Americas. Terms at <a href="https://awardwallet.com/news/world-of-hyatt/hyatt-promotions/">AwardWallet</a>.</p>
+  </div>
+
+  <div class="brief">
+    <h4>Marriott buy-points bonus ends June 23</h4>
+    <p>Marriott is selling points with a 40%+ bonus and a raised annual cap (150,000). At an effective ~0.7&cent;/point it&rsquo;s only worth it to top off for a specific premium booking, not to stockpile. Via <a href="https://loyaltylobby.com/2026/04/23/marriott-buy-points-40-or-higher-bonus-increased-limit-through-june-23-2026/">LoyaltyLobby</a>.</p>
+  </div>
+
+  <div class="brief">
+    <h4>United sweetens PlusPoints earning for top tiers</h4>
+    <p>Premier 1K and Global Services members now earn additional PlusPoints from PQP generated via eligible United card spend, with no cap. Upgrade awards also opened to all Premier members on award tickets as of February. Rundown at <a href="https://upgradedpoints.com/news/united-mileageplus-program-changes-2026/">Upgraded Points</a>.</p>
+  </div>
+
+  <h2 class="section">Today&rsquo;s Move</h2>
+  <div class="signal">
+    <span class="tag">The Signal</span>
+    <p style="margin-bottom:0;">If you have a concrete Marriott redemption on the calendar &mdash; a summer or fall premium-property stay &mdash; the <strong>Chase 55%</strong> is the single best action this month; transfer only the exact points the award needs before June 30. Otherwise, sit on your flexible balances. With no elevated airline transfer paths in your stack right now and AAdvantage holding its value edge (TPG June valuations), there&rsquo;s no reason to lock points into a depreciating hotel currency on speculation.</p>
+  </div>
+
+  <div class="nav bottom">
+    <a href="2026-06-05.html">&larr; 2026-06-05</a>
+    <span class="disabled">2026-06-07 &rarr;</span>
+  </div>
+
+  <div class="foot">The Points Brief &middot; Compiled for Greg &middot; Not financial advice. Verify all terms before transferring.</div>
+
+</div>
+
+<script>
+const S = "Good morning, Greg. This is The Points Brief for Saturday, June sixth, twenty twenty-six. Here's where your points stand today. The lead story this month is Chase. Through June thirtieth, Chase Ultimate Rewards is transferring to Marriott Bonvoy with a fifty-five percent bonus. That means one thousand Chase points become one thousand five hundred fifty Bonvoy points. It's one of the richest Chase to Marriott ratios we've seen. But a word of caution: this only makes sense if you have a specific award in mind. Marriott points are worth roughly seven-tenths of a cent each, while your flexible Chase points are worth around two cents to a smart redeemer. So transfer to book a stay, never to speculate. Now, the active transfer bonuses worth watching. Chase to Marriott, fifty-five percent, expiring June thirtieth. Amex Membership Rewards to Flying Blue, the Air France KLM program, twenty-five percent, also June thirtieth. And Amex to Marriott, twenty percent, June thirtieth as well. The Chase to Southwest thirty percent bonus has already lapsed, it ended June fifth. One note for your stack: there's nothing elevated right now on the United, Delta, American, Hyatt, or I-H-G transfer paths. In today's briefs: World of Hyatt is opening a twelve-month award booking window starting June thirtieth for Globalists, Explorists, and co-brand cardholders. That's a real edge for those hard-to-book Globalist favorite properties. Hyatt also has a summer promotion: register and earn three thousand bonus points on each stay of three or more consecutive nights, through July thirty-first, capped at thirty thousand points. Separately, Marriott's buy-points bonus, forty percent or higher with a raised cap, ends June twenty-third, but at seven-tenths of a cent per point it's only worth topping off for a specific booking. And United has sweetened PlusPoints earning for its top tiers, with Premier one-K and Global Services members now earning extra PlusPoints from card spend, no cap. Here's today's move. If you have a concrete Marriott redemption on the calendar, a summer or fall premium stay, the Chase fifty-five percent is the single best action this month. Transfer only the exact points that award needs, and do it before June thirtieth. Otherwise, sit tight on your flexible balances. With no elevated airline paths in your stack and American AAdvantage holding its value edge, there's no reason to lock points into a depreciating hotel currency on speculation. That's your brief for today. Make a good move.";
+
+let speaking = false;
+function pickVoice(){
+  const vs = window.speechSynthesis.getVoices();
+  return vs.find(v=>/Daniel/.test(v.name)) || vs.find(v=>/Alex/.test(v.name)) ||
+         vs.find(v=>/en[-_]US/i.test(v.lang)) || vs.find(v=>/^en/i.test(v.lang)) || vs[0];
+}
+function togglePlay(){
+  const btn = document.getElementById('playBtn');
+  if(speaking){
+    window.speechSynthesis.cancel();
+    speaking = false; btn.innerHTML = '&#9658; Play Brief'; return;
+  }
+  const u = new SpeechSynthesisUtterance(S);
+  u.rate = 0.93; u.pitch = 1.0;
+  const v = pickVoice(); if(v) u.voice = v;
+  u.onend = ()=>{ speaking=false; btn.innerHTML='&#9658; Play Brief'; };
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+  speaking = true; btn.innerHTML = '&#10073;&#10073; Pause';
+}
+if(typeof speechSynthesis!=='undefined'){ speechSynthesis.onvoiceschanged = pickVoice; }
+</script>
+</body>
+</html>
