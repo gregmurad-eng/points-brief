@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — 2026-06-11</title>
+<style>
+  :root{
+    --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4;
+  }
+  *{box-sizing:border-box;}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:Georgia,'Times New Roman',serif;
+    margin:0; padding:0; line-height:1.6;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:24px 22px 64px;}
+  .nav{
+    display:flex; justify-content:space-between; align-items:center;
+    border-top:1px solid rgba(201,168,76,.35);
+    border-bottom:1px solid rgba(201,168,76,.35);
+    padding:10px 2px; font-size:.92rem; letter-spacing:.04em;
+  }
+  .nav a{color:var(--accent); text-decoration:none;}
+  .nav a:hover{text-decoration:underline;}
+  .nav .disabled{color:rgba(216,208,180,.32); cursor:default;}
+  .masthead{text-align:center; padding:30px 0 18px;}
+  .masthead h1{
+    font-size:2.5rem; margin:0; color:var(--accent);
+    letter-spacing:.06em; font-weight:normal;
+  }
+  .masthead .sub{
+    font-size:.82rem; letter-spacing:.32em; text-transform:uppercase;
+    color:rgba(216,208,180,.7); margin-top:8px;
+  }
+  .masthead .date{font-size:.95rem; margin-top:6px; color:var(--text);}
+  .rule{height:1px; background:linear-gradient(90deg,transparent,rgba(201,168,76,.5),transparent); margin:22px 0;}
+  .player{
+    display:flex; align-items:center; gap:14px;
+    border:1px solid rgba(201,168,76,.35); border-radius:6px;
+    padding:12px 16px; margin:20px 0; background:rgba(201,168,76,.04);
+  }
+  .player button{
+    background:var(--accent); color:var(--bg); border:none;
+    font-family:inherit; font-size:.9rem; padding:8px 18px;
+    border-radius:4px; cursor:pointer; letter-spacing:.04em;
+  }
+  .player button:hover{opacity:.88;}
+  .player .pmeta{font-size:.82rem; color:rgba(216,208,180,.75);}
+  h2.section{
+    color:var(--accent); font-size:.82rem; letter-spacing:.28em;
+    text-transform:uppercase; font-weight:normal;
+    border-bottom:1px solid rgba(201,168,76,.25); padding-bottom:6px; margin:34px 0 16px;
+  }
+  .lead h3{font-size:1.7rem; margin:6px 0 12px; color:var(--text); font-weight:normal; line-height:1.25;}
+  .lead p, .brief p{margin:10px 0;}
+  a.inline{color:var(--accent);}
+  table.bonus{width:100%; border-collapse:collapse; margin:8px 0; font-size:.95rem;}
+  table.bonus th, table.bonus td{
+    text-align:left; padding:10px 8px; border-bottom:1px solid rgba(201,168,76,.18);
+  }
+  table.bonus th{color:var(--accent); font-weight:normal; letter-spacing:.06em; font-size:.78rem; text-transform:uppercase;}
+  table.bonus .pct{color:var(--accent); font-weight:bold; white-space:nowrap;}
+  table.bonus .exp{color:rgba(216,208,180,.7); white-space:nowrap;}
+  .brief{margin:0 0 20px;}
+  .brief h4{margin:0 0 4px; font-size:1.1rem; font-weight:normal; color:var(--text);}
+  .move{
+    border:1px solid var(--accent); border-radius:6px;
+    padding:20px 22px; margin:18px 0; background:rgba(201,168,76,.06);
+  }
+  .move .tag{font-size:.72rem; letter-spacing:.28em; text-transform:uppercase; color:var(--accent);}
+  .move p{margin:8px 0 0;}
+  footer{margin-top:40px; font-size:.78rem; color:rgba(216,208,180,.5); text-align:center; line-height:1.7;}
+  a{color:var(--accent);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="2026-06-10.html">&larr; 2026-06-10</a>
+    <span class="disabled">2026-06-12 &rarr;</span>
+  </nav>
+
+  <header class="masthead">
+    <h1>The Points Brief</h1>
+    <div class="sub">Greg&rsquo;s Daily Travel Points Dispatch</div>
+    <div class="date">Thursday, June 11, 2026</div>
+  </header>
+
+  <div class="player">
+    <button id="playBtn" onclick="toggleAudio()">&#9658; Listen</button>
+    <span class="pmeta">Audio brief &middot; ~3 min</span>
+  </div>
+
+  <div class="rule"></div>
+
+  <section class="lead">
+    <h2 class="section">Lead Story</h2>
+    <h3>Chase devalues Hyatt transfers &mdash; but existing cardholders get a four-month grace period</h3>
+    <p>The single biggest move in your stack this month: Chase confirmed that the Sapphire Preferred and Ink Business Preferred will transfer to World of Hyatt at a <strong>4:3 ratio</strong> instead of the long-standing 1:1, effective for anyone approved on or after <strong>June 15</strong>. If you already hold either card, you keep 1:1 transfers until <strong>October 1, 2026</strong> &mdash; so your existing pipeline of Chase points to Hyatt is safe for now.</p>
+    <p>This matters because Hyatt has been the crown jewel of the Ultimate Rewards program, routinely returning outsized value on award nights. A 4:3 ratio quietly erases roughly a quarter of that edge for new applicants. The takeaway for you: there&rsquo;s no rush, but Hyatt redemptions sourced from Chase points are now on a clock, and the smart play is to keep moving points only as you need them rather than speculatively. Read the full breakdown at <a class="inline" href="https://www.nerdwallet.com/travel/news/hyatt-award-chart-changes-2026">NerdWallet</a> and <a class="inline" href="https://awardwallet.com/news/world-of-hyatt/hyatt-promotions/">AwardWallet</a>.</p>
+  </section>
+
+  <section>
+    <h2 class="section">Active Transfer Bonuses</h2>
+    <table class="bonus">
+      <thead>
+        <tr><th>From &rarr; To</th><th>Bonus</th><th>Expires</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Chase Ultimate Rewards &rarr; Marriott Bonvoy</td><td class="pct">+55%</td><td class="exp">Jun 30</td></tr>
+        <tr><td>Chase Ultimate Rewards &rarr; Virgin Atlantic</td><td class="pct">+30%</td><td class="exp">Jul 14</td></tr>
+        <tr><td>Amex Membership Rewards &rarr; Flying Blue</td><td class="pct">+25%</td><td class="exp">Jun 30</td></tr>
+        <tr><td>Amex Membership Rewards &rarr; Marriott Bonvoy</td><td class="pct">+20%</td><td class="exp">Jun 30</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:.85rem;color:rgba(216,208,180,.7);margin-top:6px;">Full live tracker: <a class="inline" href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler</a> &middot; <a class="inline" href="https://thepointsguy.com/loyalty-programs/current-transfer-bonuses/">The Points Guy</a></p>
+  </section>
+
+  <section>
+    <h2 class="section">Today&rsquo;s Briefs</h2>
+
+    <div class="brief">
+      <h4>Hyatt&rsquo;s summer stay bonus is live</h4>
+      <p>Register and earn <strong>3,000 bonus points</strong> on every stay of three or more consecutive nights between June 1 and July 31, up to 30,000 total. Easy incremental value on stays you&rsquo;re already booking. Details at <a class="inline" href="https://awardwallet.com/news/world-of-hyatt/hyatt-promotions/">AwardWallet</a>.</p>
+    </div>
+
+    <div class="brief">
+      <h4>Marriott points sale &mdash; 40%+ bonus through June 23</h4>
+      <p>Marriott is selling Bonvoy points at a 40% or higher bonus with raised purchase limits until <strong>June 23</strong>. Only worth it against a specific high-value redemption, but the math can work for aspirational stays. Via <a class="inline" href="https://loyaltylobby.com/2026/06/05/marriott-bonvoy-bonus-points-rates-update-june-2026/">LoyaltyLobby</a>.</p>
+    </div>
+
+    <div class="brief">
+      <h4>Hyatt points valuation slips to 1.55 cents</h4>
+      <p>TPG&rsquo;s June valuations marked Hyatt down from 1.65 to <strong>1.55 cents per point</strong> &mdash; still the strongest hotel currency in your stack, but a reminder the gap is narrowing. See <a class="inline" href="https://thepointsguy.com/loyalty-programs/monthly-valuations/">TPG valuations</a>.</p>
+    </div>
+
+    <div class="brief">
+      <h4>Sapphire Preferred refresh hits June 15</h4>
+      <p>Alongside the Hyatt ratio change, the Sapphire Preferred adds perks at the same $95 fee: the annual Chase Travel hotel credit doubles to <strong>$100</strong>, plus new <strong>3x</strong> categories on gas and vacation rentals. More at <a class="inline" href="https://thepointsguy.com/credit-cards/best-credit-card-offers-this-month/">The Points Guy</a>.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section">Today&rsquo;s Move</h2>
+    <div class="move">
+      <span class="tag">Signal</span>
+      <p>If you have a Virgin Atlantic redemption in mind &mdash; ANA business class, Air France/KLM, or Delta partner space &mdash; the fresh <strong>30% Chase &rarr; Virgin Atlantic bonus</strong> (live June 9 through July 14) is the best new opening this week. Unlike the June 30 bonuses, you have runway here, so confirm award availability <em>first</em>, then transfer. Don&rsquo;t speculatively move points into Virgin without a seat on hold. <a class="inline" href="https://loyaltylobby.com/2026/06/09/chase-ultimate-rewards-to-virgin-atlantic-30-conversion-bonus-june-9-july-14-2026/">Details &rarr;</a></p>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <nav class="nav">
+    <a href="2026-06-10.html">&larr; 2026-06-10</a>
+    <span class="disabled">2026-06-12 &rarr;</span>
+  </nav>
+
+  <footer>
+    The Points Brief &middot; A daily dispatch for Greg&rsquo;s points stack<br>
+    Chase UR &middot; Amex MR &middot; United &middot; Delta &middot; AA &middot; Hyatt &middot; Marriott &middot; IHG<br>
+    Always confirm award availability before transferring. Bonuses change without notice.
+  </footer>
+
+</div>
+
+<script>
+const S = "Good morning, Greg. This is The Points Brief for Thursday, June eleventh. Let's get into it. The lead story this week is a Chase devaluation that hits the heart of your Ultimate Rewards strategy. Chase has confirmed that the Sapphire Preferred and the Ink Business Preferred will transfer to World of Hyatt at a four-to-three ratio instead of one-to-one. That change takes effect for anyone approved on or after June fifteenth. Here's the good news, though: if you already hold either of those cards, you keep your one-to-one transfers all the way through October first. So your existing Chase-to-Hyatt pipeline is safe for the next several months. The reason this matters is that Hyatt has long been the most valuable place to send your Chase points, and a four-to-three ratio quietly erases about a quarter of that edge. There's no need to panic, but the smart play is to move points only as you actually need them, rather than stockpiling. Now, to the active transfer bonuses. There are four worth knowing right now. Chase to Marriott Bonvoy is running a fifty-five percent bonus through June thirtieth. Chase to Virgin Atlantic is at thirty percent through July fourteenth. On the Amex side, Membership Rewards to Flying Blue is twenty-five percent, and Membership Rewards to Marriott Bonvoy is twenty percent, both ending June thirtieth. A few quick briefs. First, Hyatt's summer stay bonus is live: register and earn three thousand bonus points on every stay of three or more consecutive nights through July thirty-first, up to thirty thousand points total. Second, Marriott is running a points sale at forty percent or higher through June twenty-third, but only buy if you have a specific high-value redemption in mind. Third, the Points Guy marked Hyatt down from one point six five cents to one point five five cents per point this month. It's still your strongest hotel currency, but the gap is narrowing. And fourth, the Sapphire Preferred refresh also lands June fifteenth, doubling the annual hotel credit to one hundred dollars and adding three-times categories on gas and vacation rentals, all at the same ninety-five dollar fee. Finally, today's move. If you have a Virgin Atlantic redemption in mind, the fresh thirty percent Chase to Virgin Atlantic bonus is the best new opening this week, and unlike the June thirtieth deals, you've got runway until July fourteenth. So confirm your award seat first, then transfer. Never move points into Virgin without a seat on hold. That's your brief. Go make the points work. See you tomorrow.";
+
+let speaking = false;
+function pickVoice(){
+  const vs = speechSynthesis.getVoices();
+  return vs.find(v=>/Daniel/i.test(v.name)) || vs.find(v=>/Alex/i.test(v.name)) ||
+         vs.find(v=>/en-GB/i.test(v.lang)) || vs.find(v=>/en-US/i.test(v.lang)) || vs[0];
+}
+function toggleAudio(){
+  const btn = document.getElementById('playBtn');
+  if(speaking){ speechSynthesis.cancel(); speaking=false; btn.innerHTML='&#9658; Listen'; return; }
+  const u = new SpeechSynthesisUtterance(S);
+  u.rate = 0.93;
+  const v = pickVoice(); if(v) u.voice = v;
+  u.onend = ()=>{ speaking=false; btn.innerHTML='&#9658; Listen'; };
+  speechSynthesis.cancel();
+  speechSynthesis.speak(u);
+  speaking = true; btn.innerHTML='&#10073;&#10073; Pause';
+}
+if(typeof speechSynthesis!=='undefined'){ speechSynthesis.onvoiceschanged = pickVoice; }
+</script>
+</body>
+</html>
