@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — 2026-06-15</title>
+<style>
+  :root{
+    --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4;
+  }
+  *{box-sizing:border-box;}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:Georgia, 'Times New Roman', serif;
+    margin:0; padding:0; line-height:1.65;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:0 22px 60px;}
+  a{color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(201,168,76,.35);}
+  a:hover{border-bottom-color:var(--accent);}
+  .nav{
+    display:flex; justify-content:space-between; align-items:center;
+    font-size:.82rem; letter-spacing:.04em; padding:14px 0;
+    border-bottom:1px solid rgba(201,168,76,.22);
+  }
+  .nav .next{color:#5b5740; border-bottom:none; cursor:default;}
+  .nav .prev{color:var(--accent);}
+  .masthead{text-align:center; padding:34px 0 10px;}
+  .masthead h1{
+    font-size:2.5rem; margin:0; letter-spacing:.06em; font-weight:normal;
+    color:#e8dcb0;
+  }
+  .masthead .rule{
+    width:90px; height:2px; background:var(--accent); margin:14px auto 10px;
+  }
+  .masthead .date{font-size:.9rem; letter-spacing:.18em; text-transform:uppercase; color:#9c8f5f;}
+  .masthead .tag{font-style:italic; color:#9c8f5f; font-size:.92rem; margin-top:6px;}
+  .player{
+    display:flex; align-items:center; gap:14px; justify-content:center;
+    margin:22px auto; padding:12px 18px; max-width:360px;
+    border:1px solid rgba(201,168,76,.3); border-radius:6px;
+    background:rgba(201,168,76,.04);
+  }
+  .player button{
+    background:var(--accent); color:#080c14; border:none; cursor:pointer;
+    font-family:inherit; font-size:.9rem; padding:8px 18px; border-radius:4px;
+    letter-spacing:.05em;
+  }
+  .player button:hover{background:#dcbe66;}
+  .player .status{font-size:.8rem; color:#9c8f5f; font-style:italic;}
+  .urgent{
+    border:1px solid #c9542c; background:rgba(201,84,44,.12);
+    border-radius:6px; padding:14px 18px; margin:26px 0;
+    font-size:.95rem;
+  }
+  .urgent strong{color:#e08a52; letter-spacing:.04em; text-transform:uppercase; font-size:.8rem;}
+  h2{
+    font-size:.86rem; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--accent); border-bottom:1px solid rgba(201,168,76,.25);
+    padding-bottom:8px; margin:46px 0 18px;
+  }
+  h3{font-size:1.5rem; font-weight:normal; color:#e8dcb0; margin:0 0 12px; line-height:1.3;}
+  p{margin:0 0 16px;}
+  table{width:100%; border-collapse:collapse; font-size:.92rem; margin:6px 0 10px;}
+  th,td{text-align:left; padding:10px 8px; border-bottom:1px solid rgba(201,168,76,.18);}
+  th{color:#9c8f5f; font-weight:normal; text-transform:uppercase; letter-spacing:.1em; font-size:.72rem;}
+  td .pct{color:var(--accent); font-weight:bold;}
+  .brief{margin-bottom:24px;}
+  .brief h4{font-size:1.08rem; color:#e8dcb0; font-weight:normal; margin:0 0 6px;}
+  .brief p{font-size:.95rem; margin:0;}
+  .signal{
+    border:1px solid var(--accent); border-radius:6px; padding:22px 24px;
+    background:rgba(201,168,76,.06); margin:18px 0;
+  }
+  .signal .label{font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; color:var(--accent);}
+  .signal p{margin:10px 0 0; font-size:1.05rem;}
+  footer{margin-top:50px; padding-top:18px; border-top:1px solid rgba(201,168,76,.22); font-size:.78rem; color:#6b6549; text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a class="prev" href="2026-06-14.html">← 2026-06-14</a>
+    <span class="next">2026-06-16 →</span>
+  </nav>
+
+  <header class="masthead">
+    <h1>The Points Brief</h1>
+    <div class="rule"></div>
+    <div class="date">Monday, June 15, 2026</div>
+    <div class="tag">A daily dispatch on miles, points &amp; the art of the redemption</div>
+  </header>
+
+  <div class="player">
+    <button id="playBtn" onclick="toggleAudio()">▶ Listen</button>
+    <span class="status" id="audioStatus">~3 min read aloud</span>
+  </div>
+
+  <div class="urgent">
+    <strong>⏳ Expires today</strong><br>
+    The <a href="https://awardwallet.com/news/world-of-hyatt/hyatt-promotions/" target="_blank" rel="noopener">World of Hyatt → Etihad Guest</a> transfer bonus of up to 40% closes tonight, June 15. If an Etihad redemption is on your radar, move points before midnight — otherwise let it pass; the value is thin for most itineraries.
+  </div>
+
+  <section>
+    <h2>Lead Story</h2>
+    <h3>The new Sapphire Preferred lands today — richer credits, a quietly poorer points engine</h3>
+    <p>As of this morning, Chase has rolled out its long-teased overhaul of the <a href="https://www.cnbc.com/select/chase-sapphire-preferred-new-benefits-2026/" target="_blank" rel="noopener">Sapphire Preferred</a>, and it is a study in give-and-take. The annual hotel credit doubles from $50 to $100, a complimentary year of Apple TV joins the lineup, and a Global Entry / TSA PreCheck / NEXUS credit of up to $120 every four years finally arrives — all while the annual fee holds at $95.</p>
+    <p>The catch sits in the fine print. The card's 10% anniversary points bonus is being retired, and there are quieter category and transfer-partner tweaks beneath the headline perks. Timing matters: anyone applying on or <a href="https://upgradedpoints.com/news/chase-sapphire-preferred-changes-2026/" target="_blank" rel="noopener">after today</a> inherits the devaluations immediately, while existing cardholders are shielded until October 1, 2026. If you have been sitting on the fence, there is a real argument for applying before the negative changes bite — or for simply banking the next few months of the old earn structure if you already hold the card.</p>
+  </section>
+
+  <section>
+    <h2>Active Transfer Bonuses</h2>
+    <table>
+      <thead>
+        <tr><th>From → To</th><th>Bonus</th><th>Expires</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="https://awardwallet.com/news/chase-ultimate-rewards/marriott-transfer-bonus/" target="_blank" rel="noopener">Chase UR → Marriott Bonvoy</a></td><td><span class="pct">55%</span></td><td>Jun 30, 2026</td></tr>
+        <tr><td><a href="https://frequentmiler.com/current-point-transfer-bonuses/" target="_blank" rel="noopener">Chase UR → Virgin Atlantic</a></td><td><span class="pct">30%</span></td><td>Jul 14, 2026</td></tr>
+        <tr><td><a href="https://www.point.me/insights/current-transfer-bonuses/" target="_blank" rel="noopener">Amex MR → Air France-KLM Flying Blue</a></td><td><span class="pct">25%</span></td><td>Jun 30, 2026</td></tr>
+        <tr><td><a href="https://awardwallet.com/news/amex-membership-rewards/marriott-transfer-bonus/" target="_blank" rel="noopener">Amex MR → Marriott Bonvoy</a></td><td><span class="pct">20%</span></td><td>Jun 30, 2026</td></tr>
+        <tr><td><a href="https://awardwallet.com/news/united-mileageplus/hotel-transfer-bonus/" target="_blank" rel="noopener">8 hotel programs → United MileagePlus</a></td><td><span class="pct">25%</span></td><td>Jun 30, 2026</td></tr>
+        <tr><td><a href="https://awardwallet.com/news/world-of-hyatt/hyatt-promotions/" target="_blank" rel="noopener">World of Hyatt → Etihad Guest</a></td><td><span class="pct">40%</span></td><td>Jun 15, 2026 — today</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:.82rem; color:#6b6549;">Rates and dates reflect the latest published promotions; always confirm in-program before transferring, as points move one-way and cannot be reversed.</p>
+  </section>
+
+  <section>
+    <h2>Today's Briefs</h2>
+
+    <div class="brief">
+      <h4>Hyatt's summer stack: 3,000 bonus points per long stay</h4>
+      <p>Through July 31, <a href="https://onemileatatime.com/deals/world-of-hyatt-promotion/" target="_blank" rel="noopener">World of Hyatt</a> is handing out 3,000 bonus points on every stay of three or more consecutive nights — up to 30,000 points across the promotion. Stackable with the separate 500-points-per-night offer at newly opened properties through June 30.</p>
+    </div>
+
+    <div class="brief">
+      <h4>United's hotel-to-air bridge pays a 25% premium</h4>
+      <p>Until June 30, transfers from eight hotel programs — Hyatt, Marriott, IHG, Hilton and more — into <a href="https://awardwallet.com/news/united-mileageplus/hotel-transfer-bonus/" target="_blank" rel="noopener">United MileagePlus</a> earn a 25% bonus, capped at 25,000 bonus miles. Useful for topping off a MileagePlus balance, though hotel-to-airline ratios remain unkind for most.</p>
+    </div>
+
+    <div class="brief">
+      <h4>IHG leans into the outdoors with Under Canvas</h4>
+      <p>Through July 1, all 14 <a href="https://awardwallet.com/news/hotels/current-hotel-promotions/" target="_blank" rel="noopener">Under Canvas</a> glamping properties earn 2,000 IHG One Rewards bonus points per night, with a separate 20-points-per-dollar offer for those who registered by June 12.</p>
+    </div>
+
+    <div class="brief">
+      <h4>The Amex Platinum's $895 era</h4>
+      <p>Amex's refreshed <a href="https://travelupdate.com/2026-american-express-platinum-card-changes-updated-list-with-dates/" target="_blank" rel="noopener">Platinum</a> piles on up to $600 in annual hotel credits and premium hotel elite status — but the annual fee climbs to $895 from $695. Whether the coupon book outruns the fee depends entirely on how you travel.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Today's Move</h2>
+    <div class="signal">
+      <div class="label">The signal</div>
+      <p>If you have Marriott redemptions in your future, the <strong>Chase → Marriott 55% bonus</strong> is the standout play on the board right now — better than the Amex side's 20%, and live through June 30. Transfer only what a specific award needs; speculative transfers into Bonvoy rarely age well. Everything else this week is a "nice if it fits" rather than a "act now," with the lone exception of the Hyatt → Etihad bonus dying tonight.</p>
+    </div>
+  </section>
+
+  <nav class="nav" style="border-top:1px solid rgba(201,168,76,.22); border-bottom:none; margin-top:30px;">
+    <a class="prev" href="2026-06-14.html">← 2026-06-14</a>
+    <span class="next">2026-06-16 →</span>
+  </nav>
+
+  <footer>
+    The Points Brief · compiled June 15, 2026 · for informational purposes only, not financial advice
+  </footer>
+
+</div>
+
+<script>
+const S = "The Points Brief for Monday, June fifteenth, twenty twenty-six. Here's where miles and points stand today. First, the urgent one: the World of Hyatt to Etihad Guest transfer bonus, up to forty percent, closes tonight. If an Etihad award is on your radar, move your points before midnight. Otherwise, let it go — the value is thin for most trips. Now, today's lead story. Chase has rolled out its long-awaited overhaul of the Sapphire Preferred, and it's a real study in give and take. The good news: the annual hotel credit doubles, from fifty dollars to a hundred. You get a complimentary year of Apple TV, and a Global Entry or T-S-A PreCheck credit of up to a hundred twenty dollars every four years. And the annual fee stays put at ninety-five. But here's the catch. The card's ten percent anniversary points bonus is being retired, along with some quieter category tweaks. Timing matters: anyone applying today or later inherits those cuts immediately, while existing cardholders are protected until October first. So if you've been on the fence, there's a genuine argument for applying before the downgrades bite. On to the transfer bonuses worth knowing. The headliner is Chase Ultimate Rewards to Marriott Bonvoy at fifty-five percent, running through June thirtieth. Chase to Virgin Atlantic is at thirty percent through July fourteenth. On the Amex side, Membership Rewards to Air France K-L-M Flying Blue is at twenty-five percent, and Amex to Marriott at twenty percent, both through the end of the month. And eight hotel programs into United MileagePlus carry a twenty-five percent bonus, also through June thirtieth. A few quick briefs. World of Hyatt is giving three thousand bonus points on every stay of three or more nights through July thirty-first, up to thirty thousand points total. I-H-G is offering two thousand bonus points a night at its Under Canvas glamping properties through July first. And the refreshed Amex Platinum now piles on up to six hundred dollars in hotel credits — but the annual fee jumps to eight ninety-five. Finally, today's move. If you've got Marriott redemptions ahead, that Chase to Marriott fifty-five percent bonus is the standout play on the board right now. Transfer only what a specific award needs — speculative transfers into Bonvoy rarely age well. Everything else this week is nice if it fits, rather than act now. That's your brief. See you tomorrow.";
+
+let utter = null;
+let speaking = false;
+
+function pickVoice(){
+  const voices = window.speechSynthesis.getVoices();
+  return voices.find(v => /Daniel/i.test(v.name))
+      || voices.find(v => /Alex/i.test(v.name))
+      || voices.find(v => /en[-_]GB/i.test(v.lang))
+      || voices.find(v => /en[-_]US/i.test(v.lang))
+      || voices[0];
+}
+
+function toggleAudio(){
+  const btn = document.getElementById('playBtn');
+  const status = document.getElementById('audioStatus');
+  if(!('speechSynthesis' in window)){
+    status.textContent = "Audio not supported in this browser";
+    return;
+  }
+  if(speaking){
+    window.speechSynthesis.cancel();
+    speaking = false;
+    btn.textContent = "▶ Listen";
+    status.textContent = "Paused";
+    return;
+  }
+  utter = new SpeechSynthesisUtterance(S);
+  utter.rate = 0.93;
+  const v = pickVoice();
+  if(v) utter.voice = v;
+  utter.onend = () => { speaking = false; btn.textContent = "▶ Listen"; status.textContent = "Finished"; };
+  utter.onstart = () => { status.textContent = "Playing…"; };
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(utter);
+  speaking = true;
+  btn.textContent = "❚❚ Pause";
+}
+
+if('speechSynthesis' in window){
+  window.speechSynthesis.onvoiceschanged = () => {};
+}
+</script>
+</body>
+</html>
