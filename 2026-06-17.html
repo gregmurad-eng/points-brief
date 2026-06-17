@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — 2026-06-17</title>
+<style>
+  :root{ --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--bg); color:var(--text); font-family:Georgia,'Times New Roman',serif; line-height:1.6; }
+  .wrap{ max-width:760px; margin:0 auto; padding:0 22px 60px; }
+  a{ color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(201,168,76,.35); }
+  a:hover{ border-bottom-color:var(--accent); }
+  .nav{ display:flex; justify-content:space-between; align-items:center; font-size:.85rem; letter-spacing:.04em;
+        padding:14px 0; border-bottom:1px solid rgba(201,168,76,.25); }
+  .nav .next{ color:#555; opacity:.45; cursor:default; }
+  .masthead{ text-align:center; padding:34px 0 18px; border-bottom:2px solid var(--accent); }
+  .masthead h1{ font-size:2.7rem; margin:0; letter-spacing:.06em; color:var(--accent); font-weight:normal; }
+  .masthead .sub{ font-size:.8rem; letter-spacing:.32em; text-transform:uppercase; margin-top:10px; opacity:.75; }
+  .masthead .date{ font-size:.9rem; margin-top:6px; opacity:.6; font-style:italic; }
+  .player{ display:flex; align-items:center; gap:14px; margin:22px 0; padding:13px 18px;
+           border:1px solid rgba(201,168,76,.3); border-radius:3px; background:rgba(201,168,76,.04); }
+  .player button{ background:var(--accent); color:var(--bg); border:none; padding:9px 18px; font-family:inherit;
+                  font-size:.85rem; letter-spacing:.05em; cursor:pointer; border-radius:2px; }
+  .player button:hover{ opacity:.88; }
+  .player .label{ font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; opacity:.7; }
+  h2.section{ font-size:.82rem; letter-spacing:.28em; text-transform:uppercase; color:var(--accent);
+              border-bottom:1px solid rgba(201,168,76,.25); padding-bottom:7px; margin:42px 0 18px; }
+  h3{ font-size:1.5rem; font-weight:normal; margin:0 0 10px; color:#efe7cc; }
+  p{ margin:0 0 16px; }
+  .lead p:first-of-type::first-letter{ font-size:3.1rem; float:left; line-height:.8; padding:6px 10px 0 0; color:var(--accent); }
+  table{ width:100%; border-collapse:collapse; margin:8px 0 10px; font-size:.95rem; }
+  th,td{ text-align:left; padding:10px 12px; border-bottom:1px solid rgba(201,168,76,.18); }
+  th{ font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); opacity:.85; }
+  td .pct{ color:var(--accent); font-weight:bold; }
+  .brief{ margin-bottom:22px; }
+  .brief h4{ font-size:1.12rem; font-weight:normal; margin:0 0 5px; color:#efe7cc; }
+  .brief .tag{ font-size:.68rem; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); opacity:.7; }
+  .move{ border:1px solid var(--accent); border-radius:3px; padding:22px 24px; margin:14px 0 0;
+         background:rgba(201,168,76,.05); }
+  .move .label{ font-size:.7rem; letter-spacing:.26em; text-transform:uppercase; color:var(--accent); margin-bottom:8px; }
+  .move p{ margin:0; font-size:1.08rem; }
+  footer{ margin-top:50px; padding-top:18px; border-top:1px solid rgba(201,168,76,.25);
+          font-size:.74rem; opacity:.55; text-align:center; letter-spacing:.05em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a class="prev" href="2026-06-16.html">&larr; 2026-06-16</a>
+    <span class="next">2026-06-18 &rarr;</span>
+  </nav>
+
+  <header class="masthead">
+    <h1>The Points Brief</h1>
+    <div class="sub">Daily Intelligence for the Frequent Flyer</div>
+    <div class="date">Wednesday, June 17, 2026</div>
+  </header>
+
+  <div class="player">
+    <button id="pbPlay" onclick="pbToggle()">&#9654;&nbsp; Listen</button>
+    <span class="label" id="pbStatus">Audio brief &middot; ~3 min</span>
+  </div>
+
+  <h2 class="section">Lead Story</h2>
+  <div class="lead">
+    <h3>The Hyatt clock starts now: lock in 1:1 before October</h3>
+    <p>The best-kept transfer ratio in your wallet has an expiration date. Chase has confirmed that existing Sapphire Preferred and Ink Business Preferred cardholders will keep the cherished 1:1 transfer from Ultimate Rewards to World of Hyatt only through September 30, 2026. From October 1, that rate steps down to 4:3 — meaning 1,000 Chase points will buy 750 Hyatt points instead of 1,000. Anyone who applied for either card on or after June 15 is already on the 4:3 rate.</p>
+    <p>For your stack, this is the single most consequential change of the year. Hyatt remains the rare hotel program where points routinely return north of 2 cents apiece, and the 1:1 pipeline from Chase is what makes it sing. There is no need to speculatively transfer — Chase points are worth more sitting flexible than parked in Hyatt — but if you have a confirmed redemption in mind for late 2026 or 2027, the math says move those points before the September 30 cliff. <a href="https://thepointsguy.com/loyalty-programs/transfer-ultimate-rewards-points-hyatt/">Full details on the Chase-to-Hyatt change</a>.</p>
+  </div>
+
+  <h2 class="section">Active Transfer Bonuses</h2>
+  <table>
+    <thead>
+      <tr><th>Route</th><th>Bonus</th><th>Expires</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Chase Ultimate Rewards &rarr; Marriott Bonvoy</td><td class="pct">55%</td><td>Jun 30, 2026</td></tr>
+      <tr><td>Chase Ultimate Rewards &rarr; Virgin Atlantic</td><td class="pct">30%</td><td>Jul 14, 2026</td></tr>
+      <tr><td>Amex Membership Rewards &rarr; Qatar Privilege Club</td><td class="pct">30%</td><td>Jun 30, 2026</td></tr>
+      <tr><td>Amex Membership Rewards &rarr; Flying Blue</td><td class="pct">25%</td><td>Jun 30, 2026</td></tr>
+      <tr><td>Amex Membership Rewards &rarr; Marriott Bonvoy</td><td class="pct">20%</td><td>Jun 30, 2026</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:.85rem;opacity:.7;">Sources: <a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler</a>, <a href="https://awardwallet.com/news/credit-card-transfer-bonuses/">AwardWallet</a>.</p>
+
+  <h2 class="section">Today's Briefs</h2>
+
+  <div class="brief">
+    <div class="tag">Hotels</div>
+    <h4>Chase&rarr;Marriott 55% bonus enters its final two weeks</h4>
+    <p>The headline hotel transfer bonus of the season steps off at month-end. Chase to Marriott Bonvoy is running at 55% through June 30 — down from the 65% peak in early May, but still strong enough to make a 1,000-point transfer land as 1,550 Bonvoy points. Best paired with a known off-peak redemption rather than speculative stockpiling. <a href="https://awardwallet.com/news/chase-ultimate-rewards/marriott-transfer-bonus/">Details</a>.</p>
+  </div>
+
+  <div class="brief">
+    <div class="tag">Cards</div>
+    <h4>Sapphire Preferred's 100K offer is back — but the 10% anniversary bonus is gone for newcomers</h4>
+    <p>The Chase Sapphire Preferred is again dangling a 100,000-point welcome offer, one of its richest ever, with the annual fee holding at $95. The catch for new applicants: Chase has quietly killed the 10% anniversary points bonus for anyone who applies on or after June 15. Existing cardholders keep it. <a href="https://upgradedpoints.com/news/chase-sapphire-preferred-100k-bonus-2026/">More</a>.</p>
+  </div>
+
+  <div class="brief">
+    <div class="tag">Airlines</div>
+    <h4>Delta marks 30 years with Amex by refreshing its SkyMiles cards</h4>
+    <p>Effective June 4, Delta SkyMiles American Express cardholders began seeing new benefits and a redesigned card face, timed to the 30th anniversary of the Delta-Amex partnership. Meanwhile United's 2026 changes continue tilting toward cardholders, with upgrade awards now eligible on award tickets for all Premier members. <a href="https://awardwallet.com/news/delta-skymiles/delta-credit-card-changes-2026/">Delta changes</a>.</p>
+  </div>
+
+  <div class="brief">
+    <div class="tag">Transfers</div>
+    <h4>Amex's best current bonus runs to Qatar at 30%</h4>
+    <p>Among the three live Amex Membership Rewards bonuses, Qatar Privilege Club's 30% leads the pack, followed by Flying Blue at 25% and Marriott at 20% — all expiring June 30. Qatar Avios open up Qsuites and oneworld partner space; Flying Blue is the flexible workhorse for SkyTeam and frequent flash sales. <a href="https://www.point.me/insights/current-transfer-bonuses/">Current bonuses</a>.</p>
+  </div>
+
+  <h2 class="section">Today's Move</h2>
+  <div class="move">
+    <div class="label">The Signal</div>
+    <p>Don't chase the June 30 hotel bonuses unless you have a redemption locked. The quieter, bigger play is Hyatt: if a late-2026 or 2027 stay is on your radar, transfer Chase points at 1:1 before the September 30 deadline — that's the rate you'll miss most once it's gone.</p>
+  </div>
+
+  <footer>
+    The Points Brief &middot; Compiled June 17, 2026 &middot; Informational only; verify terms with each program before transferring.
+  </footer>
+
+</div>
+
+<script>
+const S = "Good morning, and welcome to The Points Brief for Wednesday, June seventeenth. Let's start with the story that matters most for your wallet this year. Chase has confirmed that existing Sapphire Preferred and Ink Business Preferred cardholders will keep the one-to-one transfer from Ultimate Rewards to World of Hyatt only through September thirtieth. After that, on October first, the rate drops to four-to-three. In plain terms, a thousand Chase points will buy you seven hundred fifty Hyatt points instead of a full thousand. Anyone who applied for either card on or after June fifteenth is already on that reduced rate. Now, this matters because Hyatt is the rare hotel program where points routinely return more than two cents each, and that one-to-one pipeline from Chase is what makes it shine. You don't need to rush and transfer speculatively. Your Chase points are worth more staying flexible. But if you have a confirmed stay in mind for late twenty twenty-six or into twenty twenty-seven, the math says move those points before the September thirtieth cliff. Now to active transfer bonuses. On the hotel side, Chase to Marriott Bonvoy is running at fifty-five percent through June thirtieth. That turns a thousand Chase points into fifteen hundred fifty Bonvoy points. It's down from the sixty-five percent peak in early May, but still worth it if you have a known redemption. On the Amex side, three bonuses are live and all expire June thirtieth. Qatar Privilege Club leads at thirty percent, Flying Blue follows at twenty-five, and Marriott rounds it out at twenty. And over on Chase, Virgin Atlantic is getting a thirty percent bonus through July fourteenth. In card news, the Chase Sapphire Preferred is once again offering a hundred thousand point welcome bonus, one of its richest ever, with the annual fee holding at ninety-five dollars. But there's a catch for new applicants. Chase has quietly removed the ten percent anniversary points bonus for anyone who applies on or after June fifteenth. If you already hold the card, you keep it. On the airline front, Delta marked thirty years with American Express by refreshing its SkyMiles cards on June fourth, with new benefits and a new look. And United continues tilting toward cardholders, with upgrade awards now eligible on award tickets for all Premier members. So here's today's move. Don't chase the June thirtieth hotel bonuses unless you already have a redemption locked in. The quieter, bigger play is Hyatt. If a late twenty twenty-six or twenty twenty-seven stay is on your radar, transfer those Chase points at one-to-one before September thirtieth. That's the rate you'll miss most once it's gone. That's your brief. Travel well, and spend those points wisely.";
+
+let pbUtter = null, pbOn = false;
+function pbPickVoice(){
+  const vs = window.speechSynthesis.getVoices();
+  return vs.find(v=>/Daniel/i.test(v.name)) || vs.find(v=>/Alex/i.test(v.name))
+      || vs.find(v=>/en[-_]GB/i.test(v.lang)) || vs.find(v=>/en/i.test(v.lang)) || vs[0];
+}
+function pbToggle(){
+  const btn=document.getElementById('pbPlay'), st=document.getElementById('pbStatus');
+  if(pbOn){ window.speechSynthesis.cancel(); pbOn=false; btn.innerHTML='&#9654;&nbsp; Listen'; st.textContent='Audio brief · ~3 min'; return; }
+  pbUtter=new SpeechSynthesisUtterance(S);
+  pbUtter.rate=0.93; const v=pbPickVoice(); if(v) pbUtter.voice=v;
+  pbUtter.onend=()=>{ pbOn=false; btn.innerHTML='&#9654;&nbsp; Listen'; st.textContent='Audio brief · ~3 min'; };
+  window.speechSynthesis.cancel(); window.speechSynthesis.speak(pbUtter);
+  pbOn=true; btn.innerHTML='&#9632;&nbsp; Stop'; st.textContent='Playing…';
+}
+if(typeof speechSynthesis!=='undefined'){ speechSynthesis.onvoiceschanged=pbPickVoice; }
+</script>
+</body>
+</html>
