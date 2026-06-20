@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — June 20, 2026</title>
+<style>
+  :root{ --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4; }
+  *{box-sizing:border-box}
+  body{ background:var(--bg); color:var(--text); font-family:Georgia,'Times New Roman',serif;
+    margin:0; line-height:1.65; }
+  .wrap{ max-width:760px; margin:0 auto; padding:0 22px 60px; }
+  a{ color:var(--accent); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
+  .nav{ display:flex; justify-content:space-between; align-items:center;
+    border-bottom:1px solid rgba(201,168,76,.25); padding:14px 0; font-size:.95rem; }
+  .nav .disabled{ color:#555; cursor:default; }
+  .masthead{ text-align:center; padding:38px 0 14px; border-bottom:2px solid var(--accent); }
+  .masthead h1{ font-size:2.5rem; letter-spacing:2px; margin:0; color:var(--accent); font-weight:normal; }
+  .masthead .sub{ font-size:.8rem; letter-spacing:4px; text-transform:uppercase; margin-top:8px; color:#8a8466; }
+  .masthead .date{ font-style:italic; margin-top:10px; color:var(--text); }
+  .player{ display:flex; align-items:center; gap:14px; justify-content:center;
+    margin:22px 0; padding:14px; border:1px solid rgba(201,168,76,.3); border-radius:6px; }
+  .player button{ background:var(--accent); color:var(--bg); border:none; padding:10px 18px;
+    font-family:inherit; font-size:.95rem; border-radius:4px; cursor:pointer; letter-spacing:1px; }
+  .player button:hover{ opacity:.88; }
+  .player .label{ font-size:.8rem; letter-spacing:2px; text-transform:uppercase; color:#8a8466; }
+  h2.section{ color:var(--accent); font-size:1.5rem; font-weight:normal; margin:42px 0 6px;
+    border-bottom:1px solid rgba(201,168,76,.25); padding-bottom:6px; }
+  .kicker{ font-size:.72rem; letter-spacing:3px; text-transform:uppercase; color:#8a8466; margin-top:34px; }
+  .lead h3{ font-size:1.85rem; line-height:1.25; margin:6px 0 12px; color:var(--text); font-weight:normal; }
+  table{ width:100%; border-collapse:collapse; margin:16px 0; font-size:.95rem; }
+  th,td{ text-align:left; padding:10px 8px; border-bottom:1px solid rgba(201,168,76,.18); }
+  th{ color:var(--accent); font-weight:normal; letter-spacing:1px; font-size:.78rem; text-transform:uppercase; }
+  td .exp{ color:#c98b4c; font-size:.85rem; }
+  .brief{ margin:20px 0; }
+  .brief h4{ margin:0 0 4px; color:var(--text); font-size:1.15rem; font-weight:normal; }
+  .brief h4 span{ color:var(--accent); }
+  .move{ border:1px solid var(--accent); border-radius:6px; padding:22px; margin:30px 0;
+    background:rgba(201,168,76,.05); }
+  .move .tag{ font-size:.72rem; letter-spacing:3px; text-transform:uppercase; color:var(--accent); }
+  .move h3{ font-size:1.4rem; font-weight:normal; margin:8px 0; color:var(--text); }
+  footer{ text-align:center; margin-top:48px; padding-top:20px; font-size:.8rem; color:#5f5b48;
+    border-top:1px solid rgba(201,168,76,.2); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="2026-06-19.html">&larr; 2026-06-19</a>
+    <span class="disabled">2026-06-21 &rarr;</span>
+  </nav>
+
+  <header class="masthead">
+    <h1>The Points Brief</h1>
+    <div class="sub">Daily Intelligence for the Frequent Flyer</div>
+    <div class="date">Saturday, June 20, 2026</div>
+  </header>
+
+  <div class="player">
+    <span class="label">Listen</span>
+    <button id="playBtn" onclick="toggleAudio()">&#9654;&nbsp; Play Briefing</button>
+    <span class="label" id="audioStatus"></span>
+  </div>
+
+  <div class="kicker">Lead Story</div>
+  <section class="lead">
+    <h3>Chase's 55% Marriott bonus is the best transfer of the month — and the clock runs out June 30</h3>
+    <p>For the back half of June, the most valuable button in your loyalty arsenal sits inside the Chase
+    Ultimate Rewards transfer page. Through June 30, Chase is running a <strong>55% transfer bonus to
+    Marriott Bonvoy</strong>, turning 1,000 Ultimate Rewards points into 1,550 Bonvoy points. That is the
+    richest Chase-to-Marriott ratio we've seen in well over a year, and it stacks neatly on top of Bonvoy's
+    fifth-night-free award benefit.</p>
+    <p>The math gets interesting at the top of the chart. A 100,000-point Chase transfer lands as 155,000
+    Bonvoy points — enough, after the fifth-night-free credit, to cover a four-night-equivalent stay at many
+    Category 6 and 7 properties. The caveat is the same as always with Marriott: confirm the cash-versus-points
+    value on your specific dates before you pull the trigger, because Bonvoy's dynamic pricing can erase the
+    edge on peak weekends. But as a way to top off a Bonvoy balance for a summer redemption you've already
+    scoped, this is the move of the month.</p>
+    <p>Read the terms before transferring — points moved to a hotel program can't be moved back.
+    <a href="https://awardwallet.com/news/chase-ultimate-rewards/marriott-transfer-bonus/">Full details at AwardWallet</a>.</p>
+  </section>
+
+  <h2 class="section">Active Transfer Bonuses</h2>
+  <table>
+    <thead>
+      <tr><th>From</th><th>To</th><th>Bonus</th><th>Expires</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Chase Ultimate Rewards</td><td>Marriott Bonvoy</td><td>55%</td><td><span class="exp">Jun 30, 2026</span></td></tr>
+      <tr><td>Amex Membership Rewards</td><td>Flying Blue (AF/KLM)</td><td>25%</td><td><span class="exp">Jun 30, 2026</span></td></tr>
+      <tr><td>Amex Membership Rewards</td><td>Marriott Bonvoy</td><td>20%</td><td><span class="exp">Jun 30, 2026</span></td></tr>
+      <tr><td>Amex Membership Rewards</td><td>Avianca LifeMiles</td><td>15% (1:1.15)</td><td><span class="exp">Jul 15, 2026</span></td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:.82rem;color:#8a8466;">Bonuses verified June 20, 2026 via published program promotions. Always confirm the live rate on the transfer page before moving points.</p>
+
+  <h2 class="section">Today's Briefs</h2>
+
+  <div class="brief">
+    <h4><span>&#9670;</span> Chase&ndash;Hyatt ratio change now in effect for new cardholders</h4>
+    <p>The Sapphire Preferred and Ink Business Preferred now transfer to World of Hyatt at 4:3 instead of 1:1
+    for anyone approved on or after June 15. Existing cardholders keep the 1:1 rate through September 30, then
+    move to 4:3 on October 1. If Hyatt is central to your strategy, this is the strongest argument yet to keep
+    a Sapphire Reserve or Ink Preferred opened before the cutoff — and to move any speculative Hyatt transfers
+    over the summer rather than waiting.
+    <a href="https://thepointsguy.com/loyalty-programs/transfer-ultimate-rewards-points-hyatt/">More at The Points Guy</a>.</p>
+  </div>
+
+  <div class="brief">
+    <h4><span>&#9670;</span> United quietly raises the price of close-in awards</h4>
+    <p>United has nudged up the cost of close-in MileagePlus awards again, with some last-minute redemptions
+    now running roughly a third higher than before. It's the latest in a run of dynamic-pricing creep across
+    the big three. The practical takeaway: book MileagePlus awards earlier when you can, and price the same
+    itinerary in partner currencies before committing.
+    <a href="https://liveandletsfly.com/united-close-in-award-devaluation/">Background at Live and Let's Fly</a>.</p>
+  </div>
+
+  <div class="brief">
+    <h4><span>&#9670;</span> Flying Blue is the sleeper play on the Amex menu</h4>
+    <p>With Amex running 25% to Flying Blue through month-end, transatlantic Air France and KLM economy and
+    business awards are worth a fresh look — Flying Blue's monthly Promo Rewards routinely discount specific
+    routes by up to a third. Pair the transfer bonus with a discounted Promo Reward and the effective cost
+    can drop sharply. Check the Promo Rewards list for your origin before transferring.
+    <a href="https://awardwallet.com/news/amex-membership-rewards/flying-blue-transfer-bonus/">Details at AwardWallet</a>.</p>
+  </div>
+
+  <div class="brief">
+    <h4><span>&#9670;</span> The valuations backdrop: AAdvantage still leads</h4>
+    <p>In the latest monthly valuations, AAdvantage miles continue to grade out near the top of the U.S. legacy
+    programs on the strength of partner award space, while Delta SkyMiles remain anchored to cash-like pricing.
+    Nothing here is an emergency — but it's a useful reminder to spend the weakest currency first and hoard the
+    flexible points that can chase whichever program is running a bonus.
+    <a href="https://thepointsguy.com/loyalty-programs/monthly-valuations/">TPG June valuations</a>.</p>
+  </div>
+
+  <div class="move">
+    <div class="tag">Today's Move</div>
+    <h3>If a Marriott summer stay is already on your calendar, top off the balance now.</h3>
+    <p>The Chase 55% bonus and the Amex 20% bonus both close June 30. If you have a confirmed Bonvoy
+    redemption in mind, calculate the exact points shortfall, transfer just enough to cover it (plus a small
+    cushion), and lock the award. Don't speculatively dump points into Bonvoy for a stay you haven't priced —
+    hotel points can't come back, and dynamic pricing can move under you. Targeted top-offs only.</p>
+  </div>
+
+  <footer>
+    The Points Brief &middot; Compiled June 20, 2026 &middot; Greg's daily travel-rewards digest<br>
+    Informational only. Confirm all rates and award pricing directly with each program before transferring.
+  </footer>
+
+</div>
+
+<script>
+const S = "Good morning, Greg. This is your Points Brief for Saturday, June twentieth. Let's start with the lead story, because it's also the most time-sensitive thing on the board. Through June thirtieth, Chase Ultimate Rewards is running a fifty-five percent transfer bonus to Marriott Bonvoy. That means every thousand Chase points becomes one thousand five hundred and fifty Bonvoy points. It's the richest Chase-to-Marriott ratio we've seen in well over a year, and it pairs nicely with Marriott's fifth-night-free award benefit. The catch is the usual Marriott catch: dynamic pricing. So before you transfer, price your exact dates, confirm the points value beats cash, and remember that once points move into a hotel program, they can't move back. As a way to top off a balance for a stay you've already scoped out, though, this is the move of the month. Now, the rest of the active transfer bonuses. Alongside that Chase deal, American Express is running twenty-five percent to Flying Blue, twenty percent to Marriott Bonvoy, and both of those also close June thirtieth. There's also fifteen percent to Avianca LifeMiles, at a one-to-one-point-one-five rate, running a little longer through July fifteenth. On to today's briefs. First, a structural change worth marking: the Chase to World of Hyatt transfer ratio. For anyone approved for a Sapphire Preferred or Ink Business Preferred on or after June fifteenth, transfers to Hyatt now happen at four-to-three instead of one-to-one. Existing cardholders keep the one-to-one rate through September thirtieth, then shift to four-to-three on October first. If Hyatt is central to how you redeem, that's a strong argument to move your summer Hyatt transfers sooner rather than later. Second, United has quietly raised the cost of close-in MileagePlus awards again — some last-minute redemptions now run about a third higher than before. The practical takeaway is simple: book United awards earlier when you can, and always price the same flight in partner currencies before committing. Third, keep an eye on Flying Blue as the sleeper play on the Amex menu. With that twenty-five percent bonus live, transatlantic Air France and KLM awards are worth a fresh look, especially if you can stack the bonus with one of Flying Blue's monthly Promo Rewards discounts. And fourth, on the valuations backdrop: American AAdvantage miles still grade out near the top of the legacy programs thanks to partner award space, while Delta SkyMiles stay anchored to cash-like pricing. Nothing urgent there — just a reminder to spend your weakest currency first. Which brings us to today's move. If you already have a Marriott summer stay on the calendar, top off that balance now. The Chase fifty-five percent and Amex twenty percent bonuses both close June thirtieth. Figure out your exact points shortfall, transfer just enough to cover it plus a small cushion, and lock the award. Don't dump points speculatively into Bonvoy for a stay you haven't priced. Targeted top-offs only. That's your brief. Have a good Saturday, Greg.";
+
+let speaking=false;
+function pickVoice(){
+  const vs=speechSynthesis.getVoices();
+  return vs.find(v=>/Daniel/.test(v.name)) || vs.find(v=>/Alex/.test(v.name))
+    || vs.find(v=>/en-GB/.test(v.lang)) || vs.find(v=>/en/.test(v.lang)) || vs[0];
+}
+function toggleAudio(){
+  const btn=document.getElementById('playBtn'), st=document.getElementById('audioStatus');
+  if(speaking){ speechSynthesis.cancel(); speaking=false; btn.innerHTML='&#9654;&nbsp; Play Briefing'; st.textContent=''; return; }
+  const u=new SpeechSynthesisUtterance(S);
+  u.rate=0.93; const v=pickVoice(); if(v) u.voice=v;
+  u.onend=()=>{ speaking=false; btn.innerHTML='&#9654;&nbsp; Play Briefing'; st.textContent=''; };
+  speechSynthesis.cancel();
+  speechSynthesis.speak(u);
+  speaking=true; btn.innerHTML='&#9632;&nbsp; Stop'; st.textContent='Playing…';
+}
+if(typeof speechSynthesis!=='undefined'){ speechSynthesis.onvoiceschanged=()=>{}; }
+</script>
+</body>
+</html>
