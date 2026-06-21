@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — 2026-06-21</title>
+<style>
+  :root{
+    --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4;
+    --line:rgba(201,168,76,0.28); --panel:#0d1320; --muted:#8d8868;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:Georgia,'Times New Roman',serif; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:0 22px 70px;}
+  nav{
+    display:flex; justify-content:space-between; align-items:center;
+    border-bottom:1px solid var(--line); padding:14px 0; font-size:0.92rem;
+    letter-spacing:0.04em;
+  }
+  nav.bottom{border-bottom:none; border-top:1px solid var(--line); margin-top:46px;}
+  nav a{color:var(--accent); text-decoration:none;}
+  nav a:hover{text-decoration:underline;}
+  nav .disabled{color:var(--muted); opacity:0.55; pointer-events:none;}
+  header.mast{text-align:center; padding:34px 0 18px; border-bottom:double 3px var(--line);}
+  header.mast .kicker{font-size:0.72rem; letter-spacing:0.45em; text-transform:uppercase; color:var(--muted);}
+  header.mast h1{
+    font-size:2.9rem; margin:8px 0 4px; color:var(--accent);
+    letter-spacing:0.02em; font-weight:normal;
+  }
+  header.mast .date{font-style:italic; color:var(--muted); font-size:0.95rem;}
+  .player{
+    display:flex; align-items:center; gap:14px; margin:22px 0;
+    background:var(--panel); border:1px solid var(--line); border-radius:6px;
+    padding:13px 18px;
+  }
+  .player button{
+    background:var(--accent); color:#080c14; border:none; cursor:pointer;
+    font-family:Georgia,serif; font-size:0.9rem; padding:8px 16px; border-radius:4px;
+    letter-spacing:0.03em;
+  }
+  .player button:hover{filter:brightness(1.08);}
+  .player .status{font-size:0.82rem; color:var(--muted); font-style:italic;}
+  .urgent{
+    background:rgba(201,168,76,0.10); border:1px solid var(--accent);
+    border-left:4px solid var(--accent); padding:12px 18px; margin:22px 0;
+    font-size:0.92rem; border-radius:4px;
+  }
+  .urgent strong{color:var(--accent); letter-spacing:0.05em;}
+  section{margin:34px 0;}
+  h2.sec{
+    font-size:0.78rem; letter-spacing:0.32em; text-transform:uppercase;
+    color:var(--accent); border-bottom:1px solid var(--line); padding-bottom:7px;
+    font-weight:normal;
+  }
+  .lead h3{font-size:1.65rem; color:var(--text); margin:14px 0 8px; font-weight:normal; line-height:1.25;}
+  .lead p{margin:0 0 14px;}
+  a.inline{color:var(--accent);}
+  table{width:100%; border-collapse:collapse; margin-top:14px; font-size:0.92rem;}
+  th,td{text-align:left; padding:10px 8px; border-bottom:1px solid var(--line);}
+  th{color:var(--muted); font-weight:normal; text-transform:uppercase; letter-spacing:0.08em; font-size:0.72rem;}
+  td .pct{color:var(--accent); font-weight:bold;}
+  td.exp{color:var(--muted); font-style:italic; white-space:nowrap;}
+  .brief{margin:18px 0;}
+  .brief h4{margin:0 0 4px; font-size:1.1rem; color:var(--text); font-weight:normal;}
+  .brief p{margin:0;}
+  .move{
+    background:var(--panel); border:1px solid var(--accent); border-radius:6px;
+    padding:20px 24px; margin-top:16px;
+  }
+  .move .label{font-size:0.72rem; letter-spacing:0.3em; text-transform:uppercase; color:var(--accent);}
+  .move p{margin:10px 0 0; font-size:1.05rem;}
+  footer{margin-top:40px; text-align:center; color:var(--muted); font-size:0.78rem; font-style:italic;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="top">
+    <a href="2026-06-20.html">&larr; 2026-06-20</a>
+    <span class="disabled">2026-06-22 &rarr;</span>
+  </nav>
+
+  <header class="mast">
+    <div class="kicker">Daily Travel Points Intelligence</div>
+    <h1>The Points Brief</h1>
+    <div class="date">Sunday, June 21, 2026</div>
+  </header>
+
+  <div class="player">
+    <button id="playBtn" onclick="togglePlay()">&#9654; Listen</button>
+    <span class="status" id="playStatus">Audio brief &middot; ~3 min</span>
+  </div>
+
+  <div class="urgent">
+    <strong>LAST CALL:</strong> Delta's $25 Uber voucher with a $300+ gift card purchase ends <em>tomorrow, June 22</em>. The Chase&rarr;Marriott 55% and Amex&rarr;Flying Blue 25% bonuses both close June 30.
+  </div>
+
+  <section class="lead">
+    <h2 class="sec">Lead Story</h2>
+    <h3>Chase is paying 55% to move your points into Marriott &mdash; the richest Bonvoy bonus of the year</h3>
+    <p>Through 11:59 PM ET on June 30, Chase Ultimate Rewards points transfer to Marriott Bonvoy with a <span style="color:var(--accent)">55% bonus</span>. That turns 10,000 UR into 15,500 Bonvoy points, and it stacks on Chase's baseline 1:1 ratio. For a stack like Greg's &mdash; deep in Ultimate Rewards and holding Bonvoy &mdash; this is the single most lopsided transfer on the board right now.</p>
+    <p>The catch is the usual one: transfers are one-way and instant. Bonvoy points are worth roughly 0.7&cent; each, so 55% only pays off against a specific high-value redemption &mdash; a Category 6&ndash;8 property or a Ritz-Carlton stay where the cash rate is brutal. Don't speculatively move points hoping to use them later. Confirm the award, then transfer. <a class="inline" href="https://awardwallet.com/news/chase-ultimate-rewards/marriott-transfer-bonus/">Full details &amp; terms &rarr;</a></p>
+  </section>
+
+  <section>
+    <h2 class="sec">Active Transfer Bonuses</h2>
+    <table>
+      <thead>
+        <tr><th>From &rarr; To</th><th>Bonus</th><th>Expires</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a class="inline" href="https://awardwallet.com/news/chase-ultimate-rewards/marriott-transfer-bonus/">Chase UR &rarr; Marriott Bonvoy</a></td><td><span class="pct">+55%</span></td><td class="exp">Jun 30</td></tr>
+        <tr><td><a class="inline" href="https://frequentmiler.com/current-point-transfer-bonuses/">Chase UR &rarr; Virgin Atlantic</a></td><td><span class="pct">+30%</span></td><td class="exp">Jul 14</td></tr>
+        <tr><td><a class="inline" href="https://awardwallet.com/news/amex-membership-rewards/flying-blue-transfer-bonus/">Amex MR &rarr; Air France/KLM Flying Blue</a></td><td><span class="pct">+25%</span></td><td class="exp">Jun 30</td></tr>
+        <tr><td><a class="inline" href="https://awardwallet.com/news/amex-membership-rewards/marriott-transfer-bonus/">Amex MR &rarr; Marriott Bonvoy</a></td><td><span class="pct">+20%</span></td><td class="exp">Jun 30</td></tr>
+        <tr><td><a class="inline" href="https://www.point.me/insights/current-transfer-bonuses/">Amex MR &rarr; Avianca LifeMiles</a></td><td><span class="pct">+15%</span></td><td class="exp">Jul 15</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.8rem; color:var(--muted); font-style:italic; margin-top:10px;">No active bonuses on United, Delta, AA, Hyatt, or IHG transfers from Greg's stack today.</p>
+  </section>
+
+  <section>
+    <h2 class="sec">Today's Briefs</h2>
+
+    <div class="brief">
+      <h4>Hyatt's summer points play: up to 30,000 bonus points</h4>
+      <p>World of Hyatt is handing out 3,000 bonus points on every stay of three-plus nights at participating Hyatt Place and Hyatt Select hotels across the U.S., Canada, the Caribbean, and Latin America &mdash; up to 30,000 total. Register first, then book and stay by July 31. A separate Under Canvas offer pays 2,000 points per night (up to 60,000). <a class="inline" href="https://thepointsguy.com/deals/points-and-miles-travel-deals/">Details &rarr;</a></p>
+    </div>
+
+    <div class="brief">
+      <h4>Delta gift-card trick ends tomorrow</h4>
+      <p>Buy a Delta gift card of $300 or more and get a $25 Uber voucher &mdash; effectively a 8% rebate on travel you'd buy anyway. The promo closes June 22. Some cardholders also have a targeted Amex Offer for 5X SkyMiles on Delta gift cards through July 14. <a class="inline" href="https://awardwallet.com/news/delta-skymiles/bonus-miles-gift-cards/">Details &rarr;</a></p>
+    </div>
+
+    <div class="brief">
+      <h4>AAdvantage stays the most valuable airline currency</h4>
+      <p>TPG's June valuations again peg American AAdvantage miles at 1.6&cent; apiece &mdash; the richest of the big three &mdash; on the strength of partner award space. Meanwhile the Citi/AAdvantage Globe card is dangling a 90,000-mile bonus after $5,000 spend in four months. <a class="inline" href="https://thepointsguy.com/loyalty-programs/monthly-valuations/">June valuations &rarr;</a></p>
+    </div>
+
+    <div class="brief">
+      <h4>Marriott's Eat Around Town pays you to dine</h4>
+      <p>Through June, Bonvoy members earn an extra 750 points every time they spend at least $75 at participating restaurants &mdash; a low-effort top-up while the 55% transfer window is open. <a class="inline" href="https://awardwallet.com/news/marriott-bonvoy/marriott-promotions/">Details &rarr;</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="sec">Today's Move</h2>
+    <div class="move">
+      <div class="label">The Signal</div>
+      <p>If you have a Marriott award stay in mind &mdash; and only if you do &mdash; this is the week to fund it. Run the math on a specific property, then transfer Chase UR at +55% (or Amex MR at +20% if your UR balance is thin). Both windows shut June 30. Everything else &mdash; Flying Blue at +25%, Virgin Atlantic at +30% &mdash; should wait until you have an actual flight to book.</p>
+    </div>
+  </section>
+
+  <nav class="bottom">
+    <a href="2026-06-20.html">&larr; 2026-06-20</a>
+    <span class="disabled">2026-06-22 &rarr;</span>
+  </nav>
+
+  <footer>The Points Brief &middot; Generated June 21, 2026 &middot; Always confirm award availability before transferring.</footer>
+
+</div>
+
+<script>
+const S = "Good morning, Greg. This is The Points Brief for Sunday, June twenty-first. Let's start with the big one. Chase is paying a fifty-five percent bonus to move Ultimate Rewards points into Marriott Bonvoy. That is the richest Bonvoy transfer bonus we've seen all year. Ten thousand points becomes fifteen thousand five hundred. For your stack, sitting deep in Ultimate Rewards and holding Bonvoy, this is the most lopsided transfer on the board. But remember the rule: transfers are one-way and instant, and Bonvoy points are only worth about seven tenths of a cent each. So fifty-five percent only pays off against a specific, high-value redemption. Confirm the award first, then transfer. The window closes June thirtieth. Now, the active transfer bonuses. Chase to Marriott, plus fifty-five percent, ending June thirtieth. Chase to Virgin Atlantic, plus thirty, through July fourteenth. On the Amex side: Membership Rewards to Air France K-L-M Flying Blue at plus twenty-five, ending June thirtieth. Amex to Marriott at plus twenty, also June thirtieth. And Amex to Avianca LifeMiles, plus fifteen, through July fifteenth. Nothing active today on United, Delta, American, Hyatt, or I-H-G transfers. Three quick briefs. First, Hyatt's summer promotion. Three thousand bonus points on every stay of three nights or more at Hyatt Place and Hyatt Select properties, up to thirty thousand points. Register first, then stay by July thirty-first. Second, a Delta trick that ends tomorrow: buy a three-hundred-dollar gift card, get a twenty-five-dollar Uber voucher. Easy rebate on travel you'd buy anyway. Third, American AAdvantage miles remain the most valuable airline currency at one point six cents each, per the latest valuations, and the Citi Globe card is offering ninety thousand miles after five thousand in spend. And here's today's move. If, and only if, you already have a Marriott award stay in mind, this is the week to fund it. Run the numbers on a specific property, then transfer Chase points at plus fifty-five percent. The window shuts June thirtieth. Everything else can wait until you have an actual booking. That's your brief. Make it count.";
+
+let speaking=false, paused=false;
+function pickVoice(){
+  const vs=speechSynthesis.getVoices();
+  return vs.find(v=>/Daniel/.test(v.name)) || vs.find(v=>/Alex/.test(v.name))
+      || vs.find(v=>/en[-_]GB/.test(v.lang)) || vs.find(v=>/en/.test(v.lang)) || vs[0];
+}
+function togglePlay(){
+  const btn=document.getElementById('playBtn'), st=document.getElementById('playStatus');
+  if(speaking && !paused){ speechSynthesis.pause(); paused=true; btn.innerHTML='&#9654; Resume'; st.textContent='Paused'; return; }
+  if(speaking && paused){ speechSynthesis.resume(); paused=false; btn.innerHTML='&#10073;&#10073; Pause'; st.textContent='Playing…'; return; }
+  const u=new SpeechSynthesisUtterance(S);
+  u.rate=0.93; u.pitch=1.0;
+  const v=pickVoice(); if(v) u.voice=v;
+  u.onend=()=>{ speaking=false; paused=false; btn.innerHTML='&#9654; Listen'; st.textContent='Audio brief · ~3 min'; };
+  speechSynthesis.cancel();
+  speechSynthesis.speak(u); speaking=true; paused=false;
+  btn.innerHTML='&#10073;&#10073; Pause'; st.textContent='Playing…';
+}
+if(typeof speechSynthesis!=='undefined'){ speechSynthesis.onvoiceschanged=pickVoice; pickVoice(); }
+</script>
+</body>
+</html>
