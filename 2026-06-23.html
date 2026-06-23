@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — 2026-06-23</title>
+<style>
+  :root {
+    --bg: #080c14;
+    --accent: #c9a84c;
+    --text: #d8d0b4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 22px 60px; }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(201,168,76,0.3);
+    padding: 14px 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+  }
+  .nav.bottom { border-bottom: none; border-top: 1px solid rgba(201,168,76,0.3); margin-top: 40px; }
+  .nav a { color: var(--accent); text-decoration: none; }
+  .nav a:hover { text-decoration: underline; }
+  .nav .disabled { color: #4a4f57; pointer-events: none; }
+  .masthead { text-align: center; padding: 34px 0 10px; }
+  .masthead h1 {
+    font-size: 2.6rem;
+    margin: 0;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    font-weight: normal;
+  }
+  .masthead .sub {
+    font-style: italic;
+    color: #9aa08a;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    margin-top: 8px;
+  }
+  .masthead .date { color: var(--text); margin-top: 6px; font-size: 0.95rem; }
+  .rule { border: none; border-top: 2px double rgba(201,168,76,0.4); margin: 22px 0; }
+  .player {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(201,168,76,0.06);
+    border: 1px solid rgba(201,168,76,0.25);
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin: 18px 0 6px;
+  }
+  .player button {
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+  }
+  .player button:hover { background: #ddbb5a; }
+  .player .label { font-size: 0.82rem; color: #9aa08a; font-style: italic; }
+  h2 {
+    color: var(--accent);
+    font-weight: normal;
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgba(201,168,76,0.25);
+    padding-bottom: 6px;
+    margin-top: 40px;
+    letter-spacing: 0.02em;
+  }
+  h3 { color: var(--text); font-size: 1.1rem; margin-bottom: 4px; }
+  a.ext { color: var(--accent); }
+  .lead p:first-of-type::first-letter {
+    font-size: 3rem;
+    float: left;
+    line-height: 0.8;
+    padding: 6px 8px 0 0;
+    color: var(--accent);
+  }
+  table { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 0.92rem; }
+  th, td { text-align: left; padding: 9px 8px; border-bottom: 1px solid rgba(201,168,76,0.18); }
+  th { color: var(--accent); font-weight: normal; letter-spacing: 0.05em; text-transform: uppercase; font-size: 0.72rem; }
+  td .pct { color: var(--accent); font-weight: bold; }
+  .brief { margin-bottom: 22px; }
+  .brief .tag { color: var(--accent); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; }
+  .move {
+    background: linear-gradient(180deg, rgba(201,168,76,0.10), rgba(201,168,76,0.03));
+    border: 1px solid rgba(201,168,76,0.4);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 20px 24px;
+    margin-top: 16px;
+  }
+  .move .hd { color: var(--accent); letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.75rem; }
+  .move p { margin: 8px 0 0; font-size: 1.05rem; }
+  .foot { text-align: center; color: #5a5f67; font-size: 0.75rem; margin-top: 30px; font-style: italic; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="nav top">
+    <a href="2026-06-22.html">&larr; 2026-06-22</a>
+    <span style="color:#9aa08a;letter-spacing:0.1em;">THE POINTS BRIEF</span>
+    <a class="disabled" href="2026-06-24.html">2026-06-24 &rarr;</a>
+  </div>
+
+  <div class="masthead">
+    <h1>The Points Brief</h1>
+    <div class="sub">Daily Intelligence for the Points-Minded Traveler</div>
+    <div class="date">Tuesday, June 23, 2026</div>
+  </div>
+
+  <div class="player">
+    <button id="playBtn" onclick="toggleAudio()">&#9654; Listen</button>
+    <span class="label" id="playLabel">Audio edition &middot; ~3 min</span>
+  </div>
+
+  <hr class="rule">
+
+  <div class="lead">
+    <h2>Lead Story</h2>
+    <h3>One Week Left: The June 30 Transfer-Bonus Cliff</h3>
+    <p>Three of the strongest transfer promotions of the quarter all expire the same day, and that day is now seven mornings away. The headliner is Chase Ultimate Rewards to Marriott Bonvoy at a <strong>55% bonus</strong> &mdash; 1,000 Chase points become 1,550 Bonvoy points through June 30. That rate started the spring at 65%, stepped down to 55% on May 16, and disappears entirely at month's end, so this is the floor before it hits zero.</p>
+    <p>Alongside it, American Express Membership Rewards is running <strong>25% to Flying Blue</strong> and <strong>20% to Marriott Bonvoy</strong>, both also closing June 30. For anyone sitting on a near-term Marriott redemption, the Chase route is the better feed right now; for SkyTeam premium-cabin hunters, the Flying Blue lift is the one to watch. The usual discipline applies harder than ever this week: transfers are one-way and irreversible, so confirm award space is bookable <em>before</em> you move a single point. Read the current landscape at <a class="ext" href="https://frequentmiler.com/current-point-transfer-bonuses/" target="_blank" rel="noopener">Frequent Miler</a> and <a class="ext" href="https://thepointsguy.com/loyalty-programs/current-transfer-bonuses/" target="_blank" rel="noopener">The Points Guy</a>.</p>
+  </div>
+
+  <h2>Active Transfer Bonuses</h2>
+  <table>
+    <thead>
+      <tr><th>From</th><th>To</th><th>Bonus</th><th>Expires</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Chase Ultimate Rewards</td><td>Marriott Bonvoy</td><td class="pct">+55%</td><td>Jun 30, 2026</td></tr>
+      <tr><td>Chase Ultimate Rewards</td><td>Virgin Atlantic</td><td class="pct">+30%</td><td>Jul 14, 2026</td></tr>
+      <tr><td>Chase Ultimate Rewards</td><td>Southwest Rapid Rewards</td><td class="pct">+30%</td><td>Jul 14, 2026</td></tr>
+      <tr><td>Amex Membership Rewards</td><td>Air France/KLM Flying Blue</td><td class="pct">+25%</td><td>Jun 30, 2026</td></tr>
+      <tr><td>Amex Membership Rewards</td><td>Marriott Bonvoy</td><td class="pct">+20%</td><td>Jun 30, 2026</td></tr>
+      <tr><td>Amex Membership Rewards</td><td>Avianca LifeMiles</td><td class="pct">+15%</td><td>Jul 15, 2026</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:0.78rem;color:#9aa08a;margin-top:10px;">Rates verified June 23, 2026. Always confirm at the program's transfer page before moving points. Trackers: <a class="ext" href="https://awardtravelfinder.com/transfer-bonuses" target="_blank" rel="noopener">Award Travel Finder</a>, <a class="ext" href="https://www.nerdwallet.com/travel/learn/credit-card-transfer-bonuses" target="_blank" rel="noopener">NerdWallet</a>.</p>
+
+  <h2>Today's Briefs</h2>
+
+  <div class="brief">
+    <div class="tag">United MileagePlus</div>
+    <h3>Miles pooling quietly opens to 40+ partners</h3>
+    <p>United switched on the long-requested upgrade in early June without a press release: pooled MileagePlus miles can now book award flights on more than 40 partner airlines, including Star Alliance carriers, for the first time since pooling launched in 2024. For families and groups feeding one account, the practical value of pooling just jumped considerably. Details at <a class="ext" href="https://awardwallet.com/news/united-mileageplus/premier-status-changes-2026/" target="_blank" rel="noopener">AwardWallet</a>.</p>
+  </div>
+
+  <div class="brief">
+    <div class="tag">American AAdvantage</div>
+    <h3>AAdvantage tops TPG's June valuations at 1.6 cents</h3>
+    <p>The Points Guy's June 2026 valuations peg AAdvantage miles as the most valuable airline currency on the board at 1.6 cents apiece, on the strength of partner-award redemptions. If you're weighing where to park flexible points, the math favors American's chart for premium partner space right now. See the full <a class="ext" href="https://thepointsguy.com/loyalty-programs/monthly-valuations/" target="_blank" rel="noopener">June valuations</a>.</p>
+  </div>
+
+  <div class="brief">
+    <div class="tag">World of Hyatt</div>
+    <h3>Two stackable summer promos worth registering for</h3>
+    <p>Hyatt Place and Hyatt Select stays of three-plus nights earn 3,000 bonus points each through July 31 (up to 30,000). Separately, the global summer promo runs July 1&ndash;September 7, awarding 2,000 points per two nights from your second stay &mdash; but you must register between June 22 and September 1. Register now so no eligible night slips through. Via <a class="ext" href="https://loyaltylobby.com/2026/06/22/world-of-hyatt-promotion-for-up-to-8000-bonus-points-july-1-september-7-2026/" target="_blank" rel="noopener">LoyaltyLobby</a>.</p>
+  </div>
+
+  <div class="brief">
+    <div class="tag">Card Offers</div>
+    <h3>Record bonuses on Sapphire Reserve and AAdvantage Globe</h3>
+    <p>The Chase Sapphire Reserve is showing a best-ever 150,000-point welcome bonus (spend $6,000 in three months), while Citi's AAdvantage Globe Mastercard matches its all-time high at 90,000 miles after $5,000 in four months. Both are flagged as limited-time. Compare current offers at <a class="ext" href="https://thepointsguy.com/credit-cards/limited-time-card-offers/" target="_blank" rel="noopener">The Points Guy</a>.</p>
+  </div>
+
+  <h2>Today's Move</h2>
+  <div class="move">
+    <div class="hd">&#9670; The Signal</div>
+    <p>If you have a confirmed Marriott award in your sights, top it up via Chase &rarr; Bonvoy at +55% before June 30 &mdash; this is the best Chase-to-hotel feed on the board, and it goes to zero in a week. No live booking? Don't speculatively transfer; let the points sit flexible. And whatever your summer Hyatt plans, register for the global promo today so the clock starts at stay one.</p>
+  </div>
+
+  <div class="nav bottom">
+    <a href="2026-06-22.html">&larr; 2026-06-22</a>
+    <span style="color:#9aa08a;letter-spacing:0.1em;">THE POINTS BRIEF</span>
+    <a class="disabled" href="2026-06-24.html">2026-06-24 &rarr;</a>
+  </div>
+
+  <div class="foot">The Points Brief &middot; Compiled June 23, 2026 &middot; Verify all rates before transferring. Transfers are irreversible.</div>
+
+</div>
+
+<script>
+const S = "The Points Brief for Tuesday, June twenty-third, twenty twenty-six. Here's what matters in points and miles today. Our lead story: one week left until the June thirtieth transfer-bonus cliff. Three of the strongest promotions of the quarter all expire on the same day, and that day is now just seven mornings away. The headliner is Chase Ultimate Rewards to Marriott Bonvoy at a fifty-five percent bonus. That means one thousand Chase points become one thousand five hundred fifty Bonvoy points, but only through June thirtieth. This rate started the spring at sixty-five percent, stepped down to fifty-five on May sixteenth, and it disappears entirely at month's end. So this is the floor before it hits zero. Right alongside it, American Express Membership Rewards is running twenty-five percent to Flying Blue and twenty percent to Marriott Bonvoy, both also closing June thirtieth. If you've got a near-term Marriott redemption, the Chase route is the better feed right now. For SkyTeam premium-cabin hunters, the Flying Blue lift is the one to watch. But the usual discipline applies harder than ever this week. Transfers are one-way and irreversible, so confirm your award space is actually bookable before you move a single point. Now, today's briefs. First, United MileagePlus. United quietly switched on a long-requested upgrade in early June, with no press release. Pooled MileagePlus miles can now book award flights on more than forty partner airlines, including Star Alliance carriers, for the first time since pooling launched in twenty twenty-four. For families and groups feeding one account, the value of pooling just jumped considerably. Second, American AAdvantage. The Points Guy's June valuations now peg AAdvantage miles as the most valuable airline currency on the board, at one point six cents apiece, on the strength of partner redemptions. If you're weighing where to park flexible points, the math favors American's chart for premium partner space. Third, World of Hyatt has two stackable summer promotions worth your attention. Hyatt Place and Hyatt Select stays of three or more nights earn three thousand bonus points each through July thirty-first, up to thirty thousand. Separately, the global summer promo runs July first through September seventh, awarding two thousand points per two nights starting from your second stay. But you have to register, between June twenty-second and September first. Do it now so no eligible night slips through. And fourth, on card offers: the Chase Sapphire Reserve is showing a best-ever one hundred fifty thousand point welcome bonus, and Citi's AAdvantage Globe card matches its all-time high at ninety thousand miles. Both are limited-time. Finally, today's move. If you have a confirmed Marriott award in your sights, top it up through Chase to Bonvoy at fifty-five percent before June thirtieth. It's the best Chase-to-hotel feed on the board, and it goes to zero in a week. No live booking? Don't speculatively transfer. Let your points sit flexible. And whatever your summer Hyatt plans look like, register for that global promo today, so the clock starts at stay one. That's your brief. Travel well, and spend those points wisely.";
+
+let speaking = false;
+function pickVoice() {
+  const vs = window.speechSynthesis.getVoices();
+  return vs.find(v => /Daniel/.test(v.name))
+      || vs.find(v => /Alex/.test(v.name))
+      || vs.find(v => /en-GB/.test(v.lang))
+      || vs.find(v => /en/.test(v.lang))
+      || vs[0];
+}
+function toggleAudio() {
+  const btn = document.getElementById('playBtn');
+  const lbl = document.getElementById('playLabel');
+  if (speaking) {
+    window.speechSynthesis.cancel();
+    speaking = false;
+    btn.innerHTML = '&#9654; Listen';
+    lbl.textContent = 'Audio edition · ~3 min';
+    return;
+  }
+  const u = new SpeechSynthesisUtterance(S);
+  u.rate = 0.93;
+  const v = pickVoice();
+  if (v) u.voice = v;
+  u.onend = () => { speaking = false; btn.innerHTML = '&#9654; Listen'; lbl.textContent = 'Audio edition · ~3 min'; };
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+  speaking = true;
+  btn.innerHTML = '&#9632; Stop';
+  lbl.textContent = 'Playing…';
+}
+if (window.speechSynthesis) { window.speechSynthesis.onvoiceschanged = pickVoice; }
+</script>
+</body>
+</html>
