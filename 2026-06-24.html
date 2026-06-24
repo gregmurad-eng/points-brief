@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — 2026-06-24</title>
+<style>
+  :root{
+    --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:Georgia, 'Times New Roman', serif; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:0 22px 70px;}
+  .nav{
+    display:flex; justify-content:space-between; align-items:center;
+    border-bottom:1px solid rgba(201,168,76,.28);
+    padding:14px 0; font-size:.92rem; letter-spacing:.04em;
+  }
+  .nav.bottom{border-bottom:none; border-top:1px solid rgba(201,168,76,.28); margin-top:48px;}
+  .nav a{color:var(--accent); text-decoration:none;}
+  .nav a:hover{text-decoration:underline;}
+  .nav .disabled{color:#4a4d44; pointer-events:none;}
+  .masthead{text-align:center; padding:40px 0 12px;}
+  .masthead h1{
+    font-size:2.7rem; margin:0; letter-spacing:.06em; color:var(--accent);
+    font-weight:normal;
+  }
+  .masthead .sub{
+    font-size:.82rem; letter-spacing:.32em; text-transform:uppercase;
+    color:var(--text); opacity:.72; margin-top:10px;
+  }
+  .masthead .date{font-size:.9rem; opacity:.6; margin-top:6px; font-style:italic;}
+  .rule{height:2px; background:var(--accent); opacity:.5; margin:26px 0 8px;}
+  .rule.thin{height:1px; opacity:.25; margin:30px 0;}
+  .player{
+    display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+    border:1px solid rgba(201,168,76,.35); border-radius:4px;
+    padding:13px 18px; margin:24px 0 8px; background:rgba(201,168,76,.05);
+  }
+  .player button{
+    font-family:inherit; font-size:.9rem; letter-spacing:.05em;
+    background:var(--accent); color:var(--bg); border:none; cursor:pointer;
+    padding:8px 18px; border-radius:3px;
+  }
+  .player button.secondary{background:transparent; color:var(--accent); border:1px solid var(--accent);}
+  .player .status{font-size:.82rem; opacity:.7; font-style:italic;}
+  h2.section{
+    font-size:1.5rem; color:var(--accent); font-weight:normal;
+    margin:38px 0 4px; letter-spacing:.02em;
+  }
+  h2.section .kicker{
+    display:block; font-size:.72rem; letter-spacing:.28em; text-transform:uppercase;
+    opacity:.6; margin-bottom:4px; color:var(--text);
+  }
+  p{margin:12px 0;}
+  a.ext{color:var(--accent);}
+  .lead p:first-of-type::first-letter{
+    font-size:3.2rem; float:left; line-height:.8; padding:6px 10px 0 0; color:var(--accent);
+  }
+  table.bonus{
+    width:100%; border-collapse:collapse; margin:18px 0; font-size:.95rem;
+  }
+  table.bonus th, table.bonus td{
+    text-align:left; padding:10px 12px; border-bottom:1px solid rgba(201,168,76,.18);
+    vertical-align:top;
+  }
+  table.bonus th{
+    color:var(--accent); font-weight:normal; letter-spacing:.06em;
+    text-transform:uppercase; font-size:.72rem;
+  }
+  table.bonus .pct{color:var(--accent); font-weight:bold; white-space:nowrap;}
+  table.bonus .soon{color:#e0a96d;}
+  .brief{margin:22px 0;}
+  .brief h3{
+    font-size:1.08rem; color:var(--text); margin:0 0 2px; font-weight:bold;
+  }
+  .brief h3 .tag{
+    font-size:.66rem; letter-spacing:.2em; text-transform:uppercase;
+    color:var(--accent); margin-right:8px; opacity:.85;
+  }
+  .signal{
+    border:1px solid var(--accent); border-left:4px solid var(--accent);
+    padding:20px 24px; margin:30px 0 10px; background:rgba(201,168,76,.06);
+  }
+  .signal .label{
+    font-size:.72rem; letter-spacing:.28em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:8px;
+  }
+  .signal p{margin:0;}
+  footer{text-align:center; font-size:.76rem; opacity:.5; margin-top:40px; font-style:italic;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="nav top">
+    <a href="2026-06-23.html">&larr; 2026-06-23</a>
+    <span class="disabled">2026-06-25 &rarr;</span>
+  </div>
+
+  <div class="masthead">
+    <h1>The Points Brief</h1>
+    <div class="sub">Daily Intelligence for the Mileage-Minded</div>
+    <div class="date">Wednesday, June 24, 2026</div>
+  </div>
+
+  <div class="player">
+    <button id="pb-play">&#9654;&nbsp; Listen</button>
+    <button id="pb-stop" class="secondary">&#9632;&nbsp; Stop</button>
+    <span class="status" id="pb-status">~3 min &middot; spoken edition</span>
+  </div>
+
+  <div class="rule"></div>
+
+  <h2 class="section"><span class="kicker">Lead Story</span>Hyatt's New Five-Tier Chart Settles In — And the Sweet Spots Have Shifted</h2>
+  <div class="lead">
+    <p>World of Hyatt's most consequential award-chart overhaul in years is now fully in effect. As of May 20, the program retired its Off-Peak / Standard / Peak structure in favor of five pricing tiers — Lowest, Low, Moderate, Upper, and Top — and the early returns confirm what loyalists feared: the chart moved up far more than it moved down. Roughly <strong>112 hotels climbed into a more expensive award category while only 24 dropped</strong>, according to coverage from <a class="ext" href="https://frequentmiler.com/world-of-hyatt-announces-2026-category-changes-theyre-not-pretty/" target="_blank" rel="noopener">Frequent Miler</a> and <a class="ext" href="https://thepointsguy.com/news/hyatt-category-changes-2026/" target="_blank" rel="noopener">The Points Guy</a>.</p>
+    <p>At the top end the damage is real. A "Top" Category 8 night now runs <strong>75,000 points, up from 45,000</strong> — a 67% jump that erodes the program's marquee aspirational redemptions. Most properties land in the gentler middle, where shifts range from a roughly 14% decrease to a 38% increase depending on the hotel. The redeeming feature: Hyatt kept a <em>published</em> chart while peers drift toward opaque dynamic pricing, so you can still calculate value before you book. Bookings locked in before the cutover are protected at the old rate even if the property has since moved up. The practical takeaway for the weeks ahead is to re-run the math on every Hyatt redemption you had penciled in — the standout sweet spots are now in the Low and Moderate tiers, not at the top.</p>
+  </div>
+
+  <div class="rule thin"></div>
+
+  <h2 class="section"><span class="kicker">Live Now</span>Active Transfer Bonuses</h2>
+  <p>Current promotions across Greg's stack. Bonuses expiring June 30 are flagged in amber — that is six days out, so plan transfers deliberately rather than speculatively.</p>
+  <table class="bonus">
+    <thead>
+      <tr><th>From</th><th>To</th><th>Bonus</th><th>Expires</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Chase Ultimate Rewards</td><td>Marriott Bonvoy</td><td class="pct">+55%</td><td class="soon">Jun 30</td></tr>
+      <tr><td>Chase Ultimate Rewards</td><td>Virgin Atlantic Flying Club</td><td class="pct">+30%</td><td>Jul 14</td></tr>
+      <tr><td>Amex Membership Rewards</td><td>Virgin Atlantic Flying Club</td><td class="pct">+30%</td><td>Jul 31</td></tr>
+      <tr><td>Amex Membership Rewards</td><td>Air France-KLM Flying Blue</td><td class="pct">+25%</td><td class="soon">Jun 30</td></tr>
+      <tr><td>Amex Membership Rewards</td><td>Marriott Bonvoy</td><td class="pct">+20%</td><td class="soon">Jun 30</td></tr>
+      <tr><td>Amex Membership Rewards</td><td>Hilton Honors</td><td class="pct">+20%</td><td>Jul 14</td></tr>
+      <tr><td>Amex Membership Rewards</td><td>Avianca LifeMiles</td><td class="pct">+15%</td><td>Jul 15</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:.82rem; opacity:.6;">Verify every rate at the source before transferring; promotions can be pulled early. See <a class="ext" href="https://frequentmiler.com/current-point-transfer-bonuses/" target="_blank" rel="noopener">Frequent Miler</a>, <a class="ext" href="https://thepointsguy.com/loyalty-programs/current-transfer-bonuses/" target="_blank" rel="noopener">TPG</a>, and <a class="ext" href="https://awardwallet.com/news/credit-card-transfer-bonuses/" target="_blank" rel="noopener">AwardWallet</a>.</p>
+
+  <div class="rule thin"></div>
+
+  <h2 class="section"><span class="kicker">In Brief</span>Today's Briefs</h2>
+
+  <div class="brief">
+    <h3><span class="tag">United</span>Status-match window closes June 30</h3>
+    <p>Elites from Delta, Alaska, American and other carriers have until <strong>June 30</strong> to register for 120 days of complimentary United MileagePlus status. If you carry mid-tier status elsewhere and have United flying on the calendar, this is a near-free upgrade to better seats and boarding. Details on United's <a class="ext" href="https://www.united.com/en/us/fly/mileageplus/whats-new.html" target="_blank" rel="noopener">What's New</a> page.</p>
+  </div>
+
+  <div class="brief">
+    <h3><span class="tag">United</span>Basic economy now earns zero miles</h3>
+    <p>Since April 2, most basic-economy bookings earn <strong>no MileagePlus miles</strong> unless you hold United status or a co-branded card. Meanwhile, PlusPoints and complimentary Premier upgrades are now eligible on award tickets, and card spend counts toward PQP — a quietly meaningful shift for how status gets earned this year. (<a class="ext" href="https://www.nerdwallet.com/travel/news/united-2026-mileage-changes" target="_blank" rel="noopener">NerdWallet</a>)</p>
+  </div>
+
+  <div class="brief">
+    <h3><span class="tag">Delta</span>SkyMiles holds the line for 2026</h3>
+    <p>In a rare bout of restraint, Delta is keeping Medallion qualifying thresholds and MQD requirements <strong>unchanged</strong> for 2026, with only modest tweaks to Choice Benefits. After several years of tightening, a flat year reads as loyalty-friendly. (<a class="ext" href="https://www.businesstraveller.com/news/delta-skymiles-changes-2026/" target="_blank" rel="noopener">Business Traveller</a>)</p>
+  </div>
+
+  <div class="brief">
+    <h3><span class="tag">Amex</span>New 30% bonus to Virgin Atlantic</h3>
+    <p>Amex just launched a fresh <strong>30% transfer bonus to Virgin Atlantic Flying Club</strong>, live through July 31. Flying Club remains a quietly excellent way into Delta One, ANA first, and domestic partner awards — and at 30% off, the buy-in is unusually cheap. (<a class="ext" href="https://awardwallet.com/news/amex-membership-rewards/virgin-atlantic-transfer-bonus/" target="_blank" rel="noopener">AwardWallet</a>)</p>
+  </div>
+
+  <div class="rule thin"></div>
+
+  <div class="signal">
+    <div class="label">Today's Move</div>
+    <p>If you hold elite status with Delta, Alaska, or American and have any United travel ahead, <strong>register for the United status match before June 30</strong> — 120 days of complimentary MileagePlus status is the single highest-return, zero-points action on the board this week. Then, only if you have a confirmed Virgin Atlantic award in mind, lean on the 30% Amex bonus running through July 31 rather than speculatively moving points for the June 30 Chase-to-Marriott 55% — transferable currency is worth more left in place than parked in a hotel program you may not redeem.</p>
+  </div>
+
+  <div class="nav bottom">
+    <a href="2026-06-23.html">&larr; 2026-06-23</a>
+    <span class="disabled">2026-06-25 &rarr;</span>
+  </div>
+
+  <footer>The Points Brief &middot; Compiled June 24, 2026 &middot; Verify all promotions at the source before transferring. Not financial advice.</footer>
+
+</div>
+
+<script>
+const S = "The Points Brief for Wednesday, June twenty-fourth, twenty twenty-six. Here's what matters in points and miles today. " +
+"Our lead story: World of Hyatt's new five-tier award chart has settled in, and the sweet spots have shifted. As of May twentieth, Hyatt retired its old Off-Peak, Standard, and Peak system in favor of five tiers, from Lowest up to Top. The early verdict from the award-travel world is blunt. Roughly one hundred twelve hotels climbed into a more expensive category, while only twenty-four moved down. At the very top, a Category eight night now costs seventy-five thousand points, up from forty-five thousand. That's a sixty-seven percent jump, and it really hurts the program's most aspirational redemptions. Most hotels land somewhere in the gentler middle, with changes ranging from about a fourteen percent decrease to a thirty-eight percent increase. The silver lining is that Hyatt kept a published, predictable chart while its competitors drift toward opaque dynamic pricing, so you can still do the math before you book. If you locked in a booking before the cutover, you're protected at the old rate. The practical move is to re-run the numbers on every Hyatt redemption you had planned. The best value now lives in the Low and Moderate tiers, not at the top. " +
+"Now, active transfer bonuses across your stack. The headline number is Chase Ultimate Rewards to Marriott Bonvoy at fifty-five percent, but that one expires June thirtieth, just six days out, so don't move points unless you have a specific stay in mind. Chase to Virgin Atlantic is thirty percent through July fourteenth. On the Amex side, there's a brand-new thirty percent bonus to Virgin Atlantic Flying Club, good through July thirty-first. Amex to Flying Blue is twenty-five percent, and Amex to Marriott is twenty percent, but both of those also end June thirtieth. Rounding it out, Amex to Hilton is twenty percent through July fourteenth, and Amex to Avianca LifeMiles is fifteen percent through July fifteenth. As always, verify each rate at the source before you transfer, because promotions can get pulled early. " +
+"A few quick briefs. First, a time-sensitive one from United. Elites from Delta, Alaska, American, and other carriers have until June thirtieth to register for one hundred twenty days of complimentary United MileagePlus status. If you hold status elsewhere and have United flights coming up, that's a nearly free upgrade. Second, since April second, most basic economy tickets on United earn zero miles unless you have status or a co-branded card. On the brighter side, PlusPoints and complimentary upgrades now work on award tickets, and card spend counts toward your qualification. Third, Delta is showing rare restraint, holding its SkyMiles Medallion thresholds and spending requirements flat for twenty twenty-six. After years of tightening, a quiet year counts as good news. " +
+"And that brings us to today's move. If you hold elite status with Delta, Alaska, or American and have any United travel ahead, register for that United status match before June thirtieth. One hundred twenty days of complimentary status is the highest-return, zero-points action on the board this week. Beyond that, keep your transferable points right where they are. Only move them when you have a confirmed award in hand. That's the brief. Safe travels, and we'll see you tomorrow.";
+
+(function(){
+  const playBtn = document.getElementById('pb-play');
+  const stopBtn = document.getElementById('pb-stop');
+  const status  = document.getElementById('pb-status');
+  let utt = null;
+
+  function pickVoice(){
+    const vs = window.speechSynthesis.getVoices();
+    const want = ['Daniel','Alex'];
+    for(const name of want){
+      const v = vs.find(x => x.name && x.name.indexOf(name) !== -1);
+      if(v) return v;
+    }
+    return vs.find(x => x.lang && x.lang.indexOf('en') === 0) || vs[0] || null;
+  }
+
+  function speak(){
+    if(!('speechSynthesis' in window)){ status.textContent = 'Audio not supported in this browser'; return; }
+    window.speechSynthesis.cancel();
+    utt = new SpeechSynthesisUtterance(S);
+    utt.rate = 0.93;
+    utt.pitch = 1.0;
+    const v = pickVoice();
+    if(v) utt.voice = v;
+    utt.onstart = () => { status.textContent = 'Playing…'; };
+    utt.onend   = () => { status.textContent = '~3 min · spoken edition'; };
+    utt.onerror = () => { status.textContent = 'Playback stopped'; };
+    window.speechSynthesis.speak(utt);
+  }
+
+  playBtn.addEventListener('click', speak);
+  stopBtn.addEventListener('click', () => { window.speechSynthesis.cancel(); status.textContent = '~3 min · spoken edition'; });
+
+  if('speechSynthesis' in window && window.speechSynthesis.getVoices().length === 0){
+    window.speechSynthesis.onvoiceschanged = pickVoice;
+  }
+})();
+</script>
+</body>
+</html>
