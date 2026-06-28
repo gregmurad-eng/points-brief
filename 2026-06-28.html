@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — 2026-06-28</title>
+<style>
+  :root{ --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4; }
+  *{ box-sizing:border-box; }
+  body{ background:var(--bg); color:var(--text); font-family:Georgia,'Times New Roman',serif;
+    margin:0; padding:0; line-height:1.65; }
+  .wrap{ max-width:760px; margin:0 auto; padding:24px 22px 60px; }
+  a{ color:var(--accent); }
+  .nav{ display:flex; justify-content:space-between; align-items:center;
+    border-top:1px solid #1e2738; border-bottom:1px solid #1e2738; padding:10px 0;
+    font-size:.82rem; letter-spacing:.04em; }
+  .nav .disabled{ color:#4a5160; pointer-events:none; }
+  .masthead{ text-align:center; padding:30px 0 14px; }
+  .masthead h1{ font-size:2.5rem; margin:0; letter-spacing:.06em; color:var(--accent);
+    font-weight:normal; }
+  .masthead .sub{ font-size:.78rem; letter-spacing:.32em; text-transform:uppercase;
+    color:#8a8260; margin-top:8px; }
+  .masthead .date{ font-size:.9rem; color:#8a8260; margin-top:6px; font-style:italic; }
+  .rule{ border:0; border-top:2px solid var(--accent); margin:18px 0; opacity:.5; }
+  .urgent{ background:#2a1208; border:1px solid #c9a84c; border-left:4px solid #c9542c;
+    padding:14px 18px; margin:22px 0; font-size:.95rem; }
+  .urgent strong{ color:var(--accent); text-transform:uppercase; letter-spacing:.08em;
+    font-size:.8rem; display:block; margin-bottom:6px; }
+  h2{ color:var(--accent); font-weight:normal; font-size:1.35rem; letter-spacing:.03em;
+    border-bottom:1px solid #1e2738; padding-bottom:6px; margin-top:40px; }
+  .lead p{ font-size:1.05rem; }
+  table{ width:100%; border-collapse:collapse; margin:16px 0; font-size:.92rem; }
+  th,td{ text-align:left; padding:9px 10px; border-bottom:1px solid #1e2738; }
+  th{ color:#8a8260; text-transform:uppercase; font-size:.72rem; letter-spacing:.08em; }
+  td .pct{ color:var(--accent); font-weight:bold; }
+  .exp-soon{ color:#e08a5a; }
+  .brief{ margin:18px 0; }
+  .brief h3{ color:var(--text); font-size:1.05rem; margin:0 0 4px; }
+  .brief h3 span{ color:#8a8260; font-size:.78rem; font-style:italic; margin-left:8px; }
+  .move{ background:#0e1626; border:1px solid var(--accent); padding:20px 22px;
+    margin:30px 0; }
+  .move .label{ color:var(--accent); text-transform:uppercase; letter-spacing:.14em;
+    font-size:.75rem; margin-bottom:8px; }
+  .move p{ margin:.4em 0; }
+  .player{ display:flex; align-items:center; gap:14px; background:#0e1626;
+    border:1px solid #1e2738; border-radius:6px; padding:12px 16px; margin:20px 0; }
+  .player button{ background:var(--accent); color:#080c14; border:0; border-radius:4px;
+    padding:9px 18px; font-family:inherit; font-size:.9rem; cursor:pointer; letter-spacing:.04em; }
+  .player button:hover{ opacity:.88; }
+  .player .status{ font-size:.82rem; color:#8a8260; font-style:italic; }
+  footer{ margin-top:50px; padding-top:16px; border-top:1px solid #1e2738;
+    font-size:.78rem; color:#6a6450; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="2026-06-27.html">&larr; 2026-06-27</a>
+    <span class="disabled">2026-06-29 &rarr;</span>
+  </nav>
+
+  <header class="masthead">
+    <h1>The Points Brief</h1>
+    <div class="sub">Travel Rewards Intelligence</div>
+    <div class="date">Sunday, June 28, 2026</div>
+  </header>
+
+  <div class="player">
+    <button id="pbPlay" onclick="pbToggle()">▶ Listen</button>
+    <span class="status" id="pbStatus">~3 min read aloud</span>
+  </div>
+
+  <div class="urgent">
+    <strong>⏳ Expiring in 48 hours — act by June 30</strong>
+    Chase's <b>55% bonus to Marriott Bonvoy</b> and Amex's <b>30% to Flying Blue</b> and
+    <b>20% to Marriott</b> all close at month-end. Separately, <b>Amex's Etihad Guest
+    transfer partnership ends 3:00 AM ET June 30</b> — points can no longer move there after that.
+  </div>
+
+  <section class="lead">
+    <h2>Lead Story — The June 30 Cliff</h2>
+    <p>This is the most consequential 48 hours on the points calendar this quarter. Three
+    high-value transfer bonuses and one transfer partnership all expire when June closes,
+    and they happen to sit on top of two of the programs in your stack.</p>
+    <p>The headline is Chase's <span class="pct" style="color:var(--accent)">55%</span>
+    bonus to Marriott Bonvoy — among the richest Chase has ever run to a hotel partner.
+    At that rate, 10,000 Ultimate Rewards become 15,500 Bonvoy points. It's compelling math
+    <em>only</em> if you have a specific Marriott redemption lined up; Bonvoy points are worth
+    materially less per point than Ultimate Rewards in the abstract, so this is a "transfer to
+    book," not a "transfer to bank" move. The same caution applies to Amex's 20% to Marriott.</p>
+    <p>More structurally important: after 3:00 AM ET on June 30, <b>Etihad Guest leaves Amex's
+    transfer chart entirely.</b> If you've been parking value there or planning a First Class
+    redemption, this is your last window to move points across — and even then, only with a
+    confirmed booking in hand, since transfers are irreversible.</p>
+  </section>
+
+  <section>
+    <h2>Active Transfer Bonuses</h2>
+    <table>
+      <thead>
+        <tr><th>From</th><th>To</th><th>Bonus</th><th>Expires</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Chase Ultimate Rewards</td><td>Marriott Bonvoy</td><td class="pct">55%</td><td class="exp-soon">Jun 30 ⚠</td></tr>
+        <tr><td>Amex Membership Rewards</td><td>Air France/KLM Flying Blue</td><td class="pct">30%</td><td class="exp-soon">Jun 30 ⚠</td></tr>
+        <tr><td>Amex Membership Rewards</td><td>Marriott Bonvoy</td><td class="pct">20%</td><td class="exp-soon">Jun 30 ⚠</td></tr>
+        <tr><td>Chase Ultimate Rewards</td><td>Virgin Atlantic Flying Club</td><td class="pct">30%</td><td>Jul 14</td></tr>
+        <tr><td>Amex Membership Rewards</td><td>Virgin Atlantic Flying Club</td><td class="pct">30%</td><td>Jul 31</td></tr>
+        <tr><td>Amex Membership Rewards</td><td>Avianca LifeMiles</td><td class="pct">15%</td><td>Jul 15</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:.82rem;color:#8a8260;">Virgin Atlantic is the standout non-urgent play:
+    a 30% bonus from <em>both</em> Chase and Amex, and a sweet spot for ANA and Delta partner awards.</p>
+  </section>
+
+  <section>
+    <h2>Today's Briefs</h2>
+
+    <div class="brief">
+      <h3>World of Hyatt summer promo opens July 1 <span>World of Hyatt</span></h3>
+      <p>Hyatt's global summer offer earns 2,000 bonus points for every two nights stayed,
+      up to 8,000, for stays July 1–September 7 (register by September 1). Separately, a
+      US/Canada/LatAm promo grants 3,000 bonus points on each 3+ night stay at Hyatt Place
+      and Hyatt Select brands through July 31. Register now so June-30-and-after stays count.</p>
+    </div>
+
+    <div class="brief">
+      <h3>Marriott's summer 3K-per-stay returns <span>Marriott Bonvoy</span></h3>
+      <p>Book with promo code <b>S2449</b> and earn 3,000 bonus points on every stay at
+      participating US and Canada properties, with travel completed by September 8. Stacks
+      neatly with the closing Chase/Amex transfer bonuses if you're topping off for a redemption.</p>
+    </div>
+
+    <div class="brief">
+      <h3>IHG is paying triple AAdvantage miles <span>IHG One Rewards · AA</span></h3>
+      <p>Register your AAdvantage number with IHG, then book and stay by July 6 to earn triple
+      American miles on qualifying IHG hotel stays — a tidy way to redirect hotel spend toward
+      what TPG just named the most valuable airline currency.</p>
+    </div>
+
+    <div class="brief">
+      <h3>AAdvantage tops June valuations; United tightens earning <span>AA · United</span></h3>
+      <p>The Points Guy's June 2026 valuations put American AAdvantage miles at the top of the
+      airline table at ~1.6 cents each. Meanwhile United's latest MileagePlus changes lean harder
+      on co-branded cardholding — basic economy fares now earn no miles for general members,
+      mirroring moves already made at American and Delta.</p>
+    </div>
+  </section>
+
+  <div class="move">
+    <div class="label">Today's Move</div>
+    <p><b>If — and only if — you have a Marriott or Etihad award ready to book, transfer before
+    Tuesday.</b> The Chase 55% to Bonvoy and the Etihad-partner sunset are the two clocks that
+    actually run out June 30.</p>
+    <p>If you don't have a booking lined up, do nothing on those. Instead, register for the Hyatt
+    summer promos (free, no downside) and keep the dual 30% Virgin Atlantic bonuses on your radar —
+    they run into July and pair with genuinely high-value partner awards. Never transfer to bank;
+    only transfer to book.</p>
+  </div>
+
+  <nav class="nav">
+    <a href="2026-06-27.html">&larr; 2026-06-27</a>
+    <span class="disabled">2026-06-29 &rarr;</span>
+  </nav>
+
+  <footer>
+    The Points Brief · Personal daily intelligence for Greg's points stack ·
+    Generated June 28, 2026. Bonuses are time-limited and change without notice; verify on the
+    program site before transferring. Transfers are irreversible.
+  </footer>
+</div>
+
+<script>
+const S = "Good morning, Greg. This is The Points Brief for Sunday, June twenty-eighth. Today is all about one thing: the June thirtieth cliff. This is the most consequential forty-eight hours on the points calendar this quarter. Three high-value transfer bonuses and one transfer partnership all expire when June closes, and they sit right on top of your stack. The headline is Chase's fifty-five percent bonus to Marriott Bonvoy, among the richest Chase has ever run to a hotel partner. At that rate, ten thousand Ultimate Rewards become fifteen thousand five hundred Bonvoy points. But here's the catch: that math only works if you already have a specific Marriott redemption lined up. Bonvoy points are worth a lot less per point than Ultimate Rewards in the abstract, so this is a transfer-to-book move, never a transfer-to-bank move. The same caution applies to Amex's twenty percent to Marriott. More structurally important: after three A M Eastern on June thirtieth, Etihad Guest leaves Amex's transfer chart entirely. If you've been planning a First Class redemption through Etihad, this is your last window to move points across, and even then, only with a confirmed booking in hand. Now, the active transfer bonuses. The urgent ones, all expiring June thirtieth: Chase to Marriott at fifty-five percent, Amex to Flying Blue at thirty percent, and Amex to Marriott at twenty percent. The ones with more runway: Chase to Virgin Atlantic at thirty percent through July fourteenth, Amex to Virgin Atlantic at thirty percent through July thirty-first, and Amex to Avianca LifeMiles at fifteen percent through July fifteenth. Virgin Atlantic is the standout non-urgent play, a thirty percent bonus from both Chase and Amex, and a sweet spot for A N A and Delta partner awards. A few quick briefs. World of Hyatt's summer promo opens July first: earn two thousand bonus points for every two nights, up to eight thousand, for stays through September seventh. Register by September first. There's also a three thousand point bonus on three-plus night stays at Hyatt Place and Hyatt Select through July thirty-first. Register now so your stays count. Marriott's summer offer is back: book with promo code S two-four-four-nine for three thousand bonus points per stay, travel completed by September eighth. I H G is paying triple American AAdvantage miles on hotel stays booked and completed by July sixth, just register your AAdvantage number first. And in valuations news, The Points Guy now ranks American AAdvantage miles as the most valuable airline currency at about one point six cents each, while United tightens earning, basic economy fares now earn no miles for general members. So here's today's move. If, and only if, you have a Marriott or Etihad award ready to book, transfer before Tuesday. The Chase fifty-five percent and the Etihad sunset are the two clocks that actually run out June thirtieth. If you don't have a booking lined up, do nothing on those. Instead, register for the free Hyatt summer promos and keep the dual thirty percent Virgin Atlantic bonuses on your radar. Remember the rule: never transfer to bank, only transfer to book. That's your brief. Have a great Sunday.";
+
+let pbUtter=null, pbOn=false;
+function pbPickVoice(){
+  const vs=speechSynthesis.getVoices();
+  return vs.find(v=>/daniel/i.test(v.name)) || vs.find(v=>/alex/i.test(v.name))
+    || vs.find(v=>/en[-_]?(US|GB)/i.test(v.lang)) || vs[0] || null;
+}
+function pbToggle(){
+  const btn=document.getElementById('pbPlay'), st=document.getElementById('pbStatus');
+  if(pbOn){ speechSynthesis.cancel(); pbOn=false; btn.textContent='▶ Listen'; st.textContent='Paused'; return; }
+  pbUtter=new SpeechSynthesisUtterance(S);
+  pbUtter.rate=0.93;
+  const v=pbPickVoice(); if(v) pbUtter.voice=v;
+  pbUtter.onend=()=>{ pbOn=false; btn.textContent='▶ Listen'; st.textContent='Finished'; };
+  pbUtter.onstart=()=>{ st.textContent='Playing…'; };
+  speechSynthesis.cancel(); speechSynthesis.speak(pbUtter);
+  pbOn=true; btn.textContent='⏸ Pause';
+}
+if(typeof speechSynthesis!=='undefined'){ speechSynthesis.onvoiceschanged=pbPickVoice; }
+</script>
+</body>
+</html>
