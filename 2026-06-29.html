@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — 2026-06-29</title>
+<style>
+  :root{ --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--bg); color:var(--text); font-family:Georgia,'Times New Roman',serif; line-height:1.65; }
+  .wrap{ max-width:760px; margin:0 auto; padding:0 22px 60px; }
+  a{ color:var(--accent); }
+  .nav{ display:flex; justify-content:space-between; align-items:center; font-size:.95rem; padding:14px 0; border-bottom:1px solid rgba(201,168,76,.25); }
+  .nav .next{ color:#555; pointer-events:none; }
+  .masthead{ text-align:center; padding:34px 0 10px; border-bottom:2px solid var(--accent); }
+  .masthead h1{ font-size:2.7rem; letter-spacing:1px; margin:0; color:var(--accent); }
+  .masthead .sub{ font-style:italic; font-size:1rem; opacity:.8; margin-top:6px; }
+  .masthead .date{ font-size:.85rem; letter-spacing:3px; text-transform:uppercase; margin-top:10px; opacity:.7; }
+  .urgent{ background:#3a1414; border:1px solid #a33; color:#f0c9c9; padding:12px 16px; margin:22px 0; border-radius:4px; font-size:.95rem; }
+  .urgent strong{ color:#ff9a9a; }
+  .player{ display:flex; align-items:center; gap:12px; margin:22px 0; padding:12px 16px; border:1px solid rgba(201,168,76,.35); border-radius:6px; }
+  .player button{ background:var(--accent); color:#080c14; border:none; font-family:inherit; font-weight:bold; padding:8px 16px; border-radius:4px; cursor:pointer; font-size:.9rem; }
+  .player button:hover{ opacity:.85; }
+  .player .label{ font-size:.85rem; opacity:.75; }
+  h2.section{ font-size:1.5rem; color:var(--accent); border-bottom:1px solid rgba(201,168,76,.3); padding-bottom:6px; margin-top:42px; }
+  h3{ margin:0 0 4px; font-size:1.2rem; }
+  .lead h3{ font-size:1.55rem; }
+  table{ width:100%; border-collapse:collapse; margin-top:14px; font-size:.95rem; }
+  th,td{ text-align:left; padding:9px 10px; border-bottom:1px solid rgba(201,168,76,.18); }
+  th{ color:var(--accent); font-size:.8rem; text-transform:uppercase; letter-spacing:1px; }
+  .pct{ color:var(--accent); font-weight:bold; }
+  .exp-soon{ color:#ff9a9a; font-weight:bold; }
+  .brief{ margin:20px 0; }
+  .move{ background:rgba(201,168,76,.08); border:1px solid var(--accent); border-radius:6px; padding:18px 20px; margin-top:18px; }
+  .move .tag{ font-size:.75rem; letter-spacing:2px; text-transform:uppercase; color:var(--accent); }
+  footer{ margin-top:50px; padding-top:18px; border-top:1px solid rgba(201,168,76,.25); font-size:.8rem; opacity:.6; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="nav">
+    <a class="prev" href="2026-06-28.html">&larr; 2026-06-28</a>
+    <span class="next">2026-06-30 &rarr;</span>
+  </div>
+
+  <header class="masthead">
+    <h1>The Points Brief</h1>
+    <div class="sub">A daily dispatch on miles, points &amp; the art of the redemption</div>
+    <div class="date">Monday, June 29, 2026</div>
+  </header>
+
+  <div class="urgent">
+    <strong>LAST CALL &mdash; expires tomorrow (June 30):</strong> Chase &rarr; Marriott Bonvoy <b>55%</b>, Amex &rarr; Air France-KLM Flying Blue <b>25%</b>, and Amex &rarr; Marriott Bonvoy <b>20%</b>. If you have a confirmed use, transfer before 11:59 PM ET tomorrow.
+  </div>
+
+  <div class="player">
+    <button id="playBtn" onclick="toggleAudio()">&#9654; Listen</button>
+    <span class="label">Audio edition &middot; ~3 min</span>
+  </div>
+
+  <h2 class="section">Lead Story</h2>
+  <div class="lead">
+    <h3>The 55% window closes tomorrow</h3>
+    <p>For two weeks Chase Ultimate Rewards has been pushing a <span class="pct">55%</span> transfer bonus to Marriott Bonvoy &mdash; among the richest Chase-to-Marriott bonuses on record. At that rate, 10,000 Chase points become 15,500 Bonvoy. It ends at 11:59 PM ET on <span class="exp-soon">June 30</span>.</p>
+    <p>The catch is the same as always with hotel transfers: Marriott points are worth less per point than transferable currency, so this only makes sense if you have a specific, confirmed booking in mind &mdash; a Category 6&ndash;8 redemption, a Ritz-Carlton stay, or topping off an account for a fixed-rate award. Speculative transfers, even at 55%, usually lock value into the weakest currency in your stack. Pair it with the fact that Amex is simultaneously running 25% to Flying Blue and 20% to Bonvoy expiring the same night, and tomorrow is the real deadline of the month.</p>
+  </div>
+
+  <h2 class="section">Active Transfer Bonuses</h2>
+  <table>
+    <thead>
+      <tr><th>From</th><th>To</th><th>Bonus</th><th>Expires</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Chase UR</td><td>Marriott Bonvoy</td><td class="pct">55%</td><td class="exp-soon">Jun 30</td></tr>
+      <tr><td>Amex MR</td><td>Air France-KLM Flying Blue</td><td class="pct">25%</td><td class="exp-soon">Jun 30</td></tr>
+      <tr><td>Amex MR</td><td>Marriott Bonvoy</td><td class="pct">20%</td><td class="exp-soon">Jun 30</td></tr>
+      <tr><td>Chase UR</td><td>Virgin Atlantic Flying Club</td><td class="pct">30%</td><td>Jul 14</td></tr>
+      <tr><td>Amex MR</td><td>Virgin Atlantic Flying Club</td><td class="pct">30%</td><td>Jul 31</td></tr>
+      <tr><td>Amex MR</td><td>Avianca LifeMiles</td><td class="pct">15%</td><td>Jul 15</td></tr>
+      <tr><td>Amex MR</td><td>Qatar Privilege Club (Avios)</td><td class="pct">30%</td><td>Jul 31</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:.82rem;opacity:.65;margin-top:10px;">Transfers are irreversible. Confirm award space before moving points. Bonus percentages and dates per <a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler</a> and <a href="https://thepointsguy.com/loyalty-programs/current-transfer-bonuses/">The Points Guy</a>.</p>
+
+  <h2 class="section">Today&apos;s Briefs</h2>
+
+  <div class="brief">
+    <h3>Hyatt&apos;s five-tier chart is now the reality</h3>
+    <p>World of Hyatt&apos;s move from a three-tier to a five-tier award chart took effect May 20, and it is reshaping where the program&apos;s sweet spots live. Alongside it, Hyatt is running a promo worth up to 30,000 bonus points &mdash; 3,000 per stay of three-plus nights at participating U.S., Canada, Caribbean and Latin America properties. <a href="https://awardwallet.com/news/world-of-hyatt/hyatt-promotions/">Register first</a>, then book and stay by July 31.</p>
+  </div>
+
+  <div class="brief">
+    <h3>Marriott&apos;s summer points promo</h3>
+    <p>Bonvoy is offering 3,000 bonus points per stay at select properties this summer &mdash; register with promo code S2449 and complete the stay by September 8. Stack it with the Design Hotels offer (5,000 bonus points per stay on two-plus consecutive nights) where eligible. <a href="https://awardwallet.com/news/marriott-bonvoy/marriott-promotions/">Details here</a>.</p>
+  </div>
+
+  <div class="brief">
+    <h3>More transatlantic capacity for 2026</h3>
+    <p>Delta and United are both adding nonstop European routes for 2026 &mdash; Delta toward Madrid, Rome and Barcelona; United toward Paris, London and Berlin. More seats generally means more saver award space, so it is worth setting alerts now for SkyMiles and MileagePlus redemptions on those lanes. <a href="https://thepointsguy.com/deals/points-and-miles-travel-deals/">Background</a>.</p>
+  </div>
+
+  <div class="brief">
+    <h3>Welcome offers worth a look</h3>
+    <p>Elevated bonuses are live across the cards that feed Greg&apos;s stack: Sapphire Preferred and Sapphire Reserve at 100,000 points, Amex Gold at 100,000, and Amex Platinum at up to 175,000 (with a $12,000 spend). All are limited-time. <a href="https://thepointsguy.com/credit-cards/limited-time-card-offers/">Current offers</a>.</p>
+  </div>
+
+  <h2 class="section">Today&apos;s Move</h2>
+  <div class="move">
+    <div class="tag">The Signal</div>
+    <p style="margin:8px 0 0;">If &mdash; and only if &mdash; you have a confirmed high-value Marriott redemption, transfer Chase points tonight to lock the <span class="pct">55%</span> before it dies tomorrow. No concrete booking? Let it expire and keep your points in their flexible currency. The 30% Virgin Atlantic bonuses (Chase through July 14, Amex through July 31) are the calmer play for ANA, Delta, and Air France awards with two more weeks to decide.</p>
+  </div>
+
+  <footer>
+    The Points Brief &middot; June 29, 2026 &middot; Compiled from public reporting. Not financial advice; verify terms with each program before transferring.
+  </footer>
+
+</div>
+
+<script>
+var S = "The Points Brief, for Monday, June 29th. Today's edition is all about a deadline. For two weeks, Chase Ultimate Rewards has been running a fifty-five percent transfer bonus to Marriott Bonvoy. That's one of the richest Chase to Marriott bonuses we've seen. Ten thousand Chase points become fifteen thousand five hundred Bonvoy points. But it ends tomorrow night, June 30th, at eleven fifty-nine Eastern. "
++ "Here's the honest read on it. Marriott points are worth less, per point, than your flexible Chase currency. So a fifty-five percent bonus only makes sense if you already have a specific booking in mind. Think a category six through eight redemption, a Ritz-Carlton stay, or topping off an account for a fixed award. If you transfer just because the bonus looks big, you're locking value into the weakest currency in your stack. No concrete plan? Let it go. "
++ "And it's not alone. Amex is running twenty-five percent to Air France-KLM Flying Blue and twenty percent to Marriott Bonvoy, both also expiring tomorrow. So June 30th is the real deadline of the month. "
++ "Looking past tomorrow, the calmer plays are the Virgin Atlantic bonuses, both at thirty percent. Chase runs through July 14th, Amex through July 31st. Those are useful for ANA, Delta, and Air France awards, and you've got two more weeks to decide. There's also fifteen percent to Avianca and thirty percent to Qatar Avios on the Amex side. "
++ "In program news: World of Hyatt's new five-tier award chart is now live as of May 20th, which is reshaping where the sweet spots sit. Hyatt's also got a promo worth up to thirty thousand bonus points, three thousand per stay of three nights or more, if you register and travel by July 31st. Marriott has its own summer promo, three thousand bonus points per stay with code S2449 through September 8th. And both Delta and United are adding new transatlantic routes for 2026, which should mean more saver award space toward Europe. "
++ "Today's move: if you have a confirmed high-value Marriott redemption, transfer your Chase points tonight and lock the fifty-five percent. If you don't, let it expire and keep your powder dry. That's your brief. See you tomorrow.";
+
+var synth = window.speechSynthesis;
+var utter = null;
+var speaking = false;
+
+function pickVoice(){
+  var voices = synth.getVoices();
+  var pref = ['Daniel','Alex'];
+  for(var p=0;p<pref.length;p++){
+    for(var i=0;i<voices.length;i++){
+      if(voices[i].name.indexOf(pref[p])!==-1) return voices[i];
+    }
+  }
+  for(var j=0;j<voices.length;j++){
+    if(voices[j].lang && voices[j].lang.indexOf('en')===0) return voices[j];
+  }
+  return voices[0] || null;
+}
+
+function toggleAudio(){
+  var btn = document.getElementById('playBtn');
+  if(speaking){
+    synth.cancel();
+    speaking = false;
+    btn.innerHTML = '▶ Listen';
+    return;
+  }
+  utter = new SpeechSynthesisUtterance(S);
+  utter.rate = 0.93;
+  var v = pickVoice();
+  if(v) utter.voice = v;
+  utter.onend = function(){ speaking = false; btn.innerHTML = '▶ Listen'; };
+  utter.onerror = function(){ speaking = false; btn.innerHTML = '▶ Listen'; };
+  synth.speak(utter);
+  speaking = true;
+  btn.innerHTML = '■ Stop';
+}
+
+if(typeof speechSynthesis !== 'undefined'){
+  speechSynthesis.onvoiceschanged = function(){ /* voices ready */ };
+}
+</script>
+</body>
+</html>
