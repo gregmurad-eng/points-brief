@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — July 3, 2026</title>
+<style>
+  :root{ --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--bg); color:var(--text); font-family:Georgia,'Times New Roman',serif; line-height:1.65; }
+  .wrap{ max-width:760px; margin:0 auto; padding:0 22px 60px; }
+  a{ color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(201,168,76,.35); }
+  a:hover{ border-bottom-color:var(--accent); }
+  .nav{ display:flex; justify-content:space-between; align-items:center; font-size:.85rem; letter-spacing:.05em; padding:14px 0; border-bottom:1px solid rgba(201,168,76,.25); }
+  .nav .prev{ color:var(--accent); }
+  .nav .next{ color:#4a4d45; border:none; cursor:default; }
+  .masthead{ text-align:center; padding:34px 0 10px; border-bottom:2px solid var(--accent); }
+  .masthead h1{ font-size:2.5rem; margin:0; letter-spacing:.04em; color:var(--accent); }
+  .masthead .sub{ font-size:.8rem; letter-spacing:.32em; text-transform:uppercase; margin-top:8px; color:var(--text); opacity:.8; }
+  .masthead .date{ font-size:.95rem; margin-top:6px; font-style:italic; opacity:.75; }
+  .player{ display:flex; align-items:center; gap:14px; margin:22px 0 10px; padding:12px 16px; border:1px solid rgba(201,168,76,.3); border-radius:4px; background:rgba(201,168,76,.04); }
+  .player button{ background:var(--accent); color:var(--bg); border:none; font-family:inherit; font-size:.9rem; padding:8px 16px; border-radius:3px; cursor:pointer; letter-spacing:.03em; }
+  .player button:hover{ opacity:.9; }
+  .player .label{ font-size:.82rem; letter-spacing:.05em; opacity:.85; }
+  h2{ color:var(--accent); font-size:1.5rem; border-bottom:1px solid rgba(201,168,76,.3); padding-bottom:6px; margin-top:44px; }
+  h3{ color:var(--text); font-size:1.12rem; margin-bottom:4px; }
+  .kicker{ font-size:.72rem; letter-spacing:.28em; text-transform:uppercase; color:var(--accent); margin-bottom:2px; }
+  table{ width:100%; border-collapse:collapse; margin-top:14px; font-size:.95rem; }
+  th,td{ text-align:left; padding:9px 8px; border-bottom:1px solid rgba(201,168,76,.18); }
+  th{ color:var(--accent); font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; }
+  .pct{ color:var(--accent); font-weight:bold; }
+  .move{ margin-top:20px; border:1px solid var(--accent); border-left:4px solid var(--accent); border-radius:4px; padding:18px 22px; background:rgba(201,168,76,.05); }
+  .move .kicker{ margin-bottom:8px; }
+  .brief{ margin:20px 0; }
+  footer{ margin-top:50px; padding-top:16px; border-top:1px solid rgba(201,168,76,.25); font-size:.78rem; opacity:.6; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="nav">
+    <a class="prev" href="2026-07-02.html">&larr; 2026-07-02</a>
+    <span class="next">2026-07-04 &rarr;</span>
+  </div>
+
+  <div class="masthead">
+    <h1>The Points Brief</h1>
+    <div class="sub">Greg&rsquo;s Daily Travel Rewards Dispatch</div>
+    <div class="date">Friday, July 3, 2026</div>
+  </div>
+
+  <div class="player">
+    <button id="playBtn" onclick="togglePlay()">&#9654; Listen</button>
+    <span class="label">Audio edition &middot; ~3 min</span>
+  </div>
+
+  <div class="brief">
+    <div class="kicker">Lead Story</div>
+    <h2 style="margin-top:6px;">Virgin Atlantic Gets a Double 30% &mdash; From Both Sides of Your Wallet</h2>
+    <p>For the first time in a while, both of Greg&rsquo;s flexible currencies are courting the same partner at the same rate. <strong>Chase Ultimate Rewards</strong> and <strong>Amex Membership Rewards</strong> are each running a <span class="pct">30% transfer bonus to Virgin Atlantic Flying Club</span>. Move 1,000 points and 1,300 Virgin points land in your account.</p>
+    <p>Virgin&rsquo;s Flying Club remains one of the sharpest sweet spots in the game &mdash; think ANA and Delta One partner space bookable through Virgin at a fraction of the retail mileage cost. The catch is timing: the two bonuses run on different clocks. <strong>Chase&rsquo;s window closes July 14</strong>; <strong>Amex&rsquo;s runs through July 31</strong>. If you have a specific redemption in view, price the award first, then transfer only what you need &mdash; points don&rsquo;t come back. See the <a href="https://awardwallet.com/news/amex-membership-rewards/virgin-atlantic-transfer-bonus/">current terms at AwardWallet</a>.</p>
+  </div>
+
+  <h2>Active Transfer Bonuses</h2>
+  <table>
+    <thead>
+      <tr><th>From</th><th>To</th><th>Bonus</th><th>Expires</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Chase Ultimate Rewards</td><td>Virgin Atlantic Flying Club</td><td class="pct">30%</td><td>Jul 14</td></tr>
+      <tr><td>Amex Membership Rewards</td><td>Virgin Atlantic Flying Club</td><td class="pct">30%</td><td>Jul 31</td></tr>
+      <tr><td>Amex Membership Rewards</td><td>Hilton Honors</td><td class="pct">20%</td><td>Jul 14</td></tr>
+      <tr><td>Amex Membership Rewards</td><td>Avianca LifeMiles</td><td class="pct">15%</td><td>Jul 15</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:.82rem;opacity:.65;margin-top:10px;">Bonuses can be targeted &mdash; confirm the offer on your own account before transferring. Sources: <a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler</a>, <a href="https://thepointsguy.com/loyalty-programs/current-transfer-bonuses/">The Points Guy</a>.</p>
+
+  <h2>Today&rsquo;s Briefs</h2>
+
+  <div class="brief">
+    <div class="kicker">Hotels &middot; Hyatt</div>
+    <h3>Hyatt&rsquo;s summer promo is live &mdash; but registration matters</h3>
+    <p>World of Hyatt&rsquo;s global summer offer runs July 1 to September 7: <strong>2,000 bonus points for every two nights</strong>, up to 8,000. Note the quirk &mdash; qualifying nights start counting from your second stay, so register now and stack it against the recent award-chart increases. <a href="https://onemileatatime.com/deals/world-of-hyatt-promotion/">Details</a>.</p>
+  </div>
+
+  <div class="brief">
+    <div class="kicker">Hotels &middot; Marriott</div>
+    <h3>Bonvoy tweaks the fine print in July</h3>
+    <p>Marriott&rsquo;s July terms update changes how points and elite-qualifying nights accrue at Series-brand and City Express properties. A separate promo is handing out <strong>3,000 bonus points per stay</strong> at select hotels through September 8. <a href="https://loyaltylobby.com/2026/06/25/marriott-bonvoy-tcs-change-july-2026-series-elite-nights-points-earnings-city-express-changes/">What changed</a>.</p>
+  </div>
+
+  <div class="brief">
+    <div class="kicker">Airlines &middot; United</div>
+    <h3>United widens the card-holder gap</h3>
+    <p>Since April, MileagePlus splits earning between members who hold a United co-branded card and those who don&rsquo;t &mdash; non-cardholders now earn just <strong>3 miles per dollar</strong>, roughly 60% of what Delta and American pay. If United is your hub, the co-brand math got harder to ignore. <a href="https://simpleflying.com/how-american-delta-united-quietly-adopted-identical-loyalty-math-2026/">Context</a>.</p>
+  </div>
+
+  <div class="brief">
+    <div class="kicker">Cards</div>
+    <h3>Amex Platinum resets at $895</h3>
+    <p>The refreshed Platinum now carries an <strong>$895 annual fee</strong>, and the twice-yearly Saks credit sunset on June 30. Lufthansa Business Lounge access ends October 1. Worth a fresh look at whether the credits you actually use still clear the new fee. <a href="https://travelupdate.com/amex-platinum-card-changes-in-2026-updated-list-with-key-dates/">Full change list</a>.</p>
+  </div>
+
+  <div class="move">
+    <div class="kicker">Today&rsquo;s Move</div>
+    <p style="margin:0;"><strong>If you&rsquo;ve been eyeing a Virgin Atlantic redemption, this is the window.</strong> Confirm award space and price first, then transfer from Chase before July 14 (the tighter deadline) or Amex before July 31. Transfer only the exact amount the booking needs &mdash; not a speculative pile. Everything else this week is optional; this one has a clock.</p>
+  </div>
+
+  <div class="nav" style="margin-top:40px;border-top:1px solid rgba(201,168,76,.25);border-bottom:none;">
+    <a class="prev" href="2026-07-02.html">&larr; 2026-07-02</a>
+    <span class="next">2026-07-04 &rarr;</span>
+  </div>
+
+  <footer>
+    The Points Brief &middot; Compiled July 3, 2026 &middot; Informational only, not financial advice. Verify all offers on your own accounts.
+  </footer>
+
+</div>
+
+<script>
+  var S = "The Points Brief for Friday, July third. Here is what is worth your attention today. Our lead story: Virgin Atlantic is getting a rare double bonus, one from each side of your wallet. Both Chase Ultimate Rewards and Amex Membership Rewards are running a thirty percent transfer bonus to Virgin Atlantic Flying Club. That means every thousand points you move becomes thirteen hundred Virgin points. Virgin's Flying Club is one of the best sweet spots around, especially for ANA and Delta One partner awards. But watch the clocks, because they run separately. The Chase bonus closes on July fourteenth. The Amex bonus runs all the way through July thirty-first. My advice, as always: price your award first, then transfer only what the booking needs. Points do not come back once they leave. Now, the rest of today's active bonuses. Beyond the two Virgin offers, Amex is also giving twenty percent to Hilton Honors through July fourteenth, and fifteen percent to Avianca LifeMiles through July fifteenth. Remember these can be targeted, so check your own account before you move anything. A few quick briefs. On the hotel side, World of Hyatt's summer promotion is now live. You can earn two thousand bonus points for every two nights, up to eight thousand, on stays through September seventh. One catch: the qualifying nights only start counting from your second stay, so register now. Marriott Bonvoy quietly changed its terms this month, adjusting how points and elite nights accrue at Series-brand and City Express hotels. There is also a separate offer handing out three thousand bonus points per stay at select properties through September eighth. On the airline front, United has widened the gap between members who hold a co-branded card and those who don't. Since April, non-cardholders earn just three miles per dollar, about sixty percent of what Delta and American now pay. If United is your home airline, the co-brand math is harder to ignore. And on cards: the refreshed Amex Platinum now costs eight hundred ninety-five dollars a year. The twice-yearly Saks credit ended June thirtieth, and Lufthansa lounge access goes away October first. It is a good moment to check whether the credits you actually use still justify the new fee. So here is today's move. If you have been eyeing a Virgin Atlantic redemption, this is your window. Confirm the space, price it out, then transfer from Chase before July fourteenth, or from Amex before July thirty-first. Move only what you need. Everything else this week can wait. This one has a clock. That's your brief. Travel well, and spend those points wisely.";
+
+  var synth = window.speechSynthesis;
+  var utter = null;
+  function pickVoice(){
+    var vs = synth.getVoices();
+    var pref = vs.filter(function(v){ return /Daniel|Alex/.test(v.name); });
+    return pref.length ? pref[0] : (vs.find(function(v){return /en/i.test(v.lang);}) || vs[0]);
+  }
+  function togglePlay(){
+    var btn = document.getElementById('playBtn');
+    if(synth.speaking && !synth.paused){ synth.pause(); btn.innerHTML='&#9654; Resume'; return; }
+    if(synth.paused){ synth.resume(); btn.innerHTML='&#10073;&#10073; Pause'; return; }
+    utter = new SpeechSynthesisUtterance(S);
+    utter.rate = 0.93;
+    var v = pickVoice(); if(v) utter.voice = v;
+    utter.onend = function(){ btn.innerHTML='&#9654; Listen'; };
+    synth.speak(utter);
+    btn.innerHTML='&#10073;&#10073; Pause';
+  }
+  if(typeof speechSynthesis !== 'undefined'){ speechSynthesis.onvoiceschanged = pickVoice; }
+</script>
+</body>
+</html>
