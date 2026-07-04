@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — July 4, 2026</title>
+<style>
+  :root{
+    --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4; --muted:#8a8468;
+    --line:#1d2433; --card:#0d1320; --urgent:#7a1f1f;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:Georgia,'Times New Roman',serif; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:0 22px 60px;}
+  a{color:var(--accent); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .nav{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:14px 0; border-bottom:1px solid var(--line);
+    font-size:.8rem; letter-spacing:.05em; text-transform:uppercase;
+  }
+  .nav .active{color:var(--accent);}
+  .nav .grey{color:var(--muted); pointer-events:none;}
+  .masthead{text-align:center; padding:38px 0 20px; border-bottom:2px solid var(--accent);}
+  .masthead h1{
+    margin:0; font-size:2.9rem; letter-spacing:.06em; color:var(--accent);
+    font-weight:normal;
+  }
+  .masthead .sub{
+    margin-top:8px; font-size:.82rem; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--muted);
+  }
+  .dateline{
+    text-align:center; font-size:.8rem; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--muted); margin:14px 0 26px;
+  }
+  .player{
+    display:flex; align-items:center; gap:14px; justify-content:center;
+    background:var(--card); border:1px solid var(--line); border-radius:6px;
+    padding:12px 18px; margin:0 0 30px;
+  }
+  .player button{
+    background:var(--accent); color:var(--bg); border:none; cursor:pointer;
+    font-family:inherit; font-size:.82rem; letter-spacing:.08em;
+    text-transform:uppercase; padding:9px 18px; border-radius:4px;
+  }
+  .player button:hover{opacity:.88;}
+  .player .plabel{font-size:.78rem; letter-spacing:.1em; color:var(--muted); text-transform:uppercase;}
+  .urgent{
+    background:var(--urgent); color:#f0e4c4; border:1px solid #a63a3a;
+    border-radius:6px; padding:12px 18px; margin:0 0 28px;
+    font-size:.9rem; letter-spacing:.02em; text-align:center;
+  }
+  .urgent b{color:#fff; letter-spacing:.05em;}
+  section{margin:0 0 40px;}
+  h2{
+    font-size:.82rem; letter-spacing:.2em; text-transform:uppercase;
+    color:var(--accent); border-bottom:1px solid var(--line);
+    padding-bottom:7px; margin:0 0 18px; font-weight:normal;
+  }
+  .lead h3{font-size:1.7rem; line-height:1.3; margin:0 0 14px; color:var(--text); font-weight:normal;}
+  .lead p{margin:0 0 15px; font-size:1.06rem;}
+  table{width:100%; border-collapse:collapse; font-size:.95rem;}
+  th,td{text-align:left; padding:10px 8px; border-bottom:1px solid var(--line);}
+  th{color:var(--muted); font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; font-weight:normal;}
+  td .pct{color:var(--accent); font-weight:bold;}
+  .exp{color:var(--muted); font-size:.86rem;}
+  .brief{margin:0 0 20px;}
+  .brief h4{margin:0 0 5px; font-size:1.08rem; color:var(--text); font-weight:normal;}
+  .brief h4 a{color:var(--text);}
+  .brief h4 a:hover{color:var(--accent);}
+  .brief p{margin:0; font-size:.98rem; color:var(--text);}
+  .signal{
+    background:var(--card); border:1px solid var(--accent); border-radius:6px;
+    padding:20px 22px;
+  }
+  .signal .tag{font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:8px;}
+  .signal p{margin:0; font-size:1.05rem;}
+  footer{border-top:1px solid var(--line); padding-top:16px; text-align:center; color:var(--muted); font-size:.78rem; letter-spacing:.06em;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="nav">
+    <a class="active" href="2026-07-03.html">&larr; 2026-07-03</a>
+    <span class="grey">2026-07-05 &rarr;</span>
+  </div>
+
+  <div class="masthead">
+    <h1>The Points Brief</h1>
+    <div class="sub">Greg's Daily Travel Points Dispatch</div>
+  </div>
+  <div class="dateline">Saturday &middot; July 4, 2026</div>
+
+  <div class="player">
+    <button id="pbPlay" onclick="pbToggle()">&#9658; Play Audio</button>
+    <span class="plabel">Listen &middot; ~3 min</span>
+  </div>
+
+  <div class="urgent">
+    &#9888; <b>Closes in 3 days:</b> The Chase &rarr; Virgin Atlantic <b>30% bonus</b> ends July 7. The IHG &rarr; American AAdvantage 3x earning switch ends July 6.
+  </div>
+
+  <section class="lead">
+    <h2>Lead Story</h2>
+    <h3>Virgin Atlantic is having a moment — and both your card stacks feed it</h3>
+    <p>For a brief window, Virgin Atlantic Flying Club is sitting at the center of two simultaneous 30% transfer bonuses. Chase Ultimate Rewards is offering a <span style="color:var(--accent)">30% bonus through July 7</span>, moving points at 1:1.3, while American Express Membership Rewards runs its own <span style="color:var(--accent)">30% bonus through July 31</span> at the same elevated rate. Both transfer instantly, which is unusual for a hotel-or-airline sweet spot this rich.</p>
+    <p>Why it matters for a stack like yours: Virgin Flying Club is the quiet backdoor to partner premium cabins — ANA first and business class from the US to Japan, Delta One transcontinental, and Virgin's own upgraded Upper Class. At 1.3 miles per point transferred, aspirational redemptions that normally feel out of reach get materially cheaper. The catch is the mismatch in deadlines: Chase's version is the one on the clock. If you have a specific award in mind and the miles need to land in Virgin, the Chase transfer is the one to decide on this weekend.</p>
+    <p>A word of discipline: never speculatively transfer. Virgin miles are stranded if the award space evaporates. Confirm bookable space first, then move points. <a href="https://www.virginatlantic.com/flying-club" target="_blank" rel="noopener">Virgin Atlantic Flying Club</a></p>
+  </section>
+
+  <section>
+    <h2>Active Transfer Bonuses</h2>
+    <table>
+      <thead>
+        <tr><th>From</th><th>To</th><th>Bonus</th><th>Expires</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Chase Ultimate Rewards</td><td>Virgin Atlantic</td><td><span class="pct">30%</span></td><td class="exp">Jul 7</td></tr>
+        <tr><td>Amex Membership Rewards</td><td>Virgin Atlantic</td><td><span class="pct">30%</span></td><td class="exp">Jul 31</td></tr>
+        <tr><td>Amex Membership Rewards</td><td>Hilton Honors</td><td><span class="pct">20%</span></td><td class="exp">Jul 14</td></tr>
+        <tr><td>Amex Membership Rewards</td><td>Avianca LifeMiles</td><td><span class="pct">15%</span></td><td class="exp">Jul 15</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:.84rem; color:var(--muted); margin-top:12px;">Non-stack note: Citi ThankYou &rarr; Accor at 50% runs through July 18, the richest bonus on the board if you carry Citi points. <a href="https://thepointsguy.com/loyalty-programs/current-transfer-bonuses/" target="_blank" rel="noopener">Full tracker</a></p>
+  </section>
+
+  <section>
+    <h2>Today's Briefs</h2>
+
+    <div class="brief">
+      <h4><a href="https://onemileatatime.com/deals/world-of-hyatt-promotion/" target="_blank" rel="noopener">World of Hyatt summer promo is live — register before you stay</a></h4>
+      <p>Earn 2,000 bonus points for every two nights, up to 8,000, on stays July 1 through September 7. Registration runs June 22 to September 1, and the first stay is a throwaway — only the second stay onward counts. Mr &amp; Mrs Smith and Venetian stays qualify if booked through Hyatt.</p>
+    </div>
+
+    <div class="brief">
+      <h4><a href="https://upgradedpoints.com/news/purchase-ihg-points-bonus/" target="_blank" rel="noopener">IHG points at 0.5 cents each — 100% purchase bonus through July 16</a></h4>
+      <p>Buy 5,000+ points and get a matching 100% bonus, dropping the cost to half a cent per point. Only worth it against a specific, confirmed high-value redemption — otherwise it's just prepaying for a hotel you haven't booked. Separately, IHG's 3x AAdvantage earning switch closes July 6.</p>
+    </div>
+
+    <div class="brief">
+      <h4><a href="https://awardwallet.com/news/marriott-bonvoy/marriott-promotions/" target="_blank" rel="noopener">Marriott Bonvoy stacks bonus points with code S2449</a></h4>
+      <p>3,000 bonus points per stay at select properties through September 8 with promo code S2449, plus regional layers: 1,000 to 10,000 per stay in Europe, Middle East and Africa, and 5,000 per two-night stay at Design Hotels. Register before you book to be safe.</p>
+    </div>
+
+    <div class="brief">
+      <h4><a href="https://awardwallet.com/news/united-mileageplus/premier-status-changes-2026/" target="_blank" rel="noopener">United widens the cardholder gap — and status challenges are open</a></h4>
+      <p>Since April, United MileagePlus earning increasingly favors co-branded cardholders, and upgrade awards are now eligible on award tickets for all Premier members. If you fly United enough to care about status, the published status challenge accepts requests through December 21.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Today's Move</h2>
+    <div class="signal">
+      <span class="tag">The Signal</span>
+      <p>If — and only if — you have Virgin Atlantic award space confirmed, move Chase points before July 7 to lock the 30% bonus. No target booked? Sit on your hands: the Amex-to-Virgin 30% runs through July 31 and buys you three more weeks to find space without touching your Chase balance. Speculative transfers are how good points go to die.</p>
+    </div>
+  </section>
+
+  <div class="nav">
+    <a class="active" href="2026-07-03.html">&larr; 2026-07-03</a>
+    <span class="grey">2026-07-05 &rarr;</span>
+  </div>
+
+  <footer>The Points Brief &middot; Curated for Greg &middot; Not financial advice &middot; Verify award space before transferring</footer>
+
+</div>
+
+<script>
+  var S = "Good morning, Greg. This is The Points Brief for Saturday, July fourth. Here is what is moving in the points world today. "
+    + "The lead story is Virgin Atlantic, and it is having a genuine moment. For a short window, two of your card stacks are both offering thirty percent transfer bonuses into Virgin Atlantic Flying Club at the same time. Chase Ultimate Rewards is running a thirty percent bonus, but it ends July seventh, so that is the one on the clock. American Express Membership Rewards is also at thirty percent, and that one runs through the end of the month. Both transfer instantly. "
+    + "Why does Virgin matter? Because Flying Club is the quiet backdoor to partner premium cabins. Think ANA first and business class to Japan, Delta One across the country, and Virgin's own Upper Class. At one point three miles per point, those aspirational seats get a lot cheaper. But here is the discipline: never transfer on speculation. Virgin miles are stranded if the award space disappears. Confirm bookable space first, then move the points. "
+    + "On the transfer bonus board today: Chase to Virgin Atlantic at thirty percent through July seventh. Amex to Virgin Atlantic at thirty percent through July thirty-first. Amex to Hilton Honors at twenty percent through July fourteenth. And Amex to Avianca LifeMiles at fifteen percent through July fifteenth. If you happen to carry Citi points, there is a fifty percent bonus to Accor through July eighteenth, the richest on the board. "
+    + "A few quick briefs. The World of Hyatt summer promotion is live: two thousand bonus points for every two nights, up to eight thousand, on stays through September seventh. Register first, and note the first stay is a throwaway. "
+    + "IHG is selling points at half a cent each with a one hundred percent bonus through July sixteenth, but only buy against a specific, confirmed redemption. And IHG's three-times AAdvantage earning switch closes July sixth. "
+    + "Marriott Bonvoy is layering bonuses with promo code S two four four nine, three thousand points per stay through September eighth, with extra regional bonuses in Europe and at Design Hotels. "
+    + "And United continues to widen the gap between cardholders and everyone else, while its status challenge stays open through December. "
+    + "Today's move: if you have Virgin Atlantic award space confirmed, transfer Chase points before July seventh to catch the thirty percent. No target booked? Sit tight. The Amex version runs through July thirty-first and buys you three more weeks. Speculative transfers are how good points go to die. "
+    + "That is your brief. Travel smart, and confirm the space before you move a single point.";
+
+  var pbUtter = null, pbPlaying = false;
+  function pbPickVoice(){
+    var vs = window.speechSynthesis.getVoices();
+    var pref = ['Daniel','Alex'];
+    for(var i=0;i<pref.length;i++){
+      for(var j=0;j<vs.length;j++){ if(vs[j].name.indexOf(pref[i])>-1) return vs[j]; }
+    }
+    for(var k=0;k<vs.length;k++){ if(vs[k].lang && vs[k].lang.indexOf('en')===0) return vs[k]; }
+    return vs[0]||null;
+  }
+  function pbToggle(){
+    var btn = document.getElementById('pbPlay');
+    if(pbPlaying){ window.speechSynthesis.cancel(); pbPlaying=false; btn.innerHTML='&#9658; Play Audio'; return; }
+    pbUtter = new SpeechSynthesisUtterance(S);
+    pbUtter.rate = 0.93;
+    var v = pbPickVoice(); if(v) pbUtter.voice = v;
+    pbUtter.onend = function(){ pbPlaying=false; btn.innerHTML='&#9658; Play Audio'; };
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(pbUtter);
+    pbPlaying = true; btn.innerHTML='&#10073;&#10073; Stop';
+  }
+  if(typeof speechSynthesis!=='undefined' && speechSynthesis.onvoiceschanged!==undefined){
+    speechSynthesis.onvoiceschanged = function(){};
+  }
+</script>
+</body>
+</html>
