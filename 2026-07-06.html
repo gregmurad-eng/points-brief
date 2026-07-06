@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — 2026-07-06</title>
+<style>
+  :root{--bg:#080c14;--accent:#c9a84c;--text:#d8d0b4;}
+  *{box-sizing:border-box;}
+  body{background:var(--bg);color:var(--text);font-family:Georgia,'Times New Roman',serif;margin:0;line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px 60px;}
+  a{color:var(--accent);}
+  .nav{display:flex;justify-content:space-between;align-items:center;font-size:.82rem;letter-spacing:.05em;padding:14px 0;border-bottom:1px solid rgba(201,168,76,.25);}
+  .nav .disabled{color:#5a5a4a;pointer-events:none;text-decoration:none;}
+  .masthead{text-align:center;padding:34px 0 10px;border-bottom:2px solid var(--accent);}
+  .masthead h1{font-size:2.5rem;margin:0;letter-spacing:.06em;color:var(--accent);font-variant:small-caps;}
+  .masthead .tag{font-style:italic;font-size:.95rem;opacity:.8;margin-top:6px;}
+  .masthead .date{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-top:10px;opacity:.7;}
+  .player{display:flex;align-items:center;gap:14px;margin:20px 0;padding:12px 16px;border:1px solid rgba(201,168,76,.3);border-radius:4px;background:rgba(201,168,76,.04);}
+  .player button{background:var(--accent);color:var(--bg);border:none;font-family:inherit;font-size:.9rem;padding:8px 18px;border-radius:3px;cursor:pointer;letter-spacing:.03em;}
+  .player button:hover{opacity:.88;}
+  .player .lbl{font-size:.82rem;font-style:italic;opacity:.85;}
+  .urgent{background:#3a1414;border:1px solid #a04040;color:#f0c0b0;padding:12px 16px;border-radius:4px;margin:18px 0;font-size:.92rem;}
+  .urgent strong{color:#ff9d80;}
+  h2{color:var(--accent);font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid rgba(201,168,76,.25);padding-bottom:6px;margin:38px 0 16px;}
+  .lead h3{font-size:1.7rem;line-height:1.25;margin:0 0 12px;color:#eadfc0;}
+  .lead p{margin:0 0 14px;}
+  table{width:100%;border-collapse:collapse;font-size:.9rem;margin:8px 0;}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid rgba(201,168,76,.18);}
+  th{color:var(--accent);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;}
+  td .pct{color:#eadfc0;font-weight:bold;}
+  .brief{margin:0 0 20px;}
+  .brief h4{margin:0 0 4px;font-size:1.08rem;color:#eadfc0;}
+  .brief p{margin:0;font-size:.95rem;}
+  .signal{border:1px solid var(--accent);border-radius:5px;padding:20px 22px;margin:16px 0;background:rgba(201,168,76,.06);}
+  .signal .k{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);}
+  .signal p{margin:8px 0 0;font-size:1.05rem;}
+  .foot{margin-top:40px;padding-top:16px;border-top:1px solid rgba(201,168,76,.25);font-size:.78rem;opacity:.6;text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a href="2026-07-05.html">&larr; 2026-07-05</a>
+    <span>The Points Brief</span>
+    <a class="disabled" href="2026-07-07.html">2026-07-07 &rarr;</a>
+  </nav>
+
+  <header class="masthead">
+    <h1>The Points Brief</h1>
+    <div class="tag">A daily dispatch on miles, points &amp; the art of the redemption</div>
+    <div class="date">Monday, July 6, 2026</div>
+  </header>
+
+  <div class="player">
+    <button id="playBtn" onclick="togglePlay()">&#9654; Listen</button>
+    <span class="lbl" id="playLbl">~3 min &middot; today's brief, read aloud</span>
+  </div>
+
+  <div class="urgent">
+    <strong>&#9201; Ends today:</strong> The IHG One Rewards + American Airlines promo &mdash; <strong>triple AAdvantage miles</strong> on IHG stays &mdash; requires you to register, book and stay by <strong>July 6</strong>. If you have an IHG night on the calendar, add your AAdvantage number before midnight.
+  </div>
+
+  <section class="lead">
+    <h2>Lead Story</h2>
+    <h3>Hyatt's best-kept transfer secret is on a countdown clock</h3>
+    <p>For years the quiet backbone of Chase Ultimate Rewards value has been the 1:1 pipe into World of Hyatt &mdash; the rare hotel program where a point routinely buys 1.6 cents or more of real room value. That pipe is narrowing. Chase and Hyatt are moving the Sapphire Preferred transfer ratio from <strong>1:1 to 4:3</strong>, meaning three Hyatt points for every four Ultimate Rewards points you send.</p>
+    <p>The nuance that matters: anyone <em>approved for the card on or after June 15, 2026</em> already lives under the worse ratio. But <strong>existing cardholders keep 1:1 transfers until October 1, 2026</strong>. That's a roughly three-month window where the old math still holds &mdash; and it's a strong argument for topping up a Hyatt account (only when you have a specific stay in mind) before the fall.</p>
+    <p>Hyatt is sweetening the timing from its own side too: <a href="https://world.hyatt.com/content/gp/en/rewards/buy-gift-transfer-points.html">buy World of Hyatt points at a 20% bonus through July 27</a>, and earn <a href="https://world.hyatt.com/content/gp/en/offers.html">up to 30,000 bonus points at Hyatt Place and Hyatt Select brands</a> on qualifying multi-night stays.</p>
+  </section>
+
+  <section>
+    <h2>Active Transfer Bonuses</h2>
+    <table>
+      <thead>
+        <tr><th>From</th><th>To</th><th>Bonus</th><th>Expires</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Amex Membership Rewards</td><td>Virgin Atlantic Flying Club</td><td class="pct">30%</td><td>Jul 31</td></tr>
+        <tr><td>Amex Membership Rewards</td><td>Hilton Honors</td><td class="pct">20%</td><td>Jul 14</td></tr>
+        <tr><td>Amex Membership Rewards</td><td>Avianca LifeMiles</td><td class="pct">15%</td><td>Jul 15</td></tr>
+        <tr><td>Chase Ultimate Rewards</td><td>Virgin Atlantic Flying Club</td><td class="pct">30%</td><td>Jul 14</td></tr>
+        <tr><td>Chase Ultimate Rewards</td><td>Marriott Bonvoy</td><td class="pct">up to 55%</td><td>Limited</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:.8rem;opacity:.6;margin-top:4px;">Transfers are irreversible &mdash; move points only when you're ready to book a confirmed award. Verify every rate on the issuer's transfer page first.</p>
+  </section>
+
+  <section>
+    <h2>Today's Briefs</h2>
+
+    <div class="brief">
+      <h4>Delta's summer flash sale closes July 15</h4>
+      <p>Delta SkyMiles is running an <a href="https://www.delta.com/us/en/skymiles/how-to-use-miles/award-travel">award flash sale</a> with reduced mileage pricing to Europe, South America and the Caribbean. Windows are narrow and blackout-heavy, so search dates broadly &mdash; but for a SkyMiles balance that usually feels stuck, this is the rare moment the program pays out.</p>
+    </div>
+
+    <div class="brief">
+      <h4>United reshuffles how miles are earned</h4>
+      <p>Starting April 2, 2026, United MileagePlus members without a co-branded card earn fewer miles on United flights, and basic-economy fares stop earning entirely unless you hold status or a United card. The offset: <a href="https://www.united.com/en/us/fly/mileageplus/whats-new.html">upgrade awards are now available to all Premier members on award tickets</a>, a genuinely useful expansion for anyone burning miles on United metal.</p>
+    </div>
+
+    <div class="brief">
+      <h4>Marriott and United launch a dual-currency stay-and-fly offer</h4>
+      <p>Book qualifying stays and flights between July 15 and September 30 and earn in both <a href="https://www.marriott.com/loyalty/earn/promotions.mi">Bonvoy points and MileagePlus miles</a>. Marriott is separately handing out 5,000 bonus points per stay at its Design Hotels collection on two-plus-night bookings.</p>
+    </div>
+
+    <div class="brief">
+      <h4>Amex adds a Virgin Atlantic runway</h4>
+      <p>The <a href="https://www.virginatlantic.com/flying-club/spend-points/flight-reward">Amex &rarr; Virgin Atlantic 30% bonus</a> runs through July 31 &mdash; Virgin's dynamic pricing can surface some of the lowest premium-cabin rates anywhere, though the carrier-imposed surcharges run high. Great for London; do the fees math before you transfer.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Today's Move</h2>
+    <div class="signal">
+      <span class="k">The Signal</span>
+      <p>If you're an existing Sapphire Preferred holder, your 1:1 Chase&rarr;Hyatt transfers survive only until <strong>October 1</strong>. Don't speculatively hoard &mdash; but if you have a Hyatt stay you'll book this year, this is the last clean window to fund it at the old ratio. Pair it with the 20%-off points-purchase bonus and you're stacking two deadlines in your favor.</p>
+    </div>
+  </section>
+
+  <nav class="nav" style="border-top:1px solid rgba(201,168,76,.25);border-bottom:none;margin-top:30px;">
+    <a href="2026-07-05.html">&larr; 2026-07-05</a>
+    <span>The Points Brief</span>
+    <a class="disabled" href="2026-07-07.html">2026-07-07 &rarr;</a>
+  </nav>
+
+  <div class="foot">The Points Brief &middot; Compiled July 6, 2026 &middot; Informational only; confirm all offers with the issuer before transferring.</div>
+
+</div>
+
+<script>
+const S = "The Points Brief for Monday, July sixth, twenty twenty-six. Let's start with the clock that's actually ticking today. The I-H-G One Rewards promotion with American Airlines, the one paying triple AAdvantage miles on your hotel stays, ends today. If you've got an I-H-G night booked, add your AAdvantage number before midnight, because after tonight it's gone. Now, the lead story, and it's the one worth slowing down for. For years the quiet engine behind Chase Ultimate Rewards has been the one-to-one transfer into World of Hyatt. Hyatt is that rare hotel program where a single point reliably buys well over a cent and a half of real room value. That pipeline is narrowing. Chase and Hyatt are moving the Sapphire Preferred transfer ratio from one-to-one down to four-to-three. That means three Hyatt points for every four Ultimate Rewards points you send. Here's the part that matters most. If you were approved for the card on or after June fifteenth, you're already living under the worse ratio. But if you're an existing cardholder, you keep the one-to-one transfers all the way until October first. That's a three-month window where the old, better math still holds. It's a strong reason to fund a Hyatt account before the fall, but only if you have a specific stay in mind. Never transfer on speculation, because transfers are irreversible. Hyatt is helping the timing from its own side too. You can buy World of Hyatt points at a twenty percent bonus through July twenty-seventh, and earn up to thirty thousand bonus points at Hyatt Place and Hyatt Select brands on qualifying multi-night stays. On to the active transfer bonuses. American Express is running thirty percent to Virgin Atlantic through July thirty-first, twenty percent to Hilton Honors through July fourteenth, and fifteen percent to Avianca LifeMiles through July fifteenth. On the Chase side, you've got thirty percent to Virgin Atlantic, but that one expires July fourteenth, so it's on a shorter fuse. There's also a Chase to Marriott Bonvoy bonus running as high as fifty-five percent. As always, only move points when you have a confirmed award ready to book. A few quick briefs. Delta's summer flash sale closes July fifteenth, with reduced mileage pricing to Europe, South America, and the Caribbean. Search your dates broadly, because the windows are narrow. United is reshuffling how miles are earned starting in April. Members without a co-branded card earn less, and basic economy stops earning entirely unless you have status or a United card. The upside is that upgrade awards are now open to all Premier members, even on award tickets. Marriott and United have launched a dual-currency stay-and-fly offer. Book qualifying stays and flights between July fifteenth and September thirtieth and earn in both Bonvoy points and MileagePlus miles. And Amex's Virgin Atlantic bonus is excellent for London, though remember Virgin's carrier surcharges run high, so do the fees math before you transfer. Now for today's move. If you're an existing Sapphire Preferred holder, your one-to-one Chase to Hyatt transfers survive only until October first. Don't hoard speculatively. But if you have a Hyatt stay you'll book this year, this is the last clean window to fund it at the old ratio. Pair it with the twenty percent points-purchase bonus, and you're stacking two deadlines in your favor. That's your brief. Transfer carefully, book confirmed, and I'll see you tomorrow.";
+
+let speaking=false;
+function pickVoice(){
+  const vs=window.speechSynthesis.getVoices();
+  return vs.find(v=>/Daniel/i.test(v.name))||vs.find(v=>/Alex/i.test(v.name))||vs.find(v=>/en[-_]GB/i.test(v.lang))||vs.find(v=>/en/i.test(v.lang))||vs[0];
+}
+function togglePlay(){
+  const btn=document.getElementById('playBtn'), lbl=document.getElementById('playLbl');
+  if(speaking){window.speechSynthesis.cancel();speaking=false;btn.innerHTML='&#9654; Listen';lbl.textContent='~3 min · today’s brief, read aloud';return;}
+  const u=new SpeechSynthesisUtterance(S);
+  u.rate=0.93;const v=pickVoice();if(v)u.voice=v;
+  u.onend=()=>{speaking=false;btn.innerHTML='&#9654; Listen';lbl.textContent='~3 min · today’s brief, read aloud';};
+  u.onstart=()=>{lbl.textContent='Playing… tap to stop';};
+  window.speechSynthesis.cancel();window.speechSynthesis.speak(u);
+  speaking=true;btn.innerHTML='&#9632; Stop';
+}
+if(typeof speechSynthesis!=='undefined'){speechSynthesis.onvoiceschanged=pickVoice;}
+</script>
+</body>
+</html>
