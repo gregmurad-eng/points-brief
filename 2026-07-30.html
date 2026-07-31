@@ -1,0 +1,359 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Points Brief — July 30, 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 18px 60px;
+    background: #080c14;
+    color: #d8d0b4;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+
+  /* ---------- nav ---------- */
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px 0;
+    margin: 0;
+    border-bottom: 1px solid #1e2636;
+    font-size: 13px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+  }
+  .bar a { color: #c9a84c; text-decoration: none; }
+  .bar a:hover { text-decoration: underline; }
+  .nav-mid a { color: #c9a84c; margin: 0 9px; }
+  .bar .next { color: #4a5468; }
+  .bar + .bar { border-top: 1px solid #1e2636; border-bottom: none; margin-top: 40px; }
+
+  /* ---------- masthead ---------- */
+  header.mast { text-align: center; padding: 40px 0 26px; border-bottom: 2px solid #c9a84c; }
+  header.mast h1 {
+    margin: 0;
+    font-size: 46px;
+    font-weight: normal;
+    letter-spacing: .04em;
+    color: #c9a84c;
+    line-height: 1.1;
+  }
+  .tagline {
+    margin: 10px 0 0;
+    font-size: 13px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: #8b8570;
+  }
+  .dateline { margin: 14px 0 0; font-size: 15px; font-style: italic; color: #a49b7e; }
+
+  /* ---------- urgent ---------- */
+  .urgent {
+    border: 1px solid #c9a84c;
+    border-left: 5px solid #c9a84c;
+    background: #14100a;
+    padding: 18px 20px;
+    margin: 30px 0 0;
+  }
+  .urgent h2 {
+    margin: 0 0 8px;
+    font-size: 13px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #c9a84c;
+  }
+  .urgent p { margin: 0 0 8px; font-size: 16px; }
+  .urgent p:last-child { margin-bottom: 0; }
+  .urgent strong { color: #efe6c4; }
+
+  /* ---------- audio ---------- */
+  .audio {
+    margin: 30px 0 0;
+    padding: 16px 20px;
+    border: 1px solid #1e2636;
+    background: #0b111c;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .audio button {
+    background: transparent;
+    border: 1px solid #c9a84c;
+    color: #c9a84c;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    padding: 9px 18px;
+    cursor: pointer;
+  }
+  .audio button:hover { background: #c9a84c; color: #080c14; }
+  .audio button[disabled] { opacity: .4; cursor: default; }
+  .audio .lbl { font-size: 14px; color: #8b8570; font-style: italic; }
+
+  /* ---------- sections ---------- */
+  section { margin: 44px 0 0; }
+  h2.sec {
+    font-size: 14px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #c9a84c;
+    border-bottom: 1px solid #1e2636;
+    padding-bottom: 9px;
+    margin: 0 0 22px;
+    font-weight: normal;
+  }
+  .offer { margin: 0 0 26px; padding-left: 16px; border-left: 2px solid #1e2636; }
+  .offer.hot { border-left-color: #c9a84c; }
+  .offer h3 { margin: 0 0 5px; font-size: 20px; color: #efe6c4; font-weight: normal; }
+  .pct { color: #c9a84c; font-weight: bold; }
+  .meta {
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #7d8496;
+    margin: 0 0 8px;
+  }
+  .meta .exp { color: #c98c4c; }
+  .offer p { margin: 0 0 7px; font-size: 16px; }
+  .offer a, section a { color: #c9a84c; }
+  .src { font-size: 13px; font-style: italic; }
+
+  /* ---------- play box ---------- */
+  .play {
+    border: 1px solid #c9a84c;
+    background: #0d1320;
+    padding: 22px 24px;
+    margin: 44px 0 0;
+  }
+  .play h2 {
+    margin: 0 0 12px;
+    font-size: 14px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #c9a84c;
+    font-weight: normal;
+  }
+  .play p { margin: 0 0 12px; font-size: 16px; }
+  .play p:last-child { margin-bottom: 0; }
+  .play strong { color: #efe6c4; }
+
+  .caution {
+    margin: 30px 0 0;
+    padding: 16px 20px;
+    border: 1px dashed #3a4256;
+    font-size: 15px;
+    color: #a49b7e;
+    font-style: italic;
+  }
+
+  footer {
+    margin: 46px 0 0;
+    padding-top: 20px;
+    border-top: 1px solid #1e2636;
+    font-size: 13px;
+    color: #6f7789;
+    line-height: 1.7;
+  }
+  footer a { color: #8a7a45; }
+
+  @media (max-width: 560px) {
+    header.mast h1 { font-size: 32px; }
+    .bar { font-size: 11px; letter-spacing: .08em; }
+    .nav-mid a { margin: 0 7px; }
+  }
+</style>
+
+<div class="wrap">
+
+  <nav class="bar"><a href="2026-07-29.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+  <header class="mast">
+    <h1>The Points Brief</h1>
+    <p class="tagline">Travel Points · Maximize every transfer</p>
+    <p class="dateline">Thursday, July 30, 2026</p>
+  </header>
+
+  <div class="urgent">
+    <h2>⚠ Expiring inside 72 hours</h2>
+    <p><strong>Chase Ultimate Rewards → IHG One Rewards, 100% bonus — expires TODAY, July 30, 2026.</strong> This is the last day of the richest bonus on the board. After tonight it is gone.</p>
+    <p><strong>Amex Membership Rewards → Virgin Atlantic Flying Club, 30% bonus — expires tomorrow, July 31, 2026.</strong></p>
+    <p><strong>Capital One Miles → EVA Air Infinity MileageLands, 30% bonus — also expires July 31, 2026.</strong></p>
+  </div>
+
+  <div class="audio">
+    <button id="playBtn" type="button">▶ Listen to today's brief</button>
+    <button id="stopBtn" type="button" disabled>■ Stop</button>
+    <span class="lbl">≈3 minutes · read aloud in your browser</span>
+  </div>
+
+  <section>
+    <h2 class="sec">Today's Transfer Bonuses</h2>
+
+    <div class="offer hot">
+      <h3>Chase Ultimate Rewards → IHG One Rewards <span class="pct">+100%</span></h3>
+      <p class="meta">Hotel · <span class="exp">Ends July 30, 2026 — today</span></p>
+      <p>1,000 Ultimate Rewards points become 2,000 IHG points. This is the single best bonus running this month and it dies tonight. IHG's own point values are soft, so the math only works on a specific expensive night — but at an effective 0.5 UR per IHG point, a 60,000-point Intercontinental night costs 30,000 UR. Check the cash rate first; if the room is $180, you are burning value.</p>
+      <p class="src">Source: <a href="https://thepointsguy.com/loyalty-programs/current-transfer-bonuses/">The Points Guy — current transfer bonuses</a></p>
+    </div>
+
+    <div class="offer hot">
+      <h3>Amex Membership Rewards → Virgin Atlantic Flying Club <span class="pct">+30%</span></h3>
+      <p class="meta">Airline · <span class="exp">Ends July 31, 2026 — tomorrow</span></p>
+      <p>1,000 Membership Rewards points become 1,300 Virgin points. Virgin remains one of the more useful Amex partners because of its ANA and Delta partner awards, but availability is the whole game — Virgin does not hold seats for you, and its own transatlantic awards carry heavy surcharges. Only move points against a seat you have already found.</p>
+      <p class="src">Source: <a href="https://awardwallet.com/news/amex-membership-rewards/virgin-atlantic-transfer-bonus/">AwardWallet — Amex to Virgin Atlantic 30% bonus</a></p>
+    </div>
+
+    <div class="offer hot">
+      <h3>Capital One Miles → EVA Air Infinity MileageLands <span class="pct">+30%</span></h3>
+      <p class="meta">Airline · <span class="exp">Ends July 31, 2026 — tomorrow</span></p>
+      <p>Outside the core Chase/Amex stack, but worth naming: EVA's business class to Taipei is a genuinely good product and this is the deepest discount on it in months. Also expiring tomorrow.</p>
+      <p class="src">Source: <a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler — current point transfer bonuses</a></p>
+    </div>
+
+    <div class="offer">
+      <h3>Citi ThankYou Rewards → Air France-KLM Flying Blue <span class="pct">+20%</span></h3>
+      <p class="meta">Airline · Ends August 22, 2026</p>
+      <p>The one bonus with real runway left. Flying Blue's monthly Promo Rewards can drop European economy awards well under 20,000 miles, and a 20% bonus on top of that is the cheapest transatlantic math available right now. No rush — you have three weeks.</p>
+      <p class="src">Source: <a href="https://www.point.me/insights/current-transfer-bonuses/">point.me — current transfer bonuses</a></p>
+    </div>
+
+    <div class="offer">
+      <h3>Marriott Bonvoy → Cathay Pacific Asia Miles <span class="pct">+10%</span></h3>
+      <p class="meta">Hotel to airline · Ends August 28, 2026</p>
+      <p>A thin bonus on an already poor ratio — Bonvoy transfers out at 3:1. Listed for completeness, not as a recommendation. If you are sitting on idle Bonvoy points, they are almost always worth more as hotel nights.</p>
+      <p class="src">Source: <a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler — current point transfer bonuses</a></p>
+    </div>
+
+    <div class="offer">
+      <h3>Rove Miles → Qantas Frequent Flyer <span class="pct">+50%</span></h3>
+      <p class="meta">Airline · Ends August 14, 2026</p>
+      <p>Headline percentage, niche currency. Only relevant if you already hold Rove Miles; not part of the mainstream stack.</p>
+      <p class="src">Source: <a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler — current point transfer bonuses</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="sec">Program News You Should Act On</h2>
+
+    <div class="offer">
+      <h3>Chase is cutting the Hyatt transfer ratio to 4:3</h3>
+      <p class="meta">Deadline · October 1, 2026 for existing cardholders</p>
+      <p>This is the most consequential change on the board, and it is not a bonus — it is a devaluation with a clock. Sapphire Preferred and Ink Business Preferred lose the 1:1 Hyatt ratio and drop to 4:3: 10,000 Ultimate Rewards points will yield 7,500 Hyatt points. Anyone approved on or after June 15, 2026 is already at the worse ratio. Existing cardholders keep 1:1 until <strong>October 1, 2026</strong>. Sapphire Reserve keeps 1:1 — Hyatt transfers are now a premium-card benefit.</p>
+      <p>If World of Hyatt is where your Chase points actually get spent, this is a real deadline. Do not pre-transfer speculatively into Hyatt just to beat it — but if you have a stay in mind for the next several months, transferring before October 1 is worth 25% more than transferring after.</p>
+      <p class="src">Sources: <a href="https://frequentmiler.com/chase-slashes-hyatt-transfer-ratio-to-43/">Frequent Miler</a> · <a href="https://thepointsguy.com/news/chase-sapphire-preferred-refresh-2026/">The Points Guy — Sapphire Preferred refresh</a></p>
+    </div>
+
+    <div class="offer">
+      <h3>Delta "Beyond the Summer" — bonus earning ends August 6</h3>
+      <p class="meta">Earning promo · Book by August 6, 2026</p>
+      <p>SkyMiles members can earn 4x miles per dollar on hotels booked through Delta Stays, and up to 16x at Hertz through Delta Cars depending on Medallion status, plus 8x at Dollar and Thrifty and 4x at Alamo, Avis, Budget, Enterprise, Payless and SIXT. Book by August 6, 2026; travel can be completed through March 31, 2027. This is earning, not burning — no transfer required, no risk.</p>
+      <p class="src">Source: <a href="https://news.delta.com/go-beyond-summer-deltas-sun-drenched-offers-are-back-bonus-miles-travel-deals-and-more">Delta News Hub</a></p>
+    </div>
+
+    <div class="offer">
+      <h3>Marriott Bonvoy → United MileagePlus elite kicker</h3>
+      <p class="meta">Standing offer</p>
+      <p>United continues to add 10,000 bonus miles for every 60,000 Bonvoy points transferred. That improves the effective rate from 3:1 to roughly 2.4:1 — still not generous, but it is the least bad way out of a Bonvoy balance you will never sleep on.</p>
+      <p class="src">Source: <a href="https://milestalk.com/marriott-bonvoy-and-united-mileageplus-offer-for-elites/">MilesTalk</a></p>
+    </div>
+  </section>
+
+  <div class="play">
+    <h2>◆ Today's Play</h2>
+    <p><strong>One decision, and the window closes at midnight.</strong> If — and only if — you have an IHG stay you can name, with a cash rate high enough to justify it, transfer to IHG today at 100%. Everything else on this board can wait; that one cannot.</p>
+    <p><strong>Do not touch Virgin Atlantic or EVA unless you have already found the seat.</strong> A 30% bonus on points you cannot spend is a 100% loss. Search the award first, then transfer, then book — in that order, in one sitting.</p>
+    <p><strong>Put a note on October 1.</strong> The Hyatt ratio cut on Sapphire Preferred is the biggest number in this edition and it is the one with no promotional urgency attached, which is exactly why it gets forgotten. If Hyatt is your redemption of choice, either plan a transfer before the cut or reassess whether Sapphire Reserve earns its fee for you.</p>
+    <p><strong>The free money is Delta's.</strong> The Beyond the Summer earning promo costs nothing, risks nothing, and ends August 6. If you have any hotel or car booking to make, route it through Delta Stays or Delta Cars first.</p>
+  </div>
+
+  <div class="caution">
+    A standing reminder that does not change: <strong>transfers are one-way and irreversible.</strong> Points that leave Chase, Amex, Citi or Capital One never come back — there is no undo, no support ticket, and no refund. Move points only with a specific redemption in mind, ideally one you have already confirmed is bookable. A transfer bonus is a discount on a purchase you were going to make anyway; it is never a reason to make the purchase.
+  </div>
+
+  <nav class="bar"><a href="2026-07-29.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+  <footer>
+    <p><strong>The Points Brief</strong> — July 30, 2026. Content is AI-synthesized from public reporting by <a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler</a>, <a href="https://thepointsguy.com/loyalty-programs/current-transfer-bonuses/">The Points Guy</a>, <a href="https://www.point.me/insights/current-transfer-bonuses/">point.me</a>, <a href="https://awardwallet.com/news/credit-card-transfer-bonuses/">AwardWallet</a> and <a href="https://news.delta.com/go-beyond-summer-deltas-sun-drenched-offers-are-back-bonus-miles-travel-deals-and-more">Delta News Hub</a>.</p>
+    <p>Bonus percentages, expiry dates and transfer ratios change without notice, and targeted offers vary by account. <strong>Confirm award availability and the current terms in your own account before transferring anything.</strong> Nothing here is financial advice.</p>
+  </footer>
+</div>
+
+<script>
+const S = "The Points Brief. Thursday, July thirtieth, twenty twenty-six. Travel points — maximize every transfer. " +
+"Start with the clock, because today is a deadline. The Chase Ultimate Rewards one hundred percent transfer bonus to I H G One Rewards expires today, July thirtieth. This is the richest bonus on the board this month: one thousand Chase points become two thousand I H G points. But I H G's own point values are soft, so the math only works on a specific, genuinely expensive night. At an effective half a Chase point per I H G point, a sixty thousand point Intercontinental night costs you thirty thousand Chase points. Check the cash rate first. If that room is a hundred and eighty dollars, you are burning value, not saving it. " +
+"Two more offers expire tomorrow, July thirty-first. American Express Membership Rewards to Virgin Atlantic Flying Club, at a thirty percent bonus. And Capital One Miles to E V A Air, also thirty percent. Virgin is a useful Amex partner because of its A N A and Delta partner awards, but availability is the entire game, and Virgin's own transatlantic awards carry heavy fuel surcharges. E V A's business class to Taipei is a genuinely good product and this is the deepest discount in months. " +
+"With more runway: Citi ThankYou Rewards to Air France K L M Flying Blue, twenty percent, through August twenty-second. Flying Blue's monthly promo rewards can drop European economy awards under twenty thousand miles, and a twenty percent bonus on top of that is the cheapest transatlantic math available right now. You have three weeks — no need to rush that one. Marriott Bonvoy to Cathay Pacific Asia Miles at ten percent is listed for completeness, but it is a thin bonus on an already poor three to one ratio. Skip it. " +
+"Now the most important item in this edition, and it is not a bonus. Chase is cutting the World of Hyatt transfer ratio from one to one down to four to three on the Sapphire Preferred and the Ink Business Preferred. Ten thousand Chase points will yield only seven thousand five hundred Hyatt points. If you were approved on or after June fifteenth of this year, you are already at the worse ratio. Everyone else keeps one to one until October first, twenty twenty-six. Sapphire Reserve keeps one to one — Hyatt transfers are now a premium card benefit. If Hyatt is where your Chase points actually get spent, that October first date is a real deadline worth twenty-five percent. " +
+"One piece of free money: Delta's Beyond the Summer promotion ends August sixth. Four times miles on hotels through Delta Stays, and up to sixteen times at Hertz through Delta Cars depending on your Medallion status. That is earning, not burning. No transfer, no risk. " +
+"Today's play. If, and only if, you have an I H G stay you can name with a cash rate high enough to justify it, transfer today at one hundred percent. Do not touch Virgin Atlantic or E V A unless you have already found the seat — a thirty percent bonus on points you cannot spend is a total loss. Search the award first, then transfer, then book, in that order, in one sitting. " +
+"And the reminder that never changes: transfers are one way and irreversible. Points that leave Chase, Amex, Citi or Capital One do not come back. There is no undo. Move points only with a specific redemption in mind. A transfer bonus is a discount on a purchase you were already going to make. It is never a reason to make the purchase. " +
+"That is your brief. Confirm availability and terms in your own account before you transfer anything.";
+
+(function () {
+  var playBtn = document.getElementById('playBtn');
+  var stopBtn = document.getElementById('stopBtn');
+  var synth = window.speechSynthesis;
+
+  if (!synth) {
+    playBtn.disabled = true;
+    playBtn.textContent = 'Audio unavailable in this browser';
+    return;
+  }
+
+  function pickVoice() {
+    var voices = synth.getVoices() || [];
+    var byName = function (n) {
+      for (var i = 0; i < voices.length; i++) {
+        if (voices[i].name && voices[i].name.indexOf(n) !== -1) return voices[i];
+      }
+      return null;
+    };
+    return byName('Daniel') || byName('Alex') ||
+      voices.filter(function (v) { return /^en/i.test(v.lang || ''); })[0] ||
+      voices[0] || null;
+  }
+
+  var utter = null;
+
+  function stop() {
+    synth.cancel();
+    playBtn.disabled = false;
+    playBtn.textContent = "▶ Listen to today's brief";
+    stopBtn.disabled = true;
+  }
+
+  function play() {
+    synth.cancel();
+    utter = new SpeechSynthesisUtterance(S);
+    utter.rate = 0.93;
+    utter.pitch = 1;
+    var v = pickVoice();
+    if (v) { utter.voice = v; utter.lang = v.lang || 'en-US'; }
+    else { utter.lang = 'en-US'; }
+    utter.onend = stop;
+    utter.onerror = stop;
+    playBtn.disabled = true;
+    playBtn.textContent = '▶ Playing…';
+    stopBtn.disabled = false;
+    synth.speak(utter);
+  }
+
+  playBtn.addEventListener('click', play);
+  stopBtn.addEventListener('click', stop);
+
+  // voices load asynchronously in most browsers
+  if (typeof synth.onvoiceschanged !== 'undefined') {
+    synth.onvoiceschanged = function () { pickVoice(); };
+  }
+  window.addEventListener('beforeunload', function () { synth.cancel(); });
+})();
+</script>
