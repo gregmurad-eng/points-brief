@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — Friday, August 8, 2026</title>
+<style>
+  :root {
+    --bg: #080c14;
+    --accent: #c9a84c;
+    --text: #d8d0b4;
+    --muted: #8b8570;
+    --panel: #0f1520;
+    --border: #1e2635;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 28px 22px 60px; }
+  header.mast {
+    border-top: 3px double var(--accent);
+    border-bottom: 1px solid var(--border);
+    padding: 22px 0 18px;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  header.mast h1 {
+    font-size: 42px;
+    letter-spacing: 1.5px;
+    margin: 0 0 6px;
+    color: var(--text);
+    font-weight: normal;
+    font-variant: small-caps;
+  }
+  header.mast .tag {
+    color: var(--accent);
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    margin: 0 0 8px;
+  }
+  header.mast .date {
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 0.4px;
+  }
+  nav.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 4px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin-bottom: 22px;
+  }
+  nav.bar a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  nav.bar a:hover { color: var(--accent); }
+  nav.bar .nav-mid a {
+    color: var(--accent);
+    margin: 0 9px;
+    text-decoration: none;
+  }
+  nav.bar .nav-mid a:hover { text-decoration: underline; }
+  nav.bar .next {
+    color: #4a4d3f;
+    cursor: not-allowed;
+  }
+  .urgent {
+    border: 1px solid var(--accent);
+    background: rgba(201, 168, 76, 0.06);
+    padding: 14px 18px;
+    margin: 0 0 22px;
+    font-size: 14px;
+    color: var(--text);
+  }
+  .urgent .lab {
+    color: var(--accent);
+    font-variant: small-caps;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  .audio {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 14px 18px;
+    margin: 0 0 26px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .audio button {
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 8px 16px;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    font-variant: small-caps;
+  }
+  .audio button:hover { background: rgba(201, 168, 76, 0.1); }
+  .audio button.playing { background: var(--accent); color: var(--bg); }
+  h2.sect {
+    font-size: 22px;
+    font-variant: small-caps;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+    margin: 32px 0 16px;
+    font-weight: normal;
+  }
+  .bonus {
+    padding: 14px 0;
+    border-bottom: 1px dotted var(--border);
+  }
+  .bonus:last-child { border-bottom: none; }
+  .bonus h3 {
+    margin: 0 0 4px;
+    font-size: 17px;
+    color: var(--text);
+    font-weight: normal;
+  }
+  .bonus h3 .pct {
+    color: var(--accent);
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  .bonus .meta {
+    color: var(--muted);
+    font-size: 12px;
+    font-style: italic;
+    margin: 0 0 8px;
+    letter-spacing: 0.3px;
+  }
+  .bonus p {
+    margin: 0 0 6px;
+    font-size: 15px;
+  }
+  .bonus a.src {
+    color: var(--accent);
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 0.4px;
+  }
+  .bonus a.src:hover { text-decoration: underline; }
+  .play {
+    border: 1px solid var(--accent);
+    background: rgba(201, 168, 76, 0.04);
+    padding: 18px 22px;
+    margin: 22px 0;
+  }
+  .play h3 {
+    color: var(--accent);
+    margin: 0 0 10px;
+    font-variant: small-caps;
+    letter-spacing: 1.2px;
+    font-size: 16px;
+  }
+  .play p { margin: 0 0 8px; font-size: 15px; }
+  .caution {
+    color: var(--muted);
+    font-size: 13px;
+    font-style: italic;
+    padding: 14px 16px;
+    border-left: 2px solid var(--accent);
+    margin: 24px 0;
+    background: rgba(201, 168, 76, 0.03);
+  }
+  footer {
+    margin-top: 40px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.6;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <h1>The Points Brief</h1>
+    <p class="tag">Travel Points · Maximize every transfer</p>
+    <p class="date">Friday, August 8, 2026</p>
+  </header>
+
+  <nav class="bar"><a href="2026-08-07.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+  <div class="audio">
+    <button id="playbtn" onclick="toggleAudio()">▶ Play Briefing</button>
+    <span>~3 minute audio recap · Web Speech API</span>
+  </div>
+
+  <h2 class="sect">Today's Transfer Bonuses</h2>
+
+  <div class="bonus">
+    <h3><span class="pct">70%</span>Chase Ultimate Rewards → IHG One Rewards</h3>
+    <p class="meta">Expires August 31, 2026 · minimum 1,000-point transfer</p>
+    <p>The headline bonus on the board. 1,000 UR becomes 1,700 IHG points. This is a rare full-double-digit bonus on a hotel program that already rewards patience — Category 1 properties still price at 10,000 IHG a night, meaning roughly 5,900 UR for a free night at the low end.</p>
+    <a class="src" href="https://awardwallet.com/news/chase-ultimate-rewards/ihg-transfer-bonus/" target="_blank" rel="noopener">Source: AwardWallet →</a>
+  </div>
+
+  <div class="bonus">
+    <h3><span class="pct">40%</span>Citi ThankYou → Turkish Airlines Miles&amp;Smiles</h3>
+    <p class="meta">Expires August 31, 2026</p>
+    <p>Turkish is the classic Star Alliance sweet-spot program — 45,000 miles round-trip in economy or 90,000 in business to Europe on United, Lufthansa, and other partners. A 40% bonus turns that 90,000 into an effective 64,300 Citi points. Availability and phone-agent booking remain the friction.</p>
+    <a class="src" href="https://awardwallet.com/news/credit-card-transfer-bonuses/" target="_blank" rel="noopener">Source: AwardWallet Transfer Bonuses →</a>
+  </div>
+
+  <div class="bonus">
+    <h3><span class="pct">30%</span>Amex Membership Rewards → British Airways / Aer Lingus / Iberia (Avios)</h3>
+    <p class="meta">Expires September 27, 2026</p>
+    <p>All three Avios currencies are functionally interchangeable via BA's household account transfer. 1,000 MR becomes 1,300 Avios. Best paired with short-haul American Airlines redemptions (7,500 Avios in economy), Aer Lingus premium to Dublin, or Iberia off-peak business to Madrid. Watch BA fuel surcharges on their own metal.</p>
+    <a class="src" href="https://thepointsguy.com/loyalty-programs/current-transfer-bonuses/" target="_blank" rel="noopener">Source: The Points Guy →</a>
+  </div>
+
+  <div class="bonus">
+    <h3><span class="pct">20%</span>Citi ThankYou → Air France/KLM Flying Blue</h3>
+    <p class="meta">Expires August 22, 2026</p>
+    <p>Modest bonus, but Flying Blue's monthly Promo Rewards can put transatlantic economy under 20,000 miles one-way — a 20% bump makes the math sharper. Check the current Promo Rewards list before transferring; the bonus is only worth it if a specific route is showing.</p>
+    <a class="src" href="https://awardtravelfinder.com/transfer-bonuses" target="_blank" rel="noopener">Source: Award Travel Finder →</a>
+  </div>
+
+  <div class="bonus">
+    <h3><span class="pct">10%</span>Amex Membership Rewards → Cathay Pacific Asia Miles</h3>
+    <p class="meta">Expires August 28, 2026</p>
+    <p>Small bonus, but Cathay's own-metal business class to Hong Kong prices reasonably and can be booked online. Also useful for Alaska partner redemptions if you can find the seats. Only transfer with a specific booking in mind — Asia Miles expire on activity.</p>
+    <a class="src" href="https://awardwallet.com/news/credit-card-transfer-bonuses/" target="_blank" rel="noopener">Source: AwardWallet →</a>
+  </div>
+
+  <h2 class="sect">Today's Play</h2>
+
+  <div class="play">
+    <h3>The IHG 70% Is Doing the Heavy Lifting</h3>
+    <p>Of everything on the board, the Chase → IHG 70% is the one with a defensible transfer thesis <em>even before you find a specific booking</em>. IHG's Points &amp; Cash option and the 4th-night-free perk for Premier cardholders both amplify the base value, and top-tier InterContinental / Regent / Six Senses properties frequently price at 70k–100k points a night — a rate the 70% bonus turns into 42k–59k UR.</p>
+    <p>The Turkish 40% is the highest-ceiling play if you have Star Alliance business-class needs and the patience for a phone booking. The Amex → Avios 30% is the safest small-batch transfer since the currency is broadly useful across three programs.</p>
+    <p>Skip the transfer if you don't have a live award in your cart. All three programs devalue faster than UR/MR/TY.</p>
+  </div>
+
+  <div class="caution">
+    Caution: transfers are one-way and irreversible. Never speculatively transfer points to a partner program; always confirm exact award availability and taxes for a specific date before pulling the trigger.
+  </div>
+
+  <nav class="bar"><a href="2026-08-07.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+  <footer>
+    The Points Brief is an AI-synthesized daily briefing. Bonus percentages, expiry dates, and program terms change without notice — always verify current award availability, transfer ratios, and fees directly with the loyalty program before transferring any points. Nothing here is financial advice.
+  </footer>
+
+</div>
+
+<script>
+const S = "Good morning. This is The Points Brief for Friday, August eighth, twenty twenty six. Five active transfer bonuses today, none of them expiring in the next three days, so you have time to plan. The headline is Chase Ultimate Rewards to I H G One Rewards at seventy percent, expiring August thirty first. That means one thousand Chase points becomes seventeen hundred I H G points, which is enough for the low end of a Category One property with change to spare. If you have upcoming I H G stays, this is the moment. Second, Citi Thank You to Turkish Airlines Miles and Smiles at forty percent, also through August thirty first. Turkish is the classic Star Alliance sweet spot: forty five thousand miles round trip in economy or ninety thousand in business to Europe on United, Lufthansa, and other partners. A forty percent bonus brings that ninety thousand business ticket down to about sixty four thousand Citi points, but expect phone booking and availability friction. Third, American Express Membership Rewards to the Avios family — British Airways, Aer Lingus, and Iberia — at thirty percent through September twenty seventh. All three currencies are effectively one pool via household transfers. Best used for short haul American Airlines flights at seventy five hundred Avios, Aer Lingus premium to Dublin, or Iberia off peak business to Madrid. Watch the fuel surcharges on B A metal. Fourth, Citi Thank You to Flying Blue at twenty percent through August twenty second. Modest bonus, but pair it with Flying Blue's monthly promo rewards for transatlantic economy under twenty thousand miles one way. Only transfer if a specific promo route is live. Fifth, American Express to Cathay Pacific Asia Miles at ten percent through August twenty eighth. A small bonus, but useful for Cathay business class to Hong Kong or Alaska partner redemptions. Today's play: the I H G seventy percent is the strongest even before you have a booking, because top tier InterContinental and Regent properties frequently price in the seventy to one hundred thousand point range that this bonus really bites into. The Turkish forty percent is your highest ceiling play if you can navigate a phone booking. Amex to Avios thirty percent is the safest small batch transfer. The universal caution stands: transfers are one way and irreversible, so never move points speculatively. Confirm your exact award, dates, and taxes before you transfer. That is your Points Brief for August eighth. Safe travels.";
+
+let utter = null;
+let speaking = false;
+
+function pickVoice() {
+  const voices = window.speechSynthesis.getVoices();
+  const preferred = voices.find(v => v.name === 'Daniel') ||
+                    voices.find(v => v.name === 'Alex') ||
+                    voices.find(v => v.name.includes('Daniel')) ||
+                    voices.find(v => v.name.includes('Alex')) ||
+                    voices.find(v => v.lang && v.lang.startsWith('en'));
+  return preferred || voices[0];
+}
+
+function toggleAudio() {
+  const btn = document.getElementById('playbtn');
+  if (speaking) {
+    window.speechSynthesis.cancel();
+    speaking = false;
+    btn.textContent = '▶ Play Briefing';
+    btn.classList.remove('playing');
+    return;
+  }
+  utter = new SpeechSynthesisUtterance(S);
+  utter.rate = 0.93;
+  utter.pitch = 1.0;
+  const v = pickVoice();
+  if (v) { utter.voice = v; utter.lang = v.lang; }
+  utter.onend = () => {
+    speaking = false;
+    btn.textContent = '▶ Play Briefing';
+    btn.classList.remove('playing');
+  };
+  utter.onerror = () => {
+    speaking = false;
+    btn.textContent = '▶ Play Briefing';
+    btn.classList.remove('playing');
+  };
+  window.speechSynthesis.speak(utter);
+  speaking = true;
+  btn.textContent = '■ Stop';
+  btn.classList.add('playing');
+}
+
+if (typeof speechSynthesis !== 'undefined' && speechSynthesis.onvoiceschanged !== undefined) {
+  speechSynthesis.onvoiceschanged = pickVoice;
+}
+</script>
+</body>
+</html>
