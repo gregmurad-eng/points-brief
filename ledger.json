@@ -1,0 +1,19 @@
+{
+  "season": 1,
+  "started": "2026-08-15",
+  "method": "Falsifiable calls about points/loyalty landscape movement \u2014 bonuses expected to return, devaluations expected to land, sweet spots expected to close. Each has a concrete test and a real horizon date. Misses recorded honestly.",
+  "calls": [
+    {
+      "id": "2026-08-15-1",
+      "date": "2026-08-15",
+      "call": "The current Chase Ultimate Rewards \u2192 IHG One Rewards 70% transfer bonus (expiring 2026-08-31) will NOT be extended or replaced with any Chase\u2192IHG transfer bonus before 2026-10-31.",
+      "basis": "Chase already stepped this promo down once \u2014 from a 100% early-bird (Jul 15-30) to 70% (Jul 31-Aug 31). Stepping down mid-campaign is a cool-off signal, not a warm-up. Historically Chase has left 3-6 month gaps between IHG promos.",
+      "horizon": "2026-10-31",
+      "test": "GRADE HIT if no Chase\u2192IHG transfer bonus of any percentage is publicly offered between 2026-09-01 and 2026-10-31. GRADE MISS if any Chase\u2192IHG bonus (>0%) is announced or live during that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
+    }
+  ]
+}
