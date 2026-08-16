@@ -14,6 +14,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-08-16-1",
+      "date": "2026-08-16",
+      "call": "U.S. Bank will restore either Air France/KLM Flying Blue OR Qantas Frequent Flyer as an Altitude Reserve transfer partner by 2026-10-25.",
+      "basis": "Both partners went live on 2026-08-11 and were pulled roughly 24 hours later on 2026-08-12; Frequent Miler, Doctor of Credit and One Mile at a Time all characterise the removal as IT-integration failure rather than deal collapse. U.S. Bank waited eight months past its own December 2025 target to ship transfers at all \u2014 reputational cost of leaving these missing is high, and bank IT integration fixes typically land in 2\u20136 weeks. 10 weeks is a generous horizon.",
+      "horizon": "2026-10-25",
+      "test": "GRADE HIT if, at any point between 2026-08-16 and 2026-10-25 inclusive, either Air France/KLM Flying Blue or Qantas Frequent Flyer is publicly listed as an active transfer partner in the U.S. Bank Rewards Center for the Altitude Reserve card, evidenced by U.S. Bank's own transfer page or a Tier 1 confirmation. GRADE MISS if neither partner has been restored by end of day 2026-10-25 Pacific time.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
