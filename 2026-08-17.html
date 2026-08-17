@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — Monday, August 17, 2026</title>
+<style>
+  :root { --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4; --muted:#8a8570; --miss:#a85a5a; --panel:#0f1420; --panel-b:#1a2030; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; padding:0; background:var(--bg); color:var(--text); font-family:Georgia,'Times New Roman',serif; line-height:1.55; }
+  body { padding:28px 22px 60px; max-width:820px; margin:0 auto; font-size:17px; }
+  header.mast { border-bottom:1px solid var(--accent); padding-bottom:14px; margin-bottom:18px; }
+  h1 { margin:0; font-size:30px; letter-spacing:0.5px; color:var(--accent); font-weight:normal; }
+  .tag { color:var(--muted); font-style:italic; font-size:14px; margin-top:4px; }
+  .date { color:var(--text); font-size:15px; margin-top:4px; }
+  nav.bar { display:flex; flex-wrap:wrap; gap:10px 14px; align-items:center; justify-content:space-between; padding:10px 0; margin:14px 0 18px; border-top:1px solid #23293a; border-bottom:1px solid #23293a; font-size:14px; }
+  nav.bar a, nav.bar .next { white-space:nowrap; text-decoration:none; padding:12px 10px; display:inline-block; min-height:44px; line-height:20px; }
+  nav.bar a { color:var(--accent); }
+  nav.bar a:hover { text-decoration:underline; }
+  nav.bar .next { color:var(--muted); }
+  .nav-mid { display:flex; gap:14px; }
+  .nav-mid a { margin:0 9px; color:var(--accent); }
+  .urgent { border:1px solid var(--accent); background:#14100420; padding:12px 14px; border-radius:4px; margin:0 0 20px; font-size:15px; }
+  .urgent strong { color:var(--accent); }
+  .listen { margin:6px 0 18px; }
+  .listen button { background:var(--panel); color:var(--accent); border:1px solid var(--accent); padding:12px 18px; font-family:Georgia,serif; font-size:15px; cursor:pointer; min-height:44px; border-radius:2px; }
+  .listen button:hover { background:var(--panel-b); }
+  h2 { color:var(--accent); font-size:22px; font-weight:normal; border-bottom:1px solid #2a3040; padding-bottom:6px; margin:32px 0 14px; letter-spacing:0.3px; }
+  h3 { color:var(--text); font-size:18px; font-weight:normal; margin:20px 0 6px; }
+  .meta { color:var(--muted); font-size:14px; margin:0 0 8px; }
+  p { margin:8px 0; }
+  a { color:var(--accent); }
+  sup a { padding:6px 4px; margin:-6px -4px; text-decoration:none; color:var(--accent); }
+  .move { color:var(--accent); font-style:italic; margin:10px 0 4px; border-left:2px solid var(--accent); padding-left:10px; }
+  .play { border:1px solid var(--accent); background:#0d1220; padding:14px 16px; border-radius:4px; margin:10px 0; }
+  .ledger-row { padding:10px 0; border-bottom:1px dashed #23293a; }
+  .verdict-hit { color:var(--accent); font-weight:bold; }
+  .verdict-miss { color:var(--miss); font-weight:bold; }
+  .verdict-unsettled { color:var(--muted); font-weight:bold; }
+  .verdict-open { color:var(--muted); }
+  ol.sources { padding-left:22px; font-size:14px; color:var(--muted); }
+  ol.sources li { margin:6px 0; }
+  ol.sources a { color:var(--text); }
+  .tier { color:var(--muted); font-style:italic; font-size:12px; }
+  footer { margin-top:38px; padding-top:14px; border-top:1px solid #23293a; color:var(--muted); font-size:13px; }
+  @media (max-width:480px) {
+    body { padding:20px 14px 50px; font-size:16px; }
+    h1 { font-size:24px; }
+    h2 { font-size:19px; }
+    h3 { font-size:17px; }
+    nav.bar { font-size:15px; gap:6px 10px; }
+    nav.bar a, nav.bar .next { padding:12px 8px; min-height:44px; }
+    .nav-mid { gap:8px; }
+    .nav-mid a { margin:0 4px; }
+    .urgent { font-size:15px; padding:12px; }
+    .listen button { padding:14px 20px; font-size:16px; }
+    p, .move { font-size:16px; }
+    .meta { font-size:14px; }
+    ol.sources { font-size:14px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <h1>The Points Brief</h1>
+  <div class="tag">Travel Points · Maximize every transfer</div>
+  <div class="date">Monday, August 17, 2026</div>
+</header>
+
+<nav class="bar">
+  <a href="2026-08-16.html" id="prev">← YESTERDAY</a>
+  <span class="nav-mid"><a href="./" id="today">Today</a><a href="archive.html" id="arch">Archive</a></span>
+  <span class="next" id="next">TOMORROW →</span>
+</nav>
+
+<div class="urgent">
+  <strong>Time-sensitive:</strong> The Citi ThankYou → Air France/KLM Flying Blue <strong>20% bonus expires Friday, August 22</strong> (five days out).<sup><a href="#s1">[1]</a></sup> Nothing in today's list expires inside 72 hours, but three Aug 31 offers (Chase→IHG, Capital One→Avianca, Citi→Turkish) are two weeks away and worth planning against a specific award tonight, not on the last day.
+</div>
+
+<div class="listen">
+  <button id="playBtn" onclick="toggleSpeak()">▶ Listen (≈3 min)</button>
+</div>
+
+<h2>Today's Transfer Bonuses</h2>
+
+<h3>Citi ThankYou → Air France/KLM Flying Blue — 20% (1,000 : 1,200)</h3>
+<p class="meta">Expires August 22, 2026. Source: Citi ThankYou promo, triangulated across trade desks.<sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup></p>
+<p>The nearest expiry on the board. Flying Blue's promo awards (Promo Rewards) can be extraordinary — 30–50% off already-cheap partner economy on SkyTeam — but they change every month, so this bonus is only useful if you have a specific promo window in mind or a US–Europe business seat priced at 50,000–75,000 miles that you can actually book.</p>
+<p class="move">Your move: transfer only if you have a Flying Blue award already in your cart and confirmed available at the checkout page. Do not top up "for later" — Flying Blue devalues quietly and often, and Promo Rewards change monthly.</p>
+
+<h3>Multiple programs → Cathay Pacific Asia Miles — 10% (varies by source)</h3>
+<p class="meta">Expires August 28, 2026. From Amex MR (1,000:880 post-2:1.6 base ratio), Capital One (100:110), Citi (1,000:1,100), Bilt (1,000:1,100), Brex (3:2.2).<sup><a href="#s2">[2]</a></sup><sup><a href="#s3">[3]</a></sup></p>
+<p>A modest sweetener on an already-modest ratio (Amex→Asia Miles is 1,000:800 base). Asia Miles' sweet spots are Cathay-operated business/first Hong Kong–US, JAL Tokyo–US in J, and the Qantas Sydney–LAX F seat when you can find it — all of which require award space that has been thin all summer.</p>
+<p class="move">Your move: skip unless you can pull up a live Cathay/JAL business-class seat right now in Cathay's own award tool. A 10% bonus does not fix a bad base ratio if you have no award to book.</p>
+
+<h3>Chase Ultimate Rewards → IHG One Rewards — 70% (1,000 : 1,700)</h3>
+<p class="meta">Expires August 31, 2026. Minimum transfer 1,000 UR. Chase stepped this down from a 100% "early bird" (Jul 15–30).<sup><a href="#s3">[3]</a></sup><sup><a href="#s4">[4]</a></sup><sup><a href="#s5">[5]</a></sup></p>
+<p>Optically the biggest number on the page, but the math is unfavourable for almost everyone. Chase UR is worth roughly 2.0¢/point on flexible-partner redemptions; IHG points are worth about 0.5¢. Even at 1.7 IHG per UR you are converting 2.0¢ into about 0.85¢ — a haircut of more than half. There is exactly one case where this works: you are 500–3,000 IHG short of a specific award night you are booking today, and no other redemption path exists.</p>
+<p class="move">Your move: skip unless you are topping up for a specific IHG award night already priced. Never transfer speculatively into IHG — the currency devalues faster than the bonus recovers.</p>
+
+<h3>Capital One Miles → Avianca LifeMiles — 15% (100 : 115)</h3>
+<p class="meta">Expires August 31, 2026.<sup><a href="#s2">[2]</a></sup><sup><a href="#s3">[3]</a></sup></p>
+<p>Small bonus, meaningful currency. LifeMiles still hold two of the last durable Star Alliance sweet spots — 63,000 miles one-way in business to Europe on Lufthansa/Swiss/United, and 78,000 to North Asia. LifeMiles also charges no fuel surcharges on partner awards. The 15% bonus barely moves the price, but it is a useful nudge if you are close on a specific booking.</p>
+<p class="move">Your move: transfer only against a held or confirmed Star Alliance business award. Confirm the partner space in United's tool first — LifeMiles' own search engine is notoriously flaky and will show phantom availability.</p>
+
+<h3>Citi ThankYou → Turkish Miles &amp; Smiles — 40% (1,000 : 1,400)</h3>
+<p class="meta">Expires August 31, 2026 at 23:59 Türkiye time (16:59 ET) — treat this as an Aug 31 lunchtime deadline in the US.<sup><a href="#s2">[2]</a></sup><sup><a href="#s6">[6]</a></sup><sup><a href="#s7">[7]</a></sup></p>
+<p>The most legitimately interesting expiring offer. Turkish's US–Europe business at 45,000 miles one-way on Star Alliance partners, and their 7,500-mile domestic-US United economy award, remain two of the best sweet spots in the entire ecosystem. But Turkish is famously hard to actually book — phone bookings, chat agents who disappear, and web availability that shows partners inconsistently. The 40% bonus is best pre-transferred against a specific reservation you have already confirmed by phone.</p>
+<p class="move">Your move: only worth it if you have already spoken to a Turkish agent (call the US line) and had a partner award held. Do not transfer to Turkish "to see" — points that land in Miles &amp; Smiles are stuck there, and Turkish's chart could revalue without notice.</p>
+
+<h3>Amex Membership Rewards → British Airways / Iberia / Aer Lingus Avios — 30% (1,000 : 1,300)</h3>
+<p class="meta">Expires 11:59pm MT on September 27, 2026. Amex ran this from Aug 3.<sup><a href="#s2">[2]</a></sup><sup><a href="#s8">[8]</a></sup><sup><a href="#s9">[9]</a></sup></p>
+<p>The best-value bonus running right now for most US points holders. Avios is a pooled currency across the three programs, so you can transfer to whichever has the best redemption chart for your route — Iberia for Madrid non-stops in business (34,000 Avios off-peak), Aer Lingus for Dublin, BA for the short-haul AA-operated hops at 4,500 Avios each (still one of the few real sweet spots left in the domestic US after BA's December 2025 devaluation of longer AA awards).<sup><a href="#s10">[10]</a></sup> At 1,300 Avios per 1,000 MR, that 4,500-Avios AA hop costs roughly 3,462 MR.</p>
+<p class="move">Your move: worth speculative-ish transferring in 5,000–10,000 MR increments if you fly AA short-haul or plan a Europe trip in the next 12 months. Iberia specifically is the target for a Madrid off-peak business seat. Skip if you have no near-term Europe or AA short-haul plan — Avios devalue too.</p>
+
+<h3>Chase Ultimate Rewards → Air Canada Aeroplan — 20% (1,000 : 1,200)</h3>
+<p class="meta">Expires September 30, 2026. Some cardholders may see a targeted 30% (1:1.3) rate in-app.<sup><a href="#s3">[3]</a></sup><sup><a href="#s11">[11]</a></sup></p>
+<p>Aeroplan devalued 32 partner-award prices on June 1, 2026, so the chart is worse than it was a year ago<sup><a href="#s12">[12]</a></sup> — but the underlying program is still one of the more flexible ways to book Star Alliance business, and stopovers-for-5K remain intact. A 20% bonus is a below-average Chase→Aeroplan offer (they have run 30% and 40% versions in prior years), so this is not a bonus to burn all your UR on.</p>
+<p class="move">Your move: check your Chase transfer page for a targeted 30% rate before moving anything at 20%. If you only see 20% and have a specific Aeroplan award in mind, transfer against it. Otherwise wait — Chase runs Aeroplan bonuses roughly twice a year and a better rate is plausible before year-end.</p>
+
+<h2>Program Watch</h2>
+
+<h3>American AAdvantage — economy-to-business complimentary upgrades ending on eight routes, August 25</h3>
+<p>Starting August 25, elite upgrades on AA's three-cabin domestic routes (BOS–LAX, ORD–HNL/OGG, DFW–HNL/KOA/OGG, JFK–LAX/SFO, PHX–HNL) will clear into premium economy rather than business. Systemwide upgrades still get you all the way to J. Elite qualification thresholds are unchanged for the third year running.<sup><a href="#s13">[13]</a></sup></p>
+
+<h3>Hilton Honors — 2026 elite thresholds cut, new Diamond Reserve tier</h3>
+<p>Gold now at 25 nights (was 40), Diamond at 50 nights (was 60). A new Diamond Reserve tier layered on top adds guaranteed upgrades. Reported by CNN Underscored citing Hilton's own announcement; primary Hilton page not accessible for direct citation.<sup><a href="#s14">[14]</a></sup></p>
+
+<h3>U.S. Bank Altitude Reserve — Flying Blue and Qantas transfer partners still not restored</h3>
+<p>Six days on from the August 11 launch and August 12 pull of Air France/KLM Flying Blue and Qantas Frequent Flyer as Altitude Reserve transfer partners, both remain absent from the U.S. Bank Rewards Center. Framed by trade coverage as an IT-integration failure, not a partnership collapse. Live ledger call on this (ID 2026-08-16-1, horizon Oct 25) — see below.</p>
+
+<h3>Delta / Starbucks — partnership terms adjusted August 5</h3>
+<p>Delta and Starbucks changed the earn terms on their linked-account partnership effective August 5. Loyalty Lobby has the trade summary; primary Delta terms page not fetched for verification, so treat the specifics as trade-reported until confirmed against Delta's page.<sup><a href="#s15">[15]</a></sup></p>
+
+<h2>Today's Play</h2>
+<div class="play">
+  <p>If you hold Amex Membership Rewards and fly American Airlines domestic short-haul (under 650 miles one-way), the <strong>Amex → Avios 30% bonus</strong> is the single most defensible transfer running today. The math: a 4,500-Avios AA hop (LAX–PHX, DCA–BOS, MIA–ATL, etc.) costs about 3,462 MR with the bonus — versus $150–$300 in cash. Even at Amex's conservative 1.8¢/point valuation, that is a 2¢+ return, before taxes and fees.</p>
+  <p>The Iberia sub-play: an off-peak Madrid business seat is 34,000 Avios one-way. With the bonus, that is roughly 26,200 MR. Non-peak dates through spring 2027 have real availability.</p>
+  <p>Not doing anything today is also a play. The 30% bonus runs six more weeks — no rush to transfer before you have a specific booking.</p>
+</div>
+
+<h2>The Ledger</h2>
+<p class="meta">Season 1 · 0-0 (0 graded of 3 open) · started 2026-08-15. Public scorecard of falsifiable calls about where this points landscape is heading.</p>
+
+<div class="ledger-row">
+  <p><span class="verdict-open">OPEN</span> · <strong>2026-08-15-1</strong> · horizon 2026-10-31<br>
+  Chase will NOT offer any Chase→IHG transfer bonus between Sep 1 and Oct 31, 2026. <em>Basis:</em> Chase stepped down mid-campaign from 100% to 70%, historically leaves 3–6 month gaps between IHG promos.</p>
+</div>
+
+<div class="ledger-row">
+  <p><span class="verdict-open">OPEN</span> · <strong>2026-08-16-1</strong> · horizon 2026-10-25<br>
+  U.S. Bank will restore Flying Blue OR Qantas as an Altitude Reserve transfer partner by Oct 25. <em>Basis:</em> Both went live Aug 11, pulled Aug 12; framed as IT-integration failure. Bank IT fixes typically land in 2–6 weeks.</p>
+</div>
+
+<div class="ledger-row">
+  <p><span class="verdict-open">OPEN</span> · <strong>2026-08-17-1</strong> · horizon 2026-11-15<br>
+  Citi will re-run its ThankYou → Air France/KLM Flying Blue transfer bonus at ≥20% between Aug 23 and Nov 15, 2026. <em>Basis:</em> Citi ran Flying Blue bonuses in Feb, May, and Aug 2026 — a roughly 3-month cadence. If the pattern holds, the next window opens in Nov. <em>Test:</em> HIT if any Citi→Flying Blue bonus of 20% or higher is publicly offered between Aug 23 and Nov 15, 2026; MISS if none.</p>
+</div>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="s1"><a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler — Current point transfer bonuses for August 2026</a> <span class="tier">(trade)</span></li>
+  <li id="s2"><a href="https://awardwallet.com/news/credit-card-transfer-bonuses/">AwardWallet — All Current Transfer Bonuses (Capital One, Chase, and More)</a> <span class="tier">(trade)</span></li>
+  <li id="s3"><a href="https://upgradedpoints.com/news/current-credit-card-transfer-bonuses/">Upgraded Points — August Credit Card and Loyalty Program Transfer Bonuses</a> <span class="tier">(trade)</span></li>
+  <li id="s4"><a href="https://awardwallet.com/news/chase-ultimate-rewards/ihg-transfer-bonus/">AwardWallet — Chase Ultimate Rewards to IHG 100%/70% Transfer Bonus (includes screenshot of Chase promo page)</a> <span class="tier">(trade, screenshot of primary)</span></li>
+  <li id="s5"><a href="https://frequentmiler.com/chase-is-offering-a-70-100-transfer-bonus-to-ihg-one-rewards-give-it-a-miss/">Frequent Miler — Chase 70%/100% transfer bonus to IHG: give it a miss</a> <span class="tier">(trade, analysis)</span></li>
+  <li id="s6"><a href="https://frequentmiler.com/40-percent-transfer-bonus-citi-thankyou-turkish-milesandsmiles/">Frequent Miler — Citi ThankYou to Turkish Miles &amp; Smiles 40% bonus</a> <span class="tier">(trade)</span></li>
+  <li id="s7"><a href="https://www.doctorofcredit.com/citi-thankyou-points-40-transfer-bonus-to-turkish-airlines-miles-smiles-11-4/">Doctor of Credit — Citi ThankYou 40% to Turkish Miles &amp; Smiles</a> <span class="tier">(trade)</span></li>
+  <li id="s8"><a href="https://loyaltylobby.com/2026/08/05/amex-us-mr-to-aer-lingus-british-airways-iberia-avios-30-conversion-bonus-until-september-27-2026/">LoyaltyLobby — Amex US MR to Aer Lingus/BA/Iberia 30% until September 27, 2026</a> <span class="tier">(trade, primary terms cited)</span></li>
+  <li id="s9"><a href="https://frequentmiler.com/30-percent-transfer-bonus-american-express-membership-rewards-avios-british-airways-iberia-aer-lingus/">Frequent Miler — 30% transfer bonus Amex MR to Avios (BA, Iberia, Aer Lingus)</a> <span class="tier">(trade)</span></li>
+  <li id="s10"><a href="https://flightpoints.com/blogs/british-airways-avios-award-chart-for-american-airlines-flights/">British Airways Avios Award Chart for American Airlines Flights (2026 Guide)</a> <span class="tier">(trade, chart reference)</span></li>
+  <li id="s11"><a href="https://awardtravelfinder.com/transfer-bonuses/chase-ultimate-rewards">Award Travel Finder — Chase Ultimate Rewards Transfer Bonus history (2026)</a> <span class="tier">(trade, historical)</span></li>
+  <li id="s12"><a href="https://onemileatatime.com/news/aeroplan-updating-award-chart-devaluation/">One Mile at a Time — Aeroplan updating award chart as of June 2026: it's a devaluation, mostly</a> <span class="tier">(trade, primary Aeroplan announcement cited)</span></li>
+  <li id="s13"><a href="https://upgradedpoints.com/news/aadvantage-program-updates-mid-2026/">Upgraded Points — AAdvantage updates: Economy-to-Business upgrades ending, plus other changes</a> <span class="tier">(trade, cites AA announcement)</span></li>
+  <li id="s14"><a href="https://www.cnn.com/cnn-underscored/travel/hilton-honors-revamps-loyalty-program">CNN Underscored — Hilton revamps loyalty program with easier paths to elite status</a> <span class="tier">(trade, cites Hilton announcement)</span></li>
+  <li id="s15"><a href="https://loyaltylobby.com/2026/07/28/delta-skymiles-starbucks-announce-rewards-partnership-points-earning-changes/">LoyaltyLobby — Delta SkyMiles &amp; Starbucks announce rewards partnership points earning changes (effective Aug 5, 2026)</a> <span class="tier">(trade)</span></li>
+</ol>
+
+<footer>
+  <p>The Points Brief is AI-synthesized from public trade coverage. Every percentage, expiry and ratio above has been cross-checked across at least two trade sources; where primary program pages were unreachable, that is noted. <strong>Point transfers are one-way and irreversible.</strong> Always confirm live award availability before transferring, and never move points speculatively without a specific redemption in hand.</p>
+  <p>Not affiliated with any bank, program, or issuer. No affiliate links. Not financial or travel advice.</p>
+</footer>
+
+<nav class="bar">
+  <a href="2026-08-16.html">← YESTERDAY</a>
+  <span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<script>
+const S = "Welcome to the Points Brief for Monday, August 17, 2026. The urgent item this morning is the Citi ThankYou to Flying Blue twenty percent bonus, which expires Friday. Nothing on today's board expires inside seventy-two hours, but three offers hit their deadline on August 31, so plan against a specific award now — not on the last day. Today's full lineup, in urgency order. Citi to Flying Blue at twenty percent, expiring August twenty-second. Ten percent to Cathay Pacific Asia Miles from multiple programs, expiring August twenty-eighth. Chase to I H G at seventy percent, Capital One to Avianca at fifteen percent, and Citi to Turkish at forty percent, all expiring August thirty-first. Then two longer runways: Amex to Avios at thirty percent through September twenty-seventh, and Chase to Aeroplan at twenty percent through September thirtieth. Today's play. If you hold Amex Membership Rewards and fly American Airlines short-haul, the Amex-to-Avios thirty percent bonus is the single most defensible transfer running today. A four-thousand-five-hundred Avios American hop costs about three thousand four hundred Membership Rewards points with the bonus. That is a two-cent-plus return per point. The Iberia sub-play: a Madrid business seat off-peak is thirty-four thousand Avios, or about twenty-six thousand Membership Rewards with the bonus. Program watch. American ends complimentary economy-to-business upgrades on eight three-cabin domestic routes August twenty-fifth — upgrades will clear to premium economy instead. Hilton Honors cuts elite thresholds and adds a Diamond Reserve tier for 2026. U.S. Bank's Altitude Reserve still has Flying Blue and Qantas missing as transfer partners, six days after they were pulled. The ledger. Three open calls, none due for grading today, and one new call: Citi will re-run a Flying Blue bonus of at least twenty percent before November fifteenth. Final reminder. Point transfers are one-way. Never move points without a specific redemption in hand, and always confirm live award availability first. That is the brief.";
+let u = null;
+function toggleSpeak() {
+  const btn = document.getElementById('playBtn');
+  if (speechSynthesis.speaking) { speechSynthesis.cancel(); btn.textContent = "▶ Listen (≈3 min)"; return; }
+  u = new SpeechSynthesisUtterance(S);
+  u.rate = 0.93; u.pitch = 1.0;
+  const voices = speechSynthesis.getVoices();
+  const pref = voices.find(v => /Daniel/i.test(v.name)) || voices.find(v => /Alex/i.test(v.name)) || voices.find(v => /en[-_]/i.test(v.lang));
+  if (pref) u.voice = pref;
+  u.onend = () => { btn.textContent = "▶ Listen (≈3 min)"; };
+  speechSynthesis.speak(u);
+  btn.textContent = "■ Stop";
+}
+if (typeof speechSynthesis !== 'undefined') { speechSynthesis.onvoiceschanged = () => {}; }
+</script>
+
+</body>
+</html>
