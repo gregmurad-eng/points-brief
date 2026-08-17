@@ -26,6 +26,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-08-17-1",
+      "date": "2026-08-17",
+      "call": "Citi will re-run its ThankYou \u2192 Air France/KLM Flying Blue transfer bonus at 20% or higher between 2026-08-23 and 2026-11-15.",
+      "basis": "The current Citi\u2192Flying Blue 20% bonus expires August 22, 2026. Historical cadence: Citi ran Flying Blue bonuses in February 2026, May 2026, and August 2026 \u2014 a roughly 3-month cadence. If the pattern holds, the next window opens in early-to-mid November, well inside the horizon. Citi has strong commercial reasons to keep Flying Blue front-of-mind: it is one of the more useful ThankYou partners for European redemption and a key reason to keep the Citi Strata Premier open.",
+      "horizon": "2026-11-15",
+      "test": "GRADE HIT if any Citi ThankYou \u2192 Air France/KLM Flying Blue transfer bonus of 20% or greater is publicly offered at any point between 2026-08-23 and 2026-11-15 inclusive, evidenced by Citi's own transfer page, Flying Blue's promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
