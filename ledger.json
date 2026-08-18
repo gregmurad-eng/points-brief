@@ -38,6 +38,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-08-18-1",
+      "date": "2026-08-18",
+      "call": "Citi ThankYou will run another transfer bonus to Turkish Airlines Miles & Smiles of 30% or higher between 2026-09-01 and 2026-11-30.",
+      "basis": "Citi's current Turkish 40% bonus (ending 2026-08-31) is the third Citi\u2192Turkish promo of 2026; the program has a clear quarterly cadence. Turkish devalued domestic Star Alliance awards in December 2025 but LEFT the region-to-region chart alone \u2014 partner business class North America\u2192Europe still starts at 65,000 miles, which remains one of the strongest sweet spots reachable via a US bank transfer. Citi has commercial incentive to keep pushing this partner because it is the largest single reason to hold Strata Premier for a value-focused points user. A 12-week silence would break a well-established pattern.",
+      "horizon": "2026-11-30",
+      "test": "GRADE HIT if any Citi ThankYou \u2192 Turkish Airlines Miles & Smiles transfer bonus of 30% or greater is publicly offered at any point between 2026-09-01 and 2026-11-30 inclusive, evidenced by Citi's transfer page, Turkish's promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
