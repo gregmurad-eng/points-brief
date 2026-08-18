@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — August 18, 2026</title>
+<style>
+  :root {
+    --bg: #080c14;
+    --accent: #c9a84c;
+    --text: #d8d0b4;
+    --muted: #8a8676;
+    --miss: #c76b6b;
+    --line: #1c2130;
+    --card: #0e131e;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 26px 22px 60px;
+  }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(201, 168, 76, 0.4); }
+  a:hover { border-bottom-color: var(--accent); }
+  .bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 10px 4px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .bar a, .bar .next {
+    white-space: nowrap;
+    display: inline-block;
+    padding: 12px 6px;
+    line-height: 1;
+    border-bottom: none;
+  }
+  .bar .next { color: var(--muted); }
+  .nav-mid { display: inline-flex; gap: 0; }
+  .nav-mid a { margin: 0 9px; color: var(--accent); }
+  .masthead { text-align: center; margin-bottom: 6px; }
+  .masthead h1 {
+    font-size: 42px;
+    letter-spacing: 0.04em;
+    margin: 8px 0 2px;
+    color: var(--accent);
+    font-weight: normal;
+  }
+  .tagline {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .date {
+    text-align: center;
+    color: var(--text);
+    font-style: italic;
+    margin-bottom: 24px;
+  }
+  h2 {
+    color: var(--accent);
+    font-size: 22px;
+    font-weight: normal;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 6px;
+    margin: 40px 0 18px;
+    letter-spacing: 0.02em;
+  }
+  h3 {
+    color: var(--text);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 22px 0 6px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+  .move {
+    color: var(--accent);
+    font-style: italic;
+    margin-top: 10px;
+    padding-left: 12px;
+    border-left: 2px solid var(--accent);
+  }
+  .move strong { font-style: normal; text-transform: uppercase; letter-spacing: 0.08em; font-size: 13px; }
+  .signal {
+    border: 1px solid var(--accent);
+    background: var(--card);
+    padding: 18px 20px;
+    margin: 18px 0;
+    border-radius: 2px;
+  }
+  .signal .label {
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .listen {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 12px 18px;
+    font-family: inherit;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 6px 0 22px;
+    min-height: 44px;
+  }
+  .listen:hover { background: rgba(201, 168, 76, 0.08); }
+  .cite {
+    color: var(--accent);
+    font-size: 0.75em;
+    vertical-align: super;
+    padding: 6px 4px;
+    margin: -6px -4px;
+    border-bottom: none;
+    display: inline-block;
+    line-height: 1;
+  }
+  ol.sources {
+    padding-left: 22px;
+    font-size: 15px;
+  }
+  ol.sources li { margin-bottom: 8px; color: var(--muted); }
+  ol.sources li a { color: var(--accent); }
+  .tier {
+    display: inline-block;
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0 6px;
+    border: 1px solid var(--line);
+    padding: 1px 6px;
+    border-radius: 2px;
+  }
+  .ledger-item { margin: 14px 0; padding: 12px 14px; background: var(--card); border-left: 3px solid var(--muted); }
+  .ledger-item.hit { border-left-color: var(--accent); }
+  .ledger-item.miss { border-left-color: var(--miss); }
+  .ledger-item.open { border-left-color: var(--muted); }
+  .verdict { font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; }
+  .verdict.hit { color: var(--accent); }
+  .verdict.miss { color: var(--miss); }
+  .verdict.open { color: var(--muted); }
+  .caution {
+    background: var(--card);
+    border: 1px dashed var(--muted);
+    padding: 12px 16px;
+    font-size: 14px;
+    color: var(--muted);
+    margin: 24px 0;
+  }
+  footer {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+    font-style: italic;
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; padding: 18px 14px 40px; }
+    .masthead h1 { font-size: 30px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 17px; }
+    .meta, .caution, footer { font-size: 14px; }
+    ol.sources { font-size: 15px; }
+    .bar { font-size: 14px; padding: 8px 2px; }
+    .bar a, .bar .next { padding: 12px 8px; min-height: 44px; display: inline-flex; align-items: center; }
+    .nav-mid a { margin: 0 6px; }
+    .signal { padding: 14px 14px; }
+    .listen { width: 100%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="bar">
+  <a href="2026-08-17.html">← YESTERDAY</a>
+  <span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<div class="masthead">
+  <div class="tagline">Travel Points · Maximize every transfer</div>
+  <h1>The Points Brief</h1>
+  <div class="date">Tuesday, August 18, 2026</div>
+</div>
+
+<button class="listen" id="listenBtn" onclick="toggleSpeech()">▶ Listen (3 min)</button>
+
+<h2>Today's Transfer Bonuses</h2>
+<p class="meta">Every percentage, ratio and expiry below was corroborated across at least two independent trade sources; where a program's own promo page was not directly reachable at press time, that is disclosed inline. Cited numbers in the numbered Sources list at the foot.</p>
+
+<h3>Chase Ultimate Rewards → IHG One Rewards · 70%<span class="cite"><a href="#s1" class="cite">[1]</a></span><span class="cite"><a href="#s3" class="cite">[3]</a></span></h3>
+<div class="meta">Ratio 1,000 UR : 1,700 IHG · Expires August 31, 2026 · 13 days remain · trade-corroborated (AwardWallet quotes the Chase offer text; IHG's Chase-transfer page returned HTTP 403 at press time)</div>
+<p>Chase started this promo at 100% for a July early-bird window, then stepped down to 70% for the balance of August<span class="cite"><a href="#s3" class="cite">[3]</a></span>. The step-down is not a warm-up: mid-campaign cuts are a cool-off signal, and Chase has historically left 3–6 month gaps before repeating an IHG bonus. The 70% floor still gets you Vignette Collection and Intercontinental redemptions at a meaningful discount, but IHG's dynamic pricing means the underlying award cost can move against you between transfer and booking.</p>
+<div class="move"><strong>Your move:</strong> Transfer only if you have a specific IHG award already priced and dates locked. Do NOT top up a speculative IHG balance — IHG is dynamic and one-way; a 70% bonus does not rescue you from a 60% award-price hike two weeks later.</div>
+
+<h3>Amex Membership Rewards → British Airways / Iberia / Aer Lingus Avios · 30%<span class="cite"><a href="#s1" class="cite">[1]</a></span><span class="cite"><a href="#s2" class="cite">[2]</a></span></h3>
+<div class="meta">Ratio 1,000 MR : 1,300 Avios · Expires September 27, 2026 · 40 days remain · trade-corroborated (Amex's own transfer-partner page is behind cardholder auth and could not be independently retrieved)</div>
+<p>Same 30% across all three Avios flavors — book the redemption first, then transfer to whichever Avios wallet holds the seat cheapest (Aer Lingus is typically best for transatlantic short-haul, Iberia has the notorious off-peak MAD ⇄ US business chart if you have Iberia Plus in good standing, BA is deep on short-haul intra-Europe). Fuel surcharges on BA metal remain punishing on premium longhaul out of London — the 30% does not fix that math.</p>
+<div class="move"><strong>Your move:</strong> Only transfer once you have a specific Avios award in the cart. If the redemption is a transatlantic business seat on BA metal, do NOT transfer — the surcharges gut the bonus. If it is Aer Lingus economy transatlantic or short-haul intra-Europe on any partner, the ratio is genuinely useful.</div>
+
+<h3>Chase Ultimate Rewards → Air Canada Aeroplan · 20%<span class="cite"><a href="#s1" class="cite">[1]</a></span><span class="cite"><a href="#s2" class="cite">[2]</a></span></h3>
+<div class="meta">Ratio 1,000 UR : 1,200 Aeroplan · Expires September 30, 2026 · 43 days remain · trade-corroborated</div>
+<p>Aeroplan is a Star Alliance workhorse and one of the better ways to redeem for United, Lufthansa, ANA, and Swiss metal — but Aeroplan is dynamic-priced, so a good award today is not necessarily a good award next week. Points held at Chase remain flexible; points transferred to Aeroplan are trapped in Aeroplan.</p>
+<div class="move"><strong>Your move:</strong> Only transfer if you have a live Aeroplan.com search returning the exact Star Alliance award you intend to book. If you are shopping around, keep the UR balance and use the search-only tools until you have a specific seat targeted.</div>
+
+<div class="caution">
+  Transfers are ONE-WAY and IRREVERSIBLE. A percentage bonus does not create value on its own — the redemption does. Move points only with a specific redemption in mind, and confirm award availability in the destination program's own booking flow before you transfer.
+</div>
+
+<h2>Program Watch</h2>
+
+<h3>Amex Platinum refresh — $895 fee, new credits, Lufthansa lounge access ends Oct 1<span class="cite"><a href="#s4" class="cite">[4]</a></span></h3>
+<div class="meta">Effective: fee change applies to new applicants immediately, renewals over the following year · Lufthansa Business Lounge access ends October 1, 2026 · Tier 2 trade coverage; Amex press page not fetched</div>
+<p>The 2026 refresh pushes the fee to $895 (up $200) and rebuilds the credit stack around Resy ($400), Hotel ($600), Digital Entertainment ($300), Uber Cash ($200), Equinox ($300), lululemon ($300), CLEAR+ ($209), Walmart+ ($155), Oura Ring ($200), Airline Incidental ($200), and Global Entry / TSA PreCheck. On paper the credits exceed the fee; in practice each is coupon-shaped and requires deliberate use. The single hard loss is Lufthansa Business Lounge access starting October 1 — non-trivial for anyone who routes premium cabins through FRA/MUC.</p>
+<div class="move"><strong>Your move:</strong> If you route through Frankfurt or Munich more than twice a year in premium cabins, calendar the Oct 1 loss and reassess whether the refreshed credit stack you will actually redeem exceeds $895. If you already ignore Resy and lululemon, the fee hike is a real cost, not a wash.</div>
+
+<h3>World of Hyatt 2026 category shifts now live<span class="cite"><a href="#s5" class="cite">[5]</a></span><span class="cite"><a href="#s7" class="cite">[7]</a></span></h3>
+<div class="meta">Effective May 20, 2026 · Tier 1 (Hyatt newsroom) confirmed the new five-level structure; property-count numbers from Frequent Miler / Upgraded Points trade coverage</div>
+<p>The 2026 chart moved from the old three-level (Off-Peak / Standard / Peak) structure to a five-level structure (Lowest / Low / Moderate / Upper / Top) inside each of the eight categories — Hyatt frames this as "more precise demand management" rather than a chart increase<span class="cite"><a href="#s7" class="cite">[7]</a></span>. In practice, ~112 properties moved to a more expensive category while ~24 moved cheaper<span class="cite"><a href="#s5" class="cite">[5]</a></span>. Bookings made before May 20 were honored at the prior rate.</p>
+<div class="move"><strong>Your move:</strong> Before transferring UR → Hyatt, always price the property under the new five-level ladder — a property that used to redeem cleanly at the middle rung may now sit at "Upper" on a peak weekend and eat 20–30% more of your balance than you remember.</div>
+
+<h3>United MileagePlus pooling now redeems on partners<span class="cite"><a href="#s6" class="cite">[6]</a></span></h3>
+<div class="meta">Live since June 2026 · Tier 2 trade confirmation; United's press page not independently fetched</div>
+<p>A quiet but useful expansion: the shared-family MileagePlus pool (up to five members) can now be used to book Star Alliance and select non-alliance partners — Lufthansa, ANA, Air Canada, Singapore, Swiss, Turkish, Air New Zealand<span class="cite"><a href="#s6" class="cite">[6]</a></span>. Until June, the pool was United-metal only, which crippled its usefulness for international family travel.</p>
+<div class="move"><strong>Your move:</strong> If you have a family pool set up, it now competes on real terms with pure Aeroplan for Star Alliance premium cabin bookings — no reason to transfer UR → Aeroplan for a family Europe trip when pooled MileagePlus miles can hold the same seat.</div>
+
+<h2>Today's Play</h2>
+<div class="signal">
+  <div class="label">Signal · 2026-08-18</div>
+  <p>Chase → IHG 70% ends August 31 — 13 days. Chase has historically left 3–6 month gaps between IHG promos, so if this window closes it likely does not reopen before November at earliest (see today's ledger entry). But the trap is thinking the promo <em>is</em> the value — it is not. IHG is dynamic-priced and points do not compound; a speculative transfer at 70% still loses to a 40% overnight award-price hike.</p>
+  <p><strong style="color: var(--accent);">Play:</strong> Price your target IHG award tonight. If the number is one you would pay today at 1.7¢/point, transfer just enough UR to cover it and book immediately. If the number is not one you would pay today, the bonus is not for you — do nothing, and let it expire.</p>
+</div>
+
+<h2>The Ledger</h2>
+<p class="meta">Season 1 · 0-0 · 3 calls open, first logged 2026-08-15. Nothing due for grading today.</p>
+
+<div class="ledger-item open">
+  <div><span class="verdict open">OPEN</span> · TODAY-1 · logged 2026-08-18</div>
+  <p><strong>Call:</strong> Citi ThankYou will run another transfer bonus to Turkish Airlines Miles &amp; Smiles of 30% or higher between 2026-09-01 and 2026-11-30.</p>
+  <p><strong>Basis:</strong> The current Citi → Turkish 40% (ending Aug 31) is Citi's third Turkish promo of 2026 — a clear quarterly cadence. Turkish's December 2025 devaluation hit domestic Star Alliance awards but LEFT the region-to-region chart alone; partner business class North America → Europe still starts at 65,000 miles, which is the primary reason Strata Premier holders keep points there. A 12-week Citi silence would break a well-established pattern.</p>
+  <p><strong>Horizon:</strong> 2026-11-30 · <strong>Test:</strong> HIT if any Citi → Turkish bonus of ≥30% is offered in the window; MISS if not.</p>
+</div>
+
+<div class="ledger-item open">
+  <div><span class="verdict open">OPEN</span> · 2026-08-17-1</div>
+  <p>Citi will re-run its ThankYou → Air France/KLM Flying Blue transfer bonus at 20% or higher between 2026-08-23 and 2026-11-15. Horizon 2026-11-15.</p>
+</div>
+
+<div class="ledger-item open">
+  <div><span class="verdict open">OPEN</span> · 2026-08-16-1</div>
+  <p>U.S. Bank will restore either Air France/KLM Flying Blue OR Qantas Frequent Flyer as an Altitude Reserve transfer partner by 2026-10-25.</p>
+</div>
+
+<div class="ledger-item open">
+  <div><span class="verdict open">OPEN</span> · 2026-08-15-1</div>
+  <p>The current Chase Ultimate Rewards → IHG One Rewards 70% transfer bonus (expiring 2026-08-31) will NOT be extended or replaced with any Chase → IHG transfer bonus before 2026-10-31.</p>
+</div>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="s1">Frequent Miler — "Current point transfer bonuses for August 2026" <span class="tier">trade</span> · <a href="https://frequentmiler.com/current-point-transfer-bonuses/" target="_blank" rel="noopener">frequentmiler.com/current-point-transfer-bonuses</a></li>
+  <li id="s2">AwardWallet — "All Current Transfer Bonuses (Capital One, Chase, and More)" <span class="tier">trade</span> · <a href="https://awardwallet.com/news/credit-card-transfer-bonuses/" target="_blank" rel="noopener">awardwallet.com/news/credit-card-transfer-bonuses</a></li>
+  <li id="s3">AwardWallet — "Chase Launches New 100% Transfer Bonus to IHG One Rewards" (quotes Chase offer text directly) <span class="tier">trade</span> · <a href="https://awardwallet.com/news/chase-ultimate-rewards/ihg-transfer-bonus/" target="_blank" rel="noopener">awardwallet.com/news/chase-ultimate-rewards/ihg-transfer-bonus</a></li>
+  <li id="s4">One Mile at a Time — "Major Amex Platinum Card Changes Unveiled: $895 Fee, Big New Credits" <span class="tier">trade</span> · <a href="https://onemileatatime.com/news/amex-platinum-card-changes/" target="_blank" rel="noopener">onemileatatime.com/news/amex-platinum-card-changes</a></li>
+  <li id="s5">Frequent Miler — "World of Hyatt announces 2026 category changes. They're not pretty." <span class="tier">trade</span> · <a href="https://frequentmiler.com/world-of-hyatt-announces-2026-category-changes-theyre-not-pretty/" target="_blank" rel="noopener">frequentmiler.com/world-of-hyatt-announces-2026-category-changes</a></li>
+  <li id="s6">Upgraded Points — "United MileagePlus Pooling Adds Partner Award Redemptions" <span class="tier">trade</span> · <a href="https://upgradedpoints.com/news/united-mileageplus-pooling-partner-airline-redemptions/" target="_blank" rel="noopener">upgradedpoints.com/news/united-mileageplus-pooling-partner-airline-redemptions</a></li>
+  <li id="s7">Hyatt Newsroom — "World of Hyatt Updates Award Chart" <span class="tier">primary</span> · <a href="https://newsroom.hyatt.com/awardchartupdates" target="_blank" rel="noopener">newsroom.hyatt.com/awardchartupdates</a></li>
+</ol>
+
+<nav class="bar">
+  <a href="2026-08-17.html">← YESTERDAY</a>
+  <span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<footer>
+  Content is AI-synthesized from public sources. Every percentage, ratio and expiry corroborated across independent trade coverage; where a program's own promo page could not be independently retrieved, that is disclosed inline. Confirm award availability and offer terms in the program's booking flow before transferring — transfers are one-way and irreversible.
+</footer>
+
+<script>
+const S = "The Points Brief for Tuesday, August 18, 2026. The headline of the day: Chase Ultimate Rewards to IHG One Rewards, seventy percent bonus, ends August thirty-first. Thirteen days remain. That is a one thousand to one thousand seven hundred ratio, and Chase already stepped this promo down once from a hundred percent early bird — meaning it is cooling off, not warming up. But the trap is thinking the promo is the value. It is not. IHG is dynamic priced. A speculative transfer at seventy percent still loses to a forty percent overnight award price hike. If you have an IHG redemption already priced and the dates locked, this is your window. If you do not, do nothing and let it expire. On the American Express side, thirty percent to British Airways, Iberia, and Aer Lingus Avios runs through September twenty-seventh. Book the redemption first, then transfer to whichever Avios wallet holds the seat cheapest. Do not transfer for a British Airways transatlantic business seat — the fuel surcharges gut the bonus. Aer Lingus economy transatlantic or short haul intra-Europe on partners, the ratio is useful. Chase to Air Canada Aeroplan is twenty percent through September thirtieth. Aeroplan is a Star Alliance workhorse, but it is dynamic priced. Only transfer if you have a live Aeroplan dot com search returning the exact seat you intend to book. In program watch: The Amex Platinum refresh takes the annual fee to eight hundred ninety five dollars. Lufthansa Business Lounge access ends October first. The World of Hyatt 2026 category shifts took effect May twentieth. About one hundred twelve properties moved to more expensive categories; roughly twenty four moved cheaper. And United MileagePlus pooling can now redeem on Star Alliance partners since June — meaningful for families planning international travel. In the ledger, three calls remain open, none due for grading today. Today's new call: Citi ThankYou will run another Turkish Airlines Miles and Smiles bonus of thirty percent or higher between September first and November thirtieth. Reminder: transfers are one way and irreversible. Move points only with a specific redemption in mind. Have a sharp day.";
+let utterance = null;
+let speaking = false;
+function toggleSpeech() {
+  const btn = document.getElementById('listenBtn');
+  if (speaking) {
+    window.speechSynthesis.cancel();
+    speaking = false;
+    btn.textContent = '▶ Listen (3 min)';
+    return;
+  }
+  if (!('speechSynthesis' in window)) {
+    btn.textContent = '⚠ Speech not supported';
+    return;
+  }
+  utterance = new SpeechSynthesisUtterance(S);
+  utterance.rate = 0.93;
+  const voices = window.speechSynthesis.getVoices();
+  const preferred = voices.find(v => v.name === 'Daniel') || voices.find(v => v.name === 'Alex') || voices.find(v => v.lang && v.lang.startsWith('en'));
+  if (preferred) utterance.voice = preferred;
+  utterance.onend = () => { speaking = false; btn.textContent = '▶ Listen (3 min)'; };
+  utterance.onerror = () => { speaking = false; btn.textContent = '▶ Listen (3 min)'; };
+  window.speechSynthesis.speak(utterance);
+  speaking = true;
+  btn.textContent = '■ Stop';
+}
+if ('speechSynthesis' in window) {
+  window.speechSynthesis.onvoiceschanged = () => {};
+}
+</script>
+</body>
+</html>
