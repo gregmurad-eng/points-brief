@@ -50,6 +50,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-08-19-1",
+      "date": "2026-08-19",
+      "call": "Amex Membership Rewards will run another transfer bonus of 25% or higher to at least one Avios program (British Airways, Iberia, or Aer Lingus) between 2026-09-28 and 2026-12-31.",
+      "basis": "Amex has run 30%+ Avios bonuses on a roughly semi-annual cadence for years, and the current 30% bonus (expiring 2026-09-27) is well established as a routine promotion. The Avios family sits at the centre of Amex's transfer stack because Iberia short-haul to Madrid and single-partner AA short-haul remain two of the strongest sweet spots reachable directly from Membership Rewards. A three-month silence after this bonus ends would break a multi-year pattern; a repeat before year-end is the base case.",
+      "horizon": "2026-12-31",
+      "test": "GRADE HIT if any Amex Membership Rewards \u2192 British Airways, Iberia, or Aer Lingus Avios transfer bonus of 25% or greater is publicly offered at any point between 2026-09-28 and 2026-12-31 inclusive, evidenced by Amex's own transfer page, an Avios program promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
