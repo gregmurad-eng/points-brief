@@ -62,6 +62,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-08-22-1",
+      "date": "2026-08-22",
+      "call": "Chase will NOT offer a Chase Ultimate Rewards \u2192 World of Hyatt transfer bonus of any percentage at any point between 2026-08-22 and 2027-02-28.",
+      "basis": "Since the UR\u2192Hyatt transfer partnership launched with Hyatt as Chase's sole hotel transfer partner (October 2018), Chase has never once offered a bonus on this route \u2014 the 1:1 rate has been treated as sacrosanct. Hyatt is by consensus the most valuable single destination in the Chase transferable stack, and both parties benefit commercially from keeping the ratio boring: Hyatt gets sticky earned-balance transfers, Chase gets a durable 'points worth ~2 cents' value narrative. Even after Hyatt's May 2026 chart devaluation weakened the round-trip case at top-band aspirational properties, no bonus has been floated. A first-ever Chase\u2192Hyatt bonus inside six months would break an eight-year pattern and would be one of the largest structural changes in the transferable-points landscape.",
+      "horizon": "2027-02-28",
+      "test": "GRADE HIT if no Chase Ultimate Rewards \u2192 World of Hyatt transfer bonus of any percentage is publicly offered at any point between 2026-08-22 and 2027-02-28 inclusive. GRADE MISS if any such bonus (>0%) is announced or live during that window, evidenced by Chase's own transfer page and confirmed by at least one Tier 1 or Tier 2 source.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
