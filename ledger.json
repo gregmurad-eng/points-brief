@@ -74,6 +74,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-08-23-1",
+      "date": "2026-08-23",
+      "call": "Capital One will run another Capital One miles \u2192 Avianca LifeMiles transfer bonus of 20% or higher between 2026-10-01 and 2026-12-31.",
+      "basis": "Capital One has run LifeMiles bonuses on a roughly quarterly cadence through 2026 (February, May, August), typically in the 15-25% range. The current 15% promo ends 2026-08-31, and Q4 is Capital One's historically most active bonus window as it competes for year-end transfer volume against Amex's Avios push. LifeMiles remains one of the top three redemption destinations for Capital One miles thanks to distance-based Star Alliance pricing (25,000 for US-domestic short-haul in business; 63,000 US\u2192Europe in business) and no fuel surcharges on Star partners. A three-month silence after August would break a multi-year cadence.",
+      "horizon": "2026-12-31",
+      "test": "GRADE HIT if any Capital One miles \u2192 Avianca LifeMiles transfer bonus of 20% or greater is publicly offered at any point between 2026-10-01 and 2026-12-31 inclusive, evidenced by Capital One's own transfer page, Avianca's promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
