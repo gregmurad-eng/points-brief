@@ -86,6 +86,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-08-24-1",
+      "date": "2026-08-24",
+      "call": "The Chase Ultimate Rewards \u2192 Air Canada Aeroplan 20% bonus (live, expiring 2026-09-30) will be Chase's LAST UR \u2192 airline transfer bonus of 2026 \u2014 no additional Chase UR \u2192 airline bonus will be publicly offered between 2026-10-01 and 2026-12-31.",
+      "basis": "Chase is structurally the least promotional of the transferable-points banks on airlines: 2025 saw only two UR \u2192 airline bonuses (Aeroplan and Emirates), and 2026 has so far delivered exactly one (Aeroplan, currently live). Chase's Q4 pattern favours hotel partners \u2014 IHG, Marriott \u2014 and leaves airline promo season to Amex (Avios) and Citi (Turkish, Flying Blue). Aeroplan is Chase's default airline handshake and, with it running now, the airline box is arguably checked for the year. This call bets on Chase's revealed preference not to compete on airline transfers in Q4.",
+      "horizon": "2026-12-31",
+      "test": "GRADE HIT if no Chase Ultimate Rewards \u2192 airline transfer bonus of any percentage (any Chase UR airline transfer partner: United, Aeroplan, British Airways, Iberia, Aer Lingus, Emirates, Singapore, JetBlue, Southwest, Virgin Atlantic) is publicly offered at any point between 2026-10-01 and 2026-12-31 inclusive. GRADE MISS if any such bonus (>0%) is announced or live during that window, evidenced by Chase's own transfer page and confirmed by at least one Tier 1 or Tier 2 source.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
