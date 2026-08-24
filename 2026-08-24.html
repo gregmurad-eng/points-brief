@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief · 2026-08-24</title>
+<style>
+  :root {
+    --bg: #080c14;
+    --accent: #c9a84c;
+    --text: #d8d0b4;
+    --muted: #8a8570;
+    --miss: #b45c5c;
+    --panel: #10151f;
+    --panel-b: #1a2130;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: Georgia, 'Times New Roman', serif; line-height: 1.6; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted rgba(201,168,76,0.4); }
+  a:hover { border-bottom-style: solid; }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 28px 24px 60px; }
+  header.masthead { border-bottom: 2px solid var(--accent); padding-bottom: 18px; margin-bottom: 22px; }
+  h1 { font-size: 36px; margin: 0 0 6px; letter-spacing: 0.5px; color: var(--text); }
+  .tagline { color: var(--muted); font-style: italic; margin: 0; font-size: 15px; }
+  .date-line { color: var(--accent); font-size: 15px; margin: 8px 0 0; letter-spacing: 0.4px; }
+  nav.bar {
+    display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center;
+    padding: 14px 0; border-top: 1px solid var(--panel-b); border-bottom: 1px solid var(--panel-b);
+    margin: 18px 0;
+  }
+  nav.bar a, nav.bar .next {
+    white-space: nowrap;
+    padding: 10px 6px;
+    display: inline-block;
+    min-height: 44px;
+    line-height: 24px;
+  }
+  nav.bar .next { color: var(--muted); border-bottom: none; }
+  .nav-mid { display: inline-flex; flex-wrap: wrap; gap: 0; }
+  .nav-mid a { color: var(--accent); margin: 0 9px; }
+  h2 {
+    font-size: 22px; letter-spacing: 0.4px; color: var(--accent);
+    border-bottom: 1px solid var(--panel-b); padding-bottom: 6px; margin: 34px 0 14px;
+  }
+  h3 { font-size: 18px; color: var(--text); margin: 22px 0 6px; }
+  p { margin: 8px 0; }
+  sup a {
+    padding: 6px 4px; margin: -6px -4px;
+    display: inline-block;
+    line-height: 1;
+    font-size: 0.7em;
+  }
+  .meta { color: var(--muted); font-size: 14px; margin: 2px 0 8px; }
+  .move {
+    color: var(--accent); font-style: italic;
+    border-left: 3px solid var(--accent); padding: 2px 0 2px 12px;
+    margin: 10px 0 4px;
+  }
+  .move::before { content: "Your move: "; font-weight: bold; font-style: normal; }
+  .signal {
+    background: var(--panel); border: 1px solid var(--accent);
+    padding: 14px 18px; margin: 18px 0; border-radius: 3px;
+  }
+  .ledger-block {
+    background: var(--panel); border: 1px solid var(--panel-b);
+    padding: 14px 18px; margin: 12px 0; border-radius: 3px;
+  }
+  .verdict-hit { color: var(--accent); font-weight: bold; }
+  .verdict-miss { color: var(--miss); font-weight: bold; }
+  .verdict-unsettled { color: var(--muted); font-weight: bold; }
+  .verdict-open { color: var(--muted); }
+  .season { font-size: 15px; color: var(--muted); margin: 6px 0 16px; }
+  ol.sources { padding-left: 22px; font-size: 15px; }
+  ol.sources li { margin: 8px 0; }
+  .tier {
+    display: inline-block; font-size: 11px; letter-spacing: 0.5px;
+    padding: 1px 6px; border: 1px solid var(--muted); border-radius: 3px;
+    color: var(--muted); margin: 0 6px 0 4px; text-transform: uppercase;
+  }
+  .tier.primary { color: var(--accent); border-color: var(--accent); }
+  #speak {
+    background: transparent; color: var(--accent); border: 1px solid var(--accent);
+    padding: 12px 18px; font-family: Georgia, serif; font-size: 15px;
+    cursor: pointer; letter-spacing: 0.4px; border-radius: 3px;
+    min-height: 44px;
+  }
+  #speak:hover { background: rgba(201,168,76,0.08); }
+  .listen-row { display: flex; align-items: center; gap: 12px; margin: 8px 0 18px; }
+  .listen-hint { color: var(--muted); font-size: 13px; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--panel-b); }
+  .caution {
+    color: var(--muted); font-size: 14px; font-style: italic;
+    margin: 6px 0 14px;
+  }
+  @media (max-width: 480px) {
+    .wrap { padding: 20px 16px 50px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 17px; }
+    body, p, .move, .ledger-block { font-size: 16px; }
+    .meta, .listen-hint, ol.sources, .caution { font-size: 14px; }
+    footer { font-size: 13px; }
+    nav.bar a, nav.bar .next { padding: 12px 4px; }
+    .nav-mid a { margin: 0 6px; }
+    #speak { width: 100%; padding: 14px; font-size: 16px; }
+    .listen-row { flex-direction: column; align-items: stretch; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <h1>The Points Brief</h1>
+  <p class="tagline">Travel Points · Maximize every transfer</p>
+  <p class="date-line">Monday, August 24, 2026</p>
+</header>
+
+<nav class="bar">
+  <a href="2026-08-23.html">← YESTERDAY</a>
+  <span class="nav-mid">
+    <a href="./">Today</a><a href="archive.html">Archive</a>
+  </span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<div class="listen-row">
+  <button id="speak" onclick="toggleSpeech()">▶ Listen (≈3 min)</button>
+  <span class="listen-hint">Web Speech API · tap again to stop</span>
+</div>
+
+<p class="caution">Every transfer in this brief is one-way and irreversible. Only move points with a specific redemption already in mind.</p>
+
+<h2>Today's Transfer Bonuses</h2>
+
+<h3>Chase Ultimate Rewards → IHG One Rewards · 70%</h3>
+<p class="meta">Expires August 31, 2026 · Ratio 1,000 UR → 1,700 IHG<sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup></p>
+<p>Chase's headline hotel promo of the summer is now in its final week. IHG award nights price at 17,000–70,000 per night at properties that actually earn the transfer, so 10,000 UR points can buy a mid-tier IHG night if the property cooperates. This has already been stepped down once — 100% July 15-30, then 70% — so a further extension would break Chase's own signalled pattern.</p>
+<p class="move">Only transfer if you already have a specific IHG stay in mind and the property price at award is materially cheaper than paid; do NOT speculatively park UR in IHG "for later" — IHG points expire after 12 months of no activity and have no upside from being held.</p>
+
+<h3>Citi ThankYou → Turkish Airlines Miles &amp; Smiles · 40%</h3>
+<p class="meta">Expires August 30, 2026 · Ratio 1,000 TYP → 1,400 Turkish<sup><a href="#s2">[2]</a></sup><sup><a href="#s3">[3]</a></sup></p>
+<p>The most valuable transfer bonus running right now for a US points holder. Turkish partner business class North America → Europe still starts at 45,000 miles one-way on Star Alliance metal at the region-to-region chart; at 1:1.4 that's ~32,000 TYP for a business seat if award space exists. The 40% is the third Citi→Turkish push of 2026 (see cadence call 2026-08-18-1 in the ledger).</p>
+<p class="move">Search for actual Star Alliance business availability on your dates BEFORE transferring — Turkish's own award engine is notoriously balky, and there is no refund if you park points and later can't find seats. If you have live award space held, transfer today; if you don't, wait.</p>
+
+<h3>Amex Membership Rewards → BA / Iberia / Aer Lingus Avios · 30%</h3>
+<p class="meta">Expires September 27, 2026 · Ratio 1,000 MR → 1,300 Avios<sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup></p>
+<p>Same 30% offer routed through all three Avios programs — points pool with each other, so you can transfer to whichever program's engine finds the seat. The sweet spots that still matter: Iberia short-haul into Madrid, BA Avios on partner AA short-haul North America, Aer Lingus for Dublin routings. Fuel surcharges are real on BA metal — avoid them on transatlantic.</p>
+<p class="move">This bonus has 34 days left; no reason to move points today unless you're within 48 hours of ticketing. The 30% will almost certainly not step up, but you gain nothing from an earlier transfer and lose flexibility.</p>
+
+<h3>Chase Ultimate Rewards → Air Canada Aeroplan · 20%</h3>
+<p class="meta">Expires September 30, 2026 · Ratio 1,000 UR → 1,200 Aeroplan<sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup></p>
+<p>Aeroplan's own award chart has taxes-and-fees pain on partner premium cabins but genuine value on shorter Star Alliance routes: Vancouver–Tokyo in business at 75,000 miles is the poster child. At 1:1.2 that becomes 62,500 UR points. Aeroplan is one of the few Chase airline partners with a published, honest chart.</p>
+<p class="move">If you're planning a Star Alliance redemption between now and mid-2027 and already have candidate award space identified, transfer for the 20%. If not, skip — Aeroplan miles have no earning path outside transfers and paid flights.</p>
+
+<h3>Capital One Miles → Avianca LifeMiles · 15%</h3>
+<p class="meta">Expires August 31, 2026 · Ratio 100 Cap One → 115 LifeMiles · minimum 1,000 point transfer<sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup></p>
+<p>Modest bonus but LifeMiles still runs distance-based Star Alliance pricing (25,000 domestic short-haul business, 63,000 US→Europe business) and — critically — no fuel surcharges on partner metal. That's the reason to hold Cap One miles. Q4 is Capital One's most active promo window historically, which frames this as "if you need to move now" money.</p>
+<p class="move">If you don't have a redemption ready, wait — the ledger's open call (2026-08-23-1) forecasts a 20%+ Cap One→LifeMiles bonus between Oct 1 and Dec 31, and a 5-point bump matters at scale.</p>
+
+<h3>Multi-bank → Cathay Pacific Asia Miles · 10%</h3>
+<p class="meta">Expires August 28, 2026 · Ratios vary (Amex 1,000:880 · most others 1,000:1,100)<sup><a href="#s2">[2]</a></sup></p>
+<p>Amex → Cathay is a 4:5 base ratio which, even with the 10% bump, remains a net LOSS versus most other Amex airline partners — the 1,000:880 delivered miles is not a typo. Bilt, Brex, Capital One, Citi, and Wells Fargo all transfer 1:1 to Asia Miles, so with the bonus they land at 1,000:1,100. Cathay's own metal into Hong Kong from the US at 85,000–100,000 in business is the target redemption.</p>
+<p class="move">If transferring from Amex MR: skip. From any other bank: only transfer if you already have Cathay business award space on hold — Cathay releases award space in bursts, and this window closes in four days.</p>
+
+<h2>Program Watch</h2>
+
+<h3>Chase Sapphire Preferred → Hyatt cuts to 4:3 on October 1</h3>
+<p class="meta">Effective 2026-10-01 · Grace period ends 2026-09-30 for accounts opened before 2026-06-15<sup><a href="#s4">[4]</a></sup><sup><a href="#s5">[5]</a></sup></p>
+<p>This is the single biggest structural change in the transferable-points landscape this year. Chase Sapphire Preferred → World of Hyatt drops from 1:1 to 4:3, meaning 100,000 UR points become 75,000 Hyatt points. Cardholders who opened on or after June 15, 2026 are already on the new ratio; those who opened before get a grace period through September 30. Sapphire Reserve and Reserve for Business keep 1:1. A 25,000-point Hyatt night now costs ~33,333 UR from a Preferred. This is a real, permanent devaluation for a specific card, and the 37-day countdown is running.</p>
+
+<h3>American AAdvantage complimentary upgrade changes on transcon and Hawaii routes</h3>
+<p class="meta">Effective 2026-08-25 (tomorrow)<sup><a href="#s6">[6]</a></sup></p>
+<p>Part of the AAdvantage midyear 2026 update. Upgrade eligibility and priority mechanics change on transcon (JFK/LAX/SFO/BOS) and Hawaii routes starting tomorrow. AA has framed this as a member-benefits refresh alongside the arrival of Cash + Miles bookings and new Loyalty Point Rewards menu items. Whether it's net-positive or net-negative depends on your elite tier — Executive Platinum keeps the strongest position.</p>
+
+<h3>United MileagePlus dynamic drift on Europe business awards</h3>
+<p class="meta">Ongoing through H1 2026 · No published chart<sup><a href="#s7">[7]</a></sup></p>
+<p>Not a formal devaluation — United has no published chart — but Simple Flying's mid-2026 analysis notes United business one-way to Europe has drifted from ~88,000 miles to often above 110,000 miles at peak dates. Because there is no chart change to announce, this only gets caught by users pricing awards; treat it as ambient risk on any speculative United transfer.</p>
+
+<h2>Today's Play</h2>
+
+<div class="signal">
+  <p><strong>The single call today: the Chase Sapphire Preferred → Hyatt grace period.</strong> If you hold a Sapphire Preferred opened before 2026-06-15, the 1:1 transfer to Hyatt disappears on October 1. Look at your Hyatt travel plans through spring 2027. If you have specific stays priced out — Andaz Mayakoba at 25,000/night, Park Hyatt Sydney at Standard rates, anything at a Top tier property you're actually going to book — transfer the exact amount you need before September 30. Do NOT front-load a large speculative transfer. Hyatt points are not more devaluation-resistant than UR points; the value is in the redemption, not the account balance. After October 1 the Sapphire Reserve pathway becomes materially more valuable than Preferred for Hyatt users, which is its own decision.</p>
+</div>
+
+<h2>The Ledger</h2>
+
+<p class="season">Season 1 · 0-0 across 8 open calls · first call logged 2026-08-15</p>
+
+<div class="ledger-block">
+  <p><span class="verdict-open">OPEN · new today · 2026-08-24-1</span></p>
+  <p><strong>Call:</strong> The Chase Ultimate Rewards → Air Canada Aeroplan 20% bonus (live, expiring 2026-09-30) will be Chase's LAST UR → airline transfer bonus of 2026 — no additional Chase UR → airline bonus will be publicly offered between 2026-10-01 and 2026-12-31.</p>
+  <p><strong>Basis:</strong> Chase is structurally the least promotional bank on airlines. 2025 delivered only two UR → airline bonuses; 2026 has so far delivered exactly one (Aeroplan, currently live). Chase's Q4 pattern favours hotel partners (IHG, Marriott) and leaves airline promo work to Amex and Citi. This call bets on Chase's revealed preference.</p>
+  <p><strong>Horizon:</strong> 2026-12-31 · <strong>Test:</strong> HIT if no Chase UR → airline transfer bonus of any percentage runs Oct 1 – Dec 31. MISS if any does.</p>
+</div>
+
+<p class="meta">Seven prior open calls remain in the ledger (2026-08-15 → 2026-08-23) — earliest grading date is 2026-10-25 for the U.S. Bank Altitude Reserve call. No calls due today.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="s1">Award Wallet — <em>All Current Transfer Bonuses (Capital One, Chase, and More)</em> <span class="tier">trade</span> <a href="https://awardwallet.com/news/credit-card-transfer-bonuses/">awardwallet.com/news/credit-card-transfer-bonuses</a></li>
+  <li id="s2">Frequent Miler — <em>Current point transfer bonuses for August 2026</em> <span class="tier">trade</span> <a href="https://frequentmiler.com/current-point-transfer-bonuses/">frequentmiler.com/current-point-transfer-bonuses</a></li>
+  <li id="s3">point.me — <em>Current Transfer Bonuses for August 2026</em> <span class="tier">trade</span> <a href="https://www.point.me/insights/current-transfer-bonuses/">point.me/insights/current-transfer-bonuses</a></li>
+  <li id="s4">The Points Guy — <em>Chase Sapphire Preferred cuts Hyatt transfer value, adds new perks</em> <span class="tier">trade</span> <a href="https://thepointsguy.com/news/chase-sapphire-preferred-refresh-2026/">thepointsguy.com/news/chase-sapphire-preferred-refresh-2026</a></li>
+  <li id="s5">The Points Guy — <em>How Chase's 4:3 Hyatt ratio affects Sapphire Preferred</em> <span class="tier">trade</span> <a href="https://thepointsguy.com/credit-cards/sapphire-preferred-spending-hyatt-reduced-transfer-ratio/">thepointsguy.com/credit-cards/sapphire-preferred-spending-hyatt-reduced-transfer-ratio</a></li>
+  <li id="s6">AwardFares — <em>AAdvantage Program Updates 2026: Cash + Miles Bookings &amp; Premium Economy Upgrade Changes</em> <span class="tier">trade</span> <a href="https://awardfares.com/blog/aadvantage-midyear-2026-updates">awardfares.com/blog/aadvantage-midyear-2026-updates</a></li>
+  <li id="s7">Simple Flying — <em>How American, Delta &amp; United Airlines Quietly Adopted Identical Loyalty Math For 2026</em> <span class="tier">trade</span> <a href="https://simpleflying.com/how-american-delta-united-quietly-adopted-identical-loyalty-math-2026/">simpleflying.com/how-american-delta-united-quietly-adopted-identical-loyalty-math-2026</a></li>
+</ol>
+
+<nav class="bar">
+  <a href="2026-08-23.html">← YESTERDAY</a>
+  <span class="nav-mid">
+    <a href="./">Today</a><a href="archive.html">Archive</a>
+  </span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<footer>
+  <p>The Points Brief is AI-synthesized daily. Every figure is checked against a Tier 1 program page where reachable — but transfers are one-way and irreversible, so confirm the offer terms, current award chart, and specific award availability on the program's own site before moving points. Do not transfer speculatively.</p>
+</footer>
+
+</div>
+
+<script>
+const S = "Good morning. The Points Brief for Monday, August 24, 2026. Six transfer bonuses are live today, one large structural change is running its countdown, and the ledger is now eight calls deep with none due for grading. The headline promo is Chase Ultimate Rewards to IHG at seventy percent, expiring August 31 — that's one thousand Chase points becoming seventeen hundred IHG. The catch: only transfer if you have a specific IHG stay in mind. Don't park points in IHG for later; they expire after twelve months of inactivity. Right behind it is the most valuable running offer for anyone with a European trip in mind: Citi ThankYou to Turkish Airlines at forty percent, expiring August 30. Turkish business class North America to Europe on Star Alliance metal still starts at forty-five thousand miles one way, which lands around thirty-two thousand ThankYou points after the bonus. The rule: search live Star Alliance availability BEFORE you transfer. Turkish's own award engine is unreliable. If you have space held, move today. If you don't, wait. Amex Membership Rewards to the Avios family — British Airways, Iberia, Aer Lingus — is running thirty percent through September 27. Thirty-four days is plenty of runway. Don't transfer today unless you're within forty-eight hours of ticketing. The rest of the board: Chase to Aeroplan at twenty percent through September 30, Capital One to Avianca LifeMiles at fifteen percent through August 31, and a ten percent bonus to Cathay Pacific across most banks expiring August 28. Amex to Cathay is a trap — even with the bonus, one thousand Amex points delivers only eight hundred eighty Asia Miles. Use another bank if you're transferring to Cathay. Program Watch. The Chase Sapphire Preferred to Hyatt transfer ratio drops from one-to-one to four-to-three on October 1. Cardholders who opened before June 15 have a grace period through September 30. A twenty-five thousand point Hyatt night, previously twenty-five thousand Ultimate Rewards, will cost about thirty-three thousand three hundred Ultimate Rewards after the change. Sapphire Reserve keeps one-to-one. Today's play: if you hold a Preferred opened before June 15 and have specific Hyatt stays planned through spring 2027, transfer the exact amount you need before September 30. Do not front-load a large speculative transfer. The ledger opens a new call: Chase's UR to Aeroplan will be its last airline transfer bonus of 2026. Horizon December 31. Season one score, zero and zero, first call logged nine days ago. Every number in today's brief is checked, but transfers are one-way — verify the offer terms and award availability on the program's own site before you move points. That's the brief.";
+let speaking = false;
+let utter = null;
+function pickVoice() {
+  const voices = speechSynthesis.getVoices();
+  return voices.find(v => v.name === 'Daniel') ||
+         voices.find(v => v.name === 'Alex') ||
+         voices.find(v => /Daniel/i.test(v.name)) ||
+         voices.find(v => v.lang && v.lang.startsWith('en')) ||
+         voices[0];
+}
+function toggleSpeech() {
+  const btn = document.getElementById('speak');
+  if (speaking) {
+    speechSynthesis.cancel();
+    speaking = false;
+    btn.textContent = '▶ Listen (≈3 min)';
+    return;
+  }
+  utter = new SpeechSynthesisUtterance(S);
+  utter.rate = 0.93;
+  const v = pickVoice();
+  if (v) utter.voice = v;
+  utter.onend = () => { speaking = false; btn.textContent = '▶ Listen (≈3 min)'; };
+  utter.onerror = () => { speaking = false; btn.textContent = '▶ Listen (≈3 min)'; };
+  speechSynthesis.speak(utter);
+  speaking = true;
+  btn.textContent = '■ Stop';
+}
+if (typeof speechSynthesis !== 'undefined' && speechSynthesis.onvoiceschanged !== undefined) {
+  speechSynthesis.onvoiceschanged = () => {};
+}
+</script>
+
+</body>
+</html>
