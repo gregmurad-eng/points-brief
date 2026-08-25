@@ -98,6 +98,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-08-25-1",
+      "date": "2026-08-25",
+      "call": "Cathay Pacific will run another multi-bank Asia Miles transfer bonus of 10% or higher (from any of Amex MR, Citi ThankYou, Capital One, Bilt, Wells Fargo, or Brex) between 2026-11-01 and 2027-01-31.",
+      "basis": "Cathay has run at least one all-partner US transfer promotion in Q4 of each of the last two years \u2014 Q4 2024 was a 30% bonus, Q4 2025 was 20%. The current multi-partner 10% (registration-required, capped at 10,000 bonus miles, expires 2026-08-28) is Cathay's Q3 push and is structurally quieter than prior efforts, but Cathay has strong commercial reasons to return in Q4 as Asia holiday-travel bookings peak and Hong Kong's high season begins. Cathay's Asia Miles balance sheet needs the transfer inflow because its own earn engine (co-brand cards, partner airlines) has been shrinking relative to peers. A four-month silence after Aug 28 would break a two-year Q4 pattern.",
+      "horizon": "2027-01-31",
+      "test": "GRADE HIT if any Cathay Pacific Asia Miles transfer bonus of 10% or greater is publicly offered from any of Amex MR, Citi ThankYou, Capital One, Bilt, Wells Fargo, or Brex at any point between 2026-11-01 and 2027-01-31 inclusive, evidenced by Cathay's own promo page or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered from any of those six programs in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
