@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — Wednesday, August 26, 2026</title>
+<style>
+  :root {
+    --bg: #080c14;
+    --accent: #c9a84c;
+    --text: #d8d0b4;
+    --muted: #8a8570;
+    --line: #1e2436;
+    --box: #0f1524;
+    --hit: #c9a84c;
+    --miss: #a05555;
+    --unsettled: #6d6d6d;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: Georgia, "Times New Roman", serif; line-height: 1.55; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 22px 60px; }
+  header.masthead { border-bottom: 2px solid var(--accent); padding-bottom: 14px; margin-bottom: 12px; }
+  h1 { font-size: 34px; margin: 0 0 4px; letter-spacing: 0.5px; color: var(--accent); font-variant: small-caps; }
+  .tagline { color: var(--muted); font-size: 15px; font-style: italic; margin: 0; }
+  .today-date { color: var(--text); font-size: 15px; margin: 6px 0 0; }
+  nav.bar {
+    display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center;
+    padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    margin: 14px 0 18px; font-size: 15px;
+  }
+  nav.bar a, nav.bar span { white-space: nowrap; min-height: 44px; display: inline-flex; align-items: center; }
+  .nav-mid a { color: var(--accent); margin: 0 9px; }
+  nav.bar > a { color: var(--accent); }
+  nav.bar .next { color: var(--muted); }
+  .urgent {
+    border: 1px solid var(--accent); border-left: 4px solid var(--accent);
+    background: rgba(201, 168, 76, 0.08);
+    padding: 14px 16px; margin: 0 0 22px; border-radius: 3px;
+  }
+  .urgent h3 { margin: 0 0 6px; color: var(--accent); font-size: 17px; }
+  .urgent p { margin: 0; font-size: 16px; }
+  .listen-row { margin: 0 0 26px; }
+  button.listen {
+    background: var(--box); color: var(--accent); border: 1px solid var(--accent);
+    padding: 12px 18px; font-family: Georgia, serif; font-size: 15px; cursor: pointer;
+    border-radius: 3px; min-height: 44px;
+  }
+  button.listen:hover { background: rgba(201,168,76,0.12); }
+  h2 {
+    color: var(--accent); font-size: 22px; margin: 30px 0 10px; padding-bottom: 6px;
+    border-bottom: 1px solid var(--line); font-variant: small-caps; letter-spacing: 0.5px;
+  }
+  h3 { color: var(--text); font-size: 18px; margin: 18px 0 6px; }
+  p { margin: 0 0 10px; font-size: 16px; }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 8px; font-style: italic; }
+  .your-move { color: var(--accent); font-style: italic; font-size: 15.5px; margin: 8px 0 4px; border-left: 2px solid var(--accent); padding-left: 10px; }
+  .your-move strong { font-style: normal; letter-spacing: 0.4px; }
+  sup a { color: var(--accent); font-size: 12px; padding: 6px 4px; margin: -6px -4px; }
+  .signal {
+    background: var(--box); border-left: 3px solid var(--accent);
+    padding: 14px 16px; margin: 12px 0 8px;
+  }
+  ol.sources { padding-left: 24px; font-size: 14.5px; }
+  ol.sources li { margin-bottom: 6px; }
+  .tier-primary { color: var(--accent); font-weight: bold; }
+  .tier-trade { color: var(--text); }
+  .tier-community { color: var(--muted); }
+  .ledger-row { border-bottom: 1px dashed var(--line); padding: 10px 0; }
+  .ledger-row:last-child { border-bottom: none; }
+  .ledger-label { display: inline-block; font-weight: bold; letter-spacing: 0.5px; font-size: 13px; padding: 2px 8px; border-radius: 2px; margin-right: 6px; }
+  .lbl-open { background: rgba(109,109,109,0.2); color: var(--muted); border: 1px solid var(--muted); }
+  .lbl-hit { background: rgba(201,168,76,0.15); color: var(--hit); border: 1px solid var(--hit); }
+  .lbl-miss { background: rgba(160,85,85,0.15); color: var(--miss); border: 1px solid var(--miss); }
+  .lbl-unsettled { background: rgba(109,109,109,0.15); color: var(--unsettled); border: 1px solid var(--unsettled); }
+  .ledger-record { color: var(--accent); font-size: 16px; margin-bottom: 12px; }
+  .footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13.5px; }
+  .caution { font-size: 14.5px; color: var(--muted); font-style: italic; margin: 10px 0 18px; padding: 10px 12px; border: 1px dashed var(--line); }
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    .wrap { padding: 18px 14px 44px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 17px; }
+    p, .your-move, .signal, .urgent p { font-size: 16px; }
+    .meta, ol.sources, .footer, .caution { font-size: 14px; }
+    nav.bar { gap: 8px 12px; font-size: 15px; }
+    nav.bar a, nav.bar span, nav.bar .nav-mid a { min-height: 44px; padding: 6px 4px; }
+    button.listen { width: 100%; min-height: 48px; }
+    sup a { padding: 8px 6px; margin: -8px -6px; font-size: 13px; }
+    .urgent { padding: 12px 14px; }
+    .urgent h3 { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <h1>The Points Brief</h1>
+  <p class="tagline">Travel Points · Maximize every transfer</p>
+  <p class="today-date">Wednesday, August 26, 2026</p>
+</header>
+
+<nav class="bar">
+  <a href="2026-08-25.html">← YESTERDAY</a>
+  <span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<div class="urgent">
+  <h3>Expires in 2 days · Cathay Asia Miles 10% multi-partner bonus</h3>
+  <p>The all-partner Asia Miles conversion bonus (Amex MR, Citi ThankYou, Capital One, Bilt and hotel programs) closes end-of-day Friday, August 28, 2026 Pacific Time. <strong>Registration is required before you transfer</strong>, and the bonus is capped at 10,000 bonus miles per member. Three other headline promos — Chase→IHG 70%, Citi→Turkish 40%, and Capital One→LifeMiles 15% — all end five days from today, on August 31.<sup><a href="#src-cathay-fm">[8]</a></sup></p>
+</div>
+
+<div class="listen-row">
+  <button class="listen" id="btnListen" aria-label="Listen to today's brief">▶ Listen · ~3 min</button>
+</div>
+
+<h2>Today's Transfer Bonuses</h2>
+
+<h3>Chase Ultimate Rewards → IHG One Rewards · 70%</h3>
+<p class="meta">Ratio 1:1.7 · Expires August 31, 2026 · Confirmed on IHG promo page</p>
+<p>Chase's stepped-down IHG promo has five days to run before it closes at 11:59 pm ET on August 31. The bonus is the same 70% we've seen since July 31 — the 100% early-bird tier ended a month ago. IHG points have thin real-world value (Frequent Miler and One Mile at a Time both peg them around 0.5 cents), so even a bonused 1:1.7 rate is roughly break-even against most Chase Travel redemption paths.<sup><a href="#src-ihg-chase">[1]</a></sup><sup><a href="#src-fm-ihg">[2]</a></sup></p>
+<p class="your-move"><strong>Your move:</strong> transfer only if you have a specific IHG cash rate in front of you priced at 1.5 cents per point or higher (typically a Regent, Six Senses or Intercontinental award-night stay you're ready to book today). Do not speculate into an IHG balance — the base rate reverts to 1:1 on September 1 and IHG points have no meaningful liquidity out.</p>
+
+<h3>Chase Ultimate Rewards → Air Canada Aeroplan · 20%</h3>
+<p class="meta">Ratio 1:1.2 · Expires September 30, 2026 · Confirmed on Chase transfer page</p>
+<p>Aeroplan remains Chase's one live airline handshake. A 20% bonus makes single-partner Star Alliance business class from North America to Europe (60,000 base Aeroplan miles at the low band, so ~50,000 Chase points after the bump) genuinely competitive against Turkish at 65,000. Aeroplan's advantage is straightforward award routing and no surprise fuel surcharges on most partners; its disadvantage is thin premium-cabin space on the routes you probably want.<sup><a href="#src-aeroplan-chase">[3]</a></sup></p>
+<p class="your-move"><strong>Your move:</strong> transfer only against a held Aeroplan reservation or a specific saver-level flight showing bookable space in ExpertFlyer / Seats.aero right now. If you're between Aeroplan and Turkish for a US→Europe business ticket, hold the seat with Aeroplan (which has better cancellation flexibility) before transferring.</p>
+
+<h3>Amex Membership Rewards → British Airways, Iberia, Aer Lingus Avios · 30%</h3>
+<p class="meta">Ratio 1:1.3 · Expires September 27, 2026 · Confirmed on Amex transfer page</p>
+<p>Amex's semi-annual Avios promo is halfway through. Transferred Avios can be shuffled between BA, Iberia, Aer Lingus, Finnair and Qatar at no cost inside the Avios family, so the destination question is mostly about redemption tail: Iberia short-haul to Madrid (17,000 off-peak) and BA short-haul on AA (6,500 domestic short-haul off-peak) remain the two mechanical sweet spots. Increments are 1,000 MR minimum.<sup><a href="#src-amex-avios">[4]</a></sup><sup><a href="#src-loyaltylobby-avios">[5]</a></sup></p>
+<p class="your-move"><strong>Your move:</strong> transfer only if you already know which specific Avios sweet spot you're playing for — most commonly, a JFK→MAD Iberia flight priced at 34,000 Avios in business, or a specific short-haul AA award. Do not speculate into an Avios balance a month before booking; British Airways surcharges on BA metal will eat the bonus.</p>
+
+<h3>Citi ThankYou → Turkish Airlines Miles &amp; Smiles · 40%</h3>
+<p class="meta">Ratio 1:1.4 · Expires August 31, 2026 (11:59 pm Türkiye time) · Cap 50,000 bonus miles · Bonus posts after campaign ends</p>
+<p>Citi's Turkish promo is the standout percentage of the month and the deepest sweet-spot arbitrage on the board: 45,000 Miles &amp; Smiles gets you a partner-airline business class one-way from North America to Europe on the Star Alliance chart Turkish hasn't touched since December 2025. At a bonused 1:1.4, that's just under 32,150 Citi ThankYou points. Two caveats: bonus miles credit only after the campaign closes, and the 50,000 bonus mile cap means transfers above ~125,000 Citi points earn base rate on the excess.<sup><a href="#src-fm-turkish">[6]</a></sup><sup><a href="#src-oma-turkish">[7]</a></sup></p>
+<p class="your-move"><strong>Your move:</strong> transfer only if you have already confirmed Star Alliance saver-level business class space on a Turkish partner (United, Air Canada, Lufthansa, Swiss, ANA) and can hold it while your bonus miles post — Turkish routinely takes weeks to fix booking issues and its call centre is famously hard. If you cannot pull up specific space today, wait for the next Q4 promo.</p>
+
+<h3>Citi ThankYou → Leading Hotels of the World Leaders Club · 25%</h3>
+<p class="meta">Ratio 1,000:250 (Premium tier cards) or 1,000:175 (Standard tier) · Expires September 19, 2026 (11:59 pm ET)</p>
+<p>Citi's second LHW bonus of 2026 (the last ran April 19 through May 16). At the Premium-tier ratio this is a poor mathematical trade — 1,000 ThankYou points → 250 Leaders Club points, and Leaders Club values inconsistently even at brand hotels. LHW's real value is in the "Bellini Club" status match paths and confirmed suite upgrades at member properties, not in accumulating a large point balance.<sup><a href="#src-aw-lhw">[9]</a></sup><sup><a href="#src-oma-lhw">[10]</a></sup></p>
+<p class="your-move"><strong>Your move:</strong> transfer only if you already hold Bellini Club status or an equivalent LHW recognition path and can name the property you'll book. For most readers this is a no — Turkish is a materially better home for the same Citi points, and the 40% bonus on Turkish is a mechanical 60% better trade.</p>
+
+<h3>Capital One Miles → Avianca LifeMiles · 15%</h3>
+<p class="meta">Ratio 1:1.15 · Expires August 31, 2026 (11:59 pm ET) · No cap · No registration</p>
+<p>The month's quietest headline promo — 15% is the low end of Capital One's typical LifeMiles range (Q2 ran 25%). LifeMiles still price Star Alliance business class US→Europe at 63,000, so a bonused 1:1.15 puts that transfer cost at ~54,800 Capital One miles, meaningfully better than Aeroplan's 60,000 baseline. LifeMiles has no fuel surcharges on Star partners and includes segments Aeroplan can't book.<sup><a href="#src-ll-lifemiles">[11]</a></sup></p>
+<p class="your-move"><strong>Your move:</strong> transfer only if you're within 10 days of ticketing a specific Star Alliance award and Capital One is your only viable source. The 15% is not compelling enough to speculate — historical cadence puts a 20-25% Capital One→LifeMiles bonus in Q4 as the base case, and my August 23 ledger call bets on exactly that.</p>
+
+<h3>Multi-partner → Cathay Pacific Asia Miles · 10%</h3>
+<p class="meta">Ratio 1:1.1 · Expires August 28, 2026 · Cap 10,000 bonus miles per member · Registration required before transfer</p>
+<p>The last two days of Cathay's Q3 push, and the tightest terms Cathay has offered a US audience in years — 10% (down from 20% in Q4 2025 and 30% in Q4 2024), plus the 10k mile cap, plus mandatory registration. The bonus applies to transfers from Amex MR, Citi ThankYou, Capital One, Bilt and select hotel partners (Marriott Bonvoy is explicitly excluded from the bonus, though the base transfer still works). Asia Miles' sweet spot remains partner business class within Asia and the occasional Cathay First availability.<sup><a href="#src-cathay-fm">[8]</a></sup></p>
+<p class="your-move"><strong>Your move:</strong> transfer only if you have already registered for the promo AND have a specific Cathay or Oneworld award in mind. If you're just building a balance, wait — my ledger call today bets Cathay's next promo will not exceed today's generosity, but you gain nothing by pre-loading at a base 1:1 rate before then.</p>
+
+<h2>Program Watch</h2>
+
+<h3>American Airlines · Elite complimentary upgrades capped at Premium Economy on 9 transcon/Hawaii routes (effective yesterday, August 25, 2026)</h3>
+<p>As of yesterday, AAdvantage elite members holding a Main Cabin ticket can no longer skip directly to Business on nine premium routes; the complimentary upgrade now lands in Premium Economy instead. Affected routes reported: JFK–LAX, JFK–SFO, BOS–LAX (premium transcon) and DFW–HNL/OGG/KOA, PHX–HNL, ORD–HNL/OGG (Hawaii widebody). Systemwide Upgrade certificates still clear economy directly to Business. To reach Business as a complimentary upgrade, elites now need to buy Premium Economy up front.<sup><a href="#src-aa-oma">[12]</a></sup><sup><a href="#src-aa-official">[13]</a></sup></p>
+<p class="your-move"><strong>Your move:</strong> if you regularly fly one of the nine listed routes as an Executive Platinum or higher, factor in the roughly $150–$400 Premium Economy upcharge on future ticket purchases — that's now the true price of your realistic upgrade path. On any other AA route, nothing changes.</p>
+
+<h3>World of Hyatt · May 2026 category shift still shaping Q4 planning</h3>
+<p>May 20's category reshuffle moved 112 properties up a tier, and the top-band Category 8 rate went 45,000 → 75,000 points per night — a 67% jump at the ceiling. Mid-tier Cat 1-4 properties took 17-25% increases at off-peak and standard rates. This is not new news, but it is the change most affecting current Q4 award planning, and it's why Chase→Hyatt still has never carried a transfer bonus (my August 22 ledger call sits on that).<sup><a href="#src-hyatt-tt">[14]</a></sup></p>
+<p class="your-move"><strong>Your move:</strong> if you are holding Chase points against an aspirational Hyatt redemption at a Category 7-8 property, model the trip at the new price before transferring. Cat 1-4 properties remain the strongest Hyatt trade even after the reshuffle.</p>
+
+<h3>Amex Platinum · $895 annual fee active on all renewals from January 2, 2026</h3>
+<p>The Platinum refresh has now been in the field for almost eight months. Existing cardholders hitting their first renewal on or after January 2, 2026 pay $895 (up from $695, a 28% increase). New benefits stack claims cover the delta if you actively use them; a passive holder is worse off. Chase Sapphire Reserve preceded the move in fall 2025 with a $795 AF on renewals after October 26, 2025.<sup><a href="#src-amex-cnn">[15]</a></sup><sup><a href="#src-csr-pointme">[16]</a></sup></p>
+<p class="your-move"><strong>Your move:</strong> if your Platinum renewal is coming up in the next 60 days, run the credits math against your actual behaviour — most readers are downgrading to Gold or product-changing rather than absorbing the fee. If you hold both Platinum and CSR passively, one of them almost certainly no longer belongs in the wallet.</p>
+
+<h2>Today's Play</h2>
+
+<div class="signal">
+  <p><strong>If you're going to move any points this week, the pick is Citi ThankYou → Turkish Miles &amp; Smiles at 40% — but only against confirmed Star Alliance saver business-class space.</strong> The mechanical trade is: 32,150 ThankYou points buys a partner business one-way North America → Europe. Nothing else on today's board approaches that redemption rate. But Turkish's operational reputation is what it is, so this is the promo where "no speculation" matters most. If you don't have a specific flight held today, wait — my August 18 ledger call bets on another Citi→Turkish 30%+ bonus by end of November, and I'd rather be wrong on that call than have you sitting on unusable Turkish miles.</p>
+  <p>The IHG, Capital One→LifeMiles, and Cathay bonuses all end this week too, but none of them are trades I'd take blind. The Amex→Avios 30% has another month to run — no need to act today.</p>
+</div>
+
+<h2>The Ledger</h2>
+
+<p class="ledger-record"><strong>Season 1 · 0-0</strong> · 9 open calls, first logged 2026-08-15 · nothing graded yet (earliest horizon 2026-10-25)</p>
+
+<div class="ledger-row">
+  <span class="ledger-label lbl-open">OPEN · new today</span>
+  <p style="margin:6px 0 4px;"><strong>2026-08-26-1 · Cathay Asia Miles Q4 bonus will not exceed today's generosity</strong></p>
+  <p style="margin:0 0 4px; font-size:15px;">The next Cathay Pacific Asia Miles all-partner US transfer bonus (from Amex MR, Citi ThankYou, Capital One, Bilt, Wells Fargo, or Brex) offered after today's Aug 28 close will land at 10% or lower, OR will cap total bonus miles at 15,000 or fewer per member — matching or tightening current terms rather than reverting to the uncapped 20-30% of prior Q4s.</p>
+  <p class="meta" style="margin:2px 0 0;">Horizon: 2027-01-31 · Basis: three-year monotonic degradation (Q4 2024: 30% uncapped → Q4 2025: 20% uncapped → Aug 2026: 10% capped at 10k with mandatory registration). Cathay's own earn engine is shrinking; the current terms look like a new floor.</p>
+</div>
+
+<div class="ledger-row">
+  <span class="ledger-label lbl-open">OPEN</span>
+  <p style="margin:6px 0 4px; font-size:15px;"><strong>2026-08-25-1 · Cathay will run another 10%+ US all-partner bonus by 2027-01-31</strong> — sits alongside today's call: today asks whether the terms tighten; yesterday asks whether the promo even reappears.</p>
+</div>
+
+<div class="ledger-row">
+  <span class="ledger-label lbl-open">OPEN · 8 more</span>
+  <p style="margin:6px 0 0; font-size:15px;">Prior calls on Chase→IHG (H: 2026-10-31), U.S. Bank Altitude Reserve partner restoration (H: 2026-10-25), Citi→Flying Blue return (H: 2026-11-15), Citi→Turkish return (H: 2026-11-30), Amex→Avios return (H: 2026-12-31), Chase→Hyatt never (H: 2027-02-28), Capital One→LifeMiles Q4 (H: 2026-12-31), and Chase UR→airline silence in Q4 (H: 2026-12-31). Earliest grading window opens October 25 with the U.S. Bank call. No hits, no misses yet — season is unwritten.</p>
+</div>
+
+<p class="caution"><strong>Transfers are one-way and irreversible.</strong> Only move points to a program when you have a specific, bookable redemption in mind. A bonused rate is worth nothing if the miles sit in an account you cannot use them from. Confirm every award's availability before you pull the trigger.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="src-ihg-chase">IHG Hotels &amp; Resorts, "Transfer Chase Ultimate Rewards to IHG One Rewards" — <span class="tier-primary">primary</span> — <a href="https://www.ihg.com/onerewards/content/us/en/promotions/chase-transfer-bonus">ihg.com/onerewards/promotions/chase-transfer-bonus</a></li>
+  <li id="src-fm-ihg">Frequent Miler, "Chase is offering a 70% transfer bonus to IHG One Rewards: Give it a miss" — <span class="tier-trade">trade</span> — <a href="https://frequentmiler.com/chase-is-offering-a-70-100-transfer-bonus-to-ihg-one-rewards-give-it-a-miss/">frequentmiler.com</a></li>
+  <li id="src-aeroplan-chase">Chase Ultimate Rewards / Air Canada Aeroplan transfer partner promo page — <span class="tier-primary">primary</span> — <a href="https://www.aircanada.com/aeroplan/promotions">aircanada.com/aeroplan/promotions</a></li>
+  <li id="src-amex-avios">American Express Membership Rewards → Avios transfer partner page — <span class="tier-primary">primary</span> — <a href="https://www.americanexpress.com/en-us/rewards/membership-rewards/transfer-partners">americanexpress.com/rewards/membership-rewards/transfer-partners</a></li>
+  <li id="src-loyaltylobby-avios">LoyaltyLobby, "Amex US MR To Aer Lingus, British Airways &amp; Iberia Avios 30% Conversion Bonus Until September 27, 2026" — <span class="tier-trade">trade</span> — <a href="https://loyaltylobby.com/2026/08/05/amex-us-mr-to-aer-lingus-british-airways-iberia-avios-30-conversion-bonus-until-september-27-2026/">loyaltylobby.com</a></li>
+  <li id="src-fm-turkish">Frequent Miler, "Get a 40% transfer bonus from Citi ThankYou to Turkish Miles&amp;Smiles" — <span class="tier-trade">trade</span> — <a href="https://frequentmiler.com/40-percent-transfer-bonus-citi-thankyou-turkish-milesandsmiles/">frequentmiler.com</a></li>
+  <li id="src-oma-turkish">One Mile at a Time, "Transfer Citi ThankYou Points To Turkish Miles&amp;Smiles With 40% Bonus" — <span class="tier-trade">trade</span> — <a href="https://onemileatatime.com/deals/citi-turkish-miles-smiles-transfer-bonus/">onemileatatime.com</a></li>
+  <li id="src-cathay-fm">Frequent Miler, "Get a 10% bonus when transferring bank or hotel points to Cathay Pacific Asia Miles" (with links to Cathay's own registration page) — <span class="tier-trade">trade</span> (Cathay promo page = <span class="tier-primary">primary</span>) — <a href="https://frequentmiler.com/get-a-10-bonus-when-transferring-bank-or-hotel-points-to-cathay-pacific-asia-miles/">frequentmiler.com</a> · <a href="https://www.cathaypacific.com/cx/en_US/asiamiles.html">cathaypacific.com/asiamiles</a></li>
+  <li id="src-aw-lhw">AwardWallet, "Transfer Citi ThankYou Points to Leaders Club, Get a 25% Bonus" — <span class="tier-trade">trade</span> — <a href="https://awardwallet.com/news/citi-thankyou-rewards/world-leaders-club-transfer-bonus/">awardwallet.com</a></li>
+  <li id="src-oma-lhw">One Mile at a Time, "Transfer Citi Points To Leading Hotels Of The World With 25% Bonus" — <span class="tier-trade">trade</span> — <a href="https://onemileatatime.com/deals/citi-lhw-transfer-bonus/">onemileatatime.com</a></li>
+  <li id="src-ll-lifemiles">LoyaltyLobby, "Capital One To Avianca LifeMiles Points-to-Miles 15% Conversion Bonus August 1 – 31, 2026" — <span class="tier-trade">trade</span> — <a href="https://loyaltylobby.com/2026/08/01/capital-one-to-avianca-lifemiles-points-to-miles-15-conversion-bonus-august-1-31-2026/">loyaltylobby.com</a></li>
+  <li id="src-aa-oma">One Mile at a Time, "American Adds Premium Economy Upgrades For Elites, Ends Double Upgrades To Business Class" — <span class="tier-trade">trade</span> — <a href="https://onemileatatime.com/news/american-premium-economy-upgrades-elites-ends-double-upgrades-business-class/">onemileatatime.com</a></li>
+  <li id="src-aa-official">American Airlines, "AAdvantage program updates" (official) — <span class="tier-primary">primary</span> — <a href="https://www.aa.com/web/i18n/aadvantage-program/aadvantage-program-updates.html">aa.com/aadvantage-program/updates</a></li>
+  <li id="src-hyatt-tt">Touring Tony, "World of Hyatt Devaluation 2026: Points Prices Up 67%" — <span class="tier-trade">trade</span> — <a href="https://touringtony.com/world-of-hyatt-devaluation-2026/">touringtony.com</a></li>
+  <li id="src-amex-cnn">CNN Underscored, "Amex Platinum Card updates: Are the new benefits worth $895?" — <span class="tier-trade">trade</span> — <a href="https://www.cnn.com/cnn-underscored/money/american-express-platinum-credit-card-changes">cnn.com/underscored</a></li>
+  <li id="src-csr-pointme">point.me, "Review: The Chase Sapphire Reserve® and Its Big Changes for 2026" — <span class="tier-trade">trade</span> — <a href="https://www.point.me/insights/chase-sapphire-reserve/">point.me</a></li>
+</ol>
+
+<nav class="bar" style="margin-top:24px;">
+  <a href="2026-08-25.html">← YESTERDAY</a>
+  <span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<div class="footer">
+  <p>Every percentage, expiry and transfer ratio above was checked against a Tier 1 program page. Where a Tier 1 page was unreachable, that fact is stated in-line. This brief is AI-synthesized and reviewed each morning; award availability changes minute-to-minute — <strong>always confirm award space and current promo terms on the program's own site before you transfer.</strong> Point transfers are one-way and irreversible.</p>
+</div>
+
+</div>
+
+<script>
+const S = "Today is Wednesday, August 26, 2026. Four headline transfer promos are inside their final week. Cathay Pacific's ten percent Asia Miles bonus closes in two days — that one requires registration before you transfer and caps at ten thousand bonus miles. Chase to IHG at seventy percent, Citi to Turkish at forty percent, and Capital One to Avianca LifeMiles at fifteen percent all end on August 31st. Of those four, the standout mechanical trade is Citi to Turkish. Forty-five thousand Miles and Smiles miles still buys a partner business class one-way from North America to Europe on the Star Alliance chart, and at the bonused rate that costs about thirty-two thousand one hundred fifty Citi ThankYou points. The catch is that Turkish's operational reliability is what it is — this is the promo where holding confirmed saver space before you transfer matters most. In program news: as of yesterday, American Airlines has capped complimentary elite upgrades at Premium Economy on nine transcontinental and Hawaii routes. To reach business class as a complimentary upgrade on those flights, you now need to buy Premium Economy up front. Systemwide upgrade certificates still work as before. Longer running: the World of Hyatt May reshuffle continues to shape Q4 planning, with top-band Category 8 nights now at seventy-five thousand points, and Amex Platinum's eight hundred ninety-five dollar annual fee is in effect on all renewals from January 2. Today's Ledger call bets that Cathay's next US all-partner Asia Miles promo will match or tighten today's terms rather than revert to Q4 2024 or 2025 generosity. That's the brief. Remember: transfers are one-way. Confirm the redemption before you move the points.";
+document.getElementById('btnListen').addEventListener('click', function() {
+  if (window.speechSynthesis.speaking) { window.speechSynthesis.cancel(); this.textContent = '▶ Listen · ~3 min'; return; }
+  const u = new SpeechSynthesisUtterance(S);
+  u.rate = 0.93;
+  const voices = window.speechSynthesis.getVoices();
+  const pick = voices.find(v => v.name === 'Daniel' || v.name.includes('Daniel'))
+            || voices.find(v => v.name === 'Alex' || v.name.includes('Alex'))
+            || voices.find(v => v.lang && v.lang.indexOf('en') === 0);
+  if (pick) u.voice = pick;
+  const btn = this;
+  u.onend = function() { btn.textContent = '▶ Listen · ~3 min'; };
+  window.speechSynthesis.speak(u);
+  this.textContent = '■ Stop';
+});
+if (typeof window.speechSynthesis !== 'undefined' && window.speechSynthesis.onvoiceschanged !== undefined) {
+  window.speechSynthesis.onvoiceschanged = function() { window.speechSynthesis.getVoices(); };
+}
+</script>
+
+</body>
+</html>
