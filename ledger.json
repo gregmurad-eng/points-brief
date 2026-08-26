@@ -110,6 +110,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-08-26-1",
+      "date": "2026-08-26",
+      "call": "The next Cathay Pacific Asia Miles all-partner US transfer bonus (from any of Amex MR, Citi ThankYou, Capital One, Bilt, Wells Fargo, or Brex) offered after 2026-08-28 will match or tighten current terms rather than revert to prior Q4 generosity \u2014 it will land at 10% or lower, OR it will cap total bonus miles at 15,000 or fewer per member.",
+      "basis": "Cathay's US all-partner conversion bonus has degraded monotonically for three years running: Q4 2024 was 30% uncapped, Q4 2025 was 20% uncapped, and the current Aug 2026 promo is 10% with a hard 10,000-bonus-mile cap plus a registration requirement. Cathay's own earning engine (co-brand cards outside Hong Kong, partner-airline earning) has been contracting relative to peers, so heavy uncapped US transfer promos have become harder to justify commercially. The Aug 2026 terms look like Cathay establishing a new floor, not an anomalous cutback. A return to Q4 2024/2025 generosity would represent a policy reversal.",
+      "horizon": "2027-01-31",
+      "test": "GRADE HIT if the next Cathay Pacific Asia Miles all-partner (Amex MR, Citi ThankYou, Capital One, Bilt, Wells Fargo, or Brex) US transfer bonus publicly offered between 2026-08-29 and 2027-01-31 inclusive is either (a) at 10% or lower, OR (b) caps total bonus miles at 15,000 or fewer per member. GRADE MISS if the next such bonus is above 10% AND is either uncapped or capped above 15,000 bonus miles per member. GRADE UNSETTLED if no all-partner Cathay bonus is offered in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
