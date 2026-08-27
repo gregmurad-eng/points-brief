@@ -122,6 +122,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-08-27-1",
+      "date": "2026-08-27",
+      "call": "Amex Membership Rewards will run another transfer bonus of 30% or higher to Virgin Atlantic Flying Club between 2026-10-01 and 2027-01-31.",
+      "basis": "The last Amex\u2192Virgin Atlantic bonus was 30% for the whole of July 2026 (Jul 1\u201331), and Amex has run at least one Virgin Atlantic bonus every year since the partnership began. Virgin Atlantic is Amex's exclusive US transfer route to Delta-partner Virgin space and to ANA First (via Virgin miles), giving Amex durable commercial reason to keep promoting it. Q4 into January is Amex's most active bonus window as it competes with Citi and Capital One for year-end transfer volume. A five-month silence between August and end-January would break a multi-year cadence; a return in the Oct\u2013Jan window is the base case.",
+      "horizon": "2027-01-31",
+      "test": "GRADE HIT if any Amex Membership Rewards \u2192 Virgin Atlantic Flying Club transfer bonus of 30% or greater is publicly offered at any point between 2026-10-01 and 2027-01-31 inclusive, evidenced by Amex's own transfer page, Virgin Atlantic's promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
