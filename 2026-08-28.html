@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — Friday, August 28, 2026</title>
+<style>
+  :root {
+    --bg: #080c14;
+    --accent: #c9a84c;
+    --text: #d8d0b4;
+    --muted: #8a8266;
+    --miss: #b06868;
+    --grey: #6d6a5a;
+    --rule: #1f2733;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 28px 22px 64px;
+    line-height: 1.55;
+    font-size: 17px;
+  }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--muted); }
+  a:hover { border-bottom-color: var(--accent); }
+  h1 {
+    font-size: 34px;
+    letter-spacing: 0.5px;
+    margin: 0 0 4px 0;
+    color: var(--accent);
+    font-variant: small-caps;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 6px;
+  }
+  .tagline { color: var(--muted); font-style: italic; font-size: 15px; margin: 0 0 4px 0; }
+  .today-date { color: var(--text); font-size: 15px; margin: 0 0 20px 0; letter-spacing: 0.4px; }
+  h2 {
+    font-size: 21px;
+    color: var(--accent);
+    margin-top: 34px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 4px;
+    font-variant: small-caps;
+    letter-spacing: 0.5px;
+  }
+  h3 {
+    font-size: 17px;
+    color: var(--text);
+    margin: 22px 0 4px 0;
+  }
+  .bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    align-items: center;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 12px 8px;
+    margin: 6px 0 18px 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  .bar a, .bar .next { display: inline-block; padding: 12px 6px; min-height: 44px; line-height: 20px; white-space: nowrap; }
+  .bar a { color: var(--accent); border-bottom: none; }
+  .bar .nav-mid { display: inline-flex; gap: 0; flex-wrap: wrap; }
+  .bar .nav-mid a { color: var(--accent); margin: 0 9px; }
+  .bar .next { color: var(--grey); font-style: italic; margin-left: auto; }
+  .urgent {
+    border: 2px solid var(--accent);
+    background: rgba(201, 168, 76, 0.06);
+    padding: 14px 16px;
+    margin: 18px 0 26px 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .urgent-title { color: var(--accent); font-weight: bold; letter-spacing: 0.5px; display: block; margin-bottom: 6px; font-variant: small-caps; }
+  .urgent ul { margin: 6px 0 0 0; padding-left: 22px; }
+  .urgent li { margin: 4px 0; }
+  .listen {
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 12px 20px;
+    font: 15px Georgia, serif;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    margin: 10px 0 18px 0;
+    min-height: 44px;
+  }
+  .listen:hover { background: rgba(201,168,76,0.08); }
+  .meta { color: var(--muted); font-size: 14px; }
+  .offer {
+    border-left: 2px solid var(--rule);
+    padding-left: 14px;
+    margin: 18px 0;
+  }
+  .offer .fact { font-size: 15px; color: var(--text); }
+  .offer .fact b { color: var(--accent); }
+  .move {
+    color: var(--accent);
+    font-style: italic;
+    margin: 8px 0 0 0;
+    display: block;
+    font-size: 15.5px;
+  }
+  .move::before { content: "Your move: "; font-weight: bold; font-style: normal; color: var(--accent); }
+  .signal {
+    border: 1px solid var(--accent);
+    padding: 16px 18px;
+    margin: 12px 0 20px 0;
+    background: rgba(201,168,76,0.04);
+  }
+  sup a { color: var(--accent); font-size: 12px; border-bottom: none; padding: 6px 4px; margin: -6px -4px; }
+  ol.sources { padding-left: 24px; }
+  ol.sources li { margin: 8px 0; font-size: 15px; }
+  .tier { color: var(--muted); font-size: 12px; font-style: italic; letter-spacing: 0.5px; }
+  .ledger-line { margin: 8px 0; font-size: 15px; }
+  .hit { color: var(--accent); font-weight: bold; }
+  .miss { color: var(--miss); font-weight: bold; }
+  .unsettled { color: var(--grey); font-weight: bold; }
+  .open { color: var(--muted); font-weight: bold; letter-spacing: 0.5px; }
+  .caution {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 6px;
+    padding: 8px 12px;
+    border-left: 2px solid var(--miss);
+  }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 13px; line-height: 1.55; }
+  @media (max-width: 480px) {
+    body { padding: 20px 14px 48px; font-size: 16px; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 19px; }
+    h3 { font-size: 16px; }
+    .bar { font-size: 14px; padding: 10px 4px; gap: 8px 10px; }
+    .bar a, .bar .next { padding: 12px 4px; }
+    .bar .nav-mid a { margin: 0 6px; }
+    .urgent { font-size: 15px; padding: 12px 12px; }
+    .offer .fact, .move, .ledger-line, ol.sources li { font-size: 15px; }
+    sup a { font-size: 13px; padding: 8px 5px; margin: -8px -5px; }
+    .meta, .tier { font-size: 13px; }
+    footer { font-size: 13px; }
+    .listen { padding: 12px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>The Points Brief</h1>
+<p class="tagline">Travel Points · Maximize every transfer</p>
+<p class="today-date">Friday, August 28, 2026</p>
+
+<nav class="bar" aria-label="edition navigation">
+  <a href="2026-08-27.html">← YESTERDAY</a>
+  <span class="nav-mid">
+    <a href="./">Today</a>
+    <a href="archive.html">Archive</a>
+  </span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<div class="urgent" role="alert">
+  <span class="urgent-title">⚠ Expires within 3 days</span>
+  <ul>
+    <li><b>Bilt → Cathay Pacific Asia Miles, 10%</b> — expires <b>TODAY, Aug 28</b> (registration required; capped at 10,000 bonus miles).<sup><a href="https://frequentmiler.com/current-point-transfer-bonuses/">7</a></sup></li>
+    <li><b>Citi ThankYou → Turkish Miles &amp; Smiles, 40%</b> — expires <b>Sun Aug 31, 23:59 Türkiye time (UTC+3)</b>; capped at 50,000 bonus miles.<sup><a href="https://www.turkishairlines.com/en-us/miles-and-smiles/campaigns/earn-40-percent-extra-miles-with-citi/">1</a></sup></li>
+    <li><b>Chase UR → IHG One Rewards, 70%</b> — expires <b>Sun Aug 31</b>. (Do not confuse with the 100% early-bird that ended Jul 30.)<sup><a href="https://awardwallet.com/news/chase-ultimate-rewards/ihg-transfer-bonus/">2</a></sup></li>
+    <li><b>Capital One miles → Avianca LifeMiles, 15%</b> — expires <b>Sun Aug 31</b>; no cap, no registration.<sup><a href="https://upgradedpoints.com/news/capital-one-lifemiles-transfer-bonus/">3</a></sup></li>
+  </ul>
+</div>
+
+<button class="listen" id="playBtn" aria-label="Play audio briefing">▶ Listen (~3 min)</button>
+<p class="meta">Uses your browser's built-in speech. Tap once to play, again to stop.</p>
+
+<h2>Today's Transfer Bonuses</h2>
+
+<div class="offer">
+  <h3>Citi ThankYou → Turkish Airlines Miles &amp; Smiles: 40%</h3>
+  <p class="fact"><b>Ratio:</b> 1:1 base → <b>1:1.4</b> with bonus. <b>Expires:</b> Sun Aug 31, 2026 (23:59 Türkiye time, UTC+3). <b>Cap:</b> 50,000 bonus miles (125,000 ThankYou points transferred). <b>Post timing:</b> bonus posts after campaign ends, not instantly.<sup><a href="https://www.turkishairlines.com/en-us/miles-and-smiles/campaigns/earn-40-percent-extra-miles-with-citi/">1</a></sup></p>
+  <p class="fact">This is the strongest of the four expirations because the underlying redemption is the strongest: Turkish still prices North America → Europe partner business class at 45,000 miles one-way. A round-trip in Star business is ~64,300 ThankYou points at the bonus rate — a redemption a Strata Premier holder can actually book, if the space exists.</p>
+  <span class="move">transfer ONLY if you have a specific United, Air Canada, or Lufthansa business-class award held or confirmed available in the next 12 months. Bonus posts after Sep 1, so the miles are not usable for immediate booking; plan around the delay.</span>
+</div>
+
+<div class="offer">
+  <h3>Chase Ultimate Rewards → IHG One Rewards: 70%</h3>
+  <p class="fact"><b>Ratio:</b> 1:1 base → <b>1:1.7</b> with bonus. <b>Expires:</b> Sun Aug 31, 2026. Chase stepped this down from a 100% early-bird window (Jul 15–30). The 100% is dead; do not chase a stale figure.<sup><a href="https://awardwallet.com/news/chase-ultimate-rewards/ihg-transfer-bonus/">2</a></sup></p>
+  <p class="fact">IHG points are worth roughly 0.5¢ each, so 1.7 IHG per UR point implies a ceiling of ~0.85¢ per Chase UR point — competitive with Chase's own portal but weaker than most Hyatt redemptions. This math only works at IHG properties where paid rates are unusually high (peak-season Kimptons, Regents, InterContinental resorts).<sup><a href="https://frequentmiler.com/current-point-transfer-bonuses/">7</a></sup></p>
+  <span class="move">transfer only against a specific IHG stay whose paid-rate cash cost divided by the required points beats 0.85¢. If you're transferring "to have IHG points around," you're setting fire to Hyatt optionality.</span>
+</div>
+
+<div class="offer">
+  <h3>Capital One miles → Avianca LifeMiles: 15%</h3>
+  <p class="fact"><b>Ratio:</b> 1:1 base → <b>1:1.15</b> with bonus. <b>Expires:</b> Sun Aug 31, 2026. No cap, no registration.<sup><a href="https://upgradedpoints.com/news/capital-one-lifemiles-transfer-bonus/">3</a></sup></p>
+  <p class="fact">15% is a floor bonus, not a peak — Capital One has run 20% and 25% LifeMiles promos as recently as this year. The sweet-spot pricing is still there (63k US → Europe in Star business; 25k US-domestic short-haul in business; no fuel surcharges on Star partners), but at 15% the math for a speculative transfer is thin.</p>
+  <span class="move">wait unless you have a specific Star Alliance award held. A 20%+ Capital One → LifeMiles bonus is our base case for Q4 (see The Ledger, call 2026-08-23-1).</span>
+</div>
+
+<div class="offer">
+  <h3>Bilt Rewards → Cathay Pacific Asia Miles: 10%</h3>
+  <p class="fact"><b>Ratio:</b> 1:1 base → <b>1:1.1</b> with bonus. <b>Expires:</b> <b>TODAY, Aug 28, 2026.</b> Registration required before transferring; capped at 10,000 bonus miles per member; bonus posts within 12 weeks.<sup><a href="https://frequentmiler.com/current-point-transfer-bonuses/">7</a></sup></p>
+  <p class="fact">10% on Cathay Asia Miles is a structural cutback, not a peak — Cathay's all-partner US promo ran at 30% in Q4 2024 and 20% in Q4 2025. This year's 10%/10,000-cap terms look like a new floor (see call 2026-08-26-1).</p>
+  <span class="move">skip unless you already have an Asia Miles redemption (short-haul intra-Asia business, or Japan intra-country JAL space) held. Registering and transferring for a hypothetical booking is bad practice; Asia Miles are among the harder currencies to redeem opportunistically.</span>
+</div>
+
+<div class="offer">
+  <h3>Chase Ultimate Rewards → Air Canada Aeroplan: 20%</h3>
+  <p class="fact"><b>Ratio:</b> 1:1 base → <b>1:1.2</b> with bonus (with a stackable +10% add-on for Chase Aeroplan cardholders on transfers of 50,000+ UR points). <b>Expires:</b> Sep 30, 2026.<sup><a href="https://frequentmiler.com/current-point-transfer-bonuses/">7</a></sup> Confirm in your Chase account before transferring — no primary URL was retrievable outside the authenticated portal.</p>
+  <p class="fact">Aeroplan's chart is dynamic-ish but still publishes fixed award zones for Star Alliance partners; the sweet spots are US → Europe economy 35k and short-haul North America 12.5k. A 20% bonus makes those 29,167 UR and 10,417 UR respectively — clean enough to notice, not remarkable enough to speculate on.</p>
+  <span class="move">verify the bonus is showing in your Chase transfer portal, then transfer only against a specific Aeroplan award you can hold. Aeroplan lets you hold awards for up to 7 days for a small fee — use it.</span>
+</div>
+
+<div class="offer">
+  <h3>Amex Membership Rewards → British Airways / Iberia / Aer Lingus Avios: 30%</h3>
+  <p class="fact"><b>Ratio:</b> 1:1 base → <b>1:1.3</b> with bonus, all three Avios programs. <b>Expires:</b> Sep 27, 2026. Confirm in your Amex account before transferring — no primary URL was retrievable outside the authenticated portal.<sup><a href="https://frequentmiler.com/30-percent-transfer-bonus-american-express-membership-rewards-avios-british-airways-iberia-aer-lingus/">4</a></sup></p>
+  <p class="fact">Best use cases: Iberia short-haul from Madrid (17,000 Avios in off-peak business to European destinations), and AA short-haul single-carrier awards priced in Avios (7,500 miles for sub-650-mile domestic flights). Avios are interchangeable between BA, Iberia, and Aer Lingus at 1:1, so the choice of destination program is a routing question, not a value question.</p>
+  <span class="move">transfer only for a specific award you've held or seen available in the last 48 hours. Avios inventory moves fast and BA can add fuel surcharges that make transatlantic redemptions cash-heavy — Iberia short-haul is the reliable value.</span>
+</div>
+
+<div class="offer">
+  <h3>Citi ThankYou → Leading Hotels of the World: 25%</h3>
+  <p class="fact"><b>Ratio:</b> 1:1 base → <b>1:1.25</b>. <b>Expires:</b> Sep 19, 2026.<sup><a href="https://frequentmiler.com/citi-thankyou-leading-hotels-of-the-world-lhw-25-percent-transfer-bonus/">5</a></sup></p>
+  <p class="fact">Niche. LHW's Leaders Club redemptions are aspirational-hotel-focused but the earn/burn math is opaque compared with Hyatt or IHG. This one is for someone with a specific LHW property in mind, not a broad-value play.</p>
+  <span class="move">ignore unless you have a Leaders Club account and a specific LHW target property. For most Strata Premier holders the Turkish 40% is a strictly better use of ThankYou points this weekend.</span>
+</div>
+
+<h2>Program Watch</h2>
+
+<div class="offer">
+  <h3>Air France / KLM Flying Blue — August Promo Rewards live, bookings by Sun Aug 31</h3>
+  <p class="fact">Flying Blue's August Promo Rewards run 25% off select US → Europe economy and premium-economy awards, with one-way to Europe from 18,750 miles. <b>Bookings must be made by Aug 31, 2026</b>; travel window runs through Jan 31, 2027. No business-class discount this month.<sup><a href="https://awardwallet.com/airlines/flying-blue/promo-rewards/">6</a></sup></p>
+  <p class="fact">The bookings-by-Sunday deadline lines up with the Citi and Chase bonus expirations, but Citi → Flying Blue has no active bonus this month — a straight transfer at 1:1 buys the discount but not much more.</p>
+  <span class="move">if you were already planning a fall or winter European trip and can commit to specific dates by Sunday, book. Do not speculatively transfer ThankYou to Flying Blue for the discount alone — the next Citi → Flying Blue bonus is a real possibility (see call 2026-08-17-1).</span>
+</div>
+
+<div class="offer">
+  <h3>World of Hyatt — award-chart change (May 20, 2026) still shaping value</h3>
+  <p class="fact">Hyatt's May 2026 chart change moved from 3 pricing tiers to 5 (Lowest / Low / Moderate / Upper / Top), producing 78 total price points. 112 hotels moved up in category, 24 moved down; peak pricing at top-band aspirational properties is up 38–67%. Median transferred-point value stayed around 1.8¢ but the ceiling compressed.<sup><a href="https://newsroom.hyatt.com/awardchartupdates">8</a></sup><sup><a href="https://frequentmiler.com/hyatt-devaluation-deep-dive/">9</a></sup></p>
+  <span class="move">the round-trip case for aspirational Hyatts (Alila, Miraval) is materially weaker than it was in April; re-model any planned redemption before transferring. For everyday Hyatt Places / Categorie 1–3 the math is broadly unchanged and still the best of Chase's stack.</span>
+</div>
+
+<div class="offer">
+  <h3>U.S. Bank Altitude Reserve — transfer partners still incomplete</h3>
+  <p class="fact">On Aug 11, 2026 U.S. Bank turned on Air France/KLM Flying Blue and Qantas Frequent Flyer as Altitude Reserve transfer partners; both were pulled within ~24 hours on Aug 12, characterised across the trade press as IT-integration failure rather than commercial withdrawal. Neither has been restored as of today. (Tier 2 only.)<sup><a href="https://frequentmiler.com/current-point-transfer-bonuses/">7</a></sup></p>
+  <span class="move">no action for most readers; if you hold the Altitude Reserve, keep the miles parked. See call 2026-08-16-1 — we're calling restoration by Oct 25.</span>
+</div>
+
+<h2>Today's Play</h2>
+
+<div class="signal">
+  <p>Four expirations converge on Sunday. Only <b>one</b> merits opening the transfer screen: <b>Citi ThankYou → Turkish 40%</b>, and only if you have a specific North America → Europe or intra-Europe partner business-class award you can name. Everything else on the expiration list is either a floor bonus (LifeMiles 15%, Cathay 10%) or a currency you should not stockpile speculatively (IHG at 1.7x still worth ~0.85¢/UR; Hyatt optionality lost is worth more).</p>
+  <p>If you cannot name the redemption, do not transfer. That sentence is the entire brief.</p>
+</div>
+<p class="caution">Transfers are one-way and irreversible. Confirm award availability, cash-equivalent value, and current program terms before moving any points. Every percentage above was cross-checked against the sources below on the morning of Aug 28, 2026, but issuer bonus flags can be pulled without notice.</p>
+
+<h2>The Ledger</h2>
+
+<p class="ledger-line"><b>Season 1 · 0-0</b> — 12 open calls, first grading windows begin closing in late October 2026. No calls due today.</p>
+
+<p class="ledger-line"><span class="open">OPEN — today's call (2026-08-28-1):</span> <i>World of Hyatt will publicly launch at least one system-wide Bonus Journeys or equivalent points-earning promotion (2x base points or higher on paid stays) with a booking or stay window that falls entirely between 2026-09-15 and 2026-12-31.</i> Horizon: 2026-12-31. Test: Hyatt's own promotions page shows a qualifying promo before Dec 31.</p>
+
+<p class="ledger-line" style="color:var(--muted); font-size:14px;">Prior open calls: 2026-08-15-1 (Chase→IHG silence through Oct 31), 2026-08-16-1 (US Bank restores Flying Blue or Qantas by Oct 25), 2026-08-17-1 (Citi→Flying Blue 20%+ by Nov 15), 2026-08-18-1 (Citi→Turkish 30%+ by Nov 30), 2026-08-19-1 (Amex→Avios 25%+ by Dec 31), 2026-08-22-1 (Chase→Hyatt bonus does NOT happen by Feb 28), 2026-08-23-1 (Cap One→LifeMiles 20%+ by Dec 31), 2026-08-24-1 (Chase→airline silence Q4), 2026-08-25-1 (Cathay Asia Miles multi-bank 10%+ by Jan 31), 2026-08-26-1 (next Cathay all-partner bonus stays at floor terms), 2026-08-27-1 (Amex→Virgin Atlantic 30%+ by Jan 31).</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li><a href="https://www.turkishairlines.com/en-us/miles-and-smiles/campaigns/earn-40-percent-extra-miles-with-citi/">Turkish Airlines Miles &amp; Smiles — "Earn 40% extra Miles with Citi" campaign page</a> <span class="tier">— primary</span></li>
+  <li><a href="https://awardwallet.com/news/chase-ultimate-rewards/ihg-transfer-bonus/">AwardWallet — Chase Ultimate Rewards → IHG transfer bonus coverage</a> <span class="tier">— trade</span></li>
+  <li><a href="https://upgradedpoints.com/news/capital-one-lifemiles-transfer-bonus/">Upgraded Points — Capital One → Avianca LifeMiles 15% transfer bonus</a> <span class="tier">— trade</span></li>
+  <li><a href="https://frequentmiler.com/30-percent-transfer-bonus-american-express-membership-rewards-avios-british-airways-iberia-aer-lingus/">Frequent Miler — Amex MR → Avios (BA / Iberia / Aer Lingus) 30% bonus</a> <span class="tier">— trade</span></li>
+  <li><a href="https://frequentmiler.com/citi-thankyou-leading-hotels-of-the-world-lhw-25-percent-transfer-bonus/">Frequent Miler — Citi ThankYou → LHW Leaders Club 25% bonus</a> <span class="tier">— trade</span></li>
+  <li><a href="https://awardwallet.com/airlines/flying-blue/promo-rewards/">AwardWallet — Flying Blue Promo Rewards August 2026</a> <span class="tier">— trade</span></li>
+  <li><a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler — running list of current point transfer bonuses</a> <span class="tier">— trade</span></li>
+  <li><a href="https://newsroom.hyatt.com/awardchartupdates">Hyatt Newsroom — 2026 World of Hyatt award chart updates</a> <span class="tier">— primary</span></li>
+  <li><a href="https://frequentmiler.com/hyatt-devaluation-deep-dive/">Frequent Miler — Hyatt May 2026 devaluation deep dive</a> <span class="tier">— trade</span></li>
+</ol>
+
+<nav class="bar" aria-label="edition navigation">
+  <a href="2026-08-27.html">← YESTERDAY</a>
+  <span class="nav-mid">
+    <a href="./">Today</a>
+    <a href="archive.html">Archive</a>
+  </span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<footer>
+  <p>The Points Brief is AI-synthesized daily from public program pages and points-community reporting. Every percentage, expiry, and transfer ratio is cross-checked against the sources listed above on the morning of publication, but issuer bonus flags can be pulled or altered without notice. Confirm the bonus, the transfer ratio, the expiry, AND the award availability in your issuer's portal before moving any points. Transfers are one-way; there is no undo button.</p>
+  <p>Not affiliated with any card issuer, airline, or hotel program. No affiliate or referral links.</p>
+</footer>
+
+<script>
+const S = "Good morning. This is The Points Brief for Friday, August 28th, 2026. Four transfer bonuses expire this weekend, but only one is worth acting on. First, the expirations. The Bilt to Cathay Pacific Asia Miles 10 percent bonus expires today; it required advance registration and caps out at 10,000 bonus miles. The Citi ThankYou to Turkish Miles and Smiles 40 percent bonus expires Sunday at 11:59 PM Turkey time, capped at 50,000 bonus miles. Chase Ultimate Rewards to IHG One Rewards 70 percent expires Sunday; note that the 100 percent early-bird ended July 30 and is not coming back. Capital One miles to Avianca LifeMiles at 15 percent also expires Sunday, uncapped and no registration required. The one to act on is Citi to Turkish. Turkish Miles and Smiles still prices North America to Europe partner business class at 45,000 miles one-way, which is one of the strongest sweet spots reachable by any US transfer. At the 40 percent bonus, a round trip in Star business costs about 64,300 ThankYou points. But only transfer if you have a specific United, Air Canada, or Lufthansa business-class award held or confirmed available in the next 12 months. The bonus does not post until after September first, so those miles are not usable for immediate booking. IHG at 1.7x still only reaches about 0.85 cents per Chase UR point, which is competitive with the Chase portal but weaker than most Hyatt redemptions; only transfer if you have a specific IHG stay whose cash rate divided by required points beats that figure. Capital One to LifeMiles at 15 percent is a floor bonus, not a peak; wait unless you have a specific Star Alliance award held. Bilt to Cathay at 10 percent looks like Cathay setting a new floor; skip it unless you have an Asia Miles redemption already lined up. On program watch: Flying Blue's August Promo Rewards run 25 percent off select US to Europe economy and premium economy awards, but bookings must be made by Sunday. If you were already planning a fall trip, book it; do not speculatively transfer to Flying Blue for the discount alone, because the next Citi to Flying Blue bonus is a real possibility. Hyatt's May 2026 award-chart devaluation continues to shape value: 112 hotels moved up in category, peak pricing at top-band properties is up 38 to 67 percent, so re-model any aspirational Hyatt redemption before transferring. Today's play in one sentence: if you cannot name the redemption, do not transfer. That is the entire brief. Ledger: no calls due today; season one is oh and oh with 12 open calls. Today's new call is that World of Hyatt will publish a Bonus Journeys promotion of 2x or higher before December 31. Transfers are one-way; confirm award availability before moving points. See you tomorrow.";
+const btn = document.getElementById('playBtn');
+let speaking = false;
+function pickVoice() {
+  const voices = speechSynthesis.getVoices();
+  const preferred = voices.find(v => /Daniel/i.test(v.name)) ||
+                    voices.find(v => /Alex/i.test(v.name)) ||
+                    voices.find(v => /en[-_]?GB/i.test(v.lang)) ||
+                    voices.find(v => /en/i.test(v.lang));
+  return preferred || null;
+}
+btn.addEventListener('click', () => {
+  if (speaking) {
+    speechSynthesis.cancel();
+    speaking = false;
+    btn.textContent = '▶ Listen (~3 min)';
+    return;
+  }
+  const u = new SpeechSynthesisUtterance(S);
+  u.rate = 0.93;
+  u.pitch = 1.0;
+  const v = pickVoice();
+  if (v) u.voice = v;
+  u.onend = () => { speaking = false; btn.textContent = '▶ Listen (~3 min)'; };
+  u.onerror = () => { speaking = false; btn.textContent = '▶ Listen (~3 min)'; };
+  speechSynthesis.speak(u);
+  speaking = true;
+  btn.textContent = '■ Stop';
+});
+if (typeof speechSynthesis !== 'undefined') {
+  speechSynthesis.onvoiceschanged = pickVoice;
+}
+</script>
+</body>
+</html>
