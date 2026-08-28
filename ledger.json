@@ -134,6 +134,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-08-28-1",
+      "date": "2026-08-28",
+      "call": "World of Hyatt will publicly launch at least one system-wide Bonus Journeys or equivalent points-earning promotion (2x base points or higher on paid stays) with a booking or stay window that falls entirely between 2026-09-15 and 2026-12-31.",
+      "basis": "Hyatt has published a Bonus Journeys promotion in each of the last three calendar quarters and in each of the last three Q4 windows, with typical structure 2x base points on stays booked in a defined window and completed within ~90 days. After the May 2026 award-chart devaluation weakened the redemption side, Hyatt's commercial incentive is to keep engagement flowing through earn-side promotions rather than transfer bonuses (see call 2026-08-22-1 on the sacrosanct 1:1 Chase\u2192Hyatt line). Q4 in particular targets pre-holiday leisure and end-of-year corporate stays \u2014 skipping it would break a multi-year cadence.",
+      "horizon": "2026-12-31",
+      "test": "GRADE HIT if World of Hyatt publicly launches a Bonus Journeys or equivalent points-earning promotion (2x base points or higher on paid stays) whose booking window OR stay window falls entirely between 2026-09-15 and 2026-12-31, evidenced by hyatt.com/en-US/world-of-hyatt/promotions (Tier 1) or a Tier 1/Tier 2 confirmation. GRADE MISS if no such promo is publicly available in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
