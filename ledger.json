@@ -146,6 +146,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-08-29-1",
+      "date": "2026-08-29",
+      "call": "None of the four major bank transferable-points programs \u2014 Amex Membership Rewards, Chase Ultimate Rewards, Citi ThankYou, or Capital One Miles \u2014 will add Alaska/Hawaiian Atmos Rewards as a publicly listed transfer partner between 2026-08-29 and 2027-02-28.",
+      "basis": "Alaska completed operational integration with Hawaiian on 2026-08-14 and consolidated HawaiianMiles and Mileage Plan into a single Atmos Rewards balance, arguably making Atmos a more attractive single partner than either predecessor. But Alaska Air Group's VP of Loyalty has publicly stated that major bank programs 'are ultimately competitors', and the closure of the Amex\u2192Hawaiian route on 2025-06-30 removed the last indirect bank\u2192Alaska path. Bilt and Marriott Bonvoy remain the only routes in; neither Chase nor Amex has ever had Alaska as a direct transfer partner. A first-ever Amex/Chase/Citi/Cap-One\u2192Atmos partnership inside six months would require reversing a publicly stated 'they are competitors' posture from loyalty leadership \u2014 that kind of reversal typically takes longer than six months to negotiate, sign, and announce, even when interest exists. Bilt is excluded because that partnership already exists at 1:1.",
+      "horizon": "2027-02-28",
+      "test": "GRADE HIT if none of Amex Membership Rewards, Chase Ultimate Rewards, Citi ThankYou, or Capital One Miles publicly lists Alaska/Hawaiian Atmos Rewards as an active transfer partner at any point between 2026-08-29 and 2027-02-28 inclusive. GRADE MISS if any of those four programs adds Atmos Rewards as a publicly listed transfer partner in that window, evidenced by the bank's own transfer page and confirmed by at least one Tier 1 or Tier 2 source.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
