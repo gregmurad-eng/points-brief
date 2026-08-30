@@ -158,6 +158,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-08-30-1",
+      "date": "2026-08-30",
+      "call": "Air Canada Aeroplan will NOT publicly announce any member-negative change to its award chart pricing, partner transfer ratios, partner earning ratios, or elite qualification thresholds in the six months following the Blackstone/La Caisse minority investment settlement \u2014 between 2026-08-30 and 2027-02-28 inclusive.",
+      "basis": "The August 11 deal (settled August 17) gives Blackstone-led investors a 25% non-controlling stake at a $10B valuation while Air Canada retains 75% ownership and 'full operational control' over strategy, day-to-day management and financial consolidation. Media coverage has floated devaluation risk as the primary concern, but private-equity minority investments in loyalty programs (Aimia's original private-equity phase, prior IAG Loyalty deals, points-industry precedents) typically manifest programmatic effects over multi-year timelines rather than first-quarter announcements. Aeroplan's 2026 product roadmap \u2014 including its new revenue-based earning integration and the Chase UR 20% bonus running through Sep 30 \u2014 was locked before this deal closed. A six-month horizon lets that roadmap play out; devaluation-driven change coming inside that window would represent a much faster investor-pressure response than the historical base rate suggests. This is a contrarian call \u2014 the loud consensus is that this deal is bad for members. HIT means the loud consensus was premature; MISS means it was right.",
+      "horizon": "2027-02-28",
+      "test": "GRADE HIT if Air Canada / Aeroplan does not publicly announce, at any point between 2026-08-30 and 2027-02-28 inclusive, any change to the Aeroplan program that materially worsens conditions for members \u2014 specifically: (a) an increase to published award pricing bands, (b) a reduction in any published partner transfer ratio (both into and out of Aeroplan), (c) a reduction in earning rates on Aeroplan-issued or partner-issued flights, or (d) an increase to Aeroplan Elite qualification thresholds. GRADE MISS if any such change is publicly announced in that window, evidenced by Aeroplan's own page or an Air Canada media release plus a Tier 1 or Tier 2 confirmation.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
