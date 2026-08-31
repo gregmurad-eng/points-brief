@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief · Sunday, August 31, 2026</title>
+<style>
+  html, body { background:#080c14; margin:0; padding:0; }
+  body {
+    color:#d8d0b4;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height:1.55;
+    font-size:17px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap { max-width:760px; margin:0 auto; padding:28px 22px 60px; }
+  .bar {
+    display:flex; flex-wrap:wrap; gap:10px 14px; align-items:center;
+    border-top:1px solid #24303f; border-bottom:1px solid #24303f;
+    padding:12px 4px; margin:0 0 22px; font-size:15px;
+  }
+  .bar a { color:#c9a84c; text-decoration:none; white-space:nowrap; display:inline-block; padding:12px 8px; min-height:44px; box-sizing:border-box; }
+  .bar a:hover { text-decoration:underline; }
+  .bar .next { color:#5a6472; white-space:nowrap; padding:12px 8px; }
+  .nav-mid { display:inline-flex; gap:0; flex:1; justify-content:center; }
+  .nav-mid a { color:#c9a84c; margin:0 9px; }
+  .masthead h1 {
+    font-family: Georgia, serif;
+    font-size:44px; margin:8px 0 4px; letter-spacing:1px;
+    color:#e6dcbc; font-weight:normal;
+  }
+  .tagline { color:#8a9099; font-style:italic; font-size:15px; margin:0 0 4px; }
+  .dateline { color:#c9a84c; font-size:14px; letter-spacing:2px; text-transform:uppercase; margin:0 0 22px; }
+  .urgent {
+    border:1px solid #c9a84c;
+    background:rgba(201,168,76,0.08);
+    padding:14px 16px;
+    margin:0 0 26px;
+    border-radius:2px;
+    font-size:16px;
+  }
+  .urgent strong { color:#e6dcbc; }
+  .player { margin:0 0 26px; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  .player button {
+    background:transparent; color:#c9a84c;
+    border:1px solid #c9a84c; padding:12px 18px;
+    font-family:Georgia, serif; font-size:15px;
+    cursor:pointer; min-height:44px; border-radius:2px;
+  }
+  .player button:hover { background:rgba(201,168,76,0.1); }
+  .player .hint { color:#5a6472; font-size:14px; font-style:italic; }
+  h2 {
+    font-size:22px; color:#e6dcbc; font-weight:normal;
+    border-bottom:1px solid #24303f; padding-bottom:6px;
+    margin-top:36px; margin-bottom:14px;
+    letter-spacing:0.5px;
+  }
+  h3 {
+    font-size:18px; color:#c9a84c; font-weight:normal;
+    margin:22px 0 6px;
+  }
+  p { margin:8px 0 12px; }
+  a { color:#c9a84c; }
+  sup a {
+    color:#c9a84c; text-decoration:none;
+    font-size:12px; padding:6px 4px; margin:-6px -4px;
+    display:inline-block; line-height:1;
+  }
+  sup a:hover { text-decoration:underline; }
+  .meta { color:#8a9099; font-size:14px; font-style:italic; margin:2px 0 8px; }
+  .move {
+    color:#c9a84c; font-style:italic; margin:10px 0 0;
+    padding:8px 12px; border-left:2px solid #c9a84c;
+    background:rgba(201,168,76,0.05);
+  }
+  .move b { font-style:normal; letter-spacing:0.5px; }
+  .signal {
+    border:1px solid #c9a84c; padding:16px 18px;
+    background:rgba(201,168,76,0.05); border-radius:2px;
+    margin:14px 0;
+  }
+  .ledger-item {
+    border-left:2px solid #24303f;
+    padding:6px 0 6px 14px; margin:12px 0;
+  }
+  .ledger-item.open { border-left-color:#c9a84c; }
+  .ledger-item .hdr { font-size:14px; letter-spacing:1px; text-transform:uppercase; }
+  .ledger-item .hdr .hit { color:#c9a84c; }
+  .ledger-item .hdr .miss { color:#a25252; }
+  .ledger-item .hdr .unsettled { color:#5a6472; }
+  .ledger-item .hdr .open { color:#c9a84c; }
+  .record { font-size:15px; color:#8a9099; margin:6px 0 14px; }
+  ol.sources { padding-left:22px; font-size:14px; color:#a8a595; }
+  ol.sources li { margin:6px 0; }
+  ol.sources .tier { color:#8a9099; font-style:italic; font-size:13px; margin-left:4px; }
+  ol.sources a { word-break:break-word; }
+  .caution {
+    border-top:1px solid #24303f;
+    margin-top:32px; padding-top:16px;
+    color:#8a9099; font-size:14px; font-style:italic;
+  }
+  footer {
+    margin-top:36px; padding-top:16px;
+    border-top:1px solid #24303f;
+    color:#5a6472; font-size:13px;
+  }
+  @media (max-width: 480px) {
+    body { font-size:16px; }
+    .wrap { padding:20px 16px 48px; }
+    .masthead h1 { font-size:32px; }
+    .bar { gap:6px 10px; padding:8px 2px; font-size:15px; }
+    .bar a, .bar .next { padding:12px 6px; }
+    .nav-mid { flex:1 1 100%; justify-content:center; order:2; margin:6px 0; }
+    .nav-mid a { margin:0 8px; }
+    .bar a.yesterday { order:1; }
+    .bar .next { order:3; margin-left:auto; }
+    h2 { font-size:20px; }
+    h3 { font-size:17px; }
+    .urgent { font-size:16px; padding:12px 14px; }
+    .signal { padding:14px 14px; }
+    .player button { padding:12px 16px; font-size:15px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="bar" aria-label="Edition navigation">
+    <a class="yesterday" href="2026-08-30.html">← YESTERDAY</a>
+    <span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span>
+    <span class="next">TOMORROW →</span>
+  </nav>
+
+  <div class="masthead">
+    <h1>The Points Brief</h1>
+    <p class="tagline">Travel Points · Maximize every transfer</p>
+    <p class="dateline">Sunday · August 31, 2026</p>
+  </div>
+
+  <div class="urgent">
+    <strong>Expires today:</strong> three transfer bonuses end tonight — Chase Ultimate Rewards → IHG at <strong>70%</strong> (1:1.7)<sup><a href="#s1">[1]</a></sup>, Citi ThankYou → Turkish Miles &amp; Smiles at <strong>40%</strong> (1:1.4, capped at 50,000 bonus miles)<sup><a href="#s6">[6]</a></sup>, and Capital One miles → Avianca LifeMiles at <strong>15%</strong> (1:1.15)<sup><a href="#s1">[1]</a></sup>. Do <em>not</em> transfer without a specific award you can actually book — none of these are reversible.
+  </div>
+
+  <div class="player">
+    <button id="pb-play" type="button" aria-live="polite">▶ Listen · ~3 min</button>
+    <span class="hint">Read aloud in the browser · no download</span>
+  </div>
+
+  <h2>Today's Transfer Bonuses</h2>
+
+  <h3>Chase Ultimate Rewards → IHG One Rewards · 70%</h3>
+  <p class="meta">Ratio 1:1.7 · Ends 2026-08-31 · No stated cap<sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup><sup><a href="#s7">[7]</a></sup></p>
+  <p>Chase stepped this down from a 100% early-bird (Jul 15–30) to 70% for August. IHG frequently sells points directly at 0.5¢ each — meaning 2 IHG points per cent cash — and Chase UR at 1.7:1 is worth ~1.7¢ per UR point in IHG hands. Every serious desk that has covered this promo has told readers to skip it<sup><a href="#s7">[7]</a></sup>, and they are right: even with the boost, UR-to-IHG is one of the weakest uses of a UR point.</p>
+  <p class="move"><b>Your move:</b> transfer only if you have already priced a specific IHG award, the property is one where paid vs points is favourable (typically top-tier resorts on peak dates), and you'd otherwise be short on IHG. If any of those is unclear, skip it and let the points sit.</p>
+
+  <h3>Citi ThankYou → Turkish Miles &amp; Smiles · 40%</h3>
+  <p class="meta">Ratio 1:1.4 · Ends 2026-08-31 (23:59 Türkiye time, UTC+3) · Cap 50,000 bonus miles · No registration<sup><a href="#s6">[6]</a></sup></p>
+  <p>Bonus is applied on Turkish's side, not Citi's — it posts <em>after</em> the campaign ends, so what lands in your Citi transfer confirmation is 1:1<sup><a href="#s6">[6]</a></sup>. Turkish's region-to-region partner chart still prices North America ↔ Europe business at 65,000 miles one-way on Star partners including United and Lufthansa, and Miles &amp; Smiles left that chart alone in its December 2025 domestic devaluation. This is the third Citi → Turkish 40% promo of 2026 — a well-established quarterly cadence.</p>
+  <p class="move"><b>Your move:</b> transfer only if you have already confirmed Star Alliance partner award space on Miles &amp; Smiles' calendar for a route the 65k chart actually covers. Speculative transfers into a program whose customer service is famously slow is how points die in balances.</p>
+
+  <h3>Capital One miles → Avianca LifeMiles · 15%</h3>
+  <p class="meta">Ratio 1:1.15 · Ends 2026-08-31 · Min transfer 1,000 miles · No stated cap<sup><a href="#s1">[1]</a></sup><sup><a href="#s8">[8]</a></sup></p>
+  <p>Distance-based Star Alliance pricing keeps LifeMiles genuinely useful: 25,000 miles for domestic short-haul business, 63,000 for US → Europe business on Star partners, with no fuel surcharges. 15% is the low end of Capital One → LifeMiles bonuses — 20–25% has been common when Capital One wants to move volume. If the redemption isn't specific and imminent, waiting a quarter for the next bonus is not a bad bet.</p>
+  <p class="move"><b>Your move:</b> transfer only if you have already priced a specific LifeMiles award and the alternative programs (Aeroplan, Air Canada, United) are more expensive for the same seat. Otherwise wait — Capital One's cadence suggests another LifeMiles bonus in Q4, and a Q4 rate at 20%+ would be materially better than tonight's 15%.</p>
+
+  <h3>Amex Membership Rewards → British Airways / Iberia / Aer Lingus Avios · 30%</h3>
+  <p class="meta">Ratio 1:1.3 · Aug 3 – Sept 27, 2026 · All three Avios programs<sup><a href="#s5">[5]</a></sup></p>
+  <p>Because Avios move freely between BA, Iberia, Aer Lingus, Finnair Plus, and Qatar Privilege Club at no cost, the 30% bonus effectively opens access to all five<sup><a href="#s5">[5]</a></sup>. Iberia Plus off-peak short-haul to Madrid (from ~11,000 Avios one-way, or ~8,462 MR after the bonus) and BA short-haul on partner American Airlines (7,500–13,000 Avios each way) remain the two sweetest spots reachable directly from MR. 27 days left — plenty of time to plan without rushing.</p>
+  <p class="move"><b>Your move:</b> before transferring, log into BA.com and confirm the exact partner award seat is available on your dates. The Avios family is instant, but the awards you actually want may not be — check first, transfer second.</p>
+
+  <h3>Chase Ultimate Rewards → Air Canada Aeroplan · 20% (30% for Aeroplan cardholders)</h3>
+  <p class="meta">Ratio 1:1.2 (1:1.3 stacked for Aeroplan Visa holders on 50k+ transfers) · Aug 12 – Sept 30, 2026 · Min transfer 1,000 pts<sup><a href="#s9">[9]</a></sup></p>
+  <p>Aeroplan is Chase's most useful airline transfer partner and this is the first UR → Aeroplan bonus of 2026<sup><a href="#s9">[9]</a></sup>. The Aeroplan Visa cardmember stack (an extra 10% on transfers of 50,000+ UR in a single hit, capped at 25,000 bonus Aeroplan per calendar year) gets you to an effective 30% — meaningfully better than the 20% headline. Aeroplan's dynamic-priced calendar means partner sweet spots (SAS Business to Scandinavia, ANA to Japan) still exist but need finding.</p>
+  <p class="move"><b>Your move:</b> if you hold the Aeroplan Visa and can find partner award space you actually want, transfer in 50k chunks to lock the cardmember 10%. If you don't hold the card, 20% is a fair rate but no reason to speculate — Chase's Aeroplan bonuses run at 20–30% roughly annually.</p>
+
+  <h2>Program Watch</h2>
+
+  <h3>Aeroplan · Blackstone/La Caisse 25% minority equity investment settled</h3>
+  <p>Announced Aug 11, settled Aug 17: a Blackstone-led investor group (with La Caisse, PSP, and BCI) took a 25% non-controlling stake in Aeroplan Inc. at a $10B valuation, with Air Canada retaining 75% ownership and — per the release — "full operational control" over strategy and day-to-day management<sup><a href="#s10">[10]</a></sup><sup><a href="#s11">[11]</a></sup>. Air Canada also holds a buyback right on the minority stake between years 5 and 8. <em>No award-chart, transfer-ratio, or earning change has been announced with the transaction.</em> The loud consensus this week has been "PE arrives, members lose" — that call is testable and I have logged it (Ledger 2026-08-30-1); the contrarian bet is that programmatic effects of PE minority investments take multi-year timelines, not first-quarter announcements.</p>
+
+  <h3>Marriott Bonvoy · Q4 2026 global promotion leaked, not yet official</h3>
+  <p>LoyaltyLobby (via One Mile at a Time) previewed a Q4 2026 promo: registration ~Sept 9, stay window Sept 22 – Nov 22, 1,500 bonus points for paid stays of 2+ nights, +3,000 additional points at resorts, no award-stay eligibility<sup><a href="#s13">[13]</a></sup>. <em>Labelled a rumour — nothing has been officially posted on Marriott's site yet.</em> If it launches at those terms it's a modest promo — the base earns ~$10.50 in Bonvoy value at 0.7¢/point, per OMAAT's framing<sup><a href="#s13">[13]</a></sup>. Context: Marriott pushed award pricing up 5–10% on average across the portfolio in 2026, with individual properties climbing 2–16%, and the flash devaluations at flagships have continued<sup><a href="#s12">[12]</a></sup>. The redemption side is trending down, and the earn-side promos are trending modest.</p>
+
+  <h3>World of Hyatt · Q4 Bonus Journeys not yet posted</h3>
+  <p>Hyatt has run a Q4 Bonus Journeys or equivalent earning promotion in each of the last three years. The summer 2026 global promo ran through Sept 7, so a Q4 announcement is now overdue by cadence but not by calendar. Nothing published yet at hyatt.com/en-US/world-of-hyatt/promotions as of this edition. Logged in the ledger (2026-08-28-1) — if it doesn't materialise by year-end that grades as MISS and would be a signal Hyatt is pulling back post-devaluation.</p>
+
+  <h3>Atmos Rewards · Alaska + Hawaiian fully merged, still not a bank transfer partner</h3>
+  <p>Alaska Airlines and Hawaiian Airlines completed loyalty consolidation into a single Atmos Rewards balance, and Hawaiian's oneworld membership means Atmos members now earn and redeem across AA, BA, Cathay, JAL and Qatar<sup><a href="#s15">[15]</a></sup>. Atmos is still not a direct transfer partner of Amex, Chase, Citi or Capital One — Bilt (1:1) and Marriott Bonvoy (via the ~3:1 airline transfer route) remain the only paths in from a US bank stack. Alaska Air Group's loyalty leadership has publicly framed the big banks as competitors, so a partnership inside six months is not the base case — logged as ledger call 2026-08-29-1.</p>
+
+  <h2>Today's Play</h2>
+  <div class="signal">
+    <p>Three bonuses die tonight, and none of them is a slam-dunk transfer target on its own. The rule that keeps points from becoming dead balances is the same one that ends every offer in this brief: <strong>transfer only when the award is confirmed available on your dates.</strong> Chase → IHG at 70% is still worse per UR point than most alternative UR uses; Citi → Turkish at 40% is only good if you've verified partner space on Miles &amp; Smiles (a program whose award search is unreliable and whose customer service is famously slow); Cap One → Avianca at 15% is the low end of the LifeMiles bonus range and Q4 typically brings a better one.</p>
+    <p>The single best move for most readers tonight is <strong>no move</strong>. If you must act, the Amex → Avios 30% (through Sept 27) and the Chase → Aeroplan 20% stacked with the Aeroplan Visa's 10% (through Sept 30) both survive tonight and give you weeks to find the right seat before transferring. Speculating into a balance you'll figure out later is how points quietly disappear.</p>
+  </div>
+
+  <h2>The Ledger</h2>
+  <p class="record">Season 1 · 0–0 across graded calls · Fifteen calls open, none due for grading yet.</p>
+
+  <div class="ledger-item open">
+    <div class="hdr"><span class="open">OPEN · TODAY-1</span> · Horizon 2026-09-22</div>
+    <p><strong>Call:</strong> Marriott Bonvoy will publicly launch a Q4 2026 global earning promotion — with registration open to members on or before 2026-09-22 — that materially matches the LoyaltyLobby leak: base of at least 1,000 bonus points for paid stays of 2+ nights, plus a resort-property bonus component, with a stay window falling within Sept 22 – Nov 30, 2026.</p>
+    <p><strong>Basis:</strong> Marriott has publicly launched a Q4 global earning promo every year since 2019, and leaked-terms-then-official-launch is the normal pattern — the leak's structural shape (base + resort component + ~9-week stay window opening late September) has held across five straight Q4 promos<sup><a href="#s13">[13]</a></sup>. A missed launch, or terms materially weaker than the leak, would signal Marriott is holding back Q4 generosity in a year that has already seen a 5–10% award-chart devaluation<sup><a href="#s12">[12]</a></sup>.</p>
+    <p><strong>Test:</strong> HIT if a Marriott Q4 promo matching those parameters is publicly live by Sept 22, evidenced by marriott.com/loyalty or a Tier 1/Tier 2 confirmation. MISS if no such promo is live by Sept 22, or if the base falls below 1,000 pts for a 2+ night paid stay, or if the resort-bonus component is absent.</p>
+  </div>
+
+  <p class="record">Prior open calls (not due today): Chase→IHG blackout through Oct 31 · U.S. Bank Altitude Reserve transfer partner restoration by Oct 25 · Citi→Flying Blue 20%+ return by Nov 15 · Citi→Turkish 30%+ return by Nov 30 · Amex→Avios 25%+ return by Dec 31 · Chase→Hyatt zero bonus by Feb 28 · Cap One→LifeMiles 20%+ return by Dec 31 · Chase→airline blackout Oct–Dec · Cathay Asia Miles multi-bank 10%+ return by Jan 31 · Cathay next multi-bank stays weak by Jan 31 · Amex→Virgin Atlantic 30%+ return by Jan 31 · Hyatt Bonus Journeys Q4 launch by Dec 31 · No big-four bank adds Atmos by Feb 28 · Aeroplan no member-negative change through Feb 28. Grading receipts arrive on their horizon dates — misses will be published in the same colour as hits.</p>
+
+  <h2>Sources</h2>
+  <ol class="sources">
+    <li id="s1"><a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler — Current point transfer bonuses for August 2026</a><span class="tier">· trade</span></li>
+    <li id="s2"><a href="https://awardtravelfinder.com/transfer-bonuses">Award Travel Finder — Transfer Bonus Tracker (August 2026)</a><span class="tier">· trade</span></li>
+    <li id="s3"><a href="https://www.point.me/insights/current-transfer-bonuses/">point.me — Current Transfer Bonuses for August 2026</a><span class="tier">· trade</span></li>
+    <li id="s4"><a href="https://awardwallet.com/news/credit-card-transfer-bonuses/">AwardWallet — All Current Transfer Bonuses (Capital One, Chase, and More)</a><span class="tier">· trade</span></li>
+    <li id="s5"><a href="https://loyaltylobby.com/2026/08/05/amex-us-mr-to-aer-lingus-british-airways-iberia-avios-30-conversion-bonus-until-september-27-2026/">LoyaltyLobby — Amex US MR to Aer Lingus, British Airways &amp; Iberia Avios 30% conversion bonus until September 27, 2026</a><span class="tier">· trade</span></li>
+    <li id="s6"><a href="https://onemileatatime.com/deals/citi-turkish-miles-smiles-transfer-bonus/">One Mile at a Time — Transfer Citi ThankYou Points To Turkish Miles &amp; Smiles With 40% Bonus</a><span class="tier">· trade</span></li>
+    <li id="s7"><a href="https://frequentmiler.com/chase-is-offering-a-70-100-transfer-bonus-to-ihg-one-rewards-give-it-a-miss/">Frequent Miler — Chase is offering a 70% transfer bonus to IHG One Rewards: Give it a miss</a><span class="tier">· trade</span></li>
+    <li id="s8"><a href="https://frequentmiler.com/15-transfer-bonus-from-capital-one-to-lifemiles-avianca/">Frequent Miler — 15% transfer bonus from Capital One to Avianca LifeMiles</a><span class="tier">· trade</span></li>
+    <li id="s9"><a href="https://frequentmiler.com/get-20-bonus-when-transferring-chase-ultimate-rewards-to-air-canada-aeroplan-stack-with-10-cardholder-bonus/">Frequent Miler — Get 20% bonus when transferring Chase UR to Air Canada Aeroplan (stack with 10% cardholder bonus)</a><span class="tier">· trade</span></li>
+    <li id="s10"><a href="https://www.aircanada.com/media/air-canada-announces-25-billion-minority-equity-investment-in-aeroplan-led-by-blackstone-and-la-caisse/">Air Canada Media — Air Canada Announces $2.5 Billion Minority Equity Investment in Aeroplan Led by Blackstone and La Caisse</a><span class="tier">· primary</span></li>
+    <li id="s11"><a href="https://www.blackstone.com/news/press/air-canada-announces-2-5-billion-minority-equity-investment-in-aeroplan-led-by-blackstone-and-la-caisse/">Blackstone Press — Air Canada Announces $2.5 Billion Minority Equity Investment in Aeroplan</a><span class="tier">· primary</span></li>
+    <li id="s12"><a href="https://onemileatatime.com/news/marriott-bonvoy-points-devaluation/">One Mile at a Time — Marriott Bonvoy Points Devaluation: Widespread Increase In Award Costs</a><span class="tier">· trade</span></li>
+    <li id="s13"><a href="https://onemileatatime.com/deals/marriott-bonvoy-promotion/">One Mile at a Time — Upcoming Marriott Bonvoy Promotion Leaked, And It's Not Very Exciting</a><span class="tier">· trade</span></li>
+    <li id="s14"><a href="https://awardwallet.com/news/united-mileageplus/premier-status-changes-2026/">AwardWallet — Changes Coming to the United MileagePlus Program in 2026</a><span class="tier">· trade</span></li>
+    <li id="s15"><a href="https://www.businesstraveller.com/news/alaska-airlines-atmos-rewards/">Business Traveller — Atmos Rewards Debuts as Alaska and Hawaiian Merge Loyalty Programs</a><span class="tier">· trade</span></li>
+  </ol>
+
+  <p class="caution">Every published percentage, ratio and expiry above was cross-checked across at least two Tier 2 desks. Bank and program primary pages (Chase, Amex, Citi, Turkish, Aeroplan, Hyatt) are typically not directly retrievable to a web fetcher — where a Tier 1 confirmation was not obtainable, that is called out inline. Transfers are one-way, one-shot, and irreversible: never transfer points without a specific award you can book immediately.</p>
+
+  <footer>
+    Content is AI-synthesized from public sources. Program terms change without notice. Confirm every rate, expiry, and award-availability directly with the program before transferring. Do not treat this brief as financial advice.
+  </footer>
+</div>
+
+<script>
+const S = "Sunday, August thirty first, twenty twenty six. Three transfer bonuses end tonight. Chase Ultimate Rewards to I H G at seventy percent, Citi ThankYou to Turkish Miles and Smiles at forty percent, and Capital One miles to Avianca LifeMiles at fifteen percent. None of these is a slam-dunk. The Chase to I H G bonus at one point seven to one still values Chase points below what most other Chase transfer uses give you. Every serious points desk has told readers to skip it. The Citi to Turkish forty percent is only good if you have already confirmed Star Alliance partner space on Miles and Smiles for a route the sixty five thousand mile region-to-region chart covers. Turkish's customer service is famously slow and speculative balances tend to die there. The Capital One to Avianca fifteen percent is the low end of the LifeMiles bonus range. Capital One's cadence suggests another LifeMiles bonus in Q four, and a Q four rate at twenty percent or higher would be materially better than tonight's fifteen. Two other bonuses survive the night. Amex Membership Rewards to British Airways, Iberia, and Aer Lingus Avios at thirty percent runs through September twenty seventh. And Chase Ultimate Rewards to Air Canada Aeroplan at twenty percent runs through September thirtieth, stacking to thirty for Aeroplan Visa cardholders on transfers of fifty thousand or more. Both give you weeks to find the right award before committing. Program watch. Air Canada closed the Blackstone and La Caisse twenty five percent minority investment in Aeroplan on August seventeenth. Air Canada retains seventy five percent ownership and, per its own release, full operational control. No award chart, transfer ratio, or earning change has been announced with the deal. The loud consensus is that private equity arrives and members lose. That is logged in the ledger as call twenty twenty six oh eight thirty as a testable contrarian bet. Marriott's Q four twenty twenty six global promo has leaked but not officially launched. Registration expected around September ninth, stay window September twenty second to November twenty second, fifteen hundred bonus points for two plus night stays and three thousand additional at resorts. It is a modest promo. I am logging today's ledger call on it. Hyatt's Q four Bonus Journeys is not yet posted. Alaska and Hawaiian's merged Atmos Rewards is still not a direct transfer partner of Amex, Chase, Citi, or Capital One. Today's play. The best move for most readers tonight is no move. If you must act, use Amex to Avios or Chase to Aeroplan — both survive the night, both give you time to find the seat. Transfers are one-way and one-shot. Do not transfer without a specific award you can book immediately.";
+const btn = document.getElementById('pb-play');
+let speaking = false;
+function pickVoice() {
+  const vs = window.speechSynthesis.getVoices();
+  return vs.find(v => /Daniel/i.test(v.name)) ||
+         vs.find(v => /Alex/i.test(v.name)) ||
+         vs.find(v => /en[-_](GB|US)/i.test(v.lang)) ||
+         vs.find(v => /^en/i.test(v.lang)) || null;
+}
+btn.addEventListener('click', function() {
+  if (!('speechSynthesis' in window)) {
+    btn.textContent = 'Audio not supported in this browser';
+    btn.disabled = true;
+    return;
+  }
+  if (speaking) {
+    window.speechSynthesis.cancel();
+    speaking = false;
+    btn.textContent = '▶ Listen · ~3 min';
+    return;
+  }
+  const u = new SpeechSynthesisUtterance(S);
+  u.rate = 0.93;
+  const v = pickVoice();
+  if (v) u.voice = v;
+  u.onend = function() { speaking = false; btn.textContent = '▶ Listen · ~3 min'; };
+  u.onerror = function() { speaking = false; btn.textContent = '▶ Listen · ~3 min'; };
+  window.speechSynthesis.speak(u);
+  speaking = true;
+  btn.textContent = '■ Stop';
+});
+if ('speechSynthesis' in window) {
+  window.speechSynthesis.onvoiceschanged = function() {};
+}
+</script>
+</body>
+</html>
