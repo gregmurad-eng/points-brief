@@ -170,6 +170,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-08-31-1",
+      "date": "2026-08-31",
+      "call": "Marriott Bonvoy will publicly launch a Q4 2026 global earning promotion \u2014 with registration open to members on or before 2026-09-22 \u2014 that materially matches the LoyaltyLobby leak: a base offer of at least 1,000 bonus points for paid stays of two or more nights, plus an additional resort-property bonus component, with a stay window falling within Sept 22 \u2013 Nov 30, 2026.",
+      "basis": "LoyaltyLobby leaked the Q4 2026 Marriott promotion in early August: registration ~Sept 9, stay window Sept 22 \u2013 Nov 22, 1,500 base bonus points for 2+ night paid stays, extra 3,000 points at resorts. Marriott has publicly launched a Q4 global earning promotion in every year since 2019, and leaked-terms-then-official-launch is the normal Marriott pattern \u2014 the leak's structural shape (base + resort component + ~9-week stay window opening late September) has been consistent across five straight Q4 promos. A missed launch, or terms materially weaker than the leak, would signal Marriott is holding back Q4 generosity in a year that has already seen a 5\u201310% award-chart devaluation and a persistent flash devaluation trickle. The test resolves cleanly by Sept 22, the leaked stay-window start.",
+      "horizon": "2026-09-22",
+      "test": "GRADE HIT if Marriott Bonvoy publicly launches a Q4 2026 global earning promotion with registration open to members on or before 2026-09-22, offering a base of at least 1,000 bonus points for paid stays of two or more nights, plus an additional resort-property bonus component of any size, with a stay window that falls within 2026-09-22 through 2026-11-30 inclusive, evidenced by marriott.com/loyalty (Tier 1) or a Tier 1/Tier 2 confirmation. GRADE MISS if no such promo is publicly launched by 2026-09-22, OR if the promo launched by that date has a base of less than 1,000 bonus points for a 2+ night paid stay, OR lacks any resort-property bonus component.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
