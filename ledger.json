@@ -182,6 +182,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-01-1",
+      "date": "2026-09-01",
+      "call": "The Amex Membership Rewards \u2192 Hilton Honors 30% bonus that launched today (Sept 1 \u2013 Oct 14, 2026) will be the ONLY Amex\u2192Hilton transfer bonus publicly offered before 2027-01-31 \u2014 no additional Amex\u2192Hilton bonus of any percentage will run between 2026-10-15 and 2027-01-31 inclusive.",
+      "basis": "Amex\u2192Hilton bonuses have run roughly 1\u20132 times per calendar year, not consecutively. Recent cadence shows Amex clearing the Hilton box for the fall/holiday season with a single Q3\u2013Q4 promo, then leaving the route quiet for 5\u20138 months. A repeat within 3.5 months of today's launch would break a multi-year pattern. Additionally, Hilton points are Amex's least valuable per-point hotel transfer destination (0.5\u20130.6 cents vs Marriott ~0.7 and Choice / partner airline transfers well above); Amex has less commercial incentive to promote heavily on this route once the seasonal box is checked.",
+      "horizon": "2027-01-31",
+      "test": "GRADE HIT if no Amex Membership Rewards \u2192 Hilton Honors transfer bonus of any percentage is publicly offered at any point between 2026-10-15 and 2027-01-31 inclusive. GRADE MISS if any such bonus is offered in that window, evidenced by Amex's own transfer page and confirmed by at least one Tier 1 or Tier 2 source.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
