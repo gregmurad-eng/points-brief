@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — Monday, September 1, 2026</title>
+<style>
+  :root {
+    --bg: #080c14;
+    --accent: #c9a84c;
+    --text: #d8d0b4;
+    --muted: #8a8570;
+    --miss: #b06a6a;
+    --panel: #0f1420;
+    --panel-2: #131a28;
+    --rule: #26304a;
+  }
+  html, body { background: var(--bg); color: var(--text); }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.55;
+    font-size: 17px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 26px 26px 60px; }
+  header.masthead {
+    border-top: 3px solid var(--accent);
+    border-bottom: 1px solid var(--rule);
+    padding: 22px 0 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 34px;
+    letter-spacing: 0.02em;
+    margin: 0 0 6px;
+    color: var(--accent);
+    font-weight: normal;
+    font-variant: small-caps;
+  }
+  .tagline { color: var(--muted); font-style: italic; font-size: 15px; }
+  .date { color: var(--text); font-size: 15px; margin-top: 8px; letter-spacing: 0.04em; }
+  nav.bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 4px;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    margin: 14px 0 22px;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+  }
+  nav.bar a { color: var(--accent); text-decoration: none; white-space: nowrap; padding: 12px 6px; }
+  nav.bar a:hover { text-decoration: underline; }
+  nav.bar .nav-mid { display: flex; gap: 0; align-items: center; }
+  nav.bar .nav-mid a { margin: 0 9px; }
+  nav.bar .next { color: var(--muted); white-space: nowrap; padding: 12px 6px; }
+  .urgent {
+    border: 2px solid var(--accent);
+    background: rgba(201, 168, 76, 0.08);
+    padding: 14px 16px;
+    margin: 0 0 22px;
+    font-size: 15px;
+  }
+  .urgent strong { color: var(--accent); }
+  .listen-wrap {
+    padding: 12px 0 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 24px;
+  }
+  .listen-btn {
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 12px 22px;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    text-transform: uppercase;
+    min-height: 44px;
+  }
+  .listen-btn:hover { background: rgba(201, 168, 76, 0.1); }
+  h2 {
+    color: var(--accent);
+    font-variant: small-caps;
+    font-weight: normal;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 6px;
+    margin-top: 36px;
+    margin-bottom: 16px;
+  }
+  h3 {
+    font-size: 18px;
+    color: var(--text);
+    margin: 22px 0 4px;
+    font-weight: normal;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 14px;
+    font-style: italic;
+    margin: 0 0 8px;
+  }
+  p { margin: 8px 0 12px; }
+  a { color: var(--accent); }
+  sup a {
+    padding: 6px 4px;
+    margin: -6px -4px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  sup a:hover { text-decoration: underline; }
+  .your-move {
+    color: var(--accent);
+    font-style: italic;
+    margin: 10px 0 4px;
+    font-size: 15px;
+  }
+  .your-move::before { content: "Your move: "; font-weight: bold; font-style: normal; }
+  .signal {
+    background: var(--panel);
+    border-left: 3px solid var(--accent);
+    padding: 16px 18px;
+    margin: 14px 0;
+    font-size: 16px;
+  }
+  .caution {
+    color: var(--muted);
+    font-size: 14px;
+    font-style: italic;
+    border-top: 1px solid var(--rule);
+    padding-top: 14px;
+    margin-top: 22px;
+  }
+  .ledger-record {
+    background: var(--panel-2);
+    border: 1px solid var(--rule);
+    padding: 14px 16px;
+    margin: 10px 0 18px;
+    font-size: 15px;
+  }
+  .ledger-record strong { color: var(--accent); }
+  .verdict-hit { color: var(--accent); font-weight: bold; }
+  .verdict-miss { color: var(--miss); font-weight: bold; }
+  .verdict-unsettled { color: var(--muted); font-weight: bold; }
+  .verdict-open { color: var(--muted); font-style: italic; }
+  ol.sources { padding-left: 22px; font-size: 14px; }
+  ol.sources li { margin-bottom: 8px; color: var(--muted); }
+  ol.sources li a { color: var(--accent); }
+  .tier {
+    display: inline-block;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0 6px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    margin: 0 6px;
+    font-style: normal;
+  }
+  footer.foot {
+    color: var(--muted);
+    font-size: 13px;
+    font-style: italic;
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+    margin-top: 30px;
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    .wrap { padding: 18px 16px 40px; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 19px; }
+    h3 { font-size: 17px; }
+    nav.bar {
+      font-size: 14px;
+      gap: 8px 10px;
+      padding: 10px 2px;
+    }
+    nav.bar a, nav.bar .next { padding: 12px 8px; min-height: 44px; display: inline-flex; align-items: center; }
+    nav.bar .nav-mid a { margin: 0 6px; }
+    .urgent { padding: 12px 14px; font-size: 15px; }
+    .listen-btn { width: 100%; padding: 14px 18px; }
+    .signal { padding: 14px 14px; font-size: 16px; }
+    .ledger-record { padding: 12px 14px; font-size: 15px; }
+    ol.sources { font-size: 14px; }
+  }
+  @media (max-width: 380px) {
+    nav.bar .full { display: none; }
+    nav.bar .short { display: inline; }
+  }
+  @media (min-width: 381px) {
+    nav.bar .short { display: none; }
+    nav.bar .full { display: inline; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <h1>The Points Brief</h1>
+  <div class="tagline">Travel Points · Maximize every transfer</div>
+  <div class="date">Monday, September 1, 2026</div>
+</header>
+
+<nav class="bar" aria-label="Editions">
+  <a href="2026-08-31.html"><span class="full">&larr; YESTERDAY</span><span class="short">&larr;</span></a>
+  <span class="nav-mid">
+    <a href="./">Today</a>
+    <a href="archive.html">Archive</a>
+  </span>
+  <span class="next"><span class="full">TOMORROW &rarr;</span><span class="short">&rarr;</span></span>
+</nav>
+
+<div class="urgent">
+  <strong>Time-critical &mdash; today only.</strong> Bilt Rewards&rsquo; September Rent Day is <em>today, Sept 1</em>. Transfer bonus to Virgin Atlantic Flying Club scales by Bilt status (25% Blue, 35% Silver, 45% Gold, 75% Platinum) and Platinum members can spend $200 in Bilt Cash to buy up to 100%; window is ~12:00 AM ET through 11:59 PM PT (roughly 27 hours), capped at 150,000 Bilt points transferred.<sup><a href="#s6">[6]</a></sup>
+</div>
+
+<div class="listen-wrap">
+  <button id="listenBtn" class="listen-btn" onclick="toggleSpeak()">&#9654; Listen &middot; ~3 min</button>
+</div>
+
+<h2>Today&rsquo;s Transfer Bonuses</h2>
+
+<p class="meta">All percentages, expiries and ratios cross-checked against multiple established points desks; program-owned pages behind cardholder logins were not directly retrievable this run. Where a bank&rsquo;s own transfer page could not be reached, we cite the two independent trade sources that agree.</p>
+
+<h3>Bilt Rewards &rarr; Virgin Atlantic Flying Club &mdash; up to 100%</h3>
+<p class="meta">Expires: September 1, 2026 (today, ~27 hours) &middot; Base ratio 1:1 &middot; Bonus tiered by status</p>
+<p>Bilt&rsquo;s September Rent Day brings back a Virgin transfer bonus after months without one. Blue tier gets 25%, Silver 35%, Gold 45%, Platinum 75%; Platinum members can spend $200 in Bilt Cash to buy up to 100%. Cap: 150,000 Bilt points transferred in the promo.<sup><a href="#s6">[6]</a></sup></p>
+<p class="your-move">transfer only if you already know the exact Virgin partner award you want to book (Delta One transatlantic in Virgin Upper Class, ANA First via Virgin, or select Delta domestic sweet spots) &mdash; Virgin miles are a specialist currency and speculative transfers age poorly.</p>
+
+<h3>Amex Membership Rewards &rarr; Hilton Honors &mdash; 30%</h3>
+<p class="meta">Live Sept 1 &ndash; Oct 14, 2026 &middot; Base ratio 1:2 &middot; Bonused 1:2.6</p>
+<p>Amex&rsquo;s first Hilton bonus in months launched today. 1,000 Membership Rewards points yield 2,600 Hilton points instead of the usual 2,000; Hilton points are currently valued around 0.5&ndash;0.6 cents each by the major points desks.<sup><a href="#s5">[5]</a></sup></p>
+<p class="your-move">skip this unless you&rsquo;re short by a specific chunk for a specific Hilton redemption you&rsquo;ve already priced &mdash; MR points are more flexible than Hilton points, and the 1:2.6 ratio still leaves MR worth more sitting in Amex for a future airline transfer than dumped into Hilton speculatively.</p>
+
+<h3>Capital One Miles &rarr; Japan Airlines Mileage Bank &mdash; 30%</h3>
+<p class="meta">Live Sept 1 &ndash; Sept 30, 2026 &middot; Base ratio 4:3 &middot; Bonused ~1,000:975</p>
+<p>Standard Capital One&rarr;JAL transfers run 1,000 miles for 750 JAL miles; with the 30% bonus you get roughly 975 JAL miles per 1,000 &mdash; effectively closing to near 1:1. JAL Mileage Bank is one of the strongest oneworld award engines for Japan-based itineraries: 55,000 miles round-trip US west coast to Tokyo in economy, 100,000 in business (partner award chart, subject to fuel surcharges on JAL metal).<sup><a href="#s1">[1]</a></sup></p>
+<p class="your-move">act only with a JAL award held or actively being searched &mdash; JAL award space is thin, and transferred miles cannot be moved back to Capital One or on to another program.</p>
+
+<h3>Amex Membership Rewards &rarr; British Airways / Iberia / Aer Lingus Avios &mdash; 30%</h3>
+<p class="meta">Expires: 11:59 PM MT, Sept 27, 2026 &middot; Base ratio 1:1 &middot; Bonused 1,000:1,300</p>
+<p>Amex&rsquo;s longest-standing bonus of the moment; four weeks remain. Avios earned this way sit in one shared pool via BA/Iberia/Aer Lingus household-account combining. The classic sweet spots are still Iberia short-haul to Madrid at 8,500 Avios one-way in off-peak, single-partner AA short-haul, and Qatar Qsuite when it opens up.<sup><a href="#s2">[2]</a></sup></p>
+<p class="your-move">wait unless you have an Iberia off-peak or Qatar Qsuite award actually loaded &mdash; a 30% Avios bonus has recurred roughly every 4&ndash;6 months for years and will almost certainly return; the specific award, not the bonus, is what makes it worth the pull.</p>
+
+<h3>Chase Ultimate Rewards &rarr; Air Canada Aeroplan &mdash; 20%</h3>
+<p class="meta">Expires: 11:59 PM EST, Sept 30, 2026 &middot; Base ratio 1:1 &middot; Bonused 1,000:1,200 (stackable to ~30% for Aeroplan cardholders)</p>
+<p>Chase&rsquo;s only current airline bonus. Aeroplan cardholders can stack an additional 10% for a minimum 50,000-point transfer, taking the effective bonus to ~30%.<sup><a href="#s4">[4]</a></sup> Aeroplan is a strong Star Alliance award engine (distance-based, no fuel surcharges on many partners, expandable stopovers for 5,000 miles).</p>
+<p class="your-move">transfer only for a searched-and-held Star Alliance partner award &mdash; Aeroplan&rsquo;s own metal often carries surcharges, so the value case rests on partner space (United, Lufthansa First, ANA business).</p>
+
+<h3>Citi ThankYou &rarr; Leading Hotels of the World Leaders Club &mdash; 25%</h3>
+<p class="meta">Expires: 11:59 PM ET, Sept 19, 2026 &middot; Base 1,000:200 (Premium cards) &middot; Bonused 1,000:250</p>
+<p>Citi Strata Premier, Strata Elite, Prestige and AT&amp;T Access More cardholders can convert at 1,000:200 base &mdash; the bonus lifts that to 1,000:250. Leaders Club points redeem in tiers (2,000&ndash;15,000 points per night depending on property), and the program has fewer usable properties than mainstream hotel currencies.<sup><a href="#s3">[3]</a></sup></p>
+<p class="your-move">for almost all readers, do nothing &mdash; Leaders Club is niche and one-way from Citi; only pull the trigger if you&rsquo;ve confirmed a specific LHW property redemption in advance.</p>
+
+<h3>Wyndham Rewards &rarr; Singapore Airlines KrisFlyer &mdash; 20%</h3>
+<p class="meta">Expires: Sept 17, 2026, 23:59 Beijing time &middot; Base 6,000:1,200 &middot; Bonused 6,000:1,440</p>
+<p>A rarer route: Wyndham points converting to KrisFlyer at a bonused 25:6 ratio through mid-September. Useful only if you&rsquo;ve been accumulating Wyndham points (e.g., via the Barclays Wyndham Business Earner Plus) and want KrisFlyer miles for a Singapore or Star Alliance premium redemption.<sup><a href="#s7">[7]</a></sup></p>
+<p class="your-move">this is a corner-case route &mdash; ignore unless you already hold a Wyndham stockpile you never see a hotel-use for and have a KrisFlyer award mapped.</p>
+
+<h2>Program Watch</h2>
+
+<h3>Marriott Bonvoy Q4 2026 promotion &mdash; leaked, not yet official</h3>
+<p class="meta">Leaked terms &middot; Expected registration Sept 9, 2026 &middot; Stay window Sept 22 &ndash; Nov 22, 2026</p>
+<p>LoyaltyLobby reported the leaked structure last week: 1,500 base bonus points on paid stays of 2+ nights, plus an additional 3,000 bonus points at resorts &mdash; up to 4,500 bonus points per stay. Marriott has not yet officially posted the promo; the leaked stay-window opens Sept 22, so an official launch on or around Sept 9 is the leaked expectation. Award stays would be ineligible, per prior years.<sup><a href="#s9">[9]</a></sup></p>
+
+<h3>Bilt Rewards Rent Day returns to Virgin Atlantic partner</h3>
+<p class="meta">Effective: Sept 1, 2026 only</p>
+<p>Bilt&rsquo;s partner-rotation for Rent Day has been unpredictable since spring; today&rsquo;s Virgin Atlantic slot is the first Virgin Rent Day promo in months and the first up-to-100% tier of the second half of 2026.<sup><a href="#s6">[6]</a></sup> Rent Day repeats of the same partner within 4&ndash;5 months have historically been rare, which shapes today&rsquo;s ledger call.</p>
+
+<h3>Capital One JAL bonus is the program&rsquo;s fourth JAL promo since launch</h3>
+<p class="meta">Effective: Sept 1, 2026</p>
+<p>Capital One&rsquo;s JAL partnership continues to be its most actively promoted airline route &mdash; this is now the fourth JAL bonus since the partnership launched.<sup><a href="#s1">[1]</a></sup> Underlying trend: Capital One is leaning harder on airline transfer bonuses in Q3&ndash;Q4 2026 to keep Venture X and Venture cards competitive with Chase and Amex on award-travel narrative.</p>
+
+<h2>Today&rsquo;s Play</h2>
+
+<div class="signal">
+  <p>Two live signals worth an hour of your evening: <strong>Bilt Rent Day today only</strong> (Virgin Atlantic up to 100% for Platinum with $200 buy-up), and the <strong>Capital One&rarr;JAL 30%</strong> starting a fresh 30-day window. Neither is a good speculative transfer, but both are excellent <em>completion</em> tools if you have an award already searched.</p>
+  <p>The single highest-value action today is not a transfer &mdash; it is <em>searching JAL and Virgin partner award space</em> for the trips you want in Q4/Q1, then transferring only what you need to lock a booking. Every irreversible currency conversion done without a target is a rounding error away from a mistake.</p>
+</div>
+
+<h2>The Ledger</h2>
+
+<p class="meta">Season 1 &middot; 0-0 &middot; 15 calls open, 0 graded. First grade due Oct 25 (call 2026-08-16-1, U.S. Bank / Altitude Reserve partner restoration).</p>
+
+<div class="ledger-record">
+  <p><strong>TODAY-1 &middot; OPEN</strong> &middot; horizon 2027-01-31 &middot; <span class="verdict-open">status: open</span></p>
+  <p><strong>Call:</strong> The Amex Membership Rewards &rarr; Hilton Honors 30% bonus that launched today (Sept 1 &ndash; Oct 14, 2026) will be the ONLY Amex&rarr;Hilton transfer bonus publicly offered before 2027-01-31 &mdash; no additional Amex&rarr;Hilton bonus of any percentage will run between Oct 15, 2026 and Jan 31, 2027 inclusive.</p>
+  <p><strong>Basis:</strong> Amex&rarr;Hilton bonuses have run roughly 1&ndash;2 times per calendar year, not consecutively. Recent cadence shows Amex clearing the Hilton box for the fall/holiday season with a single Q3&ndash;Q4 promo, then leaving the route quiet for 5&ndash;8 months. A repeat within 3.5 months of today&rsquo;s launch would break a multi-year pattern.</p>
+  <p><strong>Test:</strong> HIT if no Amex Membership Rewards &rarr; Hilton Honors transfer bonus of any percentage is publicly offered at any point between 2026-10-15 and 2027-01-31 inclusive, evidenced by Amex&rsquo;s own transfer page, a Hilton promo page, or a Tier 1/Tier 2 confirmation. MISS if any such bonus is offered in that window.</p>
+</div>
+
+<p class="meta">No calls due for grading today. Full ledger of open calls is at the <a href="https://raw.githubusercontent.com/gregmurad-eng/points-brief/main/ledger.json">machine-readable record</a>.</p>
+
+<h2>Sources</h2>
+
+<ol class="sources">
+  <li id="s1">One Mile at a Time &mdash; &ldquo;Capital One&rsquo;s 30% Transfer Bonus To Japan Airlines: Is It Worth It?&rdquo; <span class="tier">trade</span> <a href="https://onemileatatime.com/deals/capital-one-japan-airlines-mileage-bank-transfer-bonus/">link</a></li>
+  <li id="s2">AwardWallet &mdash; &ldquo;30% Transfer Bonus From Amex Membership Rewards to Avios&rdquo; <span class="tier">trade</span> <a href="https://awardwallet.com/news/amex-membership-rewards/avios-transfer-bonus/">link</a></li>
+  <li id="s3">Frequent Miler &mdash; &ldquo;25% transfer bonus from Citi to Leading Hotels of the World Leaders Club&rdquo; <span class="tier">trade</span> <a href="https://frequentmiler.com/citi-thankyou-leading-hotels-of-the-world-lhw-25-percent-transfer-bonus/">link</a></li>
+  <li id="s4">AwardWallet &mdash; &ldquo;Get Up to a 30% Bonus on Chase Transfers to Aeroplan&rdquo; <span class="tier">trade</span> <a href="https://awardwallet.com/news/chase-ultimate-rewards/aeroplan-transfer-bonus/">link</a></li>
+  <li id="s5">One Mile at a Time &mdash; &ldquo;Amex&rsquo;s 30% Transfer Bonus To Hilton Honors: Is It Worth It?&rdquo; <span class="tier">trade</span> <a href="https://onemileatatime.com/deals/amex-hilton-transfer-bonus/">link</a></li>
+  <li id="s6">One Mile at a Time &mdash; &ldquo;Bilt Rent Day Promotion September 2026: 25-100% Virgin Atlantic Transfer Bonus&rdquo; <span class="tier">trade</span> <a href="https://onemileatatime.com/guides/bilt-rent-day-promotion/">link</a></li>
+  <li id="s7">LoyaltyLobby &mdash; &ldquo;Wyndham Rewards To Singapore Airlines &amp; HNA Points To Miles Conversion Bonus&rdquo; <span class="tier">trade</span> <a href="https://loyaltylobby.com/2026/08/18/wyndham-rewards-to-singapore-airlines-hna-points-to-miles-conversion-bonus/">link</a></li>
+  <li id="s8">Wyndham Hotels &amp; Resorts investor release &mdash; &ldquo;Wyndham Rewards Adds KrisFlyer as Newest Point Transfer Partner&rdquo; (confirms base 6,000:1,200 ratio) <span class="tier">primary</span> <a href="https://investor.wyndhamhotels.com/news-events/press-releases/detail/389/wyndham-rewards-adds-krisflyer-as-newest-point-transfer">link</a></li>
+  <li id="s9">LoyaltyLobby &mdash; &ldquo;Marriott Bonvoy Up To 4,500 Bonus Points For Each Stay September 22 &ndash; November 22, 2026&rdquo; <span class="tier">trade</span> <a href="https://loyaltylobby.com/2026/08/28/marriott-bonvoy-up-to-4500-bonus-points-for-each-stay-september-22-november-22-2026/">link</a></li>
+  <li id="s10">Frequent Miler &mdash; &ldquo;Current point transfer bonuses&rdquo; (corroboration for all bonuses listed above) <span class="tier">trade</span> <a href="https://frequentmiler.com/current-point-transfer-bonuses/">link</a></li>
+  <li id="s11">AwardWallet &mdash; &ldquo;All Current Transfer Bonuses (Capital One, Chase, and More)&rdquo; (corroboration) <span class="tier">trade</span> <a href="https://awardwallet.com/news/credit-card-transfer-bonuses/">link</a></li>
+</ol>
+
+<p class="caution">A reminder: point and mile transfers are one-way and irreversible. Do not transfer speculatively. Search and hold your award before you pull the trigger, and verify current program terms directly at your card issuer&rsquo;s and airline&rsquo;s own pages before transferring.</p>
+
+<nav class="bar" aria-label="Editions (bottom)">
+  <a href="2026-08-31.html"><span class="full">&larr; YESTERDAY</span><span class="short">&larr;</span></a>
+  <span class="nav-mid">
+    <a href="./">Today</a>
+    <a href="archive.html">Archive</a>
+  </span>
+  <span class="next"><span class="full">TOMORROW &rarr;</span><span class="short">&rarr;</span></span>
+</nav>
+
+<footer class="foot">
+  <p>The Points Brief is an AI-synthesized daily digest of the travel-points landscape. Percentages, expiries, and transfer ratios were cross-checked across multiple established points-industry publications; where a card issuer&rsquo;s own transfer page was behind a cardholder login, we have cited the two independent trade sources that agreed. Always confirm current terms and award availability at the issuer&rsquo;s and airline&rsquo;s own pages before transferring &mdash; a wrong number here can cost real money.</p>
+</footer>
+
+</div>
+
+<script>
+const S = "Good morning. This is The Points Brief for Monday, September first, twenty twenty six. Today's most time-critical item is Bilt Rewards' September Rent Day, live today only. The Virgin Atlantic transfer bonus scales by Bilt status, from twenty five percent at Blue up to seventy five percent at Platinum, and Platinum members can spend two hundred dollars in Bilt Cash to buy up to a full one hundred percent. The window is roughly twelve AM Eastern through eleven fifty nine PM Pacific, capped at one hundred fifty thousand Bilt points. This is powerful, but only if you already have a specific Virgin partner award searched and held. Do not speculate. Also new today. American Express opened a thirty percent transfer bonus to Hilton Honors, running through October fourteenth. Membership Rewards points move at one to two point six instead of one to two. For almost everyone, this is a skip. Membership Rewards points are worth more in your Amex account waiting for a specific airline transfer than dumped speculatively into Hilton. Capital One also opened a thirty percent transfer bonus to Japan Airlines Mileage Bank, running through September thirtieth. This closes the standard four to three ratio to roughly one to one. Useful only if you already have a Japan Airlines award being searched. Continuing offers. American Express to Avios at thirty percent through September twenty seventh. Chase to Aeroplan at twenty percent through September thirtieth, stackable to thirty percent for Aeroplan cardholders. Citi ThankYou to Leading Hotels of the World at twenty five percent through September nineteenth. Wyndham to Singapore KrisFlyer at twenty percent through September seventeenth. Program watch. Marriott's Q four twenty twenty six global promotion has leaked, with registration expected around September ninth and a stay window from September twenty second through November twenty second. Fifteen hundred base bonus points on paid stays of two or more nights, plus three thousand extra at resorts. Marriott has not officially confirmed. Today's play. The highest value action today is not a transfer, it is a search. Load your Virgin, JAL, and Aeroplan searches for the trips you actually want to take in Q four and early next year. Only transfer once you can lock a booking. Every irreversible conversion done without a target is money you cannot get back. That's your brief. Confirm current terms at your issuer's own page before you move any points.";
+let U = null;
+function toggleSpeak() {
+  const b = document.getElementById('listenBtn');
+  if (U && speechSynthesis.speaking) {
+    speechSynthesis.cancel();
+    U = null;
+    b.innerHTML = '&#9654; Listen &middot; ~3 min';
+    return;
+  }
+  U = new SpeechSynthesisUtterance(S);
+  U.rate = 0.93;
+  const voices = speechSynthesis.getVoices();
+  const preferred = voices.find(v => v.name === 'Daniel') || voices.find(v => v.name === 'Alex') || voices.find(v => v.lang && v.lang.startsWith('en'));
+  if (preferred) U.voice = preferred;
+  U.onend = () => { b.innerHTML = '&#9654; Listen &middot; ~3 min'; U = null; };
+  speechSynthesis.speak(U);
+  b.innerHTML = '&#9632; Stop';
+}
+if (typeof speechSynthesis !== 'undefined') {
+  speechSynthesis.onvoiceschanged = () => {};
+}
+</script>
+
+</body>
+</html>
