@@ -194,6 +194,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-02-1",
+      "date": "2026-09-02",
+      "call": "Flying Blue will NOT publicly announce any member-negative change to its partner-airline award pricing (SkyTeam partners plus Etihad, GOL, Kenya Airways, and other non-AF/KLM partners) between 2026-09-02 and 2027-01-31 inclusive.",
+      "basis": "The September 8, 2026 direct-airline tiered fares rollout (Light/Standard/Flex on AF and KLM direct awards) is publicly framed as changes that 'apply exclusively to travel on Air France and KLM, and not to travel on partner airlines, where pricing remains unchanged.' Programs that publicly split direct vs partner pricing at rollout typically preserve partner protection for 6\u201312 months; reversing that language inside 5 months would validate the 'bait-and-switch' critique during exactly the tiered-fare adoption phase when Flying Blue most needs member trust. Historical Flying Blue partner-chart changes have arrived on 12\u201324 month cycles, not clustered with direct-airline changes. Contrarian call \u2014 the loud fear on trade sites is that partner pricing is next; this bets it isn't, inside five months.",
+      "horizon": "2027-01-31",
+      "test": "GRADE HIT if no Flying Blue announcement, effective between 2026-09-02 and 2027-01-31 inclusive, materially worsens partner-airline award pricing (higher mile requirements on any published partner route, removed sweet spots such as intra-Europe short-haul, or a partner removed from the transfer roster). GRADE MISS if any such change is publicly announced in that window, evidenced by Flying Blue's own award page or an AF/KLM press release plus a Tier 1 or Tier 2 confirmation.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
