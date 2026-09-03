@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief · Thursday, September 3, 2026</title>
+<style>
+  html, body { background:#080c14; color:#d8d0b4; font-family: Georgia, "Times New Roman", serif; margin:0; padding:0; line-height:1.6; }
+  body { max-width: 780px; margin: 0 auto; padding: 28px 22px 64px; }
+  a { color:#c9a84c; text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.35); }
+  a:hover { border-bottom-color:#c9a84c; }
+  h1, h2, h3 { font-family: Georgia, serif; color:#c9a84c; font-weight: normal; letter-spacing: 0.02em; }
+  h1 { font-size: 40px; margin: 8px 0 2px; letter-spacing: 0.06em; }
+  h2 { font-size: 22px; margin: 40px 0 8px; padding-bottom: 6px; border-bottom: 1px solid rgba(201,168,76,0.25); text-transform: uppercase; letter-spacing: 0.14em; }
+  h3 { font-size: 18px; color:#d8d0b4; margin: 22px 0 6px; }
+  .tagline { color: rgba(216,208,180,0.7); font-style: italic; font-size: 15px; margin: 0 0 2px; }
+  .dateline { color: rgba(216,208,180,0.85); font-size: 15px; margin: 0 0 20px; letter-spacing: 0.05em; }
+  .rule { border: none; border-top: 2px solid #c9a84c; margin: 8px 0 16px; }
+  .bar { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; padding: 10px 12px; margin: 16px 0 22px; border: 1px solid rgba(201,168,76,0.35); border-radius: 3px; font-size: 14px; letter-spacing: 0.08em; }
+  .bar a, .bar span { white-space: nowrap; padding: 10px 8px; min-height: 44px; display: inline-flex; align-items: center; }
+  .bar a { border-bottom: none; }
+  .bar .nav-mid { display: inline-flex; gap: 0; padding: 0; min-height: 0; }
+  .bar .nav-mid a { color:#c9a84c; margin: 0 9px; padding: 10px 6px; min-height: 44px; }
+  .bar .next { color: rgba(216,208,180,0.4); }
+  .caveat { font-size: 13px; color: rgba(216,208,180,0.7); font-style: italic; margin: 12px 0 18px; padding: 10px 12px; border-left: 2px solid rgba(201,168,76,0.35); }
+  .offer { margin: 22px 0 30px; padding: 0 0 18px; border-bottom: 1px dashed rgba(201,168,76,0.2); }
+  .offer p { margin: 6px 0 10px; font-size: 16px; }
+  .facts { color: rgba(216,208,180,0.85); font-size: 15px; margin: 4px 0 10px; }
+  .facts strong { color:#c9a84c; font-weight: normal; }
+  .move { color:#c9a84c; font-style: italic; margin: 12px 0 4px; font-size: 16px; padding: 8px 12px; border-left: 3px solid #c9a84c; background: rgba(201,168,76,0.06); }
+  .move .label { font-weight: bold; letter-spacing: 0.05em; text-transform: uppercase; font-style: normal; font-size: 13px; margin-right: 6px; }
+  .play-box { border: 2px solid #c9a84c; padding: 16px 18px; margin: 14px 0 20px; background: rgba(201,168,76,0.05); }
+  .play-box h3 { color:#c9a84c; margin-top: 0; }
+  .ledger { margin: 14px 0 20px; }
+  .ledger-record { font-size: 17px; color:#c9a84c; margin: 6px 0 14px; letter-spacing: 0.03em; }
+  .ledger-call { margin: 14px 0; padding: 12px 14px; border: 1px solid rgba(201,168,76,0.22); font-size: 15px; }
+  .ledger-call .tag { display: inline-block; padding: 2px 8px; margin-right: 8px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid; }
+  .tag-open { color:#c9a84c; border-color:#c9a84c; }
+  .tag-hit { color:#c9a84c; border-color:#c9a84c; background: rgba(201,168,76,0.12); }
+  .tag-miss { color:#b06060; border-color:#b06060; }
+  .tag-unsettled { color: rgba(216,208,180,0.55); border-color: rgba(216,208,180,0.4); }
+  .listen-wrap { margin: 14px 0 8px; }
+  .listen-btn { background:#0f1520; color:#c9a84c; border:1px solid #c9a84c; padding: 12px 18px; font-family: Georgia, serif; font-size: 15px; cursor: pointer; letter-spacing: 0.06em; min-height: 44px; }
+  .listen-btn:hover { background:#1a2130; }
+  sup { font-size: 12px; }
+  sup a { color:#c9a84c; padding: 6px 4px; margin: -6px -4px; text-decoration: none; border-bottom: none; }
+  .sources { font-size: 14px; }
+  .sources ol { padding-left: 24px; }
+  .sources li { margin: 8px 0; }
+  .tier { display: inline-block; font-size: 11px; padding: 1px 6px; margin: 0 6px; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid rgba(201,168,76,0.4); color: rgba(216,208,180,0.75); }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid rgba(201,168,76,0.25); font-size: 13px; color: rgba(216,208,180,0.6); font-style: italic; }
+  @media (max-width: 480px) {
+    body { padding: 20px 16px 48px; font-size: 16px; }
+    h1 { font-size: 30px; letter-spacing: 0.04em; }
+    h2 { font-size: 18px; letter-spacing: 0.1em; }
+    h3 { font-size: 17px; }
+    .tagline, .dateline { font-size: 14px; }
+    .bar { font-size: 14px; gap: 8px 10px; padding: 8px 10px; }
+    .bar a, .bar span { padding: 12px 8px; min-height: 44px; }
+    .bar .nav-mid a { margin: 0 6px; padding: 12px 8px; min-height: 44px; }
+    .offer p, .move { font-size: 16px; }
+    .facts { font-size: 15px; }
+    .caveat { font-size: 14px; }
+    .ledger-call { font-size: 15px; }
+    .sources { font-size: 14px; }
+    sup a { padding: 8px 5px; margin: -8px -5px; }
+    .listen-btn { padding: 14px 20px; min-height: 44px; }
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <h1>The Points Brief</h1>
+  <p class="tagline">Travel Points · Maximize every transfer</p>
+  <p class="dateline">Thursday, September 3, 2026</p>
+  <hr class="rule">
+</div>
+
+<nav class="bar" aria-label="Edition navigation">
+  <a href="2026-09-02.html">← YESTERDAY</a>
+  <span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<div class="listen-wrap">
+  <button id="listen" class="listen-btn" aria-label="Listen to today's brief">▶ Listen (~3 min)</button>
+</div>
+
+<p class="caveat">Point transfers are one-way and irreversible. Only move points when you have a specific redemption in mind — confirm award availability first, then transfer. Every percentage and expiry below is corroborated across multiple trade desks; verify on your issuer's own transfer page before you pull the trigger.</p>
+
+<h2>Today's Transfer Bonuses</h2>
+
+<div class="offer">
+  <h3>Amex Membership Rewards → British Airways / Iberia / Aer Lingus Avios · 30%</h3>
+  <p class="facts"><strong>Ratio:</strong> 1,000 MR = 1,300 Avios · <strong>Expires:</strong> September 27, 2026 · <strong>Source:</strong> Frequent Miler<sup><a href="#s3">[3]</a></sup>, TPG<sup><a href="#s2">[2]</a></sup></p>
+  <p>The Avios family shares a single balance — transfer to whichever program has the sweet spot you want. Iberia short-haul intra-Europe from Madrid remains one of the strongest routes reachable directly from MR at this ratio, and single-partner AA short-haul via British Airways is still bookable if you plan around the surcharge geometry.</p>
+  <p class="move"><span class="label">Your move:</span> Transfer only if you have Avios award space already priced and on hold. This is Amex's routine semi-annual Avios push (call <em>2026-08-19-1</em> predicts a repeat by year-end) — do not speculatively top up Avios balances against a redemption you have not yet found.</p>
+</div>
+
+<div class="offer">
+  <h3>Amex Membership Rewards → Hilton Honors · 30%</h3>
+  <p class="facts"><strong>Ratio:</strong> 1,000 MR = 2,600 Hilton points · <strong>Expires:</strong> October 14, 2026 · <strong>Source:</strong> Frequent Miler<sup><a href="#s4">[4]</a></sup>, TPG<sup><a href="#s2">[2]</a></sup></p>
+  <p>Even at the bonused ratio, MR is worth roughly 0.9 cents per point when transferred to Hilton at current Hilton point valuations (~0.35¢/pt). That's below Amex's floor value on most other transfer partners. Hilton points are also Amex's least valuable per-point hotel destination in the trade-desk consensus.</p>
+  <p class="move"><span class="label">Your move:</span> Skip unless you have a specific Hilton reservation already priced in points that you cannot cover from your Hilton earning balance — this is a "top up to book" move, not a "build a balance" move.</p>
+</div>
+
+<div class="offer">
+  <h3>Chase Ultimate Rewards → Air Canada Aeroplan · 20%</h3>
+  <p class="facts"><strong>Ratio:</strong> 1,000 UR = 1,200 Aeroplan points · <strong>Expires:</strong> September 30, 2026, 11:59pm ET · <strong>Bonus stack:</strong> Aeroplan cardholders get an additional 10% on transfers of 50K+ UR (capped at 25K bonus points/yr) · <strong>Source:</strong> Frequent Miler<sup><a href="#s5">[5]</a></sup></p>
+  <p>This is Chase's only airline transfer bonus of 2026 to date, and — per call <em>2026-08-24-1</em> — likely its last of the year. Aeroplan's dynamic pricing has widened cheap partner-award floors on Star Alliance sweet spots that survived Turkish's December 2025 devaluation.</p>
+  <p class="move"><span class="label">Your move:</span> Transfer only if you have Aeroplan award space held (Aeroplan releases seats close to departure; hold before you transfer). If you also hold a Chase Aeroplan co-brand card, stack the extra 10% and transfer in a single ≥50K push.</p>
+</div>
+
+<div class="offer">
+  <h3>Citi ThankYou → Leading Hotels of the World Leaders Club · 25%</h3>
+  <p class="facts"><strong>Ratio:</strong> 1,000 ThankYou = 250 Leaders Club points (Citi Strata Premier / Strata Elite / Prestige / AT&T Access More) · <strong>Expires:</strong> September 19, 2026, 11:59pm ET · <strong>Source:</strong> Frequent Miler<sup><a href="#s8">[8]</a></sup></p>
+  <p>The bonus lifts Citi's default 5:1 rate to 4:1 — matching Amex's standard ratio into the same partner. LHW's Leaders Club redemptions are cash-plus-points free-night certificates at niche independent luxury properties; the point currency is only useful if you already stay at LHW hotels.</p>
+  <p class="move"><span class="label">Your move:</span> Skip unless you have a specific LHW free-night reservation in mind. This is one of the narrowest transfer destinations Citi offers and there is no aftermarket for Leaders Club points if the reservation falls through.</p>
+</div>
+
+<div class="offer">
+  <h3>Capital One Miles → JAL Mileage Bank · 30%</h3>
+  <p class="facts"><strong>Ratio:</strong> 1,000 Capital One = 975 JAL miles · <strong>Expires:</strong> September 30, 2026, 11:59pm ET · <strong>Source:</strong> Frequent Miler<sup><a href="#s6">[6]</a></sup>, TPG<sup><a href="#s2">[2]</a></sup></p>
+  <p>This bonus pushes JAL's standard 4:3 Capital One transfer to effectively 1:0.975 — almost, but not quite, 1:1. JAL's distance-based partner award chart remains the primary use case: British Airways/Iberia/Qatar/AA short-haul at very low miles, plus JAL's own metal on trans-Pacific business at rates below AA's peak pricing.</p>
+  <p class="move"><span class="label">Your move:</span> Transfer only if you have a JAL partner award already searched and available on JAL.com. JAL award space is thin outside of long-lead windows; do not build a JAL balance speculatively.</p>
+</div>
+
+<div class="offer">
+  <h3>Rove Miles → Copa Airlines ConnectMiles · 40%</h3>
+  <p class="facts"><strong>Ratio:</strong> 1,000 Rove = 1,400 ConnectMiles · <strong>Expires:</strong> September 30, 2026, 11:59pm EST · <strong>Source:</strong> Frequent Miler<sup><a href="#s7">[7]</a></sup></p>
+  <p>Rove is a newer travel-points startup competing with Bilt for the everyday-spend flexible-points slot. Copa ConnectMiles is Star Alliance and has some sweet spots for Latin America intra-region and short-haul US-to-Central America, but it is not a marquee currency and its award chart has been trimmed twice since 2024.</p>
+  <p class="move"><span class="label">Your move:</span> Only relevant if you already hold Rove Miles AND have a specific ConnectMiles Star Alliance redemption priced. For everyone else, this is a headline-grabbing bonus into a currency you probably do not need — noise, not signal.</p>
+</div>
+
+<h2>Program Watch</h2>
+
+<div class="offer">
+  <h3>Flying Blue tiered fares go live September 8</h3>
+  <p>Air France / KLM Flying Blue splits every direct-airline award into Light, Standard, and Flex fares starting September 8, 2026<sup><a href="#s9">[9]</a></sup>. Light preserves today's headline mileage price but strips checked bag, seat assignment, changes, and lounge access; Standard costs 20–30% more miles for what today's award already includes; Flex adds refundability. Partner-airline award pricing is explicitly unchanged. Business Light will price at 60,000 miles vs Standard at 75,000 and Flex at 110,000 on comparable routes.</p>
+  <p class="move"><span class="label">Your move:</span> Book any AF/KLM direct award you are considering before September 8 to lock today's Standard-equivalent pricing. After September 8, treat partner metal (Delta, KLM's SkyTeam siblings, Etihad, Kenya) as the sweet-spot lane — this is exactly the split call <em>2026-09-02-1</em> is testing.</p>
+</div>
+
+<div class="offer">
+  <h3>Marriott Bonvoy Q4 2026 promo — leaked, not launched</h3>
+  <p>LoyaltyLobby reported that Marriott's Q4 2026 global promotion will offer 1,500 base bonus points per paid 2+ night stay plus an additional 3,000 resort-property bonus, with registration opening ~September 9 and stays September 22 – November 22, 2026<sup><a href="#s10">[10]</a></sup>. This is a leak — not an official Marriott launch — and terms could shift. Historical pattern (per call <em>2026-08-31-1</em>) is for the leaked structure to match the official launch within a few days of the leaked registration date.</p>
+  <p class="move"><span class="label">Your move:</span> If you have Q4 paid Marriott stays already booked, wait until the official launch on or near September 9 before shifting stay dates — some prior Bonus Journeys promos required registration BEFORE the stay to earn bonus points, so register the moment the launch page is live.</p>
+</div>
+
+<div class="offer">
+  <h3>World of Hyatt "2K Bonus Points" summer offer ends September 7</h3>
+  <p>Hyatt's summer promotion — 2,000 bonus points per every two eligible nights, capped at 8,000 bonus points — closes for stays after September 7, 2026<sup><a href="#s11">[11]</a></sup>. Registration closed September 1. Hyatt's Q4 successor promo has not yet been announced; call <em>2026-08-28-1</em> tests whether a system-wide replacement launches by year-end.</p>
+  <p class="move"><span class="label">Your move:</span> If you registered and have a 5+ night stay bookable through Sept 7, complete it now to top out the 8,000-point cap. If not, wait for Q4 — do not book incremental Hyatt stays just to catch a promo that expires in four days.</p>
+</div>
+
+<h2>Today's Play</h2>
+
+<div class="play-box">
+  <h3>Chase UR → Aeroplan 20%, but only against held space</h3>
+  <p>Of the six live transfer bonuses today, the Chase UR → Aeroplan 20% (stackable with a further 10% for Aeroplan cardholders on 50K+ transfers) is the highest floor-value transfer available if you actually redeem it. Aeroplan's dynamic award engine has cheap Star Alliance partner windows that reward planning; Chase has run this exact bonus once per year for three years running and is unlikely to reprise it in Q4 (see call <em>2026-08-24-1</em>).</p>
+  <p class="move"><span class="label">Your move:</span> Do not transfer without an Aeroplan award already found and held. Aeroplan releases partner space close to departure and pricing fluctuates within a single day; a speculative 100K UR transfer against "I'll find something later" is exactly the mistake this newsletter exists to prevent.</p>
+</div>
+
+<h2>The Ledger</h2>
+
+<div class="ledger">
+  <p class="ledger-record">Season 1 · 0–0 across graded calls · 18 open · first call due for grading 2026-09-22</p>
+
+  <div class="ledger-call">
+    <span class="tag tag-open">Open · Today</span>
+    <strong>2026-09-03-1</strong> — Bilt Rewards will publicly launch at least one Bilt → Alaska/Hawaiian Atmos Rewards transfer bonus of 20% or greater between 2026-09-03 and 2027-01-31 inclusive. <em>Basis:</em> Alaska consolidated HawaiianMiles and Mileage Plan into Atmos on 2026-08-14, Bilt is the only major flexible-points program with a direct route in (see call 2026-08-29-1), and Bilt's monthly Rent Day gives four Q4 promo slots. Alaska has commercial incentive to reward its exclusive bank partner during the Atmos launch window. <em>Horizon:</em> 2027-01-31.
+  </div>
+
+  <p style="font-size:14px; color:rgba(216,208,180,0.65); font-style:italic; margin-top:16px;">No calls graded today — nearest horizon is 2026-08-31-1 (Marriott Q4 launch) on 2026-09-22.</p>
+</div>
+
+<h2>Sources</h2>
+
+<div class="sources">
+  <ol>
+    <li id="s1"><a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler — Current point transfer bonuses for September 2026</a><span class="tier">Trade</span></li>
+    <li id="s2"><a href="https://thepointsguy.com/loyalty-programs/current-transfer-bonuses/">The Points Guy — Credit card transfer bonuses (September)</a><span class="tier">Trade</span></li>
+    <li id="s3"><a href="https://frequentmiler.com/30-percent-transfer-bonus-american-express-membership-rewards-avios-british-airways-iberia-aer-lingus/">Frequent Miler — Amex MR → Avios 30% bonus (BA / Iberia / Aer Lingus)</a><span class="tier">Trade</span></li>
+    <li id="s4"><a href="https://frequentmiler.com/amex-membership-rewards-hilton-honors-30-percent-transfer-bonus/">Frequent Miler — Amex MR → Hilton Honors 30% bonus</a><span class="tier">Trade</span></li>
+    <li id="s5"><a href="https://frequentmiler.com/get-20-bonus-when-transferring-chase-ultimate-rewards-to-air-canada-aeroplan-stack-with-10-cardholder-bonus/">Frequent Miler — Chase UR → Aeroplan 20% bonus (+10% cardholder stack)</a><span class="tier">Trade</span></li>
+    <li id="s6"><a href="https://frequentmiler.com/capital-one-miles-jal-japan-airlines-30-percent-transfer-bonus/">Frequent Miler — Capital One Miles → JAL 30% bonus</a><span class="tier">Trade</span></li>
+    <li id="s7"><a href="https://frequentmiler.com/rove-copa-airlines-transfer-partner-bonus/">Frequent Miler — Rove Miles → Copa ConnectMiles 40% bonus</a><span class="tier">Trade</span></li>
+    <li id="s8"><a href="https://frequentmiler.com/citi-thankyou-leading-hotels-of-the-world-lhw-25-percent-transfer-bonus/">Frequent Miler — Citi ThankYou → Leading Hotels of the World 25% bonus</a><span class="tier">Trade</span></li>
+    <li id="s9"><a href="https://milesopedia.com/en/news/programs/flying-blue-light-standard-flex-reward-tickets/">Milesopedia — Flying Blue Light / Standard / Flex reward tickets (from Sept 8)</a><span class="tier">Trade</span></li>
+    <li id="s10"><a href="https://loyaltylobby.com/2026/08/28/marriott-bonvoy-up-to-4500-bonus-points-for-each-stay-september-22-november-22-2026/">LoyaltyLobby — Marriott Bonvoy Q4 2026 promo leak (Sept 22 – Nov 22)</a><span class="tier">Trade</span></li>
+    <li id="s11"><a href="https://newsroom.hyatt.com/2June2026WorldofHyattGlobalSummerOffers">Hyatt Newsroom — World of Hyatt 2026 global summer offers</a><span class="tier">Primary</span></li>
+  </ol>
+  <p style="font-size:13px; color:rgba(216,208,180,0.6); font-style:italic; margin-top:14px;">Every percentage, expiry, and ratio above is corroborated across at least two independent trade desks; several issuer transfer pages are behind account login and cannot be linked publicly. Always confirm on your issuer's own transfer page before initiating any transfer.</p>
+</div>
+
+<nav class="bar" aria-label="Edition navigation">
+  <a href="2026-09-02.html">← YESTERDAY</a>
+  <span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<footer>
+  Content is AI-synthesized from public trade sources. Every published percentage, expiry, and transfer ratio should be verified on the issuer's own transfer page before you move points — transfers are one-way and irreversible. Confirm award availability first; transfer only against a redemption already held.
+</footer>
+
+<script>
+const S = "The Points Brief for Thursday, September 3, 2026. Six transfer bonuses live today, but only two are worth your attention if you don't already have a redemption held. " +
+"American Express is running thirty percent to the Avios family — British Airways, Iberia, and Aer Lingus — at one thousand Membership Rewards to thirteen hundred Avios through September 27. This is Amex's routine semi-annual Avios push; transfer only against a redemption already priced and held. " +
+"Chase is running twenty percent to Air Canada Aeroplan at one thousand Ultimate Rewards to twelve hundred points through September 30. Aeroplan cardholders can stack a further ten percent on transfers of fifty thousand or more, capped at twenty-five thousand bonus points per year. This is Chase's only airline transfer bonus of 2026 to date and likely its last of the year. Aeroplan's dynamic pricing rewards planning; do not transfer without an award already found and held. " +
+"Also live: Capital One thirty percent to JAL through September 30, Citi twenty-five percent to Leading Hotels of the World through September 19, Amex thirty percent to Hilton Honors through October 14, and Rove forty percent to Copa Airlines ConnectMiles through September 30. All are narrow — noise for most stacks. " +
+"Program Watch. Flying Blue's tiered fares — Light, Standard, and Flex — go live on Air France and KLM direct awards on September 8. Light keeps today's headline mileage price but strips flexibility and inclusions; Standard costs twenty to thirty percent more miles for what today's award already includes. Partner airline pricing is unchanged. Book any AF or KLM direct award you are considering before September 8. " +
+"Marriott's Q4 2026 promotion leaked to LoyaltyLobby: fifteen hundred base bonus points per paid two-plus-night stay, plus three thousand at resorts, September 22 through November 22, with registration around September 9. Not officially launched. Register the moment the launch page is live if you have Q4 stays booked. " +
+"Hyatt's summer two-thousand bonus points promo ends for stays after September 7 — top out the eight thousand point cap if you registered before September 1. " +
+"Today's play: Chase Ultimate Rewards to Aeroplan at twenty percent, but only against Aeroplan award space already found and held. A speculative one-hundred-thousand-point transfer against 'I'll find something later' is exactly the mistake this newsletter exists to prevent. " +
+"The Ledger: eighteen calls open, nothing due for grading yet — first call is the Marriott Q4 launch test on September 22. Today's new call: Bilt Rewards will publicly launch at least one Bilt to Alaska Atmos Rewards transfer bonus of twenty percent or greater between now and end of January, on the reasoning that Bilt is the only major flexible-points program with a direct route into Atmos following its August 14 launch, and Bilt's monthly Rent Day gives four promo slots between now and then. Horizon: January 31. " +
+"Point transfers are one-way and irreversible. Confirm availability first, then transfer.";
+document.getElementById('listen').addEventListener('click', function() {
+  const btn = this;
+  if (window.speechSynthesis.speaking) {
+    window.speechSynthesis.cancel();
+    btn.textContent = '▶ Listen (~3 min)';
+    return;
+  }
+  const u = new SpeechSynthesisUtterance(S);
+  u.rate = 0.93;
+  const voices = window.speechSynthesis.getVoices();
+  const pick = voices.find(v => /Daniel/i.test(v.name)) ||
+               voices.find(v => /Alex/i.test(v.name)) ||
+               voices.find(v => v.lang && v.lang.startsWith('en'));
+  if (pick) u.voice = pick;
+  u.onend = function() { btn.textContent = '▶ Listen (~3 min)'; };
+  u.onerror = function() { btn.textContent = '▶ Listen (~3 min)'; };
+  btn.textContent = '■ Stop';
+  window.speechSynthesis.speak(u);
+});
+if (typeof speechSynthesis !== 'undefined') speechSynthesis.onvoiceschanged = function(){};
+</script>
+
+</body>
+</html>
