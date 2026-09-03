@@ -206,6 +206,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-03-1",
+      "date": "2026-09-03",
+      "call": "Bilt Rewards will publicly launch at least one Bilt Rewards \u2192 Alaska/Hawaiian Atmos Rewards transfer bonus of 20% or greater between 2026-09-03 and 2027-01-31 inclusive.",
+      "basis": "Alaska Air Group completed the operational consolidation of HawaiianMiles and Mileage Plan into a single Atmos Rewards balance on 2026-08-14, and Bilt remains the only major flexible-points program with a direct transfer route in \u2014 with Amex closed since June 2025 and no Chase/Citi/Capital One partnership in flight (see call 2026-08-29-1). Bilt's monthly Rent Day cadence gives it four dedicated promo slots between now and end of January, and Atmos is the single highest-value differentiator Bilt can lean on against Chase or Amex. Alaska loyalty leadership has publicly framed banks as 'ultimately competitors', which reinforces Bilt's exclusivity moat and gives Alaska commercial incentive to reward Bilt with elevated promo terms. A five-month silence on Bilt's most distinctive transfer partner immediately after Atmos launched would waste the marketing moment; a bonus in the Sep-Jan window is the base case.",
+      "horizon": "2027-01-31",
+      "test": "GRADE HIT if any Bilt Rewards \u2192 Alaska/Hawaiian Atmos Rewards transfer bonus of 20% or greater is publicly offered at any point between 2026-09-03 and 2027-01-31 inclusive, evidenced by Bilt's own transfer page, an Alaska/Atmos promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered from Bilt to Atmos in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
