@@ -218,6 +218,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-04-1",
+      "date": "2026-09-04",
+      "call": "Amex Membership Rewards will run at least one transfer bonus of 25% or greater to Air France/KLM Flying Blue between 2026-09-04 and 2027-01-31 inclusive.",
+      "basis": "Flying Blue's September 8, 2026 tiered-fare rollout raises the effective mile cost of a Standard AF/KLM direct award to roughly 75,000 miles one-way in business (up from ~60,000 at the old entry level) \u2014 a de-facto 25% Standard-fare devaluation on the routes Amex members transfer most heavily to. Amex has run Membership Rewards \u2192 Flying Blue bonuses roughly twice a year on a steady cadence (most recently a 30% bonus in March 2026 and a 25% in June 2025), and post-devaluation windows are historically prime bonus periods as the source program smooths the effective cut for its members. Amex has commercial incentive to keep its most-transferred European partner attractive relative to Citi, which has already re-established quarterly Flying Blue cadence. A five-month silence spanning the exact post-devaluation adoption window would break both Amex's own cadence and the historical pattern of partner-devaluation \u2192 bank bonus response.",
+      "horizon": "2027-01-31",
+      "test": "GRADE HIT if any Amex Membership Rewards \u2192 Air France/KLM Flying Blue transfer bonus of 25% or greater is publicly offered at any point between 2026-09-04 and 2027-01-31 inclusive, evidenced by Amex's own transfer page, Flying Blue's promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
