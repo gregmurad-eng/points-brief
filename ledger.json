@@ -230,6 +230,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-05-1",
+      "date": "2026-09-05",
+      "call": "Amex Membership Rewards will publicly offer a transfer bonus of 20% or greater to Marriott Bonvoy between 2026-09-05 and 2026-11-15 inclusive.",
+      "basis": "Marriott's leaked Q4 2026 global earning promotion (LoyaltyLobby, registration Sept 9, stay window Sept 22 \u2013 Nov 22) creates aligned commercial incentive on the earn side for Amex to run a smoothing points-refill bonus in the same window \u2014 the classic handshake between hotel earn-promo and bank transfer-promo has repeated in Q4 2023, Q4 2024 (Amex\u2192Marriott 20% Oct 22 \u2013 Nov 20), and Q4 2025. Amex's last MR\u2192Marriott bonus was a 20% offer in April 2026 (Apr 8 \u2013 May 5); a six-month gap through October fits Amex's typical semi-annual Marriott cadence. Amex has commercial pressure to compete with Chase's fall hotel promos and needs a Q4 hotel bonus once its Hilton box is checked. The horizon lands on Nov 15 to catch either an October launch (matching 2024) or a November launch (matching 2025), while giving a clean 10-week resolution window.",
+      "horizon": "2026-11-15",
+      "test": "GRADE HIT if any Amex Membership Rewards \u2192 Marriott Bonvoy transfer bonus of 20% or greater is publicly offered at any point between 2026-09-05 and 2026-11-15 inclusive, evidenced by Amex's own transfer page, Marriott's promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
