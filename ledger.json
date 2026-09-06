@@ -242,6 +242,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-06-1",
+      "date": "2026-09-06",
+      "call": "Rove Miles will either extend its current 40% Rove \u2192 Copa Airlines ConnectMiles transfer bonus past 2026-09-30, OR publicly launch a follow-up Rove \u2192 Copa transfer bonus of 20% or greater between 2026-10-01 and 2026-12-31 inclusive.",
+      "basis": "Copa Airlines ConnectMiles went live as a Rove transfer partner on September 1, 2026, with a launch 40% bonus at 1:1.4 running through September 30 at 11:59pm EST. New-partner launch promos of this size are marketing investments, not one-shot experiments \u2014 Rove needs to seed transfer volume through Q4 to prove the partnership is working and to convert new sign-ups it acquired during the Copa announcement cycle. A hard cutover from 40% to 0% at 30 days would signal Rove either overestimated launch demand or is in cost-control mode, both of which contradict its 2026 aggressive-partner-addition posture. Q4 is Latin America holiday-booking season, which is exactly when Copa ConnectMiles inbound transfer value peaks. A four-month silence on a marquee new partner during its natural high-demand window would waste the launch narrative.",
+      "horizon": "2026-12-31",
+      "test": "GRADE HIT if Rove either (a) extends the current 40% Rove \u2192 Copa ConnectMiles transfer bonus past 2026-09-30 in any form (same 40% extended, or any Rove \u2192 Copa bonus continuing into October), OR (b) publicly offers a follow-up Rove \u2192 Copa transfer bonus of 20% or greater at any point between 2026-10-01 and 2026-12-31 inclusive, evidenced by Rove's own blog, transfer page, or a Tier 1/Tier 2 confirmation. GRADE MISS if the current 40% bonus expires as scheduled on 2026-09-30 AND no follow-up Rove \u2192 Copa bonus of 20% or greater is offered between 2026-10-01 and 2026-12-31.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
