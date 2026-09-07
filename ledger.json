@@ -254,6 +254,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-07-1",
+      "date": "2026-09-07",
+      "call": "No PUBLIC Amex Membership Rewards \u2192 Delta SkyMiles transfer bonus of any percentage will be broadly (non-targeted) offered between 2026-09-07 and 2027-01-31 inclusive.",
+      "basis": "Public Amex\u2192Delta transfer bonuses are vanishingly rare. Delta is Amex's largest single co-brand relationship by revenue, and the two firms deliberately keep the flexible-transfer route quiet because promoting it would cannibalise Delta SkyMiles card acquisition (which pays Amex per-account and per-swipe economics that dwarf transfer margins). Occasional targeted transfer bonuses have appeared in individual Amex accounts historically, but a broadly announced public bonus has not run in years. The loud consensus after Delta's 2024\u20132025 SkyMiles devaluations is that Amex should sweeten the transfer route to keep members holding SkyMiles balances; this call bets that the co-brand economics prevail and Amex stays quiet through the winter transfer window. A first public Amex\u2192Delta bonus in five months would signal a genuine strategy shift, not just a promo cycle.",
+      "horizon": "2027-01-31",
+      "test": "GRADE HIT if no PUBLIC (broadly announced, non-targeted) Amex Membership Rewards \u2192 Delta SkyMiles transfer bonus of any percentage is publicly offered at any point between 2026-09-07 and 2027-01-31 inclusive. GRADE MISS if any such publicly announced Amex\u2192Delta bonus (>0%) runs during that window, evidenced by Amex's own transfer page and confirmed by at least one Tier 1 or Tier 2 source (targeted mailings or account-only offers do not count).",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
