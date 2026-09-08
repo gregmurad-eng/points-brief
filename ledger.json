@@ -266,6 +266,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-08-1",
+      "date": "2026-09-08",
+      "call": "Within 30 days of Flying Blue's September 8, 2026 tiered-fare rollout, at least one of Amex Membership Rewards, Chase Ultimate Rewards, Citi ThankYou, Capital One Miles, or Bilt Rewards will publicly launch a transfer bonus of 20% or greater to Air France/KLM Flying Blue \u2014 a smoothing response to the direct-award devaluation.",
+      "basis": "Historically, bank programs respond to partner-airline devaluations with smoothing bonuses during the adoption window, because member trust in the source program erodes when a headline destination cuts value while transfer economics stay flat. Amex has the strongest cadence to Flying Blue (30% in March 2026, 25% in June 2025) and its Membership Rewards-to-Flying Blue route has now gone six months quiet \u2014 the exact silence a Q4 push would break. Citi's own Flying Blue quarterly cadence next opens roughly early-to-mid November, outside this 30-day window, which effectively makes this call a bet on Amex specifically stepping into the vacuum inside a month. Bilt has run Flying Blue Rent Day bonuses at 100% historically and has a September 30 Rent Day slot open. This is a short-horizon, high-topicality call: if the historical pattern holds, at least one of the five will move fast; if none does, the 'bank smooths partner devaluations' rule is weaker than the industry assumes.",
+      "horizon": "2026-10-08",
+      "test": "GRADE HIT if any of Amex Membership Rewards, Chase Ultimate Rewards, Citi ThankYou, Capital One Miles, or Bilt Rewards publicly offers a transfer bonus of 20% or greater to Air France/KLM Flying Blue at any point between 2026-09-08 and 2026-10-08 inclusive, evidenced by that program's own transfer page, Flying Blue's promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered from any of those five programs in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
