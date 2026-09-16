@@ -178,10 +178,10 @@
       "basis": "LoyaltyLobby leaked the Q4 2026 Marriott promotion in early August: registration ~Sept 9, stay window Sept 22 \u2013 Nov 22, 1,500 base bonus points for 2+ night paid stays, extra 3,000 points at resorts. Marriott has publicly launched a Q4 global earning promotion in every year since 2019, and leaked-terms-then-official-launch is the normal Marriott pattern \u2014 the leak's structural shape (base + resort component + ~9-week stay window opening late September) has been consistent across five straight Q4 promos. A missed launch, or terms materially weaker than the leak, would signal Marriott is holding back Q4 generosity in a year that has already seen a 5\u201310% award-chart devaluation and a persistent flash devaluation trickle. The test resolves cleanly by Sept 22, the leaked stay-window start.",
       "horizon": "2026-09-22",
       "test": "GRADE HIT if Marriott Bonvoy publicly launches a Q4 2026 global earning promotion with registration open to members on or before 2026-09-22, offering a base of at least 1,000 bonus points for paid stays of two or more nights, plus an additional resort-property bonus component of any size, with a stay window that falls within 2026-09-22 through 2026-11-30 inclusive, evidenced by marriott.com/loyalty (Tier 1) or a Tier 1/Tier 2 confirmation. GRADE MISS if no such promo is publicly launched by 2026-09-22, OR if the promo launched by that date has a base of less than 1,000 bonus points for a 2+ night paid stay, OR lacks any resort-property bonus component.",
-      "status": "OPEN",
-      "graded_on": null,
-      "verdict": null,
-      "evidence": null
+      "status": "GRADED",
+      "graded_on": "2026-09-16",
+      "verdict": "HIT",
+      "evidence": "Marriott officially launched its Q4 2026 global promotion on 2026-09-09 with registration open through 2026-11-13 and a stay window of 2026-09-22 to 2026-11-22. Terms: 1,500 base bonus points for paid stays of 2+ nights plus an additional 3,000 bonus points at resort properties (4,500 max). All three test conditions met and confirmed by multiple Tier 2 sources; primary registration page: https://www.marriott.com/loyalty/promotion.mi?promotion=WL26"
     },
     {
       "id": "2026-09-01-1",
@@ -274,6 +274,18 @@
       "basis": "Historically, bank programs respond to partner-airline devaluations with smoothing bonuses during the adoption window, because member trust in the source program erodes when a headline destination cuts value while transfer economics stay flat. Amex has the strongest cadence to Flying Blue (30% in March 2026, 25% in June 2025) and its Membership Rewards-to-Flying Blue route has now gone six months quiet \u2014 the exact silence a Q4 push would break. Citi's own Flying Blue quarterly cadence next opens roughly early-to-mid November, outside this 30-day window, which effectively makes this call a bet on Amex specifically stepping into the vacuum inside a month. Bilt has run Flying Blue Rent Day bonuses at 100% historically and has a September 30 Rent Day slot open. This is a short-horizon, high-topicality call: if the historical pattern holds, at least one of the five will move fast; if none does, the 'bank smooths partner devaluations' rule is weaker than the industry assumes.",
       "horizon": "2026-10-08",
       "test": "GRADE HIT if any of Amex Membership Rewards, Chase Ultimate Rewards, Citi ThankYou, Capital One Miles, or Bilt Rewards publicly offers a transfer bonus of 20% or greater to Air France/KLM Flying Blue at any point between 2026-09-08 and 2026-10-08 inclusive, evidenced by that program's own transfer page, Flying Blue's promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered from any of those five programs in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
+    },
+    {
+      "id": "2026-09-16-1",
+      "date": "2026-09-16",
+      "call": "Chase Ultimate Rewards will NOT run another UR \u2192 Marriott Bonvoy transfer bonus of 50% or greater between 2026-10-16 and 2027-04-15 inclusive \u2014 the current 70% bonus (Sep 15 \u2013 Oct 15, 2026) is a one-off headline event, not the start of a new elevated cadence.",
+      "basis": "Multiple Tier 2 sources (The Points Guy, One Mile at a Time, LoyaltyLobby, Frequent Miler, Upgraded Points) explicitly describe the current 70% offer as the highest-ever Chase\u2192Marriott bonus. Historical Chase\u2192Marriott bonuses have topped out around 25\u201350%, most recently in Q4 2024. Chase's Q4 2026 hotel push appears to be split between IHG (70%, July\u2013August) and Marriott (70%, Sep\u2013Oct) \u2014 both concentrated in the second half of the year rather than repeated. Marriott's May 2026 award-chart devaluation and persistent flash devaluation trickle already make the transfer route economically weaker than headline percentages suggest, and repeating a record-high bonus inside six months would either compound Marriott's revenue leak or signal deeper commercial pressure than currently visible. A repeat at 50%+ inside six months would break the observed once-per-year cadence of elevated Chase\u2192Marriott bonuses.",
+      "horizon": "2027-04-15",
+      "test": "GRADE HIT if no Chase Ultimate Rewards \u2192 Marriott Bonvoy transfer bonus of 50% or greater is publicly offered at any point between 2026-10-16 and 2027-04-15 inclusive. GRADE MISS if any such bonus (\u226550%) is announced or live during that window, evidenced by Chase's own transfer page and confirmed by at least one Tier 1 or Tier 2 source. GRADE UNSETTLED if Chase runs a Chase\u2192Marriott bonus of 40\u201349% in that window (the record bar remains intact even if activity is elevated).",
       "status": "OPEN",
       "graded_on": null,
       "verdict": null,
