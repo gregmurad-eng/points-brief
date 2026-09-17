@@ -290,6 +290,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-17-1",
+      "date": "2026-09-17",
+      "call": "Neither Amex Membership Rewards nor Citi ThankYou will publicly launch a transfer bonus of 25% or greater to Marriott Bonvoy between 2026-09-17 and 2026-10-15 inclusive \u2014 Chase\u2019s record 70% Chase\u2192Marriott bonus (Sep 15 \u2013 Oct 15, 2026) will not trigger an in-window competitive response from other transferable-points programs.",
+      "basis": "Amex and Citi run hotel bonuses on their own cadences, not reactively. Amex\u2019s last MR\u2192Marriott bonus was a 20% offer in April 2026 (Apr 8\u2013May 5), and its typical semi-annual Marriott rhythm points to an October or November launch \u2014 landing outside or right at the edge of Chase\u2019s window. Citi ThankYou\u2192Marriott bonuses are historically infrequent (last meaningful public offer: 25% in 2023) and Citi\u2019s Q4 promo focus has consistently been airlines (Turkish, Flying Blue) rather than hotels. On the sell side, Marriott and Chase co-invested in the record 70% promo; Marriott would not simultaneously undercut it with an equal-or-better Amex or Citi bonus during the same 30-day window. A rival 25%+ MR\u2192Marriott or TY\u2192Marriott bonus inside Chase\u2019s window would be a genuine strategic response \u2014 the historical base rate says it does not happen.",
+      "horizon": "2026-10-15",
+      "test": "GRADE HIT if no Amex Membership Rewards \u2192 Marriott Bonvoy transfer bonus of 25% or greater AND no Citi ThankYou \u2192 Marriott Bonvoy transfer bonus of 25% or greater is publicly offered at any point between 2026-09-17 and 2026-10-15 inclusive. GRADE MISS if either program publicly offers a 25%+ transfer bonus to Marriott in that window, evidenced by that program\u2019s own transfer page and confirmed by at least one Tier 1 or Tier 2 source.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
