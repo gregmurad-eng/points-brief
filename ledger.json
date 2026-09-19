@@ -314,6 +314,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-19-1",
+      "date": "2026-09-19",
+      "call": "Chase will NOT change the base Ultimate Rewards \u2192 Marriott Bonvoy transfer ratio OR the base Ultimate Rewards \u2192 IHG One Rewards transfer ratio from 1:1 for any consumer or business Chase Ultimate Rewards-earning credit card at any point between 2026-09-19 and 2026-12-31 inclusive.",
+      "basis": "The October 1 Chase\u2192Hyatt 4:3 cut is a targeted segmentation move \u2014 Sapphire Reserve and Sapphire Reserve for Business keep 1:1, meaning Chase is deliberately carving Hyatt transfer value as a premium-tier benefit rather than repricing hotels wholesale. Marriott Bonvoy and IHG One Rewards are much less valuable per-point transfer partners than Hyatt (Hyatt ~2c/pt vs Marriott ~0.7c/pt and IHG ~0.5c/pt), so the economic case for a further consumer-tier haircut is far weaker. Running a record-high 70% UR\u2192Marriott bonus RIGHT NOW alongside a base ratio cut on the same partner would be commercially incoherent, and Chase gave 110 days of advance notice on the Hyatt change \u2014 that runway is uncharacteristic of a program planning back-to-back ratio cuts. A second consumer-tier hotel ratio cut inside a single quarter would provoke a much louder backlash than the Hyatt move already has.",
+      "horizon": "2026-12-31",
+      "test": "GRADE HIT if the base Chase Ultimate Rewards \u2192 Marriott Bonvoy transfer ratio remains 1:1 AND the base Chase Ultimate Rewards \u2192 IHG One Rewards transfer ratio remains 1:1 for all consumer and business Chase Ultimate Rewards-earning credit cards at every point between 2026-09-19 and 2026-12-31 inclusive, evidenced by Chase's own Ultimate Rewards transfer page. GRADE MISS if either base ratio is publicly changed to anything other than 1:1 (for any Chase UR-earning card, whether or not premium tiers are carved out) at any point in that window, evidenced by Chase's own transfer page and confirmed by at least one Tier 1 or Tier 2 source.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
