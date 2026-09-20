@@ -326,6 +326,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-20-1",
+      "date": "2026-09-20",
+      "call": "Bilt Rewards will publicly launch a Bilt Rewards to World of Hyatt transfer bonus of 25% or greater between 2026-10-01 and 2026-11-30 inclusive - a Rent Day competitive response to Chase's Sapphire Preferred / Ink Business Preferred 4:3 Hyatt devaluation that lands on October 1, 2026.",
+      "basis": "Bilt is one of only two major flexible-points programs with an active World of Hyatt transfer route (the other being Chase); Amex, Citi, and Capital One do not transfer to Hyatt at all. October 1 is the exact day Chase's Sapphire Preferred and Ink Preferred cardholders lose their 1:1 rate to Hyatt while Bilt keeps 1:1 on every card. That is a fully-primed competitive asymmetry, and Bilt's monthly Rent Day cadence gives it two dedicated promo slots inside the 60-day window. Bilt has an established pattern of running Rent Day bonuses to differentiated aspirational partners immediately after competitor moves (the September 2026 Virgin Atlantic Rent Day at up to 100% is the current template). A 60-day silence on Bilt's most valuable exclusive-vs-Chase lever during the exact 60 days when Chase is publicly penalising Preferred cardholders on the same partner would waste the marketing moment.",
+      "horizon": "2026-11-30",
+      "test": "GRADE HIT if any Bilt Rewards to World of Hyatt transfer bonus of 25% or greater is publicly offered at any point between 2026-10-01 and 2026-11-30 inclusive, evidenced by Bilt's own transfer page, a Hyatt promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered from Bilt to World of Hyatt in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
