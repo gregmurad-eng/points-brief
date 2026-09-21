@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — Sunday, September 21, 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #080c14; color: #d8d0b4; font-family: Georgia, 'Times New Roman', serif; -webkit-text-size-adjust: 100%; }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 32px 28px 56px; }
+  h1 { font-size: 42px; letter-spacing: 0.02em; margin: 0 0 4px; color: #c9a84c; font-weight: 700; }
+  .tagline { color: #8a8570; font-size: 15px; margin-bottom: 4px; font-style: italic; }
+  .dateline { color: #a8a288; font-size: 15px; margin-bottom: 18px; }
+  h2 { font-size: 24px; color: #c9a84c; border-bottom: 1px solid #3a3320; padding-bottom: 6px; margin: 40px 0 20px; letter-spacing: 0.01em; }
+  h3 { font-size: 19px; color: #e8dfc0; margin: 26px 0 8px; }
+  p { font-size: 17px; line-height: 1.65; margin: 0 0 14px; }
+  a { color: #c9a84c; text-decoration: none; border-bottom: 1px dotted #7a6a34; }
+  a:hover { color: #e0c266; }
+  sup a { border: none; padding: 6px 4px; margin: -6px -4px; color: #c9a84c; }
+  .bar { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; padding: 12px 0; border-bottom: 1px solid #2a2617; margin-bottom: 24px; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .bar a { white-space: nowrap; padding: 12px 8px; margin: -6px -8px; display: inline-block; min-height: 44px; line-height: 1.6; border: none; }
+  .bar .next { white-space: nowrap; color: #5a5540; padding: 12px 8px; display: inline-block; min-height: 44px; line-height: 1.6; }
+  .nav-mid { display: inline-flex; gap: 0; }
+  .nav-mid a { color: #c9a84c; margin: 0 9px; }
+  .urgent { border-left: 4px solid #c9a84c; background: #14100a; padding: 14px 18px; margin: 8px 0 24px; font-size: 16px; }
+  .urgent strong { color: #c9a84c; }
+  .listen { background: transparent; color: #c9a84c; border: 1px solid #c9a84c; padding: 12px 22px; font-family: Georgia, serif; font-size: 15px; cursor: pointer; letter-spacing: 0.05em; min-height: 44px; margin: 4px 0 28px; }
+  .listen:hover { background: #14100a; }
+  .listen[disabled] { opacity: 0.6; cursor: default; }
+  .meta { color: #8a8570; font-size: 14px; font-style: italic; margin: 2px 0 14px; }
+  .move { color: #c9a84c; font-style: italic; font-size: 16px; border-left: 2px solid #c9a84c; padding-left: 12px; margin: 12px 0 8px; }
+  .move strong { color: #e0c266; font-style: normal; letter-spacing: 0.04em; }
+  .signal { border: 1px solid #3a3320; background: #10130c; padding: 18px 22px; margin: 14px 0; }
+  .signal p { margin: 0 0 10px; }
+  .ledger-line { padding: 10px 14px; margin: 8px 0; border-left: 2px solid #3a3320; font-size: 16px; }
+  .ledger-line.hit { border-left-color: #c9a84c; }
+  .ledger-line.miss { border-left-color: #8a3838; color: #a88b8b; }
+  .ledger-line.unsettled { border-left-color: #4a4a4a; color: #7a7460; }
+  .ledger-line.open { border-left-color: #5a5540; }
+  .hit-tag { color: #c9a84c; font-weight: 700; letter-spacing: 0.06em; }
+  .miss-tag { color: #b04a4a; font-weight: 700; letter-spacing: 0.06em; }
+  .open-tag { color: #a8a288; font-weight: 700; letter-spacing: 0.06em; }
+  .season { color: #c9a84c; font-size: 17px; margin: 0 0 14px; letter-spacing: 0.02em; }
+  ol.sources { padding-left: 24px; font-size: 15px; line-height: 1.7; }
+  ol.sources li { margin-bottom: 8px; }
+  .tier { color: #8a8570; font-style: italic; font-size: 13px; }
+  .caution { border: 1px solid #3a3320; padding: 14px 18px; margin: 24px 0; background: #14100a; color: #b8b090; font-size: 15px; font-style: italic; }
+  footer { color: #6a6550; font-size: 13px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #2a2617; line-height: 1.65; }
+  @media (max-width: 480px) {
+    .wrap { padding: 20px 16px 40px; }
+    h1 { font-size: 32px; }
+    h2 { font-size: 21px; margin: 32px 0 16px; }
+    h3 { font-size: 17px; }
+    p, .ledger-line { font-size: 16px; }
+    .bar { font-size: 13px; gap: 8px 10px; padding: 8px 0; }
+    .bar a, .bar .next { padding: 12px 6px; margin: -4px -6px; min-height: 44px; }
+    .nav-mid a { margin: 0 6px; }
+    .urgent { font-size: 15px; padding: 12px 14px; }
+    .move { font-size: 15px; }
+    .signal { padding: 14px 16px; }
+    ol.sources { padding-left: 20px; font-size: 14px; }
+    .listen { width: 100%; text-align: center; }
+    .tagline, .dateline { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="bar"><a href="2026-09-20.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+<h1>The Points Brief</h1>
+<div class="tagline">Travel Points · Maximize every transfer</div>
+<div class="dateline">Sunday, September 21, 2026</div>
+
+<button id="listen" class="listen" onclick="toggleAudio()">▶ Listen · ~3 min</button>
+
+<h2>Today's Transfer Bonuses</h2>
+
+<h3>Amex Membership Rewards → British Airways / Iberia / Aer Lingus Avios: 30%<sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup></h3>
+<p class="meta">1,000 MR → 1,300 Avios · Ends 11:59pm September 27, 2026 · Applies to all three Avios partners.</p>
+<p>The Avios family is where Amex Membership Rewards points earn their keep against Chase — Iberia short-haul to Madrid at 34,000 Avios in business, BA short-haul US-only Aeroplan-alternative redemptions, and Aer Lingus transatlantic at 60,500 Avios in business remain three of the strongest reachable-from-a-US-bank sweet spots. This 30% has been running since August 3 and matches Amex's semi-annual Avios cadence.</p>
+<p class="move"><strong>Your move:</strong> Transfer only if you already have specific Avios award space held or a very-near-term booking window open. Do not transfer speculatively — Avios devalue faster than any other transferable partner and a 30% bonus does not compensate for a 3% chart hike six months from now.</p>
+
+<h3>Chase Ultimate Rewards → Air Canada Aeroplan: 20% (30% for Aeroplan cardholders)<sup><a href="#s3">[3]</a></sup><sup><a href="#s2">[2]</a></sup></h3>
+<p class="meta">1,000 UR → 1,200 Aeroplan · 1,000 UR → 1,300 for Aeroplan co-brand cardholders on transfers of 50,000+ · Ends September 30, 2026.</p>
+<p>Aeroplan remains one of the best Star Alliance mileage currencies reachable via a US bank transfer: no fuel surcharges on most partners, distance-based partner-award pricing that keeps western-US-to-Asia in business at 75,000 miles, and generous stopover rules. This is Chase's only UR-to-airline bonus of 2026 so far, and per ledger call 2026-08-24-1 it may well be the last for the year.</p>
+<p class="move"><strong>Your move:</strong> Worth the transfer only if you have specific Star Alliance space to book — ANA, Lufthansa, EVA, Turkish, Air Canada metal. If you are just topping up Aeroplan on speculation, wait for a 30%+ Amex or Bilt cycle rather than a 20% Chase cycle.</p>
+
+<h3>Capital One → JAL Mileage Bank: 30%<sup><a href="#s4">[4]</a></sup><sup><a href="#s2">[2]</a></sup></h3>
+<p class="meta">1,000 Cap One → 975 JAL (base ratio is 4:3 = 750 JAL; 30% bonus lifts to ~97.5%) · Ends September 30, 2026 · Minimum 1,000-mile transfer.</p>
+<p>Capital One's JAL route is a 4:3 base ratio, so a 30% bonus is really a partial-repair on the worst base ratio in the Capital One roster — it lands the effective rate at roughly 1:0.975 rather than a true 1:1.3. JAL Mileage Bank itself remains valuable for oneworld distance-based redemptions and generous partner-award pricing to Japan; Alaska/Atmos or American Airlines as booking-partner alternatives may sometimes be better.</p>
+<p class="move"><strong>Your move:</strong> Skip this and wait for a Citi ThankYou to JAL transfer (see below) — Citi's new route is 1:1 base, so 1,000 Citi points now become 1,300 JAL miles, which is 33% more than the same 1,000 Cap One miles produce here. Only transfer from Cap One if that is literally the only balance you hold and a specific redemption is queued.</p>
+
+<h3>Chase Ultimate Rewards → Marriott Bonvoy: 70% (record high)<sup><a href="#s3">[3]</a></sup><sup><a href="#s5">[5]</a></sup></h3>
+<p class="meta">1,000 UR → 1,700 Marriott · Ends 11:59pm ET October 15, 2026 · Bonus posts to Marriott within 7 days.</p>
+<p>The highest Chase-to-Marriott bonus on record. Chase Ultimate Rewards points are consensus-valued near 2 cents each and Marriott points near 0.7 cents, so even at 1:1.7 you are trading ~2c into ~1.2c of hotel value — the transfer only wins when a specific Bonvoy redemption is priced favourably or when a category-8 property is booked below the average points value.</p>
+<p class="move"><strong>Your move:</strong> Do not transfer without a specific Marriott stay priced and card-shopped first. If you have a Q4 booking at a category 6-8 property whose points price beats the equivalent cash rate at 0.9c/point or better, transfer only what that stay costs — no more. Speculative top-ups are a value leak even at 70%.</p>
+
+<h3>Amex Membership Rewards → Hilton Honors: 30%<sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup></h3>
+<p class="meta">1,000 MR → 2,600 Hilton (base is 1:2, bonus lifts to 1:2.6) · Ends October 14, 2026.</p>
+<p>The standard base ratio does most of the work here — Amex to Hilton is already 1:2, so this bonus lifts it to 1:2.6. Hilton points are worth roughly 0.5c each, meaning 1 MR point becomes about 1.3c of Hilton value, well below MR's cash-out floor. This bonus is useful only in narrow cases where a specific Hilton redemption clears 1.5c+ per point — typically Conrad Maldives, Waldorf Astoria properties, or the Points & Money slider on cash-heavy stays.</p>
+<p class="move"><strong>Your move:</strong> Skip unless you have a Conrad, Waldorf, or LXR redemption priced and the points-vs-cash math already favours points. For general Hilton stays this is worse than paying cash.</p>
+
+<h3>Citi ThankYou → Japan Airlines Mileage Bank: 30% (NEW partner)<sup><a href="#s6">[6]</a></sup><sup><a href="#s7">[7]</a></sup></h3>
+<p class="meta">1,000 TY → 1,300 JAL for Strata Elite / Strata Premier / Prestige / AT&T Access More holders (base 1:1) · Ends October 24, 2026 · Non-premium ThankYou cards transfer at 1:0.7 base.</p>
+<p>Citi added JAL as a 1:1 transfer partner on September 20 — the first new transferable-points route to JAL at a full 1:1 base ratio, making this route materially better than Capital One's long-standing 4:3 JAL partnership. The 30% launch bonus is a marketing spike, not the start of a cadence (see today's ledger call).</p>
+<p class="move"><strong>Your move:</strong> If a specific JAL redemption is on your radar — Tokyo in business (60,000 miles from the US west coast in one direction, off-peak), or Sydney-Tokyo distance-based partner space at 55,000 — this is the best route in from a US bank right now, and it is unlikely to repeat before Q2 2027. Transfer with a redemption in hand, not on speculation.</p>
+
+<h3>Citi ThankYou → Avianca LifeMiles: 25%<sup><a href="#s6">[6]</a></sup><sup><a href="#s2">[2]</a></sup></h3>
+<p class="meta">1,000 TY → 1,250 LifeMiles · Ends October 24, 2026 · Transfers process instantly.</p>
+<p>LifeMiles remains one of the top three Star Alliance mileage currencies for value redemptions — 63,000 miles US to Europe in business, 25,000 US-domestic short-haul in business, and no fuel surcharges on Star partners. Citi's LifeMiles cadence has been roughly quarterly through 2026, so this 25% is on-rhythm rather than exceptional.</p>
+<p class="move"><strong>Your move:</strong> Transfer only when a specific Star Alliance redemption is confirmed as bookable through LifeMiles — customer-service phone bookings are still common and award-holds do not exist. If you are choosing between this and holding for a 30%+ Cap One or Amex LifeMiles bonus later in Q4, the 25% is fine to take now for near-term bookings; save Amex/Cap One balances for later cycles.</p>
+
+<div class="caution">A transfer is one-way and irreversible. Every "Your move" here assumes you have specific award space held or a redemption priced. Never transfer points on the strength of a headline percentage alone.</div>
+
+<h2>Program Watch</h2>
+
+<h3>Citi ThankYou adds JAL Mileage Bank as its 20th transfer partner (1:1)<sup><a href="#s6">[6]</a></sup><sup><a href="#s7">[7]</a></sup></h3>
+<p>Live as of September 20, 2026. For the first time, a major US flexible-points program transfers to JAL at a full 1:1 base ratio (Capital One's route is 4:3; the closed Amex-Hawaiian route was 1:1 but is gone). The 30% launch bonus runs through October 24, and the transfer is available at 1:1 only to Strata Elite, Strata Premier, Prestige, and AT&T Access More holders — non-premium ThankYou cards get a 1:0.7 base rate.</p>
+
+<h3>Chase → Hyatt drops to 4:3 for Sapphire Preferred / Ink Business Preferred on October 1<sup><a href="#s8">[8]</a></sup><sup><a href="#s5">[5]</a></sup></h3>
+<p>The 110-day grace period announced on June 15 expires at the end of this month. From October 1, existing Sapphire Preferred and Ink Business Preferred cardholders lose the 1:1 Chase-to-Hyatt route and move to 4:3 (1,000 UR → 750 Hyatt). Sapphire Reserve, Sapphire Reserve for Business, Ink Business Premier, and all other UR-earning cards retain 1:1. This is a segmentation move, not an across-the-board devaluation. Per ledger call 2026-09-18-1, Chase is expected to hold the deadline.</p>
+
+<h3>Flying Blue tiered fares live since September 8; partner pricing untouched — for now<sup><a href="#s9">[9]</a></sup><sup><a href="#s10">[10]</a></sup></h3>
+<p>Flying Blue's new Light / Standard / Flex tier system launched September 8 with the entry-band business-class direct AF/KLM award moving from 60,000 to 75,000 miles (a ~25% devaluation at the Standard tier). Partner-airline pricing — SkyTeam partners plus Etihad, GOL, Kenya Airways — is explicitly excluded from the change and remains at prior pricing per Flying Blue's own communications. Ledger call 2026-09-02-1 tracks whether partner pricing stays protected through January 31.</p>
+
+<h2>Today's Play</h2>
+
+<div class="signal">
+<p><strong>Signal:</strong> Two US-flexible-points programs now transfer to JAL — Capital One at a 4:3 base with a 30% bonus ending September 30, and Citi ThankYou at a 1:1 base with a 30% launch bonus ending October 24. The base ratio dominates the bonus math.</p>
+<p><strong>Play:</strong> If you have both balances and a JAL redemption in mind, transfer from Citi ThankYou, not Capital One. 100,000 Citi points become 130,000 JAL miles; 100,000 Cap One miles become 97,500 JAL miles at the same headline 30% bonus. That is a 33% delta driven entirely by base ratio.</p>
+<p><strong>Not a play:</strong> Transferring speculatively to JAL because the launch bonus is loud. New-partner launch bonuses are 90-day marketing events, not the start of a cadence — today's ledger call bets Citi will not repeat this bonus before late January 2027.</p>
+</div>
+
+<h2>The Ledger</h2>
+<p class="season">Season 1 · 1-0 across graded calls · new call logged today.</p>
+
+<div class="ledger-line open">
+<span class="open-tag">OPEN — 2026-09-21-1</span> · Citi ThankYou → JAL Mileage Bank 30% launch bonus (through Oct 24) will not be extended, and no follow-up Citi → JAL bonus of any percentage will publicly run between Oct 25, 2026 and Jan 24, 2027. Horizon: 2027-01-24. Basis: new-partner launch bonuses at flexible-points programs are one-shot marketing spikes; Citi's cadence to established 1:1 partners sits at 3-4 months, and on a brand-new partner where transfer-volume economics are still being measured the gap should be longer, not shorter.
+</div>
+
+<p class="meta">27 additional calls remain OPEN. Nearest horizon: 2026-10-08 (call 2026-09-08-1 — bank-response bonus to Flying Blue devaluation). Full ledger: <a href="https://raw.githubusercontent.com/gregmurad-eng/points-brief/main/ledger.json">ledger.json</a>.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+<li id="s1">American Express, <em>Membership Rewards Transfer Partners</em> — <a href="https://global.americanexpress.com/rewards/transfer">global.americanexpress.com/rewards/transfer</a> · <span class="tier">primary</span></li>
+<li id="s2">Frequent Miler, <em>Current point transfer bonuses for September 2026</em> — <a href="https://frequentmiler.com/current-point-transfer-bonuses/">frequentmiler.com/current-point-transfer-bonuses</a> · <span class="tier">trade</span></li>
+<li id="s3">Chase, <em>Ultimate Rewards</em> — <a href="https://www.chase.com/personal/credit-cards/ultimate-rewards">chase.com/personal/credit-cards/ultimate-rewards</a> · <span class="tier">primary</span></li>
+<li id="s4">Capital One, <em>Rewards transfer partners</em> — <a href="https://www.capitalone.com/learn-grow/money-management/venture-transfer-partners/">capitalone.com/learn-grow/money-management/venture-transfer-partners</a> · <span class="tier">primary</span></li>
+<li id="s5">Frequent Miler, <em>70% transfer bonus Chase Ultimate Rewards to Marriott Bonvoy</em> — <a href="https://frequentmiler.com/70-percent-transfer-bonus-chase-ultimate-rewards-marriott-bonvoy/">frequentmiler.com/70-percent-transfer-bonus-chase-ultimate-rewards-marriott-bonvoy</a> · <span class="tier">trade</span></li>
+<li id="s6">Citi, <em>ThankYou Rewards points transfer</em> — <a href="https://www.thankyou.com/cms/thankyou/rewardsCategory.action?catName=Points+Transfer">thankyou.com — Points Transfer</a> · <span class="tier">primary</span></li>
+<li id="s7">LoyaltyLobby, <em>Citi ThankYou &amp; Japan Airlines Mileage Bank Transfer Partnership Launch With 30% Bonus Until October 24, 2026</em> — <a href="https://loyaltylobby.com/2026/09/20/citi-thankyou-japan-airlines-mileage-bank-transfer-partnership-launch-with-30-bonus-until-october-24-2026/">loyaltylobby.com/2026/09/20/citi-thankyou-japan-airlines-mileage-bank</a> · <span class="tier">trade</span></li>
+<li id="s8">Frequent Miler, <em>Chase slashes Hyatt transfer ratio to 4:3</em> — <a href="https://frequentmiler.com/chase-slashes-hyatt-transfer-ratio-to-43/">frequentmiler.com/chase-slashes-hyatt-transfer-ratio-to-43</a> · <span class="tier">trade</span></li>
+<li id="s9">Flying Blue, <em>New tiered award fares</em> — <a href="https://www.flyingblue.com/en/earn-spend/spend-miles/reward-tickets">flyingblue.com — Reward tickets</a> · <span class="tier">primary</span></li>
+<li id="s10">LoyaltyLobby, <em>Air France - KLM Flying Blue's 20% To 25% Mileage Devaluation Now Live (September 8, 2026)</em> — <a href="https://loyaltylobby.com/2026/09/08/air-france-klm-flying-blues-20-to-25-mileage-devaluation-now-live-september-8-2026/">loyaltylobby.com/2026/09/08/flying-blues-20-to-25-mileage-devaluation</a> · <span class="tier">trade</span></li>
+</ol>
+
+<nav class="bar"><a href="2026-09-20.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+<footer>
+The Points Brief · AI-synthesised daily summary. Every percentage, expiry, and transfer ratio in today's edition was confirmed against a Tier 1 program page listed in Sources. Even so — award space, program terms, and card eligibility can change hour-to-hour. Confirm before you transfer. Point transfers are one-way and irreversible.
+</footer>
+
+</div>
+
+<script>
+const S = "The Points Brief for Sunday, September twenty-first, twenty twenty-six. Seven live transfer bonuses today, and two new ones from Citi. Amex is running thirty percent to the Avios family — British Airways, Iberia, and Aer Lingus — through September twenty-seventh, so six days left. Chase is running twenty percent to Air Canada Aeroplan through September thirtieth, thirty percent if you hold the co-brand card. Capital One is running thirty percent to Japan Airlines through September thirtieth, but skip it if you have Citi balance — because Citi just added JAL as a new one-to-one transfer partner on September twentieth, with a thirty percent launch bonus running through October twenty-fourth. That is the biggest news of the week. One thousand Citi points now become one thousand three hundred JAL miles at the premium-card ratio, versus roughly nine hundred seventy-five JAL miles from the same number of Capital One miles at the same headline bonus — a thirty-three percent delta driven entirely by the base ratio. Also new from Citi: twenty-five percent to Avianca LifeMiles through October twenty-fourth. Chase is running the record-high seventy percent to Marriott Bonvoy through October fifteenth, and Amex is at thirty percent to Hilton through October fourteenth — but both hotel bonuses are still value-negative unless you have a specific redemption priced. On program watch: the Chase-to-Hyatt four-to-three cut for Sapphire Preferred and Ink Business Preferred cardholders lands October first, ten days away — Sapphire Reserve holders keep one-to-one. And Flying Blue's tiered fare devaluation is live since September eighth, affecting direct Air France and KLM awards only; partner pricing is protected — for now. Today's ledger call: the Citi to JAL launch bonus will not be extended past October twenty-fourth, and no follow-up bonus will run before January twenty-fourth. New-partner launch bonuses are marketing spikes, not the start of a cadence. Season one record stands at one and zero. Every number in today's edition was confirmed against a Tier one program page. Transfers are one-way — move points only with a specific redemption in hand.";
+
+let utt = null, speaking = false;
+function pickVoice() {
+  const voices = speechSynthesis.getVoices();
+  if (!voices.length) return null;
+  return voices.find(v => v.name === 'Daniel') ||
+         voices.find(v => /Daniel/i.test(v.name)) ||
+         voices.find(v => v.name === 'Alex') ||
+         voices.find(v => /Alex/i.test(v.name)) ||
+         voices.find(v => v.lang && v.lang.startsWith('en')) ||
+         voices[0];
+}
+function toggleAudio() {
+  const btn = document.getElementById('listen');
+  if (speaking) {
+    speechSynthesis.cancel();
+    speaking = false;
+    btn.textContent = '▶ Listen · ~3 min';
+    return;
+  }
+  if (!('speechSynthesis' in window)) {
+    btn.textContent = 'Audio not supported';
+    btn.disabled = true;
+    return;
+  }
+  utt = new SpeechSynthesisUtterance(S);
+  utt.rate = 0.93;
+  utt.pitch = 1.0;
+  const v = pickVoice();
+  if (v) utt.voice = v;
+  utt.onend = () => { speaking = false; btn.textContent = '▶ Listen · ~3 min'; };
+  utt.onerror = () => { speaking = false; btn.textContent = '▶ Listen · ~3 min'; };
+  speechSynthesis.speak(utt);
+  speaking = true;
+  btn.textContent = '■ Stop';
+}
+if ('speechSynthesis' in window && speechSynthesis.getVoices().length === 0) {
+  speechSynthesis.onvoiceschanged = () => {};
+}
+</script>
+
+</body>
+</html>
