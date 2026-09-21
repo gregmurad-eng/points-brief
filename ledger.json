@@ -338,6 +338,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-21-1",
+      "date": "2026-09-21",
+      "call": "The Citi ThankYou to Japan Airlines Mileage Bank launch bonus (30% through 2026-10-24) will NOT be extended past its stated end date, AND no follow-up Citi ThankYou to JAL Mileage Bank transfer bonus of any percentage will be publicly offered between 2026-10-25 and 2027-01-24 inclusive.",
+      "basis": "Citi added JAL as a 1:1 transfer partner on 2026-09-20 with a 30% launch promo running through Oct 24. New-partner launch bonuses at flexible-points programs are marketing spikes, not the start of a cadence: Chase's Emirates launch (2023), Amex's Aeroplan launch (2020), and Bilt's various new-partner launches all ran once at elevated terms and then went quiet for six-plus months while transfer-volume economics stabilised. Citi's own cadence to established 1:1 partners (Flying Blue, LifeMiles, Turkish) sits at 3-4 months from bonus-end to next-bonus; on a brand-new partner where unit economics are still being measured, that gap is expected to be longer, not shorter. A repeat inside 90 days would signal Citi is aggressively fighting for JAL transfer share against Capital One (which has a competing JAL 30% ending Sept 30) rather than establishing rhythm - a strategic move, not a cadence signal.",
+      "horizon": "2027-01-24",
+      "test": "GRADE HIT if the current 30% Citi ThankYou to JAL Mileage Bank transfer bonus expires as scheduled on 2026-10-24 without extension, AND no follow-up Citi ThankYou to JAL Mileage Bank transfer bonus of any percentage greater than zero is publicly offered at any point between 2026-10-25 and 2027-01-24 inclusive. GRADE MISS if the current 30% is extended past 2026-10-24, OR if any follow-up Citi to JAL bonus greater than zero is publicly offered in that window, evidenced by Citi's own transfer page and confirmed by at least one Tier 1 or Tier 2 source.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
