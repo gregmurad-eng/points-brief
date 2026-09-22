@@ -350,6 +350,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-22-1",
+      "date": "2026-09-22",
+      "call": "Amex Membership Rewards will NOT add Japan Airlines Mileage Bank as a publicly listed transfer partner at any point between 2026-09-22 and 2027-03-22 inclusive.",
+      "basis": "Citi added JAL as its 24th airline partner on 2026-09-20, joining Capital One (which added JAL in 2022) and the indirect Marriott\u2192JAL route as the flexible-points paths in. Amex's transfer stack has been notably stable for years \u2014 the most recent airline partner change was subtractive (Amex closed the Hawaiian route on 2025-06-30). More structurally, Amex's largest US airline co-brand relationship by revenue is Delta, and Delta and JAL are SkyTeam-adjacent rivals in the trans-Pacific premium market: adding JAL as an Amex transfer partner would either cannibalise Delta SkyMiles card acquisition or require SkyMiles-side concessions from Delta that Amex has no historical pattern of extracting. JAL's own US bank-partnership expansion has been deliberately paced (Marriott 2015, Capital One 2022, Citi 2026-09-20); a 4th major-bank addition within 6 months would break JAL's observed cadence. A six-month horizon covers any post-Citi-launch experimentation window.",
+      "horizon": "2027-03-22",
+      "test": "GRADE HIT if Amex Membership Rewards does not publicly list Japan Airlines Mileage Bank as an active transfer partner at any point between 2026-09-22 and 2027-03-22 inclusive. GRADE MISS if Amex publicly lists JAL Mileage Bank as a transfer partner (at any transfer ratio) at any point in that window, evidenced by Amex's own transfer page and confirmed by at least one Tier 1 or Tier 2 source.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
