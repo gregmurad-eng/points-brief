@@ -362,6 +362,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-23-1",
+      "date": "2026-09-23",
+      "call": "Capital One will publicly launch another Capital One miles \u2192 JAL Mileage Bank transfer bonus of 20% or greater between 2026-10-01 and 2027-02-28 inclusive \u2014 a defensive response to Citi's September 20, 2026 launch of JAL as a 1:1 transfer partner.",
+      "basis": "Capital One added JAL as a transfer partner in 2022 and has run periodic JAL bonuses since then; the current 30% bonus (Sept 1 \u2013 Sept 30, 2026, ending in seven days) is the third Cap One \u2192 JAL promo in the last 18 months. On September 20, 2026 Citi ThankYou went live with JAL as a brand-new 1:1 partner alongside a 30% launch bonus running through October 24 \u2014 direct competitive pressure on the exact route Cap One has spent three years cultivating. A five-month silence immediately after a rival's launch bonus would cede JAL transfer share Cap One has structurally invested in, and Q4 through Q1 is historically Cap One's most active bonus window as it competes with Amex and Citi for year-end transfer volume. Cap One's own JAL cadence has averaged roughly one promo per quarter through 2025-2026. The horizon lands at Feb 28 to catch either a Q4 defensive push against Citi's Oct 24 bonus expiry OR a Q1 cadence bonus, while giving a clean five-month resolution window.",
+      "horizon": "2027-02-28",
+      "test": "GRADE HIT if any Capital One miles \u2192 JAL Mileage Bank transfer bonus of 20% or greater is publicly offered at any point between 2026-10-01 and 2027-02-28 inclusive, evidenced by Capital One's own transfer page, a JAL promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
