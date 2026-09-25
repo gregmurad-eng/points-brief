@@ -374,6 +374,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-25-1",
+      "date": "2026-09-25",
+      "call": "Marriott Bonvoy will publicly implement at least one property-level flash devaluation \u2014 a specific hotel moving to a higher point-cost band in its off-peak, standard, or peak column with less than 45 days between announcement and effective date \u2014 at any point between 2026-09-26 and 2026-12-25 inclusive.",
+      "basis": "Marriott has run flash devaluations on a near-continuous cadence through 2026, with Frequent Miler, LoyaltyLobby and Doctor of Credit tracking multi-week rhythms rather than annual chart cycles. Chase's Sep 15 \u2013 Oct 15 record 70% UR \u2192 Marriott bonus (Chase's largest-ever Bonvoy transfer promo, per multiple Tier 2 sources) will inflate transferred Marriott balances at Chase across the 30-day window and drive above-baseline redemption bookings into October and November. Marriott's revealed 2026 response to elevated point supply and redemption demand has been to accelerate property-level flash devaluations rather than announce another system-wide chart change, because per-property adjustments bypass the reputational cost of a headline devaluation while collectively shifting more point cost onto members. A three-month silence on flash devaluations immediately after the largest-ever Chase \u2192 Marriott bonus would break both the observed 2026 cadence and Marriott's demonstrated supply-management pattern.",
+      "horizon": "2026-12-25",
+      "test": "GRADE HIT if Marriott Bonvoy publicly implements at least one property-level flash devaluation (a specific hotel moving to a higher point-cost band in its off-peak, standard, or peak column, with less than 45 days between the announcement/detection date and the effective date) at any point between 2026-09-26 and 2026-12-25 inclusive, evidenced by Marriott's own award chart for the affected property (before/after screenshots or web-archive snapshot) plus a Tier 1 or Tier 2 confirmation. GRADE MISS if no such flash devaluation is documented in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
