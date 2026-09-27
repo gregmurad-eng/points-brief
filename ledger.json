@@ -386,6 +386,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-27-1",
+      "date": "2026-09-27",
+      "call": "The Chase Ultimate Rewards \u2192 Marriott Bonvoy 70% transfer bonus (Sep 15 \u2013 Oct 15, 2026) will NOT be extended past its October 15 end date, AND no Chase\u2192Marriott transfer bonus of any percentage will overlap the immediate post-expiry period 2026-10-16 through 2026-10-30 inclusive.",
+      "basis": "A 'highest-ever' bonus works as a marketing narrative precisely because it is finite; The Points Guy, One Mile at a Time, LoyaltyLobby, Frequent Miler, and Upgraded Points all amplified the 'record 70%' framing at launch. Extending would dilute that language. Chase's July-August 2026 IHG 70% ran its stated window and expired as scheduled with no extension \u2014 fresh precedent that Chase's flagship hotel promos honour their end dates. Historical Chase\u2192Marriott bonuses have topped out around 25\u201350%; a back-to-back at any elevated level within days of the record 70% expiring would either signal deeper commercial pressure than currently visible or force Chase to walk back its 'highest-ever' language. The clean base case is that Chase lets the 70% expire on schedule, uses Q4 to consolidate the 'we did the biggest promo of the year' narrative, and returns to Marriott (if at all) at 25\u201350% no earlier than Q1 2027. This call is distinct from 2026-09-16-1 (which bets no 50%+ Chase\u2192Marriott between Oct 16, 2026 and Apr 15, 2027) \u2014 it tests a tighter 15-day post-expiry window at ANY percentage, not just 50%+.",
+      "horizon": "2026-10-30",
+      "test": "GRADE HIT if the 70% Chase Ultimate Rewards \u2192 Marriott Bonvoy transfer bonus expires as scheduled at end of day 2026-10-15 Pacific time (no extension, no rolling grace period), AND no Chase Ultimate Rewards \u2192 Marriott Bonvoy transfer bonus of any percentage greater than zero is publicly offered at any point between 2026-10-16 and 2026-10-30 inclusive, evidenced by Chase's own Ultimate Rewards transfer page. GRADE MISS if Chase extends the current 70% bonus past 2026-10-15 in any form (same 70% extended, stepped-down percentage continuing the promo), OR if any Chase\u2192Marriott bonus (>0%) is publicly offered in the 2026-10-16 through 2026-10-30 window, evidenced by Chase's transfer page and confirmed by at least one Tier 1 or Tier 2 source.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
