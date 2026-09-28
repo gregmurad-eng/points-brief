@@ -398,6 +398,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-28-1",
+      "date": "2026-09-28",
+      "call": "The Chase Ultimate Rewards \u2192 Air Canada Aeroplan 20% transfer bonus (expiring 2026-09-30 at 11:59pm ET) will NOT be extended past its stated end date, AND no follow-up Chase Ultimate Rewards \u2192 Aeroplan transfer bonus of any percentage will be publicly offered between 2026-10-01 and 2026-10-31 inclusive \u2014 Chase's annual airline handshake finishes as scheduled, without a rollover.",
+      "basis": "Chase's July-August 2026 IHG 70% expired as scheduled with no extension, and yesterday's call 2026-09-27-1 makes the parallel case for the Marriott 70% expiring Oct 15 \u2014 fresh, consistent precedent that Chase's flagship promos honour their end dates without stepped-down continuations. Aeroplan is Chase's default airline transfer handshake and has been Chase's ONLY UR \u2192 airline transfer bonus of both 2025 and 2026 to date, cementing an annual (not quarterly) cadence. Chase's Q4 promotional attention structurally favours hotels (IHG, Marriott) with airline promo season ceded to Amex and Citi (see the broader call 2026-08-24-1 through year-end). A follow-up Aeroplan bonus inside 30 days of expiry would break both the 'expire clean' precedent and the annual airline cadence. This call is distinct from 2026-08-24-1 (which tests any Chase \u2192 airline bonus through Dec 31 at any percentage) \u2014 it narrows to Aeroplan specifically and to the tighter 30-day post-expiry window, mirroring yesterday's Marriott post-expiry test.",
+      "horizon": "2026-10-31",
+      "test": "GRADE HIT if the 20% Chase Ultimate Rewards \u2192 Air Canada Aeroplan transfer bonus expires as scheduled at end of day 2026-09-30 (no extension, no rolling grace period, no stepped-down continuation of any Chase \u2192 Aeroplan promo), AND no Chase Ultimate Rewards \u2192 Air Canada Aeroplan transfer bonus of any percentage greater than zero is publicly offered at any point between 2026-10-01 and 2026-10-31 inclusive, evidenced by Chase's own Ultimate Rewards transfer page. GRADE MISS if Chase extends the current 20% past 2026-09-30 in any form, OR if any Chase \u2192 Aeroplan bonus (>0%) is publicly offered in the 2026-10-01 through 2026-10-31 window, evidenced by Chase's transfer page and confirmed by at least one Tier 1 or Tier 2 source. Chase Air Canada Aeroplan co-brand cardholder benefits (e.g., the perpetual 10% cardholder transfer bump on 50k+ transfers) do NOT count as a Chase \u2192 Aeroplan bonus \u2014 this test is about promotional transfer bonuses run by Chase, not permanent card benefits.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
