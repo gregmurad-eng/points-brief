@@ -410,6 +410,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-29-1",
+      "date": "2026-09-29",
+      "call": "World of Hyatt will publicly implement at least one property-level category change (a specific hotel moving to a higher award category, with less than 45 days between the announcement or detection date and the effective date) at any point between 2026-09-30 and 2026-12-31 inclusive \u2014 the Chase Sapphire Preferred / Ink Preferred 4:3 devaluation landing October 1 does not end Hyatt's stealth-devaluation cadence, and Q4 balances inflated by pre-cutover transfers give Hyatt cover to accelerate category creep on high-demand properties.",
+      "basis": "Since Hyatt's May 2026 award-chart devaluation, LoyaltyLobby, Frequent Miler and Doctor of Credit have documented category creep on specific properties on a near-monthly cadence \u2014 the program's revealed pattern is to shift individual hotels into higher categories rather than reprice the whole chart. The Chase Sapphire Preferred / Ink Preferred \u2192 Hyatt 4:3 change on Oct 1 will drive a wave of last-minute transfers this week, temporarily inflating Hyatt point supply at exactly the moment Q4 holiday-season demand at aspirational properties peaks. Hyatt's demonstrated response to elevated point supply has been to reprice individual properties into higher bands, not to widen award-chart bandings. A three-month silence on category changes immediately after the Chase cutover would break both the 2026 cadence and Hyatt's demonstrated supply-management pattern. Q4 is also historically when hotel programs stealth-reprice ahead of Q1 travel bookings, giving Hyatt structural incentive to move properties before award calendars open for spring 2027 travel.",
+      "horizon": "2026-12-31",
+      "test": "GRADE HIT if World of Hyatt publicly implements at least one property-level category change (a specific hotel moving to a higher award category on Hyatt's award chart, with less than 45 days between the announcement or public detection date and the effective date) at any point between 2026-09-30 and 2026-12-31 inclusive, evidenced by Hyatt's own award-chart search for the affected property (before/after screenshots or web-archive snapshot) plus a Tier 1 or Tier 2 confirmation. GRADE MISS if no such category change is documented in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
