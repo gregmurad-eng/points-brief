@@ -422,6 +422,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-09-30-1",
+      "date": "2026-09-30",
+      "call": "Chase will NOT extend the current 70% Ultimate Rewards -> Marriott Bonvoy transfer bonus past 2026-10-15, and will NOT run another Chase -> Marriott bonus of 70% or higher before 2026-12-15.",
+      "basis": "AwardTravelFinder tracks 16 Chase -> Marriott bonuses since 2021 with an average of 55%; the current 70% offer is the highest ever. Chases pattern is to cool off after a headline promo, not extend or immediately re-run at the same level. Historical data shows multi-month gaps between elevated Marriott bonuses at this transfer pair.",
+      "horizon": "2026-12-15",
+      "test": "GRADE HIT if (a) the current 70% offer expires as scheduled on 2026-10-15 without extension AND (b) no Chase -> Marriott Bonvoy bonus of 70% or higher is publicly offered between 2026-10-16 and 2026-12-15. GRADE MISS if either the current promo is extended past 2026-10-15 or any Chase -> Marriott bonus at 70%+ is announced or live during that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
