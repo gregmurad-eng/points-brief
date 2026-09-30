@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — September 30, 2026</title>
+<style>
+  :root { --bg:#080c14; --panel:#0e1522; --accent:#c9a84c; --accent-dim:#8a7635; --text:#d8d0b4; --muted:#8a8570; --miss:#b06060; --line:#1a2333; }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); }
+  body { font-family: Georgia, "Times New Roman", serif; margin: 0; line-height: 1.6; font-size: 17px; -webkit-text-size-adjust: 100%; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 28px 22px 60px; }
+  .bar { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 15px; letter-spacing: 0.5px; }
+  .bar a, .bar span { white-space: nowrap; padding: 12px 4px; display: inline-block; min-height: 44px; line-height: 20px; }
+  .bar a { color: var(--accent); text-decoration: none; }
+  .bar a:hover { text-decoration: underline; }
+  .nav-mid { display: inline-flex; gap: 4px; align-items: center; }
+  .nav-mid a { color: var(--accent); margin: 0 9px; }
+  .next { color: var(--muted); }
+  h1 { font-size: 34px; letter-spacing: 1px; margin: 24px 0 4px; color: var(--accent); font-weight: normal; }
+  .tag { color: var(--muted); font-style: italic; font-size: 15px; margin-bottom: 4px; }
+  .date { color: var(--text); font-size: 15px; margin-bottom: 26px; letter-spacing: 0.5px; }
+  h2 { color: var(--accent); font-size: 22px; margin: 42px 0 14px; padding-bottom: 6px; border-bottom: 1px solid var(--line); font-weight: normal; letter-spacing: 0.6px; }
+  h3 { color: var(--text); font-size: 18px; margin: 24px 0 6px; font-weight: normal; }
+  p { margin: 8px 0 14px; }
+  .meta { color: var(--muted); font-size: 15px; font-style: italic; margin-bottom: 8px; }
+  sup a { color: var(--accent); text-decoration: none; padding: 6px 4px; margin: -6px -4px; }
+  sup a:hover { text-decoration: underline; }
+  .move { color: var(--accent); font-style: italic; margin: 10px 0 6px; padding-left: 12px; border-left: 2px solid var(--accent-dim); }
+  .move b { font-style: normal; letter-spacing: 0.4px; }
+  .urgent { border: 1px solid var(--accent); background: rgba(201,168,76,0.08); padding: 16px 18px; margin: 18px 0 6px; border-radius: 2px; }
+  .urgent h3 { color: var(--accent); margin: 0 0 6px; font-size: 17px; letter-spacing: 0.6px; }
+  .urgent ul { margin: 6px 0 0 18px; padding: 0; }
+  .urgent li { margin: 4px 0; }
+  .signal { border: 1px solid var(--accent-dim); background: var(--panel); padding: 18px 20px; border-radius: 2px; }
+  .signal h3 { color: var(--accent); margin-top: 0; }
+  .ledger-row { padding: 10px 0; border-bottom: 1px dashed var(--line); }
+  .ledger-row:last-child { border-bottom: none; }
+  .verdict { font-weight: bold; letter-spacing: 1px; margin-right: 8px; }
+  .hit { color: var(--accent); }
+  .miss { color: var(--miss); }
+  .unsettled, .open { color: var(--muted); }
+  .record { color: var(--text); font-size: 16px; margin-bottom: 8px; }
+  ol.sources { padding-left: 22px; font-size: 15px; }
+  ol.sources li { margin: 8px 0; color: var(--text); }
+  ol.sources a { color: var(--accent); word-break: break-word; }
+  .tier { color: var(--muted); font-style: italic; font-size: 13px; margin-left: 4px; }
+  .listen { margin: 8px 0 24px; }
+  .listen button { background: transparent; color: var(--accent); border: 1px solid var(--accent-dim); padding: 12px 20px; font-family: Georgia, serif; font-size: 15px; letter-spacing: 1px; cursor: pointer; min-height: 44px; }
+  .listen button:hover { background: rgba(201,168,76,0.08); }
+  .caution { color: var(--muted); font-size: 14px; font-style: italic; border-top: 1px solid var(--line); padding-top: 14px; margin-top: 40px; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--line); text-align: center; }
+  @media (max-width: 480px) {
+    .wrap { padding: 18px 14px 40px; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 19px; }
+    h3 { font-size: 17px; }
+    body { font-size: 16px; }
+    .bar { font-size: 14px; gap: 8px 10px; }
+    .bar a, .bar span { padding: 12px 6px; }
+    .nav-mid a { margin: 0 6px; }
+    .urgent { padding: 14px 14px; }
+    .urgent h3 { font-size: 16px; }
+    .signal { padding: 14px 14px; }
+    ol.sources { font-size: 14px; padding-left: 20px; }
+    ol.sources li { font-size: 14px; }
+    .meta { font-size: 14px; }
+    .caution, footer { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="bar"><a href="2026-09-29.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+<h1>The Points Brief</h1>
+<div class="tag">Travel Points · Maximize every transfer</div>
+<div class="date">Wednesday, September 30, 2026</div>
+
+<div class="listen">
+  <button id="playBtn" onclick="toggleSpeak()">▶ LISTEN — 3 MIN</button>
+</div>
+
+<div class="urgent">
+  <h3>EXPIRING TODAY (Sep 30)</h3>
+  <ul>
+    <li><b>Chase Ultimate Rewards → Air Canada Aeroplan</b> — 20% bonus ends 11:59 PM ET tonight.<sup><a href="#s1">[1]</a></sup></li>
+    <li><b>Capital One miles → Japan Airlines Mileage Bank</b> — 30% bonus ends today; ratio 2:1.5 becomes effectively 100:97.5.<sup><a href="#s1">[1]</a></sup></li>
+    <li><b>Accor Live Limitless → Singapore KrisFlyer</b> — 50% bonus (4:3 ratio) ends today.<sup><a href="#s1">[1]</a></sup></li>
+    <li><b>Emirates Skywards → Marriott Bonvoy</b> — 30% bonus ends today.<sup><a href="#s1">[1]</a></sup></li>
+  </ul>
+  <p style="margin: 10px 0 0; font-size: 14px; color: var(--muted);">Only pull the trigger if you have a redemption ready. A transfer chased for the deadline alone is how orphan balances start.</p>
+</div>
+
+<h2>Today's Transfer Bonuses</h2>
+
+<h3>Chase Ultimate Rewards → Marriott Bonvoy · 70%</h3>
+<div class="meta">Sep 15 – Oct 15, 2026 · ratio 1,000 : 1,700 · bonus posts within 7 days<sup><a href="#s2">[2]</a></sup><sup><a href="#s3">[3]</a></sup></div>
+<p>This is the highest Chase-to-Marriott transfer bonus on record. AwardTravelFinder's tracker shows 16 promotions at this pair since 2021, averaging 55% — a 70% headline is the outlier, not the trend.<sup><a href="#s4">[4]</a></sup> The math still cuts against speculative moves: at TPG's September valuations, one Chase point is worth roughly 2.05¢, so 1.7 Marriott points at ~0.75¢ each nets you about 1.28¢ — you are losing value on the transfer even at 70%, unless a specific award prices well below its cash equivalent.<sup><a href="#s3">[3]</a></sup></p>
+<div class="move"><b>Your move:</b> transfer only when the exact reservation is priced in Marriott's calendar and the points cost divided by the cash rate beats 0.9¢ per Marriott point. If it doesn't, wait — Chase has run 15 of these before this one, and will again.</div>
+
+<h3>Amex Membership Rewards → Hilton Honors · 30%</h3>
+<div class="meta">Sep 1 – Oct 14, 2026 · US only · ratio 1,000 : 2,600 (standard is 1,000 : 2,000)<sup><a href="#s5">[5]</a></sup><sup><a href="#s6">[6]</a></sup></div>
+<p>This is a rerun of a promo that Amex has cycled roughly every four to six months. The 30% headline lifts the effective ratio to 1:2.6, which is close to par on any honest valuation of Hilton points (~0.4¢ each versus MR at ~1.9¢ per TPG). This bonus is targeted — verify it appears in <i>your</i> Amex account before planning around it.<sup><a href="#s5">[5]</a></sup></p>
+<div class="move"><b>Your move:</b> transfer <i>only</i> to top off a Hilton balance for a specific booking above 60,000 points/night (aspirational Waldorfs, Conrads). For anything cash-competitive, Amex points still beat Hilton points per dollar of redemption — do not sweep MR to Hilton on principle.</div>
+
+<h3>Citi ThankYou → Japan Airlines Mileage Bank · 30% & Citi → Avianca LifeMiles · 25%</h3>
+<div class="meta">Both through Oct 24, 2026 · JAL ratio 1,000 : 1,300 · LifeMiles ratio 1,000 : 1,250<sup><a href="#s1">[1]</a></sup><sup><a href="#s7">[7]</a></sup></div>
+<p>The JAL offer is the more distinctive of the pair — JAL's own award chart still prices Oneworld premium cabins well below AA's equivalent (Tokyo–NYC in business is 60,000 JAL miles vs. 75,000 AA). LifeMiles at 25% is a below-average bonus for that partner; LifeMiles has hit 40% or higher four times in the last eighteen months.<sup><a href="#s7">[7]</a></sup></p>
+<div class="move"><b>Your move:</b> transfer to JAL only if you have already found Oneworld premium space on JAL's own site (AA and BA searches will lie about availability). Skip the LifeMiles bonus — 25% is a floor, not a signal to move.</div>
+
+<h2>Program Watch</h2>
+
+<h3>Delta and Hyatt announce long-term loyalty partnership</h3>
+<div class="meta">Announced September 9, 2026 · launch "in the coming months"<sup><a href="#s8">[8]</a></sup><sup><a href="#s9">[9]</a></sup></div>
+<p>Hyatt's newsroom confirmed a long-term strategic collaboration with Delta SkyMiles. The first published benefit is a "Dual Earn" for elite members of both programs — earn Hyatt points on qualifying Delta fares and SkyMiles on qualifying Hyatt stays. Earning rates, elite reciprocity, and launch date are all still to come.<sup><a href="#s8">[8]</a></sup></p>
+<div class="move"><b>Your move:</b> no action yet. Do not credit Delta flights against a matched Hyatt account until Delta and Hyatt publish the actual earn rates — the direction of the relationship is set, but the numbers that decide whether it beats status-matched Marriott or Hilton earning aren't.</div>
+
+<h3>American AAdvantage–World of Hyatt partnership unwinding</h3>
+<div class="meta">Confirmed same day as Delta deal · earning windows extend into early 2027<sup><a href="#s10">[10]</a></sup><sup><a href="#s9">[9]</a></sup></div>
+<p>American and Hyatt confirmed on September 9 that they are winding down the enhanced AAdvantage/World of Hyatt relationship. AAdvantage members with a linked Hyatt account keep access to World of Hyatt rewards until February 28, 2027, provided the accounts are linked by November 15, 2026. World of Hyatt members earn AAdvantage rewards through December 31, 2026 under the same linking deadline.<sup><a href="#s10">[10]</a></sup></p>
+<div class="move"><b>Your move:</b> if you hold both currencies and haven't linked, link before November 15, 2026 — the deadline is real and unrecoverable, and linking after the fact isn't offered as a remedy in the announcement.</div>
+
+<h3>Marriott Bonvoy continues to drift on dynamic pricing</h3>
+<div class="meta">No published award chart since March 2022 · point value ~0.65¢, down from ~0.9¢ five years ago<sup><a href="#s11">[11]</a></sup></div>
+<p>Not new news, but load-bearing context for the Chase→Marriott section above. Dynamic pricing means today's transfer to lock in tomorrow's redemption isn't a hedge — Marriott can reprice the same night before you book it. This is the specific mechanic that makes speculative transfers into Marriott a slow leak of value.</p>
+<div class="move"><b>Your move:</b> for any Marriott transfer during the current 70% bonus, price the redemption <i>in</i> the Marriott app first, hold it (Marriott doesn't offer point-holds, so time this to a same-session booking), and only then move the points. The Chase transfer completes instantly; the 70% bonus takes up to seven days.<sup><a href="#s2">[2]</a></sup></div>
+
+<h2>Today's Play</h2>
+<div class="signal">
+  <h3>The disciplined move today is doing nothing.</h3>
+  <p>Four bonuses expire at midnight ET, and one of them (Chase→Aeroplan 20%) is genuinely useful — Aeroplan books Star Alliance business for the year's cheapest Star pricing. But a 20% bonus is not a reason to transfer without a specific booking; it is a reason to look at whether a specific booking exists. If you searched Aeroplan's calendar this week and found space, act tonight. If you haven't searched, the deadline is not yours to chase.</p>
+  <p>The one offer worth actively planning around this month is <b>Chase→Marriott at 70%</b> — but only against a Marriott redemption that clears 0.9¢ per point of value after the bonus. Fill the reservation first, transfer second.</p>
+</div>
+
+<h2>The Ledger</h2>
+<div class="record"><b>Season 1 · 1–0</b> across graded calls · 34 still open · 1 new today</div>
+
+<div class="ledger-row">
+  <p style="margin:4px 0;color:var(--muted);font-style:italic;font-size:15px;">No calls came due today.</p>
+</div>
+
+<div class="ledger-row">
+  <p><span class="verdict open">OPEN</span> <b>TODAY-1 · logged 2026-09-30 · horizon 2026-12-15</b></p>
+  <p>Chase will not extend the current 70% Ultimate Rewards → Marriott Bonvoy transfer bonus past October 15, 2026, and will not run another Chase → Marriott bonus of 70% or higher before December 15, 2026.</p>
+  <p style="color:var(--muted);font-size:15px;"><b>Basis:</b> AwardTravelFinder tracks 16 Chase→Marriott bonuses since 2021 with an average of 55%; today's 70% is the highest ever recorded. Chase's pattern after headline bonuses is a multi-month cool-off, not an extension or immediate rerun.<sup><a href="#s4">[4]</a></sup></p>
+  <p style="color:var(--muted);font-size:15px;"><b>Test:</b> HIT if (a) the current 70% offer expires as scheduled on 2026-10-15 without extension AND (b) no Chase→Marriott bonus at 70% or higher is publicly offered between 2026-10-16 and 2026-12-15. MISS if either condition breaks.</p>
+</div>
+
+<p class="caution">Transfers to airline and hotel programs are one-way and irreversible. Move points only when a specific redemption is priced, verified as available, and beats the cash-equivalent value after the transfer. A bonus is not a reason to move points; a booking is.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="s1">AwardWallet — <a href="https://awardwallet.com/news/credit-card-transfer-bonuses/">All Current Transfer Bonuses (Capital One, Chase, and More)</a> <span class="tier">— trade</span></li>
+  <li id="s2">Frequent Miler — <a href="https://frequentmiler.com/70-percent-transfer-bonus-chase-ultimate-rewards-marriott-bonvoy/">Get a 70% transfer bonus from Chase Ultimate Rewards to Marriott Bonvoy</a> <span class="tier">— trade</span></li>
+  <li id="s3">One Mile at a Time — <a href="https://onemileatatime.com/deals/chase-marriott-transfer-bonus/">Transfer Chase Points To Marriott Bonvoy With 70% Bonus: Worth It?</a> <span class="tier">— trade</span></li>
+  <li id="s4">AwardTravelFinder — <a href="https://awardtravelfinder.com/transfer-bonuses/chase-ultimate-rewards-to-marriott-bonvoy">Chase Ultimate Rewards to Marriott Bonvoy Transfer Bonus: Current Offers &amp; Full History</a> <span class="tier">— trade</span></li>
+  <li id="s5">One Mile at a Time — <a href="https://onemileatatime.com/deals/amex-hilton-transfer-bonus/">Amex's 30% Transfer Bonus To Hilton Honors: Is It Worth It?</a> <span class="tier">— trade</span></li>
+  <li id="s6">AwardWallet — <a href="https://awardwallet.com/news/amex-membership-rewards/hilton-transfer-bonus/">Amex Membership Rewards to Hilton Honors: 30% Transfer Bonus</a> <span class="tier">— trade</span></li>
+  <li id="s7">Frequent Miler — <a href="https://frequentmiler.com/current-point-transfer-bonuses/">Current point transfer bonuses for September 2026</a> <span class="tier">— trade</span></li>
+  <li id="s8">Hyatt Newsroom — <a href="https://newsroom.hyatt.com/DeltaAirLines">Hyatt Announces Long-Term Strategic Collaboration with Delta Air Lines</a> <span class="tier">— primary</span></li>
+  <li id="s9">Delta News Hub — <a href="https://news.delta.com/delta-and-hyatt-introduce-new-strategic-relationship">Delta and Hyatt introduce new strategic relationship</a> <span class="tier">— primary</span></li>
+  <li id="s10">Thrifty Traveler — <a href="https://thriftytraveler.com/news/travel/delta-hyatt-partnership/">Whoa: Delta and Hyatt Launch Partnership… Right as American's Ends</a> <span class="tier">— trade</span></li>
+  <li id="s11">Frequent Miler — <a href="https://frequentmiler.com/marriott-bonvoy-complete-guide/">Marriott Bonvoy Complete Guide (2026)</a> <span class="tier">— trade</span></li>
+</ol>
+
+<p style="color:var(--muted);font-size:14px;margin-top:20px;font-style:italic;">Note on sourcing: Amex and Chase promotional pages for the featured bonuses require an authenticated card-holder session, so the primary offer terms are cited via Tier 2 desks (Frequent Miler, One Mile at a Time, AwardWallet) that reproduce the account-page screenshots. Program news items (Delta–Hyatt, AA–Hyatt) are anchored to the Hyatt and Delta newsrooms directly.</p>
+
+<nav class="bar" style="margin-top:40px;"><a href="2026-09-29.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+<footer>
+  Content is AI-synthesized from public reporting on the date shown. Verify award availability and current promotional terms with the program directly before transferring points. Transfers are one-way.
+</footer>
+
+</div>
+
+<script>
+const S = "The Points Brief for Wednesday, September thirtieth, twenty twenty-six. \
+Four transfer bonuses expire at midnight tonight: Chase to Aeroplan at twenty percent, Capital One to Japan Airlines at thirty percent, Accor to Krisflyer at fifty percent, and Emirates to Marriott at thirty percent. \
+The headline offer of the month remains Chase Ultimate Rewards to Marriott Bonvoy at seventy percent, running through October fifteenth. That is the highest Chase to Marriott bonus on record across sixteen tracked promotions since twenty twenty-one, where the average is fifty-five percent. But even at seventy percent, the math still leaks value: one Chase point at roughly two point zero five cents becomes one point seven Marriott points at zero point seven five cents, netting about one point two eight cents. Transfer only when you have already priced a specific Marriott redemption that beats zero point nine cents per point after the bonus. \
+The Amex Membership Rewards to Hilton Honors thirty percent bonus continues through October fourteenth, lifting the ratio to one to two point six. This is a targeted offer — verify it appears in your Amex account before planning. Move Amex points to Hilton only for a specific booking above sixty thousand points per night. \
+On the program side: Hyatt and Delta announced a long-term strategic collaboration on September ninth. American and Hyatt are simultaneously winding down. If you hold both American and Hyatt currency, link your accounts before November fifteenth — that deadline is real and unrecoverable. \
+The disciplined move today is doing nothing. A bonus is not a reason to transfer points. A booking is. \
+The ledger stands at Season one, one and zero, with thirty-four calls still open and one new call logged today: Chase will not extend the seventy percent Marriott bonus past October fifteenth, and will not run another bonus at seventy or higher before December fifteenth. Horizon: December fifteenth. \
+Transfers are one-way. Move points only against a specific redemption. That is the whole game.";
+let U=null;
+function pickVoice(){const vs=speechSynthesis.getVoices();return vs.find(v=>/Daniel/i.test(v.name))||vs.find(v=>/Alex/i.test(v.name))||vs.find(v=>/^en/i.test(v.lang))||vs[0];}
+function toggleSpeak(){
+  const b=document.getElementById('playBtn');
+  if(U && speechSynthesis.speaking){speechSynthesis.cancel();b.textContent='▶ LISTEN — 3 MIN';U=null;return;}
+  U=new SpeechSynthesisUtterance(S);U.rate=0.93;U.pitch=1.0;
+  const v=pickVoice();if(v)U.voice=v;
+  U.onend=()=>{b.textContent='▶ LISTEN — 3 MIN';U=null;};
+  speechSynthesis.speak(U);b.textContent='■ STOP';
+}
+if(typeof speechSynthesis!=='undefined' && speechSynthesis.onvoiceschanged!==undefined){speechSynthesis.onvoiceschanged=()=>{};}
+</script>
+
+</body>
+</html>
