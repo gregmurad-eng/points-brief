@@ -434,6 +434,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-10-01-1",
+      "date": "2026-10-01",
+      "call": "Capital One Miles will launch at least one new transfer bonus (any partner, any percentage greater than zero) between 2026-10-01 and 2026-11-15.",
+      "basis": "Capital One's prior transfer bonus (30% to JAL Mileage Bank) expired on 2026-09-30 with no October 1 replacement announced. Historically, Capital One runs near-monthly bonuses to its airline and hotel partners (Air Canada, Avianca, British Airways, Choice, Flying Blue, Virgin Red, etc.), and gaps of more than six weeks are uncommon when a prior bonus has just lapsed. Capital One also has structural reason to defend its JAL transfer share after Citi's 2026-09-20 launch of JAL as a 1:1 partner with a competing 30% launch bonus.",
+      "horizon": "2026-11-15",
+      "test": "GRADE HIT if any Capital One Miles transfer bonus (greater than 0%, to any transfer partner) is publicly offered at any point between 2026-10-01 and 2026-11-15 inclusive, evidenced by Capital One's own transfer page or a Tier 1/Tier 2 confirmation. GRADE MISS if no Capital One Miles transfer bonus is announced or live at any point during that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
