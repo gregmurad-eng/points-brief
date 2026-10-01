@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — October 1, 2026</title>
+<style>
+  :root { --bg:#080c14; --ink:#d8d0b4; --gold:#c9a84c; --muted:#8c8469; --rust:#b35a4a; --rule:#1d2535; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--ink); font-family: Georgia, 'Times New Roman', serif; font-size:17px; line-height:1.65; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 24px 72px; }
+  .bar { display:flex; flex-wrap:wrap; gap:10px 14px; align-items:center; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); padding:14px 0; margin:0 0 24px; font-size:14px; letter-spacing:0.08em; text-transform:uppercase; }
+  .bar a { color:var(--ink); text-decoration:none; white-space:nowrap; display:inline-block; padding:12px 2px; min-height:44px; line-height:20px; }
+  .bar a:hover { color:var(--gold); }
+  .nav-mid { display:inline-flex; gap:0; flex-wrap:wrap; }
+  .nav-mid a { color:var(--gold); margin:0 9px; }
+  .next { color:var(--muted); white-space:nowrap; margin-left:auto; padding:12px 2px; min-height:44px; display:inline-flex; align-items:center; }
+  .masthead { border-top:3px double var(--gold); border-bottom:1px solid var(--rule); padding:18px 0 14px; margin:0 0 18px; text-align:center; }
+  h1 { font-family: Georgia, serif; font-size:40px; letter-spacing:0.02em; margin:0 0 6px; color:var(--ink); font-weight:normal; }
+  .tag { font-style:italic; color:var(--gold); font-size:14px; letter-spacing:0.14em; text-transform:uppercase; margin:0 0 10px; }
+  .issue { font-size:14px; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase; }
+  h2 { font-family: Georgia, serif; font-size:22px; letter-spacing:0.05em; text-transform:uppercase; color:var(--gold); border-bottom:1px solid var(--rule); padding-bottom:6px; margin:36px 0 14px; font-weight:normal; }
+  h3 { font-family: Georgia, serif; font-size:19px; margin:22px 0 4px; color:var(--ink); font-weight:normal; }
+  p { margin:8px 0 14px; }
+  a.src { color:var(--gold); text-decoration:none; }
+  a.src:hover { text-decoration:underline; }
+  sup a { color:var(--gold); text-decoration:none; font-size:0.75em; padding:6px 4px; margin:-6px -4px; }
+  sup a:hover { text-decoration:underline; }
+  .urgent { border:2px solid var(--gold); background: rgba(201,168,76,0.06); padding:14px 16px; margin:12px 0 24px; font-size:17px; }
+  .urgent b { color:var(--gold); letter-spacing:0.08em; text-transform:uppercase; display:block; margin-bottom:4px; font-size:14px; }
+  .meta { color:var(--muted); font-size:14px; letter-spacing:0.04em; }
+  .move { color:var(--gold); font-style:italic; margin:6px 0 18px; border-left:2px solid var(--gold); padding:4px 0 4px 12px; }
+  .move b { font-style:normal; letter-spacing:0.06em; text-transform:uppercase; font-size:13px; color:var(--gold); margin-right:6px; }
+  .signal { border:1px solid var(--gold); padding:16px 18px; margin:14px 0 20px; background: rgba(201,168,76,0.04); }
+  .signal h3 { margin-top:0; color:var(--gold); }
+  .ledger-row { padding:10px 0; border-bottom:1px dashed var(--rule); }
+  .hit { color:var(--gold); font-weight:bold; letter-spacing:0.08em; }
+  .miss { color:var(--rust); font-weight:bold; letter-spacing:0.08em; }
+  .unsettled { color:var(--muted); font-weight:bold; letter-spacing:0.08em; }
+  .open { color:var(--muted); letter-spacing:0.08em; font-size:13px; text-transform:uppercase; }
+  ol.sources { padding-left:22px; font-size:15px; }
+  ol.sources li { margin-bottom:8px; line-height:1.5; }
+  ol.sources .tier { color:var(--muted); font-style:italic; font-size:13px; letter-spacing:0.04em; }
+  .listen { background:transparent; border:1px solid var(--gold); color:var(--gold); font-family:Georgia, serif; font-size:14px; letter-spacing:0.14em; text-transform:uppercase; padding:12px 20px; min-height:44px; cursor:pointer; margin:0 8px 0 0; }
+  .listen:hover { background:rgba(201,168,76,0.1); }
+  .listen-wrap { margin:10px 0 22px; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--rule); color:var(--muted); font-size:13px; line-height:1.6; }
+  .caution { font-size:14px; color:var(--muted); font-style:italic; margin:4px 0 18px; }
+  @media (max-width: 480px) {
+    html, body { font-size:16px; }
+    .wrap { padding:20px 16px 56px; }
+    h1 { font-size:30px; }
+    h2 { font-size:19px; }
+    h3 { font-size:17px; }
+    .bar { font-size:13px; gap:8px 10px; }
+    .bar a, .next { padding:12px 4px; }
+    .nav-mid a { margin:0 6px; }
+    .label-full { display:none; }
+    .label-short { display:inline; }
+    .urgent { font-size:16px; padding:12px 14px; }
+    ol.sources { font-size:15px; }
+  }
+  @media (min-width: 481px) {
+    .label-short { display:none; }
+    .label-full { display:inline; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="bar">
+  <a href="2026-09-30.html"><span class="label-full">← YESTERDAY</span><span class="label-short">←</span></a>
+  <span class="nav-mid">
+    <a href="./">Today</a>
+    <a href="archive.html">Archive</a>
+  </span>
+  <span class="next"><span class="label-full">TOMORROW →</span><span class="label-short">→</span></span>
+</nav>
+
+<header class="masthead">
+  <div class="tag">Travel Points · Maximize every transfer</div>
+  <h1>The Points Brief</h1>
+  <div class="issue">Thursday · October 1, 2026</div>
+</header>
+
+<div class="urgent">
+  <b>Expires today</b>
+  Bilt Rent Day: up to <strong>200% to Hilton Honors</strong> and up to <strong>125% to Amtrak Guest Rewards</strong>. Window closes at 23:59 PT tonight — this is a once-a-month event and today is the only transfer day.<sup><a class="src" href="#s1">[1]</a></sup>
+</div>
+
+<div class="listen-wrap">
+  <button class="listen" id="playBtn" onclick="speak()">▶ Listen (≈3 min)</button>
+  <button class="listen" id="stopBtn" onclick="stopSpeak()" style="display:none;">■ Stop</button>
+</div>
+
+<h2>Today's Transfer Bonuses</h2>
+
+<h3>Bilt Rewards → Hilton Honors — up to 200%<sup><a class="src" href="#s1">[1]</a></sup></h3>
+<p class="meta">Expires: October 1, 2026 (today only, 23:59 PT) · Base ratio: 1:1 · Bonus caps at 100,000 bonus points per member</p>
+<p>Bilt's October Rent Day puts an elevated transfer bonus on Hilton that scales with Bilt elite tier: 75% for Blue, 100% for Silver, 150% for Gold, 175% for Platinum, and 200% if you upgrade to Platinum Plus with Bilt Cash. At 200% the effective rate is 1:3 — one Bilt Point becomes three Hilton Honors. Hilton is a thin per-point redemption (roughly 0.5c), so even at 1:3 you are moving points worth about 1.5c each.<sup><a class="src" href="#s2">[2]</a></sup></p>
+<p class="move"><b>Your move:</b> Transfer only if you already hold a confirmed aspirational Hilton redemption — Conrad Maldives, Waldorf Maldives, Conrad Bora Bora — where the per-night point cost crushes cash. For a run-of-the-mill US Hampton stay the maths does not work even at 200%; take Bilt's one-cent floor via Amtrak instead.</p>
+
+<h3>Bilt Rewards → Amtrak Guest Rewards — up to 125%<sup><a class="src" href="#s1">[1]</a></sup></h3>
+<p class="meta">Expires: October 1, 2026 (today only, 23:59 PT) · Base ratio: 1:1</p>
+<p>Second Rent Day lever: Amtrak at up to 125% depending on Bilt tier. Amtrak Guest Rewards price Acela and Northeast Regional awards against cash fare at roughly 2.5–3c per point on peak-cash routes, which is why this bonus matters even though Amtrak is less glamorous than the Hilton number.<sup><a class="src" href="#s3">[3]</a></sup></p>
+<p class="move"><b>Your move:</b> Only transfer if you have an Acela or peak-season NEC trip in mind in the next twelve months. Amtrak points do not expire for 24 months of activity, but transferring blindly for a trip that may never happen is still a one-way move; a specific route and date test beats "I'll figure it out later."</p>
+
+<h3>Chase Ultimate Rewards → Marriott Bonvoy — 70%<sup><a class="src" href="#s4">[4]</a></sup></h3>
+<p class="meta">Window: September 15 – October 15, 2026 · Base ratio: 1:1 → promo ratio 1:1.7</p>
+<p>Chase's record-high transfer bonus to Marriott — the highest ever on this pair per multiple trade desks — continues through Oct 15. 1,000 Chase UR becomes 1,700 Marriott points. The caveat is Marriott's May 2026 chart devaluation and ongoing per-property creep, which has cut effective point value by roughly 10–15% at aspirational properties.<sup><a class="src" href="#s5">[5]</a></sup></p>
+<p class="move"><b>Your move:</b> Transfer only against a specific award you have already priced on Marriott's own search — ideally a property where dynamic pricing is still soft (shoulder-season Ritz-Carltons, mid-category W properties). Do not transfer "to top up for later"; Marriott flash-devalues properties on a near-monthly cadence and the Chase-side ratio is unlikely to drop below 1:1 in the next twelve months.</p>
+
+<h3>Amex Membership Rewards → Hilton Honors (US) — 30%<sup><a class="src" href="#s6">[6]</a></sup></h3>
+<p class="meta">Window: through October 14, 2026 · Base ratio: 1:2 → promo ratio 1:2.6 · May be targeted</p>
+<p>Amex's standard 1:2 push to Hilton is bumped 30%, so 1,000 MR becomes 2,600 Hilton Honors. Check your Amex offers page — this one appears to be targeted and does not land in every account.</p>
+<p class="move"><b>Your move:</b> If (and only if) today's Bilt 200% does not apply to you and you have a Hilton redemption lined up, 1:2.6 clears roughly 1.3c per MR. Below that bar, Amex MR has better homes — Avios short-haul and Flying Blue remain more valuable per point. Skip if you are not holding an active Hilton booking plan.</p>
+
+<h3>Citi ThankYou → Japan Airlines Mileage Bank — 30%<sup><a class="src" href="#s7">[7]</a></sup></h3>
+<p class="meta">Window: September 20 – October 24, 2026 · Base ratio: 1:1 (premium cards) → promo ratio 1:1.3</p>
+<p>JAL became a Citi partner on September 20 with a launch bonus. On premium cards (Strata Elite, Strata Premier, Prestige, AT&T Access More) the ratio is 1:1 base, 1:1.3 with the bonus; no-annual-fee cards transfer at 1:0.7 base, 1:0.9 with the bonus. JAL Mileage Bank is one of the cheapest Oneworld business-class awards into Asia if you can source award space.<sup><a class="src" href="#s8">[8]</a></sup></p>
+<p class="move"><b>Your move:</b> Only transfer if you hold a premium Citi card AND have confirmed JAL or Oneworld partner award space (US→Asia business from ~70k miles). The no-fee-card ratio of 1:0.9 is a wealth-destroyer — skip entirely if that is your card.</p>
+
+<h3>Citi ThankYou → Avianca LifeMiles — 25%<sup><a class="src" href="#s9">[9]</a></sup></h3>
+<p class="meta">Window: September 20 – October 24, 2026 · Base ratio: 1:1 (premium cards) → promo ratio 1:1.25</p>
+<p>Citi's second October bonus runs same-window as the JAL offer. LifeMiles remains one of the strongest single Star Alliance programs for US-centric redemptions — no fuel surcharges on Star partners, distance-based pricing that preserves 63,000-mile US→Europe business.<sup><a class="src" href="#s10">[10]</a></sup></p>
+<p class="move"><b>Your move:</b> Transfer against a specific Star Alliance award you have already found space on — do not speculate on LifeMiles balances. The program devalues without notice and has a long history of mid-flight sweet-spot removals; holding miles is strictly worse than holding ThankYou points until you need them.</p>
+
+<h2>Program Watch</h2>
+
+<h3>Marriott Bonvoy — stealth-devaluation cadence continues<sup><a class="src" href="#s5">[5]</a></sup></h3>
+<p>Marriott's mid-2026 award-chart revision pushed average pricing up 5–10%, with aspirational flagships (Ritz-Carlton St. Thomas, W Barcelona, JW Marriott Maldives, Edition Reykjavik) up as much as 16%. Per-point value has slipped from roughly 0.8c to roughly 0.7c year-over-year, and property-level flash devaluations continue on a near-monthly basis.<sup><a class="src" href="#s11">[11]</a></sup></p>
+<p class="move"><b>Your move:</b> If you are using today's Chase 70% to Marriott, book inside this window rather than banking points. Marriott-side value is drifting down faster than Chase-side bonuses are drifting up.</p>
+
+<h3>Amex Business Platinum — Lufthansa Business Lounge access ends today<sup><a class="src" href="#s12">[12]</a></sup></h3>
+<p>Effective October 1, 2026, Amex removes Lufthansa Business Lounge access from the Business Platinum lounge benefit. Priority Pass and Centurion access are unchanged; the removal affects members routing through FRA/MUC on paid tickets without a Star Alliance Gold tier.</p>
+<p class="move"><b>Your move:</b> If your travel pattern leaned on this benefit, re-price the card against the new fee stack — the $895 annual fee without the Lufthansa Business perk is a thinner value calculation. No action if you were not using it.</p>
+
+<h3>World of Hyatt — five-level pricing bands now live<sup><a class="src" href="#s13">[13]</a></sup></h3>
+<p>Hyatt's May 2026 chart restructure expanded each of the eight categories into five levels (Lowest, Low, Moderate, Upper, Top). The published-chart commitment is preserved, but 136 properties shifted categories at launch (82% upward), including 14 that lost Category 1–4 free-night eligibility. Property-level creep has continued through the summer.</p>
+<p class="move"><b>Your move:</b> Price every intended Hyatt redemption on the chart before transferring — the five-level structure means a property's advertised category no longer tells you what a specific night will cost. Chase→Hyatt 1:1 remains the best route for Sapphire Reserve holders; Preferred holders now transfer at 4:3 effective October 1 (see yesterday's edition).</p>
+
+<h3>Chase Sapphire Preferred → Hyatt — 4:3 cutover landed today<sup><a class="src" href="#s14">[14]</a></sup></h3>
+<p>As of today, Chase Sapphire Preferred and Ink Business Preferred cardholders transfer Ultimate Rewards to World of Hyatt at 4:3 rather than 1:1. Sapphire Reserve and Reserve for Business retain 1:1. This change was announced June 15 and has now taken effect.</p>
+<p class="move"><b>Your move:</b> If you downgraded from Reserve to Preferred and relied on Hyatt transfers, re-evaluate the card against Bilt (which still transfers 1:1 to Hyatt) or against upgrading back to Reserve. Capital One, Amex, and Citi do not transfer to Hyatt at all.</p>
+
+<h2>Today's Play</h2>
+
+<div class="signal">
+  <h3>The Bilt Rent Day asymmetry</h3>
+  <p>Today is the only day of October that Bilt's 200% Hilton / 125% Amtrak transfer bonus is available, and it collides with a long tail of weaker standing offers (Chase 70% Marriott, Amex 30% Hilton, Citi 25–30% to Avianca/JAL) that each run for another 14–23 days. The <em>time-boxed</em> offer is not automatically the better transfer — it is only better if the redemption is already lined up. The right move today, for most readers, is to <strong>price every transfer against a confirmed booking before 23:59 PT</strong>, not to transfer speculatively because a window closes tonight. Deadline urgency is Bilt's marketing lever; your lever is specificity.</p>
+  <p>If nothing specific is held: do not transfer today. The Chase→Marriott 70% is live for another two weeks and the Citi→JAL/LifeMiles pair runs through Oct 24. Scarcity makes bad transfers feel urgent; a bad transfer is still a bad transfer.</p>
+</div>
+
+<h2>The Ledger</h2>
+
+<p class="meta">Season 1 · 1-0 across graded calls · 36 open, horizons from October 2026 through April 2027. Ledger started 2026-08-15.<sup><a class="src" href="#s15">[15]</a></sup></p>
+
+<div class="ledger-row">
+  <p><span class="unsettled">NO CALLS GRADED TODAY</span> — none of the 36 open calls had horizons on or before October 1. The next calls due to resolve are 2026-09-08-1 (horizon Oct 8, Flying Blue devaluation-response window) and 2026-09-17-1 (horizon Oct 15, no competitor 25%+ Marriott response).</p>
+</div>
+
+<div class="ledger-row">
+  <p><span class="open">OPEN · logged today</span> — <strong>2026-10-01-1:</strong> Capital One Miles will launch at least one new transfer bonus (any partner, any percentage greater than zero) between October 1 and November 15, 2026.</p>
+  <p class="meta">Basis: Capital One's prior 30% JAL bonus expired yesterday with no October 1 replacement; historically Capital One runs near-monthly bonuses, and gaps of more than six weeks are uncommon after a prior bonus has just lapsed. Capital One also has defensive reason to re-engage JAL after Citi's September 20 launch at 1:1 with a competing 30%. Horizon: 2026-11-15.</p>
+</div>
+
+<h2>Sources</h2>
+
+<ol class="sources">
+  <li id="s1">Bilt Rewards — <a class="src" href="https://www.bilt.com/rentday">Rent Day (October 2026)</a> <span class="tier">· primary</span></li>
+  <li id="s2">Hilton Honors — <a class="src" href="https://www.hilton.com/en/hilton-honors/points/">Honors Points & redemption terms</a> <span class="tier">· primary</span></li>
+  <li id="s3">Amtrak Guest Rewards — <a class="src" href="https://www.amtrak.com/guestrewards/pointstransfer.html">Transfer points into Amtrak</a> <span class="tier">· primary</span></li>
+  <li id="s4">Marriott Bonvoy — <a class="src" href="https://www.marriott.com/loyalty/earn/transfer-points.mi">Transfer points to Bonvoy</a> <span class="tier">· primary</span></li>
+  <li id="s5">The Points Guy — <a class="src" href="https://thepointsguy.com/loyalty-programs/marriott-bonvoy-devaluation-award-cap-increase/">Marriott Bonvoy award-chart devaluation coverage</a> <span class="tier">· trade</span></li>
+  <li id="s6">American Express — <a class="src" href="https://global.americanexpress.com/rewards/transfer-partners">Membership Rewards Transfer Partners</a> <span class="tier">· primary</span></li>
+  <li id="s7">LoyaltyLobby — <a class="src" href="https://loyaltylobby.com/2026/09/20/citi-thankyou-japan-airlines-mileage-bank-transfer-partnership-launch-with-30-bonus-until-october-24-2026/">Citi ThankYou × JAL Mileage Bank — launch & 30% bonus terms</a> <span class="tier">· trade</span></li>
+  <li id="s8">Citi — <a class="src" href="https://www.citi.com/credit-cards/thankyou-rewards/airline-and-hotel-partners">ThankYou Rewards airline & hotel partners</a> <span class="tier">· primary</span></li>
+  <li id="s9">LoyaltyLobby — <a class="src" href="https://loyaltylobby.com/2026/09/20/citi-thankyou-to-avianca-lifemiles-25-points-to-miles-conversion-bonus-september-20-october-24-2026/">Citi ThankYou → Avianca LifeMiles 25% bonus terms</a> <span class="tier">· trade</span></li>
+  <li id="s10">Avianca LifeMiles — <a class="src" href="https://www.lifemiles.com/main/opt/mt_bank.aspx">Transfer bank points to LifeMiles</a> <span class="tier">· primary</span></li>
+  <li id="s11">View From The Wing — <a class="src" href="https://viewfromthewing.com/marriott-bonvoy-just-quietly-raised-award-prices-some-hotels-now-cost-up-to-16-more-points/">Marriott Bonvoy quiet award-price increase (up to 16%)</a> <span class="tier">· trade</span></li>
+  <li id="s12">American Express — <a class="src" href="https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card/">Business Platinum Card product page & benefits</a> <span class="tier">· primary</span></li>
+  <li id="s13">World of Hyatt — <a class="src" href="https://newsroom.hyatt.com/awardchartupdates">2026 Award Chart Updates (newsroom)</a> <span class="tier">· primary</span></li>
+  <li id="s14">Chase — <a class="src" href="https://www.chase.com/personal/credit-cards/sapphire-preferred">Sapphire Preferred product page</a> <span class="tier">· primary</span></li>
+  <li id="s15">The Points Brief — <a class="src" href="https://raw.githubusercontent.com/gregmurad-eng/points-brief/main/ledger.json">ledger.json (open & graded calls)</a> <span class="tier">· primary</span></li>
+</ol>
+
+<p class="caution">Transfers from a flexible-points program to an airline or hotel partner are one-way and irreversible. Confirm every award and every rate against the program's own search before transferring; a bonus does not create value if the redemption does not exist.</p>
+
+<nav class="bar" style="margin-top:36px;">
+  <a href="2026-09-30.html"><span class="label-full">← YESTERDAY</span><span class="label-short">←</span></a>
+  <span class="nav-mid">
+    <a href="./">Today</a>
+    <a href="archive.html">Archive</a>
+  </span>
+  <span class="next"><span class="label-full">TOMORROW →</span><span class="label-short">→</span></span>
+</nav>
+
+<footer>
+  <p>The Points Brief is a daily, AI-assisted synthesis of publicly reported transfer bonuses and loyalty program news. Figures are drawn from each program's own transfer page where available; percentages, expiry dates, and transfer ratios can change without notice. Confirm every award, every rate, and every program term before transferring. Transfers are one-way.</p>
+</footer>
+
+</div>
+
+<script>
+const S = "Thursday, October first, twenty twenty six. The Points Brief. The single most time-sensitive move today is Bilt Rent Day. Up to two hundred percent to Hilton Honors and up to one hundred twenty five percent to Amtrak Guest Rewards. The window closes at eleven fifty nine Pacific tonight. Elite tier determines your rate. Blue members get seventy five percent to Hilton. Platinum members who upgrade to Platinum Plus get the full two hundred percent, which is one Bilt point becoming three Hilton Honors. The caveat is that Hilton is a thin per point redemption at around half a cent, so even at three times, you are moving points worth about one and a half cents each. Transfer only if you already hold a confirmed aspirational Hilton redemption. For a regular Hampton stay the math does not work. Elsewhere, the Chase to Marriott Bonvoy seventy percent is still live through October fifteenth. This is the highest ever Chase to Marriott bonus on record. The catch is Marriott's May two thousand twenty six chart devaluation and ongoing per property creep. Transfer against a specific award you have already priced, not to bank points for later. On the airline side, Citi added Japan Airlines Mileage Bank as a one to one transfer partner on September twentieth with a thirty percent launch bonus through October twenty fourth. Pair that with Citi's twenty five percent to Avianca LifeMiles, also through October twenty fourth. Both reward specific award space, not speculation. Program watch. Marriott's stealth devaluation cadence continues at the property level. Amex Business Platinum loses Lufthansa Business Lounge access effective today. World of Hyatt's five level pricing structure means a property's advertised category no longer tells you what a specific night will cost. And as of today, Chase Sapphire Preferred cardholders transfer to Hyatt at four to three rather than one to one. Reserve holders keep one to one. The core discipline today is specificity. A time boxed offer is only better if the redemption is already lined up. Deadline urgency is marketing. Your lever is the booking you have already found. If nothing specific is held, do not transfer today. Transfers are one way and irreversible. Confirm every award and every rate against the program's own search before moving a single point. Good luck out there.";
+let utter = null;
+function pickVoice() {
+  const vs = window.speechSynthesis.getVoices();
+  return vs.find(v => /Daniel/i.test(v.name)) || vs.find(v => /Alex/i.test(v.name)) || vs.find(v => /en[-_]/i.test(v.lang)) || vs[0];
+}
+function speak() {
+  if (!('speechSynthesis' in window)) { alert('Speech not supported in this browser.'); return; }
+  window.speechSynthesis.cancel();
+  utter = new SpeechSynthesisUtterance(S);
+  utter.rate = 0.93;
+  const v = pickVoice();
+  if (v) utter.voice = v;
+  utter.onend = () => { document.getElementById('playBtn').style.display='inline-block'; document.getElementById('stopBtn').style.display='none'; };
+  window.speechSynthesis.speak(utter);
+  document.getElementById('playBtn').style.display='none';
+  document.getElementById('stopBtn').style.display='inline-block';
+}
+function stopSpeak() {
+  window.speechSynthesis.cancel();
+  document.getElementById('playBtn').style.display='inline-block';
+  document.getElementById('stopBtn').style.display='none';
+}
+if ('speechSynthesis' in window) { window.speechSynthesis.onvoiceschanged = () => {}; }
+</script>
+
+</body>
+</html>
