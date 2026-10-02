@@ -446,6 +446,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-10-02-1",
+      "date": "2026-10-02",
+      "call": "Bilt Rewards will NOT publicly offer any Bilt to World of Hyatt transfer bonus of any percentage greater than zero at any point between 2026-10-02 and 2026-12-31 inclusive. The December 31 deadline-urgency Bilt announced on October 1 is itself the marketing push, and Bilt will not stack a transfer bonus on top of a route it is actively devaluing.",
+      "basis": "Bilt announced on October 1, 2026 that the Bilt to World of Hyatt transfer ratio drops from 1:1 to 4:3 on January 1, 2027 for ALL members, mirroring Chases October 1 cut on Sapphire Preferred and Ink Preferred. Bilt has never previously offered a Hyatt transfer bonus. The 1:1 rate itself was the differentiator against Chase. Running a bonus now would compound Bilts own economic damage from the cut by paying out more Hyatt points at an about-to-shrink ratio, with no offsetting Bilt commercial win. The October 1 announcement explicitly frames December 31 as the lock-in deadline, which is a free marketing lever that converts transfer volume without a stacked promo cost. Bilts revealed-preference Rent Day pattern (September 2026 Virgin Atlantic 100 percent as the current template) runs elevated bonuses on partners where Bilt has structural advantage. On Hyatt, Bilt just lost its structural advantage and the December 31 wall is doing the marketing work for free. A pre-cutover Hyatt bonus inside the next three months would signal Bilt is panicking about Q4 transfer volume rather than letting the deadline do its job, and would break an eight-plus-year zero-bonus history on this route (Chase to Hyatt and Bilt to Hyatt have both been treated as sacrosanct 1:1 lanes until the October 1 cuts).",
+      "horizon": "2026-12-31",
+      "test": "GRADE HIT if no Bilt Rewards to World of Hyatt transfer bonus of any percentage greater than zero is publicly offered at any point between 2026-10-02 and 2026-12-31 inclusive. GRADE MISS if any Bilt to Hyatt transfer bonus (greater than 0 percent) is announced or live during that window, evidenced by Bilts own transfer page and confirmed by at least one Tier 1 or Tier 2 source. Rent Day monthly promos that do NOT include a Hyatt transfer-bonus component do not count toward MISS; the test is specifically whether Bilt bonuses the Hyatt route itself.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
