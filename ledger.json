@@ -458,6 +458,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-10-03-1",
+      "date": "2026-10-03",
+      "call": "Amex Membership Rewards will publicly launch a transfer bonus of 25% or greater to Marriott Bonvoy between 2026-11-16 and 2027-01-31 inclusive \u2014 Amex closes the Marriott-shaped gap left by Chase's record 70% UR\u2192Marriott bonus expiring October 15, picking up Amex's usual Nov\u2013Jan Bonvoy slot.",
+      "basis": "Amex has run MR\u2192Marriott bonuses on a roughly semi-annual cadence (last public bonus: 20% Apr 8 \u2013 May 5, 2026) and the Marriott box has been unchecked for Amex all year outside that spring push. Chase's record 70% dominates September-October \u2014 Amex does not typically run competing hotel bonuses to the same partner inside Chase's window, which observable call 2026-09-17-1 behaviour already assumes. The natural slot opens after Oct 15 and lines up with Amex's historical Nov\u2013Dec Marriott bonuses (25% Nov 11 \u2013 Dec 9, 2023; 20% Oct 22 \u2013 Nov 20, 2024; similar in Q4 2025). Amex's Oct 14 Hilton 30% expiry also frees Amex's Q4 hotel calendar. A ten-week silence from mid-October through end-January would break Amex's established cadence, especially in the window where Amex most needs a hotel-side push to compete against Citi's November airline cadence (Flying Blue, Turkish) and Capital One's Q4 LifeMiles rhythm. This call is distinct from 2026-09-05-1 (which tests 20%+ Sep 5 \u2013 Nov 15) \u2014 it tests the stricter 25% threshold in the exact post-Chase vacuum window.",
+      "horizon": "2027-01-31",
+      "test": "GRADE HIT if any Amex Membership Rewards \u2192 Marriott Bonvoy transfer bonus of 25% or greater is publicly offered at any point between 2026-11-16 and 2027-01-31 inclusive, evidenced by Amex's own transfer page, Marriott's promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
