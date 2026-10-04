@@ -470,6 +470,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-10-04-1",
+      "date": "2026-10-04",
+      "call": "Amex Membership Rewards will NOT publicly run a transfer bonus of 25% or greater to Hilton Honors between 2026-10-15 and 2026-12-15 inclusive. Amex just concluded (or will conclude Oct 14) a 30% Hilton targeted bonus; a 25%+ re-run inside eight weeks would break Amex's established 2026 Hilton cadence.",
+      "basis": "Amex to Hilton bonuses in 2026 have landed roughly on a quarterly cadence (observable through AwardWallet's Amex MR history page: Jan, late Apr-May, and the current Sep 1 to Oct 14 window), with 10-14 week gaps between promos. A re-run of 25%+ inside eight weeks of the Oct 14 close would be aggressive even by Amex standards. The current bonus was also widely reported as targeted - targeted offers correlate with Amex testing elasticity, not an immediate universal re-launch. Amex's Q4 hotel calendar also competes with the Nov-Jan Marriott slot (call 2026-10-03-1) and the running Flying Blue 25% through Oct 31. A new 25%+ Hilton bonus before Dec 15 would mean Amex ran back-to-back Hilton promos - not consistent with its 2026 pattern.",
+      "horizon": "2026-12-15",
+      "test": "GRADE HIT if no Amex Membership Rewards to Hilton Honors transfer bonus of 25% or greater is publicly offered (universal or targeted) at any point between 2026-10-15 and 2026-12-15 inclusive, confirmed by Amex's own transfer page or a Tier 1/Tier 2 confirmation. GRADE MISS if any such bonus (25%+) is offered during that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
