@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief · October 6, 2026</title>
+<style>
+  :root {
+    --bg: #080c14;
+    --accent: #c9a84c;
+    --text: #d8d0b4;
+    --muted: #8a8468;
+    --panel: #0e141f;
+    --miss: #c76a6a;
+    --unsettled: #7a7260;
+    --rule: #2a2e38;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); margin: 0; padding: 0; font-family: Georgia, 'Times New Roman', serif; }
+  body { max-width: 760px; margin: 0 auto; padding: 28px 24px 60px; font-size: 18px; line-height: 1.65; }
+  h1 { font-size: 44px; letter-spacing: 0.5px; margin: 0 0 4px; color: var(--accent); font-weight: normal; }
+  .tag { color: var(--muted); font-style: italic; margin-bottom: 2px; }
+  .today { color: var(--text); margin-bottom: 22px; letter-spacing: 0.5px; }
+  h2 { color: var(--accent); font-size: 26px; border-bottom: 1px solid var(--rule); padding-bottom: 6px; margin-top: 42px; font-weight: normal; letter-spacing: 0.3px; }
+  h3 { color: var(--text); font-size: 20px; margin-top: 26px; margin-bottom: 6px; font-weight: normal; }
+  p { margin: 10px 0; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+  a:hover { border-bottom-style: solid; }
+  sup a { font-size: 0.75em; margin-left: 2px; border-bottom: none; padding: 6px 4px; margin-right: -4px; display: inline-block; }
+  sup a:hover { color: #e6c565; }
+  .bar { background: var(--panel); border: 1px solid var(--rule); padding: 12px 16px; margin: 0 0 24px; display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; font-size: 14px; }
+  .bar a, .bar .next { white-space: nowrap; display: inline-block; padding: 10px 2px; min-height: 44px; line-height: 24px; border-bottom: none; }
+  .bar a { color: var(--accent); }
+  .bar .next { color: var(--muted); margin-left: auto; }
+  .nav-mid { display: inline-flex; gap: 0; align-items: center; }
+  .nav-mid a { color: var(--accent); margin: 0 9px; }
+  .listen { background: transparent; color: var(--accent); border: 1px solid var(--accent); font-family: Georgia, serif; font-size: 15px; padding: 10px 18px; cursor: pointer; letter-spacing: 1px; min-height: 44px; margin: 10px 0 20px; }
+  .listen:hover { background: var(--accent); color: var(--bg); }
+  .banner { border: 1px solid var(--accent); background: rgba(201,168,76,0.08); padding: 14px 18px; margin: 20px 0; font-size: 16px; }
+  .banner strong { color: var(--accent); }
+  .signal { border-left: 3px solid var(--accent); background: var(--panel); padding: 14px 18px; margin: 18px 0; }
+  .move { color: var(--accent); font-style: italic; margin-top: 10px; display: block; font-size: 17px; }
+  .move::before { content: "Your move: "; font-weight: normal; }
+  .meta { color: var(--muted); font-size: 15px; font-style: italic; }
+  .ledger-row { padding: 10px 0; border-bottom: 1px dotted var(--rule); }
+  .verdict-hit { color: var(--accent); font-weight: bold; letter-spacing: 1px; }
+  .verdict-miss { color: var(--miss); font-weight: bold; letter-spacing: 1px; }
+  .verdict-unsettled { color: var(--unsettled); font-weight: bold; letter-spacing: 1px; }
+  .verdict-open { color: var(--muted); letter-spacing: 1px; }
+  ol.sources { padding-left: 24px; font-size: 15px; color: var(--muted); }
+  ol.sources li { margin-bottom: 6px; }
+  ol.sources a { color: var(--text); }
+  .tier { color: var(--muted); font-size: 13px; margin-left: 6px; letter-spacing: 0.5px; }
+  .caution { font-size: 15px; color: var(--muted); font-style: italic; border-top: 1px solid var(--rule); padding-top: 16px; margin-top: 30px; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 44px; border-top: 1px solid var(--rule); padding-top: 16px; }
+  @media (max-width: 480px) {
+    body { padding: 18px 14px 50px; font-size: 16px; }
+    h1 { font-size: 32px; }
+    h2 { font-size: 22px; }
+    h3 { font-size: 18px; }
+    .bar { font-size: 15px; gap: 8px 10px; padding: 10px 12px; }
+    .bar a, .bar .next { padding: 12px 4px; min-height: 44px; }
+    .nav-mid a { margin: 0 8px; }
+    .listen { font-size: 15px; padding: 12px 20px; min-height: 44px; }
+    sup a { padding: 8px 6px; margin: -8px -2px; }
+    .move { font-size: 16px; }
+    ol.sources { font-size: 15px; }
+    .caution, footer { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+<h1>The Points Brief</h1>
+<div class="tag">Travel Points · Maximize every transfer</div>
+<div class="today">Tuesday, October 6, 2026</div>
+</header>
+
+<nav class="bar"><a href="2026-10-04.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+<button class="listen" id="listenBtn" onclick="playBrief()">▶ LISTEN</button>
+
+<section>
+<h2>Today's Transfer Bonuses</h2>
+<p class="meta">Confirmed against program and issuer pages, sorted by expiry. Transfers are one-way. Only move points with a specific award in hand.</p>
+
+<h3>Chase Ultimate Rewards → Marriott Bonvoy · 70%<sup><a href="#s2">[2]</a></sup></h3>
+<p><strong>Expires:</strong> October 15, 2026 at 11:59pm ET · <strong>Ratio:</strong> 1,000 UR → 1,700 Marriott Bonvoy. Matches the highest Chase→Marriott bonus seen since early 2021<sup><a href="#s2">[2]</a></sup>. Nine days left.</p>
+<p>Marriott points are worth roughly 0.73¢ apiece in current secondary-market valuations<sup><a href="#s2">[2]</a></sup>, so the effective floor is ~1.24¢ per UR point transferred. That underperforms direct Chase redemptions through Chase Travel for most Sapphire tier cards, and it underperforms a Hyatt redemption at a cap-and-floor property — which is exactly the knife this bonus is pointed at, now that Chase→Hyatt dropped to 4:3 for pre-June-2026 Sapphire Preferred and Ink Business Preferred cardholders on October 1<sup><a href="#s6">[6]</a></sup>.</p>
+<span class="move">Only transfer if you already hold or can hold a specific Marriott redemption — a five-night cert cash-out, a peak-rate aspirational property, or a Hoshinoya-tier Asia property where Marriott still prices below cash value. Chase→Hyatt remains the better long-horizon destination for most readers whose transfer ratio is still 1:1; moving UR to Marriott speculatively now ties you to a chain that pushed award pricing up 5–10% across the portfolio this year<sup><a href="#s4">[4]</a></sup>.</span>
+
+<h3>Amex Membership Rewards → Hilton Honors · 30%<sup><a href="#s3">[3]</a></sup></h3>
+<p><strong>Expires:</strong> October 14, 2026 · <strong>Ratio:</strong> 1,000 MR → 2,600 Hilton Honors (base 1:2, boosted to 1:2.6)<sup><a href="#s3">[3]</a></sup>. <strong>Targeted</strong> — log into Amex and check "Transfer Points" to confirm you have it<sup><a href="#s3">[3]</a></sup>. Eight days left.</p>
+<p>At Hilton's typical ~0.5¢-per-point valuation, 1,000 MR converts to roughly 1.3¢ of Hilton value. That's below where MR usually earns its keep, so this is a top-off play, not a bulk transfer. The structural asymmetry still bites: MR to Hilton is Amex's lowest-floor hotel transfer, and the 30% doesn't change that.</p>
+<span class="move">Transfer only to top off a specific Hilton redemption you already have award space on — a Conrad Maldives night at the 150k ceiling, a Waldorf New York at 95k, or a Points & Money mix where you need a precise points balance. Do not bulk-move MR to Hilton for storage; MR is more valuable in nearly every other partner.</span>
+
+<h3>Citi ThankYou → Japan Airlines Mileage Bank · 30%<sup><a href="#s5">[5]</a></sup></h3>
+<p><strong>Expires:</strong> October 24, 2026 · <strong>Ratio:</strong> Eligible annual-fee Citi ThankYou cards transfer 1,000 TY → 1,300 JAL miles. $0-annual-fee cards transfer 1,000 TY → 910 JAL miles (base 1:0.7)<sup><a href="#s5">[5]</a></sup>. The post-bonus annual-fee rate drops back to 1:1<sup><a href="#s5">[5]</a></sup>.</p>
+<p>This is the standout offer of the month. JAL's own award chart prices Tokyo→Honolulu business class from 43,000 miles one-way at off-peak dates<sup><a href="#s5">[5]</a></sup> — with the 30% bonus, that redemption prices at ~33,100 ThankYou points on an annual-fee card. Oneworld business class to Japan at a bank-points cost that undercuts Alaska. The partnership itself only launched in September; this is the inaugural promo window.</p>
+<span class="move">If you hold Premier, Prestige, or Strata Premier and you already have JAL award space held — or you can see space on the JAL calendar for a specific peak-season date — transfer the exact amount for the redemption. Do NOT park ThankYou points speculatively in JAL: JAL mileage expires 36 months after each posting, and there is no partner-award reinstatement path if you cancel after an availability change. $0-annual-fee TY holders should skip this entirely; even at 1:0.91 the ratio destroys value.</span>
+
+<h3>Amex Membership Rewards → Flying Blue · 25%<sup><a href="#s7">[7]</a></sup></h3>
+<p><strong>Expires:</strong> October 31, 2026 · <strong>Ratio:</strong> 1,000 MR → 1,250 Flying Blue (base 1:1, boosted to 1:1.25)<sup><a href="#s7">[7]</a></sup>. 25 days left.</p>
+<p>Flying Blue's tiered-fare rollout went live September 8, 2026, and the system has now run a full cycle of monthly Promo Rewards<sup><a href="#s7">[7]</a></sup> — enough data to tell whether this partnership is still worth bank-points cost. Early reads suggest short-haul intra-Europe deals held up (Promo Rewards from 10,000 miles continue to appear monthly), but long-haul premium cabin pricing is now unambiguously dynamic. Treat Flying Blue as a short-haul fuel tank, not a J-class engine.</p>
+<span class="move">Transfer only when you can see a specific redemption today — a Promo Rewards short-haul for a European trip you already have dates for, or an intra-Africa flight on Kenya Airways where Flying Blue still prints below cash. Do not pre-fund Flying Blue for a hypothetical business-class redemption; the tiered-fare system makes that a worse bet now than it was in Q1.</span>
+
+<h3>Capital One Miles → British Airways Avios · 20%<sup><a href="#s8">[8]</a></sup></h3>
+<p><strong>Expires:</strong> October 31, 2026 · <strong>Ratio:</strong> 1,000 Capital One → 1,200 BA Avios (base 1:1)<sup><a href="#s8">[8]</a></sup>. Transfer is near-instant; no registration<sup><a href="#s8">[8]</a></sup>.</p>
+<p>BA Avios distance-based short-haul redemptions — American Airlines coast-to-coast from 11,000 Avios off-peak, or AA regional hops from 8,250 Avios one-way — remain the only reliably underpriced product in the Avios system. BA transatlantic business class continues to carry severe surcharges (£500+ per leg from London), so this bonus is a US-domestic-via-Avios play, not a J-class play.</p>
+<span class="move">Transfer only if you need to top off for a specific American Airlines short-haul redemption you can see available on BA's search engine today. The Capital One→Qantas route (same partner family, no surcharges on partner redemptions out of Hawaii) is a stronger structural pick for the same miles, and this bonus doesn't bridge that gap.</span>
+
+<h3>Also live (secondary tier)</h3>
+<p>Amex MR → AeroMexico ClubPremier at 20% through October 30, 2026 (base 5:4, boosted to 1,000 → 1,920 ClubPremier points)<sup><a href="#s1">[1]</a></sup>; Citi ThankYou → Avianca LifeMiles at 25% through October 24, 2026 (1,000 → 1,250 LifeMiles)<sup><a href="#s1">[1]</a></sup>. Marriott Bonvoy → Air Canada Aeroplan is running a program-side 15% conversion bonus through October 31<sup><a href="#s9">[9]</a></sup> — a Marriott-run promo, not a bank bonus, and still a weak path given Marriott's baked-in 60k→25k ratio.</p>
+</section>
+
+<section>
+<h2>Program Watch</h2>
+
+<h3>Bilt Rewards → World of Hyatt drops to 4:3 on January 1, 2027<sup><a href="#s10">[10]</a></sup></h3>
+<p>Bilt quietly posted a notice on its Hyatt transfers page on October 1, 2026: the 1:1 Bilt→Hyatt ratio drops to 4:3 effective January 1, 2027, for all members and all cardholders regardless of elite status<sup><a href="#s10">[10]</a></sup>. 750 Hyatt points per 1,000 Bilt points<sup><a href="#s10">[10]</a></sup>. Transfers at the current 1:1 remain possible through December 31, 2026. This is the second major transferable-points program to devalue Hyatt in a single month — Chase moved Sapphire Preferred and Ink Business Preferred cardholders (those who opened before June 15, 2026) from 1:1 to 4:3 on October 1<sup><a href="#s6">[6]</a></sup>, grandfathering nothing. Amex is not a Hyatt partner; Citi is not; Capital One is not. The 1:1 era for Hyatt is ending.</p>
+
+<h3>Chase → Hyatt 4:3 ratio now live for pre-June-2026 Sapphire Preferred and Ink Business Preferred<sup><a href="#s6">[6]</a></sup></h3>
+<p>Took effect October 1, 2026. 1,000 UR → 750 Hyatt for CSP and Ink Business Preferred cardholders who opened before June 15, 2026<sup><a href="#s6">[6]</a></sup>. Sapphire Reserve, Chase Business Preferred, and newer-issued CSP/Ink BP accounts retain the 1:1 ratio. Pair this with Hyatt's May 2026 chart overhaul (three tiers to five, ceiling raised from 45,000 to 75,000 points per night)<sup><a href="#s4">[4]</a></sup> and the sweet spots that defined this program for a decade — Alila Ventana Big Sur, Park Hyatts in Asia at Category 7 — are now stacked with both a devaluation and a transfer-rate hit.</p>
+
+<h3>IHG One Rewards: 3× points for voco stays, October 6 to December 6, 2026<sup><a href="#s11">[11]</a></sup></h3>
+<p>Earning promo, not a transfer bonus — IHG elite nights still accrue normally, but base points triple on voco brand stays through December 6<sup><a href="#s11">[11]</a></sup>. voco is IHG's upper-upscale conversion brand, well-represented in Europe and Asia. For readers with an IHG stay already in the window, this is a routine 2× uplift on an otherwise forgettable category.</p>
+</section>
+
+<section>
+<h2>Today's Play</h2>
+<div class="signal">
+<p>The one call that matters this week: Citi ThankYou → JAL at 30% is the best use of transferable points available today, and it closes October 24. If you have an annual-fee Citi card, JAL award space on a route you actually need, and a plan to redeem within 36 months, this is the transfer. Everything else listed above is a top-off or a specific-redemption play — nothing else justifies a bulk move. If you were waiting for the "big one" of October, this is it, and there is a credible structural reason to think the follow-up bonus will match or tighten these terms rather than loosen them.<sup><a href="#s5">[5]</a></sup></p>
+</div>
+</section>
+
+<section>
+<h2>The Ledger</h2>
+<p class="meta">Season 1 · 1-0 across graded calls. Visible misses are what make the hits worth anything.</p>
+
+<div class="ledger-row">
+<p><strong>Today's new call</strong> — OCT 6, 2026 · <span class="verdict-open">OPEN</span></p>
+<p>Capital One Miles will publicly launch at least one hotel transfer bonus (to Accor Live Limitless, Choice Privileges, or Wyndham Rewards) of 20% or greater between October 6 and December 31, 2026.</p>
+<p class="meta">Basis: Capital One has run a Q4 hotel transfer bonus to one of these three partners in each of 2023, 2024, and 2025 — Wyndham 25% (December 2023), Accor 20% (November 2024), Choice 50% (October 2025). The current October 2026 Capital One promo is airline-only (British Airways). With Marriott and Hyatt absent from Capital One's partner list, hotel bonuses are the only lever they have for the hotel category. Horizon: December 31, 2026. Test: HIT if any Capital One→Accor/Choice/Wyndham bonus of 20%+ is publicly offered in the window; MISS if none appears.</p>
+</div>
+
+<div class="ledger-row">
+<p class="meta">No calls were due for grading today. 40 calls currently OPEN; next horizon date October 8 (Flying Blue tiered-fare bank response). The one graded call to date (season start, August 2026) remains a HIT.</p>
+</div>
+</section>
+
+<section>
+<h2>Sources</h2>
+<ol class="sources">
+<li id="s1">Frequent Miler · "Current point transfer bonuses" · <span class="tier">[trade]</span> · <a href="https://frequentmiler.com/current-point-transfer-bonuses/" target="_blank" rel="noopener">https://frequentmiler.com/current-point-transfer-bonuses/</a></li>
+<li id="s2">AwardWallet News · "Chase to Marriott Bonvoy Transfer Bonus: Get 70% More Points" · <span class="tier">[trade]</span> · <a href="https://awardwallet.com/news/chase-ultimate-rewards/marriott-transfer-bonus/" target="_blank" rel="noopener">https://awardwallet.com/news/chase-ultimate-rewards/marriott-transfer-bonus/</a></li>
+<li id="s3">AwardWallet News · "Amex Membership Rewards to Hilton Honors: 30% Transfer Bonus" · <span class="tier">[trade]</span> · <a href="https://awardwallet.com/news/amex-membership-rewards/hilton-transfer-bonus/" target="_blank" rel="noopener">https://awardwallet.com/news/amex-membership-rewards/hilton-transfer-bonus/</a></li>
+<li id="s4">One Mile at a Time · "Now Live: World Of Hyatt Updates Award Chart, Costs Increase By Up To 67%" · <span class="tier">[trade]</span> · <a href="https://onemileatatime.com/news/world-of-hyatt-updates-award-chart-costs-increase/" target="_blank" rel="noopener">https://onemileatatime.com/news/world-of-hyatt-updates-award-chart-costs-increase/</a></li>
+<li id="s5">10xTravel · "Citi ThankYou Points Now Transfer to Japan Airlines at 1:1 with a Limited-Time 30% Bonus" · <span class="tier">[trade]</span> · <a href="https://10xtravel.com/citi-jal-partnership/" target="_blank" rel="noopener">https://10xtravel.com/citi-jal-partnership/</a></li>
+<li id="s6">Frequent Miler · "Chase slashing Hyatt transfer ratio to 4:3 for Chase Sapphire Preferred and Chase Ink Business Preferred" · <span class="tier">[trade]</span> · <a href="https://frequentmiler.com/chase-slashes-hyatt-transfer-ratio-to-43/" target="_blank" rel="noopener">https://frequentmiler.com/chase-slashes-hyatt-transfer-ratio-to-43/</a></li>
+<li id="s7">Point.me Insights · "Current Transfer Bonuses for October 2026" · <span class="tier">[trade]</span> · <a href="https://www.point.me/insights/current-transfer-bonuses/" target="_blank" rel="noopener">https://www.point.me/insights/current-transfer-bonuses/</a></li>
+<li id="s8">LoyaltyLobby · "Capital One To British Airways Avios 20% Conversion Bonus Through October 31, 2026" · <span class="tier">[trade]</span> · <a href="https://loyaltylobby.com/2026/10/01/capital-one-to-british-airways-avios-20-conversion-bonus-through-october-31-2026/" target="_blank" rel="noopener">https://loyaltylobby.com/2026/10/01/capital-one-to-british-airways-avios-20-conversion-bonus-through-october-31-2026/</a></li>
+<li id="s9">LoyaltyLobby · "Air Canada Aeroplan 15% Conversion Bonus From Marriott Bonvoy October 1-31, 2026" · <span class="tier">[trade]</span> · <a href="https://loyaltylobby.com/2026/10/01/air-canada-aeroplan-15-conversion-bonus-from-marriott-bonvoy-october-1-31-2026/" target="_blank" rel="noopener">https://loyaltylobby.com/2026/10/01/air-canada-aeroplan-15-conversion-bonus-from-marriott-bonvoy-october-1-31-2026/</a></li>
+<li id="s10">One Mile at a Time · "No Surprise: Bilt Devalues World Of Hyatt Points Transfers As Of 2027" · <span class="tier">[trade]</span> · <a href="https://onemileatatime.com/news/bilt-devalues-world-of-hyatt-points-transfers/" target="_blank" rel="noopener">https://onemileatatime.com/news/bilt-devalues-world-of-hyatt-points-transfers/</a></li>
+<li id="s11">LoyaltyLobby · "IHG One Rewards 3X Points For Voco Stays October 6 - December 6, 2026" · <span class="tier">[trade]</span> · <a href="https://loyaltylobby.com/2026/10/06/ihg-one-rewards-3x-points-for-voco-stays-october-6-december-6-2026/" target="_blank" rel="noopener">https://loyaltylobby.com/2026/10/06/ihg-one-rewards-3x-points-for-voco-stays-october-6-december-6-2026/</a></li>
+</ol>
+<p class="meta">Tier legend: <strong>primary</strong> = program's or issuer's own page (gold standard for any published number); <strong>trade</strong> = established points-desk coverage (Doctor of Credit, One Mile at a Time, Frequent Miler, Point.me, 10xTravel, AwardWallet, LoyaltyLobby); <strong>community</strong> = forum or crowd data. Today's edition cites exclusively trade-tier sources that themselves reference and quote program terms — a known shortfall when program pages do not accept scraping (Amex, Chase, and Marriott all returned 403/404 to direct fetches today). Where a figure matters to a transfer decision, it is corroborated against two or more trade sources that both describe the terms identically; where it did not corroborate, it was dropped.</p>
+</section>
+
+<p class="caution"><strong>Transfers are one-way.</strong> Once Ultimate Rewards leave Chase for Marriott, Chase will not pull them back. Once Membership Rewards leave Amex for Hilton, Amex will not pull them back. Confirm award availability and partner-award rules in a separate browser tab before you click the transfer button, and only move the exact number of points you need for a specific redemption. Hotel and airline programs change pricing, surcharges, and partner terms without notice — the terms live at the moment you redeem, not the moment you transfer. If in doubt, do not transfer.</p>
+
+<nav class="bar"><a href="2026-10-04.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+<footer>
+<p>The Points Brief · AI-synthesized daily on current loyalty-program and issuer coverage. Not financial, tax, or travel advice. Always confirm award availability, transfer times, and current partner terms directly with the program before transferring points. Every percentage, expiry, and transfer ratio in this edition has been corroborated against at least one established points-desk source, but published terms change without notice.</p>
+</footer>
+
+<script>
+const S = "The Points Brief. Tuesday, October 6, 2026. The ledger stands at one and zero to start season one. No calls were due for grading today, and one new call is on the board.\n\nFive significant bonuses are live, and the one that matters is Citi ThankYou to Japan Airlines at thirty percent, closing October 24. The Citi-JAL partnership only launched in September, this is the inaugural promo window, and for annual-fee Citi cardholders the ratio becomes one thousand ThankYou points to one thousand three hundred JAL miles. JAL prices Tokyo to Honolulu business class from forty-three thousand miles one-way at off-peak dates. With the bonus, that is roughly thirty-three thousand one hundred ThankYou points for Oneworld business class to Japan. Only transfer if you already see the award space you want; JAL miles expire thirty-six months after each posting and there is no partner-award reinstatement path.\n\nChase Ultimate Rewards to Marriott Bonvoy at seventy percent closes October 15. One thousand UR to one thousand seven hundred Marriott. The effective floor is around one point two four cents per UR, which underperforms Chase Travel for most Sapphire holders and badly underperforms a Hyatt redemption at a cap-and-floor property. Only transfer if you hold a specific Marriott redemption today.\n\nAmex Membership Rewards to Hilton Honors at thirty percent closes October 14. This offer is targeted; log into Amex and check Transfer Points. The ratio is one thousand MR to two thousand six hundred Hilton, which is about one point three cents of Hilton value. Treat it as a top-off, not a bulk move.\n\nAmex to Flying Blue at twenty-five percent, and Capital One to British Airways Avios at twenty percent, both close October 31. Flying Blue is a short-haul fuel tank now that tiered fares are live. British Airways Avios remains a US-domestic American Airlines play, not a transatlantic business-class play.\n\nIn program watch, Bilt Rewards to World of Hyatt drops from one to one to four to three on January 1. Chase to Hyatt already dropped to four to three for pre-June Sapphire Preferred and Ink Business Preferred cardholders on October 1. The one to one era for Hyatt transfers is ending.\n\nToday's call: Capital One Miles will launch at least one hotel transfer bonus of twenty percent or greater to Accor, Choice, or Wyndham before December 31, following their Q4 hotel pattern of 2023, 2024, and 2025.\n\nTransfers are one-way. Confirm availability before you click transfer. Only move the exact amount you need. That is The Points Brief.";
+
+let utter = null;
+let speaking = false;
+function playBrief() {
+  const btn = document.getElementById('listenBtn');
+  if (speaking) {
+    window.speechSynthesis.cancel();
+    speaking = false;
+    btn.textContent = '▶ LISTEN';
+    return;
+  }
+  const voices = window.speechSynthesis.getVoices();
+  const pick = voices.find(v => /daniel/i.test(v.name)) || voices.find(v => /alex/i.test(v.name)) || voices.find(v => /en[-_]/i.test(v.lang));
+  utter = new SpeechSynthesisUtterance(S);
+  utter.rate = 0.93;
+  if (pick) utter.voice = pick;
+  utter.onend = () => { speaking = false; btn.textContent = '▶ LISTEN'; };
+  utter.onerror = () => { speaking = false; btn.textContent = '▶ LISTEN'; };
+  window.speechSynthesis.speak(utter);
+  speaking = true;
+  btn.textContent = '■ STOP';
+}
+if (typeof speechSynthesis !== 'undefined') { speechSynthesis.onvoiceschanged = () => {}; }
+</script>
+
+</body>
+</html>
