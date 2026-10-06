@@ -482,6 +482,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-10-06-1",
+      "date": "2026-10-06",
+      "call": "Capital One Miles will publicly launch at least one hotel transfer bonus (to Accor Live Limitless, Choice Privileges, or Wyndham Rewards) of 20% or greater at any point between 2026-10-06 and 2026-12-31 inclusive.",
+      "basis": "Capital One has run at least one Q4 hotel transfer bonus to one of these three partners in each of 2023, 2024, and 2025 - Wyndham 25% in December 2023, Accor 20% in November 2024, and Choice 50% in October 2025. The current October 2026 Capital One promo is British Airways (airline), with no hotel bonus live. Pattern argues for a hotel bonus landing before year-end, especially with Marriott and Hyatt not on Capital One's transfer list - hotel bonuses are the only lever they have for the hotel category.",
+      "horizon": "2026-12-31",
+      "test": "GRADE HIT if any publicly listed Capital One Miles to Accor, Choice, or Wyndham transfer bonus of 20% or greater is live or announced between 2026-10-06 and 2026-12-31 inclusive. GRADE MISS if no such bonus of 20% or greater to any of those three partners is offered in that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
