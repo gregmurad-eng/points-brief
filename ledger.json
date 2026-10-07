@@ -494,6 +494,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-10-07-1",
+      "date": "2026-10-07",
+      "call": "Chase will NOT reverse the Ultimate Rewards to World of Hyatt 4:3 devaluation (affecting Chase Sapphire Preferred and Ink Business Preferred) before December 31, 2026. The 1:1 ratio for those two cards will remain gone through year-end.",
+      "basis": "The devaluation went live October 1, 2026 after a multi-month notification window and explicit transition rules (new applicants on/after June 15, 2026 immediately got 4:3; existing holders were grandfathered only through Sep 30). Issuers do not telegraph that much structure and then unwind inside 90 days - the staged rollout IS the finality signal. Reversal would also require Hyatt commercial agreement, which is slower than a Chase-side flip.",
+      "horizon": "2026-12-31",
+      "test": "GRADE HIT if the Chase UR to World of Hyatt ratio for the Chase Sapphire Preferred and Ink Business Preferred remains 4:3 (or worse) on 2026-12-31. GRADE MISS if either card is publicly restored to a 1:1 (or better) UR to Hyatt transfer ratio at any point before 2026-12-31.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
