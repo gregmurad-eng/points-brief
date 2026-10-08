@@ -274,10 +274,10 @@
       "basis": "Historically, bank programs respond to partner-airline devaluations with smoothing bonuses during the adoption window, because member trust in the source program erodes when a headline destination cuts value while transfer economics stay flat. Amex has the strongest cadence to Flying Blue (30% in March 2026, 25% in June 2025) and its Membership Rewards-to-Flying Blue route has now gone six months quiet \u2014 the exact silence a Q4 push would break. Citi's own Flying Blue quarterly cadence next opens roughly early-to-mid November, outside this 30-day window, which effectively makes this call a bet on Amex specifically stepping into the vacuum inside a month. Bilt has run Flying Blue Rent Day bonuses at 100% historically and has a September 30 Rent Day slot open. This is a short-horizon, high-topicality call: if the historical pattern holds, at least one of the five will move fast; if none does, the 'bank smooths partner devaluations' rule is weaker than the industry assumes.",
       "horizon": "2026-10-08",
       "test": "GRADE HIT if any of Amex Membership Rewards, Chase Ultimate Rewards, Citi ThankYou, Capital One Miles, or Bilt Rewards publicly offers a transfer bonus of 20% or greater to Air France/KLM Flying Blue at any point between 2026-09-08 and 2026-10-08 inclusive, evidenced by that program's own transfer page, Flying Blue's promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered from any of those five programs in that window.",
-      "status": "OPEN",
-      "graded_on": null,
-      "verdict": null,
-      "evidence": null
+      "status": "GRADED",
+      "graded_on": "2026-10-08",
+      "verdict": "HIT",
+      "evidence": "Amex Membership Rewards launched a public 25% transfer bonus to Air France-KLM Flying Blue on 2026-10-01 (running through 2026-10-31; 1,000 MR = 1,250 Flying Blue miles), well within the Sept 8 - Oct 8 window. Confirmed by Amex MR transfer partners page and reproduced by AwardWallet, FrequentMiler, One Mile at a Time, Upgraded Points, and InsideFlyer. URL: https://frequentmiler.com/get-a-25-bonus-when-transferring-amex-membership-rewards-to-air-france-klm-flying-blue/"
     },
     {
       "id": "2026-09-16-1",
@@ -502,6 +502,18 @@
       "basis": "The devaluation went live October 1, 2026 after a multi-month notification window and explicit transition rules (new applicants on/after June 15, 2026 immediately got 4:3; existing holders were grandfathered only through Sep 30). Issuers do not telegraph that much structure and then unwind inside 90 days - the staged rollout IS the finality signal. Reversal would also require Hyatt commercial agreement, which is slower than a Chase-side flip.",
       "horizon": "2026-12-31",
       "test": "GRADE HIT if the Chase UR to World of Hyatt ratio for the Chase Sapphire Preferred and Ink Business Preferred remains 4:3 (or worse) on 2026-12-31. GRADE MISS if either card is publicly restored to a 1:1 (or better) UR to Hyatt transfer ratio at any point before 2026-12-31.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
+    },
+    {
+      "id": "2026-10-08-1",
+      "date": "2026-10-08",
+      "call": "Amex Membership Rewards will NOT publicly offer any Air France-KLM Flying Blue transfer bonus of any percentage greater than zero between 2026-11-01 and 2026-12-15 inclusive. The current 25% Amex-to-Flying Blue bonus (Oct 1-31, 2026) will be the last Amex MR Flying Blue promo of 2026 within that window.",
+      "basis": "Amex has historically run Flying Blue bonuses in quarterly cadence with a 6-10 week cooldown between campaigns. After the September 8 Flying Blue tiered-fare rollout, Amex shipped its smoothing bonus in October (graded HIT today). Running a back-to-back Flying Blue bonus in November or early December would break Amex's established spacing pattern and give Flying Blue two consecutive months of promo visibility, which Amex rarely does for a single partner.",
+      "horizon": "2026-12-15",
+      "test": "GRADE HIT if no public Amex Membership Rewards to Air France-KLM Flying Blue transfer bonus of any percentage greater than zero is live or publicly announced on the Amex MR transfer page between 2026-11-01 and 2026-12-15 inclusive. GRADE MISS if any Amex MR to Flying Blue bonus (greater than 0%) is live or announced during that window, evidenced by the Amex MR transfer partners page or a Tier 1/Tier 2 confirmation.",
       "status": "OPEN",
       "graded_on": null,
       "verdict": null,
