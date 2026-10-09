@@ -518,6 +518,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-10-09-1",
+      "date": "2026-10-09",
+      "call": "After the current 70% Chase Ultimate Rewards to Marriott Bonvoy transfer bonus ends on 2026-10-15, Chase will NOT run another Chase to Marriott transfer bonus of 60% or higher before 2027-01-31.",
+      "basis": "The current 70% ties the all-time high for this corridor since the promo first ran in early 2021. Chase has run a Marriott bonus more than a dozen times at rates typically 40-50%, with 60%+ bonuses rarer still (one or two per year). Top-tier bonuses are expensive liability for Chase and Marriott and historically precede a 3-6 month cool-off. Expect quieter Q4-Q1 Marriott bonus activity after 10/15, with any next bonus more likely in the 30-50% band than the top-tier band.",
+      "horizon": "2027-01-31",
+      "test": "GRADE HIT if no Chase to Marriott Bonvoy transfer bonus of 60 percent or higher is publicly offered or active between 2026-10-16 and 2027-01-31, confirmed via AwardWallet / FrequentMiler / OneMileAtATime / The Points Guy transfer-bonus trackers. GRADE MISS if any Chase to Marriott bonus of 60 percent or higher is announced or live at any point during that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
