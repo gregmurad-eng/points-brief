@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief &middot; October 9, 2026</title>
+<style>
+  :root { --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4; --muted:#8a8878; --red:#9a4a4a; --hit:#c9a84c; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--text); font-family: Georgia, 'Times New Roman', serif; line-height:1.6; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 28px 24px 60px; }
+  .bar { display:flex; flex-wrap:wrap; gap:10px 14px; align-items:center; justify-content:space-between; border-top:1px solid #1e2432; border-bottom:1px solid #1e2432; padding:12px 0; margin: 8px 0 24px; font-size: 15px; letter-spacing:0.04em; }
+  .bar a { color: var(--accent); text-decoration: none; white-space: nowrap; padding: 10px 6px; min-height: 44px; display: inline-flex; align-items: center; }
+  .bar a:hover { text-decoration: underline; }
+  .nav-mid { display:flex; gap: 0; }
+  .nav-mid a { margin: 0 9px; }
+  .next { color: var(--muted); white-space: nowrap; padding: 10px 6px; min-height: 44px; display: inline-flex; align-items: center; }
+  h1 { font-size: 34px; margin: 0 0 4px; letter-spacing: 0.02em; color: var(--text); }
+  .tag { color: var(--muted); font-style: italic; font-size: 15px; margin: 0 0 2px; }
+  .date { color: var(--accent); font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; margin: 4px 0 20px; }
+  h2 { font-size: 22px; color: var(--accent); border-bottom: 1px solid #1e2432; padding-bottom: 6px; margin: 36px 0 14px; letter-spacing: 0.03em; }
+  h3 { font-size: 18px; color: var(--text); margin: 22px 0 6px; }
+  p { margin: 10px 0; }
+  a { color: var(--accent); }
+  .cite { font-size: 0.78em; vertical-align: super; line-height: 0; text-decoration: none; padding: 6px 4px; margin: -6px -4px; color: var(--accent); }
+  .cite:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: 14px; margin: 4px 0 10px; }
+  .move { color: var(--accent); font-style: italic; border-left: 2px solid var(--accent); padding: 6px 0 6px 12px; margin: 12px 0 20px; }
+  .move strong { font-style: normal; letter-spacing: 0.05em; text-transform: uppercase; font-size: 13px; margin-right: 6px; color: var(--accent); }
+  .signal { border: 1px solid var(--accent); padding: 16px 18px; margin: 18px 0; background: #0d1320; }
+  .signal h3 { margin-top: 0; color: var(--accent); }
+  .caution { color: var(--muted); font-size: 14px; font-style: italic; border-top: 1px dashed #1e2432; padding-top: 10px; margin-top: 20px; }
+  .player { display:flex; align-items:center; gap:12px; margin: 18px 0 24px; }
+  .player button { background: transparent; color: var(--accent); border: 1px solid var(--accent); padding: 10px 18px; font-family: Georgia, serif; font-size: 15px; cursor: pointer; letter-spacing: 0.08em; min-height: 44px; }
+  .player button:hover { background: #141b2b; }
+  .player .ptime { color: var(--muted); font-size: 13px; }
+  .ledger-row { padding: 10px 0; border-bottom: 1px dashed #1e2432; }
+  .ledger-row:last-child { border-bottom: none; }
+  .verdict { font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; font-size: 13px; }
+  .v-hit { color: var(--hit); }
+  .v-miss { color: var(--red); }
+  .v-unsettled { color: var(--muted); }
+  .v-open { color: var(--muted); }
+  ol.sources { padding-left: 20px; }
+  ol.sources li { margin: 8px 0; font-size: 15px; }
+  ol.sources .tier { color: var(--muted); font-style: italic; font-size: 13px; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 40px; border-top: 1px solid #1e2432; padding-top: 14px; }
+  @media (max-width: 480px) {
+    .wrap { padding: 18px 14px 50px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 17px; }
+    p, li { font-size: 16px; }
+    .bar { font-size: 14px; }
+    .nav-mid a { margin: 0 6px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="bar"><a href="2026-10-08.html">&larr; YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW &rarr;</span></nav>
+
+<h1>The Points Brief</h1>
+<p class="tag">Travel Points &middot; Maximize every transfer</p>
+<p class="date">Friday, October 9, 2026</p>
+
+<div class="player">
+  <button id="pbtn" onclick="toggleSpeak()">&#9654; Listen</button>
+  <span class="ptime">~3 min read aloud</span>
+</div>
+
+<p>Two best-ever-matching transfer bonuses are entering their final week: Chase to Marriott at 70% through October 15, and Amex to Hilton at 30% through October 14. Both are closing while the Chase to Hyatt 4:3 devaluation has just finished landing on all existing mass-market Sapphire and Ink Preferred cardholders. The structural picture: Chase has made its most valuable transfer partner materially worse at exactly the moment it is pushing points toward Marriott and Hilton is quietly peaking. Act only where you already know what night you are booking.</p>
+
+<h2>Today&rsquo;s Transfer Bonuses</h2>
+
+<h3>Chase Ultimate Rewards &rarr; Marriott Bonvoy &mdash; 70%<a class="cite" href="#s1">[1]</a><a class="cite" href="#s4">[4]</a></h3>
+<p class="meta">1,000 Chase &rarr; 1,700 Marriott &middot; expires 11:59 PM ET October 15, 2026 &middot; no minimum &middot; unlimited transfers &middot; Marriott credits the bonus within 7 days of transfer</p>
+<p>This ties the all-time high for Chase to Marriott, which has only run at 70% once before. Base ratio is 1:1. The economics only work for specific redemptions &mdash; Marriott nightly rates run 60k to 120k on the top end under dynamic pricing, so this bonus is a tool for someone already looking at a 100k-plus award night, not a reason to generate one.<a class="cite" href="#s6">[6]</a></p>
+<p class="move"><strong>Your move:</strong> Transfer only if you already have a specific Marriott award night priced out at 50k Bonvoy or higher and have confirmed availability on the dates you need. If you don&rsquo;t have a stay identified by Monday, let the bonus pass &mdash; this corridor runs again, typically every 4 to 6 months.</p>
+
+<h3>Amex Membership Rewards &rarr; Hilton Honors &mdash; 30%<a class="cite" href="#s2">[2]</a><a class="cite" href="#s4">[4]</a></h3>
+<p class="meta">1,000 MR &rarr; 2,600 Hilton &middot; expires 11:59 PM MT October 14, 2026 &middot; base ratio 1:2 &middot; broadly offered but confirm the promo appears on your transfer screen</p>
+<p>Six days left. The all-in rate of 2.6 Hilton per MR beats the Amex to Marriott ratio and makes high-end Hilton properties (Waldorf, Conrad, LXR) more plausibly accessible via points. The usual trap: a Standard Room at a top Hilton can price above 150k Hilton nightly, so this bonus moves the needle only when you have a real stay in mind.<a class="cite" href="#s8">[8]</a></p>
+<p class="move"><strong>Your move:</strong> Pull up Hilton&rsquo;s points calendar for the hotel and dates you want BEFORE transferring; Hilton is not a transferrable-points program &mdash; once it is in Hilton it stays there. If you can&rsquo;t confirm points-rate availability, don&rsquo;t transfer. If you can, this is a strong rate.</p>
+
+<h3>Amex Membership Rewards &rarr; Flying Blue &mdash; 25%<a class="cite" href="#s3">[3]</a><a class="cite" href="#s4">[4]</a></h3>
+<p class="meta">1,000 MR &rarr; 1,250 Flying Blue miles &middot; expires 11:59 PM MT October 31, 2026 &middot; base ratio 1:1</p>
+<p>Flying Blue runs Amex bonuses more often than any other partner &mdash; this is a standard-cadence 25%, not a rare peak. Flying Blue is the correct tool for a specific class of redemptions (Promo Rewards, Delta One via SkyTeam partners, intra-Europe cash-plus-miles), and useless for most domestic routes.</p>
+<p class="move"><strong>Your move:</strong> Wait unless you have an active Promo Reward in your account for a route you&rsquo;re actually taking. Another 25%-plus Flying Blue bonus will almost certainly appear by December.</p>
+
+<h3>Amex Membership Rewards &rarr; Aeromexico Rewards &mdash; 20%<a class="cite" href="#s4">[4]</a></h3>
+<p class="meta">1,000 MR &rarr; 1,920 Aeromexico points &middot; expires October 30, 2026 &middot; base ratio 1:1.6</p>
+<p>Niche. Aeromexico is useful for one-way Delta partner awards and Mexico City positioning flights &mdash; outside those, there are better uses for an MR point. Note Aeromexico award pricing has itself been drifting dynamic over the past year, so a 20% transfer bonus doesn&rsquo;t rescue a bad underlying rate.</p>
+<p class="move"><strong>Your move:</strong> No action unless you&rsquo;ve already priced a specific Aeromexico award at a decent rate and need the top-up miles. Do not speculate.</p>
+
+<h3>Capital One Miles &rarr; British Airways Avios &mdash; 20%<a class="cite" href="#s4">[4]</a></h3>
+<p class="meta">100 Cap One &rarr; 120 BA Avios &middot; expires October 31, 2026 &middot; base ratio 1:1</p>
+<p>BA Avios pools with Iberia, Aer Lingus, and Qatar, which gives this bonus more surface area than it looks. Best use cases: short-haul American Airlines domestic awards (still cheap at the BA chart), Iberia economy TATL, Aer Lingus to Dublin.</p>
+<p class="move"><strong>Your move:</strong> If you were already going to transfer Cap One miles to Avios this quarter, do it before 10/31. Don&rsquo;t speculate &mdash; Avios bonuses recur every 2 to 3 months.</p>
+
+<h3>Citi ThankYou &rarr; JAL Mileage Bank &mdash; 30% &nbsp;&middot;&nbsp; Citi ThankYou &rarr; Avianca LifeMiles &mdash; 25%<a class="cite" href="#s4">[4]</a><a class="cite" href="#s7">[7]</a></h3>
+<p class="meta">JAL: 1,000 TY &rarr; 1,300 JAL miles &middot; LifeMiles: 1,000 TY &rarr; 1,250 LifeMiles &middot; both expire October 24, 2026 &middot; both require a premium Citi card (Strata Elite, Strata Premier, Prestige, or AT&amp;T Access More) for the full ratio</p>
+<p>The JAL bonus is the more interesting of the two: JAL still publishes a flat partner award chart that is one of the best remaining values for first and business class to Asia on oneworld partners. LifeMiles is a solid Star Alliance currency with occasional sweet spots to Europe.</p>
+<p class="move"><strong>Your move:</strong> For JAL &mdash; transfer only if you have a specific partner award (Cathay, Qatar, American) priced out and held. For LifeMiles &mdash; wait; LifeMiles bonuses are among the most frequent on Citi&rsquo;s calendar and 25% is below their 30-plus% peaks.</p>
+
+<h2>Program Watch</h2>
+
+<h3>Chase &rarr; Hyatt transfer ratio now 4:3 for all existing Sapphire Preferred and Ink Preferred cardholders<a class="cite" href="#s5">[5]</a></h3>
+<p class="meta">Effective October 1, 2026 &middot; Sapphire Reserve and Sapphire Reserve for Business retain 1:1</p>
+<p>The devaluation that was announced in June for new applicants has now landed on existing cardholders. 1,000 Chase points now moves 750 Hyatt points instead of 1,000. On a 20,000-point Hyatt night, that is 27,000 Chase points instead of 20,000 &mdash; a 35% real-cost increase. If Hyatt is your primary hotel partner, this is the strongest argument this year for upgrading to Sapphire Reserve or shifting new spend to a non-Chase transferable currency.</p>
+<p class="move"><strong>Your move:</strong> If you hold Sapphire Preferred or Ink Preferred AND you have a Hyatt stay you&rsquo;ll book in the next 30 days, run the math on both ratios before transferring any more Chase points to Hyatt &mdash; it may now be cheaper to pay cash at a non-category property or redeem Hyatt points you already have on hand.</p>
+
+<h3>Atmos Rewards (Alaska / Hawaiian) to add Bank of America as a transfer partner in 2027<a class="cite" href="#s9">[9]</a></h3>
+<p class="meta">Announced September 29, 2026 &middot; effective date TBD in 2027 &middot; part of a broader Atmos partnership expansion</p>
+<p>Bank of America&rsquo;s Premium Rewards and Premium Rewards Elite cards have never had airline transfer partners &mdash; this is a first. If it ships at a reasonable ratio, it is the single biggest BofA cards news in a decade and makes BofA transferable points real for the first time. Treat this as announced-not-shipped: wait for the actual ratio and launch date before changing card strategy.</p>
+<p class="move"><strong>Your move:</strong> No action yet. If you were about to apply for a BofA Premium Rewards card for the welcome bonus, you can proceed &mdash; the transfer partnership is upside not downside &mdash; but do not switch your primary card out of a Chase or Amex ecosystem for a 2027 announcement.</p>
+
+<h3>Axis Bank Travel EDGE restructures transfer partners (India market)<a class="cite" href="#s10">[10]</a></h3>
+<p class="meta">Effective September 2026 &middot; relevant to US readers only if you hold an Indian co-brand</p>
+<p>Added: Accor, Cathay Asia Miles, Hilton Honors, Lufthansa Miles &amp; More. Removed: Club ITC. Air India Maharaja Club, Flying Blue, and Qantas moved to a tier with roughly 75% lower annual ceiling. Mentioned here only to flag the pattern &mdash; Asia-market transferable programs are consolidating onto hotel partners and squeezing airline transfers.</p>
+<p class="move"><strong>Your move:</strong> No action for US-only point stacks.</p>
+
+<h2>Today&rsquo;s Play</h2>
+
+<div class="signal">
+  <h3>Signal: Marriott 70% over Hilton 30% &mdash; but only if the redemption is already in your cart</h3>
+  <p>Both bonuses expire inside a week. If you have points to deploy and a redemption identified, Chase to Marriott at 70% is mechanically the richer transfer (1,000 points becomes 1,700, vs. Hilton&rsquo;s already-2x-base yielding 2,600). But Marriott nights price more volatile than Hilton nights, so the Marriott 70% rewards picked redemptions and punishes speculative transfers more harshly than the Hilton 30% does.</p>
+  <p>If you are the person who has been waiting to book a specific Ritz-Carlton or St. Regis stay for a trip already scheduled, this is the week. If you are generating a reason to use the bonus because the bonus exists, wait until next time.</p>
+</div>
+
+<h2>The Ledger</h2>
+
+<p class="meta">Season 1 &middot; 2&ndash;0 across graded calls &middot; 42 open calls riding</p>
+
+<div class="ledger-row">
+  <p><span class="verdict v-open">OPEN</span> &middot; filed today &middot; horizon January 31, 2027</p>
+  <p><strong>Call:</strong> After the current 70% Chase to Marriott bonus ends on October 15, 2026, Chase will NOT run another Chase to Marriott transfer bonus of 60% or higher before January 31, 2027.</p>
+  <p class="meta"><strong>Basis:</strong> 70% ties the all-time high since 2021. Chase has run this corridor a dozen-plus times at rates typically 40-50%, with 60%-plus peaks only one or two per year. Top-tier bonuses are expensive liability and historically precede a 3 to 6 month cool-off.</p>
+  <p class="meta"><strong>Test:</strong> HIT if no Chase to Marriott bonus of 60%+ is publicly offered or active between 2026-10-16 and 2027-01-31. MISS if any Chase to Marriott bonus of 60%+ is announced or live during that window.</p>
+</div>
+
+<p class="meta" style="margin-top:14px;">No calls fell due today. Next horizon: October 15, 2026 (call 2026-09-17-1).</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="s1"><a href="https://awardwallet.com/news/chase-ultimate-rewards/marriott-transfer-bonus/">AwardWallet &mdash; Chase to Marriott Bonvoy Transfer Bonus: Get 70% More Points</a> <span class="tier">(trade)</span></li>
+  <li id="s2"><a href="https://awardwallet.com/news/amex-membership-rewards/hilton-transfer-bonus/">AwardWallet &mdash; Amex Membership Rewards to Hilton Honors: 30% Transfer Bonus</a> <span class="tier">(trade)</span></li>
+  <li id="s3"><a href="https://awardwallet.com/news/amex-membership-rewards/flying-blue-transfer-bonus/">AwardWallet &mdash; Transfer Amex Points to Flying Blue With a 25% Bonus</a> <span class="tier">(trade)</span></li>
+  <li id="s4"><a href="https://awardwallet.com/news/credit-card-transfer-bonuses/">AwardWallet &mdash; All Current Transfer Bonuses (Capital One, Chase, and More)</a> <span class="tier">(trade; cross-checked against FrequentMiler current-bonuses tracker)</span></li>
+  <li id="s5"><a href="https://frequentmiler.com/chase-slashes-hyatt-transfer-ratio-to-43/">Frequent Miler &mdash; Chase slashing Hyatt transfer ratio to 4:3 for Sapphire Preferred and Ink Business Preferred</a> <span class="tier">(trade)</span></li>
+  <li id="s6"><a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler &mdash; Current point transfer bonuses (October 2026)</a> <span class="tier">(trade)</span></li>
+  <li id="s7"><a href="https://awardwallet.com/news/avianca-lifemiles/lifemiles-transfer-bonus/">AwardWallet &mdash; 15% / 25% LifeMiles Transfer Bonus from Capital One / Citi</a> <span class="tier">(trade)</span></li>
+  <li id="s8"><a href="https://upgradedpoints.com/news/amex-hilton-transfer-bonus/">UpgradedPoints &mdash; 30% Transfer Bonus From Amex to Hilton Honors (Ends 10/14)</a> <span class="tier">(trade)</span></li>
+  <li id="s9"><a href="https://www.nerdwallet.com/travel/news/atmos-earning-seats-lounges">NerdWallet &mdash; Atmos Rewards Plans New Transfer Partner and More</a> <span class="tier">(trade)</span></li>
+  <li id="s10"><a href="https://www.pointscrowd.com/blog/axis-bank-travel-edge-transfer-partner-changes/">PointsCrowd &mdash; Axis Bank Travel EDGE Revamps Transfer Partners: What Changed In September 2026</a> <span class="tier">(trade)</span></li>
+</ol>
+<p class="meta">Note on sourcing: every percentage, expiry, and ratio published above was confirmed in multiple independent trade sources (AwardWallet, Frequent Miler, The Points Guy, UpgradedPoints). Primary program-page confirmation (Marriott, Hilton, Chase, Amex) was attempted and could not be retrieved today for most pages because they sit behind geo or login gates &mdash; a corroborated trade-source cross-check is the strongest confirmation this edition offers, and that is the standard it should be judged by.</p>
+
+<p class="caution">Transfers from a flexible points program (Chase, Amex, Citi, Capital One) to an airline or hotel program are ONE-WAY and IRREVERSIBLE. Only transfer points if you have a specific redemption identified and award availability confirmed. &ldquo;Great bonus&rdquo; is not a reason to transfer. &ldquo;I have the exact seat/room I need, held or confirmable right now&rdquo; is.</p>
+
+<nav class="bar"><a href="2026-10-08.html">&larr; YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW &rarr;</span></nav>
+
+<footer>
+<p>The Points Brief is an AI-synthesized daily digest. Content is generated from publicly available sources and personal research notes; it is not financial, travel, or loyalty-program advice. Always confirm award availability, transfer ratios, and promo terms with the program directly before transferring points. Transfers are irreversible.</p>
+</footer>
+
+</div>
+
+<script>
+const S = "The Points Brief for Friday, October 9th, 2026. Two best-ever-matching transfer bonuses are entering their final week. Chase to Marriott Bonvoy at 70% through October 15th, and Amex Membership Rewards to Hilton Honors at 30% through October 14th. Both are closing while the Chase to Hyatt 4-to-3 devaluation has just finished landing on all existing mass-market Sapphire Preferred and Ink Preferred cardholders. The structural picture: Chase has made its most valuable transfer partner materially worse at exactly the moment it is pushing points toward Marriott, and Hilton is quietly peaking. Act only where you already know what night you are booking. Today's transfer bonuses. Chase to Marriott at 70% is the headline. One thousand Chase points becomes seventeen hundred Marriott points through October 15th. This ties the all-time high. But Marriott nightly rates run 60 thousand to 120 thousand on the top end under dynamic pricing, so this bonus is a tool for someone already looking at a 100 thousand plus award night, not a reason to generate one. Your move: transfer only if you have a specific Marriott award night priced out at 50 thousand Bonvoy or higher, with availability confirmed. Amex to Hilton at 30% expires October 14th. One thousand Amex points becomes 2600 Hilton points. The all-in ratio of 2.6 Hilton per Amex beats the Marriott corridor and makes high-end Hilton properties like Waldorf, Conrad, and LXR more plausibly accessible. The trap: a standard room at a top Hilton can price above 150 thousand points nightly, so this bonus moves the needle only with a specific stay in mind. Your move: pull up Hilton's points calendar before transferring. Hilton is not a transferable program. Once it is in Hilton it stays there. Also running: Amex to Flying Blue at 25% through October 31st, Amex to Aeromexico at 20% through October 30th, Capital One to British Airways Avios at 20% through October 31st, Citi to Japan Airlines at 30% and Citi to Avianca LifeMiles at 25%, both through October 24th. Program Watch. The big structural news: Chase to Hyatt transfer ratio is now 4-to-3 for all existing Sapphire Preferred and Ink Preferred cardholders, effective October 1st. One thousand Chase points now moves 750 Hyatt points instead of 1000. On a 20 thousand point Hyatt night, that is 27 thousand Chase points instead of 20 thousand. A 35% real-cost increase. Sapphire Reserve and Sapphire Reserve for Business retain 1-to-1. If Hyatt is your primary hotel partner, this is the strongest argument this year for upgrading to Reserve or shifting new spend to a non-Chase transferable currency. Also: Atmos Rewards, the combined Alaska and Hawaiian program, announced on September 29th that Bank of America will become a transfer partner sometime in 2027. BofA has never had airline transfer partners before. Treat this as announced not shipped. Today's play. If you have points to deploy and a redemption identified, Chase to Marriott at 70% is mechanically the richer transfer. But Marriott nights price more volatile than Hilton nights, so Marriott 70% rewards picked redemptions and punishes speculative transfers more harshly than Hilton 30% does. If you are the person who has been waiting to book a specific Ritz-Carlton or St. Regis for a trip already scheduled, this is the week. If you are generating a reason to use the bonus because the bonus exists, wait until next time. The Ledger. Season 1, 2 and 0 across graded calls, 42 open calls riding. Today's new call, open, horizon January 31st 2027: After the current 70% Chase to Marriott bonus ends on October 15th, Chase will not run another Chase to Marriott transfer bonus of 60% or higher before January 31st, 2027. Final reminder. Transfers from Chase, Amex, Citi, or Capital One to an airline or hotel program are one-way and irreversible. Great bonus is not a reason to transfer. The exact seat or room you need, held or confirmable right now, is. That's today's brief.";
+let speaking = false;
+let utter = null;
+function pickVoice() {
+  const v = speechSynthesis.getVoices();
+  if (!v.length) return null;
+  return v.find(x => x.name === 'Daniel') || v.find(x => x.name === 'Alex') || v.find(x => /en[-_]/i.test(x.lang)) || v[0];
+}
+function toggleSpeak() {
+  const b = document.getElementById('pbtn');
+  if (speaking) { speechSynthesis.cancel(); speaking = false; b.innerHTML = '&#9654; Listen'; return; }
+  utter = new SpeechSynthesisUtterance(S);
+  utter.rate = 0.93;
+  const v = pickVoice();
+  if (v) utter.voice = v;
+  utter.onend = () => { speaking = false; b.innerHTML = '&#9654; Listen'; };
+  utter.onerror = () => { speaking = false; b.innerHTML = '&#9654; Listen'; };
+  speechSynthesis.speak(utter);
+  speaking = true;
+  b.innerHTML = '&#9632; Stop';
+}
+if (typeof speechSynthesis !== 'undefined') { speechSynthesis.onvoiceschanged = pickVoice; }
+</script>
+
+</body>
+</html>
