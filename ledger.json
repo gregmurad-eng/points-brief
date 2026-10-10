@@ -530,6 +530,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-10-10-1",
+      "date": "2026-10-10",
+      "call": "United Airlines will NOT publicly extend or re-open its Delta / American MileagePlus status-match-and-challenge offer (90-day instant match plus challenge path through Jan 31, 2028) past the Oct 15, 2026 application deadline. No successor public campaign offering the same instant-tier-match terms to Delta or American elites will launch between 2026-10-16 and 2027-01-31.",
+      "basis": "United publicly framed this match-and-challenge program on 2026-10-01 as a two-week application window closing Oct 15, with explicit eligibility carve-outs (US-based members only, status earned or lifetime only, excludes trial/promo tiers) and material spend floors ($1,500 Silver, $3,000 Gold, $4,500 Platinum, $7,000 1K) to retain through Jan 31, 2028. That structure - short public window plus hard retention gate plus explicit exclusions - is the pattern of a one-shot competitive campaign, not a persistent recruitment channel. United's own prior status matches have been private/by-request rather than universal; running the universal version twice in a quarter would commoditise the retention challenge economics it just built. Delta and American responses so far have been structural (not price-matching the campaign), reducing the strategic reason for United to repeat. A re-open or extension inside 3.5 months would also undermine the Oct 15 urgency that drove the current application volume.",
+      "horizon": "2027-01-31",
+      "test": "GRADE HIT if the Oct 15, 2026 application deadline for United's current Delta/American MileagePlus status-match-and-challenge offer passes without public extension AND no successor universal (non-targeted) United status-match campaign offering instant tier match from Delta or American elite status is publicly announced between 2026-10-16 and 2027-01-31 inclusive. GRADE MISS if United publicly extends the current Oct 15 deadline OR announces a successor universal status-match campaign with instant tier match from Delta or American elite status during that window, confirmed by united.com, a United press release, or a Tier 1/Tier 2 confirmation. Private, targeted, or by-request status matches do not count toward MISS; the test is specifically a universal public campaign.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
