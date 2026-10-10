@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief &middot; October 10, 2026</title>
+<style>
+  :root { --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4; --muted:#8a8878; --red:#9a4a4a; --hit:#c9a84c; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--text); font-family: Georgia, 'Times New Roman', serif; line-height:1.6; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 28px 24px 60px; }
+  .bar { display:flex; flex-wrap:wrap; gap:10px 14px; align-items:center; justify-content:space-between; border-top:1px solid #1e2432; border-bottom:1px solid #1e2432; padding:12px 0; margin: 8px 0 24px; font-size: 15px; letter-spacing:0.04em; }
+  .bar a { color: var(--accent); text-decoration: none; white-space: nowrap; padding: 10px 6px; min-height: 44px; display: inline-flex; align-items: center; }
+  .bar a:hover { text-decoration: underline; }
+  .nav-mid { display:flex; gap: 0; }
+  .nav-mid a { margin: 0 9px; }
+  .next { color: var(--muted); white-space: nowrap; padding: 10px 6px; min-height: 44px; display: inline-flex; align-items: center; }
+  h1 { font-size: 34px; margin: 0 0 4px; letter-spacing: 0.02em; color: var(--text); }
+  .tag { color: var(--muted); font-style: italic; font-size: 15px; margin: 0 0 2px; }
+  .date { color: var(--accent); font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; margin: 4px 0 20px; }
+  h2 { font-size: 22px; color: var(--accent); border-bottom: 1px solid #1e2432; padding-bottom: 6px; margin: 36px 0 14px; letter-spacing: 0.03em; }
+  h3 { font-size: 18px; color: var(--text); margin: 22px 0 6px; }
+  p { margin: 10px 0; }
+  a { color: var(--accent); }
+  .cite { font-size: 0.78em; vertical-align: super; line-height: 0; text-decoration: none; padding: 6px 4px; margin: -6px -4px; color: var(--accent); }
+  .cite:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: 14px; margin: 4px 0 10px; }
+  .move { color: var(--accent); font-style: italic; border-left: 2px solid var(--accent); padding: 6px 0 6px 12px; margin: 12px 0 20px; }
+  .move strong { font-style: normal; letter-spacing: 0.05em; text-transform: uppercase; font-size: 13px; margin-right: 6px; color: var(--accent); }
+  .signal { border: 1px solid var(--accent); padding: 16px 18px; margin: 18px 0; background: #0d1320; }
+  .signal h3 { margin-top: 0; color: var(--accent); }
+  .caution { color: var(--muted); font-size: 14px; font-style: italic; border-top: 1px dashed #1e2432; padding-top: 10px; margin-top: 20px; }
+  .player { display:flex; align-items:center; gap:12px; margin: 18px 0 24px; }
+  .player button { background: transparent; color: var(--accent); border: 1px solid var(--accent); padding: 10px 18px; font-family: Georgia, serif; font-size: 15px; cursor: pointer; letter-spacing: 0.08em; min-height: 44px; }
+  .player button:hover { background: #141b2b; }
+  .player .ptime { color: var(--muted); font-size: 13px; }
+  .ledger-row { padding: 10px 0; border-bottom: 1px dashed #1e2432; }
+  .ledger-row:last-child { border-bottom: none; }
+  .verdict { font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; font-size: 13px; }
+  .v-hit { color: var(--hit); }
+  .v-miss { color: var(--red); }
+  .v-unsettled { color: var(--muted); }
+  .v-open { color: var(--muted); }
+  ol.sources { padding-left: 20px; }
+  ol.sources li { margin: 8px 0; font-size: 15px; }
+  ol.sources .tier { color: var(--muted); font-style: italic; font-size: 13px; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 40px; border-top: 1px solid #1e2432; padding-top: 14px; }
+  @media (max-width: 480px) {
+    .wrap { padding: 18px 14px 50px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 17px; }
+    p, li { font-size: 16px; }
+    .bar { font-size: 14px; }
+    .nav-mid a { margin: 0 6px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="bar"><a href="2026-10-09.html">&larr; YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW &rarr;</span></nav>
+
+<h1>The Points Brief</h1>
+<p class="tag">Travel Points &middot; Maximize every transfer</p>
+<p class="date">Saturday, October 10, 2026</p>
+
+<div class="player">
+  <button id="pbtn" onclick="toggleSpeak()">&#9654; Listen</button>
+  <span class="ptime">~3 min read aloud</span>
+</div>
+
+<p>Three deadlines inside five days frame today. Amex to Hilton 30% closes Tuesday October 14; Chase to Marriott 70% closes Wednesday October 15; United&rsquo;s instant-tier status-match offer for Delta and American elites also closes October 15. Underneath those headline countdowns, Qatar Airways is quietly running a tiered Avios bonus of up to 35% from Citi ThankYou through October 31 that was not in yesterday&rsquo;s edition &mdash; worth highlighting because Qatar&rsquo;s QSuite is one of the sharpest redemption targets a US-bank transfer can reach. The posture remains the same: transfer only if a specific stay or seat is identified.</p>
+
+<h2>Today&rsquo;s Transfer Bonuses</h2>
+
+<h3>Citi ThankYou &rarr; Qatar Airways Privilege Club &mdash; up to 35% (tiered)<a class="cite" href="#s1">[1]</a><a class="cite" href="#s2">[2]</a><a class="cite" href="#s3">[3]</a></h3>
+<p class="meta">Base ratio 1:1 &middot; promo runs October 1&ndash;31, 2026 &middot; bonus posts by November 30, 2026 &middot; tiered: 15% bonus on single transfers up to 49,999 Avios, 25% bonus on 50,000&ndash;99,999 Avios, 35% bonus on 100,000+ Avios transferred in a single transaction</p>
+<p>This is a Qatar-side promotion, not a Citi-side one &mdash; which is why Citi&rsquo;s transfer screen will not display the bonus during the transfer itself. Qatar credits the bonus Avios after the fact. At the 35% tier, 100,000 Citi ThankYou points becomes 135,000 Qatar Avios. Qatar Avios is a Avios-family currency that is pooled with British Airways, Iberia, and Aer Lingus balances, and the strongest redemption targets are Qatar&rsquo;s own QSuite business class, as well as oneworld partner sweet spots including American Airlines domestic short-haul.<a class="cite" href="#s3">[3]</a></p>
+<p class="move"><strong>Your move:</strong> Only transfer in blocks of 100,000+ Avios to earn the 35% tier &mdash; smaller transfers at 15% or 25% are not worth burning your Citi balance on. And only transfer if you have a specific QSuite route and date range in mind with award space held, since this is a one-way move and Qatar&rsquo;s premium-cabin availability is tight.</p>
+
+<h3>Chase Ultimate Rewards &rarr; Marriott Bonvoy &mdash; 70%<a class="cite" href="#s4">[4]</a><a class="cite" href="#s7">[7]</a></h3>
+<p class="meta">1,000 Chase &rarr; 1,700 Marriott &middot; expires 11:59 PM ET October 15, 2026 (five days) &middot; base ratio 1:1 &middot; no minimum &middot; unlimited transfers</p>
+<p>This ties the all-time high on this corridor and is the single most consequential transfer bonus on the market this week. Marriott nights price 60k&ndash;120k at the top end under dynamic pricing, so the 70% rewards someone already looking at a 100k-plus night, not someone generating a reason to use it.<a class="cite" href="#s7">[7]</a></p>
+<p class="move"><strong>Your move:</strong> Transfer only if you have a specific Marriott award night priced at 50k Bonvoy or higher and have confirmed availability on your travel dates. If you don&rsquo;t have a stay identified by Monday afternoon, let the bonus close &mdash; this corridor runs again, usually within 4&ndash;6 months.</p>
+
+<h3>Amex Membership Rewards &rarr; Hilton Honors &mdash; 30%<a class="cite" href="#s5">[5]</a><a class="cite" href="#s7">[7]</a></h3>
+<p class="meta">1,000 MR &rarr; 2,600 Hilton &middot; expires 11:59 PM MT October 14, 2026 (four days) &middot; base ratio 1:2 &middot; confirm the promo appears on your transfer screen before clicking</p>
+<p>Final weekend. The all-in rate of 2.6 Hilton per MR beats Marriott and makes high-end Hilton properties (Waldorf, Conrad, LXR) more accessible. Note that Standard Rooms at top Hiltons can price above 150k Hilton per night, so this is useful for an identified stay, not for speculative stockpiling.<a class="cite" href="#s7">[7]</a></p>
+<p class="move"><strong>Your move:</strong> Load the Hilton points calendar for the hotel and dates you want BEFORE transferring. Hilton is not a transferable currency &mdash; once in Hilton it stays there. No award rate confirmed, no transfer.</p>
+
+<h3>Citi ThankYou &rarr; JAL Mileage Bank &mdash; 30%<a class="cite" href="#s6">[6]</a><a class="cite" href="#s7">[7]</a></h3>
+<p class="meta">1,000 TY &rarr; 1,300 JAL miles &middot; expires October 24, 2026 (14 days) &middot; base ratio 1:1 &middot; premium Citi card required for the full ratio (Strata Elite, Strata Premier, Prestige, or AT&amp;T Access More)</p>
+<p>This is the launch bonus for Citi&rsquo;s brand-new JAL partnership, which went live September 20. JAL still publishes a flat partner award chart that remains one of the best values left in the loyalty landscape for first and business class to Asia on oneworld partners &mdash; especially American Airlines flights and Qatar Airways metal.</p>
+<p class="move"><strong>Your move:</strong> Only transfer with a specific partner award priced out and held. The JAL partner chart is cheap but availability is thin and books by phone for many sweet spots &mdash; do not speculate on open-balance JAL miles.</p>
+
+<h3>Citi ThankYou &rarr; Avianca LifeMiles &mdash; 25%<a class="cite" href="#s7">[7]</a></h3>
+<p class="meta">1,000 TY &rarr; 1,250 LifeMiles &middot; expires October 24, 2026 (14 days) &middot; base ratio 1:1</p>
+<p>Routine LifeMiles bonus from Citi. 25% sits below Citi&rsquo;s historical peak of 30&ndash;35% on this partner. LifeMiles is a legitimate Star Alliance currency with distance-based pricing and no fuel surcharges on Star partners, but it is not a scarce opportunity.</p>
+<p class="move"><strong>Your move:</strong> Wait. LifeMiles bonuses are among the most frequent on Citi&rsquo;s calendar and 25% is below the peak. If you want LifeMiles, you&rsquo;ll see a better rate in Q1 2027.</p>
+
+<h3>Amex Membership Rewards &rarr; Flying Blue &mdash; 25%<a class="cite" href="#s7">[7]</a></h3>
+<p class="meta">1,000 MR &rarr; 1,250 Flying Blue miles &middot; expires 11:59 PM MT October 31, 2026 &middot; base ratio 1:1</p>
+<p>Standard-cadence Flying Blue bonus launched October 1, five days after Flying Blue&rsquo;s September 8 tiered-fare rollout mildly devalued direct-award Standard pricing on AF/KLM metal. Partner-airline pricing (Delta One via SkyTeam, intra-Europe, etc.) is not affected.</p>
+<p class="move"><strong>Your move:</strong> Wait unless you already have an active Promo Reward in your account or a specific partner-award booking ready. Another 25%-plus Flying Blue bonus from a US bank will almost certainly appear before year-end.</p>
+
+<h3>Capital One Miles &rarr; British Airways Avios &mdash; 20%<a class="cite" href="#s7">[7]</a></h3>
+<p class="meta">1,000 Cap One &rarr; 1,200 BA Avios &middot; expires October 31, 2026 &middot; base ratio 1:1</p>
+<p>BA Avios pools with Iberia, Aer Lingus, and (newly) Qatar Avios balances &mdash; the Avios family gives this bonus more surface area than the BA brand suggests. Best use cases are AA domestic short-haul on the BA chart, Iberia economy transatlantic, and Aer Lingus to Dublin.</p>
+<p class="move"><strong>Your move:</strong> If you were already going to transfer Cap One to Avios this quarter, do it before 10/31. Don&rsquo;t speculate &mdash; Avios bonuses recur every two to three months.</p>
+
+<h3>Amex Membership Rewards &rarr; Aeromexico Rewards &mdash; 20%<a class="cite" href="#s7">[7]</a></h3>
+<p class="meta">1,000 MR &rarr; 1,920 Aeromexico points &middot; expires October 30, 2026 &middot; base ratio 1:1.6</p>
+<p>Niche. Aeromexico is useful for one-way Delta partner awards and Mexico City positioning flights. Aeromexico&rsquo;s own award pricing has drifted dynamic in the past year, so a 20% bonus doesn&rsquo;t rescue a bad underlying rate &mdash; it only improves a good one.</p>
+<p class="move"><strong>Your move:</strong> No action unless you&rsquo;ve already priced a specific Aeromexico award at a reasonable rate and need the top-up miles. Do not speculate.</p>
+
+<h2>Program Watch</h2>
+
+<h3>United MileagePlus status-match-and-challenge window closes October 15<a class="cite" href="#s8">[8]</a><a class="cite" href="#s9">[9]</a></h3>
+<p class="meta">Applications open since October 1, 2026 &middot; close October 15, 2026 &middot; US-based MileagePlus members only &middot; earned or lifetime Delta Medallion or AA AAdvantage status eligible &middot; promotional/trial tiers excluded</p>
+<p>United matches: AA Gold or Delta Silver &rarr; MileagePlus Premier Silver; AA Platinum or Delta Gold &rarr; Premier Gold; AA Platinum Pro or Delta Platinum &rarr; Premier Platinum; AA Executive Platinum/ConciergeKey or Delta Diamond/360&ordm; &rarr; Premier 1K. The match is instant for 90 days; retention through January 31, 2028 requires spending $1,500 (Silver), $3,000 (Gold), $4,500 (Platinum), or $7,000 (1K) on United-marketed flights during the challenge period.<a class="cite" href="#s9">[9]</a> This is United&rsquo;s most aggressive public competitive move against Delta and American in years and is directly tied to the broader 2026 convergence of US-airline revenue-based loyalty math.</p>
+<p class="move"><strong>Your move:</strong> If you hold earned Delta or American elite status, you fly United-marketed metal more than incidentally, AND you can realistically hit the spend floor, apply before October 15. If you don&rsquo;t fly United regularly, don&rsquo;t take the match &mdash; the challenge spend has to go on United tickets, not partner metal.</p>
+
+<h3>Chase &rarr; Hyatt transfer ratio now 4:3 for existing Sapphire Preferred and Ink Preferred cardholders<a class="cite" href="#s10">[10]</a></h3>
+<p class="meta">Effective October 1, 2026 &middot; Sapphire Reserve and Sapphire Reserve for Business retain 1:1</p>
+<p>Day 10 of the devaluation. 1,000 Chase points now moves 750 Hyatt points instead of 1,000 for Preferred-tier holders. On a 20,000-point Hyatt award, that is 27,000 Chase points instead of 20,000 &mdash; a 35% real-cost hit. If Hyatt is your primary hotel partner, the strongest 2026 argument for upgrading to a Sapphire Reserve or shifting new spend to a non-Chase transferable currency has now landed.</p>
+<p class="move"><strong>Your move:</strong> If you hold Sapphire Preferred or Ink Preferred AND you have a Hyatt stay to book in the next 30 days, run both ratios before transferring any more Chase points to Hyatt. It may now be cheaper to pay cash at a non-category property or redeem Hyatt points already on hand.</p>
+
+<h3>HeyMax adds Malaysia Airlines Enrich &mdash; 20% launch bonus through January 7, 2027<a class="cite" href="#s11">[11]</a></h3>
+<p class="meta">Effective October 8, 2026 &middot; base ratio 1:1 &middot; HeyMax is a Singapore-based flexible points platform, not a US bank program</p>
+<p>Mentioned for completeness: HeyMax users can now transfer Max Miles to Malaysia Airlines Enrich at 1:1, with a 20% launch bonus running October 8, 2026 through January 7, 2027. Relevant only if you earn through the HeyMax ecosystem; US-only point stacks have no exposure to this. The pattern note is the ongoing Asia-market consolidation of flexible-points programs onto hotel and Oneworld partners.</p>
+<p class="move"><strong>Your move:</strong> No action for US-based readers.</p>
+
+<h2>Today&rsquo;s Play</h2>
+
+<div class="signal">
+  <h3>Signal: Qatar at 35% is the sharpest-angle use of Citi ThankYou on the board &mdash; but only above the 100k-Avios tier</h3>
+  <p>Chase to Marriott 70% is louder and Amex to Hilton 30% is closer to expiry, but structurally the most interesting opportunity on the current board is the Citi to Qatar tiered bonus. The 35% top tier only triggers on single transfers of 100,000 Avios or more, which means you are moving at least 100,000 Citi ThankYou points in one go &mdash; a meaningful commitment. In return you get 135,000 Qatar Avios, enough for a one-way QSuite business-class seat on many Qatar routes from the US to the Middle East or onward to Africa, Asia, or Europe (price depends on route and date).</p>
+  <p>What makes this different from the Marriott or Hilton bonuses: Qatar&rsquo;s premium-cabin availability is tight. If you don&rsquo;t already have a QSuite route and date in mind with space held, treat this bonus as if it does not exist. If you do, it is the only US-bank route to Qatar Avios at an elevated rate, and the pooled Avios balance across the family makes the transferred points more flexible after the fact than any single-airline redemption suggests.</p>
+</div>
+
+<h2>The Ledger</h2>
+
+<p class="meta">Season 1 &middot; 2&ndash;0 across graded calls &middot; 43 open calls riding</p>
+
+<p class="meta">No calls fell due today. Next horizon: October 15, 2026 (call 2026-09-17-1 on Amex/Citi Marriott bonus restraint during the Chase 70% window; and call 2026-09-27-1 on whether Chase&rsquo;s 70% Marriott bonus is extended past Oct 15).</p>
+
+<div class="ledger-row">
+  <p><span class="verdict v-open">OPEN</span> &middot; filed today &middot; horizon January 31, 2027</p>
+  <p><strong>Call:</strong> United Airlines will NOT publicly extend or re-open its Delta / American MileagePlus status-match-and-challenge offer past the October 15, 2026 application deadline. No successor universal public campaign offering the same instant-tier-match terms to Delta or American elites will launch between October 16, 2026 and January 31, 2027.</p>
+  <p class="meta"><strong>Basis:</strong> The two-week application window, hard retention spend floors, and explicit eligibility carve-outs are the pattern of a one-shot competitive campaign, not a persistent recruitment channel. United&rsquo;s own prior status matches have been private/by-request rather than universal; re-opening the universal version inside 3.5 months would commoditise the retention economics it just built and undermine the Oct 15 urgency that drove current application volume.</p>
+  <p class="meta"><strong>Test:</strong> HIT if the Oct 15 deadline passes without extension AND no successor universal (non-targeted) United status-match campaign offering instant tier match from Delta/American elite status is publicly announced between Oct 16, 2026 and Jan 31, 2027. MISS if United publicly extends the deadline or launches a successor universal campaign in that window. Private, targeted, or by-request status matches do not count toward MISS.</p>
+</div>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="s1"><a href="https://onemileatatime.com/deals/qatar-airways-transfer-bonus/">One Mile at a Time &mdash; Qatar Airways Privilege Club: 35% Bonus On Citi ThankYou Points Transfers</a> <span class="tier">(trade)</span></li>
+  <li id="s2"><a href="https://awardwallet.com/news/airlines/qatar-airways-transfer-bonus/">AwardWallet &mdash; Transfer Citi Points to Qatar Airways With up to a 35% Bonus</a> <span class="tier">(trade)</span></li>
+  <li id="s3"><a href="https://upgradedpoints.com/news/citi-qatar-airways-transfer-bonus/">UpgradedPoints &mdash; 35% Transfer Bonus From Citi ThankYou Points to Qatar Airways</a> <span class="tier">(trade)</span></li>
+  <li id="s4"><a href="https://awardwallet.com/news/chase-ultimate-rewards/marriott-transfer-bonus/">AwardWallet &mdash; Chase to Marriott Bonvoy Transfer Bonus: Get 70% More Points</a> <span class="tier">(trade)</span></li>
+  <li id="s5"><a href="https://upgradedpoints.com/news/amex-hilton-transfer-bonus/">UpgradedPoints &mdash; 30% Transfer Bonus From Amex to Hilton Honors (Ends 10/14)</a> <span class="tier">(trade)</span></li>
+  <li id="s6"><a href="https://awardtravelfinder.com/credit-card-transfers/citi-thankyou-points">AwardTravelFinder &mdash; Citi Transfer Partners (2026): 20 Airlines &amp; Hotels</a> <span class="tier">(trade)</span></li>
+  <li id="s7"><a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler &mdash; Current point transfer bonuses (October 2026)</a> <span class="tier">(trade; cross-referenced with awardwallet.com/news/credit-card-transfer-bonuses/ and awardtravelfinder.com/transfer-bonuses)</span></li>
+  <li id="s8"><a href="https://awardwallet.com/news/united-mileageplus/united-status-match/">AwardWallet &mdash; United Status Match and Challenge: Match up to Premier 1K</a> <span class="tier">(trade)</span></li>
+  <li id="s9"><a href="https://www.businesstraveller.com/news/united-status-match-delta-american-starlink-2026/">Business Traveller &mdash; United Lures Delta and American Elites With 90-Day Status Match</a> <span class="tier">(trade)</span></li>
+  <li id="s10"><a href="https://frequentmiler.com/chase-slashes-hyatt-transfer-ratio-to-43/">Frequent Miler &mdash; Chase slashing Hyatt transfer ratio to 4:3 for Sapphire Preferred and Ink Business Preferred</a> <span class="tier">(trade)</span></li>
+  <li id="s11"><a href="https://milelion.com/2026/10/09/heymax-adds-transfers-to-malaysia-airlines-enrich-with-20-transfer-bonus/">The MileLion &mdash; HeyMax adds transfers to Malaysia Airlines Enrich, with 20% transfer bonus</a> <span class="tier">(trade)</span></li>
+</ol>
+<p class="meta">Note on sourcing: every percentage, expiry, and transfer ratio published above was cross-checked across multiple independent trade sources (AwardWallet, Frequent Miler, One Mile at a Time, UpgradedPoints, AwardTravelFinder, Business Traveller). Direct program-page confirmation (Qatar Privilege Club, Chase, Amex, Citi, United) was attempted and could not be retrieved today for most pages because they sit behind geo or login gates &mdash; corroborated trade-source cross-check is the standard this edition offers, and that is the standard by which it should be judged. On today&rsquo;s highlight item (Citi to Qatar tiered bonus), four independent trade sources agree on the tier thresholds and dates.</p>
+
+<p class="caution">Transfers from a flexible points program (Chase, Amex, Citi, Capital One) to an airline or hotel program are ONE-WAY and IRREVERSIBLE. Transfer only if you have a specific redemption identified and award availability confirmed. &ldquo;Great bonus&rdquo; is not a reason to transfer. &ldquo;I have the exact seat or room I need, held or confirmable right now&rdquo; is.</p>
+
+<nav class="bar"><a href="2026-10-09.html">&larr; YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW &rarr;</span></nav>
+
+<footer>
+<p>The Points Brief is an AI-synthesized daily digest. Content is generated from publicly available sources and personal research notes; it is not financial, travel, or loyalty-program advice. Always confirm award availability, transfer ratios, and promo terms with the program directly before transferring points. Transfers are irreversible.</p>
+</footer>
+
+</div>
+
+<script>
+const S = "The Points Brief for Saturday, October 10th, 2026. Three deadlines inside five days frame today. Amex to Hilton 30% closes Tuesday October 14th. Chase to Marriott 70% closes Wednesday October 15th. And United Airlines' instant-tier status-match offer for Delta and American elites also closes October 15th. Underneath those headline countdowns, Qatar Airways is quietly running a tiered Avios bonus of up to 35% from Citi ThankYou through October 31st that was not in yesterday's edition. Worth highlighting because Qatar's QSuite is one of the sharpest redemption targets a US bank transfer can reach. The posture remains the same: transfer only if a specific stay or seat is identified. Today's transfer bonuses. The headline for today: Citi ThankYou to Qatar Airways Privilege Club, up to 35%, tiered. It runs October 1st through 31st. The bonus is tiered by transfer size. 15% on single transfers up to 49,999 Avios. 25% on transfers of 50 thousand to 99,999 Avios. And 35% on single transfers of 100 thousand or more Avios. It's a Qatar-side promotion, which means Citi's transfer screen won't display the bonus during the transfer itself. Qatar credits the extra Avios after the fact. At the top tier, 100 thousand Citi ThankYou points becomes 135 thousand Qatar Avios. Your move: only transfer in blocks of 100 thousand or more to hit the top tier. And only transfer if you have a specific QSuite route and date in mind with award space held. Chase to Marriott at 70% is five days from expiring. One thousand Chase points becomes 1700 Marriott points. This ties the all-time high. Your move: transfer only if you have a specific Marriott award night priced at 50 thousand points or higher with availability confirmed on your dates. Amex to Hilton 30% is four days from expiring. One thousand Amex points becomes 2600 Hilton points. Your move: pull up the Hilton points calendar BEFORE transferring. Hilton is not a transferable currency. Once in Hilton, it stays there. Also running: Citi to JAL Mileage Bank at 30% through October 24th. Citi to Avianca LifeMiles at 25% through October 24th. Amex to Flying Blue at 25% through October 31st. Capital One to British Airways Avios at 20% through October 31st. And Amex to Aeromexico at 20% through October 30th. Program Watch. The big topical story: United Airlines' status match for Delta and American elites closes October 15th. The match is instant for 90 days. Retention through January 31st, 2028 requires spending between $1,500 and $7,000 on United-marketed flights depending on tier. Your move: if you hold earned Delta or American status, fly United regularly, and can hit the spend floor, apply before October 15th. If you don't fly United, don't take the match. Day 10 of the Chase to Hyatt 4-to-3 devaluation for existing Sapphire Preferred and Ink Preferred cardholders. 1000 Chase points now moves 750 Hyatt points instead of 1000. A 35% real-cost increase on Hyatt awards. Today's play. Structurally, the most interesting opportunity on the board is the Citi to Qatar tiered bonus. The 35% top tier only triggers on single transfers of 100 thousand Avios or more, so it's a meaningful commitment. In return, 100 thousand Citi points becomes 135 thousand Qatar Avios. Enough for a one-way QSuite business class seat on many Qatar routes from the US to the Middle East or beyond. But Qatar's premium cabin availability is tight. If you don't already have a route and date in mind with space held, treat this bonus as if it doesn't exist. The ledger. Season 1, 2 and 0 across graded calls, 43 open calls riding. No calls fell due today. Today's new call, open, horizon January 31st, 2027: United Airlines will NOT publicly extend or re-open its Delta/American MileagePlus status-match-and-challenge offer past the October 15th deadline. No successor universal public campaign with instant tier match from Delta or American elite status launches between October 16th, 2026 and January 31st, 2027. Final reminder. Transfers from Chase, Amex, Citi, or Capital One to an airline or hotel program are one-way and irreversible. Great bonus is not a reason to transfer. The exact seat or room you need, held or confirmable right now, is. That's today's brief.";
+let speaking = false;
+let utter = null;
+function pickVoice() {
+  const v = speechSynthesis.getVoices();
+  if (!v.length) return null;
+  return v.find(x => x.name === 'Daniel') || v.find(x => x.name === 'Alex') || v.find(x => /en[-_]/i.test(x.lang)) || v[0];
+}
+function toggleSpeak() {
+  const b = document.getElementById('pbtn');
+  if (speaking) { speechSynthesis.cancel(); speaking = false; b.innerHTML = '&#9654; Listen'; return; }
+  utter = new SpeechSynthesisUtterance(S);
+  utter.rate = 0.93;
+  const v = pickVoice();
+  if (v) utter.voice = v;
+  utter.onend = () => { speaking = false; b.innerHTML = '&#9654; Listen'; };
+  utter.onerror = () => { speaking = false; b.innerHTML = '&#9654; Listen'; };
+  speechSynthesis.speak(utter);
+  speaking = true;
+  b.innerHTML = '&#9632; Stop';
+}
+if (typeof speechSynthesis !== 'undefined') { speechSynthesis.onvoiceschanged = pickVoice; }
+</script>
+
+</body>
+</html>
