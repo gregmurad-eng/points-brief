@@ -542,6 +542,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-10-11-1",
+      "date": "2026-10-11",
+      "call": "American Airlines will NOT publicly disclose or display a per-mile cash-equivalent value in its new Cash + Miles booking flow on aa.com or the AA app at any point between 2026-10-11 and 2026-12-31.",
+      "basis": "AA launched Cash + Miles on 2026-10-02 without disclosing what a mile is worth in the mixed-payment flow - Points Crowd's coverage flagged exactly this as the operative detail. Airlines never willingly peg loyalty currency to a published exchange rate because doing so constrains future devaluation. Delta's Pay with Miles is the comparable prior art and ships with opaque per-mile pricing by design.",
+      "horizon": "2026-12-31",
+      "test": "GRADE HIT if, as of 2026-12-31, five independent spot-checks of aa.com or AA app Cash + Miles bookings each show no disclosed cents-per-mile value, no displayed cash-equivalent for the miles-paid portion, and no exchange rate. GRADE MISS if any public AA booking surface displays a per-mile value or cash equivalent during that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
