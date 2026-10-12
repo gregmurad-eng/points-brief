@@ -554,6 +554,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-10-12-1",
+      "date": "2026-10-12",
+      "call": "The Delta Air Lines x World of Hyatt loyalty collaboration (announced 2026-09-09) will NOT publicly launch general-availability dual-earn \u2014 the state in which SkyMiles Medallion members can enroll and begin earning World of Hyatt points on qualifying Delta airfare, and vice versa \u2014 at any point between 2026-10-12 and 2027-01-31.",
+      "basis": "The 2026-09-09 announcement explicitly flagged enrollment, eligibility, and earning details as \"expected in the coming months,\" which historically correlates with 4-9 months of integration work, not three. Reciprocal dual-earn requires back-end point reconciliation on both sides and is slower to ship than a one-way transfer partnership. Delta's prior major loyalty revamp (spend-based SkyMiles) ran 15 months from announcement to launch; a four-month launch here would be fast for a program of this scope.",
+      "horizon": "2027-01-31",
+      "test": "GRADE HIT if, as of 2027-01-31, no general-availability (non-targeted) enrollment path exists through which SkyMiles Medallion members can register for Hyatt-earning on Delta flights OR Hyatt elite members can register for SkyMiles-earning on Hyatt stays, confirmed via Delta.com and world.hyatt.com. GRADE MISS if at any point between 2026-10-12 and 2027-01-31, either program opens such enrollment to the public (even in beta/limited rollout with a public enrollment URL).",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
