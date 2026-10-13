@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — October 13, 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #080c14; color: #d8d0b4; font-family: Georgia, 'Times New Roman', serif; line-height: 1.65; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 28px 22px 60px; }
+  h1 { font-size: 34px; letter-spacing: 1px; margin: 0 0 4px; color: #c9a84c; font-weight: 400; border-bottom: 2px solid #c9a84c; padding-bottom: 6px; }
+  .tag { font-style: italic; color: #a89d78; font-size: 15px; margin: 4px 0 2px; }
+  .date { color: #a89d78; font-size: 14px; margin-bottom: 20px; letter-spacing: 0.5px; }
+  h2 { color: #c9a84c; font-size: 22px; margin: 34px 0 10px; letter-spacing: 0.5px; font-weight: 400; border-bottom: 1px solid #3a3523; padding-bottom: 4px; }
+  h3 { color: #e2d59a; font-size: 17px; margin: 20px 0 6px; font-weight: 400; }
+  p { margin: 10px 0; font-size: 16px; }
+  a { color: #c9a84c; text-decoration: underline; }
+  a:hover { color: #e2d59a; }
+  .bar { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; padding: 10px 0; border-bottom: 1px solid #3a3523; margin-bottom: 18px; font-size: 14px; }
+  .bar a, .bar span { white-space: nowrap; min-height: 44px; display: inline-flex; align-items: center; }
+  .bar .next { color: #5a5340; }
+  .nav-mid { display: inline-flex; gap: 0; }
+  .nav-mid a { color: #c9a84c; margin: 0 9px; text-decoration: none; }
+  .nav-mid a:hover { text-decoration: underline; }
+  .urgent { border: 1px solid #c9a84c; background: rgba(201, 168, 76, 0.08); padding: 14px 18px; margin: 18px 0 24px; border-radius: 2px; }
+  .urgent-title { color: #c9a84c; font-weight: bold; letter-spacing: 0.5px; margin-bottom: 6px; }
+  .urgent ul { margin: 8px 0 0; padding-left: 20px; }
+  .urgent li { margin: 4px 0; }
+  .play-box { border-left: 3px solid #c9a84c; background: rgba(201, 168, 76, 0.05); padding: 12px 18px; margin: 12px 0; }
+  .move { color: #c9a84c; font-style: italic; display: block; margin-top: 8px; padding: 6px 0; border-top: 1px dashed #3a3523; }
+  .move::before { content: "Your move: "; font-weight: bold; font-style: normal; }
+  .listen-wrap { margin: 14px 0 10px; }
+  #listen { background: transparent; border: 1px solid #c9a84c; color: #c9a84c; padding: 10px 18px; font-family: Georgia, serif; font-size: 14px; letter-spacing: 1px; cursor: pointer; min-height: 44px; min-width: 110px; }
+  #listen:hover { background: rgba(201, 168, 76, 0.1); }
+  sup { font-size: 11px; }
+  sup a { padding: 6px 4px; margin: -6px -4px; text-decoration: none; }
+  sup a:hover { text-decoration: underline; }
+  .meta { color: #8a7f5a; font-size: 13px; font-style: italic; }
+  .divider { border: 0; border-top: 1px solid #3a3523; margin: 32px 0 10px; }
+  .caution { background: rgba(201, 168, 76, 0.04); border: 1px dashed #5a5340; padding: 10px 14px; font-size: 14px; color: #a89d78; margin: 16px 0; }
+  .ledger-call { padding: 10px 0; border-bottom: 1px solid #2a2518; }
+  .ledger-call:last-child { border-bottom: 0; }
+  .ledger-call .verdict { font-weight: bold; letter-spacing: 1px; }
+  .verdict.hit { color: #c9a84c; }
+  .verdict.miss { color: #a85a4c; }
+  .verdict.unsettled { color: #8a7f5a; }
+  .verdict.open { color: #a89d78; }
+  ol.sources { font-size: 14px; color: #a89d78; padding-left: 22px; }
+  ol.sources li { margin: 6px 0; }
+  ol.sources .tier { color: #8a7f5a; font-style: italic; font-size: 12px; margin-left: 4px; }
+  footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #3a3523; font-size: 13px; color: #7a7055; text-align: center; }
+  @media (max-width: 480px) {
+    .wrap { padding: 16px 14px 50px; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 19px; }
+    h3 { font-size: 16px; }
+    p, li { font-size: 16px; }
+    .bar { font-size: 15px; gap: 8px 10px; }
+    .nav-mid a { margin: 0 6px; }
+    .urgent, .play-box, .caution, .ledger-call { font-size: 15px; }
+    ol.sources, ol.sources li { font-size: 14px; }
+    #listen { font-size: 15px; padding: 12px 20px; }
+    .meta { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="bar"><a href="2026-10-12.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+  <h1>The Points Brief</h1>
+  <p class="tag">Travel Points · Maximize every transfer</p>
+  <p class="date">Tuesday, October 13, 2026</p>
+
+  <div class="listen-wrap"><button id="listen" onclick="speak()">▶ LISTEN</button></div>
+
+  <div class="urgent">
+    <div class="urgent-title">⚠ EXPIRES WITHIN 3 DAYS</div>
+    <ul>
+      <li><strong>Amex → Hilton Honors 30% bonus</strong> ends <strong>tomorrow, Oct 14, 2026</strong>. 1,000 MR → 2,600 Hilton points.<sup><a href="#s1">[1]</a></sup></li>
+      <li><strong>Chase → Marriott Bonvoy 70% bonus</strong> ends <strong>Oct 15, 2026, 11:59 PM ET</strong>. 1,000 UR → 1,700 Bonvoy points. Posts within 7 days — not instant.<sup><a href="#s2">[2]</a></sup></li>
+    </ul>
+  </div>
+
+  <h2>Today's Transfer Bonuses</h2>
+
+  <h3>Chase Ultimate Rewards → Marriott Bonvoy — 70%</h3>
+  <p>Base ratio 1:1, so with the bonus 1,000 UR → <strong>1,700 Bonvoy points</strong>. Window: Sept 15 – <strong>Oct 15, 2026</strong>, 11:59 PM ET. Minimum transfer 1,000 UR; unlimited transfers; bonus points post within seven days of the base transfer.<sup><a href="#s2">[2]</a></sup> This is the best Chase → Marriott ratio in several years.<sup><a href="#s3">[3]</a></sup></p>
+  <span class="move">Transfer only if you already hold a specific Marriott redemption in mind — a confirmed Category 6+ booking where 70% knocks the real cost from, say, 50,000 to 29,500 UR. Marriott's post-2022 dynamic award chart means a point banked for "later" can be revalued downward with no notice. The seven-day post delay also means last-minute transfers tonight or tomorrow can miss the window on the Marriott side.</span>
+
+  <h3>Amex Membership Rewards → Hilton Honors — 30%</h3>
+  <p>Base ratio 1:2, so with the bonus 1,000 MR → <strong>2,600 Hilton points</strong>. Window: Sept 1 – <strong>Oct 14, 2026</strong>. Minimum transfer 1,000 MR; bonus points do not count toward elite tier.<sup><a href="#s1">[1]</a></sup></p>
+  <span class="move">Only if you have a Hilton redemption picked and priced. Hilton has quietly raised award rates at mid- and lower-tier properties this year with no published chart,<sup><a href="#s4">[4]</a></sup> which means parking MR as Hilton points right now is parking them at an unknown price. The redemption test: does the specific hotel-night cost you plan to book look cheap enough that a 23% effective bump (2.6× vs 2.0× base) is worth losing MR flexibility?</span>
+
+  <h3>Amex Membership Rewards → Air France-KLM Flying Blue — 25%</h3>
+  <p>Base ratio 1:1, so with the bonus 1,000 MR → <strong>1,250 Flying Blue miles</strong>. Window: Oct 1 – <strong>Oct 31, 2026</strong>, 11:59 PM MT. No registration required; minimum 1,000 MR; maximum 999,999 per transaction.<sup><a href="#s5">[5]</a></sup></p>
+  <span class="move">Hold unless you already have a Flying Blue award priced. The Flying Blue award restructure went live Sept 8, 2026 and raised Standard and Flex award prices roughly 20–25% for non-elites<sup><a href="#s6">[6]</a></sup> — a 25% transfer bonus into a chart that just moved 25% the wrong way is a wash. Light-tier awards still work for short-haul Europe hops, but confirm the specific route and class at the new chart before transferring.</span>
+
+  <h3>Amex Membership Rewards → Aeroméxico Club Premier — 20%</h3>
+  <p>Base ratio 1,000:1,600, so with the bonus 1,000 MR → <strong>1,920 Club Premier points</strong>. Window: through <strong>Oct 30, 2026</strong>. Exact end-of-day timezone <em>unconfirmed</em>; treat Oct 29 as the safe cutoff.<sup><a href="#s7">[7]</a></sup></p>
+  <span class="move">Niche. Club Premier has real sweet spots on Delta metal within the Americas (Aeroméxico and Delta are joint-venture partners), but the program's expiration policy still runs on 24-month inactivity. Only transfer if you have a Delta or Aeroméxico redemption lined up in the next 18 months.</span>
+
+  <h3>Capital One → British Airways Executive Club (Avios) — 20%</h3>
+  <p>Base ratio 1:1, so with the bonus 1,000 Capital One miles → <strong>1,200 Avios</strong>. Window: Oct 1 – <strong>Oct 31, 2026</strong>, 11:59 PM ET. Minimum 1,000; increments of 100 above that; no registration.<sup><a href="#s8">[8]</a></sup></p>
+  <span class="move">Transfer only against a known short-haul Avios redemption — American Airlines domestic economy (7,500 Avios under 1,151 miles off-peak), Aer Lingus to Dublin, Iberia to Madrid off-peak. Avios distance-based pricing holds steady, but BA has been quietly raising surcharges on its own metal. For long-haul redemption on BA itself, the fuel surcharges can eat the bonus.</span>
+
+  <h3>Citi ThankYou → Qatar Airways Privilege Club (Avios) — up to 35% (tiered)</h3>
+  <p>Tiered by single-transaction size: under 50,000 Avios → <strong>15%</strong>; 50,000–99,999 → <strong>25%</strong>; 100,000 and above → <strong>35%</strong>. Base ratio depends on your Citi card: Strata Elite, Strata Premier, Prestige and AT&amp;T Access More transfer 1:1 (so 100,000 TYP → 135,000 Avios at the top tier). Lower-tier Citi cards (Double Cash, Custom Cash, Preferred, Strata) transfer at a reduced ratio under Citi's two-tier structure.<sup><a href="#s9">[9]</a></sup> Window: Oct 1 – <strong>Oct 31, 2026</strong>, 23:59 GMT+3. The campaign is run by Qatar, not Citi — the 35% applies to inbound Avios from any eligible conversion partner.<sup><a href="#s10">[10]</a></sup></p>
+  <span class="move">If you hold a premium Citi card AND have a Qatar Qsuite redemption on hold, this is the headline move of the month — 100,000 TYP into 135,000 Avios covers J-class US-to-Doha in a single transfer. If you only hold a no-annual-fee Citi card, the reduced base ratio can erase the bonus — model your own number before transferring. Lower-tier Citi ratio figures are UNCONFIRMED from Citi's own portal in this edition; log in and verify.</span>
+
+  <h3>Citi ThankYou → Avianca LifeMiles — 25%</h3>
+  <p>Base ratio (premium Citi cards) 1:1, so with the bonus 1,000 TYP → <strong>1,250 LifeMiles</strong>. Window: Sept 20 – <strong>Oct 24, 2026</strong>, 11:59 PM ET. LifeMiles number must be registered to the account.<sup><a href="#s11">[11]</a></sup></p>
+  <span class="move">Only against a specific LifeMiles redemption — the program's sweet spots (US domestic AA economy at 7,500, intra-Europe Star Alliance in Y) are real, but LifeMiles routinely runs its own 100%+ "buy miles" promos. If you can buy LifeMiles at under 1.3 cents each, that may beat a 25% transfer; price both before moving.</span>
+
+  <h3>Citi ThankYou → Japan Airlines Mileage Bank — 30%</h3>
+  <p>Base ratio (premium Citi cards) 1:1, so with the bonus 1,000 TYP → <strong>1,300 JAL miles</strong>. Window: Sept 20 – <strong>Oct 24, 2026</strong>. JAL became a Citi transfer partner on Sept 20, 2026; this is the launch-promo window.<sup><a href="#s12">[12]</a></sup></p>
+  <span class="move">The only reason to transfer: a specific JAL partner-award booking. JAL's distance-based chart on partners (notably Emirates first class at 145,000 miles round-trip from the US) is the point. For Oneworld redemptions on American or BA, your TYP are better in a different partner.</span>
+
+  <h2>Program Watch</h2>
+
+  <h3>IHG One Rewards credit card portfolio overhaul (Oct 1, 2026)</h3>
+  <p>Chase and IHG launched the <strong>IHG One Rewards Premier Select Credit Card</strong> at a <strong>$350 annual fee</strong>, with automatic Platinum Elite status, 20 annual Elite Night Credits, a 200,000-point sign-up bonus after $5,000 spend in three months, Food &amp; Beverage credits, and an anniversary free night. Enhancements landed across the rest of the IHG card portfolio.<sup><a href="#s13">[13]</a></sup><sup><a href="#s14">[14]</a></sup></p>
+  <span class="move">If you're already a Platinum regular, run the math — $350 is a steep jump from the $99 Premier tier, and the F&amp;B credits and status have to outweigh that gap at the properties you actually stay. For infrequent IHG stays, the existing Premier at its new $150 annual fee for new applicants is still the better anchor.</span>
+
+  <h3>Aegean Miles+Bonus — Air China earning cut (effective Oct 12, 2026)</h3>
+  <p>Aegean reduced Miles+Bonus earning on Air China partner flights effective yesterday.<sup><a href="#s15">[15]</a></sup></p>
+  <span class="move">Immaterial unless Aegean is your anchor Star Alliance program. If so, log any pending Air China credits against the pre-change rate — Aegean's T&amp;Cs typically honor the earning rate at flight date, not booking date.</span>
+
+  <h3>Flying Blue devaluation — now live</h3>
+  <p>The Light/Standard/Flex award-tier restructure went live Sept 8, 2026, raising mileage prices roughly 20–25% for non-elite members on Standard and Flex awards. Light-tier awards hold the old price but strip benefits (no changes, no refund).<sup><a href="#s6">[6]</a></sup></p>
+  <span class="move">This is why the Amex → Flying Blue 25% bonus above is a wash. Confirm your target redemption's new price before transferring MR, not the old one.</span>
+
+  <h3>United MileagePlus Status Match — closes Oct 15, 2026</h3>
+  <p>United's status-match offer for Delta Medallion and American AAdvantage elites closes <strong>in two days</strong>. Shortened 90-day trial (vs. the usual 120); a successful challenge extends matched status through Jan 31, 2028.<sup><a href="#s16">[16]</a></sup></p>
+  <span class="move">If you're a Delta Platinum/Diamond or AA Platinum Pro/Executive Platinum and have been considering shifting primary status to United, submit the match today. The 90-day challenge metrics (typically PQF/PQP equivalents) are achievable from the holiday travel season — but only if the match is live first.</span>
+
+  <h2>Today's Play</h2>
+  <div class="play-box">
+    <p>Two headline bonuses expire inside 48 hours — Amex → Hilton 30% tomorrow, Chase → Marriott 70% Wednesday. Both look big on paper and both have the same quiet problem: the receiving program devalued or restructured in the last twelve months, which means the bonus is partially an offset, not pure upside.</p>
+    <p>The right move for today is <strong>not</strong> "transfer because the deadline is close." It is: open the hotel's own award search, confirm the specific night you want is available at the price you expect, hold the booking if the program allows, and transfer only against that confirmed hold. Transfers are one-way. A speculative transfer under a deadline is how a bonus becomes a loss.</p>
+    <p>If you don't have a specific redemption ready to book, the correct action today is to do nothing and let both offers expire. There will be another bonus.</p>
+  </div>
+
+  <div class="caution">⚠ Transfers from flexible points (UR, MR, TYP, Capital One, Bilt) to any airline or hotel are <strong>one-way and irreversible</strong>. Only move points against a specific redemption you can book now.</div>
+
+  <h2>The Ledger</h2>
+  <p class="meta">Season 1 · 2–0 across 2 graded calls · 46 open</p>
+
+  <div class="ledger-call">
+    <p><span class="verdict open">OPEN</span> · logged today · horizon 2026-12-15</p>
+    <p>The Amex Membership Rewards → Air France-KLM Flying Blue 25% transfer bonus (expiring 2026-10-31) will NOT be re-run or extended by Amex before 2026-12-15.</p>
+    <p class="meta">Basis: Amex → Flying Blue bonuses have historically run on roughly a quarterly cadence (Jan, Apr, Jul, Oct in both 2024 and 2025), not back-to-back months. The October 2026 campaign is already positioned over the Flying Blue devaluation that went live Sept 8 — Amex is likely clearing demand into the discounted mileage rate before the market recovers, which argues for a cool-off window immediately after. Test: HIT if no Amex → Flying Blue bonus of any percentage is publicly offered between 2026-11-01 and 2026-12-15; MISS if any such bonus is announced during that window.</p>
+  </div>
+  <p class="meta">No calls were due for grading today. The next graded entries will appear here when their horizons arrive.</p>
+
+  <h2>Sources</h2>
+  <p class="meta">Issuer transfer-bonus pages (Chase UR portal, Amex MR, Capital One, Citi) are cardholder-gated — their URLs are Tier 1 primary sources that only logged-in cardholders can retrieve. Where the primary page is gated, we corroborate across multiple established trade sources and name both. <strong>Verify every percentage, ratio, and expiry in your own transfer portal before moving any points.</strong></p>
+  <ol class="sources">
+    <li id="s1">Amex Membership Rewards transfer portal, Hilton Honors offer tile <span class="tier">— primary (cardholder-gated)</span> · corroborated: <a href="https://awardwallet.com/news/amex-membership-rewards/hilton-transfer-bonus/">AwardWallet, Amex→Hilton 30% bonus coverage</a> <span class="tier">— trade</span></li>
+    <li id="s2">Chase Ultimate Rewards transfer portal, Marriott Bonvoy offer tile <span class="tier">— primary (cardholder-gated)</span> · corroborated: <a href="https://awardwallet.com/news/chase-ultimate-rewards/marriott-transfer-bonus/">AwardWallet, Chase→Marriott 70% bonus coverage</a> <span class="tier">— trade</span></li>
+    <li id="s3"><a href="https://thepointsguy.com/news/chase-marriott-transfer-bonus-september-2026/">The Points Guy, "Chase Ultimate Rewards to Marriott Bonvoy 70% bonus — rare, big"</a> <span class="tier">— trade (affiliate-heavy; use only for context, not for numbers)</span></li>
+    <li id="s4"><a href="https://awardwallet.com/news/hilton-honors/program-changes-2026/">AwardWallet, "Hilton Honors 2026 program changes"</a> <span class="tier">— trade</span></li>
+    <li id="s5">Amex Membership Rewards transfer portal, Flying Blue offer tile <span class="tier">— primary (cardholder-gated)</span> · corroborated: <a href="https://awardwallet.com/news/amex-membership-rewards/flying-blue-transfer-bonus/">AwardWallet, Amex→Flying Blue 25% bonus coverage</a> <span class="tier">— trade</span></li>
+    <li id="s6"><a href="https://onemileatatime.com/news/flying-blue-devaluation/">One Mile at a Time, "Flying Blue devaluation — Light/Standard/Flex restructure, effective Sept 8 2026"</a> <span class="tier">— trade (devaluation reporting corroborated across Doctor of Credit, Frequent Miler, View from the Wing)</span></li>
+    <li id="s7"><a href="https://awardtravelfinder.com/transfer-bonuses/amex-membership-rewards-to-aeromexico-clubpremier">Award Travel Finder, Amex→Aeroméxico 20% bonus</a> <span class="tier">— trade; exact timezone of Oct 30 cutoff unconfirmed</span></li>
+    <li id="s8">Capital One rewards portal, British Airways offer tile <span class="tier">— primary (cardholder-gated)</span> · corroborated: <a href="https://awardwallet.com/news/capital-one-rewards/avios-transfer-bonus/">AwardWallet, Capital One→Avios 20% bonus coverage</a> <span class="tier">— trade</span></li>
+    <li id="s9">Citi ThankYou transfer portal <span class="tier">— primary (cardholder-gated; lower-tier Citi card ratios UNCONFIRMED in this edition — verify in your portal)</span></li>
+    <li id="s10"><a href="https://www.qatarairways.com/en/Privilege-Club/offers/global-points-exchange-october-2026.html">Qatar Airways Privilege Club, "Global Points Exchange October 2026"</a> <span class="tier">— primary (page returns 403 to anonymous fetch but is Qatar's own campaign URL)</span> · corroborated: <a href="https://loyaltylobby.com/2026/10/02/qatar-airways-privilege-club-15-to-35-avios-conversion-bonus-october-1-31-2026/">Loyalty Lobby, Qatar 15–35% tiered bonus coverage</a> <span class="tier">— trade</span></li>
+    <li id="s11"><a href="https://loyaltylobby.com/2026/09/20/citi-thankyou-to-avianca-lifemiles-25-points-to-miles-conversion-bonus-september-20-october-24-2026/">Loyalty Lobby, Citi→LifeMiles 25% bonus coverage</a> <span class="tier">— trade; primary Citi portal cardholder-gated</span></li>
+    <li id="s12"><a href="https://upgradedpoints.com/news/citi-japan-airlines-transfer-bonus/">Upgraded Points, "Citi ThankYou adds JAL as transfer partner — 30% launch bonus"</a> <span class="tier">— trade; primary Citi portal cardholder-gated</span></li>
+    <li id="s13"><a href="https://www.ihgplc.com/en/news-and-media/news-releases/2026/chase-introduces-new-ihg-one-rewards-premier-select-credit-card-and-portfolio">IHG PLC Newsroom, "Chase Introduces New IHG One Rewards Premier Select Credit Card, Plus Updates Across Entire IHG One Rewards Card Portfolio" (Oct 1, 2026)</a> <span class="tier">— primary</span></li>
+    <li id="s14"><a href="https://media.chase.com/news/ihg-premier-select-card-portfolio-updates">Chase Media Center, same release</a> <span class="tier">— primary</span></li>
+    <li id="s15"><a href="https://loyaltylobby.com/2026/10/07/aegean-milesbonus-air-china-miles-earning-changes-effective-october-12-2026/">Loyalty Lobby, "Aegean Miles+Bonus — Air China earning changes, effective Oct 12 2026"</a> <span class="tier">— trade</span></li>
+    <li id="s16"><a href="https://awardwallet.com/news/united-mileageplus/united-status-match/">AwardWallet, United MileagePlus status match (closes Oct 15, 2026)</a> <span class="tier">— trade</span></li>
+  </ol>
+
+  <nav class="bar" style="margin-top: 32px;"><a href="2026-10-12.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+  <footer>
+    Content is AI-synthesized from public primary and trade sources. Confirm every award availability, transfer ratio, and expiry in your own transfer portal before moving points. Transfers are one-way and irreversible.
+  </footer>
+</div>
+
+<script>
+const S = "The Points Brief for Tuesday, October 13, 2026. Two headline transfer bonuses expire inside the next 48 hours and both come with a quiet complication. First: Amex Membership Rewards to Hilton Honors at 30 percent ends tomorrow, October 14th. Base ratio one to two, so with the bonus one thousand points becomes two thousand six hundred Hilton points. The complication: Hilton has quietly raised award rates at mid and lower tier properties this year with no published chart, so parking Membership Rewards as Hilton points right now parks them at an unknown price. Second: Chase Ultimate Rewards to Marriott Bonvoy at 70 percent ends Wednesday, October 15th. This is the best Chase to Marriott ratio in several years. The complication: Marriott's post-2022 dynamic chart means a point banked for later can be revalued down with no notice, and the bonus posts within seven days of the base transfer, not instantly, so last-minute moves tonight or tomorrow can miss the window on the Marriott side. Other active bonuses: Amex to Flying Blue at 25 percent through October 31st, Amex to Aeromexico at 20 percent through October 30th, Capital One to British Airways Avios at 20 percent through October 31st, Citi ThankYou to Qatar Airways Privilege Club tiered at 15, 25, and 35 percent through October 31st, Citi to Avianca LifeMiles at 25 percent through October 24th, and Citi to Japan Airlines at 30 percent for the partnership launch, also through October 24th. Program watch: Chase and IHG launched the IHG One Rewards Premier Select card at a 350 dollar annual fee on October 1st, with automatic Platinum Elite and a 200,000 point sign-up bonus. Flying Blue's Light, Standard, and Flex award restructure went live September 8th, raising non-elite Standard and Flex prices roughly 20 to 25 percent, which is why the Amex to Flying Blue 25 percent bonus is largely a wash. United's status match for Delta and American elites closes Wednesday. Today's play. The right move today is not transfer because the deadline is close. It is: open the hotel's own award search, confirm the specific night you want is available at the price you expect, hold the booking if the program allows, and transfer only against that confirmed hold. If you don't have a specific redemption ready to book, the correct action today is to do nothing and let both offers expire. There will be another bonus. Transfers are one-way and irreversible. The Ledger. Season 1 record is two and zero across two graded calls, forty six still open. Today's new call: the Amex to Flying Blue 25 percent bonus will not be re-run or extended by Amex before December 15th. Horizon December 15, 2026. No calls were due for grading today. That's the brief.";
+let utter = null;
+function pickVoice() {
+  const voices = window.speechSynthesis.getVoices();
+  return voices.find(v => v.name === 'Daniel') || voices.find(v => v.name === 'Alex') || voices.find(v => v.lang && v.lang.startsWith('en')) || voices[0];
+}
+function speak() {
+  const btn = document.getElementById('listen');
+  if (window.speechSynthesis.speaking) {
+    window.speechSynthesis.cancel();
+    btn.textContent = '▶ LISTEN';
+    return;
+  }
+  utter = new SpeechSynthesisUtterance(S);
+  utter.rate = 0.93;
+  const v = pickVoice();
+  if (v) utter.voice = v;
+  utter.onend = () => { btn.textContent = '▶ LISTEN'; };
+  utter.onerror = () => { btn.textContent = '▶ LISTEN'; };
+  window.speechSynthesis.speak(utter);
+  btn.textContent = '■ STOP';
+}
+if (typeof window.speechSynthesis !== 'undefined' && window.speechSynthesis.onvoiceschanged !== undefined) {
+  window.speechSynthesis.onvoiceschanged = () => {};
+}
+</script>
+</body>
+</html>
