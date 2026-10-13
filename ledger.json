@@ -566,6 +566,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-10-13-1",
+      "date": "2026-10-13",
+      "call": "The Amex Membership Rewards -> Air France-KLM Flying Blue 25% transfer bonus (expiring 2026-10-31) will NOT be re-run or extended by Amex before 2026-12-15.",
+      "basis": "Amex -> Flying Blue bonuses have historically run on roughly a quarterly cadence (Jan, Apr, Jul, Oct in both 2024 and 2025), not back-to-back months. The October 2026 campaign is already positioned over the Flying Blue devaluation that went live Sept 8, 2026 - Amex is likely clearing demand into the discounted mileage rate before the market recovers, which argues for a cool-off window immediately after, not another promo.",
+      "horizon": "2026-12-15",
+      "test": "GRADE HIT if no Amex -> Flying Blue transfer bonus of any percentage is publicly offered between 2026-11-01 and 2026-12-15. GRADE MISS if any Amex -> Flying Blue bonus (greater than 0%) is announced or live during that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
