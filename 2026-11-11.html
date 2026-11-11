@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief · Wednesday, November 11, 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #080c14; color: #d8d0b4; font-family: Georgia, "Times New Roman", serif; line-height: 1.55; }
+  body { padding: 28px 22px 60px; max-width: 760px; margin: 0 auto; font-size: 17px; }
+  .bar { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; border-top: 1px solid #2a2a2a; border-bottom: 1px solid #2a2a2a; padding: 12px 0; margin: 14px 0 26px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .bar a, .bar span { white-space: nowrap; display: inline-flex; align-items: center; min-height: 44px; padding: 0 2px; }
+  .bar a { color: #c9a84c; text-decoration: none; }
+  .bar a:hover { text-decoration: underline; }
+  .nav-mid { margin: 0 auto; display: inline-flex; gap: 0; }
+  .nav-mid a { color: #c9a84c; margin: 0 9px; }
+  .next { color: #666; }
+  h1 { font-family: Georgia, serif; font-size: 42px; letter-spacing: 0.02em; margin: 6px 0 4px; color: #e8dfbd; font-weight: normal; }
+  .tagline { color: #8a7a4a; font-style: italic; font-size: 15px; margin: 0 0 2px; letter-spacing: 0.04em; }
+  .dateline { color: #c9a84c; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; margin: 10px 0 0; }
+  h2 { color: #c9a84c; font-size: 22px; letter-spacing: 0.04em; margin: 36px 0 12px; border-bottom: 1px solid #2a2a2a; padding-bottom: 6px; font-weight: normal; }
+  h3 { color: #e8dfbd; font-size: 18px; margin: 20px 0 4px; font-weight: normal; }
+  p { margin: 10px 0; }
+  a { color: #c9a84c; }
+  sup a { padding: 6px 4px; margin: -6px -4px; text-decoration: none; }
+  sup a:hover { text-decoration: underline; }
+  .urgent { border: 2px solid #c9a84c; background: #141008; padding: 14px 16px; margin: 0 0 24px; border-radius: 3px; }
+  .urgent-tag { color: #c9a84c; font-weight: bold; letter-spacing: 0.14em; font-size: 12px; text-transform: uppercase; display: block; margin-bottom: 4px; }
+  .move { color: #c9a84c; font-style: italic; margin: 8px 0 4px; }
+  .move::before { content: "Your move: "; font-weight: bold; font-style: normal; letter-spacing: 0.02em; }
+  .meta { color: #8a7a4a; font-size: 14px; font-style: italic; margin: 2px 0 6px; }
+  .signal { background: #141008; border-left: 3px solid #c9a84c; padding: 14px 18px; margin: 14px 0; }
+  .ledger-table { margin: 10px 0 18px; }
+  .ledger-row { padding: 10px 0; border-bottom: 1px solid #1a1a1a; }
+  .ledger-row:last-child { border-bottom: none; }
+  .hit { color: #c9a84c; font-weight: bold; letter-spacing: 0.08em; }
+  .miss { color: #a05c5c; font-weight: bold; letter-spacing: 0.08em; }
+  .unsettled { color: #777; font-weight: bold; letter-spacing: 0.08em; }
+  .open-tag { color: #777; font-weight: bold; letter-spacing: 0.08em; }
+  .season { color: #c9a84c; font-size: 20px; margin: 6px 0 14px; letter-spacing: 0.04em; }
+  .listen { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 18px; background: transparent; color: #c9a84c; border: 1px solid #c9a84c; font-family: Georgia, serif; font-size: 15px; letter-spacing: 0.06em; cursor: pointer; margin: 8px 0 18px; }
+  .listen:hover { background: #141008; }
+  ol.sources { padding-left: 22px; font-size: 15px; }
+  ol.sources li { margin: 6px 0; color: #b0a888; }
+  ol.sources a { word-break: break-all; }
+  .tier { color: #8a7a4a; font-style: italic; font-size: 13px; }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid #2a2a2a; color: #666; font-size: 13px; font-style: italic; }
+  .caution { color: #a08c5a; font-size: 14px; font-style: italic; border-left: 2px solid #c9a84c; padding: 4px 12px; margin: 14px 0; }
+  @media (max-width: 480px) {
+    body { padding: 20px 14px 50px; font-size: 16px; }
+    h1 { font-size: 32px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 17px; }
+    .bar { font-size: 14px; padding: 10px 0; gap: 8px 10px; }
+    .bar a, .bar span { min-height: 44px; }
+    .nav-mid a { margin: 0 6px; }
+    .urgent { padding: 12px 14px; font-size: 15px; }
+    .urgent-tag { font-size: 13px; }
+    .signal { padding: 12px 14px; }
+    .listen { padding: 10px 16px; font-size: 16px; }
+    sup a { padding: 8px 6px; margin: -8px -6px; }
+    .meta { font-size: 14px; }
+    .move { font-size: 15px; }
+    .season { font-size: 18px; }
+    footer, ol.sources { font-size: 14px; }
+    .tier { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>The Points Brief</h1>
+  <p class="tagline">Travel Points · Maximize every transfer</p>
+  <p class="dateline">Wednesday, November 11, 2026</p>
+</header>
+
+<nav class="bar"><a href="2026-10-13.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+<button class="listen" id="listen">▶ Listen · ~3 min</button>
+
+<div class="urgent">
+  <span class="urgent-tag">⚠ Expires in 3 days</span>
+  Citi ThankYou → Cathay Pacific Asia Miles <strong>10%</strong> bonus ends <strong>Friday, November 14, 2026</strong>. Small bonus, narrow use case — flagged for completeness, not urgency.<sup><a href="#s1">[1]</a></sup> The real time-sensitive event this week is the United MileagePlus Nov 15 devaluation — see <em>Today&rsquo;s Play</em> below.
+</div>
+
+<h2>Today&rsquo;s Transfer Bonuses</h2>
+
+<h3>Chase Ultimate Rewards → IHG One Rewards · +80%</h3>
+<p class="meta">Nov 1 – Dec 3, 2026 · 1,000 UR → 1,800 IHG · base ratio 1:1<sup><a href="#s2">[2]</a></sup></p>
+<p>Chase is running an 80% transfer bonus to IHG One Rewards, the strongest Chase→IHG promo of the fall. Base transfer is 1,000 UR to 1,000 IHG; with the 80% bump, 1,000 UR yields 1,800 IHG points.<sup><a href="#s2">[2]</a></sup> IHG's award pricing is dynamic — there is no fixed chart — so the headline percentage does not directly translate to a redemption rate. The strong use cases remain PointBreaks-adjacent off-peak stays at the Intercontinental tier where cash rates have spiked.</p>
+<p class="move">transfer only if you have a specific IHG award priced in the booking flow and the point total confirmed — IHG is the thinnest currency in Chase&rsquo;s stack and 80% of thin is still thin.</p>
+
+<h3>Citi ThankYou → Turkish Airlines Miles&amp;Smiles · +40%</h3>
+<p class="meta">Nov 1 – Nov 30, 2026 · cap 50,000 bonus miles per member · base ratio 1:1 (Strata Elite/Premier/Prestige)<sup><a href="#s3">[3]</a></sup><sup><a href="#s4">[4]</a></sup></p>
+<p>Citi is running a 40% bonus on transfers to Turkish Airlines Miles&amp;Smiles through end of November, with the bonus capped at 50,000 extra miles per member — which maxes out at a transfer of 125,000 Citi ThankYou points. The bonus is being offered by Turkish rather than displayed inside the Citi transfer flow, so you will see only the base 1:1 ratio on the Citi side; the bonus miles post after the promotion closes.<sup><a href="#s3">[3]</a></sup> Turkish&rsquo;s long-standing sweet spot — 45,000 Miles&amp;Smiles for Star Alliance business class from the U.S. to continental Europe — remains on the award chart as of today, which makes this one of the few airline-partner bonuses actually worth running the math on this month.<sup><a href="#s4">[4]</a></sup></p>
+<p class="move">only transfer with a specific Turkish Miles&amp;Smiles award on hold — Turkish award space is famously unreliable and the miles are difficult to repurpose if the redemption falls through; if space is confirmed, 125,000 Citi points for a full Star Alliance business-class ticket to Europe is the strongest airline value Greg&rsquo;s stack can produce this week.</p>
+
+<h3>Amex Membership Rewards → Marriott Bonvoy · +35%</h3>
+<p class="meta">Oct 20 – Dec 10, 2026 · 1,000 MR → 1,350 Bonvoy · base ratio 2:3 (not 1:1)<sup><a href="#s5">[5]</a></sup><sup><a href="#s6">[6]</a></sup></p>
+<p>Amex is offering a 35% bonus on Membership Rewards to Marriott Bonvoy transfers through December 10. Base transfer is 1,000 MR to 2,000 Marriott; with the 35% bonus, 1,000 MR yields approximately 2,700 Marriott points. Marriott&rsquo;s own award pricing has crept up across the portfolio throughout 2026 — The Points Guy and Frequent Miler have documented quiet increases at approximately 95% of properties, with flagship luxury properties taking the heaviest hits.<sup><a href="#s7">[7]</a></sup> The 35% bonus largely offsets the inflation Marriott has already baked in, rather than delivering real additional value.</p>
+<p class="move">skip unless you hold a specific Marriott award on cash-vs-points math that pencils at today&rsquo;s inflated point price — Amex MR is one of the most flexible currencies in the market and Marriott Bonvoy is one of the weakest terminal currencies; the 35% bonus is the floor, not a gift.</p>
+
+<h2>Program Watch</h2>
+
+<h3>United MileagePlus — Saver-award devaluation effective Nov 15, 2026</h3>
+<p class="meta">Effective Saturday, Nov 15, 2026 · Tier 1: United MileagePlus news; Tier 2 confirmation: Business Traveller and LoyaltyLobby<sup><a href="#s8">[8]</a></sup><sup><a href="#s9">[9]</a></sup></p>
+<p>United is raising average saver award prices by approximately 33% on its own metal effective Saturday, Nov 15, 2026, with premium-cabin increases reported as high as 46% on certain partner redemptions.<sup><a href="#s8">[8]</a></sup> This follows the April 2026 adjustment that raised saver prices by an average of 18%. There is no published award chart — United moved to dynamic pricing years ago — so the cleanest way to confirm the devaluation is to search for a target redemption today, screenshot the price, and re-check the same search on Nov 16.</p>
+<p class="move">if you have a United-metal saver redemption you have been sitting on, book it before Saturday — this is the single highest-urgency action in this edition, worth more than any transfer bonus listed above.</p>
+
+<h3>United MileagePlus — PlusPoints upgrades go dynamic in Feb 2027</h3>
+<p class="meta">Effective February 2027 · Tier 2 coverage; United&rsquo;s own announcement is the primary source<sup><a href="#s9">[9]</a></sup></p>
+<p>Beginning in February 2027, United is retiring the fixed PlusPoints upgrade chart and moving to a dynamic model, where the points required for a given upgrade will vary with route, cabin, timing, and demand. The industry consensus is that this will function as a devaluation, though United is framing it as &ldquo;simplification.&rdquo;<sup><a href="#s9">[9]</a></sup></p>
+<p class="move">if you hold PlusPoints and know your 2027 travel calendar, apply them to known high-value international upgrades on current fixed pricing before February — after the cutover the value per PlusPoint is almost certainly going down.</p>
+
+<h3>Marriott Bonvoy — Continued quiet award-chart drift</h3>
+<p class="meta">Ongoing through 2026 · Tier 2 confirmation: The Points Guy and Frequent Miler<sup><a href="#s7">[7]</a></sup></p>
+<p>Marriott has raised award prices across a reported ~95% of properties over the course of 2026, most notably in a July 4–5 round that landed with no announcement. Named examples include The London EDITION (107,000 → 115,000 points), The Ritz-Carlton, Kyoto (122,000 → 128,000), and The Ritz-Carlton Maldives (168,000 → 176,000).<sup><a href="#s7">[7]</a></sup> There is no published chart to point at — these are after-the-fact observations by the trade press.</p>
+<p class="move">no transfer action — this matters as context for the Amex 35% bonus above: Marriott has already clawed back more than 35% at the top of the portfolio, so the &ldquo;bonus&rdquo; is substantially a recoup of inflation.</p>
+
+<h2>Today&rsquo;s Play</h2>
+
+<div class="signal">
+  <p><strong>The signal for this week is the United MileagePlus devaluation landing Saturday, November 15.</strong> Not a bonus — a 33% price hike on United saver awards on United metal, with partner premium cabins hit as hard as 46%.<sup><a href="#s8">[8]</a></sup></p>
+  <p>If you have a United redemption you have been sitting on, this is the week. Nothing in the current bonus list is more valuable than a saver award booked under today&rsquo;s pricing.</p>
+  <p>If you do not have a United redemption in mind, the ranked plays are: (1) Citi → Turkish 40% <em>with</em> Star Alliance business-class space confirmed to Europe, (2) hold Chase UR — the Chase→Hyatt devaluation already landed and Chase is unlikely to run a softening bonus (see today&rsquo;s ledger call), (3) do nothing. The Marriott and IHG bonuses are both below the bar to transfer speculatively.</p>
+  <p class="caution">Transfers are one-way and irreversible. Never transfer points without a specific redemption identified and award space confirmed — a wrong transfer here is a financial loss, not an embarrassment.</p>
+</div>
+
+<h2>The Ledger</h2>
+
+<p class="season">Season 1 · 8–0 across graded calls</p>
+<p>Six open calls came due since the last edition. All six graded HIT. That is a flattering record on a topic where readers move real money on these calls, and the honest read is that the horizons on this cohort were long and the base rates on &ldquo;program X does not extend the thing it said would end&rdquo; are high. Expect misses — a ledger that never misses stops being load-bearing. Today&rsquo;s new call is deliberately in the other direction: a nine-week bet on silence from Chase where the pressure is for noise.</p>
+
+<div class="ledger-table">
+
+<div class="ledger-row">
+  <p><span class="hit">HIT</span> · <strong>2026-08-15-1</strong> · Chase→IHG bonus-free window Sep 1 – Oct 31</p>
+  <p>No Chase→IHG transfer bonus of any percentage was publicly offered in that window. 70% bonus ended Aug 31 as scheduled; next Chase→IHG promo (80%) did not begin until Nov 1.<sup><a href="#s2">[2]</a></sup></p>
+</div>
+
+<div class="ledger-row">
+  <p><span class="hit">HIT</span> · <strong>2026-08-16-1</strong> · U.S. Bank Altitude Reserve to restore Flying Blue or Qantas by Oct 25</p>
+  <p>Flying Blue was restored to the U.S. Bank Altitude Reserve transfer menu on 2026-08-17 at 1:1, five days after the Aug 12 IT pull.<sup><a href="#s10">[10]</a></sup> Qantas remains off the menu as of today; only one partner needed to restore to clear the test.</p>
+</div>
+
+<div class="ledger-row">
+  <p><span class="hit">HIT</span> · <strong>2026-09-17-1</strong> · No Amex MR or Citi TY → Marriott 25%+ bonus Sep 17 – Oct 15</p>
+  <p>Neither program ran a competitive in-window response to Chase&rsquo;s 70% Chase→Marriott bonus. The current Amex→Marriott 35% bonus did not launch until Oct 20 — five days after window close.<sup><a href="#s5">[5]</a></sup></p>
+</div>
+
+<div class="ledger-row">
+  <p><span class="hit">HIT</span> · <strong>2026-09-18-1</strong> · Chase→Hyatt 4:3 devaluation for CSP/IBP lands as scheduled Oct 1</p>
+  <p>The devaluation landed as announced on 2026-10-01 for Chase Sapphire Preferred and Ink Business Preferred existing cardholders — no extension, grace period, or rollback. Chase Sapphire Reserve retained 1:1 as previously carved out.<sup><a href="#s11">[11]</a></sup></p>
+</div>
+
+<div class="ledger-row">
+  <p><span class="hit">HIT</span> · <strong>2026-09-27-1</strong> · Chase→Marriott 70% not extended past Oct 15, no follow-up Oct 16–30</p>
+  <p>The 70% bonus expired as scheduled on 2026-10-15. No Chase→Marriott bonus of any percentage was publicly offered in the 2026-10-16 to 2026-10-30 window.<sup><a href="#s12">[12]</a></sup></p>
+</div>
+
+<div class="ledger-row">
+  <p><span class="hit">HIT</span> · <strong>2026-09-28-1</strong> · Chase→Aeroplan 20% expires Sep 30, no follow-up Oct 1–31</p>
+  <p>The 20% Chase→Aeroplan bonus ended as scheduled on 2026-09-30. No promotional Chase→Aeroplan transfer bonus was publicly offered during October (the perpetual Chase Aeroplan co-brand 10% cardholder bump does not count per the test).<sup><a href="#s13">[13]</a></sup></p>
+</div>
+
+<div class="ledger-row">
+  <p><span class="open-tag">OPEN</span> · <strong>2026-11-11-1</strong> · Horizon 2027-01-15</p>
+  <p>Chase will NOT publicly run a Chase Ultimate Rewards → World of Hyatt transfer bonus (any percentage &gt; 0) between today and January 15, 2027. The October 1 4:3 devaluation creates real cardholder pressure for a softening promotion; our call is that Chase does not use transfer bonuses as a devaluation-softener and stays silent through the window. Grades HIT if no Chase→Hyatt bonus appears; MISS if any Chase→Hyatt bonus launches before January 15.</p>
+</div>
+
+</div>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="s1"><span class="tier">[trade]</span> Frequent Miler — &ldquo;Current point transfer bonuses for November 2026&rdquo; (Citi → Cathay Pacific 10%, ends Nov 14). <a href="https://frequentmiler.com/current-point-transfer-bonuses/">https://frequentmiler.com/current-point-transfer-bonuses/</a></li>
+  <li id="s2"><span class="tier">[trade / primary-citing]</span> Award Wallet — &ldquo;Chase Ultimate Rewards to IHG 80% Transfer Bonus&rdquo; (Nov 1 – Dec 3, 2026 window). <a href="https://awardwallet.com/news/chase-ultimate-rewards/ihg-transfer-bonus/">https://awardwallet.com/news/chase-ultimate-rewards/ihg-transfer-bonus/</a></li>
+  <li id="s3"><span class="tier">[trade]</span> LoyaltyLobby — &ldquo;Citi ThankYou To Turkish Airlines Miles&amp;Smiles 40% Conversion Bonus November 1&ndash;30&rdquo;. <a href="https://loyaltylobby.com/2026/11/04/citi-thankyou-to-turkish-airlines-milessmiles-40-conversion-bonus-november-1-30-2026/">https://loyaltylobby.com/2026/11/04/citi-thankyou-to-turkish-airlines-milessmiles-40-conversion-bonus-november-1-30-2026/</a></li>
+  <li id="s4"><span class="tier">[trade]</span> Frequent Miler — &ldquo;Get a 40% transfer bonus from Citi ThankYou to Turkish Miles&amp;Smiles&rdquo;. <a href="https://frequentmiler.com/40-percent-transfer-bonus-citi-thankyou-turkish-milesandsmiles/">https://frequentmiler.com/40-percent-transfer-bonus-citi-thankyou-turkish-milesandsmiles/</a></li>
+  <li id="s5"><span class="tier">[trade]</span> LoyaltyLobby — &ldquo;Amex Membership Rewards US To Marriott Bonvoy Conversion Bonus Until December 10, 2026&rdquo;. <a href="https://loyaltylobby.com/2026/10/25/amex-membership-rewards-us-to-marriott-bonvoy-conversion-bonus-until-december-10-2026/">https://loyaltylobby.com/2026/10/25/amex-membership-rewards-us-to-marriott-bonvoy-conversion-bonus-until-december-10-2026/</a></li>
+  <li id="s6"><span class="tier">[trade]</span> Award Wallet — &ldquo;Amex to Marriott Transfer Bonus: Get 35% Bonus Bonvoy Points&rdquo;. <a href="https://awardwallet.com/news/amex-membership-rewards/marriott-transfer-bonus/">https://awardwallet.com/news/amex-membership-rewards/marriott-transfer-bonus/</a></li>
+  <li id="s7"><span class="tier">[trade]</span> The Points Guy — &ldquo;Marriott raised award prices again at many popular hotels&rdquo;. <a href="https://thepointsguy.com/news/marriott-raises-award-prices-again/">https://thepointsguy.com/news/marriott-raises-award-prices-again/</a></li>
+  <li id="s8"><span class="tier">[trade]</span> Business Traveller — &ldquo;Reviewing United&rsquo;s MileagePlus Changes for 2026&rdquo; (Nov 15 saver-award price increases). <a href="https://www.businesstraveller.com/news/united-mileageplus-changes-2026/">https://www.businesstraveller.com/news/united-mileageplus-changes-2026/</a></li>
+  <li id="s9"><span class="tier">[trade]</span> Traveling For Miles — &ldquo;United announces key MileagePlus changes for 2027 (no more PQF and status will be harder to earn)&rdquo;. <a href="https://travelingformiles.com/key-united-mileageplus-changes-for-2027/">https://travelingformiles.com/key-united-mileageplus-changes-for-2027/</a></li>
+  <li id="s10"><span class="tier">[trade]</span> Award Travel Finder — &ldquo;US Bank Transfer Partners (2026): 3 Airlines + Accor&rdquo;. <a href="https://awardtravelfinder.com/credit-card-transfers/us-bank-altitude">https://awardtravelfinder.com/credit-card-transfers/us-bank-altitude</a></li>
+  <li id="s11"><span class="tier">[trade]</span> Frequent Miler — &ldquo;(Last call) Chase slashing Hyatt transfer ratio to 4:3 for Chase Sapphire Preferred and Chase Ink Business Preferred&rdquo;. <a href="https://frequentmiler.com/chase-slashes-hyatt-transfer-ratio-to-43/">https://frequentmiler.com/chase-slashes-hyatt-transfer-ratio-to-43/</a></li>
+  <li id="s12"><span class="tier">[trade]</span> Upgraded Points — &ldquo;70% Transfer Bonus From Chase to Marriott Bonvoy [Ends 10/15]&rdquo;. <a href="https://upgradedpoints.com/news/chase-marriott-transfer-bonus/">https://upgradedpoints.com/news/chase-marriott-transfer-bonus/</a></li>
+  <li id="s13"><span class="tier">[trade]</span> Upgraded Points — &ldquo;Up to 30% Transfer Bonus From Chase to Aeroplan [Ends Sep. 30]&rdquo;. <a href="https://upgradedpoints.com/news/chase-aeroplan-transfer-bonus/">https://upgradedpoints.com/news/chase-aeroplan-transfer-bonus/</a></li>
+</ol>
+
+<nav class="bar"><a href="2026-10-13.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+<footer>
+  AI-synthesized from public sources. Confirm award availability and program terms with the issuing program before transferring any points. Transfers are one-way and irreversible — one wrong keystroke here is a real financial loss. This brief carries no affiliate links; links go to program pages and trade coverage, not referral URLs.
+</footer>
+
+<script>
+const S = "Good morning. This is The Points Brief for Wednesday, November 11, 2026. The single most important thing in the points world this week is not a bonus — it is a devaluation. United MileagePlus is raising saver award prices by roughly 33% on United's own metal, effective Saturday, November 15. You have four days. If you have United saver award space you've been sitting on, now is when you book it. After Saturday, the same seat costs a third more in miles. On the bonus side, Chase is running 80% to IHG One Rewards through December 3. That's a strong bonus, but IHG award pricing is dynamic and the headline percentage does not directly translate to a redemption rate. Only transfer if you have a specific IHG award priced in the booking flow and the point total confirmed. One way, irreversible — if you transfer without a redemption identified, you own a pile of IHG points, which is the thinnest currency in Chase's stack. Citi ThankYou is offering 40% to Turkish Airlines Miles and Smiles through November 30, capped at 50,000 bonus miles per member. Turkish's 45,000-mile business class to continental Europe remains on the chart, which makes this one of the few airline-partner bonuses actually worth running the math on this month. But again — only with confirmed Star Alliance space on hold. Amex is giving 35% to Marriott Bonvoy through December 10. Marriott has been quietly raising award prices across the portfolio all year. The 35% bonus largely offsets the inflation Marriott already baked in. Skip unless you have a specific Marriott redemption that pencils out. The accountability ledger: six open calls came due since the last edition. All six graded HIT. Season 1 record now stands at eight hits, zero misses. That is a flattering record on a topic where readers move real money on our say-so. The horizons were long and the base rates were high — expect misses as the methodology tightens. Today's new call is on the Chase to Hyatt bonus question. After the October 1 four to three devaluation, we are betting Chase does not run a Chase to Hyatt transfer bonus of any percentage before January 15. Horizon is nine weeks. We will grade it then. Transfers are one way. Only move points when you have a specific redemption in mind. That's the brief.";
+document.getElementById('listen').addEventListener('click', function() {
+  const btn = this;
+  if (window.speechSynthesis.speaking) {
+    window.speechSynthesis.cancel();
+    btn.textContent = '▶ Listen · ~3 min';
+    return;
+  }
+  const u = new SpeechSynthesisUtterance(S);
+  u.rate = 0.93;
+  const voices = window.speechSynthesis.getVoices();
+  const preferred = voices.find(v => /Daniel/i.test(v.name)) || voices.find(v => /Alex/i.test(v.name)) || voices.find(v => /^en[-_]/i.test(v.lang));
+  if (preferred) u.voice = preferred;
+  u.onend = () => { btn.textContent = '▶ Listen · ~3 min'; };
+  u.onerror = () => { btn.textContent = '▶ Listen · ~3 min'; };
+  window.speechSynthesis.speak(u);
+  btn.textContent = '■ Stop';
+});
+if (typeof speechSynthesis !== 'undefined' && speechSynthesis.onvoiceschanged !== undefined) {
+  speechSynthesis.onvoiceschanged = function() { speechSynthesis.getVoices(); };
+}
+</script>
+
+</body>
+</html>
