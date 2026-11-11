@@ -10,10 +10,10 @@
       "basis": "Chase already stepped this promo down once \u2014 from a 100% early-bird (Jul 15-30) to 70% (Jul 31-Aug 31). Stepping down mid-campaign is a cool-off signal, not a warm-up. Historically Chase has left 3-6 month gaps between IHG promos.",
       "horizon": "2026-10-31",
       "test": "GRADE HIT if no Chase\u2192IHG transfer bonus of any percentage is publicly offered between 2026-09-01 and 2026-10-31. GRADE MISS if any Chase\u2192IHG bonus (>0%) is announced or live during that window.",
-      "status": "OPEN",
-      "graded_on": null,
-      "verdict": null,
-      "evidence": null
+      "status": "GRADED",
+      "graded_on": "2026-11-11",
+      "verdict": "HIT",
+      "evidence": "No Chase Ultimate Rewards to IHG One Rewards transfer bonus was publicly offered at any point between 2026-09-01 and 2026-10-31. The 70% bonus ended 2026-08-31 as scheduled; the next Chase to IHG bonus (80%) did not begin until 2026-11-01 and runs to 2026-12-03. Confirmed via awardwallet.com Chase/IHG page: https://awardwallet.com/news/chase-ultimate-rewards/ihg-transfer-bonus/"
     },
     {
       "id": "2026-08-16-1",
@@ -22,10 +22,10 @@
       "basis": "Both partners went live on 2026-08-11 and were pulled roughly 24 hours later on 2026-08-12; Frequent Miler, Doctor of Credit and One Mile at a Time all characterise the removal as IT-integration failure rather than deal collapse. U.S. Bank waited eight months past its own December 2025 target to ship transfers at all \u2014 reputational cost of leaving these missing is high, and bank IT integration fixes typically land in 2\u20136 weeks. 10 weeks is a generous horizon.",
       "horizon": "2026-10-25",
       "test": "GRADE HIT if, at any point between 2026-08-16 and 2026-10-25 inclusive, either Air France/KLM Flying Blue or Qantas Frequent Flyer is publicly listed as an active transfer partner in the U.S. Bank Rewards Center for the Altitude Reserve card, evidenced by U.S. Bank's own transfer page or a Tier 1 confirmation. GRADE MISS if neither partner has been restored by end of day 2026-10-25 Pacific time.",
-      "status": "OPEN",
-      "graded_on": null,
-      "verdict": null,
-      "evidence": null
+      "status": "GRADED",
+      "graded_on": "2026-11-11",
+      "verdict": "HIT",
+      "evidence": "Air France/KLM Flying Blue was restored as an active U.S. Bank Altitude Reserve transfer partner on 2026-08-17 at 1:1, five days after the 2026-08-12 IT-pull. Flying Blue remains active as of today and is listed as such on awardtravelfinder.com/credit-card-transfers/us-bank-altitude."
     },
     {
       "id": "2026-08-17-1",
@@ -298,10 +298,10 @@
       "basis": "Amex and Citi run hotel bonuses on their own cadences, not reactively. Amex's last MR\u2192Marriott bonus was a 20% offer in April 2026 (Apr 8\u2013May 5), and its typical semi-annual Marriott rhythm points to an October or November launch \u2014 landing outside or right at the edge of Chase's window. Citi ThankYou\u2192Marriott bonuses are historically infrequent (last meaningful public offer: 25% in 2023) and Citi's Q4 promo focus has consistently been airlines (Turkish, Flying Blue) rather than hotels. On the sell side, Marriott and Chase co-invested in the record 70% promo; Marriott would not simultaneously undercut it with an equal-or-better Amex or Citi bonus during the same 30-day window. A rival 25%+ MR\u2192Marriott or TY\u2192Marriott bonus inside Chase's window would be a genuine strategic response \u2014 the historical base rate says it does not happen.",
       "horizon": "2026-10-15",
       "test": "GRADE HIT if no Amex Membership Rewards \u2192 Marriott Bonvoy transfer bonus of 25% or greater AND no Citi ThankYou \u2192 Marriott Bonvoy transfer bonus of 25% or greater is publicly offered at any point between 2026-09-17 and 2026-10-15 inclusive. GRADE MISS if either program publicly offers a 25%+ transfer bonus to Marriott in that window, evidenced by that program's own transfer page and confirmed by at least one Tier 1 or Tier 2 source.",
-      "status": "OPEN",
-      "graded_on": null,
-      "verdict": null,
-      "evidence": null
+      "status": "GRADED",
+      "graded_on": "2026-11-11",
+      "verdict": "HIT",
+      "evidence": "No Amex Membership Rewards to Marriott Bonvoy nor Citi ThankYou to Marriott Bonvoy transfer bonus of 25% or greater was publicly offered at any point between 2026-09-17 and 2026-10-15 inclusive. The current Amex to Marriott 35% bonus did not launch until 2026-10-20 (five days after window close) and runs to 2026-12-10. Citi ThankYou has no active Marriott transfer bonus. Confirmed via frequentmiler.com current transfer bonuses."
     },
     {
       "id": "2026-09-18-1",
@@ -310,10 +310,10 @@
       "basis": "Since the June 15, 2026 Chase Sapphire Preferred refresh announcement, Frequent Miler, One Mile at a Time and The Points Guy have all run 'last chance' pieces pressuring Chase to reconsider \u2014 pressure that has been amplified over the last two weeks as the deadline nears. Chase has never once, in a documented product-refresh cycle, rolled back a scheduled negative change on a hitherto sacrosanct route once it publicly announced both a date and a segmentation carve-out (Sapphire Reserve and Sapphire Reserve for Business retain 1:1). That carve-out is itself Chase's answer to the 'you're devaluing your best customers' complaint; extending 1:1 to Sapphire Preferred would collapse the segmentation Chase just paid to introduce. Existing Sapphire Preferred cardholders got ~110 days of advance notice \u2014 longer than the industry's typical 30\u201360 day negative-change window \u2014 which further reduces Chase's legal or reputational exposure to a rollback. Contrarian angle: the loud consensus on trade sites is 'transfer now while you can'; this call bets the deadline holds.",
       "horizon": "2026-10-31",
       "test": "GRADE HIT if, at any point between 2026-10-01 and 2026-10-31 inclusive, the effective Chase Ultimate Rewards \u2192 World of Hyatt transfer ratio for Chase Sapphire Preferred and Ink Business Preferred existing cardholders is 4:3 (i.e., 1,000 UR \u2192 750 Hyatt points) as originally announced, evidenced by Chase's own Ultimate Rewards transfer page or a Tier 1/Tier 2 confirmation. GRADE MISS if Chase publicly announces or implements any extension, grace period, rollback, or continued 1:1 rate for Chase Sapphire Preferred or Ink Business Preferred existing cardholders past 2026-10-01, evidenced by Chase's own communication and confirmed by at least one Tier 1 or Tier 2 source.",
-      "status": "OPEN",
-      "graded_on": null,
-      "verdict": null,
-      "evidence": null
+      "status": "GRADED",
+      "graded_on": "2026-11-11",
+      "verdict": "HIT",
+      "evidence": "The Chase Ultimate Rewards to World of Hyatt 4:3 transfer ratio for Chase Sapphire Preferred and Ink Business Preferred existing cardholders landed as announced on 2026-10-01 with no extension, grace period, or rollback. Confirmed by Frequent Miler and LoyaltyLobby: https://frequentmiler.com/chase-slashes-hyatt-transfer-ratio-to-43/"
     },
     {
       "id": "2026-09-19-1",
@@ -394,10 +394,10 @@
       "basis": "A 'highest-ever' bonus works as a marketing narrative precisely because it is finite; The Points Guy, One Mile at a Time, LoyaltyLobby, Frequent Miler, and Upgraded Points all amplified the 'record 70%' framing at launch. Extending would dilute that language. Chase's July-August 2026 IHG 70% ran its stated window and expired as scheduled with no extension \u2014 fresh precedent that Chase's flagship hotel promos honour their end dates. Historical Chase\u2192Marriott bonuses have topped out around 25\u201350%; a back-to-back at any elevated level within days of the record 70% expiring would either signal deeper commercial pressure than currently visible or force Chase to walk back its 'highest-ever' language. The clean base case is that Chase lets the 70% expire on schedule, uses Q4 to consolidate the 'we did the biggest promo of the year' narrative, and returns to Marriott (if at all) at 25\u201350% no earlier than Q1 2027. This call is distinct from 2026-09-16-1 (which bets no 50%+ Chase\u2192Marriott between Oct 16, 2026 and Apr 15, 2027) \u2014 it tests a tighter 15-day post-expiry window at ANY percentage, not just 50%+.",
       "horizon": "2026-10-30",
       "test": "GRADE HIT if the 70% Chase Ultimate Rewards \u2192 Marriott Bonvoy transfer bonus expires as scheduled at end of day 2026-10-15 Pacific time (no extension, no rolling grace period), AND no Chase Ultimate Rewards \u2192 Marriott Bonvoy transfer bonus of any percentage greater than zero is publicly offered at any point between 2026-10-16 and 2026-10-30 inclusive, evidenced by Chase's own Ultimate Rewards transfer page. GRADE MISS if Chase extends the current 70% bonus past 2026-10-15 in any form (same 70% extended, stepped-down percentage continuing the promo), OR if any Chase\u2192Marriott bonus (>0%) is publicly offered in the 2026-10-16 through 2026-10-30 window, evidenced by Chase's transfer page and confirmed by at least one Tier 1 or Tier 2 source.",
-      "status": "OPEN",
-      "graded_on": null,
-      "verdict": null,
-      "evidence": null
+      "status": "GRADED",
+      "graded_on": "2026-11-11",
+      "verdict": "HIT",
+      "evidence": "The Chase Ultimate Rewards to Marriott Bonvoy 70% transfer bonus expired as scheduled at end of day 2026-10-15 with no extension. No Chase to Marriott transfer bonus of any percentage was publicly offered between 2026-10-16 and 2026-10-30. Confirmed via upgradedpoints.com Chase/Marriott bonus page and awardtravelfinder.com Chase transfer-bonus history."
     },
     {
       "id": "2026-09-28-1",
@@ -406,10 +406,10 @@
       "basis": "Chase's July-August 2026 IHG 70% expired as scheduled with no extension, and yesterday's call 2026-09-27-1 makes the parallel case for the Marriott 70% expiring Oct 15 \u2014 fresh, consistent precedent that Chase's flagship promos honour their end dates without stepped-down continuations. Aeroplan is Chase's default airline transfer handshake and has been Chase's ONLY UR \u2192 airline transfer bonus of both 2025 and 2026 to date, cementing an annual (not quarterly) cadence. Chase's Q4 promotional attention structurally favours hotels (IHG, Marriott) with airline promo season ceded to Amex and Citi (see the broader call 2026-08-24-1 through year-end). A follow-up Aeroplan bonus inside 30 days of expiry would break both the 'expire clean' precedent and the annual airline cadence. This call is distinct from 2026-08-24-1 (which tests any Chase \u2192 airline bonus through Dec 31 at any percentage) \u2014 it narrows to Aeroplan specifically and to the tighter 30-day post-expiry window, mirroring yesterday's Marriott post-expiry test.",
       "horizon": "2026-10-31",
       "test": "GRADE HIT if the 20% Chase Ultimate Rewards \u2192 Air Canada Aeroplan transfer bonus expires as scheduled at end of day 2026-09-30 (no extension, no rolling grace period, no stepped-down continuation of any Chase \u2192 Aeroplan promo), AND no Chase Ultimate Rewards \u2192 Air Canada Aeroplan transfer bonus of any percentage greater than zero is publicly offered at any point between 2026-10-01 and 2026-10-31 inclusive, evidenced by Chase's own Ultimate Rewards transfer page. GRADE MISS if Chase extends the current 20% past 2026-09-30 in any form, OR if any Chase \u2192 Aeroplan bonus (>0%) is publicly offered in the 2026-10-01 through 2026-10-31 window, evidenced by Chase's transfer page and confirmed by at least one Tier 1 or Tier 2 source. Chase Air Canada Aeroplan co-brand cardholder benefits (e.g., the perpetual 10% cardholder transfer bump on 50k+ transfers) do NOT count as a Chase \u2192 Aeroplan bonus \u2014 this test is about promotional transfer bonuses run by Chase, not permanent card benefits.",
-      "status": "OPEN",
-      "graded_on": null,
-      "verdict": null,
-      "evidence": null
+      "status": "GRADED",
+      "graded_on": "2026-11-11",
+      "verdict": "HIT",
+      "evidence": "The Chase Ultimate Rewards to Air Canada Aeroplan 20% transfer bonus expired as scheduled at end of day 2026-09-30 with no extension. No Chase to Aeroplan promotional transfer bonus of any percentage was publicly offered between 2026-10-01 and 2026-10-31. Confirmed via upgradedpoints.com Chase/Aeroplan bonus page: https://upgradedpoints.com/news/chase-aeroplan-transfer-bonus/"
     },
     {
       "id": "2026-09-29-1",
@@ -574,6 +574,18 @@
       "basis": "Amex -> Flying Blue bonuses have historically run on roughly a quarterly cadence (Jan, Apr, Jul, Oct in both 2024 and 2025), not back-to-back months. The October 2026 campaign is already positioned over the Flying Blue devaluation that went live Sept 8, 2026 - Amex is likely clearing demand into the discounted mileage rate before the market recovers, which argues for a cool-off window immediately after, not another promo.",
       "horizon": "2026-12-15",
       "test": "GRADE HIT if no Amex -> Flying Blue transfer bonus of any percentage is publicly offered between 2026-11-01 and 2026-12-15. GRADE MISS if any Amex -> Flying Blue bonus (greater than 0%) is announced or live during that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
+    },
+    {
+      "id": "2026-11-11-1",
+      "date": "2026-11-11",
+      "call": "Chase will NOT publicly run a Chase Ultimate Rewards to World of Hyatt transfer bonus (of any percentage greater than zero) between today (2026-11-11) and 2027-01-15 inclusive \u2014 despite the October 1 4:3 devaluation creating real cardholder goodwill pressure, Chase has not historically used transfer bonuses as a devaluation-softener and will not start now in this nine-week window.",
+      "basis": "Chase has not run a single Chase to Hyatt transfer bonus in the last five years that we can find, and the Sapphire line is actively leaning into Pay Yourself Back and travel-portal multipliers as the retention lever rather than transfer promotions. If a softener were coming, it would most likely appear within the first six to eight weeks after the devaluation, while the news cycle is still live. We are watching that exact window and betting on silence.",
+      "horizon": "2027-01-15",
+      "test": "GRADE HIT if no Chase Ultimate Rewards to World of Hyatt transfer bonus of any percentage greater than zero is publicly offered at any point between 2026-11-11 and 2027-01-15 inclusive, evidenced by Chase's own Ultimate Rewards transfer page. GRADE MISS if Chase publicly offers any Chase to Hyatt transfer bonus (>0%) at any point in that window, evidenced by Chase's transfer page and confirmed by at least one Tier 1 or Tier 2 source.",
       "status": "OPEN",
       "graded_on": null,
       "verdict": null,
