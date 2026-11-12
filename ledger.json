@@ -590,6 +590,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-11-12-1",
+      "date": "2026-11-12",
+      "call": "The Chase Ultimate Rewards to World of Hyatt transfer ratio for Sapphire Preferred and Ink Preferred cardholders (set to 4:3 as of 2026-10-01) will NOT be restored to 1:1 before 2027-04-15.",
+      "basis": "Industry ratio devaluations in the points world do not reverse; once a transfer ratio is cut it stays cut. Chase cut Sapphire Preferred / Ink Preferred to 4:3 on 2026-10-01 after telegraphing it since June, and Bilt (Hyatt partner) is following suit on 2027-01-01. A reversal in under five months would be unprecedented in modern loyalty.",
+      "horizon": "2027-04-15",
+      "test": "GRADE HIT if the Chase Ultimate Rewards transfer dashboard for a Sapphire Preferred or Ink Preferred cardholder displays a ratio of 4:3 (or worse) for World of Hyatt as of 2027-04-15. GRADE MISS if that ratio is restored to 1:1 (or any ratio better than 4:3) at any point between 2026-11-12 and 2027-04-15.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
