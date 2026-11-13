@@ -602,6 +602,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-11-13-1",
+      "date": "2026-11-13",
+      "call": "The current Amex Membership Rewards to Marriott Bonvoy 35% transfer bonus (expires 2026-12-10) will end as announced and NOT be replaced by any Amex to Marriott transfer bonus (of any percentage) running during the window 2026-12-11 to 2027-01-10.",
+      "basis": "Amex-to-Marriott bonuses have been frequent in 2024-2026 but never back-to-back. The historical pattern shows a gap of at least 6-10 weeks after a Marriott bonus ends before the next one starts. A transition that skipped the gap entirely would be an unprecedented change in cadence, especially as Amex and Marriott renegotiate card economics in 2026.",
+      "horizon": "2027-01-10",
+      "test": "GRADE HIT if no Amex Membership Rewards to Marriott Bonvoy transfer bonus (of any percentage greater than 0) is publicly live or announced on any day between 2026-12-11 and 2027-01-10. GRADE MISS if any Amex-to-Marriott bonus is live or announced to run during that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
