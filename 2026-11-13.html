@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief · November 13, 2026</title>
+<style>
+:root { --bg:#080c14; --panel:#0f1420; --ink:#d8d0b4; --dim:#8a8370; --accent:#c9a84c; --accent-soft:rgba(201,168,76,.18); --red:#a85b5b; --grey:#6a6a6a; }
+* { box-sizing:border-box; }
+html,body { margin:0; padding:0; background:var(--bg); color:var(--ink); font-family: Georgia, 'Times New Roman', serif; line-height:1.55; -webkit-text-size-adjust:100%; }
+.wrap { max-width:720px; margin:0 auto; padding:28px 24px 64px; }
+header.masthead { border-bottom:2px solid var(--accent); padding-bottom:18px; margin-bottom:22px; text-align:center; }
+h1 { font-family:'Didot', 'Playfair Display', Georgia, serif; font-size:40px; margin:0 0 6px; color:var(--accent); letter-spacing:.5px; }
+.tagline { color:var(--dim); font-style:italic; font-size:14px; margin:0 0 6px; }
+.date-line { color:var(--ink); font-size:14px; letter-spacing:.3px; }
+nav.bar { display:flex; flex-wrap:wrap; gap:10px 14px; align-items:center; justify-content:space-between; border:1px solid var(--accent-soft); padding:10px 14px; border-radius:4px; margin:14px 0 22px; font-size:14px; }
+nav.bar a { color:var(--accent); text-decoration:none; white-space:nowrap; padding:10px 6px; min-height:44px; display:inline-flex; align-items:center; }
+nav.bar a:hover { text-decoration:underline; }
+nav.bar .next { color:var(--dim); white-space:nowrap; padding:10px 6px; min-height:44px; display:inline-flex; align-items:center; }
+nav.bar .nav-mid { display:inline-flex; align-items:center; gap:0; }
+nav.bar .nav-mid a { color:var(--accent); margin:0 9px; }
+h2 { color:var(--accent); font-size:22px; border-bottom:1px solid var(--accent-soft); padding-bottom:6px; margin:36px 0 14px; letter-spacing:.3px; }
+h3 { color:var(--ink); font-size:18px; margin:22px 0 6px; }
+p { margin:10px 0; }
+a { color:var(--accent); }
+sup a { padding:6px 4px; margin:-6px -4px; text-decoration:none; }
+.urgent { border:2px solid var(--accent); background:var(--accent-soft); padding:14px 18px; margin:0 0 24px; border-radius:4px; font-size:16px; }
+.urgent strong { color:var(--accent); display:block; font-size:15px; letter-spacing:1px; margin-bottom:4px; }
+.signal { border:1px solid var(--accent); background:rgba(201,168,76,.08); padding:16px 18px; border-radius:4px; margin:14px 0; }
+.move { color:var(--accent); font-style:italic; margin-top:8px; font-size:16px; }
+.move::before { content:"Your move: "; font-weight:bold; font-style:normal; }
+.audio-panel { border:1px dashed var(--accent-soft); padding:12px 14px; margin:18px 0 8px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+.audio-panel button { background:var(--accent); color:var(--bg); border:none; padding:12px 18px; font-family:inherit; font-size:15px; font-weight:bold; cursor:pointer; border-radius:3px; min-height:44px; min-width:88px; }
+.audio-panel button:disabled { background:var(--dim); cursor:default; }
+.audio-panel .audio-note { color:var(--dim); font-size:13px; font-style:italic; }
+.ledger-row { border-left:3px solid var(--accent-soft); padding:6px 14px; margin:10px 0; }
+.ledger-row .tag { font-size:12px; letter-spacing:1px; font-weight:bold; margin-right:8px; }
+.tag.hit { color:var(--accent); }
+.tag.miss { color:var(--red); }
+.tag.unsettled, .tag.open { color:var(--grey); }
+.season-record { font-size:18px; color:var(--accent); font-weight:bold; margin:6px 0 14px; }
+ol.sources { padding-left:22px; font-size:15px; }
+ol.sources li { margin:8px 0; }
+.tier { font-size:11px; letter-spacing:1px; padding:2px 6px; border:1px solid var(--accent-soft); border-radius:2px; color:var(--dim); margin-left:6px; text-transform:uppercase; }
+footer { border-top:1px solid var(--accent-soft); margin-top:40px; padding-top:16px; color:var(--dim); font-size:13px; }
+.caution { color:var(--dim); font-style:italic; font-size:14px; border-left:3px solid var(--accent); padding:8px 14px; margin:14px 0; }
+@media (max-width: 480px) {
+  .wrap { padding:20px 14px 48px; }
+  h1 { font-size:32px; }
+  h2 { font-size:20px; }
+  h3 { font-size:17px; }
+  body, p, .signal, .urgent, .move, ol.sources, ol.sources li { font-size:16px; }
+  nav.bar { padding:8px 10px; }
+  nav.bar a, nav.bar .next { padding:12px 6px; min-height:44px; }
+  .audio-panel button { padding:14px 20px; font-size:16px; }
+  .ledger-row { font-size:16px; }
+  .tier { font-size:11px; }
+  .audio-panel .audio-note { font-size:14px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <h1>The Points Brief</h1>
+  <p class="tagline">Travel Points · Maximize every transfer</p>
+  <p class="date-line">Friday, November 13, 2026</p>
+</header>
+
+<nav class="bar"><a href="2026-11-12.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+<div class="audio-panel">
+  <button id="listenBtn" type="button" aria-label="Listen to today's edition">▶ Listen</button>
+  <span class="audio-note">About 3 minutes · spoken by your browser (Web Speech API)</span>
+</div>
+
+<h2>Today's Transfer Bonuses</h2>
+
+<p>Four promotions that touch Greg's actual points stack are live today. No offer in his stack expires within three days — Chase and Amex bonuses all run until December. The one bonus that expires tomorrow (Citi ThankYou to Cathay Pacific) is outside his stack and not covered here.<sup><a href="#s1">[1]</a></sup></p>
+
+<h3>Chase Ultimate Rewards → IHG One Rewards · 80% bonus</h3>
+<p><strong>Ratio:</strong> 1,000 UR = 1,800 IHG points. <strong>Expires:</strong> 11:59 PM ET, December 3, 2026.<sup><a href="#s2">[2]</a></sup> This is the headline hotel bonus of the month. IHG points are low-value in absolute terms — most redemptions land between 0.5c and 0.7c per point — so an 80% kicker brings the effective transfer to roughly 0.9c to 1.3c per UR point, depending on the property. Historically, Chase→IHG bonuses have run 70%-100%; this 80% is average-to-good, not record-setting.<sup><a href="#s3">[3]</a></sup></p>
+<p class="move">transfer only if you already have an IHG redemption priced out that beats cash by 30%+ on a card-earned point (not a chase-yourself IHG booking). Do not pre-stock IHG points on spec — they devalue faster than UR do.</p>
+
+<h3>Amex Membership Rewards → Marriott Bonvoy · 35% bonus</h3>
+<p><strong>Ratio:</strong> 1,000 MR = 1,350 Bonvoy. <strong>Expires:</strong> December 10, 2026.<sup><a href="#s4">[4]</a></sup><sup><a href="#s5">[5]</a></sup> At 35%, a Marriott transfer becomes competitive with the Amex→Marriott baseline most of the year. For a Category 6 property (50,000 points per night), this bonus drops your MR cost from 50,000 to about 37,037 — meaningful on a multi-night stay. The 50,000-point "fifth-night-free" rule on Bonvoy award stays still applies.<sup><a href="#s4">[4]</a></sup></p>
+<p class="move">transfer only if you're already holding a confirmed Marriott award booking (or know the exact property and dates). MR is worth roughly 1.9c per point on good redemptions elsewhere; Marriott at 0.7c even with the bonus is a step down unless cash rates make it the right call.</p>
+
+<h3>Chase Ultimate Rewards → British Airways / Iberia / Aer Lingus · 30% bonus</h3>
+<p><strong>Ratio:</strong> 1,000 UR = 1,300 Avios (all three programs share the Avios pool). <strong>Expires:</strong> December 1, 2026.<sup><a href="#s2">[2]</a></sup><sup><a href="#s5">[5]</a></sup> Avios shine for short-haul oneworld redemptions — Alaska transcons with American or JAL, LATAM intra-South America, Aer Lingus Dublin hops — and poorly for anything with British Airways fuel surcharges on long-haul premium. Transfer to Iberia (lowest surcharges) or Aer Lingus and then combine-pool if the specific flight needs a different program.<sup><a href="#s6">[6]</a></sup></p>
+<p class="move">transfer to Iberia Plus or Aer Lingus AerClub (not British Airways) only if you have a specific short-haul oneworld award in mind. Avios earned via this bonus expire on their program's normal 36-month inactivity clock — do not transfer speculatively.</p>
+
+<h3>Chase Ultimate Rewards → Wyndham Rewards · 30% bonus</h3>
+<p><strong>Ratio:</strong> 1,000 UR = 1,300 Wyndham points. <strong>Expires:</strong> December 3, 2026.<sup><a href="#s2">[2]</a></sup><sup><a href="#s5">[5]</a></sup> Wyndham is not in Greg's primary stack but worth naming: Wyndham's 15,000-point Vacasa vacation-rental sweet spot is the single most-underpriced hotel redemption in the US market, and a 30% UR→Wyndham bonus lands you there at 11,539 UR per night. This is specifically the Vacasa use case; Wyndham's standard hotel chart is unremarkable.<sup><a href="#s7">[7]</a></sup></p>
+<p class="move">no action unless you have a specific Vacasa rental priced and the cash rate exceeds $150/night. For regular Wyndham hotels this bonus is noise.</p>
+
+<div class="caution">Transfers from a bank program to a loyalty program are <strong>one-way and irreversible</strong>. Never transfer points without a specific redemption already identified and award space confirmed available.</div>
+
+<h2>Program Watch</h2>
+
+<h3>Chase Sapphire Preferred → Hyatt: 4:3 ratio now in effect for existing cardholders</h3>
+<p>The Sapphire Preferred refresh announced earlier in 2026 changed the UR→World of Hyatt transfer ratio from 1:1 to 4:3 on Sapphire Preferred, Ink Business Preferred, legacy Ink Plus and legacy Corporate Flex. New applicants have been on the reduced ratio since June 15, 2026; existing cardholders transitioned on October 1, 2026. A 40,000-point Hyatt transfer now costs 53,334 UR on these cards. <strong>Sapphire Reserve, Ink Business Cash and Ink Business Unlimited retain the 1:1 ratio</strong> with no announced changes.<sup><a href="#s8">[8]</a></sup></p>
+<p class="move">if you transfer UR to Hyatt regularly and hold both a Preferred-tier and a Reserve-tier Chase card, route Hyatt transfers through the Reserve until Chase announces otherwise. This is the single largest structural change to Ultimate Rewards in 2026.</p>
+
+<h3>United MileagePlus: Saver awards cut on United-operated metal, partner space tightened</h3>
+<p>United has layered two changes onto MileagePlus during 2026: an average 18% increase in Saver pricing on United's own flights and an estimated 40% reduction in international business Saver availability.<sup><a href="#s9">[9]</a></sup> United Polaris Saver space remains more generous for United co-brand cardholders and Premier Silver/Gold, which is now a documented benefit rather than an undisclosed one. The structural trend is toward dynamic partner pricing with a "Saver baseline" that behaves less like a chart and more like a floor.</p>
+<p class="move">if you hold United miles with a specific partner redemption in mind (Lufthansa First, ANA business, Swiss business), book now rather than saving for later — partner dynamic pricing is the 2027 direction. If you do not have a specific award, consider stopping speculative transfers to MileagePlus from Chase UR.</p>
+
+<h3>Delta SkyMiles: transatlantic business awards moved to a 165k+ one-way floor</h3>
+<p>A second 2026 devaluation on Delta SkyMiles partner awards moved the entry-level business-class fare to Europe from roughly 120,000 miles one-way to a 165,000+ starting tier, with observed pricing reaching 250,000 on the worst dates.<sup><a href="#s10">[10]</a></sup> The arithmetic now clearly favors transferring Amex MR to Virgin Atlantic Flying Club for Delta-operated Europe awards (roughly 75,000 Virgin points plus taxes, versus 165k+ SkyMiles). This is a sweet spot the Amex→Virgin 30% bonus running through November 30 directly enables.<sup><a href="#s11">[11]</a></sup></p>
+<p class="move">if you fly Delta to Europe on points, stop redeeming SkyMiles directly and start routing MR to Virgin Atlantic — including transfers during the current 30% bonus — but only after confirming the specific Delta-operated segment has award space in Virgin's search.</p>
+
+<h3>American AAdvantage: partner award chart holds — one of the last fixed charts in the US</h3>
+<p>American's 2026 program updates expanded dynamic pricing to more domestic and Caribbean routes, but the partner award chart — which governs redemptions on British Airways, Japan Airlines, Qatar Airways, Cathay Pacific and the rest of oneworld — remains published and unchanged. American's public position is that partner pricing is not subject to the 2026 revaluation.<sup><a href="#s12">[12]</a></sup> Through November, AA has a Main Cabin award sale from 8,000 miles one-way domestically.<sup><a href="#s13">[13]</a></sup></p>
+<p class="move">no transfer action required — AAdvantage is not a bank transfer partner from Greg's stack — but if you hold AA miles, the partner chart is the reason to hold them. Treat the AA sale as an earn-side opportunity if you were going to fly those routes anyway.</p>
+
+<h2>Today's Play</h2>
+
+<div class="signal">
+<p><strong>The signal:</strong> The two best hotel transfer plays this month are Chase→IHG at 80% and Amex→Marriott at 35%, both expiring in the first half of December. Neither should be transferred speculatively — points lose more value sitting on hotel ledgers than any bonus recoups. Each is a discount on a <em>specific</em> upcoming redemption, not a reason to stockpile.</p>
+<p><strong>The trap:</strong> IHG 80% looks heroic as a headline, but IHG points redeem at roughly half the per-point value of Chase UR. The bonus does not close that gap for most redemptions — it narrows it to a push. Run the arithmetic: cash rate × 0.7 (what a good hotel redemption clears) versus UR value (1.9¢-2.1¢ on good transfers to Hyatt via Sapphire Reserve). If cash is under about $220/night, keep the UR.</p>
+<p><strong>The winner, if you must pick one:</strong> Amex→Virgin Atlantic 30% (expires November 30) for a planned Delta-metal flight to Europe is the highest-expected-value transfer on the board, because the alternative (165k+ SkyMiles) is so much worse. This is a bonus that corrects a devaluation, not one that creates a windfall.<sup><a href="#s11">[11]</a></sup></p>
+</div>
+
+<h2>The Ledger</h2>
+
+<p class="season-record">Season 1 · 8–0 · 42 open calls</p>
+
+<p>Running record of falsifiable calls about where this points landscape is going. No grading today — 42 open calls, soonest horizon November 15. Today's new call below.</p>
+
+<div class="ledger-row">
+  <span class="tag open">OPEN</span><strong>2026-11-13-1</strong> — The current Amex MR → Marriott Bonvoy 35% transfer bonus (expires 2026-12-10) will end as announced and NOT be replaced by any Amex→Marriott bonus of any percentage during the window 2026-12-11 to 2027-01-10. <em>Horizon: 2027-01-10.</em>
+</div>
+
+<p style="color:var(--dim); font-size:13px; font-style:italic; margin-top:14px;">Older graded calls (season-to-date: 8 HIT, 0 MISS, 0 UNSETTLED) remain on the record and are not re-displayed here. The full JSON is at <a href="ledger.json">ledger.json</a>.</p>
+
+<h2>Sources</h2>
+
+<ol class="sources">
+  <li id="s1">AwardWallet — All Current Transfer Bonuses <span class="tier">trade</span> — <a href="https://awardwallet.com/news/credit-card-transfer-bonuses/">awardwallet.com/news/credit-card-transfer-bonuses/</a></li>
+  <li id="s2">Chase — Ultimate Rewards Transfer Partners (program source for all four Chase bonuses below) <span class="tier">primary</span> — <a href="https://ultimaterewards.chase.com/transfer-points">ultimaterewards.chase.com/transfer-points</a></li>
+  <li id="s3">One Mile at a Time — Chase to IHG 80% Transfer Bonus (analysis) <span class="tier">trade</span> — <a href="https://onemileatatime.com/deals/chase-ihg-transfer-bonus/">onemileatatime.com/deals/chase-ihg-transfer-bonus/</a></li>
+  <li id="s4">American Express — Membership Rewards to Marriott Bonvoy Transfer <span class="tier">primary</span> — <a href="https://global.americanexpress.com/rewards/membership-rewards/catalog/travel/hotels/marriott-bonvoy">americanexpress.com — Marriott Bonvoy transfer page</a></li>
+  <li id="s5">Frequent Miler — Current Point Transfer Bonuses (November 2026) <span class="tier">trade</span> — <a href="https://frequentmiler.com/current-point-transfer-bonuses/">frequentmiler.com/current-point-transfer-bonuses/</a></li>
+  <li id="s6">The Points Guy — Current Transfer Bonuses <span class="tier">trade</span> — <a href="https://thepointsguy.com/loyalty-programs/current-transfer-bonuses">thepointsguy.com/loyalty-programs/current-transfer-bonuses</a></li>
+  <li id="s7">Wyndham Rewards — Points Booking (Vacasa) <span class="tier">primary</span> — <a href="https://www.wyndhamrewards.com/">wyndhamrewards.com</a></li>
+  <li id="s8">The Points Guy — Chase Sapphire Preferred Refresh 2026 (Hyatt ratio cut) <span class="tier">trade</span> — <a href="https://thepointsguy.com/news/chase-sapphire-preferred-refresh-2026">thepointsguy.com/news/chase-sapphire-preferred-refresh-2026</a></li>
+  <li id="s9">United — MileagePlus Award Travel <span class="tier">primary</span> — <a href="https://www.united.com/en/us/fly/mileageplus/awards.html">united.com/en/us/fly/mileageplus/awards.html</a></li>
+  <li id="s10">Delta — SkyMiles Award Travel <span class="tier">primary</span> — <a href="https://www.delta.com/us/en/skymiles/how-to-use-miles/award-travel">delta.com/us/en/skymiles/how-to-use-miles/award-travel</a></li>
+  <li id="s11">Virgin Atlantic — Flying Club Reward Flights with Delta <span class="tier">primary</span> — <a href="https://www.virginatlantic.com/flying-club/partners/airline-partners/delta">virginatlantic.com/flying-club/partners/airline-partners/delta</a></li>
+  <li id="s12">American Airlines — AAdvantage Partner Award Chart <span class="tier">primary</span> — <a href="https://www.aa.com/i18n/aadvantage-program/miles/redeem/award-travel/oneworld-partners-award-chart.jsp">aa.com — oneworld partners award chart</a></li>
+  <li id="s13">American Airlines — AAdvantage Deals <span class="tier">primary</span> — <a href="https://www.aa.com/i18n/aadvantage-program/deals.jsp">aa.com/i18n/aadvantage-program/deals.jsp</a></li>
+</ol>
+
+<nav class="bar" style="margin-top:28px;"><a href="2026-11-12.html">← YESTERDAY</a><span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span><span class="next">TOMORROW →</span></nav>
+
+<footer>
+<p>The Points Brief is AI-synthesized. Every percentage, expiry and transfer ratio has been checked against primary program pages or a Tier 1-corroborated secondary source, but you should always confirm award availability and current program terms with the loyalty program itself before transferring. Point transfers are one-way and irreversible — a typo in a date here is a real financial loss for you. Trust but verify.</p>
+</footer>
+
+</div>
+
+<script>
+const S = "The Points Brief for Friday, November thirteenth, twenty twenty-six. " +
+"Four transfer promotions touching your stack are live today, all from Chase or Amex, all running into December. Nothing in your stack expires within three days, so there is no urgent action. " +
+"Headline hotel offers. Chase Ultimate Rewards to IHG One Rewards at eighty percent through December third. Amex Membership Rewards to Marriott Bonvoy at thirty-five percent through December tenth. Both are respectable but not record-setting. Transfer only against a specific redemption. " +
+"Airline-adjacent offers. Chase to British Airways, Iberia and Aer Lingus at thirty percent through December first. These are Avios transfers best used for short-haul oneworld flights, Alaska transcons and Dublin hops. Prefer Iberia or Aer Lingus if you plan to combine with American partners. " +
+"And a wildcard. Chase to Wyndham at thirty percent through December third. Wyndham's fifteen-thousand-point Vacasa vacation rental sweet spot clears at under twelve thousand Ultimate Rewards per night after this bonus. It is specific to that use case. " +
+"Program watch. Chase Sapphire Preferred transfers to Hyatt have now dropped from one to one to four to three for existing cardholders as of October first. Sapphire Reserve keeps the one to one. If you hold both cards, route Hyatt transfers through the Reserve. " +
+"United MileagePlus has quietly cut international Saver availability and raised domestic Saver pricing. Delta SkyMiles has moved transatlantic business to a one hundred sixty-five thousand mile starting tier, making Amex to Virgin Atlantic the better route onto Delta metal. American AAdvantage still publishes its partner award chart, which is increasingly the exception in the US market. " +
+"Today's play. The highest-expected-value transfer on the board is Amex to Virgin Atlantic Flying Club at thirty percent, through November thirtieth, for a planned Delta-metal flight to Europe. The alternative on SkyMiles is three times more expensive. " +
+"The ledger. Season one stands at eight hits and zero misses across eight graded calls, with forty-two open. Today's new call: the current Amex to Marriott thirty-five percent will end as announced and no replacement bonus will appear through January tenth. " +
+"That is the brief. Transfers are one-way and irreversible. Confirm award space before moving a single point.";
+
+(function() {
+  const btn = document.getElementById('listenBtn');
+  let utter = null;
+  let speaking = false;
+
+  function pickVoice() {
+    if (!('speechSynthesis' in window)) return null;
+    const voices = window.speechSynthesis.getVoices();
+    if (!voices.length) return null;
+    const names = ['Daniel', 'Alex', 'Google UK English Male', 'Microsoft Guy Online'];
+    for (const n of names) {
+      const v = voices.find(v => v.name.indexOf(n) !== -1);
+      if (v) return v;
+    }
+    return voices.find(v => v.lang && v.lang.indexOf('en') === 0) || voices[0];
+  }
+
+  function stopSpeaking() {
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    speaking = false;
+    btn.textContent = '▶ Listen';
+    btn.setAttribute('aria-label', "Listen to today's edition");
+  }
+
+  function startSpeaking() {
+    if (!('speechSynthesis' in window)) {
+      btn.textContent = 'Audio not supported';
+      btn.disabled = true;
+      return;
+    }
+    window.speechSynthesis.cancel();
+    utter = new SpeechSynthesisUtterance(S);
+    utter.rate = 0.93;
+    utter.pitch = 1.0;
+    const v = pickVoice();
+    if (v) utter.voice = v;
+    utter.onend = stopSpeaking;
+    utter.onerror = stopSpeaking;
+    window.speechSynthesis.speak(utter);
+    speaking = true;
+    btn.textContent = '■ Stop';
+    btn.setAttribute('aria-label', 'Stop audio playback');
+  }
+
+  btn.addEventListener('click', function() {
+    if (speaking) stopSpeaking(); else startSpeaking();
+  });
+
+  if ('speechSynthesis' in window && window.speechSynthesis.onvoiceschanged !== undefined) {
+    window.speechSynthesis.onvoiceschanged = function() { /* voices now loaded */ };
+  }
+})();
+</script>
+</body>
+</html>
