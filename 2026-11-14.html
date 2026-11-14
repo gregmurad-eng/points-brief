@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — November 14, 2026</title>
+<style>
+  :root {
+    --bg: #080c14;
+    --accent: #c9a84c;
+    --text: #d8d0b4;
+    --muted: #8a8370;
+    --miss: #c76a6a;
+    --unsettled: #8a8370;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, 'Times New Roman', serif;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  header.masthead {
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+  }
+  h1 {
+    color: var(--accent);
+    font-size: 34px;
+    letter-spacing: 1.2px;
+    margin: 0 0 6px 0;
+    font-weight: normal;
+  }
+  .tagline {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  .date {
+    color: var(--text);
+    font-size: 14px;
+    letter-spacing: 0.4px;
+  }
+  nav.bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    margin: 18px 0;
+    border-top: 1px solid rgba(201, 168, 76, 0.25);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.25);
+    font-size: 15px;
+  }
+  nav.bar a {
+    color: var(--accent);
+    text-decoration: none;
+    white-space: nowrap;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 8px;
+  }
+  nav.bar a:hover { text-decoration: underline; }
+  nav.bar .nav-mid { display: inline-flex; gap: 0; flex-wrap: wrap; }
+  nav.bar .nav-mid a { color: var(--accent); margin: 0 9px; }
+  nav.bar .next {
+    color: var(--muted);
+    white-space: nowrap;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 8px;
+  }
+  .urgent {
+    border: 2px solid var(--accent);
+    background: rgba(201, 168, 76, 0.07);
+    padding: 16px 18px;
+    margin: 20px 0;
+    border-radius: 2px;
+  }
+  .urgent-label {
+    color: var(--accent);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .listen-box {
+    margin: 22px 0;
+    padding: 14px 16px;
+    border: 1px solid rgba(201, 168, 76, 0.4);
+    background: rgba(201, 168, 76, 0.03);
+  }
+  button.listen {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 10px 18px;
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 0.6px;
+    min-height: 44px;
+    margin-right: 6px;
+  }
+  button.listen:hover { background: rgba(201, 168, 76, 0.1); }
+  h2 {
+    color: var(--accent);
+    font-size: 22px;
+    letter-spacing: 0.8px;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.25);
+    padding-bottom: 6px;
+    margin-top: 36px;
+    font-weight: normal;
+  }
+  h3 {
+    color: var(--text);
+    font-size: 18px;
+    margin-top: 22px;
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+  .meta-line {
+    color: var(--muted);
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+  .your-move {
+    color: var(--accent);
+    font-style: italic;
+    margin: 10px 0 0 0;
+    padding-left: 12px;
+    border-left: 2px solid var(--accent);
+  }
+  .your-move b { font-style: normal; }
+  sup a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 11px;
+    padding: 6px 4px;
+    margin: -6px -4px;
+  }
+  sup a:hover { text-decoration: underline; }
+  .signal {
+    border: 1px solid var(--accent);
+    padding: 14px 18px;
+    margin: 12px 0;
+    background: rgba(201, 168, 76, 0.04);
+  }
+  .ledger-record {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .ledger-record .hit { color: var(--accent); font-weight: bold; }
+  .ledger-record .miss { color: var(--miss); font-weight: bold; }
+  .call-box {
+    border-left: 2px solid rgba(201, 168, 76, 0.4);
+    padding: 10px 14px;
+    margin: 12px 0;
+  }
+  .call-box.open { border-left-color: var(--muted); }
+  .verdict-hit { color: var(--accent); font-weight: bold; letter-spacing: 1px; }
+  .verdict-miss { color: var(--miss); font-weight: bold; letter-spacing: 1px; }
+  .verdict-unsettled { color: var(--unsettled); font-weight: bold; letter-spacing: 1px; }
+  .status-open { color: var(--muted); font-weight: bold; letter-spacing: 1px; }
+  ol.sources {
+    font-size: 15px;
+    padding-left: 20px;
+  }
+  ol.sources li { margin-bottom: 6px; }
+  ol.sources a {
+    color: var(--accent);
+    text-decoration: none;
+    word-break: break-word;
+  }
+  ol.sources a:hover { text-decoration: underline; }
+  .tier {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 6px;
+  }
+  .caution {
+    background: rgba(199, 106, 106, 0.08);
+    border-left: 2px solid var(--miss);
+    padding: 10px 14px;
+    margin: 20px 0;
+    font-size: 15px;
+    color: var(--text);
+  }
+  footer {
+    margin-top: 40px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(201, 168, 76, 0.25);
+    color: var(--muted);
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  @media (max-width: 480px) {
+    body {
+      padding: 20px 14px 48px;
+      font-size: 16px;
+    }
+    h1 { font-size: 26px; }
+    h2 { font-size: 19px; }
+    h3 { font-size: 17px; }
+    .tagline, .date, .meta-line { font-size: 14px; }
+    nav.bar { font-size: 15px; gap: 8px 10px; }
+    nav.bar a, nav.bar .next { padding: 8px 6px; min-height: 44px; }
+    nav.bar .nav-mid a { margin: 0 6px; }
+    .urgent { padding: 14px; }
+    .urgent-label { font-size: 12px; }
+    button.listen { padding: 12px 18px; font-size: 15px; width: 100%; margin-bottom: 8px; min-height: 44px; }
+    .listen-box { padding: 12px; }
+    ol.sources { font-size: 15px; padding-left: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <h1>The Points Brief</h1>
+  <div class="tagline">Travel Points · Maximize every transfer</div>
+  <div class="date">Saturday, November 14, 2026</div>
+</header>
+
+<nav class="bar">
+  <a href="2026-11-13.html">← YESTERDAY</a>
+  <span class="nav-mid">
+    <a href="./">Today</a>
+    <a href="archive.html">Archive</a>
+  </span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<div class="urgent">
+  <span class="urgent-label">Expiring today</span>
+  The Citi ThankYou → Cathay Pacific Asia Miles <b>10% transfer bonus</b> ends tonight, <b>November 14, 2026 at 11:59 PM ET</b><sup><a href="#s4">[4]</a></sup>. This is a small bonus and only worth acting on if you already have a specific Asia Miles redemption with confirmed award space.
+</div>
+
+<div class="listen-box">
+  <button class="listen" id="playBtn" onclick="speak()">▶ Listen (~3 min)</button>
+  <button class="listen" onclick="stopSpeak()">■ Stop</button>
+</div>
+
+<div class="caution">
+  <b>Reminder:</b> Point transfers are <b>one-way and irreversible</b>. Only transfer when you have a specific redemption in mind and (for award flights and hotels) confirmed award availability. Do not speculate.
+</div>
+
+<h2>Today's Transfer Bonuses</h2>
+
+<h3>Chase Ultimate Rewards → IHG One Rewards — 80%</h3>
+<div class="meta-line">Expires Dec 3, 2026 · Base ratio 1:1 · Promo ratio 1:1.8 · Min 1,000 points<sup><a href="#s3">[3]</a></sup></div>
+<p>Chase's largest live airline-or-hotel bonus of the month. 1,000 UR becomes 1,800 IHG. Reported minimum transfer 1,000 UR; IHG deposits bonus points within ~7 days<sup><a href="#s3">[3]</a></sup>. IHG One Rewards points are worth roughly 0.5 cpp; Chase Ultimate Rewards are worth meaningfully more, so the <i>math</i> rarely favors this transfer even at 80% unless you already have the specific IHG redemption booked and priced out<sup><a href="#s5">[5]</a></sup>.</p>
+<p class="your-move"><b>Your move:</b> transfer only if you have a specific IHG award on the books and the points-out-of-pocket comparison beats cash. Do not stockpile IHG points on speculation — even at 80%.</p>
+
+<h3>Chase Ultimate Rewards → Avios (BA, Iberia, Aer Lingus) — 30%</h3>
+<div class="meta-line">Expires Dec 1, 2026 · Base ratio 1:1 · Promo ratio 1:1.3<sup><a href="#s6">[6]</a></sup></div>
+<p>1,000 UR becomes 1,300 Avios across any of the three Avios-member programs (BA, Iberia, Aer Lingus). Avios pool between British Airways Club, Iberia Club, Finnair, Aer Lingus AerClub and Qatar, so the destination program is largely a tax question — Iberia often avoids UK Air Passenger Duty on transatlantic routes<sup><a href="#s6">[6]</a></sup>.</p>
+<p class="your-move"><b>Your move:</b> only act if you've already priced an Avios award (transatlantic economy via Iberia, short-haul US flights on American operated by AA/Alaska via BA, or Qatar Qsuite) and know the mileage requirement. The 30% is good; the <i>redemption</i> is what makes it worth doing.</p>
+
+<h3>Amex Membership Rewards → Marriott Bonvoy — 35%</h3>
+<div class="meta-line">Expires Dec 10, 2026 · Base ratio 1:1 · Promo ratio 1:1.35<sup><a href="#s2">[2]</a></sup></div>
+<p>1,000 MR becomes 1,350 Bonvoy points. Even with the bonus this is one of the worst transfer values on the Amex side: 1,000 MR is widely valued around $20, versus roughly $10 for 1,350 Bonvoy points<sup><a href="#s2">[2]</a></sup>. Only makes sense to top up a specific redemption already in sight.</p>
+<p class="your-move"><b>Your move:</b> do nothing unless you're <i>a few hundred points short</i> of a specific Marriott award you're about to book. Do not transfer to earn status, hold balance, or chase a Cyber Week deal that cash will cover more efficiently.</p>
+
+<h3>Amex Membership Rewards → Virgin Atlantic Flying Club — 30%</h3>
+<div class="meta-line">Expires Nov 30, 2026 · Base ratio 1:1 · Promo ratio 1:1.3<sup><a href="#s7">[7]</a></sup></div>
+<p>1,000 MR becomes 1,300 Virgin Points. Virgin Atlantic is one of the few sweet spots where Amex MR transfers at 1.3 to <i>useful</i> redemptions — ANA first/business class awards via Virgin's partner chart, Delta One from the US to London/Europe (when Delta releases Virgin availability), and Air France/KLM awards<sup><a href="#s7">[7]</a></sup>.</p>
+<p class="your-move"><b>Your move:</b> worth the transfer only if you already have a Virgin Atlantic award held — ANA availability in particular is notoriously thin and must be confirmed with a Virgin phone agent before you move points.</p>
+
+<h3>Citi ThankYou → Turkish Airlines Miles&amp;Smiles — 40%</h3>
+<div class="meta-line">Expires Nov 30, 2026 · Base ratio 1:1 · Promo ratio 1:1.4 · Bonus capped at 50,000 Turkish miles per member<sup><a href="#s8">[8]</a></sup></div>
+<p>1,000 Citi points becomes 1,400 Turkish miles — but <b>the bonus is capped at 50,000 Turkish miles</b>, meaning only the first 125,000 Citi points transferred earn the bonus. The promotion is announced by Turkish, not Citi, and the bonus is credited <i>after</i> the base transfer completes, so you will not see 1,400:1,000 reflected in the Citi UI<sup><a href="#s8">[8]</a></sup>. Cannot be combined with other Turkish promotions.</p>
+<p class="your-move"><b>Your move:</b> good value for the long-standing Turkish sweet spots (US-Hawaii on United at 15k one-way, transatlantic business via Star Alliance partners). Only transfer if you've already called Turkish to confirm partner award space — their website search is unreliable.</p>
+
+<h3>Citi ThankYou → Cathay Pacific Asia Miles — 10%</h3>
+<div class="meta-line">Expires TODAY, Nov 14, 2026 at 11:59 PM ET · Base ratio 1:1 · Promo ratio 1:1.1<sup><a href="#s4">[4]</a></sup></div>
+<p>1,000 Citi points becomes 1,100 Asia Miles. A small bonus — this is the first Citi→Cathay bonus since July 2024<sup><a href="#s4">[4]</a></sup>, but the 10% rate is not the kind of "act now" number that justifies speculative transfers.</p>
+<p class="your-move"><b>Your move:</b> skip unless you have a specific Asia Miles award held and need a few thousand points to close the gap. At 10% the signal is a weak one; waiting for a 25%+ Cathay bonus in a future window is almost always the better call.</p>
+
+<h3>Capital One Miles → Air France/KLM Flying Blue — 20%</h3>
+<div class="meta-line">Expires Nov 30, 2026 · Base ratio 1:1 · Promo ratio 1:1.2<sup><a href="#s9">[9]</a></sup></div>
+<p>1,000 Capital One miles becomes 1,200 Flying Blue miles. Available on any Capital One miles-earning card. Flying Blue prices in dynamic buckets, which makes mile-cost prediction difficult — but there are still fixed-leg Promo Rewards and SkyTeam partner redemptions where this works<sup><a href="#s9">[9]</a></sup>.</p>
+<p class="your-move"><b>Your move:</b> act only if a Flying Blue promo-award month covers your target route and you've confirmed the current miles cost in Flying Blue's own search. A 20% bonus is thin cover for an unknown redemption price.</p>
+
+<h3>Capital One Miles → Virgin Atlantic Flying Club / Virgin Red — 30%</h3>
+<div class="meta-line">Expires Nov 20, 2026 · Base ratio 1:1 · Promo ratio 1:1.3<sup><a href="#s10">[10]</a></sup></div>
+<p>1,000 Capital One miles becomes 1,300 Virgin Points (or Virgin Red credits for hotels/cruises). Same effective rate as the parallel Amex→Virgin promo, which means you can stack the two source wallets on the same destination award<sup><a href="#s10">[10]</a></sup>. Six days to expiry.</p>
+<p class="your-move"><b>Your move:</b> if you already have a Virgin Atlantic ANA or Delta One award held, consider transferring from Capital One <i>before</i> Amex because Capital One expires sooner (Nov 20 vs Nov 30). Otherwise, same rule as the Amex→Virgin item: no held award, no transfer.</p>
+
+<h3>Capital One Miles → Copa Airlines ConnectMiles — 30% (launch)</h3>
+<div class="meta-line">Expires Dec 1, 2026 · Base ratio 2:1.5 (1,000:750) · Promo ratio 1,000:975 · Min 1,000 miles<sup><a href="#s11">[11]</a></sup></div>
+<p>Copa is a <b>new</b> Capital One transfer partner — added November 2, 2026 with this launch bonus. Note the base transfer ratio: 2:1.5, i.e. 1,000 Capital One miles becomes only 750 ConnectMiles normally. Even <i>with</i> the 30% launch bonus the effective rate is 1,000 Capital One miles → 975 ConnectMiles — still a <i>losing</i> ratio compared to 1:1<sup><a href="#s11">[11]</a></sup>. The usual draws for ConnectMiles are no fuel surcharges on Star Alliance redemptions (notably Emirates and Lufthansa first/business).</p>
+<p class="your-move"><b>Your move:</b> only transfer if you've priced a specific Copa-chart redemption that beats the alternative on points plus cash (fuel surcharges matter). Note that transfers are <i>one-way</i> and you will end up with fewer destination miles than source miles even at the bonused rate.</p>
+
+<h2>Program Watch</h2>
+
+<h3>Marriott Bonvoy Amex cards (Canada) — major co-brand restructure announced</h3>
+<p>Amex Canada announced on November 10, 2026 that both existing Marriott Bonvoy Amex cards will see significant changes effective <b>February 9, 2027</b>: (a) complimentary Gold Elite status replaces Silver on both cards, (b) the free night certificate will require $3,000 in annual card spend (previously automatic), and (c) the personal card annual fee rises from CAD $120 to CAD $150<sup><a href="#s12">[12]</a></sup>. Amex Canada is also launching a no-annual-fee <i>Marriott Bonvoy Bright</i> card. US card terms are not affected by this announcement — but the pattern (status upgrade in exchange for new spend gates on the free night) is worth watching for the US portfolio.</p>
+<p class="your-move"><b>Your move:</b> Canadian cardholders — model your 2027 Marriott spend before Feb 9 to confirm whether $3,000 is realistic; if not, the free night cert is no longer a baseline benefit. US cardholders — no action required, but take the pattern as early notice.</p>
+
+<h3>World of Hyatt × Delta SkyMiles — dual-earn launch pending</h3>
+<p>The Hyatt–Delta loyalty partnership announced September 9, 2026 remains in a pre-launch state. No general-availability enrollment path exists yet for World of Hyatt elites to earn Hyatt points on Delta paid flights, or for SkyMiles Medallions to earn SkyMiles on paid Hyatt stays<sup><a href="#s13">[13]</a></sup>. Industry analysts have pointed to November 16 — the day after the Hyatt-American partnership winds down — as the earliest natural handoff date, though neither party has confirmed<sup><a href="#s13">[13]</a></sup>. <i>Rumour — confirm before acting.</i></p>
+<p class="your-move"><b>Your move:</b> if you currently link Hyatt and American, do that last pass before Nov 15 to lock in benefits through the transition. Do not pre-register for Hyatt–Delta benefits that are not yet live.</p>
+
+<h3>Chase Sapphire Preferred / Ink Preferred → Hyatt — now 4:3</h3>
+<p>Context for today's decisions, since the Chase→IHG 80% is competing for your UR balance: the Chase UR → World of Hyatt transfer ratio on Sapphire Preferred and Ink Business Preferred <b>dropped from 1:1 to 4:3</b> on October 1, 2026<sup><a href="#s14">[14]</a></sup>. Sapphire Reserve and Ink Business Premier retained 1:1. This is the <i>established</i> position of that change — not new news — but if you only hold a Preferred-tier card, the math on moving UR to Hyatt has shifted meaningfully and every 10,000 UR now yields 7,500 Hyatt points<sup><a href="#s14">[14]</a></sup>.</p>
+<p class="your-move"><b>Your move:</b> if you hold only Sapphire Preferred or Ink Business Preferred, re-evaluate before any UR→Hyatt transfer — the sweet-spot math that made Chase→Hyatt the headline transfer in the stack no longer holds for those cards.</p>
+
+<h2>Today's Play</h2>
+
+<div class="signal">
+<p><b>The only expiry today is Citi → Cathay at 10%</b> — a weak-signal bonus that is not worth racing to. The <i>real</i> decisions this week are the two large bonuses still open: Chase → IHG at 80% (through Dec 3) and Chase → Avios at 30% (through Dec 1). Both are at or near the top of their historical range. The IHG 80% in particular is "as good as it gets," but IHG points are low-value and the bonus does not rescue a transfer you have no reason to make.</p>
+<p>For Amex holders, the Virgin Atlantic 30% through Nov 30 is the pick if you have a specific partner redemption held (ANA via Virgin remains the headline). For Capital One holders, the Virgin promo expires first (Nov 20) — transfer from that wallet before the Amex one if you're stacking.</p>
+<p><b>The rule for this week:</b> transferring without a specific redemption on the books is losing money even at 80%. Every bonus here rewards <i>held</i> awards, not held balances.</p>
+</div>
+
+<h2>The Ledger</h2>
+
+<div class="ledger-record">Season 1 · <span class="hit">8</span>–<span class="miss">0</span> across 8 graded calls.</div>
+
+<p><i>No calls graded today — all 43 open calls have horizons after November 14, 2026.</i></p>
+
+<div class="call-box open">
+  <div><span class="status-open">OPEN</span> · <b>TODAY-1 (2026-11-14-1)</b> · Horizon <b>2027-04-30</b></div>
+  <p><b>Call:</b> After the current 80% Chase Ultimate Rewards → IHG One Rewards transfer bonus ends 2026-12-03, Chase will <b>NOT</b> run another Chase → IHG One Rewards transfer bonus of 70% or higher between 2026-12-04 and 2027-04-30 inclusive.</p>
+  <p><b>Basis:</b> The 2026 Chase→IHG sequence was 100% (Jul early-bird), 70% (Aug), nothing (Sep–Oct), 80% (Nov 1–Dec 3). Jumping back to 70%+ within 5 months after an 80% campaign would break Chase's usual cool-off pattern between elevated offers.</p>
+  <p><b>Test:</b> HIT if no Chase→IHG bonus ≥70% is publicly offered between 2026-12-04 and 2027-04-30; MISS if any such bonus is offered during that window. Bonuses below 70% during the window do not trigger a MISS.</p>
+</div>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="s1">Roame — <a href="https://roame.travel/guides/points-transfer-bonuses">Current points transfer bonuses (November 2026)</a> <span class="tier">trade</span></li>
+  <li id="s2">AwardWallet — <a href="https://awardwallet.com/news/amex-membership-rewards/marriott-transfer-bonus/">Amex to Marriott Transfer Bonus: Get 35% Bonus Bonvoy Points</a> <span class="tier">trade</span></li>
+  <li id="s3">AwardWallet — <a href="https://awardwallet.com/news/chase-ultimate-rewards/ihg-transfer-bonus/">Chase Ultimate Rewards → IHG One Rewards 80% Transfer Bonus (through Dec 3, 2026)</a> <span class="tier">trade</span></li>
+  <li id="s4">AwardWallet — <a href="https://awardwallet.com/news/citi-thankyou-rewards/cathay-pacific-transfer-bonus/">Transfer Citi ThankYou Points to Asia Miles With a 10% Bonus (ends Nov 14, 2026)</a> <span class="tier">trade</span></li>
+  <li id="s5">FrequentMiler — <a href="https://frequentmiler.com/chase-offering-80-bonus-when-transferring-points-to-ihg-but-dont/">Chase offering 80% bonus when transferring points to IHG (but don't)</a> <span class="tier">trade</span></li>
+  <li id="s6">AwardWallet — <a href="https://awardwallet.com/news/chase-ultimate-rewards/avios-transfer-bonus/">Chase Ultimate Rewards to Avios 30% Transfer Bonus (through Dec 1, 2026)</a> <span class="tier">trade</span></li>
+  <li id="s7">AwardWallet — <a href="https://awardwallet.com/news/amex-membership-rewards/virgin-atlantic-transfer-bonus/">Transfer Amex Points to Virgin Atlantic With a 30% Bonus (through Nov 30, 2026)</a> <span class="tier">trade</span></li>
+  <li id="s8">UpgradedPoints — <a href="https://upgradedpoints.com/news/citi-points-turkish-airlines-transfer-bonus/">New 40% Transfer Bonus From Citi ThankYou to Turkish Airlines (through Nov 30, 2026; 50k cap)</a> <span class="tier">trade</span></li>
+  <li id="s9">AwardWallet — <a href="https://awardwallet.com/news/capital-one-rewards/flying-blue-transfer-bonus/">Transfer Capital One Miles to Flying Blue, Get a 20% Bonus (through Nov 30, 2026)</a> <span class="tier">trade</span></li>
+  <li id="s10">AwardWallet — <a href="https://awardwallet.com/news/capital-one-rewards/virgin-red-transfer-bonus/">30% Capital One Transfer Bonus to Virgin Red / Flying Club (through Nov 20, 2026)</a> <span class="tier">trade</span></li>
+  <li id="s11">FrequentMiler — <a href="https://frequentmiler.com/copa-added-as-new-capital-one-transfer-partner-21-5-30-launch-transfer-bonus/">Copa added as new Capital One transfer partner (2:1.5), 30% launch transfer bonus</a> <span class="tier">trade</span></li>
+  <li id="s12">Milesopedia — <a href="https://milesopedia.com/en/news/finance/marriott-bonvoy-american-express-card-changes/">Marriott Bonvoy Amex Card Changes (Canada): Gold Status, $150 Fee, effective Feb 9, 2027</a> <span class="tier">trade</span></li>
+  <li id="s13">The Points Guy — <a href="https://thepointsguy.com/news/delta-hyatt-new-partnership">Delta, Hyatt to team up in new airline-hotel loyalty partnership</a> <span class="tier">trade</span></li>
+  <li id="s14">NerdWallet — <a href="https://www.nerdwallet.com/travel/news/chase-sapphire-preferred-hyatt-transfer-changes">The Chase Sapphire Preferred Got Better — Except for This (Hyatt 4:3)</a> <span class="tier">trade</span></li>
+  <li id="s15">LoyaltyLobby — <a href="https://loyaltylobby.com/2026/11/02/chase-ultimate-rewards-to-iag-ba-ib-ei-wyndham-ihg-conversion-bonuses-november-1-december-3-2026/">Chase UR → IAG (BA/IB/EI), Wyndham &amp; IHG Conversion Bonuses Nov 1 – Dec 3, 2026</a> <span class="tier">trade</span></li>
+</ol>
+
+<p class="meta-line" style="margin-top:14px">All percentages, expiries and transfer ratios reconfirmed against established trade reporting of the issuer-posted terms. Issuer login pages were not fetched; readers should always confirm the live rate inside their own Chase, Amex, Citi or Capital One transfer UI before moving points. If a figure here conflicts with your source account dashboard, <b>trust the dashboard</b>.</p>
+
+<nav class="bar">
+  <a href="2026-11-13.html">← YESTERDAY</a>
+  <span class="nav-mid">
+    <a href="./">Today</a>
+    <a href="archive.html">Archive</a>
+  </span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<footer>
+  The Points Brief · AI-synthesized daily edition. Content is researched and summarized by an AI system; all points, miles, and transfer bonuses should be re-verified against the issuer's own transfer page and the destination program's T&amp;Cs before transferring. Confirm award availability with the airline or hotel before moving points — transfers are one-way and irreversible.
+</footer>
+
+<script>
+const S = "Welcome to The Points Brief for Saturday, November 14, 2026. "
++ "The only transfer bonus expiring today is the Citi ThankYou to Cathay Pacific Asia Miles bonus at 10 percent, which ends at 11:59 PM Eastern tonight. "
++ "This is a small bonus and only worth acting on if you already have a specific Asia Miles redemption with confirmed award space. Do not transfer speculatively. "
++ "The two headline bonuses this week are both from Chase. "
++ "First, Chase Ultimate Rewards to IHG One Rewards at 80 percent, running through December 3rd. 1,000 points becomes 1,800 IHG points. This is the top of the historical range for this pair, but IHG points are worth much less per point than Chase Ultimate Rewards. Even at 80 percent, this transfer only makes sense if you have a specific IHG stay booked and the points math beats paying cash. "
++ "Second, Chase Ultimate Rewards to Avios programs — British Airways, Iberia, and Aer Lingus — at 30 percent, running through December 1st. 1,000 points becomes 1,300 Avios. Avios pool between all three programs, so the destination program is largely a tax question; Iberia often avoids UK Air Passenger Duty on transatlantic routes. Only transfer if you have a specific Avios award priced out. "
++ "On the Amex side, Membership Rewards to Virgin Atlantic Flying Club is bonused 30 percent through November 30th. Virgin Atlantic remains one of the few sweet spots on the Amex transfer menu, especially for ANA partner awards and Delta One flights. Only transfer if you have a specific Virgin award on hold — ANA availability in particular is notoriously thin. "
++ "Amex to Marriott Bonvoy at 35 percent through December 10th is a weak transfer even with the bonus. 1,000 Amex points becomes 1,350 Bonvoy, which is worth roughly half what the Amex points were worth to begin with. Only use it to top up a specific award. "
++ "Citi ThankYou to Turkish Airlines Miles and Smiles is bonused 40 percent through November 30th. Important: the bonus is capped at 50,000 Turkish miles per member, meaning only the first 125,000 Citi points you transfer earn the bonus. Still useful for Turkish's classic sweet spots like US to Hawaii on United at 15,000 miles one-way, but call Turkish to confirm partner award space before moving points. "
++ "Capital One holders have three live bonuses: Flying Blue at 20 percent through November 30th, Virgin Atlantic and Virgin Red at 30 percent through November 20th, and a brand-new Copa Airlines ConnectMiles partnership at a 30 percent launch bonus through December 1st. Note the Copa base ratio is 2 to 1.5, so even with the bonus you end up with 975 ConnectMiles for every 1,000 Capital One miles — still a losing ratio. Only transfer if you have a specific Copa-chart redemption priced out. "
++ "On program news: Amex Canada announced a significant restructure of its Marriott Bonvoy co-brand cards taking effect February 9, 2027. Status upgrades from Silver to Gold, but the free night certificate now requires 3,000 Canadian dollars in annual spend. US card terms are not affected. "
++ "The Hyatt and Delta SkyMiles loyalty partnership announced September 9th remains pre-launch. Industry analysts point to November 16th as the earliest natural handoff date from the ending Hyatt-American partnership — but this is a rumor, not an announcement. Confirm before acting. "
++ "A reminder on the Chase UR to Hyatt transfer ratio: on October 1st, the ratio for Chase Sapphire Preferred and Ink Business Preferred dropped from 1 to 1 to 4 to 3 — a 25 percent haircut. Sapphire Reserve and Ink Business Premier kept the 1 to 1 ratio. If you hold only a Preferred-tier card, the math on moving Chase points to Hyatt has shifted meaningfully. "
++ "Today's ledger call: after the current 80 percent Chase to IHG bonus ends December 3rd, Chase will NOT run another Chase to IHG transfer bonus of 70 percent or higher before April 30th, 2027. Horizon is April 30th. "
++ "Current season record stands at 8 and 0 across 8 graded calls. "
++ "The rule for this week: transferring without a specific held redemption is losing money even at 80 percent. Every bonus on this page rewards held awards, not held balances. "
++ "All transfers are one-way and irreversible. Confirm the live rate in your issuer dashboard and award availability with the airline or hotel before moving any points. That's The Points Brief for today.";
+
+let utter = null;
+function speak() {
+  if (!('speechSynthesis' in window)) return;
+  stopSpeak();
+  utter = new SpeechSynthesisUtterance(S);
+  utter.rate = 0.93;
+  utter.pitch = 1.0;
+  const voices = window.speechSynthesis.getVoices();
+  let chosen = voices.find(v => /Daniel/i.test(v.name));
+  if (!chosen) chosen = voices.find(v => /Alex/i.test(v.name));
+  if (!chosen) chosen = voices.find(v => /en[-_]/i.test(v.lang));
+  if (chosen) utter.voice = chosen;
+  window.speechSynthesis.speak(utter);
+}
+function stopSpeak() {
+  if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+}
+if ('speechSynthesis' in window && window.speechSynthesis.getVoices().length === 0) {
+  window.speechSynthesis.onvoiceschanged = () => {};
+}
+</script>
+
+</body>
+</html>
