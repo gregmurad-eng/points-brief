@@ -34,10 +34,10 @@
       "basis": "The current Citi\u2192Flying Blue 20% bonus expires August 22, 2026. Historical cadence: Citi ran Flying Blue bonuses in February 2026, May 2026, and August 2026 \u2014 a roughly 3-month cadence. If the pattern holds, the next window opens in early-to-mid November, well inside the horizon. Citi has strong commercial reasons to keep Flying Blue front-of-mind: it is one of the more useful ThankYou partners for European redemption and a key reason to keep the Citi Strata Premier open.",
       "horizon": "2026-11-15",
       "test": "GRADE HIT if any Citi ThankYou \u2192 Air France/KLM Flying Blue transfer bonus of 20% or greater is publicly offered at any point between 2026-08-23 and 2026-11-15 inclusive, evidenced by Citi's own transfer page, Flying Blue's promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered in that window.",
-      "status": "OPEN",
-      "graded_on": null,
-      "verdict": null,
-      "evidence": null
+      "status": "GRADED",
+      "graded_on": "2026-11-15",
+      "verdict": "MISS",
+      "evidence": "No Citi ThankYou to Air France-KLM Flying Blue transfer bonus of 20% or greater was publicly offered at any point between 2026-08-23 and 2026-11-15 inclusive. The prior Citi to Flying Blue 20% bonus (Jul 19 - Aug 22, 2026) expired before the window opened, and no successor Citi to Flying Blue bonus has appeared on Flying Blue's US partner promo page or in any Tier 2 trade coverage of November transfer bonuses. Confirmed via Frequent Miler's current/expired transfer-bonuses page and Awardwallet's November 2026 transfer-bonus list: https://frequentmiler.com/current-point-transfer-bonuses/"
     },
     {
       "id": "2026-08-18-1",
@@ -238,10 +238,10 @@
       "basis": "Marriott's leaked Q4 2026 global earning promotion (LoyaltyLobby, registration Sept 9, stay window Sept 22 \u2013 Nov 22) creates aligned commercial incentive on the earn side for Amex to run a smoothing points-refill bonus in the same window \u2014 the classic handshake between hotel earn-promo and bank transfer-promo has repeated in Q4 2023, Q4 2024 (Amex\u2192Marriott 20% Oct 22 \u2013 Nov 20), and Q4 2025. Amex's last MR\u2192Marriott bonus was a 20% offer in April 2026 (Apr 8 \u2013 May 5); a six-month gap through October fits Amex's typical semi-annual Marriott cadence. Amex has commercial pressure to compete with Chase's fall hotel promos and needs a Q4 hotel bonus once its Hilton box is checked. The horizon lands on Nov 15 to catch either an October launch (matching 2024) or a November launch (matching 2025), while giving a clean 10-week resolution window.",
       "horizon": "2026-11-15",
       "test": "GRADE HIT if any Amex Membership Rewards \u2192 Marriott Bonvoy transfer bonus of 20% or greater is publicly offered at any point between 2026-09-05 and 2026-11-15 inclusive, evidenced by Amex's own transfer page, Marriott's promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no such bonus is offered in that window.",
-      "status": "OPEN",
-      "graded_on": null,
-      "verdict": null,
-      "evidence": null
+      "status": "GRADED",
+      "graded_on": "2026-11-15",
+      "verdict": "HIT",
+      "evidence": "Amex Membership Rewards launched a public 35% transfer bonus to Marriott Bonvoy on 2026-10-20 (running through 2026-12-10; 1,000 MR = 1,350 Bonvoy points), well above the 20% threshold and inside the Sep 5 - Nov 15 window. Confirmed by Frequent Miler, One Mile at a Time, PointsCrowd, and InsideFlyer: https://frequentmiler.com/35-percent-transfer-bonus-american-express-membership-rewards-marriott-bonvoy/"
     },
     {
       "id": "2026-09-06-1",
@@ -442,10 +442,10 @@
       "basis": "Capital One's prior transfer bonus (30% to JAL Mileage Bank) expired on 2026-09-30 with no October 1 replacement announced. Historically, Capital One runs near-monthly bonuses to its airline and hotel partners (Air Canada, Avianca, British Airways, Choice, Flying Blue, Virgin Red, etc.), and gaps of more than six weeks are uncommon when a prior bonus has just lapsed. Capital One also has structural reason to defend its JAL transfer share after Citi's 2026-09-20 launch of JAL as a 1:1 partner with a competing 30% launch bonus.",
       "horizon": "2026-11-15",
       "test": "GRADE HIT if any Capital One Miles transfer bonus (greater than 0%, to any transfer partner) is publicly offered at any point between 2026-10-01 and 2026-11-15 inclusive, evidenced by Capital One's own transfer page or a Tier 1/Tier 2 confirmation. GRADE MISS if no Capital One Miles transfer bonus is announced or live at any point during that window.",
-      "status": "OPEN",
-      "graded_on": null,
-      "verdict": null,
-      "evidence": null
+      "status": "GRADED",
+      "graded_on": "2026-11-15",
+      "verdict": "HIT",
+      "evidence": "Capital One ran multiple transfer bonuses inside the 2026-10-01 to 2026-11-15 window, including a 20% Capital One to British Airways Avios bonus (Oct 1 - Oct 31, 2026), a 30% Capital One to Virgin Atlantic Flying Club / Virgin Red bonus (through Nov 20), a 20% Capital One to Flying Blue bonus (through Nov 30), and the launch 30% Capital One to Copa ConnectMiles bonus (through Dec 1). Confirmed via LoyaltyLobby, Awardwallet, and Frequent Miler coverage: https://loyaltylobby.com/2026/10/01/capital-one-to-british-airways-avios-20-conversion-bonus-through-october-31-2026/"
     },
     {
       "id": "2026-10-02-1",
@@ -622,6 +622,18 @@
       "basis": "The current 80 percent Chase to IHG bonus (live Nov 1 - Dec 3, 2026) is at the high end of what Chase has historically offered on this pair. The 2026 Chase to IHG pattern was 100 percent early-bird in July, 70 percent in August, then nothing through October, then 80 percent from Nov 1. Stepping back to 70 percent-plus within 5 months after an 80 percent campaign would break the usual cool-off between elevated offers.",
       "horizon": "2027-04-30",
       "test": "GRADE HIT if no Chase Ultimate Rewards to IHG One Rewards transfer bonus of 70 percent or greater is publicly offered at any point between 2026-12-04 and 2027-04-30 inclusive. GRADE MISS if any such bonus (>=70 percent) is publicly offered, evidenced by Chase own transfer page, awardwallet.com Chase/IHG transfer-bonus archive, FrequentMiler, or One Mile at a Time coverage with a direct Chase URL. Bonuses below 70 percent during that window do NOT trigger a MISS.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
+    },
+    {
+      "id": "2026-11-15-1",
+      "date": "2026-11-15",
+      "call": "Capital One Miles will publicly offer a Capital One to Virgin Atlantic Flying Club transfer bonus of 20% or greater (either by extending the current 30% bonus past 2026-11-20, or by launching a successor Capital One to Virgin Atlantic bonus) at some point between 2026-11-21 and 2026-12-27 inclusive.",
+      "basis": "Capital One has made Virgin Atlantic / Virgin Red one of the loudest corners of its 2026 promo rotation, with the current 30% bonus (Oct 22 - Nov 20) already the second Virgin Atlantic push of the year. Capital One is one of the few bank programs with a direct Virgin Atlantic transfer route (Amex, Chase, Citi, and Bilt also transfer, but Capital One is the most consistent promoter), and the December peak-booking window for transatlantic travel plus Virgin Atlantic's Upper Class seat-sale cycle historically pair cleanly with elevated transfer offers. A 5-week silence into late December would skip exactly the window where member transfer value peaks and Capital One has historically filled airline-side promo gaps.",
+      "horizon": "2026-12-27",
+      "test": "GRADE HIT if any Capital One Miles to Virgin Atlantic Flying Club transfer bonus of 20% or greater is publicly offered at any point between 2026-11-21 and 2026-12-27 inclusive (whether a formal extension of the current 30% bonus past 2026-11-20 or a new successor bonus of any form), evidenced by Capital One's own transfer page, a Virgin Atlantic promo page, or a Tier 1/Tier 2 confirmation. GRADE MISS if no Capital One Miles to Virgin Atlantic Flying Club transfer bonus of 20% or greater is publicly offered in that window.",
       "status": "OPEN",
       "graded_on": null,
       "verdict": null,
