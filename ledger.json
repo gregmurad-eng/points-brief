@@ -638,6 +638,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-11-16-1",
+      "date": "2026-11-16",
+      "call": "Chase Ultimate Rewards will NOT publicly offer another Chase to IHG One Rewards transfer bonus of any percentage greater than zero between 2026-12-04 (the day after the current 80% bonus ends) and 2027-01-25 inclusive.",
+      "basis": "Chase ran three UR to IHG bonuses in 2026 (100% Jul 15-30, 70% Jul 31-Aug 31, 80% Nov 1-Dec 3), all clustered into two campaigns with a two-month gap between. The historical pattern is a short cluster followed by a multi-month cold stretch. Stacking a fourth UR to IHG bonus within seven weeks of a flagship 80% promo would break every prior Chase IHG cadence observation and, per Frequent Miler's running analysis, would dilute the economics Chase just advertised at 80% \u2014 a reason the issuer rarely gives for free.",
+      "horizon": "2027-01-25",
+      "test": "GRADE HIT if no Chase Ultimate Rewards to IHG One Rewards transfer bonus of any percentage greater than zero is publicly offered between 2026-12-04 and 2027-01-25 inclusive. GRADE MISS if any Chase to IHG bonus (>0%) is announced or live during that window. Confirmed against Chase's Ultimate Rewards transfer-partner page and Tier 1/Tier 2 corroboration.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
