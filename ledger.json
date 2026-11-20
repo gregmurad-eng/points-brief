@@ -650,6 +650,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-11-20-1",
+      "date": "2026-11-20",
+      "call": "The Chase Ultimate Rewards to IHG One Rewards 80% transfer bonus (currently live, expires 2026-12-03) will NOT be extended past 2026-12-03, and no Chase to IHG transfer bonus of any percentage will be publicly offered between 2026-12-04 and 2027-01-31.",
+      "basis": "Chase has historically left multi-month gaps between IHG transfer bonuses. The 2026-08 bonus (70%) ended as scheduled with a two-month gap before this 80% bonus launched 2026-11-01. The 80% level is already a tier up and Chase is unlikely to stack two IHG promos back-to-back heading into the holiday booking season when most Chase cycle-alley slots go to airline partners.",
+      "horizon": "2027-01-31",
+      "test": "GRADE HIT if no Chase to IHG One Rewards transfer bonus (>0%) is publicly offered at any point between 2026-12-04 and 2027-01-31 inclusive. GRADE MISS if any Chase to IHG bonus is announced or live during that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
