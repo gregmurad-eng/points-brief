@@ -662,6 +662,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-11-21-1",
+      "date": "2026-11-21",
+      "call": "After the Capital One Miles to Virgin Atlantic Flying Club 30 percent transfer bonus expired November 20, 2026, Capital One will NOT publicly launch another Capital One Miles to Virgin Atlantic Flying Club transfer bonus of 20 percent or greater between November 21, 2026 and February 20, 2027.",
+      "basis": "Capital One leaned on recurring Virgin Atlantic bonuses as a headline VS promo across 2026 - a late-summer 30 percent and this November run that just expired. The typical cadence for any single US transferable-currency to Virgin Atlantic bonus from one source is roughly 3-5 months. A third 20 percent-or-greater Capital One to Virgin Atlantic bonus inside 90 days of the last one would be unusually fast.",
+      "horizon": "2027-02-20",
+      "test": "GRADE HIT if no Capital One Miles to Virgin Atlantic Flying Club transfer bonus of 20 percent or greater is publicly offered between 2026-11-21 and 2027-02-20. GRADE MISS if any such bonus of 20 percent or greater is announced or live during that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
