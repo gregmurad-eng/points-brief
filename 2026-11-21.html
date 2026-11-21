@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — Saturday, November 21, 2026</title>
+<style>
+  :root { --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4; --muted:#8a8470; --danger:#b4544a; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:var(--bg); color:var(--text); font-family: Georgia, "Times New Roman", serif; line-height:1.55; }
+  body { max-width: 760px; margin: 0 auto; padding: 22px 28px 60px; font-size:17px; }
+  header.masthead { border-bottom: 2px solid var(--accent); padding-bottom: 14px; margin-bottom: 18px; }
+  h1 { font-size: 34px; margin: 0 0 4px; letter-spacing: 0.5px; color: var(--accent); font-variant: small-caps; }
+  .tagline { color: var(--muted); font-style: italic; font-size: 15px; margin: 0; }
+  .issuedate { color: var(--text); font-size: 15px; margin-top: 6px; letter-spacing: 1px; }
+  nav.bar { display:flex; flex-wrap:wrap; gap:10px 14px; align-items:center; justify-content:space-between;
+            border-top:1px solid #1e2636; border-bottom:1px solid #1e2636; padding:10px 0; margin:12px 0 22px; font-size:14px; }
+  nav.bar a { color: var(--accent); text-decoration: none; white-space:nowrap; padding:10px 6px; }
+  nav.bar a:hover { text-decoration: underline; }
+  nav.bar .nav-mid { display:flex; gap:10px 14px; flex-wrap:wrap; }
+  nav.bar .nav-mid a { color: var(--accent); margin: 0 9px; }
+  nav.bar .next { color: var(--muted); white-space:nowrap; padding:10px 6px; }
+  h2 { color: var(--accent); border-bottom:1px solid #1e2636; padding-bottom:6px; margin-top:34px; font-size:22px; font-variant: small-caps; letter-spacing: 0.5px; }
+  h3 { color: var(--text); margin: 22px 0 6px; font-size: 18px; font-style: italic; }
+  p { margin: 10px 0; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); font-size: 14px; font-style: italic; }
+  .urgent { border: 2px solid var(--accent); background: rgba(201,168,76,0.08); padding: 14px 16px; border-radius: 3px; margin: 18px 0 22px; }
+  .urgent strong { color: var(--accent); font-variant: small-caps; letter-spacing: 1px; }
+  .move { color: var(--accent); font-style: italic; margin-top: 6px; border-left: 2px solid var(--accent); padding: 2px 0 2px 10px; }
+  .move::before { content: "Your move: "; font-weight: bold; font-variant: small-caps; letter-spacing: 1px; font-style: normal; }
+  .signal { border: 1px solid var(--accent); padding: 14px 16px; margin: 14px 0; border-radius: 3px; background: rgba(201,168,76,0.05); }
+  .hit { color: var(--accent); font-weight: bold; }
+  .miss { color: var(--danger); font-weight: bold; }
+  .unsettled { color: var(--muted); font-weight: bold; }
+  .ledger-card { border: 1px solid #1e2636; padding: 12px 14px; margin: 10px 0; border-radius: 3px; }
+  .open-tag { color: var(--muted); font-variant: small-caps; letter-spacing: 1px; font-size: 13px; }
+  sup a { color: var(--accent); text-decoration: none; padding: 6px 4px; margin: -6px -4px; }
+  .listen { display:inline-block; padding: 12px 20px; background: var(--accent); color: var(--bg); border: none; border-radius: 3px; font-family: inherit; font-weight: bold; font-size: 15px; cursor: pointer; letter-spacing: 1px; min-height:44px; }
+  .listen:hover { opacity: 0.9; }
+  ol.sources { font-size: 14px; color: var(--muted); padding-left: 22px; }
+  ol.sources li { margin-bottom: 6px; }
+  ol.sources a { word-break: break-word; }
+  .tier { color: var(--muted); font-size: 12px; font-variant: small-caps; letter-spacing: 1px; margin-left: 4px; }
+  footer { margin-top: 44px; padding-top: 14px; border-top:1px solid #1e2636; color: var(--muted); font-size:13px; }
+  .player-row { margin: 14px 0 8px; }
+  @media (max-width: 480px) {
+    body { padding: 16px 16px 48px; font-size:16px; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 19px; }
+    h3 { font-size: 17px; }
+    nav.bar { font-size: 15px; gap: 8px 10px; }
+    nav.bar a, nav.bar .next { padding: 12px 6px; min-height:44px; display:inline-flex; align-items:center; }
+    .listen { padding: 14px 22px; min-height:48px; }
+    .meta { font-size: 14px; }
+    .urgent { padding: 12px 14px; }
+    ol.sources { font-size: 14px; }
+    sup a { padding: 8px 5px; margin: -8px -5px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <h1>The Points Brief</h1>
+  <p class="tagline">Travel Points · Maximize every transfer</p>
+  <p class="issuedate">Saturday, November 21, 2026</p>
+</header>
+
+<nav class="bar">
+  <a href="2026-11-20.html">← YESTERDAY</a>
+  <span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<div class="player-row">
+  <button class="listen" id="playBtn" onclick="speak()">▶ LISTEN · ~3 min</button>
+  <button class="listen" id="stopBtn" onclick="stopSpeak()" style="background:transparent;color:var(--accent);border:1px solid var(--accent);display:none;">■ STOP</button>
+</div>
+
+<p class="meta">A quiet Saturday for the US points stack — three transfer bonuses worth knowing, nothing expiring inside 72 hours, and the quarter-end positioning starts to crystallize. Season 1 scorecard stands at 10-1 across 11 graded calls.</p>
+
+<h2>Today's Transfer Bonuses</h2>
+
+<h3>Chase Ultimate Rewards → IHG One Rewards · 80%</h3>
+<p>Chase's headline bonus of the quarter is still live. One Ultimate Rewards point becomes <strong>1.8 IHG points</strong> on transfer, through <strong>December 3, 2026</strong>. This is the largest Chase→IHG bonus of 2026, and it follows a 70% run in August — Chase has now stepped up, not down, which is the opposite of what the late-summer pattern suggested.<sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup><sup><a href="#s3">[3]</a></sup></p>
+<p class="meta">Standard Chase→IHG ratio is 1:1. With the 80% bonus: 1,000 UR → 1,800 IHG.</p>
+<p class="move">transfer only if you have a specific IHG property, specific dates, and have confirmed standard rooms are bookable at the points rate you want. IHG uses dynamic pricing — a transfer "just to top off" can underperform cash by half. Everyone else: do nothing until Dec 2.</p>
+
+<h3>Amex Membership Rewards → Marriott Bonvoy · 35%</h3>
+<p>Amex's Marriott bonus runs through <strong>December 10, 2026</strong>. One MR point becomes <strong>1.35 Marriott points</strong>. Marriott transfers at a 1:1 base from Amex, and 35% is the typical high-end of the Amex→Marriott range — Amex did not run an Amex→Marriott bonus at 25% or greater from February through October this year, so this is the live window.<sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup><sup><a href="#s4">[4]</a></sup><sup><a href="#s5">[5]</a></sup></p>
+<p class="meta">Marriott prices awards dynamically with no cancellation grace on transferred points — if you cancel the booking, points stay in Bonvoy, not Amex. There is no un-transfer.</p>
+<p class="move">move points only against a Marriott booking you have already placed on hold with cash-rate confirmation. Treat this as a "fund a specific redemption" bonus, not a stockpiling bonus — Marriott's variable pricing eats speculative transfers.</p>
+
+<h3>Amex Membership Rewards → Virgin Atlantic Flying Club · 30%</h3>
+<p>Expires <strong>November 30, 2026</strong> — nine days away, the nearest-dated bonus in play. One MR point becomes <strong>1.3 Virgin Atlantic miles</strong>.<sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup> Virgin Atlantic is the strongest use of Membership Rewards right now for partner awards — notably ANA first-class trans-Pacific (where Virgin charges a fraction of what ANA's own Mileage Club asks) and Delta One from the US to Europe via SkyTeam partners.</p>
+<p class="meta">Virgin Atlantic Flying Club's partner sweet spots depend on finding actual award space — which Virgin does not publish online for most partners. Calling Virgin's Reservations line to confirm space is part of the workflow.</p>
+<p class="move">transfer only if you have already confirmed partner award space on a specific date — either via the partner airline's own website, ExpertFlyer, or a Virgin agent holding the seat. Do not transfer "in case" Virgin releases space later; it rarely does.</p>
+
+<h2>Program Watch</h2>
+
+<h3>Chase UR → World of Hyatt devaluation (4:3) — in effect</h3>
+<p>The Chase Ultimate Rewards → World of Hyatt transfer ratio is now <strong>4:3 for Sapphire Preferred and Ink Business Preferred cardholders</strong>, effective October 1, 2026 (and from June 15, 2026 for new applicants). <strong>Sapphire Reserve and Reserve for Business remain 1:1.</strong><sup><a href="#s6">[6]</a></sup> This is the first time Chase has split the UR→Hyatt ratio by card tier — Hyatt has long been the single best use of UR, and this devaluation applies specifically to the two most widely held UR cards.</p>
+<p class="move">if your UR points live in a Sapphire Preferred or Ink Preferred, map out whether moving the account under a Reserve-tier Chase card (via product change or household transfer) preserves the 1:1 before you transfer another point. If you only hold Reserve, no action.</p>
+
+<h3>Citi ThankYou → JAL Mileage Bank — still live</h3>
+<p>Citi ThankYou added Japan Airlines Mileage Bank as a 1:1 transfer partner on <strong>September 20, 2026</strong>, with a launch 30% bonus that expired October 24. The partner relationship itself continues at base 1:1.<sup><a href="#s7">[7]</a></sup> JAL is the only way to redeem OneWorld partners (Qatar Qsuites, Cathay, Finnair) on a distance-based chart — valuable for long-haul premium cabins out of the US.</p>
+<p class="move">if you hold Citi ThankYou points and a long-haul premium itinerary is in your sights, note this partner exists now but wait for the next bonus before transferring. One fresh partner typically re-runs a bonus inside 90 days of launch.</p>
+
+<h3>Capital One → Virgin Atlantic 30% — expired yesterday, no extension</h3>
+<p>Capital One's 30% transfer bonus to Virgin Atlantic Flying Club ended at 11:59pm ET on November 20, 2026. No extension or replacement bonus has been announced.<sup><a href="#s1">[1]</a></sup> If you were holding for this one, Amex MR→Virgin Atlantic (above) is the only live route to a US-transferable Virgin bonus right now.</p>
+<p class="move">no action — this bonus is gone. If you have Cap One miles earmarked for Virgin Atlantic, hold them; see today's new ledger call below for the explicit prediction window.</p>
+
+<h2>Today's Play</h2>
+
+<div class="signal">
+<p><strong>The one bonus inside a two-week clock is Amex → Virgin Atlantic.</strong> Chase→IHG runs another 12 days; Amex→Marriott another 19. But Amex→Virgin Atlantic closes in 9, and bonuses on this specific pair are rare — Amex has not run a 25%+ Amex→Virgin bonus for most of 2026.</p>
+<p>The move only materializes if you have <strong>confirmed partner award space</strong> on a specific date. Without space, there is no play — points sitting in Virgin Atlantic earn nothing and depreciate against any future Virgin devaluation. With space, this is the fastest-decaying asset in the brief today.</p>
+<p class="meta">If no Virgin space, the next-tier action is to confirm your Marriott or IHG stay before Dec 3 / Dec 10 respectively. Everything else can wait until next week.</p>
+</div>
+
+<h2>The Ledger</h2>
+
+<p><strong>Season 1 · 10-1</strong> across 11 graded calls. No calls graded today — the next calls due for grading have horizons ending November 30 (Citi→Turkish bonus pattern) and later. One new open call added today.</p>
+
+<div class="ledger-card">
+  <p><span class="open-tag">New call · open</span></p>
+  <p><strong>2026-11-21-1</strong> — After the Capital One Miles → Virgin Atlantic Flying Club 30% transfer bonus expired November 20, 2026, Capital One will NOT publicly launch another Capital One Miles → Virgin Atlantic transfer bonus of 20% or greater between November 21, 2026 and <strong>February 20, 2027</strong>.</p>
+  <p class="meta">Basis: Capital One has leaned on Virgin Atlantic as a headline VS promo pair twice already in 2026 (summer and the November run just closed). The typical cadence for any single US transferable currency → Virgin Atlantic from one source is 3-5 months; a third 20%+ Cap One→VS bonus inside 90 days of the last one would be unusually fast. Test: HIT if no such 20%+ bonus is publicly offered in the window; MISS if any 20%+ Cap One→VS bonus is announced or live.</p>
+</div>
+
+<p class="meta">Full running record (all 56 calls including all misses, with grading evidence): <a href="https://github.com/gregmurad-eng/points-brief/blob/main/ledger.json">ledger.json</a>. The miss is kept visible on purpose — on a topic where readers move real money on these calls, a scorecard that never loses is a scorecard nobody should trust.</p>
+
+<h2>Sources</h2>
+
+<ol class="sources">
+  <li id="s1"><a href="https://frequentmiler.com/current-point-transfer-bonuses/">Frequent Miler — Current point transfer bonuses</a><span class="tier">· trade</span></li>
+  <li id="s2"><a href="https://awardwallet.com/news/credit-card-transfer-bonuses/">AwardWallet — Current credit card transfer bonuses</a><span class="tier">· trade</span></li>
+  <li id="s3"><a href="https://onemileatatime.com/deals/chase-ihg-transfer-bonus/">One Mile at a Time — Chase UR to IHG 80% transfer bonus</a><span class="tier">· trade</span></li>
+  <li id="s4"><a href="https://frequentmiler.com/35-percent-transfer-bonus-american-express-membership-rewards-marriott-bonvoy/">Frequent Miler — Amex MR to Marriott Bonvoy 35%</a><span class="tier">· trade</span></li>
+  <li id="s5"><a href="https://loyaltylobby.com/2026/10/25/amex-membership-rewards-us-to-marriott-bonvoy-conversion-bonus-until-december-10-2026/">LoyaltyLobby — Amex MR to Marriott Bonvoy conversion bonus until December 10, 2026</a><span class="tier">· trade</span></li>
+  <li id="s6"><a href="https://points-radar.com/devaluations/chase-devalues-world-of-hyatt-transfer-ratio-to-4-3-on-selec">Points Radar — Chase devalues World of Hyatt transfer ratio to 4:3 on select cards</a><span class="tier">· trade</span></li>
+  <li id="s7"><a href="https://awardwallet.com/news/citi-thankyou-rewards/japan-airlines-transfer-partner">AwardWallet — Citi ThankYou adds JAL Mileage Bank as transfer partner</a><span class="tier">· trade</span></li>
+</ol>
+
+<p class="meta"><strong>Sourcing note.</strong> Issuer pages (Chase UR Points, Amex Transfer, IHG promo) are auth-walled to non-cardholders, so today's numbers are confirmed against multiple established points-trade trackers rather than a single Tier 1 issuer page. Where two trackers disagreed on a number (Cap One→Copa expiry, Chase→Virgin Atlantic ratio, Citi→Turkish activity), the item is deliberately omitted rather than published. Transfers are one-way and irreversible — a wrong number here is a real loss.</p>
+
+<nav class="bar">
+  <a href="2026-11-20.html">← YESTERDAY</a>
+  <span class="nav-mid"><a href="./">Today</a><a href="archive.html">Archive</a></span>
+  <span class="next">TOMORROW →</span>
+</nav>
+
+<footer>
+  <p>The Points Brief is AI-synthesized from public points-trade reporting. Transfers between loyalty programs are <strong>one-way and irreversible</strong>. Confirm award availability, program terms, and bonus terms on the issuer's own page before transferring any points. Nothing here is financial advice.</p>
+</footer>
+
+<script>
+const S = "Saturday, November twenty-first, two thousand twenty-six. The Points Brief. Three transfer bonuses dominate today's landscape. First. Chase Ultimate Rewards to IHG One Rewards, eighty percent. One Chase point turns into one point eight IHG. Window closes December third. If you are sitting on a specific IHG award you want to book, and you have confirmed the hotel has standard rooms on the dates you need, this is the move. If you are speculating, do not transfer. Second. American Express Membership Rewards to Marriott Bonvoy, thirty-five percent. One Amex point turns into one point three five Marriott. Window closes December tenth. Marriott is a thin-air chart with variable pricing and zero cancellation grace on transferred points. Only move if you have a specific property and specific dates already identified. Third. American Express to Virgin Atlantic Flying Club, thirty percent. One Amex point turns into one point three Virgin miles. Window closes November thirtieth — nine days from today. Virgin is the single best use of Membership Rewards right now, if you can find ANA first-class or Delta One space. Transfer only with award space actually held. Program watch. The Chase to World of Hyatt devaluation to four-to-three took effect October first for Sapphire Preferred and Ink Preferred cardholders. Sapphire Reserve and Reserve for Business remain one-to-one. Citi ThankYou added Japan Airlines Mileage Bank as a one-to-one partner in September. Capital One's Virgin Atlantic thirty percent bonus ended yesterday with no extension announced. Today's play. The one item inside two weeks of expiry is Amex to Virgin Atlantic. If you have Membership Rewards and a reason to care about Virgin Atlantic award space, decide this week. Everything else can wait. Season one scorecard. Ten hits, one miss across eleven graded calls. One new open call today — Capital One will not run another Virgin Atlantic twenty percent-plus bonus before February twentieth, two thousand twenty-seven. Reminder. Point transfers are one way and irreversible. Move points only with a specific redemption in mind. Confirm award availability before you press the button. This is The Points Brief.";
+let u = null;
+function pickVoice() {
+  const vs = speechSynthesis.getVoices();
+  return vs.find(v => /Daniel/i.test(v.name)) ||
+         vs.find(v => /Alex/i.test(v.name)) ||
+         vs.find(v => /^en-GB/i.test(v.lang)) ||
+         vs.find(v => /^en/i.test(v.lang)) || null;
+}
+function speak() {
+  if (!('speechSynthesis' in window)) { alert('Speech synthesis not supported in this browser.'); return; }
+  stopSpeak();
+  u = new SpeechSynthesisUtterance(S);
+  u.rate = 0.93;
+  const v = pickVoice();
+  if (v) u.voice = v;
+  u.onend = () => { document.getElementById('playBtn').style.display=''; document.getElementById('stopBtn').style.display='none'; };
+  u.onerror = u.onend;
+  speechSynthesis.speak(u);
+  document.getElementById('playBtn').style.display='none';
+  document.getElementById('stopBtn').style.display='';
+}
+function stopSpeak() {
+  if (speechSynthesis.speaking || speechSynthesis.pending) speechSynthesis.cancel();
+  document.getElementById('playBtn').style.display='';
+  document.getElementById('stopBtn').style.display='none';
+}
+if ('speechSynthesis' in window && speechSynthesis.getVoices().length === 0) {
+  speechSynthesis.onvoiceschanged = () => {};
+}
+</script>
+
+</body>
+</html>
