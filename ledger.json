@@ -674,6 +674,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "TODAY-1",
+      "date": "2026-11-22",
+      "call": "The current Chase Ultimate Rewards to Virgin Atlantic Flying Club 40% transfer bonus (live through December 30, 2026) will NOT be extended past December 30, 2026 AND Chase will NOT run any new Chase to Virgin Atlantic Flying Club transfer bonus (of any percentage greater than zero) at any point between December 31, 2026 and February 28, 2027.",
+      "basis": "A 40% bonus is near the top of Chase's historical VA promo range; Chase rarely runs back-to-back VA bonuses after a top-tier offer. The 2023-2025 pattern shows gaps of 3-6 months between Chase to Virgin Atlantic promos, and 40% itself has typically taken many months to return.",
+      "horizon": "2027-02-28",
+      "test": "GRADE HIT if no Chase Ultimate Rewards to Virgin Atlantic Flying Club transfer bonus of any percentage greater than zero is publicly offered at any point between December 31, 2026 and February 28, 2027. GRADE MISS if any such bonus is announced or live for US cardholders during that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
