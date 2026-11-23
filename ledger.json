@@ -676,12 +676,24 @@
       "evidence": null
     },
     {
-      "id": "TODAY-1",
+      "id": "2026-11-22-1",
       "date": "2026-11-22",
       "call": "The current Chase Ultimate Rewards to Virgin Atlantic Flying Club 40% transfer bonus (live through December 30, 2026) will NOT be extended past December 30, 2026 AND Chase will NOT run any new Chase to Virgin Atlantic Flying Club transfer bonus (of any percentage greater than zero) at any point between December 31, 2026 and February 28, 2027.",
       "basis": "A 40% bonus is near the top of Chase's historical VA promo range; Chase rarely runs back-to-back VA bonuses after a top-tier offer. The 2023-2025 pattern shows gaps of 3-6 months between Chase to Virgin Atlantic promos, and 40% itself has typically taken many months to return.",
       "horizon": "2027-02-28",
       "test": "GRADE HIT if no Chase Ultimate Rewards to Virgin Atlantic Flying Club transfer bonus of any percentage greater than zero is publicly offered at any point between December 31, 2026 and February 28, 2027. GRADE MISS if any such bonus is announced or live for US cardholders during that window.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
+    },
+    {
+      "id": "TODAY-1",
+      "date": "2026-11-23",
+      "call": "After the current Citi ThankYou Rewards to Turkish Airlines Miles & Smiles 40% transfer bonus expires 2026-11-30, no Citi ThankYou to Turkish Airlines transfer bonus of 20% or greater will be publicly live or announced between 2026-12-01 and 2027-02-28.",
+      "basis": "This 40% campaign is Turkish-side (Turkish Airlines is funding the uplift via a 50k-bonus-mile cap posted Dec 1+), not a Citi-side offer. Turkish's prior top-tier transfer campaigns ran at roughly quarterly cadence in 2025-2026 with 10-14 week cool-offs between 25%+ bonuses. A 40% at the top of the range historically precedes a longer gap, not a shorter one, especially because Turkish books the mileage liability on redemption rather than at transfer time. A back-to-back 20%+ campaign inside 90 days would compress Turkish's booked-liability curve in a way the airline has consistently avoided.",
+      "horizon": "2027-02-28",
+      "test": "GRADE HIT if no Citi ThankYou Rewards to Turkish Airlines Miles & Smiles transfer bonus of 20 percent or greater is publicly offered or active between 2026-12-01 and 2027-02-28 inclusive, evidenced by Citi's own transfer page, a Turkish Miles&Smiles promo page, or Tier 1/Tier 2 confirmation. GRADE MISS if any Citi to Turkish bonus of 20 percent or greater is announced or live during that window. Bonuses below 20 percent do NOT trigger a MISS.",
       "status": "OPEN",
       "graded_on": null,
       "verdict": null,
