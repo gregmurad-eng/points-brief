@@ -688,12 +688,24 @@
       "evidence": null
     },
     {
-      "id": "TODAY-1",
+      "id": "2026-11-23-1",
       "date": "2026-11-23",
       "call": "After the current Citi ThankYou Rewards to Turkish Airlines Miles & Smiles 40% transfer bonus expires 2026-11-30, no Citi ThankYou to Turkish Airlines transfer bonus of 20% or greater will be publicly live or announced between 2026-12-01 and 2027-02-28.",
       "basis": "This 40% campaign is Turkish-side (Turkish Airlines is funding the uplift via a 50k-bonus-mile cap posted Dec 1+), not a Citi-side offer. Turkish's prior top-tier transfer campaigns ran at roughly quarterly cadence in 2025-2026 with 10-14 week cool-offs between 25%+ bonuses. A 40% at the top of the range historically precedes a longer gap, not a shorter one, especially because Turkish books the mileage liability on redemption rather than at transfer time. A back-to-back 20%+ campaign inside 90 days would compress Turkish's booked-liability curve in a way the airline has consistently avoided.",
       "horizon": "2027-02-28",
       "test": "GRADE HIT if no Citi ThankYou Rewards to Turkish Airlines Miles & Smiles transfer bonus of 20 percent or greater is publicly offered or active between 2026-12-01 and 2027-02-28 inclusive, evidenced by Citi's own transfer page, a Turkish Miles&Smiles promo page, or Tier 1/Tier 2 confirmation. GRADE MISS if any Citi to Turkish bonus of 20 percent or greater is announced or live during that window. Bonuses below 20 percent do NOT trigger a MISS.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
+    },
+    {
+      "id": "TODAY-1",
+      "date": "2026-11-24",
+      "call": "After both the current Amex Membership Rewards to Virgin Atlantic Flying Club 30% transfer bonus (through 2026-11-30) and the Chase Ultimate Rewards to Virgin Atlantic Flying Club 40% transfer bonus (through 2026-12-30) end, no new Amex MR to Virgin Atlantic Flying Club transfer bonus of 30 percent or greater will be publicly offered to US cardholders at any point between 2026-12-31 and 2027-02-28 inclusive.",
+      "basis": "Simultaneous Amex and Chase bonuses to the same airline is an uncommon alignment driven by Virgin Atlantic pushing load factor on transatlantic. Historically, when Amex runs a top-of-range (30%+) MR to Virgin Atlantic promotion, the follow-on cool-off period before another 30%+ Amex to VS promo has consistently run four to six months. A back-to-back 30%+ Amex to VS bonus inside 90 days would break that cadence and would almost certainly require Virgin Atlantic co-funding that is already being deployed via the Chase side right now.",
+      "horizon": "2027-02-28",
+      "test": "GRADE HIT if no Amex Membership Rewards to Virgin Atlantic Flying Club transfer bonus of 30 percent or greater is publicly offered or active to US cardholders between 2026-12-31 and 2027-02-28 inclusive, evidenced by Amex offer page or Tier 1/Tier 2 confirmation. GRADE MISS if any such bonus is announced or live during that window. Amex bonuses below 30 percent do NOT trigger a MISS, nor do Chase, Citi, Capital One, or Bilt bonuses to Virgin Atlantic.",
       "status": "OPEN",
       "graded_on": null,
       "verdict": null,
