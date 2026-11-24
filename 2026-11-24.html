@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Points Brief — Tuesday, November 24, 2026</title>
+<style>
+  :root { --bg:#080c14; --accent:#c9a84c; --text:#d8d0b4; --muted:#8a8470; --line:#2a2a22; --miss:#b0565c; }
+  * { box-sizing: border-box; }
+  html, body { overflow-x: hidden; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.65;
+    margin: 0;
+    padding: 24px 20px 48px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+  }
+  .masthead { border-bottom: 2px solid var(--accent); padding-bottom: 14px; margin-bottom: 18px; }
+  h1 {
+    font-size: 2.1em;
+    letter-spacing: 0.02em;
+    margin: 0 0 4px;
+    color: var(--accent);
+    font-weight: normal;
+  }
+  .tagline { color: var(--muted); font-style: italic; font-size: 0.95em; margin: 0 0 4px; }
+  .dateline { color: var(--text); font-size: 0.95em; margin: 0; }
+  .bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 24px;
+    font-size: 0.95em;
+  }
+  .bar a, .bar span { white-space: nowrap; min-height: 44px; display: inline-flex; align-items: center; padding: 4px 2px; }
+  .bar a { color: var(--accent); text-decoration: none; }
+  .bar a:hover { text-decoration: underline; }
+  .nav-mid { display: inline-flex; gap: 14px; }
+  .nav-mid a { margin: 0 9px; color: var(--accent); }
+  .next { color: var(--muted); }
+  .player {
+    background: #0f1420;
+    border: 1px solid var(--line);
+    padding: 14px 16px;
+    margin-bottom: 26px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .player button {
+    background: var(--accent);
+    color: #0b0b0b;
+    border: 0;
+    padding: 10px 18px;
+    font-family: Georgia, serif;
+    font-size: 0.95em;
+    cursor: pointer;
+    min-height: 44px;
+    border-radius: 2px;
+    font-weight: bold;
+  }
+  .player button:disabled { opacity: 0.5; cursor: default; }
+  .player-label { color: var(--muted); font-size: 0.9em; font-style: italic; }
+  h2 {
+    color: var(--accent);
+    font-size: 1.35em;
+    font-weight: normal;
+    margin: 36px 0 10px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 6px;
+    letter-spacing: 0.01em;
+  }
+  h3 {
+    color: var(--text);
+    font-size: 1.08em;
+    margin: 20px 0 6px;
+    font-weight: normal;
+    font-style: italic;
+  }
+  .meta { color: var(--muted); font-size: 0.9em; margin: 0 0 8px; }
+  p { margin: 8px 0 14px; }
+  .move {
+    color: var(--accent);
+    font-style: italic;
+    margin: 6px 0 20px;
+    padding: 8px 12px;
+    border-left: 2px solid var(--accent);
+    background: rgba(201, 168, 76, 0.05);
+  }
+  .move::before { content: "Your move: "; font-weight: bold; font-style: normal; }
+  .signal {
+    background: #15120a;
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    margin: 12px 0 18px;
+  }
+  .caution {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 0.92em;
+    margin-top: 24px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+  sup a {
+    color: var(--accent);
+    text-decoration: none;
+    padding: 6px 4px;
+    margin: -6px -4px;
+  }
+  sup a:hover { text-decoration: underline; }
+  .ledger-row { margin: 10px 0 14px; padding-left: 10px; border-left: 1px solid var(--line); }
+  .verdict-hit { color: var(--accent); font-weight: bold; }
+  .verdict-miss { color: var(--miss); font-weight: bold; }
+  .verdict-unsettled { color: var(--muted); font-weight: bold; }
+  .verdict-open { color: var(--muted); font-weight: bold; letter-spacing: 0.05em; }
+  ol.sources { padding-left: 24px; font-size: 0.93em; }
+  ol.sources li { margin-bottom: 8px; color: var(--muted); }
+  ol.sources a { color: var(--accent); text-decoration: none; word-break: break-word; }
+  ol.sources a:hover { text-decoration: underline; }
+  .tier { color: var(--muted); font-style: italic; font-size: 0.9em; }
+  .quiet-list { color: var(--text); font-size: 0.95em; }
+  .quiet-list li { margin-bottom: 4px; }
+  footer { color: var(--muted); font-size: 0.85em; margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); font-style: italic; }
+
+  @media (max-width: 480px) {
+    body { padding: 16px 14px 32px; font-size: 16px; }
+    h1 { font-size: 1.6em; }
+    h2 { font-size: 1.2em; }
+    h3 { font-size: 1.05em; }
+    .bar { gap: 8px 10px; font-size: 0.95em; }
+    .bar .label-full { display: none; }
+    .bar .label-short { display: inline; }
+    .nav-mid { gap: 10px; }
+    .nav-mid a { margin: 0 6px; }
+    .player button { font-size: 1em; padding: 12px 18px; }
+    ol.sources { font-size: 0.95em; padding-left: 20px; }
+  }
+  @media (min-width: 481px) {
+    .bar .label-short { display: none; }
+    .bar .label-full { display: inline; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="bar" aria-label="edition navigation">
+  <a href="2026-11-23.html"><span class="label-full">&larr; YESTERDAY</span><span class="label-short">&larr;</span></a>
+  <span class="nav-mid">
+    <a href="./">Today</a>
+    <a href="archive.html">Archive</a>
+  </span>
+  <span class="next"><span class="label-full">TOMORROW &rarr;</span><span class="label-short">&rarr;</span></span>
+</nav>
+
+<header class="masthead">
+  <h1>The Points Brief</h1>
+  <p class="tagline">Travel Points &middot; Maximize every transfer</p>
+  <p class="dateline">Tuesday, November 24, 2026</p>
+</header>
+
+<div class="player">
+  <button id="playBtn" onclick="speakBrief()" aria-label="Play audio brief">&#9654; Listen (approx 3 min)</button>
+  <button id="stopBtn" onclick="stopBrief()" disabled>&#9632; Stop</button>
+  <span class="player-label">Audio brief, read aloud</span>
+</div>
+
+<h2>Today&rsquo;s Transfer Bonuses</h2>
+
+<p>Three transfer taps are wide open this week, but two of the headline offers reward you only if you already have an award in sight. The point stays the point: transfers are one-way. Below are the US-cardholder bonuses that are live today, ranked by actionable value, not by headline percentage.</p>
+
+<h3>Chase Ultimate Rewards &rarr; Virgin Atlantic Flying Club &mdash; 40%</h3>
+<p class="meta">Ends 11:59 PM ET Tuesday, December 30, 2026 &middot; Transfer ratio 1,000 UR = 1,400 Virgin points &middot; Minimum transfer 1,000 points<sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup></p>
+<p>This is the week&rsquo;s most useful offer for US cardholders with a specific redemption lined up. Virgin Atlantic Flying Club is a thin partner list but a deep one: ANA business class to Japan (115,000 Virgin points round-trip), Delta One on partner-award space, Virgin&rsquo;s own Upper Class from the US East Coast to London (around 100,000 points one-way plus cash surcharges). Every one of those needs live partner-award space held before you transfer. Chase Ultimate Rewards points move to Virgin Atlantic instantly in most cases.</p>
+<p class="move">Transfer only if you already have an ANA or Virgin award on hold. If you&rsquo;re speculating on future space, wait &mdash; this offer runs five weeks and Virgin Atlantic rarely releases ANA space more than a few weeks out.</p>
+
+<h3>Chase Ultimate Rewards &rarr; IHG One Rewards &mdash; 80%</h3>
+<p class="meta">Ends 11:59 PM ET Thursday, December 3, 2026 &middot; Transfer ratio 1,000 UR = 1,800 IHG points &middot; Minimum transfer 1,000 points<sup><a href="#s3">[3]</a></sup><sup><a href="#s4">[4]</a></sup></p>
+<p>The headline number of the month, and the most dangerous. IHG One Rewards uses dynamic pricing with no award chart, so 1.8 IHG points per UR point only pays off if a specific property&rsquo;s cash rate divided by its award rate beats the implied 0.5 cents per UR point you&rsquo;re giving up. For most properties it doesn&rsquo;t. Independent analysis from Frequent Miler explicitly warns that even at 80%, booking the same room through a travel-portal UR redemption is often the better math.</p>
+<p class="move">Transfer only if you&rsquo;ve already priced a specific IHG stay and confirmed the implied value clears 0.6 cpp. Default answer here is: don&rsquo;t.</p>
+
+<h3>Citi ThankYou Rewards &rarr; Turkish Airlines Miles&amp;Smiles &mdash; 40%</h3>
+<p class="meta">Ends 11:59 PM Turkey time (UTC+3) Monday, November 30, 2026 &middot; Transfer ratio 1,000 Citi = 1,400 Turkish miles &middot; <strong>Bonus capped at 50,000 bonus miles</strong> (max efficient transfer = 125,000 Citi ThankYou points)<sup><a href="#s5">[5]</a></sup><sup><a href="#s6">[6]</a></sup></p>
+<p>Turkish Miles&amp;Smiles remains the cleanest Star Alliance sweet spot in the market: business class to Europe at 45,000 miles one-way, US domestic on United at 10,000 miles short-haul economy, Hawaii at 12,500 miles one-way economy. Two timing warnings worth repeating: the bonus posts after the campaign ends (first week of December, not immediately), and the 50,000 bonus-mile cap means transferring more than 125,000 Citi ThankYou points in this window wastes the uplift.</p>
+<p class="move">If you have a named Turkish redemption in mind, transfer up to but not above 125,000 Citi points before Monday. If you don&rsquo;t, skip &mdash; Turkish devaluations have been frequent, and a speculative Miles&amp;Smiles balance ages badly.</p>
+
+<h3>Amex Membership Rewards &rarr; Virgin Atlantic Flying Club &mdash; 30%</h3>
+<p class="meta">Ends 11:59 PM MST Monday, November 30, 2026 &middot; Transfer ratio 1,000 MR = 1,300 Virgin points &middot; Transfers in multiples of 1,000<sup><a href="#s7">[7]</a></sup></p>
+<p>Stackable in practice with the Chase Virgin Atlantic promo: if you need to top off a Virgin Atlantic balance ahead of an award booking, you can move from both issuers this week. The Amex bonus credits automatically, no registration. Bonus Virgin points may take up to 72 hours to post.</p>
+<p class="move">Only transfer MR to Virgin Atlantic against a specific held award &mdash; otherwise wait for the next Amex bonus. (See today&rsquo;s ledger entry for when that is likely to arrive.)</p>
+
+<h3>Amex Membership Rewards &rarr; Marriott Bonvoy &mdash; 35%</h3>
+<p class="meta">Ends Thursday, December 10, 2026 &middot; Transfer ratio 1,000 MR = 1,350 Marriott points<sup><a href="#s8">[8]</a></sup></p>
+<p>Marriott Bonvoy quietly devalued across roughly 95 percent of its portfolio in 2026, pushing average per-point value to about 0.7 cents, down from 0.8 the year before.<sup><a href="#s9">[9]</a></sup> Even with a 35% uplift, MR to Marriott pencils at roughly 0.95 cents per MR point &mdash; well below what MR usually returns through airline partners. The rare exception: a specific Category 7 or 8 Marriott redemption you&rsquo;ve already identified.</p>
+<p class="move">Do not transfer MR to Marriott speculatively. Transfer only against a named Bonvoy redemption whose cash equivalent exceeds the point cost at 0.95 cents.</p>
+
+<h3>Also live &mdash; confirmed, lower priority</h3>
+<ul class="quiet-list">
+  <li>Chase &rarr; British Airways, Iberia, and Aer Lingus Avios &mdash; 30% through Monday, December 1 (1,000 UR = 1,300 Avios).<sup><a href="#s2">[2]</a></sup></li>
+  <li>Chase &rarr; Wyndham Rewards &mdash; 30% through Thursday, December 3 (1,000 UR = 1,300 Wyndham).<sup><a href="#s2">[2]</a></sup></li>
+  <li>Capital One &rarr; Air France-KLM Flying Blue &mdash; 20% through 11:59 PM ET Monday, November 30 (1,000 CO = 1,200 Flying Blue).<sup><a href="#s10">[10]</a></sup></li>
+  <li>Capital One &rarr; Copa ConnectMiles &mdash; 30% through Monday, December 1 (1,000 CO = 1,300 Copa).<sup><a href="#s11">[11]</a></sup></li>
+  <li>Capital One &rarr; Qatar Privilege Club Avios &mdash; 15% through Monday, December 14.<sup><a href="#s11">[11]</a></sup></li>
+  <li>Amex &rarr; Avianca LifeMiles &mdash; 10% through Wednesday, December 16 (1,000 MR = 1,100 LifeMiles). A small bonus; skip unless you have a specific Star Alliance redemption lined up and Avianca shows the space.<sup><a href="#s7">[7]</a></sup></li>
+</ul>
+<p class="move">Of this group, the Capital One &rarr; Flying Blue offer is the one with real asymmetric upside &mdash; Flying Blue runs frequent Promo Rewards at steep discounts to Europe, and a 20% uplift makes the entry cost palatable if a Promo fits your dates.</p>
+
+<h2>Program Watch</h2>
+
+<h3>Marriott Bonvoy &mdash; terms update November 18 adds Lefay brand</h3>
+<p class="meta">Effective November 18, 2026<sup><a href="#s12">[12]</a></sup></p>
+<p>Marriott refreshed its Bonvoy loyalty program T&amp;Cs to accommodate the addition of Lefay Resorts &amp; Residences, the Italian luxury-wellness brand Marriott signed earlier in 2026. Low-risk admin change rather than a devaluation signal, but Lefay properties will price as award stays once fully integrated &mdash; expect Category 7 or 8.</p>
+<p class="move">No action today. Note the brand name if you&rsquo;re the sort of traveler who redeems at the top of the Bonvoy chart; Lefay is a plausible future sweet-spot or shock.</p>
+
+<h3>Bilt Rewards adds Southwest Rapid Rewards (and JetBlue TrueBlue in October)</h3>
+<p class="meta">Southwest added November 2026; JetBlue added October 20, 2026; both 1:1<sup><a href="#s13">[13]</a></sup></p>
+<p>Bilt now has 27 travel partners after JetBlue&rsquo;s October add, with Southwest arriving this month. Both transfer 1:1. Southwest is the more mechanically useful add for US-based Bilt members: Rapid Rewards is revenue-based and Southwest cash fares price predictably against points, so the transfer value is easy to calculate.</p>
+<p class="move">If you&rsquo;re holding Bilt points and have a Southwest flight on the horizon, price it both ways &mdash; Bilt transfers to Rapid Rewards at 1:1 and the US Companion Pass math changes for some flyers at this exchange rate.</p>
+
+<h3>Warning: the 40% Amex &rarr; Hilton Honors bonus making the rounds is UK-only</h3>
+<p class="meta">Bonus period September 29 to November 24, 2026 (UK Amex program only)<sup><a href="#s14">[14]</a></sup></p>
+<p>Coverage of this bonus is circulating today because it is the first 40% Amex-to-Hilton promotion since 2022 and ends today in the UK. Multiple US aggregators have confirmed it is not running on US Amex Membership Rewards. If you see the headline and move to transfer, you will receive the standard 1 MR = 2 Hilton ratio, not 1 MR = 2.8. Confirm the promotion is visible in your own Amex account before transferring &mdash; this is the exact mistake that makes transfer bonuses hazardous.</p>
+<p class="move">Do not transfer MR to Hilton today expecting a 40% uplift. If you&rsquo;re a US cardholder, the next US Hilton bonus is historically months away.</p>
+
+<h2>Today&rsquo;s Play</h2>
+<div class="signal">
+  <p><strong>The decision today is boring, which is the point.</strong> Four of this week&rsquo;s bonuses expire November 30 (Amex &rarr; Virgin Atlantic, Citi &rarr; Turkish, Capital One &rarr; Flying Blue, Chase &rarr; Avios). None expires inside 72 hours, so the urgency is editorial, not real. Spend the next three days doing the only thing that makes a transfer bonus worth anything: price out and hold the actual award you&rsquo;d book, before you move the points. If you can&rsquo;t find the space, the right move is to not transfer &mdash; an uplifted balance you can&rsquo;t redeem is just points you can&rsquo;t move back.</p>
+  <p>The one exception where transferring without live space is defensible is Chase &rarr; Virgin Atlantic for a known ANA business redemption you plan to search for in the next two weeks, because Virgin Atlantic&rsquo;s standard award cost on ANA is predictable and the 40% uplift is unlikely to return before mid-2027.</p>
+</div>
+
+<h2>The Ledger</h2>
+<p class="meta">Season 1 &middot; <span class="verdict-hit">10</span>-<span class="verdict-miss">1</span> across 11 graded calls &middot; 48 open</p>
+
+<p>The ledger is this brief&rsquo;s public scorecard. Every day it adds one falsifiable prediction with a real test and a real horizon. Hits are counted in gold; misses stay on the record, in muted red, because a scorecard that never misses is a scorecard nobody believes &mdash; and on a topic where readers move real points on these calls, flattering the record would cost them money.</p>
+
+<div class="ledger-row">
+  <p class="meta">Graded today: none due.</p>
+</div>
+
+<div class="ledger-row">
+  <p><span class="verdict-open">OPEN &middot; TODAY-1 &middot; horizon February 28, 2027</span></p>
+  <p><strong>Call.</strong> After both the current Amex MR &rarr; Virgin Atlantic Flying Club 30% bonus (through Nov 30) and the Chase UR &rarr; Virgin Atlantic Flying Club 40% bonus (through Dec 30) end, no new Amex MR &rarr; Virgin Atlantic Flying Club transfer bonus of 30% or greater will be publicly offered to US cardholders between December 31, 2026 and February 28, 2027 inclusive.</p>
+  <p><strong>Basis.</strong> Simultaneous Amex and Chase bonuses to the same airline is uncommon alignment driven by Virgin Atlantic pushing transatlantic load. Historically when Amex runs a top-of-range (30%+) MR-to-VS promo, the cool-off before another 30%+ Amex-to-VS bonus has run four to six months. A back-to-back 30%+ inside 90 days would break that cadence and almost certainly require Virgin Atlantic co-funding that is already deployed on the Chase side.</p>
+  <p><strong>Test.</strong> HIT if no Amex MR &rarr; Virgin Atlantic bonus of 30%+ is publicly offered or active to US cardholders in the window. MISS if any such bonus is announced or live. Bonuses below 30%, and bonuses from other issuers, do not trigger a MISS.</p>
+</div>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="s1"><a href="https://awardwallet.com/news/chase-ultimate-rewards/virgin-atlantic-transfer-bonus/" target="_blank" rel="noopener">AwardWallet &mdash; Transfer Chase Points to Virgin Atlantic With 40% Bonus</a> <span class="tier">(trade)</span></li>
+  <li id="s2"><a href="https://loyaltylobby.com/2026/11/02/chase-ultimate-rewards-to-iag-ba-ib-ei-wyndham-ihg-conversion-bonuses-november-1-december-3-2026/" target="_blank" rel="noopener">LoyaltyLobby &mdash; Chase UR to IAG (BA/IB/EI), Wyndham &amp; IHG Conversion Bonuses, Nov 1 to Dec 3, 2026</a> <span class="tier">(trade)</span></li>
+  <li id="s3"><a href="https://awardwallet.com/news/chase-ultimate-rewards/ihg-transfer-bonus/" target="_blank" rel="noopener">AwardWallet &mdash; Transfer Chase Points to IHG With 80% Bonus</a> <span class="tier">(trade)</span></li>
+  <li id="s4"><a href="https://frequentmiler.com/chase-offering-80-bonus-when-transferring-points-to-ihg-but-dont/" target="_blank" rel="noopener">Frequent Miler &mdash; Chase offering 80% bonus when transferring points to IHG (but don&rsquo;t)</a> <span class="tier">(trade)</span></li>
+  <li id="s5"><a href="https://frequentmiler.com/40-percent-transfer-bonus-citi-thankyou-turkish-milesandsmiles/" target="_blank" rel="noopener">Frequent Miler &mdash; Get a 40% transfer bonus from Citi ThankYou to Turkish Miles&amp;Smiles</a> <span class="tier">(trade)</span></li>
+  <li id="s6"><a href="https://onemileatatime.com/deals/citi-turkish-miles-smiles-transfer-bonus/" target="_blank" rel="noopener">One Mile at a Time &mdash; Transfer Citi ThankYou Points To Turkish Miles&amp;Smiles With 40% Bonus: Worth It?</a> <span class="tier">(trade)</span></li>
+  <li id="s7"><a href="https://awardwallet.com/news/amex-membership-rewards/virgin-atlantic-transfer-bonus/" target="_blank" rel="noopener">AwardWallet &mdash; Transfer Amex Points to Virgin Atlantic With a 30% Bonus</a> <span class="tier">(trade)</span></li>
+  <li id="s8"><a href="https://frequentmiler.com/35-percent-transfer-bonus-american-express-membership-rewards-marriott-bonvoy/" target="_blank" rel="noopener">Frequent Miler &mdash; Get a 35% transfer bonus from Amex Membership Rewards to Marriott Bonvoy</a> <span class="tier">(trade)</span></li>
+  <li id="s9"><a href="https://onemileatatime.com/news/marriott-bonvoy-economics-worse-members-pay-price/" target="_blank" rel="noopener">One Mile at a Time &mdash; Marriott Bonvoy Economics Get Worse, And Members Will Pay The Price</a> <span class="tier">(trade)</span></li>
+  <li id="s10"><a href="https://awardwallet.com/news/capital-one-rewards/flying-blue-transfer-bonus/" target="_blank" rel="noopener">AwardWallet &mdash; Transfer Capital One Miles to Flying Blue, Get a 20% Bonus</a> <span class="tier">(trade)</span></li>
+  <li id="s11"><a href="https://frequentmiler.com/current-point-transfer-bonuses/" target="_blank" rel="noopener">Frequent Miler &mdash; Current point transfer bonuses for November 2026</a> <span class="tier">(trade)</span></li>
+  <li id="s12"><a href="https://loyaltylobby.com/2026/11/18/marriott-bonvoy-loyalty-program-tcs-change-november-18-2026-lefay/" target="_blank" rel="noopener">LoyaltyLobby &mdash; Marriott Bonvoy Loyalty Program T&amp;Cs Change November 18, 2026 (Lefay)</a> <span class="tier">(trade)</span></li>
+  <li id="s13"><a href="https://awardwallet.com/news/bilt-rewards/jetblue-trueblue-transfer-partner" target="_blank" rel="noopener">AwardWallet &mdash; Bilt Adds JetBlue TrueBlue as a Transfer Partner</a> <span class="tier">(trade)</span></li>
+  <li id="s14"><a href="https://www.insideflyer.com/posts/amex-hilton-transfer-bonus-ends-november-24/" target="_blank" rel="noopener">InsideFlyer &mdash; Amex Hilton transfer bonus ends November 24</a> <span class="tier">(trade)</span></li>
+</ol>
+
+<p class="caution">Transfers to airline and hotel partners are one-way and irreversible. Never transfer points to a program without a specific redemption in mind that you have confirmed is available &mdash; award space can disappear between a saved search and a live booking, especially in premium cabins. Taxes, surcharges, and fuel fees are not covered by transfer bonuses. Program terms change without notice; always confirm the offer is visible in your own account before executing a transfer.</p>
+
+<nav class="bar" aria-label="edition navigation (footer)">
+  <a href="2026-11-23.html"><span class="label-full">&larr; YESTERDAY</span><span class="label-short">&larr;</span></a>
+  <span class="nav-mid">
+    <a href="./">Today</a>
+    <a href="archive.html">Archive</a>
+  </span>
+  <span class="next"><span class="label-full">TOMORROW &rarr;</span><span class="label-short">&rarr;</span></span>
+</nav>
+
+<footer>
+  <p>The Points Brief is AI-synthesized daily. Every number in this edition was cross-checked against multiple published sources at the time of writing, but travel promotions change without notice. Always confirm award availability, offer terms, and bonus eligibility inside your own card issuer&rsquo;s account before executing any transfer.</p>
+</footer>
+
+<script>
+const S = "The Points Brief for Tuesday, November 24, 2026. Three transfer taps are wide open this week, and two of them ask you to move points into a balance you cannot move back. That is the trap this edition exists to help you avoid. Transfer bonuses are one-way, and the only ones worth using are the ones attached to a redemption you have already found. Start with the Chase to Virgin Atlantic 40% bonus. This is the sweet spot of the week. Virgin Atlantic Flying Club is a thin partner list but a deep one, with real value on ANA business class to Japan at one hundred fifteen thousand points round trip, Delta One on partner space, and Virgin's own Upper Class to London at around one hundred thousand points one way. Every one of those needs live partner award space held before you transfer. The bonus runs through December 30, so you have five weeks. Chase is also running an 80% bonus to IHG One Rewards. The headline is big. The math is not. IHG uses dynamic pricing with no award chart, so one point eight IHG points per one Chase point rarely beats what the cash rate implies. Frequent Miler's analysis is explicit, booking the same room through the travel portal often pencils better. Transfer only if you have already priced a specific stay. Citi ThankYou to Turkish Miles and Smiles 40% ends Monday, November 30. The bonus caps at fifty thousand bonus miles, meaning the efficient transfer ceiling is exactly one hundred twenty five thousand Citi points, no more. Turkish books business class to Europe for forty five thousand miles one way on Star Alliance. The bonus posts after the campaign ends, not before December 1, so don't panic if the miles don't arrive immediately. Amex to Virgin Atlantic 30% ends November 30 as well, stackable in practice with the Chase offer if you need to top off an Amex balance. Amex to Marriott 35% runs through December 10. Marriott devalued about ninety five percent of its portfolio in 2026, dropping per point value to about zero point seven cents. Even with a thirty five percent uplift, transfer only against a named Bonvoy stay you have priced. Program watch. Marriott updated its loyalty program terms on November 18 to add the Lefay luxury brand. Bilt added Southwest Rapid Rewards as a transfer partner this month. And a forty percent Amex to Hilton bonus making the rounds this week is the UK Amex program only. US cardholders will not see it. Confirm in your account before transferring. The ledger adds a new call today, the season record is ten and one. Confirm award space before you transfer. Points moved cannot come home.";
+
+let utter = null;
+function pickVoice() {
+  const voices = window.speechSynthesis.getVoices();
+  if (!voices.length) return null;
+  const want = ['Daniel', 'Alex'];
+  for (const name of want) {
+    const v = voices.find(v => v.name.includes(name));
+    if (v) return v;
+  }
+  return voices.find(v => v.lang && v.lang.toLowerCase().startsWith('en')) || voices[0];
+}
+function speakBrief() {
+  if (!('speechSynthesis' in window)) {
+    alert('Your browser does not support speech synthesis.');
+    return;
+  }
+  window.speechSynthesis.cancel();
+  utter = new SpeechSynthesisUtterance(S);
+  utter.rate = 0.93;
+  utter.pitch = 1.0;
+  const v = pickVoice();
+  if (v) utter.voice = v;
+  utter.onstart = () => {
+    document.getElementById('playBtn').disabled = true;
+    document.getElementById('stopBtn').disabled = false;
+  };
+  utter.onend = utter.onerror = () => {
+    document.getElementById('playBtn').disabled = false;
+    document.getElementById('stopBtn').disabled = true;
+  };
+  window.speechSynthesis.speak(utter);
+}
+function stopBrief() {
+  window.speechSynthesis.cancel();
+  document.getElementById('playBtn').disabled = false;
+  document.getElementById('stopBtn').disabled = true;
+}
+if ('speechSynthesis' in window) {
+  window.speechSynthesis.onvoiceschanged = () => {};
+}
+</script>
+
+</body>
+</html>
