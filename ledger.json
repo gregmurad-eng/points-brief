@@ -710,6 +710,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-11-25-1",
+      "date": "2026-11-25",
+      "call": "No Chase Ultimate Rewards to IHG One Rewards transfer bonus of 50 percent or greater will be publicly offered to US cardholders at any point between 2026-12-04 and 2027-01-31 inclusive.",
+      "basis": "The current 80 percent Chase to IHG bonus (Nov 1 to Dec 3, 2026) is Chase's highest-ever published bonus to IHG and is itself a step up from the 70 percent bonus that ran Jul 31 to Aug 31, 2026. Chase's historical cadence on IHG is one bonus per quarter at most, with 2 to 5 month gaps between promos; it has never followed a 70-percent-plus IHG bonus with another 50-percent-plus IHG bonus inside 60 days. Running another 50-plus bonus immediately after the 80 percent would dilute the headline and would be commercially unusual. A sub-50 percent follow-up (for example a routine 25 to 40 percent bonus) does not trigger a MISS.",
+      "horizon": "2027-01-31",
+      "test": "GRADE HIT if no Chase Ultimate Rewards to IHG One Rewards transfer bonus of 50 percent or greater is publicly offered or active between 2026-12-04 and 2027-01-31 inclusive, evidenced by Chase's own transfer page, IHG's promo page, or Tier 1/Tier 2 confirmation. GRADE MISS if any Chase to IHG bonus of 50 percent or greater is announced or live during that window. Chase to IHG bonuses below 50 percent do NOT trigger a MISS.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
