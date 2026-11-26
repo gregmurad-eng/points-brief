@@ -722,6 +722,18 @@
       "graded_on": null,
       "verdict": null,
       "evidence": null
+    },
+    {
+      "id": "2026-11-26-1",
+      "date": "2026-11-26",
+      "call": "No Citi ThankYou Rewards to Cathay Pacific Asia Miles transfer bonus of 15 percent or greater will be publicly offered or active to US cardholders at any point between 2026-11-26 and 2027-02-28 inclusive.",
+      "basis": "Cathay announced on 2026-11-25 that it will raise Asia Miles rates on partner-airline redemptions by up to 20 percent from 2027-01-05 and will eliminate Companion Ticket Awards on the same date. Programs about to devalue do not typically sweeten transfer-in offers on the same side of the chart they are raising; doing so advertises a rate hike while funding inflow of the very liability the hike is designed to curb, and historically creates poor public-relations optics. Separately, Citi to Cathay transfer bonuses in 2026 have never cleared 15 percent, with 10 percent being the recent norm; the most recent Citi to Cathay promotion expired 2026-11-14 at exactly 10 percent. A 15-percent-or-greater bonus in the three months following a published devaluation would therefore require a break from both Cathay posture and Citi cadence simultaneously.",
+      "horizon": "2027-02-28",
+      "test": "GRADE HIT if no Citi ThankYou Rewards to Cathay Pacific Asia Miles transfer bonus of 15 percent or greater is publicly offered or active to US cardholders at any point between 2026-11-26 and 2027-02-28 inclusive, evidenced by Citi's own transfer page, a Cathay Pacific promo page, or Tier 1 or Tier 2 confirmation. GRADE MISS if any Citi to Cathay transfer bonus of 15 percent or greater is announced or live during that window. Citi to Cathay bonuses below 15 percent do NOT trigger a MISS. Bonuses from other issuers (Chase, Amex, Capital One, Bilt) to Cathay do NOT trigger a MISS.",
+      "status": "OPEN",
+      "graded_on": null,
+      "verdict": null,
+      "evidence": null
     }
   ]
 }
